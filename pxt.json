@@ -9,6 +9,7 @@
         "main.blocks",
         "main.ts",
         "README.md",
+        "code_test_0.1.0.md",
         "src/ast/command.ts",
         "src/ast/selector.ts",
         "src/ast/position.ts",
