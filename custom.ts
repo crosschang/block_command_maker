@@ -141,16 +141,15 @@ namespace MCFunctionTest {
         player.say(result);
     }
 
-    //% block="Selector Score 테스트"
-    export function testSelectorScore(): void {
-
+    //% block="Selector Score 정확값 테스트"
+    export function testSelectorScoreExact(): void {
         let selector = MCFunctionAST.createSelector(
             MCFunctionAST.SelectorBase.AllPlayers
         );
 
         let range = MCFunctionAST.createMinMaxRange(
             100,
-            500
+            100
         );
 
         MCFunctionAST.addSelectorScoreCondition(
@@ -165,7 +164,6 @@ namespace MCFunctionTest {
         let result =
             MCFunctionCompiler.compileSelector(selector);
 
-        // @가 채팅에서 selector로 해석되는 문제 방지
-        player.say("SCORE: " + result.slice(1));
+        player.say("SCORE EXACT: " + result.slice(1));
     }
 }
