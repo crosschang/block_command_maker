@@ -140,4 +140,71 @@ namespace MCFunctionTest {
 
         player.say(result);
     }
+
+    //% block="Selector 종합 테스트"
+    export function testSelectorFull(): void {
+
+        let selector = MCFunctionAST.createSelector(
+            MCFunctionAST.SelectorBase.AllPlayers
+        );
+
+        MCFunctionAST.addSelectorFilter(
+            selector,
+            MCFunctionAST.createSelectorFilter(
+                "tag",
+                "test",
+                false
+            )
+        );
+
+        MCFunctionAST.addSelectorFilter(
+            selector,
+            MCFunctionAST.createSelectorFilter(
+                "x",
+                "10",
+                false
+            )
+        );
+
+        MCFunctionAST.addSelectorFilter(
+            selector,
+            MCFunctionAST.createSelectorFilter(
+                "z",
+                "-5",
+                false
+            )
+        );
+
+        let distance = MCFunctionAST.createMinMaxRange(
+            5,
+            20
+        );
+
+        if (distance.hasMin) {
+            MCFunctionAST.addSelectorFilter(
+                selector,
+                MCFunctionAST.createSelectorFilter(
+                    "rm",
+                    "" + distance.min,
+                    false
+                )
+            );
+        }
+
+        if (distance.hasMax) {
+            MCFunctionAST.addSelectorFilter(
+                selector,
+                MCFunctionAST.createSelectorFilter(
+                    "r",
+                    "" + distance.max,
+                    false
+                )
+            );
+        }
+
+        let result =
+            MCFunctionCompiler.compileSelector(selector);
+
+        player.say(result);
+    }
 }
