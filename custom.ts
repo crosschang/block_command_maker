@@ -141,18 +141,35 @@ namespace MCFunctionTest {
         player.say(result);
     }
 
-    //% block="Selector Score 정확값 테스트"
-    export function testSelectorScoreExact(): void {
+    //% block="Selector Score Range 실제 테스트"
+    export function testSelectorScoreRange(): void {
+
+        // 테스트용 objective
+        player.execute(
+            "scoreboard objectives add mcf_test dummy"
+        );
+
+        // 현재 플레이어 점수 = 150
+        player.execute(
+            "scoreboard players set @s mcf_test 150"
+        );
+
         let selector = MCFunctionAST.createSelector(
             MCFunctionAST.SelectorBase.AllPlayers
         );
 
+<<<<<<< Updated upstream
         let range = MCFunctionAST.createMinRange(100);
+=======
+        let range = MCFunctionAST.createMinRange(
+            100
+        );
+>>>>>>> Stashed changes
 
         MCFunctionAST.addSelectorScoreCondition(
             selector,
             MCFunctionAST.createSelectorScoreCondition(
-                "money",
+                "mcf_test",
                 range,
                 false
             )
@@ -161,6 +178,15 @@ namespace MCFunctionTest {
         let result =
             MCFunctionCompiler.compileSelector(selector);
 
-        player.say("SCORE EXACT: " + result.slice(1));
+        let success =
+            player.execute(
+                "testfor " + result
+            );
+
+        if (success) {
+            player.say("SCORE RANGE TEST PASS");
+        } else {
+            player.say("SCORE RANGE TEST FAIL");
+        }
     }
 }
