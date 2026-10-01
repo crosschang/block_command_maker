@@ -19,6 +19,7 @@
         "src/ast/function_line.ts",
         "src/ast/raw_command.ts",
         "src/fields/selector_field.ts",
+        "src/fields/item_field.ts",
         "src/compiler/compiler.ts",
         "commands/say.ts",
         "commands/give.ts",
