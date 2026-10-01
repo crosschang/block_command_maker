@@ -147,10 +147,7 @@ namespace MCFunctionTest {
             MCFunctionAST.SelectorBase.AllPlayers
         );
 
-        let range = MCFunctionAST.createMinMaxRange(
-            100,
-            100
-        );
+        let range = MCFunctionAST.createMinRange(100);
 
         MCFunctionAST.addSelectorScoreCondition(
             selector,
