@@ -39,4 +39,10 @@ namespace MCFunctionBlocks {
     ): MCFunctionAST.Selector {
         return MCFunctionAST.createSelector(base);
     }
+
+    export function createSayCommand(
+        message: string
+    ): MCFunctionAST.SayCommand {
+        return MCFunctionAST.createSayCommand(message);
+    }
 }

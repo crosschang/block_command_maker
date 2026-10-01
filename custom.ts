@@ -61,4 +61,15 @@ namespace MCFunctionTest {
 
         return line.text;
     }
+
+    //% block="Say Compiler 테스트 %message"
+    export function testSayCompiler(
+        message: string
+    ): string {
+
+        let command =
+            MCFunctionBlocks.createSayCommand(message);
+
+        return MCFunctionCompiler.compileCommand(command);
+    }
 }
