@@ -52,4 +52,9 @@ namespace MCFunctionTest {
 
         return command.raw;
     }
+
+    export interface FunctionFile {
+        name: string;
+        lines: FunctionLine[];
+    }
 }
