@@ -1,5 +1,6 @@
 {
     "name": "block_command_maker",
+    "version": "0.1.1",
     "description": "Visual block editor for Minecraft Bedrock and Minecraft Education mcfunction commands",
     "dependencies": {
         "core": "*",
@@ -21,7 +22,8 @@
         "src/blocks/block_adapter.ts",
         "docs/PROJECT_GUIDELINES.md",
         "custom.ts",
-        "src/compiler/compiler.ts"
+        "src/compiler/compiler.ts",
+        "tutorial-info-cache.json"
     ],
     "testFiles": [
         "test.ts"

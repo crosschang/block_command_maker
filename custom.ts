@@ -65,11 +65,13 @@ namespace MCFunctionTest {
     //% block="Say Compiler 테스트 %message"
     export function testSayCompiler(
         message: string
-    ): string {
-
+    ): void {
         let command =
             MCFunctionBlocks.createSayCommand(message);
 
-        return MCFunctionCompiler.compileCommand(command);
+        let result =
+            MCFunctionCompiler.compileCommand(command);
+
+        player.say(result);
     }
 }
