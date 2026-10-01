@@ -180,6 +180,7 @@ namespace MCFunctionTest {
         let result =
             MCFunctionCompiler.compileSelectorV2(selector);
 
-        player.say("RESULT V2: " + result);
+        // @를 제외하고 테스트 출력
+        player.say("RESULT V2: " + result.slice(1));
     }
 }
