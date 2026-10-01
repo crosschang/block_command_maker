@@ -115,7 +115,10 @@ namespace MCFunctionTest {
         player.say(result);
     }
 
-    //% blockId=mcfunction_give_basic block="주다 대상 $target 아이템 $item 개수 $amount 데이터 $data"
+    //% blockId=mcfunction_give_basic
+    //% block="주다 대상 $target 아이템 $item 개수 $amount 데이터 $data"
+    //% amount.defl=1
+    //% data.defl=0
     export function give(
         target: MCFunctionFields.SelectorValue,
         item: MCFunctionFields.ItemValue,
