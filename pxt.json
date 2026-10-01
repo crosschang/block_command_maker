@@ -19,6 +19,7 @@
         "src/ast/function_line.ts",
         "src/ast/raw_command.ts",
         "commands/say.ts",
+        "commands/give.ts",
         "src/blocks/block_adapter.ts",
         "docs/PROJECT_GUIDELINES.md",
         "custom.ts",
