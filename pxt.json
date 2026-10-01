@@ -16,7 +16,8 @@
         "src/ast/facing.ts",
         "src/ast/raw_command.ts",
         "src/blocks/block_adapter.ts",
-        "docs/PROJECT_GUIDELINES.md"
+        "docs/PROJECT_GUIDELINES.md",
+        "custom.ts"
     ],
     "testFiles": [
         "test.ts"
@@ -28,5 +29,5 @@
     "supportedTargets": [
         "minecraft"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
