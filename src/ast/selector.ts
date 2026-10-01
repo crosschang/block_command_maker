@@ -1,9 +1,15 @@
 /**
  * Minecraft Selector AST
+ *
+ * @a, @e, @p, @r, @s, @initiator와
+ * Selector Filter를 구조화해서 표현한다.
  */
 
 namespace MCFunctionAST {
 
+    /**
+     * Selector의 기본 대상.
+     */
     export enum SelectorBase {
         AllPlayers = 0,      // @a
         AllEntities = 1,     // @e
@@ -13,18 +19,33 @@ namespace MCFunctionAST {
         Initiator = 5        // @initiator
     }
 
+    /**
+     * Selector Filter의 기본 구조.
+     *
+     * 초기에는 범용 key/value 구조를 사용하고,
+     * type, tag, scores, hasitem 등은 이후 세분화한다.
+     */
     export interface SelectorFilter {
         key: string;
         value: string;
-        inverted?: boolean;
+        inverted: boolean;
     }
 
+    /**
+     * Selector AST.
+     */
     export interface Selector {
         base: SelectorBase;
         filters: SelectorFilter[];
     }
 
-    export function selectorBaseName(base: SelectorBase): string {
+    /**
+     * SelectorBase를 Minecraft selector 문자열로 변환한다.
+     *
+     * 이 함수는 Selector 전체 명령을 컴파일하지 않는다.
+     * 기본 selector 토큰만 반환한다.
+     */
+    export function selectorBaseToken(base: SelectorBase): string {
         switch (base) {
             case SelectorBase.AllPlayers:
                 return "@a";
@@ -49,6 +70,9 @@ namespace MCFunctionAST {
         }
     }
 
+    /**
+     * 기본 Selector 생성.
+     */
     export function createSelector(base: SelectorBase): Selector {
         return {
             base: base,
@@ -56,16 +80,28 @@ namespace MCFunctionAST {
         };
     }
 
-    export function addSelectorFilter(
-        selector: Selector,
+    /**
+     * Selector Filter 생성.
+     */
+    export function createSelectorFilter(
         key: string,
         value: string,
-        inverted?: boolean
-    ): void {
-        selector.filters.push({
+        inverted: boolean
+    ): SelectorFilter {
+        return {
             key: key,
             value: value,
             inverted: inverted
-        });
+        };
+    }
+
+    /**
+     * Selector에 Filter 추가.
+     */
+    export function addSelectorFilter(
+        selector: Selector,
+        filter: SelectorFilter
+    ): void {
+        selector.filters.push(filter);
     }
 }
