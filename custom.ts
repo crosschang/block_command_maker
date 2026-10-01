@@ -140,4 +140,32 @@ namespace MCFunctionTest {
 
         player.say(result);
     }
+
+    //% block="Selector Score 테스트"
+    export function testSelectorScore(): void {
+
+        let selector = MCFunctionAST.createSelector(
+            MCFunctionAST.SelectorBase.AllPlayers
+        );
+
+        let range = MCFunctionAST.createMinMaxRange(
+            100,
+            500
+        );
+
+        MCFunctionAST.addSelectorScoreCondition(
+            selector,
+            MCFunctionAST.createSelectorScoreCondition(
+                "money",
+                range,
+                false
+            )
+        );
+
+        let result =
+            MCFunctionCompiler.compileSelector(selector);
+
+        // @가 채팅에서 selector로 해석되는 문제 방지
+        player.say("SCORE: " + result.slice(1));
+    }
 }
