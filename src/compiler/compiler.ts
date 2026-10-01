@@ -45,11 +45,11 @@ namespace MCFunctionCompiler {
     }
 
     function compileGiveCommand(
-        command: MCFunctionAST.GiveCommand
+    command: MCFunctionAST.GiveCommand
     ): string {
 
         let target =
-            MCFunctionAST.selectorBaseToken(command.target.base);
+            compileSelector(command.target);
 
         return "give "
             + target
@@ -59,5 +59,39 @@ namespace MCFunctionCompiler {
             + command.item.amount
             + " "
             + command.item.data;
+    }
+
+    export function compileSelector(
+        selector: MCFunctionAST.Selector
+    ): string {
+
+        let result =
+            MCFunctionAST.selectorBaseToken(selector.base);
+
+        if (selector.filters.length == 0) {
+            return result;
+        }
+
+        result += "[";
+
+        for (let i = 0; i < selector.filters.length; i++) {
+            if (i > 0) {
+                result += ",";
+            }
+
+            let filter = selector.filters[i];
+
+            result += filter.key + "=";
+
+            if (filter.inverted) {
+                result += "!";
+            }
+
+            result += filter.value;
+        }
+
+        result += "]";
+
+        return result;
     }
 }

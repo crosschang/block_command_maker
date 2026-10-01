@@ -90,4 +90,28 @@ namespace MCFunctionTest {
 
         player.say(result);
     }
+
+    //% block="Selector Compiler 테스트"
+    export function testSelectorCompiler(): void {
+
+        let selector = MCFunctionAST.createSelector(
+            MCFunctionAST.SelectorBase.AllPlayers
+        );
+
+        let filter = MCFunctionAST.createSelectorFilter(
+            "tag",
+            "test",
+            false
+        );
+
+        MCFunctionAST.addSelectorFilter(
+            selector,
+            filter
+        );
+
+        let result =
+            MCFunctionCompiler.compileSelector(selector);
+
+        player.say(result);
+    }
 }
