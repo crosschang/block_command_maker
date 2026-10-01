@@ -178,6 +178,142 @@ namespace MCFunctionFields {
         return selector;
     }
 
+    //% blockId=mcfunction_selector_distance_filter
+    //% block="선택자 $selector 거리 $range"
+    //% selector.shadow="mcfunction_selector_all_players"
+    //% range.shadow="mcfunction_range_min_max"
+    export function addDistanceFilter(
+        selector: SelectorValue,
+        range: RangeValue
+    ): SelectorValue {
+
+        if (range.range.hasMin) {
+            MCFunctionAST.addSelectorFilter(
+                selector.selector,
+                MCFunctionAST.createSelectorFilter(
+                    "rm",
+                    "" + range.range.min,
+                    false
+                )
+            );
+        }
+
+        if (range.range.hasMax) {
+            MCFunctionAST.addSelectorFilter(
+                selector.selector,
+                MCFunctionAST.createSelectorFilter(
+                    "r",
+                    "" + range.range.max,
+                    false
+                )
+            );
+        }
+
+        return selector;
+    }
+
+    //% blockId=mcfunction_selector_level_filter
+    //% block="선택자 $selector 레벨 $range"
+    //% selector.shadow="mcfunction_selector_all_players"
+    //% range.shadow="mcfunction_range_min_max"
+    export function addLevelFilter(
+        selector: SelectorValue,
+        range: RangeValue
+    ): SelectorValue {
+
+        if (range.range.hasMin) {
+            MCFunctionAST.addSelectorFilter(
+                selector.selector,
+                MCFunctionAST.createSelectorFilter(
+                    "lm",
+                    "" + range.range.min,
+                    false
+                )
+            );
+        }
+
+        if (range.range.hasMax) {
+            MCFunctionAST.addSelectorFilter(
+                selector.selector,
+                MCFunctionAST.createSelectorFilter(
+                    "l",
+                    "" + range.range.max,
+                    false
+                )
+            );
+        }
+
+        return selector;
+    }
+
+    //% blockId=mcfunction_selector_rotation_x_filter
+    //% block="선택자 $selector X 회전 $range"
+    //% selector.shadow="mcfunction_selector_all_players"
+    //% range.shadow="mcfunction_range_min_max"
+    export function addRotationXFilter(
+        selector: SelectorValue,
+        range: RangeValue
+    ): SelectorValue {
+
+        if (range.range.hasMin) {
+            MCFunctionAST.addSelectorFilter(
+                selector.selector,
+                MCFunctionAST.createSelectorFilter(
+                    "rxm",
+                    "" + range.range.min,
+                    false
+                )
+            );
+        }
+
+        if (range.range.hasMax) {
+            MCFunctionAST.addSelectorFilter(
+                selector.selector,
+                MCFunctionAST.createSelectorFilter(
+                    "rx",
+                    "" + range.range.max,
+                    false
+                )
+            );
+        }
+
+        return selector;
+    }
+
+    //% blockId=mcfunction_selector_rotation_y_filter
+    //% block="선택자 $selector Y 회전 $range"
+    //% selector.shadow="mcfunction_selector_all_players"
+    //% range.shadow="mcfunction_range_min_max"
+    export function addRotationYFilter(
+        selector: SelectorValue,
+        range: RangeValue
+    ): SelectorValue {
+
+        if (range.range.hasMin) {
+            MCFunctionAST.addSelectorFilter(
+                selector.selector,
+                MCFunctionAST.createSelectorFilter(
+                    "rym",
+                    "" + range.range.min,
+                    false
+                )
+            );
+        }
+
+        if (range.range.hasMax) {
+            MCFunctionAST.addSelectorFilter(
+                selector.selector,
+                MCFunctionAST.createSelectorFilter(
+                    "ry",
+                    "" + range.range.max,
+                    false
+                )
+            );
+        }
+
+        return selector;
+    }
+
     export class SelectorValue {
         selector: MCFunctionAST.Selector;
 
