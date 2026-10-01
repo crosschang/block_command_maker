@@ -148,6 +148,11 @@ namespace MCFunctionTest {
             MCFunctionAST.SelectorBase.AllPlayers
         );
 
+        player.say(
+            "BASE: " +
+            MCFunctionAST.selectorBaseToken(selector.base)
+        );
+
         MCFunctionAST.addSelectorFilter(
             selector,
             MCFunctionAST.createSelectorFilter(
@@ -155,6 +160,11 @@ namespace MCFunctionTest {
                 "test",
                 false
             )
+        );
+
+        player.say(
+            "COUNT1: " +
+            selector.filters.length
         );
 
         MCFunctionAST.addSelectorFilter(
@@ -175,36 +185,25 @@ namespace MCFunctionTest {
             )
         );
 
-        let distance = MCFunctionAST.createMinMaxRange(
-            5,
-            20
+        player.say(
+            "COUNT2: " +
+            selector.filters.length
         );
 
-        if (distance.hasMin) {
-            MCFunctionAST.addSelectorFilter(
-                selector,
-                MCFunctionAST.createSelectorFilter(
-                    "rm",
-                    "" + distance.min,
-                    false
-                )
-            );
-        }
+        let first = selector.filters[0];
 
-        if (distance.hasMax) {
-            MCFunctionAST.addSelectorFilter(
-                selector,
-                MCFunctionAST.createSelectorFilter(
-                    "r",
-                    "" + distance.max,
-                    false
-                )
-            );
-        }
+        player.say(
+            "FILTER: " +
+            first.key +
+            "=" +
+            first.value
+        );
 
         let result =
             MCFunctionCompiler.compileSelector(selector);
 
-        player.say("RESULT: " + result);
+        player.say(
+            "RESULT: " + result
+        );
     }
 }
