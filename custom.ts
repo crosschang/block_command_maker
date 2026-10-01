@@ -140,47 +140,4 @@ namespace MCFunctionTest {
 
         player.say(result);
     }
-
-    //% block="Selector 종합 테스트 V2"
-    export function testSelectorFullV2(): void {
-
-        let selector = MCFunctionAST.createSelector(
-            MCFunctionAST.SelectorBase.AllPlayers
-        );
-
-        MCFunctionAST.addSelectorFilter(
-            selector,
-            MCFunctionAST.createSelectorFilter(
-                "tag",
-                "test",
-                false
-            )
-        );
-
-        MCFunctionAST.addSelectorFilter(
-            selector,
-            MCFunctionAST.createSelectorFilter(
-                "x",
-                "10",
-                false
-            )
-        );
-
-        MCFunctionAST.addSelectorFilter(
-            selector,
-            MCFunctionAST.createSelectorFilter(
-                "z",
-                "-5",
-                false
-            )
-        );
-
-        player.say("NEW TEST V2");
-
-        let result =
-            MCFunctionCompiler.compileSelectorV2(selector);
-
-        // @를 제외하고 테스트 출력
-        player.say("RESULT V2: " + result.slice(1));
-    }
 }

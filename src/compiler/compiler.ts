@@ -68,64 +68,99 @@ namespace MCFunctionCompiler {
         let result =
             MCFunctionAST.selectorBaseToken(selector.base);
 
-        if (selector.filters.length == 0) {
+        if (
+            selector.filters.length == 0 &&
+            selector.scores.length == 0
+        ) {
             return result;
         }
 
-        result += "[";
+        result = result + "[";
+
+        let hasPrevious = false;
 
         for (let i = 0; i < selector.filters.length; i++) {
-            if (i > 0) {
-                result += ",";
+
+            if (hasPrevious) {
+                result = result + ",";
             }
 
             let filter = selector.filters[i];
 
-            result += filter.key + "=";
+            result = result + filter.key + "=";
 
             if (filter.inverted) {
-                result += "!";
+                result = result + "!";
             }
 
-            result += filter.value;
+            result = result + filter.value;
+
+            hasPrevious = true;
         }
 
-        result += "]";
+        if (selector.scores.length > 0) {
+
+            if (hasPrevious) {
+                result = result + ",";
+            }
+
+            result = result + "scores={";
+
+            for (let i = 0; i < selector.scores.length; i++) {
+
+                if (i > 0) {
+                    result = result + ",";
+                }
+
+                let score = selector.scores[i];
+
+                result =
+                    result
+                    + score.objective
+                    + "=";
+
+                if (score.inverted) {
+                    result = result + "!";
+                }
+
+                if (
+                    score.range.hasMin &&
+                    score.range.hasMax
+                ) {
+
+                    if (score.range.min == score.range.max) {
+                        result =
+                            result
+                            + score.range.min;
+                    } else {
+                        result =
+                            result
+                            + score.range.min
+                            + ".."
+                            + score.range.max;
+                    }
+
+                } else if (score.range.hasMin) {
+
+                    result =
+                        result
+                        + score.range.min
+                        + "..";
+
+                } else if (score.range.hasMax) {
+
+                    result =
+                        result
+                        + ".."
+                        + score.range.max;
+                }
+            }
+
+            result = result + "}";
+        }
+
+        result = result + "]";
 
         return result;
-    }
-
-    export function compileSelectorV2(
-        selector: MCFunctionAST.Selector
-    ): string {
-
-        let output = MCFunctionAST.selectorBaseToken(selector.base);
-
-        if (selector.filters.length == 0) {
-            return output;
-        }
-
-        output = output + "[";
-
-        for (let i = 0; i < selector.filters.length; i++) {
-
-            if (i > 0) {
-                output = output + ",";
-            }
-
-            let filter = selector.filters[i];
-
-            output = output + filter.key + "=";
-
-            if (filter.inverted) {
-                output = output + "!";
-            }
-
-            output = output + filter.value;
-        }
-
-        output = output + "]";
-
-        return output;
     }
 }

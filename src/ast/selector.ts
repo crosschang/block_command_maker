@@ -31,12 +31,19 @@ namespace MCFunctionAST {
         inverted: boolean;
     }
 
+    export interface SelectorScoreCondition {
+        objective: string;
+        range: NumberRange;
+        inverted: boolean;
+    }
+
     /**
      * Selector AST.
      */
     export interface Selector {
         base: SelectorBase;
         filters: SelectorFilter[];
+        scores: SelectorScoreCondition[];
     }
 
     /**
@@ -76,7 +83,8 @@ namespace MCFunctionAST {
     export function createSelector(base: SelectorBase): Selector {
         return {
             base: base,
-            filters: []
+            filters: [],
+            scores: []
         };
     }
 
@@ -103,5 +111,24 @@ namespace MCFunctionAST {
         filter: SelectorFilter
     ): void {
         selector.filters.push(filter);
+    }
+
+    export function createSelectorScoreCondition(
+        objective: string,
+        range: NumberRange,
+        inverted: boolean
+    ): SelectorScoreCondition {
+        return {
+            objective: objective,
+            range: range,
+            inverted: inverted
+        };
+    }
+
+    export function addSelectorScoreCondition(
+        selector: Selector,
+        condition: SelectorScoreCondition
+    ): void {
+        selector.scores.push(condition);
     }
 }

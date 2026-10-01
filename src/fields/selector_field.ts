@@ -314,6 +314,29 @@ namespace MCFunctionFields {
         return selector;
     }
 
+    //% blockId=mcfunction_selector_score_filter
+    //% block="선택자 $selector 스코어 목표 $objective 범위 $range"
+    //% selector.shadow="mcfunction_selector_all_players"
+    //% objective.defl="money"
+    //% range.shadow="mcfunction_range_min_max"
+    export function addScoreFilter(
+        selector: SelectorValue,
+        objective: string,
+        range: RangeValue
+    ): SelectorValue {
+
+        MCFunctionAST.addSelectorScoreCondition(
+            selector.selector,
+            MCFunctionAST.createSelectorScoreCondition(
+                objective,
+                range.range,
+                false
+            )
+        );
+
+        return selector;
+    }
+
     export class SelectorValue {
         selector: MCFunctionAST.Selector;
 
