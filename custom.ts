@@ -141,16 +141,11 @@ namespace MCFunctionTest {
         player.say(result);
     }
 
-    //% block="Selector 종합 테스트"
-    export function testSelectorFull(): void {
+    //% block="Selector 종합 테스트 V2"
+    export function testSelectorFullV2(): void {
 
         let selector = MCFunctionAST.createSelector(
             MCFunctionAST.SelectorBase.AllPlayers
-        );
-
-        player.say(
-            "BASE: " +
-            MCFunctionAST.selectorBaseToken(selector.base)
         );
 
         MCFunctionAST.addSelectorFilter(
@@ -160,11 +155,6 @@ namespace MCFunctionTest {
                 "test",
                 false
             )
-        );
-
-        player.say(
-            "COUNT1: " +
-            selector.filters.length
         );
 
         MCFunctionAST.addSelectorFilter(
@@ -185,25 +175,11 @@ namespace MCFunctionTest {
             )
         );
 
-        player.say(
-            "COUNT2: " +
-            selector.filters.length
-        );
-
-        let first = selector.filters[0];
-
-        player.say(
-            "FILTER: " +
-            first.key +
-            "=" +
-            first.value
-        );
+        player.say("NEW TEST V2");
 
         let result =
             MCFunctionCompiler.compileSelectorV2(selector);
 
-        player.say(
-            "RESULT: " + result
-        );
+        player.say("RESULT V2: " + result);
     }
 }
