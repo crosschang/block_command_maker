@@ -1,6 +1,6 @@
 {
     "name": "block_command_maker",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "description": "Visual block editor for Minecraft Bedrock and Minecraft Education mcfunction commands",
     "dependencies": {
         "core": "*",
