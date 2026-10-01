@@ -7,6 +7,177 @@
 
 namespace MCFunctionFields {
 
+    export enum SelectorNumberFilterType {
+        X = 0,
+        Y = 1,
+        Z = 2,
+        DX = 3,
+        DY = 4,
+        DZ = 5,
+        RadiusMax = 6,
+        RadiusMin = 7,
+        LevelMax = 8,
+        LevelMin = 9,
+        RotationXMax = 10,
+        RotationXMin = 11,
+        RotationYMax = 12,
+        RotationYMin = 13,
+        Count = 14
+    }
+
+    //% blockId=mcfunction_selector_number_filter
+    //% block="선택자 $selector 숫자 조건 $filterType 값 $value"
+    //% selector.shadow="mcfunction_selector_all_players"
+    //% value.defl=0
+    export function addNumberFilter(
+        selector: SelectorValue,
+        filterType: SelectorNumberFilterType,
+        value: number
+    ): SelectorValue {
+
+        let key = "";
+
+        switch (filterType) {
+            case SelectorNumberFilterType.X:
+                key = "x";
+                break;
+
+            case SelectorNumberFilterType.Y:
+                key = "y";
+                break;
+
+            case SelectorNumberFilterType.Z:
+                key = "z";
+                break;
+
+            case SelectorNumberFilterType.DX:
+                key = "dx";
+                break;
+
+            case SelectorNumberFilterType.DY:
+                key = "dy";
+                break;
+
+            case SelectorNumberFilterType.DZ:
+                key = "dz";
+                break;
+
+            case SelectorNumberFilterType.RadiusMax:
+                key = "r";
+                break;
+
+            case SelectorNumberFilterType.RadiusMin:
+                key = "rm";
+                break;
+
+            case SelectorNumberFilterType.LevelMax:
+                key = "l";
+                break;
+
+            case SelectorNumberFilterType.LevelMin:
+                key = "lm";
+                break;
+
+            case SelectorNumberFilterType.RotationXMax:
+                key = "rx";
+                break;
+
+            case SelectorNumberFilterType.RotationXMin:
+                key = "rxm";
+                break;
+
+            case SelectorNumberFilterType.RotationYMax:
+                key = "ry";
+                break;
+
+            case SelectorNumberFilterType.RotationYMin:
+                key = "rym";
+                break;
+
+            case SelectorNumberFilterType.Count:
+                key = "c";
+                break;
+        }
+
+        MCFunctionAST.addSelectorFilter(
+            selector.selector,
+            MCFunctionAST.createSelectorFilter(
+                key,
+                "" + value,
+                false
+            )
+        );
+
+        return selector;
+    }
+
+    //% blockId=mcfunction_selector_position_filter
+    //% block="선택자 $selector 위치 X $x Y $y Z $z"
+    //% selector.shadow="mcfunction_selector_all_players"
+    //% x.defl=0
+    //% y.defl=0
+    //% z.defl=0
+    export function addPositionFilter(
+        selector: SelectorValue,
+        x: number,
+        y: number,
+        z: number
+    ): SelectorValue {
+
+        MCFunctionAST.addSelectorFilter(
+            selector.selector,
+            MCFunctionAST.createSelectorFilter("x", "" + x, false)
+        );
+
+        MCFunctionAST.addSelectorFilter(
+            selector.selector,
+            MCFunctionAST.createSelectorFilter("y", "" + y, false)
+        );
+
+        MCFunctionAST.addSelectorFilter(
+            selector.selector,
+            MCFunctionAST.createSelectorFilter("z", "" + z, false)
+        );
+
+        return selector;
+    }
+
+    //% blockId=mcfunction_selector_area_filter
+    //% block="선택자 $selector 영역 X $x Y $y Z $z dX $dx dY $dy dZ $dz"
+    //% selector.shadow="mcfunction_selector_all_players"
+    //% x.defl=0
+    //% y.defl=0
+    //% z.defl=0
+    //% dx.defl=0
+    //% dy.defl=0
+    //% dz.defl=0
+    export function addAreaFilter(
+        selector: SelectorValue,
+        x: number,
+        y: number,
+        z: number,
+        dx: number,
+        dy: number,
+        dz: number
+    ): SelectorValue {
+
+        let keys = ["x", "y", "z", "dx", "dy", "dz"];
+        let values = [x, y, z, dx, dy, dz];
+
+        for (let i = 0; i < keys.length; i++) {
+            MCFunctionAST.addSelectorFilter(
+                selector.selector,
+                MCFunctionAST.createSelectorFilter(
+                    keys[i],
+                    "" + values[i],
+                    false
+                )
+            );
+        }
+
+        return selector;
+    }
+
     export class SelectorValue {
         selector: MCFunctionAST.Selector;
 
