@@ -1,7 +1,8 @@
 /**
  * .mcfunction 파일의 한 줄을 표현하는 AST.
  *
- * 명령뿐 아니라 주석과 빈 줄도 보존한다.
+ * 명령, 주석, 빈 줄을 구분하여
+ * 원본 파일 구조를 보존한다.
  */
 
 namespace MCFunctionAST {
@@ -15,15 +16,21 @@ namespace MCFunctionAST {
     export interface FunctionLine {
         kind: FunctionLineKind;
 
-        command?: CommandNode;
+        /**
+         * 주석이나 원본 텍스트 보존용.
+         *
+         * Comment:
+         * # 플레이어 초기화
+         *
+         * Empty:
+         * ""
+         */
+        text: string;
 
         /**
-         * Comment일 때 원본 주석 내용.
-         *
-         * 예:
-         * # 플레이어 초기화
+         * Command 줄일 때 사용하는 AST.
          */
-        comment?: string;
+        command?: CommandNode;
     }
 
     export function createCommandLine(
@@ -31,22 +38,24 @@ namespace MCFunctionAST {
     ): FunctionLine {
         return {
             kind: FunctionLineKind.Command,
+            text: "",
             command: command
         };
     }
 
     export function createCommentLine(
-        comment: string
+        text: string
     ): FunctionLine {
         return {
             kind: FunctionLineKind.Comment,
-            comment: comment
+            text: text
         };
     }
 
     export function createEmptyLine(): FunctionLine {
         return {
-            kind: FunctionLineKind.Empty
+            kind: FunctionLineKind.Empty,
+            text: ""
         };
     }
 }

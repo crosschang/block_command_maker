@@ -53,8 +53,12 @@ namespace MCFunctionTest {
         return command.raw;
     }
 
-    export interface FunctionFile {
-        name: string;
-        lines: FunctionLine[];
+    //% block="FunctionLine Comment 테스트"
+    export function testFunctionLine(): string {
+        let line = MCFunctionAST.createCommentLine(
+            "# test comment"
+        );
+
+        return line.text;
     }
 }
