@@ -1,6 +1,6 @@
 {
     "name": "block_command_maker",
-    "description": "",
+    "description": "Visual block editor for Minecraft Bedrock and Minecraft Education mcfunction commands",
     "dependencies": {
         "core": "*",
         "builder": "*"
@@ -8,7 +8,18 @@
     "files": [
         "main.blocks",
         "main.ts",
-        "README.md"
+
+        "src/ast/command.ts",
+        "src/ast/selector.ts",
+        "src/ast/position.ts",
+        "src/ast/rotation.ts",
+        "src/ast/facing.ts",
+        "src/ast/raw_command.ts",
+
+        "src/blocks/block_adapter.ts",
+
+        "README.md",
+        "docs/PROJECT_GUIDELINES.md"
     ],
     "testFiles": [
         "test.ts"
