@@ -17,6 +17,7 @@ namespace MCFunctionFields {
 
     //% blockId=mcfunction_item
     //% block="아이템 $itemId"
+    //% itemId.defl="minecraft:stone"
     export function item(
         itemId: string
     ): ItemValue {

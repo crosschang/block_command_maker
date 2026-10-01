@@ -117,6 +117,8 @@ namespace MCFunctionTest {
 
     //% blockId=mcfunction_give_basic
     //% block="주다 대상 $target 아이템 $item 개수 $amount 데이터 $data"
+    //% target.shadow="mcfunction_selector_all_players"
+    //% item.shadow="mcfunction_item"
     //% amount.defl=1
     //% data.defl=0
     export function give(
