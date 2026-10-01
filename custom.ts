@@ -205,6 +205,6 @@ namespace MCFunctionTest {
         let result =
             MCFunctionCompiler.compileSelector(selector);
 
-        player.say(result);
+        player.say("RESULT: " + result);
     }
 }
