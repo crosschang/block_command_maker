@@ -200,7 +200,7 @@ namespace MCFunctionTest {
         );
 
         let result =
-            MCFunctionCompiler.compileSelector(selector);
+            MCFunctionCompiler.compileSelectorV2(selector);
 
         player.say(
             "RESULT: " + result

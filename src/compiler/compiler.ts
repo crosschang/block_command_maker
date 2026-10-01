@@ -94,4 +94,38 @@ namespace MCFunctionCompiler {
 
         return result;
     }
+
+    export function compileSelectorV2(
+        selector: MCFunctionAST.Selector
+    ): string {
+
+        let output = MCFunctionAST.selectorBaseToken(selector.base);
+
+        if (selector.filters.length == 0) {
+            return output;
+        }
+
+        output = output + "[";
+
+        for (let i = 0; i < selector.filters.length; i++) {
+
+            if (i > 0) {
+                output = output + ",";
+            }
+
+            let filter = selector.filters[i];
+
+            output = output + filter.key + "=";
+
+            if (filter.inverted) {
+                output = output + "!";
+            }
+
+            output = output + filter.value;
+        }
+
+        output = output + "]";
+
+        return output;
+    }
 }
