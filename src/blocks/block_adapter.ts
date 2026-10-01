@@ -4,25 +4,15 @@
 
 namespace MCFunctionBlocks {
 
-    export function createRawCommand(
-        text: string
-    ): MCFunctionAST.RawCommand {
+    export function createRawCommand(text: string): MCFunctionAST.RawCommand {
         return MCFunctionAST.createRawCommand(text);
     }
 
-    export function createAbsolutePosition(
-        x: number,
-        y: number,
-        z: number
-    ): MCFunctionAST.Position {
+    export function createAbsolutePosition(x: number,y: number,z: number): MCFunctionAST.Position {
         return MCFunctionAST.createAbsolutePosition(x, y, z);
     }
 
-    export function createRelativePosition(
-        x: number,
-        y: number,
-        z: number
-    ): MCFunctionAST.Position {
+    export function createRelativePosition(x: number,y: number,z: number): MCFunctionAST.Position {
         return MCFunctionAST.createRelativePosition(x, y, z);
     }
 
@@ -44,5 +34,19 @@ namespace MCFunctionBlocks {
         message: string
     ): MCFunctionAST.SayCommand {
         return MCFunctionAST.createSayCommand(message);
+    }
+
+    export function createGiveCommand(target:MCFunctionAST.Selector,itemId: string,amount: number,data: number): MCFunctionAST.GiveCommand {
+
+        let item = MCFunctionAST.createItemStack(
+            itemId,
+            amount,
+            data
+        );
+
+        return MCFunctionAST.createGiveCommand(
+            target,
+            item
+        );
     }
 }

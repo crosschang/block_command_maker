@@ -70,4 +70,24 @@ namespace MCFunctionTest {
 
         player.say(result);
     }
+
+    //% block="Give Compiler 테스트"
+    export function testGiveCompiler(): void {
+
+        let target = MCFunctionAST.createSelector(
+            MCFunctionAST.SelectorBase.Self
+        );
+
+        let command = MCFunctionBlocks.createGiveCommand(
+            target,
+            "minecraft:diamond",
+            3,
+            0
+        );
+
+        let result =
+            MCFunctionCompiler.compileCommand(command);
+
+        player.say(result);
+    }
 }
