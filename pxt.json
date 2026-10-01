@@ -8,17 +8,14 @@
     "files": [
         "main.blocks",
         "main.ts",
-
+        "README.md",
         "src/ast/command.ts",
         "src/ast/selector.ts",
         "src/ast/position.ts",
         "src/ast/rotation.ts",
         "src/ast/facing.ts",
         "src/ast/raw_command.ts",
-
         "src/blocks/block_adapter.ts",
-
-        "README.md",
         "docs/PROJECT_GUIDELINES.md"
     ],
     "testFiles": [
@@ -31,5 +28,5 @@
     "supportedTargets": [
         "minecraft"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
