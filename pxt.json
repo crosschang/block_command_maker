@@ -1,5 +1,5 @@
 {
-    "name": "이름없음",
+    "name": "block_command_maker",
     "description": "",
     "dependencies": {
         "core": "*",
@@ -19,5 +19,6 @@
     },
     "supportedTargets": [
         "minecraft"
-    ]
+    ],
+    "preferredEditor": "blocksprj"
 }
