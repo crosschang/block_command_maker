@@ -158,13 +158,26 @@ namespace MCFunctionTest {
             MCFunctionAST.SelectorBase.AllPlayers
         );
 
-<<<<<<< Updated upstream
-        let range = MCFunctionAST.createMinRange(100);
-=======
+    //% block="Selector Score Range 실제 테스트"
+    export function testSelectorScoreRange(): void {
+
+        // 테스트용 objective
+        player.execute(
+            "scoreboard objectives add mcf_test dummy"
+        );
+
+        // 현재 플레이어 점수 = 150
+        player.execute(
+            "scoreboard players set @s mcf_test 150"
+        );
+
+        let selector = MCFunctionAST.createSelector(
+            MCFunctionAST.SelectorBase.AllPlayers
+        );
+
         let range = MCFunctionAST.createMinRange(
             100
         );
->>>>>>> Stashed changes
 
         MCFunctionAST.addSelectorScoreCondition(
             selector,
