@@ -114,4 +114,25 @@ namespace MCFunctionTest {
 
         player.say(result);
     }
+
+    //% blockId=mcfunction_give_basic block="주다 대상 $target 아이템 $itemId 개수 $amount 데이터 $data"
+    export function give(
+        target: MCFunctionFields.SelectorValue,
+        itemId: string,
+        amount: number,
+        data: number
+    ): void {
+
+        let command = MCFunctionBlocks.createGiveCommand(
+            target.selector,
+            itemId,
+            amount,
+            data
+        );
+
+        let result =
+            MCFunctionCompiler.compileCommand(command);
+
+        player.say(result);
+    }
 }

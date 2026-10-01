@@ -18,12 +18,13 @@
         "src/ast/facing.ts",
         "src/ast/function_line.ts",
         "src/ast/raw_command.ts",
+        "src/fields/selector_field.ts",
+        "src/compiler/compiler.ts",
         "commands/say.ts",
         "commands/give.ts",
         "src/blocks/block_adapter.ts",
         "docs/PROJECT_GUIDELINES.md",
         "custom.ts",
-        "src/compiler/compiler.ts",
         "tutorial-info-cache.json"
     ],
     "testFiles": [
