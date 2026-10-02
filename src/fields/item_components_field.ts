@@ -32,17 +32,17 @@ namespace MCFunctionFields {
 
     //% group="아이템 상세"
     //% blockId=mcfunction_item_component_can_destroy
-    //% block="캘 수 있는 블록 $blockName 추가 다음 $components"
+    //% block="캘 수 있는 블록 $blockValue 추가 다음 $components"
     //% components.shadow="mcfunction_item_components"
-    //% blockName.defl="minecraft:stone"
+    //% blockValue.shadow="mcfunction_block"
     export function addCanDestroy(
         components: ItemComponentsValue,
-        blockName: string
+        blockValue: BlockValue
     ): ItemComponentsValue {
 
         MCFunctionAST.addCanDestroyBlock(
             components.components,
-            blockName
+            blockValue.blockId
         );
 
         return components;
@@ -50,17 +50,17 @@ namespace MCFunctionFields {
 
     //% group="아이템 상세"
     //% blockId=mcfunction_item_component_can_place_on
-    //% block="설치 가능한 블록 $blockName 추가 다음 $components"
+    //% block="설치 가능한 블록 $blockValue 추가 다음 $components"
     //% components.shadow="mcfunction_item_components"
-    //% blockName.defl="minecraft:stone"
+    //% blockValue.shadow="mcfunction_block"
     export function addCanPlaceOn(
         components: ItemComponentsValue,
-        blockName: string
+        blockValue: BlockValue
     ): ItemComponentsValue {
 
         MCFunctionAST.addCanPlaceOnBlock(
             components.components,
-            blockName
+            blockValue.blockId
         );
 
         return components;

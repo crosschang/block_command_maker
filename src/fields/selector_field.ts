@@ -17,20 +17,51 @@ namespace MCFunctionFields {
     // ---------------------------------------------------------------------
 
     export enum SelectorTextConditionType {
-        //% block="종류 type"
-        Type = 0,
-
         //% block="이름 name"
-        Name = 1,
+        Name = 0,
 
         //% block="태그 tag"
-        Tag = 2,
+        Tag = 1,
 
         //% block="패밀리 family"
-        Family = 3,
+        Family = 2
+    }
 
-        //% block="게임모드 m"
-        GameMode = 4
+    export enum SelectorGameMode {
+        //% block="서바이벌"
+        Survival = 0,
+
+        //% block="크리에이티브"
+        Creative = 1,
+
+        //% block="어드벤처"
+        Adventure = 2,
+
+        //% block="관전자"
+        Spectator = 3
+    }
+
+    function selectorGameModeToken(
+        mode: SelectorGameMode
+    ): string {
+
+        switch (mode) {
+
+            case SelectorGameMode.Survival:
+                return "survival";
+
+            case SelectorGameMode.Creative:
+                return "creative";
+
+            case SelectorGameMode.Adventure:
+                return "adventure";
+
+            case SelectorGameMode.Spectator:
+                return "spectator";
+
+            default:
+                return "survival";
+        }
     }
 
     export enum SelectorNumberConditionType {
@@ -265,9 +296,37 @@ namespace MCFunctionFields {
     // ---------------------------------------------------------------------
 
     //% group="선택자 조건"
+    //% blockId=mcfunction_selector_entity_type_condition
+    //% block="종류 type $entity 제외 $exclude 다음 $next"
+    //% entity.shadow="mcfunction_entity"
+    //% exclude.defl=false
+    //% next.shadow="mcfunction_selector_no_condition"
+    export function addEntityTypeCondition(
+        entity: EntityValue,
+        exclude: boolean,
+        next: SelectorConditionValue
+    ): SelectorConditionValue {
+
+        let condition =
+            new SelectorConditionValue();
+
+        condition.next = next;
+
+        condition.filters.push(
+            MCFunctionAST.createSelectorFilter(
+                "type",
+                entity.entityId,
+                exclude
+            )
+        );
+
+        return condition;
+    }
+
+    //% group="선택자 조건"
     //% blockId=mcfunction_selector_text_condition
     //% block="$conditionType 값 $value 제외 $exclude 다음 $next"
-    //% value.defl="minecraft:zombie"
+    //% value.defl="Boss"
     //% exclude.defl=false
     //% next.shadow="mcfunction_selector_no_condition"
     export function addTextCondition(
@@ -281,10 +340,6 @@ namespace MCFunctionFields {
 
         switch (conditionType) {
 
-            case SelectorTextConditionType.Type:
-                key = "type";
-                break;
-
             case SelectorTextConditionType.Name:
                 key = "name";
                 break;
@@ -295,10 +350,6 @@ namespace MCFunctionFields {
 
             case SelectorTextConditionType.Family:
                 key = "family";
-                break;
-
-            case SelectorTextConditionType.GameMode:
-                key = "m";
                 break;
         }
 
@@ -311,6 +362,33 @@ namespace MCFunctionFields {
             MCFunctionAST.createSelectorFilter(
                 key,
                 value,
+                exclude
+            )
+        );
+
+        return condition;
+    }
+
+    //% group="선택자 조건"
+    //% blockId=mcfunction_selector_gamemode_condition
+    //% block="게임모드 $mode 제외 $exclude 다음 $next"
+    //% exclude.defl=false
+    //% next.shadow="mcfunction_selector_no_condition"
+    export function addGameModeCondition(
+        mode: SelectorGameMode,
+        exclude: boolean,
+        next: SelectorConditionValue
+    ): SelectorConditionValue {
+
+        let condition =
+            new SelectorConditionValue();
+
+        condition.next = next;
+
+        condition.filters.push(
+            MCFunctionAST.createSelectorFilter(
+                "m",
+                selectorGameModeToken(mode),
                 exclude
             )
         );
