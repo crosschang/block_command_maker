@@ -34,7 +34,7 @@ namespace MCFunctionFields {
     //% blockId=mcfunction_item_component_can_destroy
     //% block="캘 수 있는 블록 $blockValue 추가 다음 $components"
     //% components.shadow="mcfunction_item_components"
-    //% blockValue.shadow="mcfunction_block"
+    //% blockValue.shadow="mcfunction_block_select"
     export function addCanDestroy(
         components: ItemComponentsValue,
         blockValue: BlockValue
@@ -52,7 +52,7 @@ namespace MCFunctionFields {
     //% blockId=mcfunction_item_component_can_place_on
     //% block="설치 가능한 블록 $blockValue 추가 다음 $components"
     //% components.shadow="mcfunction_item_components"
-    //% blockValue.shadow="mcfunction_block"
+    //% blockValue.shadow="mcfunction_block_select"
     export function addCanPlaceOn(
         components: ItemComponentsValue,
         blockValue: BlockValue

@@ -298,7 +298,7 @@ namespace MCFunctionFields {
     //% group="선택자 조건"
     //% blockId=mcfunction_selector_entity_type_condition
     //% block="종류 type $entity 제외 $exclude 다음 $next"
-    //% entity.shadow="mcfunction_entity"
+    //% entity.shadow="mcfunction_entity_select"
     //% exclude.defl=false
     //% next.shadow="mcfunction_selector_no_condition"
     export function addEntityTypeCondition(
@@ -1034,7 +1034,7 @@ namespace MCFunctionFields {
     //% group="선택자 조건"
     //% blockId=mcfunction_selector_hasitem_filter
     //% block="아이템 $item 개수 $quantity 보유 다음 $next"
-    //% item.shadow="mcfunction_item"
+    //% item.shadow="mcfunction_item_select"
     //% quantity.shadow="mcfunction_range_min"
     //% next.shadow="mcfunction_selector_no_condition"
     export function addHasItemFilter(
@@ -1061,7 +1061,7 @@ namespace MCFunctionFields {
     //% group="선택자 조건"
     //% blockId=mcfunction_selector_hasitem_advanced
     //% block="아이템 보유 상세 $item 개수 $quantity 위치 $location 슬롯 $slot 데이터 $data 다음 $next"
-    //% item.shadow="mcfunction_item"
+    //% item.shadow="mcfunction_item_select"
     //% quantity.shadow="mcfunction_range_min"
     //% slot.defl=0
     //% data.defl=0
