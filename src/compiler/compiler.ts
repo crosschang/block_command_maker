@@ -23,9 +23,14 @@ namespace MCFunctionCompiler {
                 );
             
             case MCFunctionAST.CommandKind.Give:
-            return compileGiveCommand(
-                <MCFunctionAST.GiveCommand>command
-            );
+                return compileGiveCommand(
+                    <MCFunctionAST.GiveCommand>command
+                );
+
+            case MCFunctionAST.CommandKind.Teleport:
+                return compileTeleportCommand(
+                    <MCFunctionAST.TeleportCommand>command
+                );
 
             default:
                 return "";
@@ -197,6 +202,154 @@ namespace MCFunctionCompiler {
         }
 
         result = result + "}";
+
+        return result;
+    }
+
+
+
+    export function compilePosition(
+        position: MCFunctionAST.Position
+    ): string {
+
+        return compileCoordinate(position.x)
+            + " "
+            + compileCoordinate(position.y)
+            + " "
+            + compileCoordinate(position.z);
+    }
+
+    function compileCoordinate(
+        coordinate: MCFunctionAST.Coordinate
+    ): string {
+
+        if (
+            coordinate.mode ==
+            MCFunctionAST.CoordinateMode.Absolute
+        ) {
+            return "" + coordinate.value;
+        }
+
+        if (
+            coordinate.mode ==
+            MCFunctionAST.CoordinateMode.Relative
+        ) {
+
+            if (coordinate.value == 0) {
+                return "~";
+            }
+
+            return "~" + coordinate.value;
+        }
+
+        if (coordinate.value == 0) {
+            return "^";
+        }
+
+        return "^" + coordinate.value;
+    }
+
+    export function compileRotation(
+        rotation: MCFunctionAST.Rotation
+    ): string {
+
+        return compileRotationValue(rotation.yaw)
+            + " "
+            + compileRotationValue(rotation.pitch);
+    }
+
+    function compileRotationValue(
+        value: MCFunctionAST.RotationValue
+    ): string {
+
+        if (
+            value.mode ==
+            MCFunctionAST.RotationMode.Absolute
+        ) {
+            return "" + value.value;
+        }
+
+        if (value.value == 0) {
+            return "~";
+        }
+
+        return "~" + value.value;
+    }
+
+    function compileTeleportCommand(
+        command: MCFunctionAST.TeleportCommand
+    ): string {
+
+        let result =
+            "tp "
+            + compileSelector(command.target)
+            + " ";
+
+        if (
+            command.mode ==
+            MCFunctionAST.TeleportMode.Entity
+        ) {
+
+            result =
+                result
+                + compileSelector(
+                    command.destinationEntity
+                );
+
+        } else {
+
+            result =
+                result
+                + compilePosition(
+                    command.destinationPosition
+                );
+
+            if (
+                command.mode ==
+                MCFunctionAST.TeleportMode.Rotation
+            ) {
+
+                result =
+                    result
+                    + " "
+                    + compileRotation(
+                        command.rotation
+                    );
+
+            } else if (
+                command.mode ==
+                MCFunctionAST.TeleportMode.FacingPosition
+            ) {
+
+                result =
+                    result
+                    + " facing "
+                    + compilePosition(
+                        command.facingPosition
+                    );
+
+            } else if (
+                command.mode ==
+                MCFunctionAST.TeleportMode.FacingEntity
+            ) {
+
+                result =
+                    result
+                    + " facing "
+                    + compileSelector(
+                        command.facingEntity
+                    );
+            }
+        }
+
+        result =
+            result
+            + " "
+            + (
+                command.checkForBlocks
+                ? "true"
+                : "false"
+            );
 
         return result;
     }
