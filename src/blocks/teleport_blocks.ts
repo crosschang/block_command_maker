@@ -7,10 +7,10 @@
  */
 
 //% color="#4F46E5" weight=96 icon="\uf0b2" block="MCFunction TP"
-//% groups='["basic movement", "rotation and facing"]'
+//% groups='["Basic Movement", "Rotation & Facing"]'
 namespace MCFunctionTeleport {
 
-    //% group="basic movement"
+    //% group="Basic Movement"
     //% blockId=mcfunction_tp_position
     //% block="teleport target $target to position $destination check blocks $checkForBlocks"
     //% target.shadow="mcfunction_selector_self"
@@ -34,7 +34,7 @@ namespace MCFunctionTeleport {
         );
     }
 
-    //% group="basic movement"
+    //% group="Basic Movement"
     //% blockId=mcfunction_tp_entity
     //% block="teleport target $target to entity $destination check blocks $checkForBlocks"
     //% target.shadow="mcfunction_selector_self"
@@ -58,7 +58,7 @@ namespace MCFunctionTeleport {
         );
     }
 
-    //% group="rotation and facing"
+    //% group="Rotation & Facing"
     //% blockId=mcfunction_tp_rotation
     //% block="teleport target $target to position $destination rotation $rotation check blocks $checkForBlocks"
     //% target.shadow="mcfunction_selector_self"
@@ -85,7 +85,7 @@ namespace MCFunctionTeleport {
         );
     }
 
-    //% group="rotation and facing"
+    //% group="Rotation & Facing"
     //% blockId=mcfunction_tp_facing_position
     //% block="teleport target $target to position $destination facing position $facingPosition check blocks $checkForBlocks"
     //% target.shadow="mcfunction_selector_self"
@@ -112,7 +112,7 @@ namespace MCFunctionTeleport {
         );
     }
 
-    //% group="rotation and facing"
+    //% group="Rotation & Facing"
     //% blockId=mcfunction_tp_facing_entity
     //% block="teleport target $target to position $destination facing entity $facingEntity check blocks $checkForBlocks"
     //% target.shadow="mcfunction_selector_self"

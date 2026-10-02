@@ -6,7 +6,7 @@
  */
 
 //% color="#6A5ACD" weight=90 icon="\uf05b" block="MCFunction Selector"
-//% groups='["selector targets", "selector conditions", "common values", "others"]'
+//% groups='["Selector Targets", "Selector Conditions", "Common Values", "others"]'
 namespace MCFunctionFields {
 
     // ---------------------------------------------------------------------
@@ -127,16 +127,31 @@ namespace MCFunctionFields {
     }
 
     export enum HasItemLocation {
+        //% block="main hand"
         MainHand = 0,
+
+        //% block="off hand"
         OffHand = 1,
 
+        //% block="head"
         Head = 2,
+
+        //% block="chest"
         Chest = 3,
+
+        //% block="legs"
         Legs = 4,
+
+        //% block="feet"
         Feet = 5,
 
+        //% block="hotbar"
         Hotbar = 6,
+
+        //% block="inventory"
         Inventory = 7,
+
+        //% block="ender chest"
         EnderChest = 8
     }
 
@@ -206,7 +221,7 @@ namespace MCFunctionFields {
         }
     }
 
-    //% group="selector conditions"
+    //% group="Selector Conditions"
     //% blockId=mcfunction_selector_no_condition
     //% block="no more conditions"
     export function noSelectorCondition(
@@ -295,7 +310,7 @@ namespace MCFunctionFields {
     // Selector 조건 블록
     // ---------------------------------------------------------------------
 
-    //% group="selector conditions"
+    //% group="Selector Conditions"
     //% blockId=mcfunction_selector_entity_type_condition
     //% block="type $entity exclude $exclude next $next"
     //% entity.shadow="mcfunction_entity_select"
@@ -323,7 +338,7 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="selector conditions"
+    //% group="Selector Conditions"
     //% blockId=mcfunction_selector_text_condition
     //% block="$conditionType value $value exclude $exclude next $next"
     //% value.defl="Boss"
@@ -369,7 +384,7 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="selector conditions"
+    //% group="Selector Conditions"
     //% blockId=mcfunction_selector_gamemode_condition
     //% block="gamemode $mode exclude $exclude next $next"
     //% exclude.defl=false
@@ -396,7 +411,7 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="selector conditions"
+    //% group="Selector Conditions"
     //% blockId=mcfunction_selector_number_condition
     //% block="$conditionType value $value next $next"
     //% value.defl=0
@@ -456,7 +471,7 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="selector conditions"
+    //% group="Selector Conditions"
     //% blockId=mcfunction_selector_range_condition
     //% block="$conditionType $range next $next"
     //% range.shadow="mcfunction_range_min_max"
@@ -521,7 +536,7 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="selector conditions"
+    //% group="Selector Conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_type_filter
     //% block="type $typeId exclude $exclude next $next"
@@ -550,7 +565,7 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="selector conditions"
+    //% group="Selector Conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_name_filter
     //% block="name $name exclude $exclude next $next"
@@ -579,7 +594,7 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="selector conditions"
+    //% group="Selector Conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_tag_filter
     //% block="tag $tag exclude $exclude next $next"
@@ -608,7 +623,7 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="selector conditions"
+    //% group="Selector Conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_family_filter
     //% block="family $family exclude $exclude next $next"
@@ -637,7 +652,7 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="selector conditions"
+    //% group="Selector Conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_gamemode_filter
     //% block="gamemode $gamemode exclude $exclude next $next"
@@ -666,7 +681,7 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="selector conditions"
+    //% group="Selector Conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_number_filter
     //% block="$filterType value $value next $next"
@@ -758,7 +773,7 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="selector conditions"
+    //% group="Selector Conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_position_filter
     //% block="position x $x y $y z $z next $next"
@@ -805,7 +820,7 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="selector conditions"
+    //% group="Selector Conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_area_filter
     //% block="area x $x y $y z $z dx $dx dy $dy dz $dz next $next"
@@ -847,7 +862,7 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="selector conditions"
+    //% group="Selector Conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_distance_filter
     //% block="distance $range next $next"
@@ -886,7 +901,7 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="selector conditions"
+    //% group="Selector Conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_level_filter
     //% block="level $range next $next"
@@ -925,7 +940,7 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="selector conditions"
+    //% group="Selector Conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_rotation_x_filter
     //% block="x rotation $range next $next"
@@ -964,7 +979,7 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="selector conditions"
+    //% group="Selector Conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_rotation_y_filter
     //% block="y rotation $range next $next"
@@ -1003,7 +1018,7 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="selector conditions"
+    //% group="Selector Conditions"
     //% blockId=mcfunction_selector_score_filter
     //% block="score objective $objective range $range next $next"
     //% objective.defl="money"
@@ -1031,7 +1046,7 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="selector conditions"
+    //% group="Selector Conditions"
     //% blockId=mcfunction_selector_hasitem_filter
     //% block="has item $item quantity $quantity next $next"
     //% item.shadow="mcfunction_item_select"
@@ -1058,7 +1073,7 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="selector conditions"
+    //% group="Selector Conditions"
     //% blockId=mcfunction_selector_hasitem_advanced
     //% block="has item details $item quantity $quantity location $location slot $slot data $data next $next"
     //% item.shadow="mcfunction_item_select"
@@ -1124,7 +1139,7 @@ namespace MCFunctionFields {
     // @initiator            → Dialogue 전용, 조건 사용 불가
     // ---------------------------------------------------------------------
 
-    //% group="selector targets"
+    //% group="Selector Targets"
     //% blockId=mcfunction_selector_all_players
     //% block="all players @a $conditions"
     //% conditions.shadow="mcfunction_selector_no_condition"
@@ -1147,7 +1162,7 @@ namespace MCFunctionFields {
         );
     }
 
-    //% group="selector targets"
+    //% group="Selector Targets"
     //% blockId=mcfunction_selector_all_entities
     //% block="all entities @e $conditions"
     //% conditions.shadow="mcfunction_selector_no_condition"
@@ -1170,7 +1185,7 @@ namespace MCFunctionFields {
         );
     }
 
-    //% group="selector targets"
+    //% group="Selector Targets"
     //% blockId=mcfunction_selector_nearest_player
     //% block="nearest player @p $conditions"
     //% conditions.shadow="mcfunction_selector_no_condition"
@@ -1193,7 +1208,7 @@ namespace MCFunctionFields {
         );
     }
 
-    //% group="selector targets"
+    //% group="Selector Targets"
     //% blockId=mcfunction_selector_random_player
     //% block="random player @r $conditions"
     //% conditions.shadow="mcfunction_selector_no_condition"
@@ -1216,7 +1231,7 @@ namespace MCFunctionFields {
         );
     }
 
-    //% group="selector targets"
+    //% group="Selector Targets"
     //% blockId=mcfunction_selector_self
     //% block="self @s $conditions"
     //% conditions.shadow="mcfunction_selector_no_condition"
@@ -1239,7 +1254,7 @@ namespace MCFunctionFields {
         );
     }
 
-    //% group="selector targets"
+    //% group="Selector Targets"
     //% blockId=mcfunction_selector_initiator
     //% block="dialogue initiator @initiator"
     export function initiator(): SelectorValue {

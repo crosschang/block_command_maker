@@ -6,10 +6,10 @@
  */
 
 //% color="#C98900" weight=88 icon="\uf06b" block="MCFunction Item"
-//% groups='["select and input", "components", "registry"]'
+//% groups='["Selection & Input", "Item Components", "Registry"]'
 namespace MCFunctionItemLibrary {
 
-    //% group="select and input"
+    //% group="Selection & Input"
     //% weight=100
     //% blockId=mcfunction_item_select
     //% block="item select $preset"
@@ -20,7 +20,7 @@ namespace MCFunctionItemLibrary {
         return MCFunctionFields.itemSelect(preset);
     }
 
-    //% group="select and input"
+    //% group="Selection & Input"
     //% weight=99
     //% blockId=mcfunction_item
     //% block="item custom id $itemId"
@@ -32,7 +32,7 @@ namespace MCFunctionItemLibrary {
         return MCFunctionFields.item(itemId);
     }
 
-    //% group="components"
+    //% group="Item Components"
     //% weight=90
     //% blockId=mcfunction_item_components
     //% block="no item components"
@@ -42,7 +42,7 @@ namespace MCFunctionItemLibrary {
         return MCFunctionFields.itemComponents();
     }
 
-    //% group="components"
+    //% group="Item Components"
     //% weight=89
     //% blockId=mcfunction_item_component_can_destroy
     //% block="can destroy block $blockValue add then $components"
@@ -59,7 +59,7 @@ namespace MCFunctionItemLibrary {
         );
     }
 
-    //% group="components"
+    //% group="Item Components"
     //% weight=88
     //% blockId=mcfunction_item_component_can_place_on
     //% block="can place on block $blockValue add then $components"
@@ -76,7 +76,7 @@ namespace MCFunctionItemLibrary {
         );
     }
 
-    //% group="components"
+    //% group="Item Components"
     //% weight=87
     //% blockId=mcfunction_item_component_lock_inventory
     //% block="lock in inventory then $components"
@@ -88,7 +88,7 @@ namespace MCFunctionItemLibrary {
         return MCFunctionFields.lockInInventory(components);
     }
 
-    //% group="components"
+    //% group="Item Components"
     //% weight=86
     //% blockId=mcfunction_item_component_lock_slot
     //% block="lock in slot then $components"
@@ -100,7 +100,7 @@ namespace MCFunctionItemLibrary {
         return MCFunctionFields.lockInSlot(components);
     }
 
-    //% group="components"
+    //% group="Item Components"
     //% weight=85
     //% blockId=mcfunction_item_component_keep_on_death
     //% block="keep on death then $components"

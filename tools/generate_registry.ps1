@@ -309,7 +309,7 @@ function New-RegistryLibraryBlocksTs {
         $blockIdPart = Convert-ToSafeBlockIdPart ([string]$entry.id)
         $weight = [Math]::Max(1, 200 - $i)
 
-        $lines.Add("    //% group=`"registry`"")
+        $lines.Add("    //% group=`"Registry`"")
         $lines.Add("    //% weight=$weight")
         $lines.Add("    //% blockId=mcfunction_${KindLower}_registry_$blockIdPart")
         $lines.Add("    //% block=`"$KindLower $id`"")

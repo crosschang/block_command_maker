@@ -5,7 +5,7 @@
 
 namespace MCFunctionItemLibrary {
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=200
     //% blockId=mcfunction_item_registry_minecraft_stone
     //% block="item minecraft:stone"
@@ -13,7 +13,7 @@ namespace MCFunctionItemLibrary {
         return new MCFunctionFields.ItemValue("minecraft:stone");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=199
     //% blockId=mcfunction_item_registry_minecraft_dirt
     //% block="item minecraft:dirt"
@@ -21,7 +21,7 @@ namespace MCFunctionItemLibrary {
         return new MCFunctionFields.ItemValue("minecraft:dirt");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=198
     //% blockId=mcfunction_item_registry_minecraft_diamond
     //% block="item minecraft:diamond"
@@ -29,7 +29,7 @@ namespace MCFunctionItemLibrary {
         return new MCFunctionFields.ItemValue("minecraft:diamond");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=197
     //% blockId=mcfunction_item_registry_minecraft_emerald
     //% block="item minecraft:emerald"
@@ -37,7 +37,7 @@ namespace MCFunctionItemLibrary {
         return new MCFunctionFields.ItemValue("minecraft:emerald");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=196
     //% blockId=mcfunction_item_registry_minecraft_iron_ingot
     //% block="item minecraft:iron_ingot"
@@ -45,7 +45,7 @@ namespace MCFunctionItemLibrary {
         return new MCFunctionFields.ItemValue("minecraft:iron_ingot");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=195
     //% blockId=mcfunction_item_registry_minecraft_gold_ingot
     //% block="item minecraft:gold_ingot"
@@ -53,7 +53,7 @@ namespace MCFunctionItemLibrary {
         return new MCFunctionFields.ItemValue("minecraft:gold_ingot");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=194
     //% blockId=mcfunction_item_registry_minecraft_diamond_sword
     //% block="item minecraft:diamond_sword"
@@ -61,7 +61,7 @@ namespace MCFunctionItemLibrary {
         return new MCFunctionFields.ItemValue("minecraft:diamond_sword");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=193
     //% blockId=mcfunction_item_registry_minecraft_diamond_pickaxe
     //% block="item minecraft:diamond_pickaxe"
@@ -69,7 +69,7 @@ namespace MCFunctionItemLibrary {
         return new MCFunctionFields.ItemValue("minecraft:diamond_pickaxe");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=192
     //% blockId=mcfunction_item_registry_minecraft_bow
     //% block="item minecraft:bow"
@@ -77,7 +77,7 @@ namespace MCFunctionItemLibrary {
         return new MCFunctionFields.ItemValue("minecraft:bow");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=191
     //% blockId=mcfunction_item_registry_minecraft_arrow
     //% block="item minecraft:arrow"
@@ -85,7 +85,7 @@ namespace MCFunctionItemLibrary {
         return new MCFunctionFields.ItemValue("minecraft:arrow");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=190
     //% blockId=mcfunction_item_registry_minecraft_apple
     //% block="item minecraft:apple"
@@ -93,7 +93,7 @@ namespace MCFunctionItemLibrary {
         return new MCFunctionFields.ItemValue("minecraft:apple");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=189
     //% blockId=mcfunction_item_registry_minecraft_bread
     //% block="item minecraft:bread"
@@ -101,7 +101,7 @@ namespace MCFunctionItemLibrary {
         return new MCFunctionFields.ItemValue("minecraft:bread");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=188
     //% blockId=mcfunction_item_registry_minecraft_paper
     //% block="item minecraft:paper"
@@ -109,7 +109,7 @@ namespace MCFunctionItemLibrary {
         return new MCFunctionFields.ItemValue("minecraft:paper");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=187
     //% blockId=mcfunction_item_registry_minecraft_name_tag
     //% block="item minecraft:name_tag"
@@ -117,7 +117,7 @@ namespace MCFunctionItemLibrary {
         return new MCFunctionFields.ItemValue("minecraft:name_tag");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=186
     //% blockId=mcfunction_item_registry_minecraft_compass
     //% block="item minecraft:compass"
@@ -125,7 +125,7 @@ namespace MCFunctionItemLibrary {
         return new MCFunctionFields.ItemValue("minecraft:compass");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=185
     //% blockId=mcfunction_item_registry_minecraft_clock
     //% block="item minecraft:clock"
@@ -133,7 +133,7 @@ namespace MCFunctionItemLibrary {
         return new MCFunctionFields.ItemValue("minecraft:clock");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=184
     //% blockId=mcfunction_item_registry_minecraft_stick
     //% block="item minecraft:stick"
@@ -141,7 +141,7 @@ namespace MCFunctionItemLibrary {
         return new MCFunctionFields.ItemValue("minecraft:stick");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=183
     //% blockId=mcfunction_item_registry_minecraft_book
     //% block="item minecraft:book"

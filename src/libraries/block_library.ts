@@ -6,10 +6,10 @@
  */
 
 //% color="#58708A" weight=87 icon="\uf1b2" block="MCFunction Block"
-//% groups='["select and input", "registry"]'
+//% groups='["Selection & Input", "Registry"]'
 namespace MCFunctionBlockLibrary {
 
-    //% group="select and input"
+    //% group="Selection & Input"
     //% weight=100
     //% blockId=mcfunction_block_select
     //% block="block select $preset"
@@ -20,7 +20,7 @@ namespace MCFunctionBlockLibrary {
         return MCFunctionFields.blockSelect(preset);
     }
 
-    //% group="select and input"
+    //% group="Selection & Input"
     //% weight=99
     //% blockId=mcfunction_block
     //% block="block custom id $blockId"

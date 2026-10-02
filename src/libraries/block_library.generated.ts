@@ -5,7 +5,7 @@
 
 namespace MCFunctionBlockLibrary {
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=200
     //% blockId=mcfunction_block_registry_minecraft_stone
     //% block="block minecraft:stone"
@@ -13,7 +13,7 @@ namespace MCFunctionBlockLibrary {
         return new MCFunctionFields.BlockValue("minecraft:stone");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=199
     //% blockId=mcfunction_block_registry_minecraft_dirt
     //% block="block minecraft:dirt"
@@ -21,7 +21,7 @@ namespace MCFunctionBlockLibrary {
         return new MCFunctionFields.BlockValue("minecraft:dirt");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=198
     //% blockId=mcfunction_block_registry_minecraft_grass_block
     //% block="block minecraft:grass_block"
@@ -29,7 +29,7 @@ namespace MCFunctionBlockLibrary {
         return new MCFunctionFields.BlockValue("minecraft:grass_block");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=197
     //% blockId=mcfunction_block_registry_minecraft_cobblestone
     //% block="block minecraft:cobblestone"
@@ -37,7 +37,7 @@ namespace MCFunctionBlockLibrary {
         return new MCFunctionFields.BlockValue("minecraft:cobblestone");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=196
     //% blockId=mcfunction_block_registry_minecraft_oak_planks
     //% block="block minecraft:oak_planks"
@@ -45,7 +45,7 @@ namespace MCFunctionBlockLibrary {
         return new MCFunctionFields.BlockValue("minecraft:oak_planks");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=195
     //% blockId=mcfunction_block_registry_minecraft_glass
     //% block="block minecraft:glass"
@@ -53,7 +53,7 @@ namespace MCFunctionBlockLibrary {
         return new MCFunctionFields.BlockValue("minecraft:glass");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=194
     //% blockId=mcfunction_block_registry_minecraft_bedrock
     //% block="block minecraft:bedrock"
@@ -61,7 +61,7 @@ namespace MCFunctionBlockLibrary {
         return new MCFunctionFields.BlockValue("minecraft:bedrock");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=193
     //% blockId=mcfunction_block_registry_minecraft_diamond_block
     //% block="block minecraft:diamond_block"
@@ -69,7 +69,7 @@ namespace MCFunctionBlockLibrary {
         return new MCFunctionFields.BlockValue("minecraft:diamond_block");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=192
     //% blockId=mcfunction_block_registry_minecraft_gold_block
     //% block="block minecraft:gold_block"
@@ -77,7 +77,7 @@ namespace MCFunctionBlockLibrary {
         return new MCFunctionFields.BlockValue("minecraft:gold_block");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=191
     //% blockId=mcfunction_block_registry_minecraft_iron_block
     //% block="block minecraft:iron_block"
@@ -85,7 +85,7 @@ namespace MCFunctionBlockLibrary {
         return new MCFunctionFields.BlockValue("minecraft:iron_block");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=190
     //% blockId=mcfunction_block_registry_minecraft_redstone_block
     //% block="block minecraft:redstone_block"
@@ -93,7 +93,7 @@ namespace MCFunctionBlockLibrary {
         return new MCFunctionFields.BlockValue("minecraft:redstone_block");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=189
     //% blockId=mcfunction_block_registry_minecraft_air
     //% block="block minecraft:air"
@@ -101,7 +101,7 @@ namespace MCFunctionBlockLibrary {
         return new MCFunctionFields.BlockValue("minecraft:air");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=188
     //% blockId=mcfunction_block_registry_minecraft_barrier
     //% block="block minecraft:barrier"
@@ -109,7 +109,7 @@ namespace MCFunctionBlockLibrary {
         return new MCFunctionFields.BlockValue("minecraft:barrier");
     }
 
-    //% group="registry"
+    //% group="Registry"
     //% weight=187
     //% blockId=mcfunction_block_registry_minecraft_chest
     //% block="block minecraft:chest"

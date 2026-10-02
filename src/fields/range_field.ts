@@ -12,9 +12,9 @@ namespace MCFunctionFields {
         }
     }
 
-    //% group="공통 값"
+    //% group="Common Values"
     //% blockId=mcfunction_range_min
-    //% block="범위 $min 이상"
+    //% block="range $min or more"
     //% min.defl=0
     export function rangeMin(
         min: number
@@ -24,9 +24,9 @@ namespace MCFunctionFields {
         );
     }
 
-    //% group="공통 값"
+    //% group="Common Values"
     //% blockId=mcfunction_range_max
-    //% block="범위 $max 이하"
+    //% block="range $max or less"
     //% max.defl=10
     export function rangeMax(
         max: number
@@ -36,9 +36,9 @@ namespace MCFunctionFields {
         );
     }
 
-    //% group="공통 값"
+    //% group="Common Values"
     //% blockId=mcfunction_range_min_max
-    //% block="범위 $min 에서 $max"
+    //% block="range $min to $max"
     //% min.defl=0
     //% max.defl=10
     export function rangeMinMax(
