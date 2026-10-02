@@ -21,7 +21,7 @@ namespace MCFunctionFields {
 
     //% group="아이템 상세"
     //% blockId=mcfunction_item_components
-    //% block="아이템 컴포넌트"
+    //% block="아이템 컴포넌트 없음"
     export function itemComponents(
     ): ItemComponentsValue {
 
@@ -32,7 +32,7 @@ namespace MCFunctionFields {
 
     //% group="아이템 상세"
     //% blockId=mcfunction_item_component_can_destroy
-    //% block="컴포넌트 $components 캘 수 있는 블록 $blockName 추가"
+    //% block="캘 수 있는 블록 $blockName 추가 다음 $components"
     //% components.shadow="mcfunction_item_components"
     //% blockName.defl="minecraft:stone"
     export function addCanDestroy(
@@ -50,7 +50,7 @@ namespace MCFunctionFields {
 
     //% group="아이템 상세"
     //% blockId=mcfunction_item_component_can_place_on
-    //% block="컴포넌트 $components 설치 가능한 블록 $blockName 추가"
+    //% block="설치 가능한 블록 $blockName 추가 다음 $components"
     //% components.shadow="mcfunction_item_components"
     //% blockName.defl="minecraft:stone"
     export function addCanPlaceOn(
@@ -68,7 +68,7 @@ namespace MCFunctionFields {
 
     //% group="아이템 상세"
     //% blockId=mcfunction_item_component_lock_inventory
-    //% block="컴포넌트 $components 인벤토리에 잠금"
+    //% block="인벤토리에 잠금 다음 $components"
     //% components.shadow="mcfunction_item_components"
     export function lockInInventory(
         components: ItemComponentsValue
@@ -84,7 +84,7 @@ namespace MCFunctionFields {
 
     //% group="아이템 상세"
     //% blockId=mcfunction_item_component_lock_slot
-    //% block="컴포넌트 $components 슬롯에 잠금"
+    //% block="슬롯에 잠금 다음 $components"
     //% components.shadow="mcfunction_item_components"
     export function lockInSlot(
         components: ItemComponentsValue
@@ -100,7 +100,7 @@ namespace MCFunctionFields {
 
     //% group="아이템 상세"
     //% blockId=mcfunction_item_component_keep_on_death
-    //% block="컴포넌트 $components 사망 시 유지"
+    //% block="사망 시 유지 다음 $components"
     //% components.shadow="mcfunction_item_components"
     export function keepOnDeath(
         components: ItemComponentsValue

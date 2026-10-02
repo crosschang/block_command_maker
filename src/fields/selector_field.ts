@@ -6,7 +6,7 @@
  */
 
 //% color="#6A5ACD" weight=90 icon="\uf1b2" block="MCFunction"
-//% groups='["선택자 대상", "선택자 조건", "others"]'
+//% groups='["선택자 대상", "선택자 조건", "아이템", "아이템 상세", "공통 값", "others"]'
 namespace MCFunctionFields {
 
     export enum SelectorNumberFilterType {
@@ -27,16 +27,325 @@ namespace MCFunctionFields {
         Count = 14
     }
 
+    export enum HasItemLocation {
+        MainHand = 0,
+        OffHand = 1,
+
+        Head = 2,
+        Chest = 3,
+        Legs = 4,
+        Feet = 5,
+
+        Hotbar = 6,
+        Inventory = 7,
+        EnderChest = 8
+    }
+
+    function toSlotLocation(
+        location: HasItemLocation
+    ): MCFunctionAST.SlotLocation {
+
+        switch (location) {
+
+            case HasItemLocation.MainHand:
+                return MCFunctionAST.SlotLocation.WeaponMainhand;
+
+            case HasItemLocation.OffHand:
+                return MCFunctionAST.SlotLocation.WeaponOffhand;
+
+            case HasItemLocation.Head:
+                return MCFunctionAST.SlotLocation.ArmorHead;
+
+            case HasItemLocation.Chest:
+                return MCFunctionAST.SlotLocation.ArmorChest;
+
+            case HasItemLocation.Legs:
+                return MCFunctionAST.SlotLocation.ArmorLegs;
+
+            case HasItemLocation.Feet:
+                return MCFunctionAST.SlotLocation.ArmorFeet;
+
+            case HasItemLocation.Hotbar:
+                return MCFunctionAST.SlotLocation.Hotbar;
+
+            case HasItemLocation.Inventory:
+                return MCFunctionAST.SlotLocation.Inventory;
+
+            case HasItemLocation.EnderChest:
+                return MCFunctionAST.SlotLocation.EnderChest;
+
+            default:
+                return MCFunctionAST.SlotLocation.Inventory;
+        }
+    }
+
+    // ---------------------------------------------------------------------
+    // Selector Condition Chain
+    //
+    // MakeCode UI에서는 조건들을 다음(next)으로 이어 붙이고,
+    // Block Adapter가 최종 Selector AST에 적용한다.
+    // ---------------------------------------------------------------------
+
+    export class SelectorConditionValue {
+
+        filters: MCFunctionAST.SelectorFilter[];
+        scores: MCFunctionAST.SelectorScoreCondition[];
+        hasItems: MCFunctionAST.SelectorHasItemCondition[];
+
+        next: SelectorConditionValue;
+        isEnd: boolean;
+
+        constructor() {
+            this.filters = [];
+            this.scores = [];
+            this.hasItems = [];
+
+            // PXT 호환을 위해 null/undefined 대신 자기 자신을 기본값으로 둔다.
+            // 실제 조건 생성 함수에서는 반드시 next를 덮어쓴다.
+            this.next = this;
+            this.isEnd = false;
+        }
+    }
+
+    //% group="선택자 조건"
+    //% blockId=mcfunction_selector_no_condition
+    //% block="추가 조건 없음"
+    export function noSelectorCondition(
+    ): SelectorConditionValue {
+
+        let condition =
+            new SelectorConditionValue();
+
+        condition.isEnd = true;
+
+        return condition;
+    }
+
+    function applySelectorConditions(
+        selector: MCFunctionAST.Selector,
+        condition: SelectorConditionValue
+    ): void {
+
+        let current = condition;
+
+        while (!current.isEnd) {
+
+            // 일반 Selector Filter
+            for (
+                let i = 0;
+                i < current.filters.length;
+                i++
+            ) {
+
+                let filter = current.filters[i];
+
+                // 반복 가능한 조건
+                if (
+                    filter.key == "tag" ||
+                    filter.key == "family" ||
+                    filter.key == "type" ||
+                    filter.key == "name"
+                ) {
+
+                    MCFunctionAST.addSelectorFilter(
+                        selector,
+                        filter
+                    );
+
+                } else {
+
+                    // x, r, m, l, rx 등 단일 조건
+                    MCFunctionAST.setSelectorFilter(
+                        selector,
+                        filter
+                    );
+                }
+            }
+
+            // Scores: objective별로 하나만 유지
+            for (
+                let i = 0;
+                i < current.scores.length;
+                i++
+            ) {
+
+                MCFunctionAST.setSelectorScoreCondition(
+                    selector,
+                    current.scores[i]
+                );
+            }
+
+            // HasItem: 현재 V1에서는 하나만 유지
+            for (
+                let i = 0;
+                i < current.hasItems.length;
+                i++
+            ) {
+
+                MCFunctionAST.setSelectorHasItemCondition(
+                    selector,
+                    current.hasItems[i]
+                );
+            }
+
+            current = current.next;
+        }
+    }
+
+    // ---------------------------------------------------------------------
+    // Selector 조건 블록
+    // ---------------------------------------------------------------------
+
+    //% group="선택자 조건"
+    //% blockId=mcfunction_selector_type_filter
+    //% block="종류 type $typeId 제외 $exclude 다음 $next"
+    //% typeId.defl="minecraft:zombie"
+    //% exclude.defl=false
+    //% next.shadow="mcfunction_selector_no_condition"
+    export function addTypeFilter(
+        typeId: string,
+        exclude: boolean,
+        next: SelectorConditionValue
+    ): SelectorConditionValue {
+
+        let condition =
+            new SelectorConditionValue();
+
+        condition.next = next;
+
+        condition.filters.push(
+            MCFunctionAST.createSelectorFilter(
+                "type",
+                typeId,
+                exclude
+            )
+        );
+
+        return condition;
+    }
+
+    //% group="선택자 조건"
+    //% blockId=mcfunction_selector_name_filter
+    //% block="이름 name $name 제외 $exclude 다음 $next"
+    //% name.defl="Boss"
+    //% exclude.defl=false
+    //% next.shadow="mcfunction_selector_no_condition"
+    export function addNameFilter(
+        name: string,
+        exclude: boolean,
+        next: SelectorConditionValue
+    ): SelectorConditionValue {
+
+        let condition =
+            new SelectorConditionValue();
+
+        condition.next = next;
+
+        condition.filters.push(
+            MCFunctionAST.createSelectorFilter(
+                "name",
+                name,
+                exclude
+            )
+        );
+
+        return condition;
+    }
+
+    //% group="선택자 조건"
+    //% blockId=mcfunction_selector_tag_filter
+    //% block="태그 tag $tag 제외 $exclude 다음 $next"
+    //% tag.defl="boss"
+    //% exclude.defl=false
+    //% next.shadow="mcfunction_selector_no_condition"
+    export function addTagFilter(
+        tag: string,
+        exclude: boolean,
+        next: SelectorConditionValue
+    ): SelectorConditionValue {
+
+        let condition =
+            new SelectorConditionValue();
+
+        condition.next = next;
+
+        condition.filters.push(
+            MCFunctionAST.createSelectorFilter(
+                "tag",
+                tag,
+                exclude
+            )
+        );
+
+        return condition;
+    }
+
+    //% group="선택자 조건"
+    //% blockId=mcfunction_selector_family_filter
+    //% block="패밀리 family $family 제외 $exclude 다음 $next"
+    //% family.defl="monster"
+    //% exclude.defl=false
+    //% next.shadow="mcfunction_selector_no_condition"
+    export function addFamilyFilter(
+        family: string,
+        exclude: boolean,
+        next: SelectorConditionValue
+    ): SelectorConditionValue {
+
+        let condition =
+            new SelectorConditionValue();
+
+        condition.next = next;
+
+        condition.filters.push(
+            MCFunctionAST.createSelectorFilter(
+                "family",
+                family,
+                exclude
+            )
+        );
+
+        return condition;
+    }
+
+    //% group="선택자 조건"
+    //% blockId=mcfunction_selector_gamemode_filter
+    //% block="게임모드 $gamemode 제외 $exclude 다음 $next"
+    //% gamemode.defl="survival"
+    //% exclude.defl=false
+    //% next.shadow="mcfunction_selector_no_condition"
+    export function addGameModeFilter(
+        gamemode: string,
+        exclude: boolean,
+        next: SelectorConditionValue
+    ): SelectorConditionValue {
+
+        let condition =
+            new SelectorConditionValue();
+
+        condition.next = next;
+
+        condition.filters.push(
+            MCFunctionAST.createSelectorFilter(
+                "m",
+                gamemode,
+                exclude
+            )
+        );
+
+        return condition;
+    }
+
     //% group="선택자 조건"
     //% blockId=mcfunction_selector_number_filter
-    //% block="$filterType 값 $value 조건 추가 → $selector"
-    //% selector.shadow="mcfunction_selector_all_players"
+    //% block="$filterType 값 $value 다음 $next"
     //% value.defl=0
+    //% next.shadow="mcfunction_selector_no_condition"
     export function addNumberFilter(
-        selector: SelectorValue,
         filterType: SelectorNumberFilterType,
-        value: number
-    ): SelectorValue {
+        value: number,
+        next: SelectorConditionValue
+    ): SelectorConditionValue {
 
         let key = "";
 
@@ -102,8 +411,12 @@ namespace MCFunctionFields {
                 break;
         }
 
-        MCFunctionAST.setSelectorFilter(
-            selector.selector,
+        let condition =
+            new SelectorConditionValue();
+
+        condition.next = next;
+
+        condition.filters.push(
             MCFunctionAST.createSelectorFilter(
                 key,
                 "" + value,
@@ -111,238 +424,20 @@ namespace MCFunctionFields {
             )
         );
 
-        return selector;
-    }
-
-    export enum HasItemLocation {
-        MainHand = 0,
-        OffHand = 1,
-
-        Head = 2,
-        Chest = 3,
-        Legs = 4,
-        Feet = 5,
-
-        Hotbar = 6,
-        Inventory = 7,
-        EnderChest = 8
-    }
-
-    function toSlotLocation(
-        location: HasItemLocation
-    ): MCFunctionAST.SlotLocation {
-
-        switch (location) {
-
-            case HasItemLocation.MainHand:
-                return MCFunctionAST.SlotLocation.WeaponMainhand;
-
-            case HasItemLocation.OffHand:
-                return MCFunctionAST.SlotLocation.WeaponOffhand;
-
-            case HasItemLocation.Head:
-                return MCFunctionAST.SlotLocation.ArmorHead;
-
-            case HasItemLocation.Chest:
-                return MCFunctionAST.SlotLocation.ArmorChest;
-
-            case HasItemLocation.Legs:
-                return MCFunctionAST.SlotLocation.ArmorLegs;
-
-            case HasItemLocation.Feet:
-                return MCFunctionAST.SlotLocation.ArmorFeet;
-
-            case HasItemLocation.Hotbar:
-                return MCFunctionAST.SlotLocation.Hotbar;
-
-            case HasItemLocation.Inventory:
-                return MCFunctionAST.SlotLocation.Inventory;
-
-            case HasItemLocation.EnderChest:
-                return MCFunctionAST.SlotLocation.EnderChest;
-
-            default:
-                return MCFunctionAST.SlotLocation.Inventory;
-        }
-    }
-
-    export class SelectorConditionValue {
-
-        filters: MCFunctionAST.SelectorFilter[];
-        scores: MCFunctionAST.SelectorScoreCondition[];
-        hasItems: MCFunctionAST.SelectorHasItemCondition[];
-
-        next: SelectorConditionValue;
-
-        isEnd: boolean;
-
-        constructor() {
-
-            this.filters = [];
-            this.scores = [];
-            this.hasItems = [];
-
-            // 기본값은 자기 자신
-            // null / undefined를 사용하지 않는다.
-            this.next = this;
-
-            this.isEnd = false;
-        }
-    }
-
-
-    //% group="선택자 조건"
-    //% blockId=mcfunction_selector_no_condition
-    //% block="추가 조건 없음"
-    export function noSelectorCondition(
-    ): SelectorConditionValue {
-
-        let condition =
-            new SelectorConditionValue();
-
-        condition.isEnd = true;
-
         return condition;
     }
 
-    function applySelectorConditions(
-        selector: MCFunctionAST.Selector,
-        condition: SelectorConditionValue
-    ): void {
-
-        let current = condition;
-
-        while (!current.isEnd) {
-
-            // 일반 Selector filters
-            for (
-                let i = 0;
-                i < current.filters.length;
-                i++
-            ) {
-
-                let filter = current.filters[i];
-
-                // 반복 가능한 조건
-                if (
-                    filter.key == "tag" ||
-                    filter.key == "family" ||
-                    filter.key == "type" ||
-                    filter.key == "name"
-                ) {
-
-                    MCFunctionAST.addSelectorFilter(
-                        selector,
-                        filter
-                    );
-
-                } else {
-
-                    // x, r, m, l, rx 등 단일 조건
-                    MCFunctionAST.setSelectorFilter(
-                        selector,
-                        filter
-                    );
-                }
-            }
-
-
-            // Scores
-            for (
-                let i = 0;
-                i < current.scores.length;
-                i++
-            ) {
-
-                MCFunctionAST.setSelectorScoreCondition(
-                    selector,
-                    current.scores[i]
-                );
-            }
-
-
-            // HasItem
-            for (
-                let i = 0;
-                i < current.hasItems.length;
-                i++
-            ) {
-
-                MCFunctionAST.setSelectorHasItemCondition(
-                    selector,
-                    current.hasItems[i]
-                );
-            }
-
-
-            current = current.next;
-        }
-    }
-
-
-    // ---------------------------------------------------------------------
-    // Selector 반복 가능 조건
-    // type / name / tag는 같은 Selector에 조합해서 사용할 수 있다.
-    // 실제 의미는 SelectorFilter AST에 저장한다.
-    // ---------------------------------------------------------------------
-
     //% group="선택자 조건"
-    //% blockId=mcfunction_selector_type_filter
-    //% block="종류 type $typeId 제외 $exclude 조건 추가 → $selector"
-    //% selector.shadow="mcfunction_selector_all_entities"
-    //% typeId.defl="minecraft:zombie"
-    //% exclude.defl=false
-    export function addTypeFilter(
-        selector: SelectorValue,
-        typeId: string,
-        exclude: boolean
-    ): SelectorValue {
-
-        MCFunctionAST.addSelectorFilter(
-            selector.selector,
-            MCFunctionAST.createSelectorFilter(
-                "type",
-                typeId,
-                exclude
-            )
-        );
-
-        return selector;
-    }
-
-    //% group="선택자 조건"
-    //% blockId=mcfunction_selector_name_filter
-    //% block="이름 name $name 제외 $exclude 조건 추가 → $selector"
-    //% selector.shadow="mcfunction_selector_all_entities"
-    //% name.defl="Boss"
-    //% exclude.defl=false
-    export function addNameFilter(
-        selector: SelectorValue,
-        name: string,
-        exclude: boolean
-    ): SelectorValue {
-
-        MCFunctionAST.addSelectorFilter(
-            selector.selector,
-            MCFunctionAST.createSelectorFilter(
-                "name",
-                name,
-                exclude
-            )
-        );
-
-        return selector;
-    }
-
-    //% group="선택자 조건"
-    //% blockId=mcfunction_selector_tag_filter
-    //% block="태그 $tag 제외 $exclude 다음 $next"
-    //% tag.defl="boss"
-    //% exclude.defl=false
+    //% blockId=mcfunction_selector_position_filter
+    //% block="위치 X $x Y $y Z $z 다음 $next"
+    //% x.defl=0
+    //% y.defl=0
+    //% z.defl=0
     //% next.shadow="mcfunction_selector_no_condition"
-    export function addTagFilter(
-        tag: string,
-        exclude: boolean,
+    export function addPositionFilter(
+        x: number,
+        y: number,
+        z: number,
         next: SelectorConditionValue
     ): SelectorConditionValue {
 
@@ -353,126 +448,61 @@ namespace MCFunctionFields {
 
         condition.filters.push(
             MCFunctionAST.createSelectorFilter(
-                "tag",
-                tag,
-                exclude
+                "x",
+                "" + x,
+                false
+            )
+        );
+
+        condition.filters.push(
+            MCFunctionAST.createSelectorFilter(
+                "y",
+                "" + y,
+                false
+            )
+        );
+
+        condition.filters.push(
+            MCFunctionAST.createSelectorFilter(
+                "z",
+                "" + z,
+                false
             )
         );
 
         return condition;
     }
 
-    // ---------------------------------------------------------------------
-    // Selector 추가 조건
-    // family는 반복 가능, gamemode는 단일 조건으로 관리한다.
-    // ---------------------------------------------------------------------
-
-    //% group="선택자 조건"
-    //% blockId=mcfunction_selector_family_filter
-    //% block="패밀리 family $family 제외 $exclude 조건 추가 → $selector"
-    //% selector.shadow="mcfunction_selector_all_entities"
-    //% family.defl="monster"
-    //% exclude.defl=false
-    export function addFamilyFilter(
-        selector: SelectorValue,
-        family: string,
-        exclude: boolean
-    ): SelectorValue {
-
-        MCFunctionAST.addSelectorFilter(
-            selector.selector,
-            MCFunctionAST.createSelectorFilter(
-                "family",
-                family,
-                exclude
-            )
-        );
-
-        return selector;
-    }
-
-    //% group="선택자 조건"
-    //% blockId=mcfunction_selector_gamemode_filter
-    //% block="게임모드 $gamemode 제외 $exclude 조건 추가 → $selector"
-    //% selector.shadow="mcfunction_selector_all_players"
-    //% gamemode.defl="survival"
-    //% exclude.defl=false
-    export function addGameModeFilter(
-        selector: SelectorValue,
-        gamemode: string,
-        exclude: boolean
-    ): SelectorValue {
-
-        MCFunctionAST.setSelectorFilter(
-            selector.selector,
-            MCFunctionAST.createSelectorFilter(
-                "m",
-                gamemode,
-                exclude
-            )
-        );
-
-        return selector;
-    }
-
-    //% group="선택자 조건"
-    //% blockId=mcfunction_selector_position_filter
-    //% block="위치 X $x Y $y Z $z 조건 추가 → $selector"
-    //% selector.shadow="mcfunction_selector_all_players"
-    //% x.defl=0
-    //% y.defl=0
-    //% z.defl=0
-    export function addPositionFilter(
-        selector: SelectorValue,
-        x: number,
-        y: number,
-        z: number
-    ): SelectorValue {
-
-        MCFunctionAST.setSelectorFilter(
-            selector.selector,
-            MCFunctionAST.createSelectorFilter("x", "" + x, false)
-        );
-
-        MCFunctionAST.setSelectorFilter(
-            selector.selector,
-            MCFunctionAST.createSelectorFilter("y", "" + y, false)
-        );
-
-        MCFunctionAST.setSelectorFilter(
-            selector.selector,
-            MCFunctionAST.createSelectorFilter("z", "" + z, false)
-        );
-
-        return selector;
-    }
-
     //% group="선택자 조건"
     //% blockId=mcfunction_selector_area_filter
-    //% block="영역 X $x Y $y Z $z dX $dx dY $dy dZ $dz 조건 추가 → $selector"
-    //% selector.shadow="mcfunction_selector_all_players"
+    //% block="영역 X $x Y $y Z $z dX $dx dY $dy dZ $dz 다음 $next"
     //% x.defl=0
     //% y.defl=0
     //% z.defl=0
     //% dx.defl=0
     //% dy.defl=0
     //% dz.defl=0
+    //% next.shadow="mcfunction_selector_no_condition"
     export function addAreaFilter(
-        selector: SelectorValue,
         x: number,
         y: number,
         z: number,
         dx: number,
         dy: number,
-        dz: number
-    ): SelectorValue {
+        dz: number,
+        next: SelectorConditionValue
+    ): SelectorConditionValue {
+
+        let condition =
+            new SelectorConditionValue();
+
+        condition.next = next;
 
         let keys = ["x", "y", "z", "dx", "dy", "dz"];
         let values = [x, y, z, dx, dy, dz];
 
         for (let i = 0; i < keys.length; i++) {
-            MCFunctionAST.setSelectorFilter(
-                selector.selector,
+            condition.filters.push(
                 MCFunctionAST.createSelectorFilter(
                     keys[i],
                     "" + values[i],
@@ -481,33 +511,26 @@ namespace MCFunctionFields {
             );
         }
 
-        return selector;
+        return condition;
     }
 
     //% group="선택자 조건"
     //% blockId=mcfunction_selector_distance_filter
-    //% block="거리 $range 조건 추가 → $selector"
-    //% selector.shadow="mcfunction_selector_all_players"
+    //% block="거리 $range 다음 $next"
     //% range.shadow="mcfunction_range_min_max"
+    //% next.shadow="mcfunction_selector_no_condition"
     export function addDistanceFilter(
-        selector: SelectorValue,
-        range: RangeValue
-    ): SelectorValue {
+        range: RangeValue,
+        next: SelectorConditionValue
+    ): SelectorConditionValue {
 
-        MCFunctionAST.removeSelectorFiltersByKey(
-            selector.selector,
-            "rm"
-        );
+        let condition =
+            new SelectorConditionValue();
 
-        MCFunctionAST.removeSelectorFiltersByKey(
-            selector.selector,
-            "r"
-        );
+        condition.next = next;
 
         if (range.range.hasMin) {
-
-            MCFunctionAST.setSelectorFilter(
-                selector.selector,
+            condition.filters.push(
                 MCFunctionAST.createSelectorFilter(
                     "rm",
                     "" + range.range.min,
@@ -517,9 +540,7 @@ namespace MCFunctionFields {
         }
 
         if (range.range.hasMax) {
-
-            MCFunctionAST.setSelectorFilter(
-                selector.selector,
+            condition.filters.push(
                 MCFunctionAST.createSelectorFilter(
                     "r",
                     "" + range.range.max,
@@ -528,33 +549,26 @@ namespace MCFunctionFields {
             );
         }
 
-        return selector;
+        return condition;
     }
 
     //% group="선택자 조건"
     //% blockId=mcfunction_selector_level_filter
-    //% block="레벨 $range 조건 추가 → $selector"
-    //% selector.shadow="mcfunction_selector_all_players"
+    //% block="레벨 $range 다음 $next"
     //% range.shadow="mcfunction_range_min_max"
+    //% next.shadow="mcfunction_selector_no_condition"
     export function addLevelFilter(
-        selector: SelectorValue,
-        range: RangeValue
-    ): SelectorValue {
+        range: RangeValue,
+        next: SelectorConditionValue
+    ): SelectorConditionValue {
 
-        MCFunctionAST.removeSelectorFiltersByKey(
-            selector.selector,
-            "lm"
-        );
+        let condition =
+            new SelectorConditionValue();
 
-        MCFunctionAST.removeSelectorFiltersByKey(
-            selector.selector,
-            "l"
-        );
-
+        condition.next = next;
 
         if (range.range.hasMin) {
-            MCFunctionAST.setSelectorFilter(
-                selector.selector,
+            condition.filters.push(
                 MCFunctionAST.createSelectorFilter(
                     "lm",
                     "" + range.range.min,
@@ -564,8 +578,7 @@ namespace MCFunctionFields {
         }
 
         if (range.range.hasMax) {
-            MCFunctionAST.setSelectorFilter(
-                selector.selector,
+            condition.filters.push(
                 MCFunctionAST.createSelectorFilter(
                     "l",
                     "" + range.range.max,
@@ -574,33 +587,26 @@ namespace MCFunctionFields {
             );
         }
 
-        return selector;
+        return condition;
     }
 
     //% group="선택자 조건"
     //% blockId=mcfunction_selector_rotation_x_filter
-    //% block="X 회전 $range 조건 추가 → $selector"
-    //% selector.shadow="mcfunction_selector_all_players"
+    //% block="X 회전 $range 다음 $next"
     //% range.shadow="mcfunction_range_min_max"
+    //% next.shadow="mcfunction_selector_no_condition"
     export function addRotationXFilter(
-        selector: SelectorValue,
-        range: RangeValue
-    ): SelectorValue {
+        range: RangeValue,
+        next: SelectorConditionValue
+    ): SelectorConditionValue {
 
-        MCFunctionAST.removeSelectorFiltersByKey(
-            selector.selector,
-            "rxm"
-        );
+        let condition =
+            new SelectorConditionValue();
 
-        MCFunctionAST.removeSelectorFiltersByKey(
-            selector.selector,
-            "rx"
-        );
-
+        condition.next = next;
 
         if (range.range.hasMin) {
-            MCFunctionAST.setSelectorFilter(
-                selector.selector,
+            condition.filters.push(
                 MCFunctionAST.createSelectorFilter(
                     "rxm",
                     "" + range.range.min,
@@ -610,8 +616,7 @@ namespace MCFunctionFields {
         }
 
         if (range.range.hasMax) {
-            MCFunctionAST.setSelectorFilter(
-                selector.selector,
+            condition.filters.push(
                 MCFunctionAST.createSelectorFilter(
                     "rx",
                     "" + range.range.max,
@@ -620,33 +625,26 @@ namespace MCFunctionFields {
             );
         }
 
-        return selector;
+        return condition;
     }
 
     //% group="선택자 조건"
     //% blockId=mcfunction_selector_rotation_y_filter
-    //% block="Y 회전 $range 조건 추가 → $selector"
-    //% selector.shadow="mcfunction_selector_all_players"
+    //% block="Y 회전 $range 다음 $next"
     //% range.shadow="mcfunction_range_min_max"
+    //% next.shadow="mcfunction_selector_no_condition"
     export function addRotationYFilter(
-        selector: SelectorValue,
-        range: RangeValue
-    ): SelectorValue {
+        range: RangeValue,
+        next: SelectorConditionValue
+    ): SelectorConditionValue {
 
-        MCFunctionAST.removeSelectorFiltersByKey(
-            selector.selector,
-            "rym"
-        );
+        let condition =
+            new SelectorConditionValue();
 
-        MCFunctionAST.removeSelectorFiltersByKey(
-            selector.selector,
-            "ry"
-        );
-
+        condition.next = next;
 
         if (range.range.hasMin) {
-            MCFunctionAST.setSelectorFilter(
-                selector.selector,
+            condition.filters.push(
                 MCFunctionAST.createSelectorFilter(
                     "rym",
                     "" + range.range.min,
@@ -656,8 +654,7 @@ namespace MCFunctionFields {
         }
 
         if (range.range.hasMax) {
-            MCFunctionAST.setSelectorFilter(
-                selector.selector,
+            condition.filters.push(
                 MCFunctionAST.createSelectorFilter(
                     "ry",
                     "" + range.range.max,
@@ -666,23 +663,27 @@ namespace MCFunctionFields {
             );
         }
 
-        return selector;
+        return condition;
     }
 
     //% group="선택자 조건"
     //% blockId=mcfunction_selector_score_filter
-    //% block="스코어 목표 $objective 범위 $range 조건 추가 → $selector"
-    //% selector.shadow="mcfunction_selector_all_players"
+    //% block="스코어 목표 $objective 범위 $range 다음 $next"
     //% objective.defl="money"
     //% range.shadow="mcfunction_range_min_max"
+    //% next.shadow="mcfunction_selector_no_condition"
     export function addScoreFilter(
-        selector: SelectorValue,
         objective: string,
-        range: RangeValue
-    ): SelectorValue {
+        range: RangeValue,
+        next: SelectorConditionValue
+    ): SelectorConditionValue {
 
-        MCFunctionAST.setSelectorScoreCondition(
-            selector.selector,
+        let condition =
+            new SelectorConditionValue();
+
+        condition.next = next;
+
+        condition.scores.push(
             MCFunctionAST.createSelectorScoreCondition(
                 objective,
                 range.range,
@@ -690,48 +691,52 @@ namespace MCFunctionFields {
             )
         );
 
-        return selector;
+        return condition;
     }
 
     //% group="선택자 조건"
     //% blockId=mcfunction_selector_hasitem_filter
-    //% block="아이템 $item 개수 $quantity 보유 조건 추가 → $selector"
-    //% selector.shadow="mcfunction_selector_all_players"
+    //% block="아이템 $item 개수 $quantity 보유 다음 $next"
     //% item.shadow="mcfunction_item"
     //% quantity.shadow="mcfunction_range_min"
+    //% next.shadow="mcfunction_selector_no_condition"
     export function addHasItemFilter(
-        selector: SelectorValue,
         item: ItemValue,
-        quantity: RangeValue
-    ): SelectorValue {
+        quantity: RangeValue,
+        next: SelectorConditionValue
+    ): SelectorConditionValue {
 
-        MCFunctionAST.setSelectorHasItemCondition(
-            selector.selector,
+        let condition =
+            new SelectorConditionValue();
+
+        condition.next = next;
+
+        condition.hasItems.push(
             MCFunctionAST.createSelectorHasItemCondition(
                 item.itemId,
                 quantity.range
             )
         );
 
-        return selector;
+        return condition;
     }
 
     //% group="선택자 조건"
     //% blockId=mcfunction_selector_hasitem_advanced
-    //% block="아이템 보유 상세 $item 개수 $quantity 위치 $location 슬롯 $slot 데이터 $data → $selector"
-    //% selector.shadow="mcfunction_selector_all_players"
+    //% block="아이템 보유 상세 $item 개수 $quantity 위치 $location 슬롯 $slot 데이터 $data 다음 $next"
     //% item.shadow="mcfunction_item"
     //% quantity.shadow="mcfunction_range_min"
     //% slot.defl=0
     //% data.defl=0
+    //% next.shadow="mcfunction_selector_no_condition"
     export function addHasItemAdvancedFilter(
-        selector: SelectorValue,
         item: ItemValue,
         quantity: RangeValue,
         location: HasItemLocation,
         slot: number,
-        data: number
-    ): SelectorValue {
+        data: number,
+        next: SelectorConditionValue
+    ): SelectorConditionValue {
 
         let slotRange =
             MCFunctionAST.createMinMaxRange(
@@ -739,7 +744,7 @@ namespace MCFunctionFields {
                 slot
             );
 
-        let condition =
+        let hasItem =
             MCFunctionAST.createSelectorHasItemAdvancedCondition(
                 item.itemId,
                 quantity.range,
@@ -754,13 +759,18 @@ namespace MCFunctionFields {
                 data
             );
 
-        MCFunctionAST.setSelectorHasItemCondition(
-            selector.selector,
-            condition
-        );
+        let condition =
+            new SelectorConditionValue();
 
-        return selector;
+        condition.next = next;
+        condition.hasItems.push(hasItem);
+
+        return condition;
     }
+
+    // ---------------------------------------------------------------------
+    // Selector Value
+    // ---------------------------------------------------------------------
 
     export class SelectorValue {
         selector: MCFunctionAST.Selector;
@@ -773,14 +783,9 @@ namespace MCFunctionFields {
     // ---------------------------------------------------------------------
     // Selector 대상
     //
-    // @a, @e, @p, @r, @s
-    // → SelectorConditionValue 체인을 사용할 수 있다.
-    //
-    // @initiator
-    // → Dialogue 전용 특수 Selector.
-    // → 조건을 사용하지 않는다.
+    // @a, @e, @p, @r, @s → 조건 체인 사용 가능
+    // @initiator            → Dialogue 전용, 조건 사용 불가
     // ---------------------------------------------------------------------
-
 
     //% group="선택자 대상"
     //% blockId=mcfunction_selector_all_players
@@ -805,7 +810,6 @@ namespace MCFunctionFields {
         );
     }
 
-
     //% group="선택자 대상"
     //% blockId=mcfunction_selector_all_entities
     //% block="모든 엔티티 @e 조건 $conditions"
@@ -828,7 +832,6 @@ namespace MCFunctionFields {
             selector
         );
     }
-
 
     //% group="선택자 대상"
     //% blockId=mcfunction_selector_nearest_player
@@ -853,7 +856,6 @@ namespace MCFunctionFields {
         );
     }
 
-
     //% group="선택자 대상"
     //% blockId=mcfunction_selector_random_player
     //% block="무작위 플레이어 @r 조건 $conditions"
@@ -877,7 +879,6 @@ namespace MCFunctionFields {
         );
     }
 
-
     //% group="선택자 대상"
     //% blockId=mcfunction_selector_self
     //% block="자신 @s 조건 $conditions"
@@ -900,13 +901,6 @@ namespace MCFunctionFields {
             selector
         );
     }
-
-
-    // ---------------------------------------------------------------------
-    // Dialogue 전용 Selector
-    //
-    // @initiator에는 조건 입력을 제공하지 않는다.
-    // ---------------------------------------------------------------------
 
     //% group="선택자 대상"
     //% blockId=mcfunction_selector_initiator
