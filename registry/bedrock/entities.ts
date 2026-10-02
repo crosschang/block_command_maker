@@ -1,7 +1,7 @@
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
  *
- * Source: registry/source/bedrock/entities.json
+ * Source: registry/source/bedrock/entitys.json
  * Generator: tools/generate_registry.ps1
  */
 
@@ -10,22 +10,12 @@ namespace MCFunctionRegistryBedrock {
     export function entityIds(): string[] {
 
         return [
-            "minecraft:player",
-            "minecraft:zombie",
-            "minecraft:skeleton",
-            "minecraft:creeper",
-            "minecraft:armor_stand",
-            "minecraft:cow",
-            "minecraft:pig",
-            "minecraft:sheep",
-            "minecraft:villager",
-            "minecraft:iron_golem",
-            "minecraft:item",
-            "minecraft:arrow",
             "minecraft:agent",
             "minecraft:allay",
             "minecraft:area_effect_cloud",
             "minecraft:armadillo",
+            "minecraft:armor_stand",
+            "minecraft:arrow",
             "minecraft:axolotl",
             "minecraft:balloon",
             "minecraft:bat",
@@ -46,7 +36,9 @@ namespace MCFunctionRegistryBedrock {
             "minecraft:cod",
             "minecraft:command_block_minecart",
             "minecraft:copper_golem",
+            "minecraft:cow",
             "minecraft:creaking",
+            "minecraft:creeper",
             "minecraft:cushion",
             "minecraft:dolphin",
             "minecraft:donkey",
@@ -79,6 +71,8 @@ namespace MCFunctionRegistryBedrock {
             "minecraft:horse",
             "minecraft:husk",
             "minecraft:ice_bomb",
+            "minecraft:iron_golem",
+            "minecraft:item",
             "minecraft:leash_knot",
             "minecraft:lightning_bolt",
             "minecraft:lingering_potion",
@@ -98,18 +92,22 @@ namespace MCFunctionRegistryBedrock {
             "minecraft:parched",
             "minecraft:parrot",
             "minecraft:phantom",
+            "minecraft:pig",
             "minecraft:piglin",
             "minecraft:piglin_brute",
             "minecraft:pillager",
+            "minecraft:player",
             "minecraft:polar_bear",
             "minecraft:pufferfish",
             "minecraft:rabbit",
             "minecraft:ravager",
             "minecraft:salmon",
+            "minecraft:sheep",
             "minecraft:shield",
             "minecraft:shulker",
             "minecraft:shulker_bullet",
             "minecraft:silverfish",
+            "minecraft:skeleton",
             "minecraft:skeleton_horse",
             "minecraft:slime",
             "minecraft:small_fireball",
@@ -131,6 +129,7 @@ namespace MCFunctionRegistryBedrock {
             "minecraft:tropicalfish",
             "minecraft:turtle",
             "minecraft:vex",
+            "minecraft:villager",
             "minecraft:villager_v2",
             "minecraft:vindicator",
             "minecraft:wandering_trader",
@@ -145,6 +144,7 @@ namespace MCFunctionRegistryBedrock {
             "minecraft:xp_bottle",
             "minecraft:xp_orb",
             "minecraft:zoglin",
+            "minecraft:zombie",
             "minecraft:zombie_horse",
             "minecraft:zombie_nautilus",
             "minecraft:zombie_pigman",
@@ -165,7 +165,7 @@ namespace MCFunctionRegistryBedrock {
         );
     }
 
-    export function isKnownEntity(
+    export function isKnownEntitie(
         id: string
     ): boolean {
 

@@ -1,15 +1,3 @@
-
-# -------------------------------------------------------------------------
-# Registry value library generation migration
-# Visible Registry value blocks now belong to:
-# - MCFunctionEntityLibrary
-# - MCFunctionItemLibrary
-# - MCFunctionBlockLibrary
-#
-# The committed generated files in src/libraries are the current V1 output.
-# The next generator pass should emit those three files from Registry JSON.
-# -------------------------------------------------------------------------
-
 param(
     [switch]$Check
 )
@@ -36,6 +24,31 @@ function Read-RegistrySource {
     }
 
     return @($data.entries)
+}
+
+
+function Read-PresetSource {
+    param(
+        [string]$Path
+    )
+
+    $fullPath = Join-Path $ProjectRoot $Path
+
+    if (-not (Test-Path $fullPath)) {
+        throw "Preset source not found: $fullPath"
+    }
+
+    $data = Get-Content $fullPath -Raw -Encoding UTF8 | ConvertFrom-Json
+
+    if (
+        $null -eq $data.items -or
+        $null -eq $data.blocks -or
+        $null -eq $data.entities
+    ) {
+        throw "Preset source must contain items, blocks, and entities arrays: $fullPath"
+    }
+
+    return $data
 }
 
 function Convert-ToEnumName {
@@ -104,8 +117,13 @@ function Assert-RegistryEntries {
         [string]$Kind
     )
 
-    $ids = @{}
-    $enumNames = @{}
+    # PowerShell hashtables are case-insensitive by default.
+    # That incorrectly treated valid TypeScript identifiers such as
+    # Tallgrass and TallGrass as the same enum/function name.
+    #
+    # TypeScript identifiers ARE case-sensitive, so use Ordinal sets here.
+    $ids = New-Object 'System.Collections.Generic.HashSet[string]' ([System.StringComparer]::Ordinal)
+    $enumNames = New-Object 'System.Collections.Generic.HashSet[string]' ([System.StringComparer]::Ordinal)
 
     foreach ($entry in $Entries) {
         $id = [string]$entry.id
@@ -114,19 +132,15 @@ function Assert-RegistryEntries {
             throw "$Kind Registry contains an empty id."
         }
 
-        if ($ids.ContainsKey($id)) {
+        if (-not $ids.Add($id)) {
             throw "$Kind Registry contains duplicate id: $id"
         }
 
-        $ids[$id] = $true
-
         $enumName = Convert-ToEnumName $entry
 
-        if ($enumNames.ContainsKey($enumName)) {
+        if (-not $enumNames.Add($enumName)) {
             throw "$Kind Registry enum name collision: $enumName. Add an explicit enumName in the JSON source."
         }
-
-        $enumNames[$enumName] = $true
     }
 }
 
@@ -142,7 +156,7 @@ function New-RegistryTs {
     $lines.Add("/**")
     $lines.Add(" * AUTO-GENERATED FILE. DO NOT EDIT BY HAND.")
     $lines.Add(" *")
-    $lines.Add(" * Source: registry/source/bedrock/$KindLower.json")
+    $lines.Add(" * Source: registry/source/bedrock/${KindLower}s.json")
     $lines.Add(" * Generator: tools/generate_registry.ps1")
     $lines.Add(" */")
     $lines.Add("")
@@ -231,10 +245,11 @@ function New-PresetTs {
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
  *
- * Sources:
- * - registry/source/bedrock/items.json
- * - registry/source/bedrock/blocks.json
- * - registry/source/bedrock/entities.json
+ * Source:
+ * - registry/source/presets.json
+ *
+ * Full Registry data is intentionally NOT used for this dropdown.
+ * The complete values live in the Entity / Item / Block libraries.
  *
  * Generator:
  * - tools/generate_registry.ps1
@@ -384,9 +399,18 @@ $items = Read-RegistrySource "registry/source/bedrock/items.json"
 $blocks = Read-RegistrySource "registry/source/bedrock/blocks.json"
 $entities = Read-RegistrySource "registry/source/bedrock/entities.json"
 
+$presets = Read-PresetSource "registry/source/presets.json"
+$itemPresets = @($presets.items)
+$blockPresets = @($presets.blocks)
+$entityPresets = @($presets.entities)
+
 Assert-RegistryEntries $items "Item"
 Assert-RegistryEntries $blocks "Block"
 Assert-RegistryEntries $entities "Entity"
+
+Assert-RegistryEntries $itemPresets "Item preset"
+Assert-RegistryEntries $blockPresets "Block preset"
+Assert-RegistryEntries $entityPresets "Entity preset"
 
 Write-Or-Check `
     "registry/bedrock/items.ts" `
@@ -402,7 +426,7 @@ Write-Or-Check `
 
 Write-Or-Check `
     "src/fields/registry_presets.generated.ts" `
-    (New-PresetTs $items $blocks $entities)
+    (New-PresetTs $itemPresets $blockPresets $entityPresets)
 
 Write-Or-Check `
     "src/libraries/entity_library.generated.ts" `

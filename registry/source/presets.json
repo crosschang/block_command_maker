@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "description": "Curated stable quick-select presets. Full official Registry values are stored separately in registry/source/bedrock/*.json and exposed by the Entity / Item / Block libraries.",
+  "items": [
+    {
+      "id": "minecraft:stone"
+    },
+    {
+      "id": "minecraft:dirt"
+    },
+    {
+      "id": "minecraft:diamond"
+    },
+    {
+      "id": "minecraft:emerald"
+    },
+    {
+      "id": "minecraft:iron_ingot"
+    },
+    {
+      "id": "minecraft:gold_ingot"
+    },
+    {
+      "id": "minecraft:diamond_sword"
+    },
+    {
+      "id": "minecraft:diamond_pickaxe"
+    },
+    {
+      "id": "minecraft:bow"
+    },
+    {
+      "id": "minecraft:arrow"
+    },
+    {
+      "id": "minecraft:apple"
+    },
+    {
+      "id": "minecraft:bread"
+    },
+    {
+      "id": "minecraft:paper"
+    },
+    {
+      "id": "minecraft:name_tag"
+    },
+    {
+      "id": "minecraft:compass"
+    },
+    {
+      "id": "minecraft:clock"
+    },
+    {
+      "id": "minecraft:stick"
+    },
+    {
+      "id": "minecraft:book"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "minecraft:stone"
+    },
+    {
+      "id": "minecraft:dirt"
+    },
+    {
+      "id": "minecraft:grass_block"
+    },
+    {
+      "id": "minecraft:cobblestone"
+    },
+    {
+      "id": "minecraft:oak_planks"
+    },
+    {
+      "id": "minecraft:glass"
+    },
+    {
+      "id": "minecraft:bedrock"
+    },
+    {
+      "id": "minecraft:diamond_block"
+    },
+    {
+      "id": "minecraft:gold_block"
+    },
+    {
+      "id": "minecraft:iron_block"
+    },
+    {
+      "id": "minecraft:redstone_block"
+    },
+    {
+      "id": "minecraft:air"
+    },
+    {
+      "id": "minecraft:barrier"
+    },
+    {
+      "id": "minecraft:chest"
+    }
+  ],
+  "entities": [
+    {
+      "id": "minecraft:player"
+    },
+    {
+      "id": "minecraft:zombie"
+    },
+    {
+      "id": "minecraft:skeleton"
+    },
+    {
+      "id": "minecraft:creeper"
+    },
+    {
+      "id": "minecraft:armor_stand"
+    },
+    {
+      "id": "minecraft:cow"
+    },
+    {
+      "id": "minecraft:pig"
+    },
+    {
+      "id": "minecraft:sheep"
+    },
+    {
+      "id": "minecraft:villager"
+    },
+    {
+      "id": "minecraft:iron_golem"
+    },
+    {
+      "id": "minecraft:item"
+    },
+    {
+      "id": "minecraft:arrow"
+    }
+  ]
+}
