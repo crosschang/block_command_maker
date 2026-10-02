@@ -38,18 +38,18 @@
         "src/fields/selector_field.ts",
         "src/fields/item_components_field.ts",
         "src/fields/range_field.ts",
-        "src/fields/position_field.ts",
-        "src/fields/rotation_field.ts",
         "src/validator/validator.ts",
         "src/compiler/compiler.ts",
         "commands/say.ts",
         "commands/give.ts",
-        "commands/teleport.ts",
         "src/blocks/block_adapter.ts",
-        "src/blocks/teleport_blocks.ts",
         "docs/PROJECT_GUIDELINES.md",
         "custom.ts",
-        "tutorial-info-cache.json"
+        "tutorial-info-cache.json",
+        "src/fields/position_field.ts",
+        "src/fields/rotation_field.ts",
+        "commands/teleport.ts",
+        "src/blocks/teleport_blocks.ts"
     ],
     "testFiles": [
         "test.ts"
@@ -61,5 +61,5 @@
     "supportedTargets": [
         "minecraft"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "blocksprj"
 }
