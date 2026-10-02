@@ -25,6 +25,7 @@
         "src/fields/item_field.ts",
         "src/fields/item_components_field.ts",
         "src/fields/range_field.ts",
+        "src/validator/validator.ts",
         "src/compiler/compiler.ts",
         "commands/say.ts",
         "commands/give.ts",

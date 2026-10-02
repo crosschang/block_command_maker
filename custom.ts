@@ -105,7 +105,7 @@ namespace MCFunctionTest {
             false
         );
 
-        MCFunctionAST.addSelectorFilter(
+        MCFunctionAST.setSelectorFilter(
             selector,
             filter
         );
@@ -178,7 +178,7 @@ namespace MCFunctionTest {
                 0
             );
 
-        MCFunctionAST.addSelectorHasItemCondition(
+        MCFunctionAST.setSelectorHasItemCondition(
             selector,
             condition
         );

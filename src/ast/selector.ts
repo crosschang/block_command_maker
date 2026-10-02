@@ -129,6 +129,89 @@ namespace MCFunctionAST {
         selector.filters.push(filter);
     }
 
+/**
+ * 같은 key를 가진 기존 SelectorFilter를 제거한다.
+ *
+ * x, r, m처럼 한 번만 존재해야 하는 조건을
+ * 다시 설정할 때 사용한다.
+ */
+export function removeSelectorFiltersByKey(
+    selector: Selector,
+    key: string
+): void {
+
+    let filters: SelectorFilter[] = [];
+
+    for (let i = 0; i < selector.filters.length; i++) {
+
+        if (selector.filters[i].key != key) {
+            filters.push(selector.filters[i]);
+        }
+    }
+
+    selector.filters = filters;
+}
+
+
+/**
+ * 단일 Selector 조건 설정.
+ *
+ * 같은 key가 이미 있으면 기존 값을 교체한다.
+ */
+export function setSelectorFilter(
+    selector: Selector,
+    filter: SelectorFilter
+): void {
+
+    removeSelectorFiltersByKey(
+        selector,
+        filter.key
+    );
+
+    selector.filters.push(filter);
+}
+
+    /**
+     * Score objective 설정.
+     *
+     * 같은 objective가 이미 있으면 교체하고,
+     * 다른 objective라면 추가한다.
+     */
+    export function setSelectorScoreCondition(
+        selector: Selector,
+        condition: SelectorScoreCondition
+    ): void {
+
+        for (let i = 0; i < selector.scores.length; i++) {
+
+            if (
+                selector.scores[i].objective ==
+                condition.objective
+            ) {
+                selector.scores[i] = condition;
+                return;
+            }
+        }
+
+        selector.scores.push(condition);
+    }
+
+
+    /**
+     * V1에서는 hasitem 조건 하나를 사용한다.
+     *
+     * 기존 hasitem이 있으면 새 조건으로 교체한다.
+     */
+    export function setSelectorHasItemCondition(
+        selector: Selector,
+        condition: SelectorHasItemCondition
+    ): void {
+
+        selector.hasItems = [
+            condition
+        ];
+    }
+
     export function createSelectorScoreCondition(
         objective: string,
         range: NumberRange,
