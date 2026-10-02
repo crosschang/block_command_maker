@@ -7,12 +7,12 @@
  */
 
 //% color="#4F46E5" weight=96 icon="\uf0b2" block="MCFunction TP"
-//% groups='["기본 이동", "회전/바라보기"]'
+//% groups='["basic movement", "rotation and facing"]'
 namespace MCFunctionTeleport {
 
-    //% group="기본 이동"
+    //% group="basic movement"
     //% blockId=mcfunction_tp_position
-    //% block="TP 대상 $target 위치 $destination 블록 확인 $checkForBlocks"
+    //% block="teleport target $target to position $destination check blocks $checkForBlocks"
     //% target.shadow="mcfunction_selector_self"
     //% destination.shadow="mcfunction_position_relative"
     //% checkForBlocks.defl=false
@@ -34,9 +34,9 @@ namespace MCFunctionTeleport {
         );
     }
 
-    //% group="기본 이동"
+    //% group="basic movement"
     //% blockId=mcfunction_tp_entity
-    //% block="TP 대상 $target 다른 대상 $destination 블록 확인 $checkForBlocks"
+    //% block="teleport target $target to entity $destination check blocks $checkForBlocks"
     //% target.shadow="mcfunction_selector_self"
     //% destination.shadow="mcfunction_selector_nearest_player"
     //% checkForBlocks.defl=false
@@ -58,9 +58,9 @@ namespace MCFunctionTeleport {
         );
     }
 
-    //% group="회전/바라보기"
+    //% group="rotation and facing"
     //% blockId=mcfunction_tp_rotation
-    //% block="TP 대상 $target 위치 $destination 회전 $rotation 블록 확인 $checkForBlocks"
+    //% block="teleport target $target to position $destination rotation $rotation check blocks $checkForBlocks"
     //% target.shadow="mcfunction_selector_self"
     //% destination.shadow="mcfunction_position_relative"
     //% rotation.shadow="mcfunction_rotation_absolute"
@@ -85,9 +85,9 @@ namespace MCFunctionTeleport {
         );
     }
 
-    //% group="회전/바라보기"
+    //% group="rotation and facing"
     //% blockId=mcfunction_tp_facing_position
-    //% block="TP 대상 $target 위치 $destination 바라볼 위치 $facingPosition 블록 확인 $checkForBlocks"
+    //% block="teleport target $target to position $destination facing position $facingPosition check blocks $checkForBlocks"
     //% target.shadow="mcfunction_selector_self"
     //% destination.shadow="mcfunction_position_relative"
     //% facingPosition.shadow="mcfunction_position_relative"
@@ -112,9 +112,9 @@ namespace MCFunctionTeleport {
         );
     }
 
-    //% group="회전/바라보기"
+    //% group="rotation and facing"
     //% blockId=mcfunction_tp_facing_entity
-    //% block="TP 대상 $target 위치 $destination 바라볼 대상 $facingEntity 블록 확인 $checkForBlocks"
+    //% block="teleport target $target to position $destination facing entity $facingEntity check blocks $checkForBlocks"
     //% target.shadow="mcfunction_selector_self"
     //% destination.shadow="mcfunction_position_relative"
     //% facingEntity.shadow="mcfunction_selector_nearest_player"

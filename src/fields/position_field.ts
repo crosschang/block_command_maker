@@ -16,7 +16,7 @@ namespace MCFunctionPositionFields {
     }
 
     //% blockId=mcfunction_position_absolute
-    //% block="절대 좌표 X $x Y $y Z $z"
+    //% block="absolute position x $x y $y z $z"
     //% x.defl=0
     //% y.defl=64
     //% z.defl=0
@@ -36,7 +36,7 @@ namespace MCFunctionPositionFields {
     }
 
     //% blockId=mcfunction_position_relative
-    //% block="상대 좌표 X ~$x Y ~$y Z ~$z"
+    //% block="relative position x ~$x y ~$y z ~$z"
     //% x.defl=0
     //% y.defl=0
     //% z.defl=0
@@ -56,7 +56,7 @@ namespace MCFunctionPositionFields {
     }
 
     //% blockId=mcfunction_position_local
-    //% block="로컬 좌표 X ^$x Y ^$y Z ^$z"
+    //% block="local position x ^$x y ^$y z ^$z"
     //% x.defl=0
     //% y.defl=0
     //% z.defl=1

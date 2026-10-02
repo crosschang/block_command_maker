@@ -6,7 +6,7 @@
  */
 
 //% color="#6A5ACD" weight=90 icon="\uf05b" block="MCFunction Selector"
-//% groups='["선택자 대상", "선택자 조건", "엔티티 검색", "아이템", "아이템 상세", "공통 값", "others"]'
+//% groups='["selector targets", "selector conditions", "entity search", "items", "item details", "common values", "others"]'
 namespace MCFunctionFields {
 
     // ---------------------------------------------------------------------
@@ -17,27 +17,27 @@ namespace MCFunctionFields {
     // ---------------------------------------------------------------------
 
     export enum SelectorTextConditionType {
-        //% block="이름 name"
+        //% block="name"
         Name = 0,
 
-        //% block="태그 tag"
+        //% block="tag"
         Tag = 1,
 
-        //% block="패밀리 family"
+        //% block="family"
         Family = 2
     }
 
     export enum SelectorGameMode {
-        //% block="서바이벌"
+        //% block="survival"
         Survival = 0,
 
-        //% block="크리에이티브"
+        //% block="creative"
         Creative = 1,
 
-        //% block="어드벤처"
+        //% block="adventure"
         Adventure = 2,
 
-        //% block="관전자"
+        //% block="spectator"
         Spectator = 3
     }
 
@@ -83,21 +83,21 @@ namespace MCFunctionFields {
         //% block="dZ"
         DZ = 5,
 
-        //% block="대상 수 c"
+        //% block="count c"
         Count = 6
     }
 
     export enum SelectorRangeConditionType {
-        //% block="거리"
+        //% block="distance"
         Distance = 0,
 
-        //% block="레벨"
+        //% block="level"
         Level = 1,
 
-        //% block="X 회전"
+        //% block="x rotation"
         RotationX = 2,
 
-        //% block="Y 회전"
+        //% block="y rotation"
         RotationY = 3
     }
 
@@ -206,9 +206,9 @@ namespace MCFunctionFields {
         }
     }
 
-    //% group="선택자 조건"
+    //% group="selector conditions"
     //% blockId=mcfunction_selector_no_condition
-    //% block="추가 조건 없음"
+    //% block="no more conditions"
     export function noSelectorCondition(
     ): SelectorConditionValue {
 
@@ -295,9 +295,9 @@ namespace MCFunctionFields {
     // Selector 조건 블록
     // ---------------------------------------------------------------------
 
-    //% group="선택자 조건"
+    //% group="selector conditions"
     //% blockId=mcfunction_selector_entity_type_condition
-    //% block="종류 type $entity 제외 $exclude 다음 $next"
+    //% block="type $entity exclude $exclude next $next"
     //% entity.shadow="mcfunction_entity_select"
     //% exclude.defl=false
     //% next.shadow="mcfunction_selector_no_condition"
@@ -323,9 +323,9 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="선택자 조건"
+    //% group="selector conditions"
     //% blockId=mcfunction_selector_text_condition
-    //% block="$conditionType 값 $value 제외 $exclude 다음 $next"
+    //% block="$conditionType value $value exclude $exclude next $next"
     //% value.defl="Boss"
     //% exclude.defl=false
     //% next.shadow="mcfunction_selector_no_condition"
@@ -369,9 +369,9 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="선택자 조건"
+    //% group="selector conditions"
     //% blockId=mcfunction_selector_gamemode_condition
-    //% block="게임모드 $mode 제외 $exclude 다음 $next"
+    //% block="gamemode $mode exclude $exclude next $next"
     //% exclude.defl=false
     //% next.shadow="mcfunction_selector_no_condition"
     export function addGameModeCondition(
@@ -396,9 +396,9 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="선택자 조건"
+    //% group="selector conditions"
     //% blockId=mcfunction_selector_number_condition
-    //% block="$conditionType 값 $value 다음 $next"
+    //% block="$conditionType value $value next $next"
     //% value.defl=0
     //% next.shadow="mcfunction_selector_no_condition"
     export function addNumberCondition(
@@ -456,9 +456,9 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="선택자 조건"
+    //% group="selector conditions"
     //% blockId=mcfunction_selector_range_condition
-    //% block="$conditionType $range 다음 $next"
+    //% block="$conditionType $range next $next"
     //% range.shadow="mcfunction_range_min_max"
     //% next.shadow="mcfunction_selector_no_condition"
     export function addRangeCondition(
@@ -521,10 +521,10 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="선택자 조건"
+    //% group="selector conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_type_filter
-    //% block="종류 type $typeId 제외 $exclude 다음 $next"
+    //% block="type $typeId exclude $exclude next $next"
     //% typeId.defl="minecraft:zombie"
     //% exclude.defl=false
     //% next.shadow="mcfunction_selector_no_condition"
@@ -550,10 +550,10 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="선택자 조건"
+    //% group="selector conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_name_filter
-    //% block="이름 name $name 제외 $exclude 다음 $next"
+    //% block="name $name exclude $exclude next $next"
     //% name.defl="Boss"
     //% exclude.defl=false
     //% next.shadow="mcfunction_selector_no_condition"
@@ -579,10 +579,10 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="선택자 조건"
+    //% group="selector conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_tag_filter
-    //% block="태그 tag $tag 제외 $exclude 다음 $next"
+    //% block="tag $tag exclude $exclude next $next"
     //% tag.defl="boss"
     //% exclude.defl=false
     //% next.shadow="mcfunction_selector_no_condition"
@@ -608,10 +608,10 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="선택자 조건"
+    //% group="selector conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_family_filter
-    //% block="패밀리 family $family 제외 $exclude 다음 $next"
+    //% block="family $family exclude $exclude next $next"
     //% family.defl="monster"
     //% exclude.defl=false
     //% next.shadow="mcfunction_selector_no_condition"
@@ -637,10 +637,10 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="선택자 조건"
+    //% group="selector conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_gamemode_filter
-    //% block="게임모드 $gamemode 제외 $exclude 다음 $next"
+    //% block="gamemode $gamemode exclude $exclude next $next"
     //% gamemode.defl="survival"
     //% exclude.defl=false
     //% next.shadow="mcfunction_selector_no_condition"
@@ -666,10 +666,10 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="선택자 조건"
+    //% group="selector conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_number_filter
-    //% block="$filterType 값 $value 다음 $next"
+    //% block="$filterType value $value next $next"
     //% value.defl=0
     //% next.shadow="mcfunction_selector_no_condition"
     export function addNumberFilter(
@@ -758,10 +758,10 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="선택자 조건"
+    //% group="selector conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_position_filter
-    //% block="위치 X $x Y $y Z $z 다음 $next"
+    //% block="position x $x y $y z $z next $next"
     //% x.defl=0
     //% y.defl=0
     //% z.defl=0
@@ -805,10 +805,10 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="선택자 조건"
+    //% group="selector conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_area_filter
-    //% block="영역 X $x Y $y Z $z dX $dx dY $dy dZ $dz 다음 $next"
+    //% block="area x $x y $y z $z dx $dx dy $dy dz $dz next $next"
     //% x.defl=0
     //% y.defl=0
     //% z.defl=0
@@ -847,10 +847,10 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="선택자 조건"
+    //% group="selector conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_distance_filter
-    //% block="거리 $range 다음 $next"
+    //% block="distance $range next $next"
     //% range.shadow="mcfunction_range_min_max"
     //% next.shadow="mcfunction_selector_no_condition"
     export function addDistanceFilter(
@@ -886,10 +886,10 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="선택자 조건"
+    //% group="selector conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_level_filter
-    //% block="레벨 $range 다음 $next"
+    //% block="level $range next $next"
     //% range.shadow="mcfunction_range_min_max"
     //% next.shadow="mcfunction_selector_no_condition"
     export function addLevelFilter(
@@ -925,10 +925,10 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="선택자 조건"
+    //% group="selector conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_rotation_x_filter
-    //% block="X 회전 $range 다음 $next"
+    //% block="x rotation $range next $next"
     //% range.shadow="mcfunction_range_min_max"
     //% next.shadow="mcfunction_selector_no_condition"
     export function addRotationXFilter(
@@ -964,10 +964,10 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="선택자 조건"
+    //% group="selector conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_rotation_y_filter
-    //% block="Y 회전 $range 다음 $next"
+    //% block="y rotation $range next $next"
     //% range.shadow="mcfunction_range_min_max"
     //% next.shadow="mcfunction_selector_no_condition"
     export function addRotationYFilter(
@@ -1003,9 +1003,9 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="선택자 조건"
+    //% group="selector conditions"
     //% blockId=mcfunction_selector_score_filter
-    //% block="스코어 목표 $objective 범위 $range 다음 $next"
+    //% block="score objective $objective range $range next $next"
     //% objective.defl="money"
     //% range.shadow="mcfunction_range_min_max"
     //% next.shadow="mcfunction_selector_no_condition"
@@ -1031,9 +1031,9 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="선택자 조건"
+    //% group="selector conditions"
     //% blockId=mcfunction_selector_hasitem_filter
-    //% block="아이템 $item 개수 $quantity 보유 다음 $next"
+    //% block="has item $item quantity $quantity next $next"
     //% item.shadow="mcfunction_item_select"
     //% quantity.shadow="mcfunction_range_min"
     //% next.shadow="mcfunction_selector_no_condition"
@@ -1058,9 +1058,9 @@ namespace MCFunctionFields {
         return condition;
     }
 
-    //% group="선택자 조건"
+    //% group="selector conditions"
     //% blockId=mcfunction_selector_hasitem_advanced
-    //% block="아이템 보유 상세 $item 개수 $quantity 위치 $location 슬롯 $slot 데이터 $data 다음 $next"
+    //% block="has item details $item quantity $quantity location $location slot $slot data $data next $next"
     //% item.shadow="mcfunction_item_select"
     //% quantity.shadow="mcfunction_range_min"
     //% slot.defl=0
@@ -1124,9 +1124,9 @@ namespace MCFunctionFields {
     // @initiator            → Dialogue 전용, 조건 사용 불가
     // ---------------------------------------------------------------------
 
-    //% group="선택자 대상"
+    //% group="selector targets"
     //% blockId=mcfunction_selector_all_players
-    //% block="모든 플레이어 @a $conditions"
+    //% block="all players @a $conditions"
     //% conditions.shadow="mcfunction_selector_no_condition"
     export function allPlayers(
         conditions: SelectorConditionValue
@@ -1147,9 +1147,9 @@ namespace MCFunctionFields {
         );
     }
 
-    //% group="선택자 대상"
+    //% group="selector targets"
     //% blockId=mcfunction_selector_all_entities
-    //% block="모든 엔티티 @e $conditions"
+    //% block="all entities @e $conditions"
     //% conditions.shadow="mcfunction_selector_no_condition"
     export function allEntities(
         conditions: SelectorConditionValue
@@ -1170,9 +1170,9 @@ namespace MCFunctionFields {
         );
     }
 
-    //% group="선택자 대상"
+    //% group="selector targets"
     //% blockId=mcfunction_selector_nearest_player
-    //% block="가장 가까운 플레이어 @p $conditions"
+    //% block="nearest player @p $conditions"
     //% conditions.shadow="mcfunction_selector_no_condition"
     export function nearestPlayer(
         conditions: SelectorConditionValue
@@ -1193,9 +1193,9 @@ namespace MCFunctionFields {
         );
     }
 
-    //% group="선택자 대상"
+    //% group="selector targets"
     //% blockId=mcfunction_selector_random_player
-    //% block="무작위 플레이어 @r $conditions"
+    //% block="random player @r $conditions"
     //% conditions.shadow="mcfunction_selector_no_condition"
     export function randomPlayer(
         conditions: SelectorConditionValue
@@ -1216,9 +1216,9 @@ namespace MCFunctionFields {
         );
     }
 
-    //% group="선택자 대상"
+    //% group="selector targets"
     //% blockId=mcfunction_selector_self
-    //% block="자신 @s $conditions"
+    //% block="self @s $conditions"
     //% conditions.shadow="mcfunction_selector_no_condition"
     export function self(
         conditions: SelectorConditionValue
@@ -1239,9 +1239,9 @@ namespace MCFunctionFields {
         );
     }
 
-    //% group="선택자 대상"
+    //% group="selector targets"
     //% blockId=mcfunction_selector_initiator
-    //% block="대화 시작 플레이어 @initiator"
+    //% block="dialogue initiator @initiator"
     export function initiator(): SelectorValue {
 
         return new SelectorValue(

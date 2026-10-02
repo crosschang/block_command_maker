@@ -17,7 +17,7 @@ namespace MCFunctionRotationFields {
     }
 
     //% blockId=mcfunction_rotation_absolute
-    //% block="절대 회전 좌우 yaw $yaw 상하 pitch $pitch"
+    //% block="absolute rotation yaw $yaw pitch $pitch"
     //% yaw.defl=0
     //% pitch.defl=0
     export function absolute(
@@ -34,7 +34,7 @@ namespace MCFunctionRotationFields {
     }
 
     //% blockId=mcfunction_rotation_relative
-    //% block="상대 회전 좌우 ~yaw $yaw 상하 ~pitch $pitch"
+    //% block="relative rotation yaw ~$yaw pitch ~$pitch"
     //% yaw.defl=0
     //% pitch.defl=0
     export function relative(
