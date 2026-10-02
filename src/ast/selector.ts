@@ -179,4 +179,34 @@ namespace MCFunctionAST {
     ): void {
         selector.hasItems.push(condition);
     }
+
+    export function createSelectorHasItemAdvancedCondition(
+        itemId: string,
+        quantity: NumberRange,
+
+        hasLocation: boolean,
+        location: SlotLocation,
+
+        hasSlot: boolean,
+        slot: NumberRange,
+
+        hasData: boolean,
+        data: number
+
+    ): SelectorHasItemCondition {
+
+        return {
+            itemId: itemId,
+            quantity: quantity,
+
+            hasLocation: hasLocation,
+            location: location,
+
+            hasSlot: hasSlot,
+            slot: slot,
+
+            hasData: hasData,
+            data: data
+        };
+    }
 }

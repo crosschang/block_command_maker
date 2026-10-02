@@ -214,6 +214,66 @@ namespace MCFunctionCompiler {
                     result
                     + ",quantity=.."
                     + hasItem.quantity.max;
+            } 
+
+            if (hasItem.hasLocation) {
+
+                result =
+                    result
+                    + ",location="
+                    + MCFunctionAST.slotLocationToken(
+                        hasItem.location
+                    );
+            }
+
+            if (hasItem.hasSlot) {
+
+                result =
+                    result
+                    + ",slot=";
+
+                if (
+                    hasItem.slot.hasMin &&
+                    hasItem.slot.hasMax
+                ) {
+
+                    if (
+                        hasItem.slot.min ==
+                        hasItem.slot.max
+                    ) {
+                        result =
+                            result
+                            + hasItem.slot.min;
+                    } else {
+                        result =
+                            result
+                            + hasItem.slot.min
+                            + ".."
+                            + hasItem.slot.max;
+                    }
+
+                } else if (hasItem.slot.hasMin) {
+
+                    result =
+                        result
+                        + hasItem.slot.min
+                        + "..";
+
+                } else if (hasItem.slot.hasMax) {
+
+                    result =
+                        result
+                        + ".."
+                        + hasItem.slot.max;
+                }
+            }
+
+            if (hasItem.hasData) {
+
+                result =
+                    result
+                    + ",data="
+                    + hasItem.data;
             }
 
             result = result + "}";
