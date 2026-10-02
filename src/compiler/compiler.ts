@@ -70,7 +70,8 @@ namespace MCFunctionCompiler {
 
         if (
             selector.filters.length == 0 &&
-            selector.scores.length == 0
+            selector.scores.length == 0 &&
+            selector.hasItems.length == 0
         ) {
             return result;
         }
@@ -79,6 +80,7 @@ namespace MCFunctionCompiler {
 
         let hasPrevious = false;
 
+        // 일반 Selector Filter
         for (let i = 0; i < selector.filters.length; i++) {
 
             if (hasPrevious) {
@@ -98,6 +100,7 @@ namespace MCFunctionCompiler {
             hasPrevious = true;
         }
 
+        // Score 조건
         if (selector.scores.length > 0) {
 
             if (hasPrevious) {
@@ -157,6 +160,65 @@ namespace MCFunctionCompiler {
             }
 
             result = result + "}";
+
+            hasPrevious = true;
+        }
+
+        // HasItem 조건
+        if (selector.hasItems.length > 0) {
+
+            if (hasPrevious) {
+                result = result + ",";
+            }
+
+            let hasItem = selector.hasItems[0];
+
+            result =
+                result
+                + "hasitem={item="
+                + hasItem.itemId;
+
+            if (
+                hasItem.quantity.hasMin &&
+                hasItem.quantity.hasMax
+            ) {
+
+                result = result + ",quantity=";
+
+                if (
+                    hasItem.quantity.min ==
+                    hasItem.quantity.max
+                ) {
+                    result =
+                        result
+                        + hasItem.quantity.min;
+                } else {
+                    result =
+                        result
+                        + hasItem.quantity.min
+                        + ".."
+                        + hasItem.quantity.max;
+                }
+
+            } else if (hasItem.quantity.hasMin) {
+
+                result =
+                    result
+                    + ",quantity="
+                    + hasItem.quantity.min
+                    + "..";
+
+            } else if (hasItem.quantity.hasMax) {
+
+                result =
+                    result
+                    + ",quantity=.."
+                    + hasItem.quantity.max;
+            }
+
+            result = result + "}";
+
+            hasPrevious = true;
         }
 
         result = result + "]";

@@ -141,33 +141,25 @@ namespace MCFunctionTest {
         player.say(result);
     }
 
-    //% block="Selector Score Range 실제 테스트"
-    export function testSelectorScoreRange(): void {
+    //% block="HasItem 실제 테스트"
+    export function testHasItem(): void {
 
-        // 테스트용 objective
         player.execute(
-            "scoreboard objectives add mcf_test dummy"
-        );
-
-        // 현재 플레이어 점수 = 150
-        player.execute(
-            "scoreboard players set @s mcf_test 150"
+            "give @s minecraft:diamond 3"
         );
 
         let selector = MCFunctionAST.createSelector(
             MCFunctionAST.SelectorBase.AllPlayers
         );
 
-        let range = MCFunctionAST.createMinRange(
-            100
-        );
+        let quantity =
+            MCFunctionAST.createMinRange(1);
 
-        MCFunctionAST.addSelectorScoreCondition(
+        MCFunctionAST.addSelectorHasItemCondition(
             selector,
-            MCFunctionAST.createSelectorScoreCondition(
-                "mcf_test",
-                range,
-                false
+            MCFunctionAST.createSelectorHasItemCondition(
+                "minecraft:diamond",
+                quantity
             )
         );
 
@@ -180,9 +172,9 @@ namespace MCFunctionTest {
             );
 
         if (success) {
-            player.say("SCORE RANGE TEST PASS");
+            player.say("HASITEM TEST PASS");
         } else {
-            player.say("SCORE RANGE TEST FAIL");
+            player.say("HASITEM TEST FAIL");
         }
     }
 }

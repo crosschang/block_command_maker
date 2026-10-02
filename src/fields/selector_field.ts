@@ -337,6 +337,28 @@ namespace MCFunctionFields {
         return selector;
     }
 
+    //% blockId=mcfunction_selector_hasitem_filter
+    //% block="선택자 $selector 아이템 보유 $item 개수 $quantity"
+    //% selector.shadow="mcfunction_selector_all_players"
+    //% item.shadow="mcfunction_item"
+    //% quantity.shadow="mcfunction_range_min"
+    export function addHasItemFilter(
+        selector: SelectorValue,
+        item: ItemValue,
+        quantity: RangeValue
+    ): SelectorValue {
+
+        MCFunctionAST.addSelectorHasItemCondition(
+            selector.selector,
+            MCFunctionAST.createSelectorHasItemCondition(
+                item.itemId,
+                quantity.range
+            )
+        );
+
+        return selector;
+    }
+
     export class SelectorValue {
         selector: MCFunctionAST.Selector;
 

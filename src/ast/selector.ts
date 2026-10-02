@@ -37,6 +37,11 @@ namespace MCFunctionAST {
         inverted: boolean;
     }
 
+    export interface SelectorHasItemCondition {
+        itemId: string;
+        quantity: NumberRange;
+    }
+
     /**
      * Selector AST.
      */
@@ -44,6 +49,7 @@ namespace MCFunctionAST {
         base: SelectorBase;
         filters: SelectorFilter[];
         scores: SelectorScoreCondition[];
+        hasItems: SelectorHasItemCondition[];
     }
 
     /**
@@ -84,7 +90,8 @@ namespace MCFunctionAST {
         return {
             base: base,
             filters: [],
-            scores: []
+            scores: [],
+            hasItems: []
         };
     }
 
@@ -130,5 +137,22 @@ namespace MCFunctionAST {
         condition: SelectorScoreCondition
     ): void {
         selector.scores.push(condition);
+    }
+
+    export function createSelectorHasItemCondition(
+        itemId: string,
+        quantity: NumberRange
+    ): SelectorHasItemCondition {
+        return {
+            itemId: itemId,
+            quantity: quantity
+        };
+    }
+
+    export function addSelectorHasItemCondition(
+        selector: Selector,
+        condition: SelectorHasItemCondition
+    ): void {
+        selector.hasItems.push(condition);
     }
 }
