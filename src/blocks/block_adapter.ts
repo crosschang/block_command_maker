@@ -49,4 +49,26 @@ namespace MCFunctionBlocks {
             item
         );
     }
+
+    export function createGiveCommandWithComponents(
+        target: MCFunctionAST.Selector,
+        itemId: string,
+        amount: number,
+        data: number,
+        components: MCFunctionAST.ItemCommandComponents
+    ): MCFunctionAST.GiveCommand {
+
+        let item =
+            MCFunctionAST.createItemStackWithComponents(
+                itemId,
+                amount,
+                data,
+                components
+            );
+
+        return MCFunctionAST.createGiveCommand(
+            target,
+            item
+        );
+    }
 }

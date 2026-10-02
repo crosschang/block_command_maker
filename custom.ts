@@ -202,4 +202,37 @@ namespace MCFunctionTest {
             );
         }
     }
+
+    //% blockId=mcfunction_give_advanced
+    //% block="아이템 지급 상세 대상 $target 아이템 $item 개수 $amount 데이터 $data 컴포넌트 $components"
+    //% target.shadow="mcfunction_selector_all_players"
+    //% item.shadow="mcfunction_item"
+    //% amount.defl=1
+    //% data.defl=0
+    //% components.shadow="mcfunction_item_components"
+    export function giveAdvanced(
+        target: MCFunctionFields.SelectorValue,
+        item: MCFunctionFields.ItemValue,
+        amount: number,
+        data: number,
+        components:
+            MCFunctionFields.ItemComponentsValue
+    ): void {
+
+        let command =
+            MCFunctionBlocks.createGiveCommandWithComponents(
+                target.selector,
+                item.itemId,
+                amount,
+                data,
+                components.components
+            );
+
+        let result =
+            MCFunctionCompiler.compileCommand(
+                command
+            );
+
+        player.execute(result);
+    }
 }

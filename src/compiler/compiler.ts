@@ -45,13 +45,14 @@ namespace MCFunctionCompiler {
     }
 
     function compileGiveCommand(
-    command: MCFunctionAST.GiveCommand
+        command: MCFunctionAST.GiveCommand
     ): string {
 
         let target =
             compileSelector(command.target);
 
-        return "give "
+        let result =
+            "give "
             + target
             + " "
             + command.item.id
@@ -59,6 +60,145 @@ namespace MCFunctionCompiler {
             + command.item.amount
             + " "
             + command.item.data;
+
+        if (
+            MCFunctionAST.hasItemCommandComponents(
+                command.item.components
+            )
+        ) {
+
+            result =
+                result
+                + " "
+                + compileItemCommandComponents(
+                    command.item.components
+                );
+        }
+
+        return result;
+    }
+
+    function compileItemCommandComponents(
+        components: MCFunctionAST.ItemCommandComponents
+    ): string {
+
+        let result = "{";
+        let hasPrevious = false;
+
+        // can_destroy
+        if (components.canDestroy.length > 0) {
+
+            result =
+                result
+                + "\"minecraft:can_destroy\":{"
+                + "\"blocks\":[";
+
+            for (
+                let i = 0;
+                i < components.canDestroy.length;
+                i++
+            ) {
+
+                if (i > 0) {
+                    result = result + ",";
+                }
+
+                result =
+                    result
+                    + "\""
+                    + components.canDestroy[i]
+                    + "\"";
+            }
+
+            result = result + "]}";
+
+            hasPrevious = true;
+        }
+
+        // can_place_on
+        if (components.canPlaceOn.length > 0) {
+
+            if (hasPrevious) {
+                result = result + ",";
+            }
+
+            result =
+                result
+                + "\"minecraft:can_place_on\":{"
+                + "\"blocks\":[";
+
+            for (
+                let i = 0;
+                i < components.canPlaceOn.length;
+                i++
+            ) {
+
+                if (i > 0) {
+                    result = result + ",";
+                }
+
+                result =
+                    result
+                    + "\""
+                    + components.canPlaceOn[i]
+                    + "\"";
+            }
+
+            result = result + "]}";
+
+            hasPrevious = true;
+        }
+
+        // item_lock
+        if (
+            components.itemLock !=
+            MCFunctionAST.ItemLockMode.None
+        ) {
+
+            if (hasPrevious) {
+                result = result + ",";
+            }
+
+            result =
+                result
+                + "\"minecraft:item_lock\":{"
+                + "\"mode\":\"";
+
+            if (
+                components.itemLock ==
+                MCFunctionAST.ItemLockMode.LockInInventory
+            ) {
+                result =
+                    result
+                    + "lock_in_inventory";
+            } else {
+                result =
+                    result
+                    + "lock_in_slot";
+            }
+
+            result = result + "\"}";
+
+            hasPrevious = true;
+        }
+
+        // keep_on_death
+        if (components.keepOnDeath) {
+
+            if (hasPrevious) {
+                result = result + ",";
+            }
+
+            result =
+                result
+                + "\"minecraft:keep_on_death\":{}";
+
+            hasPrevious = true;
+        }
+
+        result = result + "}";
+
+        return result;
     }
 
     export function compileSelector(
