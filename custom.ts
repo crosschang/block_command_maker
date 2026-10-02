@@ -234,6 +234,13 @@ namespace MCFunctionTest {
                 command
             );
 
-        player.execute(result);
+        let success =
+            player.execute(result);
+
+        if (success) {
+            player.say("GIVE TEST PASS");
+        } else {
+            player.say("GIVE TEST FAIL");
+        }
     }
 }
