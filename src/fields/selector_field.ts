@@ -5,7 +5,7 @@
  * 실제 명령 의미는 내부 Selector AST가 보존한다.
  */
 
-//% color="#6A5ACD" weight=90 icon="\uf1b2" block="MCFunction"
+//% color="#6A5ACD" weight=90 icon="\uf05b" block="MCFunction Selector"
 //% groups='["선택자 대상", "선택자 조건", "엔티티 검색", "아이템", "아이템 상세", "공통 값", "others"]'
 namespace MCFunctionFields {
 

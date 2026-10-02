@@ -1,6 +1,6 @@
 {
     "name": "block_command_maker",
-    "version": "0.1.36",
+    "version": "0.1.37",
     "description": "Visual block editor for Minecraft Bedrock and Minecraft Education mcfunction commands",
     "dependencies": {
         "core": "*",
@@ -48,9 +48,9 @@
         "src/blocks/block_adapter.ts",
         "src/blocks/teleport_blocks.ts",
         "docs/PROJECT_GUIDELINES.md",
+        "docs/tests/tp-search-smoke-v2.md",
+        "docs/tests/_locales/ko/tp-search-smoke-v2.md",
         "docs/tests/ENTITY_SEARCH_IMPLEMENTATION.md",
-        "docs/tests/_locales/ko/tp-smoke-test.md",
-        "docs/tests/tp-smoke-test.md",
         "custom.ts",
         "tutorial-info-cache.json"
     ],
