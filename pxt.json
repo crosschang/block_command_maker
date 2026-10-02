@@ -60,9 +60,9 @@
         "tutorial-info-cache.json",
         "tools/generate_registry.ps1",
         "_locales/ko/block_command_maker-strings.json",
-        "docs/teleport/tp-class-period1-v1.md",
+        "docs/teleport/_locales/en/tp-class-period1-v1.md",
         "docs/teleport/_locales/ko/tp-class-period1-v1.md",
-        "docs/teleport/tp-class-period2-v1.md",
+        "docs/teleport/_locales/en/tp-class-period2-v1.md",
         "docs/teleport/_locales/ko/tp-class-period2-v1.md",
         "docs/teleport/TP_CLASS_80MIN_PLAN.md"
     ],
