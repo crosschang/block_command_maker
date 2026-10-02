@@ -139,7 +139,14 @@ namespace MCFunctionTest {
         let result =
             MCFunctionCompiler.compileCommand(command);
 
-        player.say(result);
+        let success =
+            player.execute(result);
+
+        if (success) {
+            player.say("GIVE TEST PASS");
+        } else {
+            player.say("GIVE TEST FAIL");
+        }
     }
 
     //% block="HasItem Location Slot 실제 테스트"
