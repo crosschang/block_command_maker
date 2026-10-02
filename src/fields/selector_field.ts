@@ -770,16 +770,41 @@ namespace MCFunctionFields {
         }
     }
 
+    // ---------------------------------------------------------------------
+    // Selector 대상
+    //
+    // @a, @e, @p, @r, @s
+    // → SelectorConditionValue 체인을 사용할 수 있다.
+    //
+    // @initiator
+    // → Dialogue 전용 특수 Selector.
+    // → 조건을 사용하지 않는다.
+    // ---------------------------------------------------------------------
+
+
     //% group="선택자 대상"
     //% blockId=mcfunction_selector_all_players
-    //% block="모든 플레이어 @a"
-    export function allPlayers(): SelectorValue {
-        return new SelectorValue(
+    //% block="모든 플레이어 @a 조건 $conditions"
+    //% conditions.shadow="mcfunction_selector_no_condition"
+    export function allPlayers(
+        conditions: SelectorConditionValue
+    ): SelectorValue {
+
+        let selector =
             MCFunctionAST.createSelector(
                 MCFunctionAST.SelectorBase.AllPlayers
-            )
+            );
+
+        applySelectorConditions(
+            selector,
+            conditions
+        );
+
+        return new SelectorValue(
+            selector
         );
     }
+
 
     //% group="선택자 대상"
     //% blockId=mcfunction_selector_all_entities
@@ -804,43 +829,90 @@ namespace MCFunctionFields {
         );
     }
 
+
     //% group="선택자 대상"
     //% blockId=mcfunction_selector_nearest_player
-    //% block="가장 가까운 플레이어 @p"
-    export function nearestPlayer(): SelectorValue {
-        return new SelectorValue(
+    //% block="가장 가까운 플레이어 @p 조건 $conditions"
+    //% conditions.shadow="mcfunction_selector_no_condition"
+    export function nearestPlayer(
+        conditions: SelectorConditionValue
+    ): SelectorValue {
+
+        let selector =
             MCFunctionAST.createSelector(
                 MCFunctionAST.SelectorBase.NearestPlayer
-            )
+            );
+
+        applySelectorConditions(
+            selector,
+            conditions
+        );
+
+        return new SelectorValue(
+            selector
         );
     }
+
 
     //% group="선택자 대상"
     //% blockId=mcfunction_selector_random_player
-    //% block="무작위 플레이어 @r"
-    export function randomPlayer(): SelectorValue {
-        return new SelectorValue(
+    //% block="무작위 플레이어 @r 조건 $conditions"
+    //% conditions.shadow="mcfunction_selector_no_condition"
+    export function randomPlayer(
+        conditions: SelectorConditionValue
+    ): SelectorValue {
+
+        let selector =
             MCFunctionAST.createSelector(
                 MCFunctionAST.SelectorBase.RandomPlayer
-            )
+            );
+
+        applySelectorConditions(
+            selector,
+            conditions
+        );
+
+        return new SelectorValue(
+            selector
         );
     }
 
+
     //% group="선택자 대상"
     //% blockId=mcfunction_selector_self
-    //% block="자신 @s"
-    export function self(): SelectorValue {
-        return new SelectorValue(
+    //% block="자신 @s 조건 $conditions"
+    //% conditions.shadow="mcfunction_selector_no_condition"
+    export function self(
+        conditions: SelectorConditionValue
+    ): SelectorValue {
+
+        let selector =
             MCFunctionAST.createSelector(
                 MCFunctionAST.SelectorBase.Self
-            )
+            );
+
+        applySelectorConditions(
+            selector,
+            conditions
+        );
+
+        return new SelectorValue(
+            selector
         );
     }
+
+
+    // ---------------------------------------------------------------------
+    // Dialogue 전용 Selector
+    //
+    // @initiator에는 조건 입력을 제공하지 않는다.
+    // ---------------------------------------------------------------------
 
     //% group="선택자 대상"
     //% blockId=mcfunction_selector_initiator
     //% block="대화 시작 플레이어 @initiator"
     export function initiator(): SelectorValue {
+
         return new SelectorValue(
             MCFunctionAST.createSelector(
                 MCFunctionAST.SelectorBase.Initiator

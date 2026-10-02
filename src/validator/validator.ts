@@ -121,6 +121,28 @@ namespace MCFunctionValidator {
         validateSingleFilter(selector, "ry", "Y 회전 최대", issues);
         validateSingleFilter(selector, "rym", "Y 회전 최소", issues);
 
+        // @initiator는 Dialogue 전용 특수 Selector이며
+        // Selector 조건을 사용하지 않는다.
+        if (
+            selector.base ==
+            MCFunctionAST.SelectorBase.Initiator
+        ) {
+
+            if (
+                selector.filters.length > 0 ||
+                selector.scores.length > 0 ||
+                selector.hasItems.length > 0
+            ) {
+
+                addIssue(
+                    issues,
+                    ValidationLevel.Error,
+                    "SELECTOR_INITIATOR_CONDITION",
+                    "@initiator에는 선택자 조건을 사용할 수 없습니다."
+                );
+            }
+        }
+
 
         // type은 @a / @p에서 사용할 수 없음
         if (
