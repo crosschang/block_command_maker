@@ -32,6 +32,7 @@
         "registry/education/entities.ts",
         "src/fields/registry_presets.generated.ts",
         "src/fields/entity_field.ts",
+        "src/fields/entity_registry_blocks.generated.ts",
         "src/fields/block_field.ts",
         "src/fields/item_field.ts",
         "src/fields/selector_field.ts",

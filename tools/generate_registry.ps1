@@ -242,6 +242,64 @@ $entityEnum
 "@
 }
 
+
+function Convert-ToSafeBlockIdPart {
+    param(
+        [string]$Value
+    )
+
+    return [regex]::Replace(
+        $Value.Replace(":", "_"),
+        "[^A-Za-z0-9_]+",
+        "_"
+    )
+}
+
+function New-EntityRegistryBlocksTs {
+    param(
+        [object[]]$Entities
+    )
+
+    $lines = New-Object System.Collections.Generic.List[string]
+
+    $lines.Add("/**")
+    $lines.Add(" * AUTO-GENERATED FILE. DO NOT EDIT BY HAND.")
+    $lines.Add(" *")
+    $lines.Add(" * Search strategy:")
+    $lines.Add(" * - Minecraft MakeCode's built-in Toolbox Search searches block labels.")
+    $lines.Add(" * - Each Registry entity is exposed as a small EntityValue reporter block.")
+    $lines.Add(" * - Search an entity id, then drag the matching block into an EntityValue slot.")
+    $lines.Add(" *")
+    $lines.Add(" * Source: registry/source/bedrock/entities.json")
+    $lines.Add(" * Generator: tools/generate_registry.ps1")
+    $lines.Add(" */")
+    $lines.Add("")
+    $lines.Add("namespace MCFunctionFields {")
+    $lines.Add("")
+
+    for ($i = 0; $i -lt $Entities.Count; $i++) {
+        $entry = $Entities[$i]
+        $id = Escape-TsString ([string]$entry.id)
+        $name = Convert-ToEnumName $entry
+        $blockIdPart = Convert-ToSafeBlockIdPart ([string]$entry.id)
+        $weight = [Math]::Max(1, 200 - $i)
+
+        $lines.Add("    //% group=`"엔티티 검색`"")
+        $lines.Add("    //% weight=$weight")
+        $lines.Add("    //% blockId=mcfunction_entity_registry_$blockIdPart")
+        $lines.Add("    //% block=`"엔티티 $id`"")
+        $lines.Add("    export function entityRegistry$name(): EntityValue {")
+        $lines.Add("        return new EntityValue(`"$id`");")
+        $lines.Add("    }")
+        $lines.Add("")
+    }
+
+    $lines.Add("}")
+    $lines.Add("")
+
+    return ($lines -join "`n")
+}
+
 function Write-Or-Check {
     param(
         [string]$RelativePath,
@@ -304,6 +362,10 @@ Write-Or-Check `
 Write-Or-Check `
     "src/fields/registry_presets.generated.ts" `
     (New-PresetTs $items $blocks $entities)
+
+Write-Or-Check `
+    "src/fields/entity_registry_blocks.generated.ts" `
+    (New-EntityRegistryBlocksTs $entities)
 
 if ($Check) {
     Write-Host ""
