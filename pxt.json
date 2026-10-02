@@ -1,6 +1,6 @@
 {
     "name": "block_command_maker",
-    "version": "0.1.37",
+    "version": "0.1.38",
     "description": "Visual block editor for Minecraft Bedrock and Minecraft Education mcfunction commands",
     "dependencies": {
         "core": "*",
@@ -34,12 +34,6 @@
         "src/fields/entity_field.ts",
         "src/fields/block_field.ts",
         "src/fields/item_field.ts",
-        "src/libraries/entity_library.ts",
-        "src/libraries/entity_library.generated.ts",
-        "src/libraries/item_library.ts",
-        "src/libraries/item_library.generated.ts",
-        "src/libraries/block_library.ts",
-        "src/libraries/block_library.generated.ts",
         "src/fields/selector_field.ts",
         "src/fields/item_components_field.ts",
         "src/fields/range_field.ts",
@@ -64,7 +58,13 @@
         "docs/teleport/_locales/ko/tp-class-period1-v1.md",
         "docs/teleport/tp-class-period2-v1.md",
         "docs/teleport/_locales/ko/tp-class-period2-v1.md",
-        "docs/teleport/TP_CLASS_80MIN_PLAN.md"
+        "docs/teleport/TP_CLASS_80MIN_PLAN.md",
+        "src/libraries/entity_library.ts",
+        "src/libraries/entity_library.generated.ts",
+        "src/libraries/item_library.ts",
+        "src/libraries/item_library.generated.ts",
+        "src/libraries/block_library.ts",
+        "src/libraries/block_library.generated.ts"
     ],
     "testFiles": [
         "test.ts"
@@ -76,5 +76,5 @@
     "supportedTargets": [
         "minecraft"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "blocksprj"
 }
