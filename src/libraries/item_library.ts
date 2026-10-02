@@ -49,8 +49,8 @@ namespace MCFunctionItemLibrary {
     //% components.shadow="mcfunction_item_components"
     //% blockValue.shadow="mcfunction_block_select"
     export function addCanDestroy(
-        components: MCFunctionFields.ItemComponentsValue,
-        blockValue: MCFunctionFields.BlockValue
+        blockValue: MCFunctionFields.BlockValue,
+        components: MCFunctionFields.ItemComponentsValue
     ): MCFunctionFields.ItemComponentsValue {
 
         return MCFunctionFields.addCanDestroy(
@@ -66,8 +66,8 @@ namespace MCFunctionItemLibrary {
     //% components.shadow="mcfunction_item_components"
     //% blockValue.shadow="mcfunction_block_select"
     export function addCanPlaceOn(
-        components: MCFunctionFields.ItemComponentsValue,
-        blockValue: MCFunctionFields.BlockValue
+        blockValue: MCFunctionFields.BlockValue,
+        components: MCFunctionFields.ItemComponentsValue
     ): MCFunctionFields.ItemComponentsValue {
 
         return MCFunctionFields.addCanPlaceOn(
