@@ -166,6 +166,119 @@ namespace MCFunctionFields {
         }
     }
 
+    export class SelectorConditionValue {
+
+        filters: MCFunctionAST.SelectorFilter[];
+        scores: MCFunctionAST.SelectorScoreCondition[];
+        hasItems: MCFunctionAST.SelectorHasItemCondition[];
+
+        next: SelectorConditionValue;
+
+        isEnd: boolean;
+
+        constructor() {
+
+            this.filters = [];
+            this.scores = [];
+            this.hasItems = [];
+
+            // 기본값은 자기 자신
+            // null / undefined를 사용하지 않는다.
+            this.next = this;
+
+            this.isEnd = false;
+        }
+    }
+
+
+    //% group="선택자 조건"
+    //% blockId=mcfunction_selector_no_condition
+    //% block="추가 조건 없음"
+    export function noSelectorCondition(
+    ): SelectorConditionValue {
+
+        let condition =
+            new SelectorConditionValue();
+
+        condition.isEnd = true;
+
+        return condition;
+    }
+
+    function applySelectorConditions(
+        selector: MCFunctionAST.Selector,
+        condition: SelectorConditionValue
+    ): void {
+
+        let current = condition;
+
+        while (!current.isEnd) {
+
+            // 일반 Selector filters
+            for (
+                let i = 0;
+                i < current.filters.length;
+                i++
+            ) {
+
+                let filter = current.filters[i];
+
+                // 반복 가능한 조건
+                if (
+                    filter.key == "tag" ||
+                    filter.key == "family" ||
+                    filter.key == "type" ||
+                    filter.key == "name"
+                ) {
+
+                    MCFunctionAST.addSelectorFilter(
+                        selector,
+                        filter
+                    );
+
+                } else {
+
+                    // x, r, m, l, rx 등 단일 조건
+                    MCFunctionAST.setSelectorFilter(
+                        selector,
+                        filter
+                    );
+                }
+            }
+
+
+            // Scores
+            for (
+                let i = 0;
+                i < current.scores.length;
+                i++
+            ) {
+
+                MCFunctionAST.setSelectorScoreCondition(
+                    selector,
+                    current.scores[i]
+                );
+            }
+
+
+            // HasItem
+            for (
+                let i = 0;
+                i < current.hasItems.length;
+                i++
+            ) {
+
+                MCFunctionAST.setSelectorHasItemCondition(
+                    selector,
+                    current.hasItems[i]
+                );
+            }
+
+
+            current = current.next;
+        }
+    }
+
 
     // ---------------------------------------------------------------------
     // Selector 반복 가능 조건
@@ -223,18 +336,22 @@ namespace MCFunctionFields {
 
     //% group="선택자 조건"
     //% blockId=mcfunction_selector_tag_filter
-    //% block="태그 tag $tag 제외 $exclude 조건 추가 → $selector"
-    //% selector.shadow="mcfunction_selector_all_entities"
+    //% block="태그 $tag 제외 $exclude 다음 $next"
     //% tag.defl="boss"
     //% exclude.defl=false
+    //% next.shadow="mcfunction_selector_no_condition"
     export function addTagFilter(
-        selector: SelectorValue,
         tag: string,
-        exclude: boolean
-    ): SelectorValue {
+        exclude: boolean,
+        next: SelectorConditionValue
+    ): SelectorConditionValue {
 
-        MCFunctionAST.addSelectorFilter(
-            selector.selector,
+        let condition =
+            new SelectorConditionValue();
+
+        condition.next = next;
+
+        condition.filters.push(
             MCFunctionAST.createSelectorFilter(
                 "tag",
                 tag,
@@ -242,7 +359,7 @@ namespace MCFunctionFields {
             )
         );
 
-        return selector;
+        return condition;
     }
 
     // ---------------------------------------------------------------------
@@ -666,12 +783,24 @@ namespace MCFunctionFields {
 
     //% group="선택자 대상"
     //% blockId=mcfunction_selector_all_entities
-    //% block="모든 엔티티 @e"
-    export function allEntities(): SelectorValue {
-        return new SelectorValue(
+    //% block="모든 엔티티 @e 조건 $conditions"
+    //% conditions.shadow="mcfunction_selector_no_condition"
+    export function allEntities(
+        conditions: SelectorConditionValue
+    ): SelectorValue {
+
+        let selector =
             MCFunctionAST.createSelector(
                 MCFunctionAST.SelectorBase.AllEntities
-            )
+            );
+
+        applySelectorConditions(
+            selector,
+            conditions
+        );
+
+        return new SelectorValue(
+            selector
         );
     }
 
