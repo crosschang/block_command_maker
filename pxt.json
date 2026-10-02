@@ -20,6 +20,7 @@
         "src/ast/raw_command.ts",
         "src/ast/range.ts",
         "src/ast/slot.ts",
+        "src/ast/item_components.ts",
         "src/fields/selector_field.ts",
         "src/fields/item_field.ts",
         "src/fields/range_field.ts",

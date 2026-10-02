@@ -5,6 +5,7 @@
  * 실제 명령 의미는 내부 Selector AST가 보존한다.
  */
 
+//% groups='["선택자 기본", "선택자 상세", "others"]'
 namespace MCFunctionFields {
 
     export enum SelectorNumberFilterType {
@@ -25,6 +26,7 @@ namespace MCFunctionFields {
         Count = 14
     }
 
+    //% group="선택자 상세"
     //% blockId=mcfunction_selector_number_filter
     //% block="선택자 $selector 숫자 조건 $filterType 값 $value"
     //% selector.shadow="mcfunction_selector_all_players"
@@ -163,6 +165,139 @@ namespace MCFunctionFields {
         }
     }
 
+
+    // ---------------------------------------------------------------------
+    // Selector 기본 대상 조건
+    // type / name / tag는 @e를 포함한 실사용 Selector에서 자주 사용한다.
+    // 실제 의미는 SelectorFilter AST에 저장한다.
+    // ---------------------------------------------------------------------
+
+    //% group="선택자 기본"
+    //% blockId=mcfunction_selector_type_filter
+    //% block="선택자 $selector 종류 type $typeId 제외 $exclude"
+    //% selector.shadow="mcfunction_selector_all_entities"
+    //% typeId.defl="minecraft:zombie"
+    //% exclude.defl=false
+    export function addTypeFilter(
+        selector: SelectorValue,
+        typeId: string,
+        exclude: boolean
+    ): SelectorValue {
+
+        MCFunctionAST.addSelectorFilter(
+            selector.selector,
+            MCFunctionAST.createSelectorFilter(
+                "type",
+                typeId,
+                exclude
+            )
+        );
+
+        return selector;
+    }
+
+    //% group="선택자 기본"
+    //% blockId=mcfunction_selector_name_filter
+    //% block="선택자 $selector 이름 name $name 제외 $exclude"
+    //% selector.shadow="mcfunction_selector_all_entities"
+    //% name.defl="Boss"
+    //% exclude.defl=false
+    export function addNameFilter(
+        selector: SelectorValue,
+        name: string,
+        exclude: boolean
+    ): SelectorValue {
+
+        MCFunctionAST.addSelectorFilter(
+            selector.selector,
+            MCFunctionAST.createSelectorFilter(
+                "name",
+                name,
+                exclude
+            )
+        );
+
+        return selector;
+    }
+
+    //% group="선택자 기본"
+    //% blockId=mcfunction_selector_tag_filter
+    //% block="선택자 $selector 태그 tag $tag 제외 $exclude"
+    //% selector.shadow="mcfunction_selector_all_entities"
+    //% tag.defl="boss"
+    //% exclude.defl=false
+    export function addTagFilter(
+        selector: SelectorValue,
+        tag: string,
+        exclude: boolean
+    ): SelectorValue {
+
+        MCFunctionAST.addSelectorFilter(
+            selector.selector,
+            MCFunctionAST.createSelectorFilter(
+                "tag",
+                tag,
+                exclude
+            )
+        );
+
+        return selector;
+    }
+
+    // ---------------------------------------------------------------------
+    // Selector 상세 대상 조건
+    // family / gamemode는 같은 Selector AST를 사용하되 UI에서 상세 그룹에 둔다.
+    // ---------------------------------------------------------------------
+
+    //% group="선택자 상세"
+    //% blockId=mcfunction_selector_family_filter
+    //% block="선택자 $selector 패밀리 family $family 제외 $exclude"
+    //% selector.shadow="mcfunction_selector_all_entities"
+    //% family.defl="monster"
+    //% exclude.defl=false
+    export function addFamilyFilter(
+        selector: SelectorValue,
+        family: string,
+        exclude: boolean
+    ): SelectorValue {
+
+        MCFunctionAST.addSelectorFilter(
+            selector.selector,
+            MCFunctionAST.createSelectorFilter(
+                "family",
+                family,
+                exclude
+            )
+        );
+
+        return selector;
+    }
+
+    //% group="선택자 상세"
+    //% blockId=mcfunction_selector_gamemode_filter
+    //% block="선택자 $selector 게임모드 $gamemode 제외 $exclude"
+    //% selector.shadow="mcfunction_selector_all_players"
+    //% gamemode.defl="survival"
+    //% exclude.defl=false
+    export function addGameModeFilter(
+        selector: SelectorValue,
+        gamemode: string,
+        exclude: boolean
+    ): SelectorValue {
+
+        MCFunctionAST.addSelectorFilter(
+            selector.selector,
+            MCFunctionAST.createSelectorFilter(
+                "m",
+                gamemode,
+                exclude
+            )
+        );
+
+        return selector;
+    }
+
+    //% group="선택자 상세"
     //% blockId=mcfunction_selector_position_filter
     //% block="선택자 $selector 위치 X $x Y $y Z $z"
     //% selector.shadow="mcfunction_selector_all_players"
@@ -194,6 +329,7 @@ namespace MCFunctionFields {
         return selector;
     }
 
+    //% group="선택자 상세"
     //% blockId=mcfunction_selector_area_filter
     //% block="선택자 $selector 영역 X $x Y $y Z $z dX $dx dY $dy dZ $dz"
     //% selector.shadow="mcfunction_selector_all_players"
@@ -230,6 +366,7 @@ namespace MCFunctionFields {
         return selector;
     }
 
+    //% group="선택자 상세"
     //% blockId=mcfunction_selector_distance_filter
     //% block="선택자 $selector 거리 $range"
     //% selector.shadow="mcfunction_selector_all_players"
@@ -264,6 +401,7 @@ namespace MCFunctionFields {
         return selector;
     }
 
+    //% group="선택자 상세"
     //% blockId=mcfunction_selector_level_filter
     //% block="선택자 $selector 레벨 $range"
     //% selector.shadow="mcfunction_selector_all_players"
@@ -298,6 +436,7 @@ namespace MCFunctionFields {
         return selector;
     }
 
+    //% group="선택자 상세"
     //% blockId=mcfunction_selector_rotation_x_filter
     //% block="선택자 $selector X 회전 $range"
     //% selector.shadow="mcfunction_selector_all_players"
@@ -332,6 +471,7 @@ namespace MCFunctionFields {
         return selector;
     }
 
+    //% group="선택자 상세"
     //% blockId=mcfunction_selector_rotation_y_filter
     //% block="선택자 $selector Y 회전 $range"
     //% selector.shadow="mcfunction_selector_all_players"
@@ -366,6 +506,7 @@ namespace MCFunctionFields {
         return selector;
     }
 
+    //% group="선택자 상세"
     //% blockId=mcfunction_selector_score_filter
     //% block="선택자 $selector 스코어 목표 $objective 범위 $range"
     //% selector.shadow="mcfunction_selector_all_players"
@@ -389,6 +530,7 @@ namespace MCFunctionFields {
         return selector;
     }
 
+    //% group="선택자 상세"
     //% blockId=mcfunction_selector_hasitem_filter
     //% block="선택자 $selector 아이템 보유 $item 개수 $quantity"
     //% selector.shadow="mcfunction_selector_all_players"
@@ -411,6 +553,7 @@ namespace MCFunctionFields {
         return selector;
     }
 
+    //% group="선택자 상세"
     //% blockId=mcfunction_selector_hasitem_advanced
     //% block="선택자 $selector 아이템 보유 상세 $item 개수 $quantity 위치 $location 슬롯 $slot 데이터 $data"
     //% selector.shadow="mcfunction_selector_all_players"
@@ -464,6 +607,7 @@ namespace MCFunctionFields {
         }
     }
 
+    //% group="선택자 기본"
     //% blockId=mcfunction_selector_all_players
     //% block="모든 플레이어 @a"
     export function allPlayers(): SelectorValue {
@@ -474,6 +618,7 @@ namespace MCFunctionFields {
         );
     }
 
+    //% group="선택자 기본"
     //% blockId=mcfunction_selector_all_entities
     //% block="모든 엔티티 @e"
     export function allEntities(): SelectorValue {
@@ -484,6 +629,7 @@ namespace MCFunctionFields {
         );
     }
 
+    //% group="선택자 기본"
     //% blockId=mcfunction_selector_nearest_player
     //% block="가장 가까운 플레이어 @p"
     export function nearestPlayer(): SelectorValue {
@@ -494,6 +640,7 @@ namespace MCFunctionFields {
         );
     }
 
+    //% group="선택자 기본"
     //% blockId=mcfunction_selector_random_player
     //% block="무작위 플레이어 @r"
     export function randomPlayer(): SelectorValue {
@@ -504,6 +651,7 @@ namespace MCFunctionFields {
         );
     }
 
+    //% group="선택자 기본"
     //% blockId=mcfunction_selector_self
     //% block="자신 @s"
     export function self(): SelectorValue {
@@ -514,6 +662,7 @@ namespace MCFunctionFields {
         );
     }
 
+    //% group="선택자 기본"
     //% blockId=mcfunction_selector_initiator
     //% block="대화 시작 플레이어 @initiator"
     export function initiator(): SelectorValue {
