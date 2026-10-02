@@ -12,6 +12,7 @@ namespace MCFunctionFields {
         }
     }
 
+    //% group="공통 값"
     //% blockId=mcfunction_range_min
     //% block="범위 $min 이상"
     //% min.defl=0
@@ -23,6 +24,7 @@ namespace MCFunctionFields {
         );
     }
 
+    //% group="공통 값"
     //% blockId=mcfunction_range_max
     //% block="범위 $max 이하"
     //% max.defl=10
@@ -34,6 +36,7 @@ namespace MCFunctionFields {
         );
     }
 
+    //% group="공통 값"
     //% blockId=mcfunction_range_min_max
     //% block="범위 $min 에서 $max"
     //% min.defl=0

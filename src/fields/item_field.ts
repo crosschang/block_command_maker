@@ -15,6 +15,7 @@ namespace MCFunctionFields {
         }
     }
 
+    //% group="아이템"
     //% blockId=mcfunction_item
     //% block="아이템 $itemId"
     //% itemId.defl="minecraft:stone"

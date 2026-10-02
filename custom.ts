@@ -1,3 +1,4 @@
+//% color="#555555" weight=10 icon="\uf188" block="MCFunction Test"
 namespace MCFunctionTest {
 
     //% block="Selector AST 테스트"

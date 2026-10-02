@@ -5,7 +5,8 @@
  * 실제 명령 의미는 내부 Selector AST가 보존한다.
  */
 
-//% groups='["선택자 기본", "선택자 상세", "others"]'
+//% color="#6A5ACD" weight=90 icon="\uf1b2" block="MCFunction"
+//% groups=['선택자 기본', '선택자 상세', '아이템', '아이템 상세', '공통 값', 'others']
 namespace MCFunctionFields {
 
     export enum SelectorNumberFilterType {
