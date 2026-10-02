@@ -173,7 +173,7 @@ namespace MCFunctionTest {
                 true,
                 slot,
 
-                false,
+                true,
                 0
             );
 
