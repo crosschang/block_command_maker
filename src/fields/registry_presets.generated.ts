@@ -9,9 +9,6 @@
  *
  * Generator:
  * - tools/generate_registry.ps1
- *
- * MakeCode enum dropdowns must exist at compile time, so this generated
- * TypeScript file is committed to Git and included by pxt.json.
  */
 
 namespace MCFunctionFields {

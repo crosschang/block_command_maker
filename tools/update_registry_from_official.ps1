@@ -229,6 +229,44 @@ function Convert-ToCamelFunctionName {
     return $pascal.Substring(0, 1).ToLowerInvariant() + $pascal.Substring(1)
 }
 
+
+function Get-KoreanRegistryPrefix {
+    param(
+        [string]$Kind
+    )
+
+    # Keep this function ASCII-only.
+    # Windows PowerShell 5.1 may decode a UTF-8 .ps1 without BOM as ANSI.
+    # Build Korean labels from Unicode code points instead.
+    if ($Kind -eq "item") {
+        return (
+            [string]([char]0xC544) +
+            [string]([char]0xC774) +
+            [string]([char]0xD15C) +
+            " "
+        )
+    }
+
+    if ($Kind -eq "block") {
+        return (
+            [string]([char]0xBE14) +
+            [string]([char]0xB85D) +
+            " "
+        )
+    }
+
+    if ($Kind -eq "entity") {
+        return (
+            [string]([char]0xC5D4) +
+            [string]([char]0xD2F0) +
+            [string]([char]0xD2F0) +
+            " "
+        )
+    }
+
+    return ""
+}
+
 function Update-KoreanRegistryLocalization {
     param(
         [object[]]$Items,
@@ -252,7 +290,7 @@ function Update-KoreanRegistryLocalization {
         $loc |
             Add-Member `
                 -NotePropertyName $key `
-                -NotePropertyValue ("아이템 " + [string]$id) `
+                -NotePropertyValue ((Get-KoreanRegistryPrefix "item") + [string]$id) `
                 -Force
     }
 
@@ -263,7 +301,7 @@ function Update-KoreanRegistryLocalization {
         $loc |
             Add-Member `
                 -NotePropertyName $key `
-                -NotePropertyValue ("블록 " + [string]$id) `
+                -NotePropertyValue ((Get-KoreanRegistryPrefix "block") + [string]$id) `
                 -Force
     }
 
@@ -274,7 +312,7 @@ function Update-KoreanRegistryLocalization {
         $loc |
             Add-Member `
                 -NotePropertyName $key `
-                -NotePropertyValue ("엔티티 " + [string]$id) `
+                -NotePropertyValue ((Get-KoreanRegistryPrefix "entity") + [string]$id) `
                 -Force
     }
 
