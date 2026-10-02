@@ -1,10 +1,10 @@
 /**
  * MakeCode Entity value wrapper
  *
- * - 선택 블록: 자주 쓰는 Minecraft 엔티티를 드롭다운으로 선택
- * - 직접 입력 블록: Custom Namespace / Add-on 엔티티 ID 입력
+ * Registry 연결 버전.
  *
- * Selector type, summon 등에서 공통 재사용한다.
+ * EntityPreset의 순서는 registry/bedrock/entities.ts의
+ * entityIds() 순서와 같아야 한다.
  */
 
 namespace MCFunctionFields {
@@ -59,47 +59,19 @@ namespace MCFunctionFields {
         preset: EntityPreset
     ): string {
 
-        switch (preset) {
+        let ids =
+            MCFunctionRegistryBedrock.entityIds();
 
-            case EntityPreset.Player:
-                return "minecraft:player";
+        let index = preset;
 
-            case EntityPreset.Zombie:
-                return "minecraft:zombie";
-
-            case EntityPreset.Skeleton:
-                return "minecraft:skeleton";
-
-            case EntityPreset.Creeper:
-                return "minecraft:creeper";
-
-            case EntityPreset.ArmorStand:
-                return "minecraft:armor_stand";
-
-            case EntityPreset.Cow:
-                return "minecraft:cow";
-
-            case EntityPreset.Pig:
-                return "minecraft:pig";
-
-            case EntityPreset.Sheep:
-                return "minecraft:sheep";
-
-            case EntityPreset.Villager:
-                return "minecraft:villager";
-
-            case EntityPreset.IronGolem:
-                return "minecraft:iron_golem";
-
-            case EntityPreset.Item:
-                return "minecraft:item";
-
-            case EntityPreset.Arrow:
-                return "minecraft:arrow";
-
-            default:
-                return "minecraft:zombie";
+        if (
+            index >= 0 &&
+            index < ids.length
+        ) {
+            return ids[index];
         }
+
+        return "minecraft:zombie";
     }
 
     //% group="공통 값"
@@ -115,6 +87,7 @@ namespace MCFunctionFields {
     }
 
     // 기존 blockId는 직접 입력용으로 유지한다.
+    // Custom Namespace / Add-on 엔티티 ID도 허용한다.
     //% group="공통 값"
     //% blockId=mcfunction_entity
     //% block="엔티티 직접 입력 $entityId"
@@ -124,6 +97,26 @@ namespace MCFunctionFields {
     ): EntityValue {
 
         return new EntityValue(
+            entityId
+        );
+    }
+
+    export function searchEntityRegistry(
+        query: string,
+        limit: number
+    ): string[] {
+
+        return MCFunctionRegistryBedrock.searchEntities(
+            query,
+            limit
+        );
+    }
+
+    export function isKnownEntityId(
+        entityId: string
+    ): boolean {
+
+        return MCFunctionRegistryBedrock.isKnownEntity(
             entityId
         );
     }

@@ -1,11 +1,12 @@
 /**
  * MakeCode Item value wrapper
  *
- * - 선택 블록: 자주 쓰는 Minecraft 아이템을 드롭다운으로 선택
- * - 직접 입력 블록: Custom Namespace / 아직 Registry에 없는 ID 입력
+ * Registry 연결 버전.
  *
- * 내부 타입은 둘 다 ItemValue이므로 give / clear / replaceitem /
- * hasitem 등 소비하는 쪽 코드는 동일하게 재사용한다.
+ * 중요:
+ * - ItemPreset의 순서는 registry/bedrock/items.ts의 itemIds() 순서와 같아야 한다.
+ * - 실제 Minecraft ID의 Source of Truth는 Registry다.
+ * - 직접 입력은 Custom Namespace를 위해 계속 허용한다.
  */
 
 namespace MCFunctionFields {
@@ -74,69 +75,29 @@ namespace MCFunctionFields {
         }
     }
 
+    /**
+     * Preset enum -> Registry ID
+     *
+     * switch에 Minecraft ID를 중복 저장하지 않는다.
+     * Registry 배열이 실제 ID Source of Truth다.
+     */
     function itemPresetToken(
         preset: ItemPreset
     ): string {
 
-        switch (preset) {
+        let ids =
+            MCFunctionRegistryBedrock.itemIds();
 
-            case ItemPreset.Stone:
-                return "minecraft:stone";
+        let index = preset;
 
-            case ItemPreset.Dirt:
-                return "minecraft:dirt";
-
-            case ItemPreset.Diamond:
-                return "minecraft:diamond";
-
-            case ItemPreset.Emerald:
-                return "minecraft:emerald";
-
-            case ItemPreset.IronIngot:
-                return "minecraft:iron_ingot";
-
-            case ItemPreset.GoldIngot:
-                return "minecraft:gold_ingot";
-
-            case ItemPreset.DiamondSword:
-                return "minecraft:diamond_sword";
-
-            case ItemPreset.DiamondPickaxe:
-                return "minecraft:diamond_pickaxe";
-
-            case ItemPreset.Bow:
-                return "minecraft:bow";
-
-            case ItemPreset.Arrow:
-                return "minecraft:arrow";
-
-            case ItemPreset.Apple:
-                return "minecraft:apple";
-
-            case ItemPreset.Bread:
-                return "minecraft:bread";
-
-            case ItemPreset.Paper:
-                return "minecraft:paper";
-
-            case ItemPreset.NameTag:
-                return "minecraft:name_tag";
-
-            case ItemPreset.Compass:
-                return "minecraft:compass";
-
-            case ItemPreset.Clock:
-                return "minecraft:clock";
-
-            case ItemPreset.Stick:
-                return "minecraft:stick";
-
-            case ItemPreset.Book:
-                return "minecraft:book";
-
-            default:
-                return "minecraft:stone";
+        if (
+            index >= 0 &&
+            index < ids.length
+        ) {
+            return ids[index];
         }
+
+        return "minecraft:stone";
     }
 
     //% group="아이템"
@@ -152,6 +113,7 @@ namespace MCFunctionFields {
     }
 
     // 기존 blockId는 직접 입력용으로 유지한다.
+    // Registry에 없는 Custom Namespace도 허용한다.
     //% group="아이템"
     //% blockId=mcfunction_item
     //% block="아이템 직접 입력 $itemId"
@@ -161,6 +123,30 @@ namespace MCFunctionFields {
     ): ItemValue {
 
         return new ItemValue(
+            itemId
+        );
+    }
+
+    /**
+     * 이후 검색 Field에서 그대로 사용할 Registry API.
+     * 블록으로 노출하지 않는다.
+     */
+    export function searchItemRegistry(
+        query: string,
+        limit: number
+    ): string[] {
+
+        return MCFunctionRegistryBedrock.searchItems(
+            query,
+            limit
+        );
+    }
+
+    export function isKnownItemId(
+        itemId: string
+    ): boolean {
+
+        return MCFunctionRegistryBedrock.isKnownItem(
             itemId
         );
     }

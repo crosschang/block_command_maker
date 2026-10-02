@@ -1,10 +1,10 @@
 /**
  * MakeCode Block value wrapper
  *
- * - 선택 블록: 자주 쓰는 Minecraft 블록을 드롭다운으로 선택
- * - 직접 입력 블록: Custom Namespace / Add-on 블록 ID 입력
+ * Registry 연결 버전.
  *
- * setblock, fill, can_destroy, can_place_on 등에서 공통 재사용한다.
+ * BlockPreset의 순서는 registry/bedrock/blocks.ts의
+ * blockIds() 순서와 같아야 한다.
  */
 
 namespace MCFunctionFields {
@@ -65,53 +65,19 @@ namespace MCFunctionFields {
         preset: BlockPreset
     ): string {
 
-        switch (preset) {
+        let ids =
+            MCFunctionRegistryBedrock.blockIds();
 
-            case BlockPreset.Stone:
-                return "minecraft:stone";
+        let index = preset;
 
-            case BlockPreset.Dirt:
-                return "minecraft:dirt";
-
-            case BlockPreset.GrassBlock:
-                return "minecraft:grass_block";
-
-            case BlockPreset.Cobblestone:
-                return "minecraft:cobblestone";
-
-            case BlockPreset.OakPlanks:
-                return "minecraft:oak_planks";
-
-            case BlockPreset.Glass:
-                return "minecraft:glass";
-
-            case BlockPreset.Bedrock:
-                return "minecraft:bedrock";
-
-            case BlockPreset.DiamondBlock:
-                return "minecraft:diamond_block";
-
-            case BlockPreset.GoldBlock:
-                return "minecraft:gold_block";
-
-            case BlockPreset.IronBlock:
-                return "minecraft:iron_block";
-
-            case BlockPreset.RedstoneBlock:
-                return "minecraft:redstone_block";
-
-            case BlockPreset.Air:
-                return "minecraft:air";
-
-            case BlockPreset.Barrier:
-                return "minecraft:barrier";
-
-            case BlockPreset.Chest:
-                return "minecraft:chest";
-
-            default:
-                return "minecraft:stone";
+        if (
+            index >= 0 &&
+            index < ids.length
+        ) {
+            return ids[index];
         }
+
+        return "minecraft:stone";
     }
 
     //% group="공통 값"
@@ -127,6 +93,7 @@ namespace MCFunctionFields {
     }
 
     // 기존 blockId는 직접 입력용으로 유지한다.
+    // Custom Namespace / Add-on 블록 ID도 허용한다.
     //% group="공통 값"
     //% blockId=mcfunction_block
     //% block="블록 직접 입력 $blockId"
@@ -136,6 +103,26 @@ namespace MCFunctionFields {
     ): BlockValue {
 
         return new BlockValue(
+            blockId
+        );
+    }
+
+    export function searchBlockRegistry(
+        query: string,
+        limit: number
+    ): string[] {
+
+        return MCFunctionRegistryBedrock.searchBlocks(
+            query,
+            limit
+        );
+    }
+
+    export function isKnownBlockId(
+        blockId: string
+    ): boolean {
+
+        return MCFunctionRegistryBedrock.isKnownBlock(
             blockId
         );
     }
