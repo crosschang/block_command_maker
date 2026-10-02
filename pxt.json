@@ -1,6 +1,6 @@
 {
     "name": "block_command_maker",
-    "version": "0.1.36",
+    "version": "0.1.37",
     "description": "Visual block editor for Minecraft Bedrock and Minecraft Education mcfunction commands",
     "dependencies": {
         "core": "*",
@@ -38,18 +38,21 @@
         "src/fields/selector_field.ts",
         "src/fields/item_components_field.ts",
         "src/fields/range_field.ts",
+        "src/fields/position_field.ts",
+        "src/fields/rotation_field.ts",
         "src/validator/validator.ts",
         "src/compiler/compiler.ts",
         "commands/say.ts",
         "commands/give.ts",
-        "src/blocks/block_adapter.ts",
-        "docs/PROJECT_GUIDELINES.md",
-        "custom.ts",
-        "tutorial-info-cache.json",
-        "src/fields/position_field.ts",
-        "src/fields/rotation_field.ts",
         "commands/teleport.ts",
-        "src/blocks/teleport_blocks.ts"
+        "src/blocks/block_adapter.ts",
+        "src/blocks/teleport_blocks.ts",
+        "docs/PROJECT_GUIDELINES.md",
+        "docs/tests/ENTITY_SEARCH_IMPLEMENTATION.md",
+        "docs/tests/_locales/ko/tp-smoke-test.md",
+        "docs/tests/tp-smoke-test.md",
+        "custom.ts",
+        "tutorial-info-cache.json"
     ],
     "testFiles": [
         "test.ts"

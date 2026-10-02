@@ -15,7 +15,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=200
     //% blockId=mcfunction_entity_registry_minecraft_player
-    //% block="엔티티 minecraft:player"
+    //% block="entity minecraft:player"
+    //% block.loc.ko="엔티티 minecraft:player"
     export function entityRegistryPlayer(): EntityValue {
         return new EntityValue("minecraft:player");
     }
@@ -23,7 +24,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=199
     //% blockId=mcfunction_entity_registry_minecraft_zombie
-    //% block="엔티티 minecraft:zombie"
+    //% block="entity minecraft:zombie"
+    //% block.loc.ko="엔티티 minecraft:zombie"
     export function entityRegistryZombie(): EntityValue {
         return new EntityValue("minecraft:zombie");
     }
@@ -31,7 +33,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=198
     //% blockId=mcfunction_entity_registry_minecraft_skeleton
-    //% block="엔티티 minecraft:skeleton"
+    //% block="entity minecraft:skeleton"
+    //% block.loc.ko="엔티티 minecraft:skeleton"
     export function entityRegistrySkeleton(): EntityValue {
         return new EntityValue("minecraft:skeleton");
     }
@@ -39,7 +42,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=197
     //% blockId=mcfunction_entity_registry_minecraft_creeper
-    //% block="엔티티 minecraft:creeper"
+    //% block="entity minecraft:creeper"
+    //% block.loc.ko="엔티티 minecraft:creeper"
     export function entityRegistryCreeper(): EntityValue {
         return new EntityValue("minecraft:creeper");
     }
@@ -47,7 +51,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=196
     //% blockId=mcfunction_entity_registry_minecraft_armor_stand
-    //% block="엔티티 minecraft:armor_stand"
+    //% block="entity minecraft:armor_stand"
+    //% block.loc.ko="엔티티 minecraft:armor_stand"
     export function entityRegistryArmorStand(): EntityValue {
         return new EntityValue("minecraft:armor_stand");
     }
@@ -55,7 +60,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=195
     //% blockId=mcfunction_entity_registry_minecraft_cow
-    //% block="엔티티 minecraft:cow"
+    //% block="entity minecraft:cow"
+    //% block.loc.ko="엔티티 minecraft:cow"
     export function entityRegistryCow(): EntityValue {
         return new EntityValue("minecraft:cow");
     }
@@ -63,7 +69,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=194
     //% blockId=mcfunction_entity_registry_minecraft_pig
-    //% block="엔티티 minecraft:pig"
+    //% block="entity minecraft:pig"
+    //% block.loc.ko="엔티티 minecraft:pig"
     export function entityRegistryPig(): EntityValue {
         return new EntityValue("minecraft:pig");
     }
@@ -71,7 +78,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=193
     //% blockId=mcfunction_entity_registry_minecraft_sheep
-    //% block="엔티티 minecraft:sheep"
+    //% block="entity minecraft:sheep"
+    //% block.loc.ko="엔티티 minecraft:sheep"
     export function entityRegistrySheep(): EntityValue {
         return new EntityValue("minecraft:sheep");
     }
@@ -79,7 +87,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=192
     //% blockId=mcfunction_entity_registry_minecraft_villager
-    //% block="엔티티 minecraft:villager"
+    //% block="entity minecraft:villager"
+    //% block.loc.ko="엔티티 minecraft:villager"
     export function entityRegistryVillager(): EntityValue {
         return new EntityValue("minecraft:villager");
     }
@@ -87,7 +96,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=191
     //% blockId=mcfunction_entity_registry_minecraft_iron_golem
-    //% block="엔티티 minecraft:iron_golem"
+    //% block="entity minecraft:iron_golem"
+    //% block.loc.ko="엔티티 minecraft:iron_golem"
     export function entityRegistryIronGolem(): EntityValue {
         return new EntityValue("minecraft:iron_golem");
     }
@@ -95,7 +105,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=190
     //% blockId=mcfunction_entity_registry_minecraft_item
-    //% block="엔티티 minecraft:item"
+    //% block="entity minecraft:item"
+    //% block.loc.ko="엔티티 minecraft:item"
     export function entityRegistryItem(): EntityValue {
         return new EntityValue("minecraft:item");
     }
@@ -103,7 +114,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=189
     //% blockId=mcfunction_entity_registry_minecraft_arrow
-    //% block="엔티티 minecraft:arrow"
+    //% block="entity minecraft:arrow"
+    //% block.loc.ko="엔티티 minecraft:arrow"
     export function entityRegistryArrow(): EntityValue {
         return new EntityValue("minecraft:arrow");
     }
@@ -111,7 +123,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=188
     //% blockId=mcfunction_entity_registry_minecraft_agent
-    //% block="엔티티 minecraft:agent"
+    //% block="entity minecraft:agent"
+    //% block.loc.ko="엔티티 minecraft:agent"
     export function entityRegistryAgent(): EntityValue {
         return new EntityValue("minecraft:agent");
     }
@@ -119,7 +132,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=187
     //% blockId=mcfunction_entity_registry_minecraft_allay
-    //% block="엔티티 minecraft:allay"
+    //% block="entity minecraft:allay"
+    //% block.loc.ko="엔티티 minecraft:allay"
     export function entityRegistryAllay(): EntityValue {
         return new EntityValue("minecraft:allay");
     }
@@ -127,7 +141,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=186
     //% blockId=mcfunction_entity_registry_minecraft_area_effect_cloud
-    //% block="엔티티 minecraft:area_effect_cloud"
+    //% block="entity minecraft:area_effect_cloud"
+    //% block.loc.ko="엔티티 minecraft:area_effect_cloud"
     export function entityRegistryAreaEffectCloud(): EntityValue {
         return new EntityValue("minecraft:area_effect_cloud");
     }
@@ -135,7 +150,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=185
     //% blockId=mcfunction_entity_registry_minecraft_armadillo
-    //% block="엔티티 minecraft:armadillo"
+    //% block="entity minecraft:armadillo"
+    //% block.loc.ko="엔티티 minecraft:armadillo"
     export function entityRegistryArmadillo(): EntityValue {
         return new EntityValue("minecraft:armadillo");
     }
@@ -143,7 +159,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=184
     //% blockId=mcfunction_entity_registry_minecraft_axolotl
-    //% block="엔티티 minecraft:axolotl"
+    //% block="entity minecraft:axolotl"
+    //% block.loc.ko="엔티티 minecraft:axolotl"
     export function entityRegistryAxolotl(): EntityValue {
         return new EntityValue("minecraft:axolotl");
     }
@@ -151,7 +168,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=183
     //% blockId=mcfunction_entity_registry_minecraft_balloon
-    //% block="엔티티 minecraft:balloon"
+    //% block="entity minecraft:balloon"
+    //% block.loc.ko="엔티티 minecraft:balloon"
     export function entityRegistryBalloon(): EntityValue {
         return new EntityValue("minecraft:balloon");
     }
@@ -159,7 +177,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=182
     //% blockId=mcfunction_entity_registry_minecraft_bat
-    //% block="엔티티 minecraft:bat"
+    //% block="entity minecraft:bat"
+    //% block.loc.ko="엔티티 minecraft:bat"
     export function entityRegistryBat(): EntityValue {
         return new EntityValue("minecraft:bat");
     }
@@ -167,7 +186,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=181
     //% blockId=mcfunction_entity_registry_minecraft_bee
-    //% block="엔티티 minecraft:bee"
+    //% block="entity minecraft:bee"
+    //% block.loc.ko="엔티티 minecraft:bee"
     export function entityRegistryBee(): EntityValue {
         return new EntityValue("minecraft:bee");
     }
@@ -175,7 +195,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=180
     //% blockId=mcfunction_entity_registry_minecraft_blaze
-    //% block="엔티티 minecraft:blaze"
+    //% block="entity minecraft:blaze"
+    //% block.loc.ko="엔티티 minecraft:blaze"
     export function entityRegistryBlaze(): EntityValue {
         return new EntityValue("minecraft:blaze");
     }
@@ -183,7 +204,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=179
     //% blockId=mcfunction_entity_registry_minecraft_boat
-    //% block="엔티티 minecraft:boat"
+    //% block="entity minecraft:boat"
+    //% block.loc.ko="엔티티 minecraft:boat"
     export function entityRegistryBoat(): EntityValue {
         return new EntityValue("minecraft:boat");
     }
@@ -191,7 +213,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=178
     //% blockId=mcfunction_entity_registry_minecraft_bogged
-    //% block="엔티티 minecraft:bogged"
+    //% block="entity minecraft:bogged"
+    //% block.loc.ko="엔티티 minecraft:bogged"
     export function entityRegistryBogged(): EntityValue {
         return new EntityValue("minecraft:bogged");
     }
@@ -199,7 +222,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=177
     //% blockId=mcfunction_entity_registry_minecraft_breeze
-    //% block="엔티티 minecraft:breeze"
+    //% block="entity minecraft:breeze"
+    //% block.loc.ko="엔티티 minecraft:breeze"
     export function entityRegistryBreeze(): EntityValue {
         return new EntityValue("minecraft:breeze");
     }
@@ -207,7 +231,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=176
     //% blockId=mcfunction_entity_registry_minecraft_breeze_wind_charge_projectile
-    //% block="엔티티 minecraft:breeze_wind_charge_projectile"
+    //% block="entity minecraft:breeze_wind_charge_projectile"
+    //% block.loc.ko="엔티티 minecraft:breeze_wind_charge_projectile"
     export function entityRegistryBreezeWindChargeProjectile(): EntityValue {
         return new EntityValue("minecraft:breeze_wind_charge_projectile");
     }
@@ -215,7 +240,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=175
     //% blockId=mcfunction_entity_registry_minecraft_camel
-    //% block="엔티티 minecraft:camel"
+    //% block="entity minecraft:camel"
+    //% block.loc.ko="엔티티 minecraft:camel"
     export function entityRegistryCamel(): EntityValue {
         return new EntityValue("minecraft:camel");
     }
@@ -223,7 +249,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=174
     //% blockId=mcfunction_entity_registry_minecraft_camel_husk
-    //% block="엔티티 minecraft:camel_husk"
+    //% block="entity minecraft:camel_husk"
+    //% block.loc.ko="엔티티 minecraft:camel_husk"
     export function entityRegistryCamelHusk(): EntityValue {
         return new EntityValue("minecraft:camel_husk");
     }
@@ -231,7 +258,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=173
     //% blockId=mcfunction_entity_registry_minecraft_cat
-    //% block="엔티티 minecraft:cat"
+    //% block="entity minecraft:cat"
+    //% block.loc.ko="엔티티 minecraft:cat"
     export function entityRegistryCat(): EntityValue {
         return new EntityValue("minecraft:cat");
     }
@@ -239,7 +267,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=172
     //% blockId=mcfunction_entity_registry_minecraft_cave_spider
-    //% block="엔티티 minecraft:cave_spider"
+    //% block="entity minecraft:cave_spider"
+    //% block.loc.ko="엔티티 minecraft:cave_spider"
     export function entityRegistryCaveSpider(): EntityValue {
         return new EntityValue("minecraft:cave_spider");
     }
@@ -247,7 +276,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=171
     //% blockId=mcfunction_entity_registry_minecraft_chalkboard
-    //% block="엔티티 minecraft:chalkboard"
+    //% block="entity minecraft:chalkboard"
+    //% block.loc.ko="엔티티 minecraft:chalkboard"
     export function entityRegistryChalkboard(): EntityValue {
         return new EntityValue("minecraft:chalkboard");
     }
@@ -255,7 +285,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=170
     //% blockId=mcfunction_entity_registry_minecraft_chest_boat
-    //% block="엔티티 minecraft:chest_boat"
+    //% block="entity minecraft:chest_boat"
+    //% block.loc.ko="엔티티 minecraft:chest_boat"
     export function entityRegistryChestBoat(): EntityValue {
         return new EntityValue("minecraft:chest_boat");
     }
@@ -263,7 +294,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=169
     //% blockId=mcfunction_entity_registry_minecraft_chest_minecart
-    //% block="엔티티 minecraft:chest_minecart"
+    //% block="entity minecraft:chest_minecart"
+    //% block.loc.ko="엔티티 minecraft:chest_minecart"
     export function entityRegistryChestMinecart(): EntityValue {
         return new EntityValue("minecraft:chest_minecart");
     }
@@ -271,7 +303,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=168
     //% blockId=mcfunction_entity_registry_minecraft_chicken
-    //% block="엔티티 minecraft:chicken"
+    //% block="entity minecraft:chicken"
+    //% block.loc.ko="엔티티 minecraft:chicken"
     export function entityRegistryChicken(): EntityValue {
         return new EntityValue("minecraft:chicken");
     }
@@ -279,7 +312,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=167
     //% blockId=mcfunction_entity_registry_minecraft_cod
-    //% block="엔티티 minecraft:cod"
+    //% block="entity minecraft:cod"
+    //% block.loc.ko="엔티티 minecraft:cod"
     export function entityRegistryCod(): EntityValue {
         return new EntityValue("minecraft:cod");
     }
@@ -287,7 +321,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=166
     //% blockId=mcfunction_entity_registry_minecraft_command_block_minecart
-    //% block="엔티티 minecraft:command_block_minecart"
+    //% block="entity minecraft:command_block_minecart"
+    //% block.loc.ko="엔티티 minecraft:command_block_minecart"
     export function entityRegistryCommandBlockMinecart(): EntityValue {
         return new EntityValue("minecraft:command_block_minecart");
     }
@@ -295,7 +330,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=165
     //% blockId=mcfunction_entity_registry_minecraft_copper_golem
-    //% block="엔티티 minecraft:copper_golem"
+    //% block="entity minecraft:copper_golem"
+    //% block.loc.ko="엔티티 minecraft:copper_golem"
     export function entityRegistryCopperGolem(): EntityValue {
         return new EntityValue("minecraft:copper_golem");
     }
@@ -303,7 +339,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=164
     //% blockId=mcfunction_entity_registry_minecraft_creaking
-    //% block="엔티티 minecraft:creaking"
+    //% block="entity minecraft:creaking"
+    //% block.loc.ko="엔티티 minecraft:creaking"
     export function entityRegistryCreaking(): EntityValue {
         return new EntityValue("minecraft:creaking");
     }
@@ -311,7 +348,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=163
     //% blockId=mcfunction_entity_registry_minecraft_cushion
-    //% block="엔티티 minecraft:cushion"
+    //% block="entity minecraft:cushion"
+    //% block.loc.ko="엔티티 minecraft:cushion"
     export function entityRegistryCushion(): EntityValue {
         return new EntityValue("minecraft:cushion");
     }
@@ -319,7 +357,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=162
     //% blockId=mcfunction_entity_registry_minecraft_dolphin
-    //% block="엔티티 minecraft:dolphin"
+    //% block="entity minecraft:dolphin"
+    //% block.loc.ko="엔티티 minecraft:dolphin"
     export function entityRegistryDolphin(): EntityValue {
         return new EntityValue("minecraft:dolphin");
     }
@@ -327,7 +366,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=161
     //% blockId=mcfunction_entity_registry_minecraft_donkey
-    //% block="엔티티 minecraft:donkey"
+    //% block="entity minecraft:donkey"
+    //% block.loc.ko="엔티티 minecraft:donkey"
     export function entityRegistryDonkey(): EntityValue {
         return new EntityValue("minecraft:donkey");
     }
@@ -335,7 +375,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=160
     //% blockId=mcfunction_entity_registry_minecraft_dragon_fireball
-    //% block="엔티티 minecraft:dragon_fireball"
+    //% block="entity minecraft:dragon_fireball"
+    //% block.loc.ko="엔티티 minecraft:dragon_fireball"
     export function entityRegistryDragonFireball(): EntityValue {
         return new EntityValue("minecraft:dragon_fireball");
     }
@@ -343,7 +384,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=159
     //% blockId=mcfunction_entity_registry_minecraft_drowned
-    //% block="엔티티 minecraft:drowned"
+    //% block="entity minecraft:drowned"
+    //% block.loc.ko="엔티티 minecraft:drowned"
     export function entityRegistryDrowned(): EntityValue {
         return new EntityValue("minecraft:drowned");
     }
@@ -351,7 +393,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=158
     //% blockId=mcfunction_entity_registry_minecraft_egg
-    //% block="엔티티 minecraft:egg"
+    //% block="entity minecraft:egg"
+    //% block.loc.ko="엔티티 minecraft:egg"
     export function entityRegistryEgg(): EntityValue {
         return new EntityValue("minecraft:egg");
     }
@@ -359,7 +402,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=157
     //% blockId=mcfunction_entity_registry_minecraft_elder_guardian
-    //% block="엔티티 minecraft:elder_guardian"
+    //% block="entity minecraft:elder_guardian"
+    //% block.loc.ko="엔티티 minecraft:elder_guardian"
     export function entityRegistryElderGuardian(): EntityValue {
         return new EntityValue("minecraft:elder_guardian");
     }
@@ -367,7 +411,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=156
     //% blockId=mcfunction_entity_registry_minecraft_elder_guardian_ghost
-    //% block="엔티티 minecraft:elder_guardian_ghost"
+    //% block="entity minecraft:elder_guardian_ghost"
+    //% block.loc.ko="엔티티 minecraft:elder_guardian_ghost"
     export function entityRegistryElderGuardianGhost(): EntityValue {
         return new EntityValue("minecraft:elder_guardian_ghost");
     }
@@ -375,7 +420,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=155
     //% blockId=mcfunction_entity_registry_minecraft_ender_crystal
-    //% block="엔티티 minecraft:ender_crystal"
+    //% block="entity minecraft:ender_crystal"
+    //% block.loc.ko="엔티티 minecraft:ender_crystal"
     export function entityRegistryEnderCrystal(): EntityValue {
         return new EntityValue("minecraft:ender_crystal");
     }
@@ -383,7 +429,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=154
     //% blockId=mcfunction_entity_registry_minecraft_ender_dragon
-    //% block="엔티티 minecraft:ender_dragon"
+    //% block="entity minecraft:ender_dragon"
+    //% block.loc.ko="엔티티 minecraft:ender_dragon"
     export function entityRegistryEnderDragon(): EntityValue {
         return new EntityValue("minecraft:ender_dragon");
     }
@@ -391,7 +438,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=153
     //% blockId=mcfunction_entity_registry_minecraft_ender_pearl
-    //% block="엔티티 minecraft:ender_pearl"
+    //% block="entity minecraft:ender_pearl"
+    //% block.loc.ko="엔티티 minecraft:ender_pearl"
     export function entityRegistryEnderPearl(): EntityValue {
         return new EntityValue("minecraft:ender_pearl");
     }
@@ -399,7 +447,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=152
     //% blockId=mcfunction_entity_registry_minecraft_enderman
-    //% block="엔티티 minecraft:enderman"
+    //% block="entity minecraft:enderman"
+    //% block.loc.ko="엔티티 minecraft:enderman"
     export function entityRegistryEnderman(): EntityValue {
         return new EntityValue("minecraft:enderman");
     }
@@ -407,7 +456,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=151
     //% blockId=mcfunction_entity_registry_minecraft_endermite
-    //% block="엔티티 minecraft:endermite"
+    //% block="entity minecraft:endermite"
+    //% block.loc.ko="엔티티 minecraft:endermite"
     export function entityRegistryEndermite(): EntityValue {
         return new EntityValue("minecraft:endermite");
     }
@@ -415,7 +465,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=150
     //% blockId=mcfunction_entity_registry_minecraft_evocation_fang
-    //% block="엔티티 minecraft:evocation_fang"
+    //% block="entity minecraft:evocation_fang"
+    //% block.loc.ko="엔티티 minecraft:evocation_fang"
     export function entityRegistryEvocationFang(): EntityValue {
         return new EntityValue("minecraft:evocation_fang");
     }
@@ -423,7 +474,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=149
     //% blockId=mcfunction_entity_registry_minecraft_evocation_illager
-    //% block="엔티티 minecraft:evocation_illager"
+    //% block="entity minecraft:evocation_illager"
+    //% block.loc.ko="엔티티 minecraft:evocation_illager"
     export function entityRegistryEvocationIllager(): EntityValue {
         return new EntityValue("minecraft:evocation_illager");
     }
@@ -431,7 +483,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=148
     //% blockId=mcfunction_entity_registry_minecraft_eye_of_ender_signal
-    //% block="엔티티 minecraft:eye_of_ender_signal"
+    //% block="entity minecraft:eye_of_ender_signal"
+    //% block.loc.ko="엔티티 minecraft:eye_of_ender_signal"
     export function entityRegistryEyeOfEnderSignal(): EntityValue {
         return new EntityValue("minecraft:eye_of_ender_signal");
     }
@@ -439,7 +492,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=147
     //% blockId=mcfunction_entity_registry_minecraft_falling_block
-    //% block="엔티티 minecraft:falling_block"
+    //% block="entity minecraft:falling_block"
+    //% block.loc.ko="엔티티 minecraft:falling_block"
     export function entityRegistryFallingBlock(): EntityValue {
         return new EntityValue("minecraft:falling_block");
     }
@@ -447,7 +501,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=146
     //% blockId=mcfunction_entity_registry_minecraft_fireball
-    //% block="엔티티 minecraft:fireball"
+    //% block="entity minecraft:fireball"
+    //% block.loc.ko="엔티티 minecraft:fireball"
     export function entityRegistryFireball(): EntityValue {
         return new EntityValue("minecraft:fireball");
     }
@@ -455,7 +510,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=145
     //% blockId=mcfunction_entity_registry_minecraft_fireworks_rocket
-    //% block="엔티티 minecraft:fireworks_rocket"
+    //% block="entity minecraft:fireworks_rocket"
+    //% block.loc.ko="엔티티 minecraft:fireworks_rocket"
     export function entityRegistryFireworksRocket(): EntityValue {
         return new EntityValue("minecraft:fireworks_rocket");
     }
@@ -463,7 +519,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=144
     //% blockId=mcfunction_entity_registry_minecraft_fishing_hook
-    //% block="엔티티 minecraft:fishing_hook"
+    //% block="entity minecraft:fishing_hook"
+    //% block.loc.ko="엔티티 minecraft:fishing_hook"
     export function entityRegistryFishingHook(): EntityValue {
         return new EntityValue("minecraft:fishing_hook");
     }
@@ -471,7 +528,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=143
     //% blockId=mcfunction_entity_registry_minecraft_fox
-    //% block="엔티티 minecraft:fox"
+    //% block="entity minecraft:fox"
+    //% block.loc.ko="엔티티 minecraft:fox"
     export function entityRegistryFox(): EntityValue {
         return new EntityValue("minecraft:fox");
     }
@@ -479,7 +537,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=142
     //% blockId=mcfunction_entity_registry_minecraft_frog
-    //% block="엔티티 minecraft:frog"
+    //% block="entity minecraft:frog"
+    //% block.loc.ko="엔티티 minecraft:frog"
     export function entityRegistryFrog(): EntityValue {
         return new EntityValue("minecraft:frog");
     }
@@ -487,7 +546,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=141
     //% blockId=mcfunction_entity_registry_minecraft_ghast
-    //% block="엔티티 minecraft:ghast"
+    //% block="entity minecraft:ghast"
+    //% block.loc.ko="엔티티 minecraft:ghast"
     export function entityRegistryGhast(): EntityValue {
         return new EntityValue("minecraft:ghast");
     }
@@ -495,7 +555,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=140
     //% blockId=mcfunction_entity_registry_minecraft_glow_squid
-    //% block="엔티티 minecraft:glow_squid"
+    //% block="entity minecraft:glow_squid"
+    //% block.loc.ko="엔티티 minecraft:glow_squid"
     export function entityRegistryGlowSquid(): EntityValue {
         return new EntityValue("minecraft:glow_squid");
     }
@@ -503,7 +564,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=139
     //% blockId=mcfunction_entity_registry_minecraft_goat
-    //% block="엔티티 minecraft:goat"
+    //% block="entity minecraft:goat"
+    //% block.loc.ko="엔티티 minecraft:goat"
     export function entityRegistryGoat(): EntityValue {
         return new EntityValue("minecraft:goat");
     }
@@ -511,7 +573,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=138
     //% blockId=mcfunction_entity_registry_minecraft_guardian
-    //% block="엔티티 minecraft:guardian"
+    //% block="entity minecraft:guardian"
+    //% block.loc.ko="엔티티 minecraft:guardian"
     export function entityRegistryGuardian(): EntityValue {
         return new EntityValue("minecraft:guardian");
     }
@@ -519,7 +582,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=137
     //% blockId=mcfunction_entity_registry_minecraft_happy_ghast
-    //% block="엔티티 minecraft:happy_ghast"
+    //% block="entity minecraft:happy_ghast"
+    //% block.loc.ko="엔티티 minecraft:happy_ghast"
     export function entityRegistryHappyGhast(): EntityValue {
         return new EntityValue("minecraft:happy_ghast");
     }
@@ -527,7 +591,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=136
     //% blockId=mcfunction_entity_registry_minecraft_hoglin
-    //% block="엔티티 minecraft:hoglin"
+    //% block="entity minecraft:hoglin"
+    //% block.loc.ko="엔티티 minecraft:hoglin"
     export function entityRegistryHoglin(): EntityValue {
         return new EntityValue("minecraft:hoglin");
     }
@@ -535,7 +600,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=135
     //% blockId=mcfunction_entity_registry_minecraft_hopper_minecart
-    //% block="엔티티 minecraft:hopper_minecart"
+    //% block="entity minecraft:hopper_minecart"
+    //% block.loc.ko="엔티티 minecraft:hopper_minecart"
     export function entityRegistryHopperMinecart(): EntityValue {
         return new EntityValue("minecraft:hopper_minecart");
     }
@@ -543,7 +609,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=134
     //% blockId=mcfunction_entity_registry_minecraft_horse
-    //% block="엔티티 minecraft:horse"
+    //% block="entity minecraft:horse"
+    //% block.loc.ko="엔티티 minecraft:horse"
     export function entityRegistryHorse(): EntityValue {
         return new EntityValue("minecraft:horse");
     }
@@ -551,7 +618,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=133
     //% blockId=mcfunction_entity_registry_minecraft_husk
-    //% block="엔티티 minecraft:husk"
+    //% block="entity minecraft:husk"
+    //% block.loc.ko="엔티티 minecraft:husk"
     export function entityRegistryHusk(): EntityValue {
         return new EntityValue("minecraft:husk");
     }
@@ -559,7 +627,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=132
     //% blockId=mcfunction_entity_registry_minecraft_ice_bomb
-    //% block="엔티티 minecraft:ice_bomb"
+    //% block="entity minecraft:ice_bomb"
+    //% block.loc.ko="엔티티 minecraft:ice_bomb"
     export function entityRegistryIceBomb(): EntityValue {
         return new EntityValue("minecraft:ice_bomb");
     }
@@ -567,7 +636,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=131
     //% blockId=mcfunction_entity_registry_minecraft_leash_knot
-    //% block="엔티티 minecraft:leash_knot"
+    //% block="entity minecraft:leash_knot"
+    //% block.loc.ko="엔티티 minecraft:leash_knot"
     export function entityRegistryLeashKnot(): EntityValue {
         return new EntityValue("minecraft:leash_knot");
     }
@@ -575,7 +645,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=130
     //% blockId=mcfunction_entity_registry_minecraft_lightning_bolt
-    //% block="엔티티 minecraft:lightning_bolt"
+    //% block="entity minecraft:lightning_bolt"
+    //% block.loc.ko="엔티티 minecraft:lightning_bolt"
     export function entityRegistryLightningBolt(): EntityValue {
         return new EntityValue("minecraft:lightning_bolt");
     }
@@ -583,7 +654,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=129
     //% blockId=mcfunction_entity_registry_minecraft_lingering_potion
-    //% block="엔티티 minecraft:lingering_potion"
+    //% block="entity minecraft:lingering_potion"
+    //% block.loc.ko="엔티티 minecraft:lingering_potion"
     export function entityRegistryLingeringPotion(): EntityValue {
         return new EntityValue("minecraft:lingering_potion");
     }
@@ -591,7 +663,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=128
     //% blockId=mcfunction_entity_registry_minecraft_llama
-    //% block="엔티티 minecraft:llama"
+    //% block="entity minecraft:llama"
+    //% block.loc.ko="엔티티 minecraft:llama"
     export function entityRegistryLlama(): EntityValue {
         return new EntityValue("minecraft:llama");
     }
@@ -599,7 +672,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=127
     //% blockId=mcfunction_entity_registry_minecraft_llama_spit
-    //% block="엔티티 minecraft:llama_spit"
+    //% block="entity minecraft:llama_spit"
+    //% block.loc.ko="엔티티 minecraft:llama_spit"
     export function entityRegistryLlamaSpit(): EntityValue {
         return new EntityValue("minecraft:llama_spit");
     }
@@ -607,7 +681,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=126
     //% blockId=mcfunction_entity_registry_minecraft_magma_cube
-    //% block="엔티티 minecraft:magma_cube"
+    //% block="entity minecraft:magma_cube"
+    //% block.loc.ko="엔티티 minecraft:magma_cube"
     export function entityRegistryMagmaCube(): EntityValue {
         return new EntityValue("minecraft:magma_cube");
     }
@@ -615,7 +690,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=125
     //% blockId=mcfunction_entity_registry_minecraft_minecart
-    //% block="엔티티 minecraft:minecart"
+    //% block="entity minecraft:minecart"
+    //% block.loc.ko="엔티티 minecraft:minecart"
     export function entityRegistryMinecart(): EntityValue {
         return new EntityValue("minecraft:minecart");
     }
@@ -623,7 +699,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=124
     //% blockId=mcfunction_entity_registry_minecraft_mooshroom
-    //% block="엔티티 minecraft:mooshroom"
+    //% block="entity minecraft:mooshroom"
+    //% block.loc.ko="엔티티 minecraft:mooshroom"
     export function entityRegistryMooshroom(): EntityValue {
         return new EntityValue("minecraft:mooshroom");
     }
@@ -631,7 +708,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=123
     //% blockId=mcfunction_entity_registry_minecraft_moving_block
-    //% block="엔티티 minecraft:moving_block"
+    //% block="entity minecraft:moving_block"
+    //% block.loc.ko="엔티티 minecraft:moving_block"
     export function entityRegistryMovingBlock(): EntityValue {
         return new EntityValue("minecraft:moving_block");
     }
@@ -639,7 +717,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=122
     //% blockId=mcfunction_entity_registry_minecraft_mule
-    //% block="엔티티 minecraft:mule"
+    //% block="entity minecraft:mule"
+    //% block.loc.ko="엔티티 minecraft:mule"
     export function entityRegistryMule(): EntityValue {
         return new EntityValue("minecraft:mule");
     }
@@ -647,7 +726,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=121
     //% blockId=mcfunction_entity_registry_minecraft_nautilus
-    //% block="엔티티 minecraft:nautilus"
+    //% block="entity minecraft:nautilus"
+    //% block.loc.ko="엔티티 minecraft:nautilus"
     export function entityRegistryNautilus(): EntityValue {
         return new EntityValue("minecraft:nautilus");
     }
@@ -655,7 +735,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=120
     //% blockId=mcfunction_entity_registry_minecraft_npc
-    //% block="엔티티 minecraft:npc"
+    //% block="entity minecraft:npc"
+    //% block.loc.ko="엔티티 minecraft:npc"
     export function entityRegistryNpc(): EntityValue {
         return new EntityValue("minecraft:npc");
     }
@@ -663,7 +744,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=119
     //% blockId=mcfunction_entity_registry_minecraft_ocelot
-    //% block="엔티티 minecraft:ocelot"
+    //% block="entity minecraft:ocelot"
+    //% block.loc.ko="엔티티 minecraft:ocelot"
     export function entityRegistryOcelot(): EntityValue {
         return new EntityValue("minecraft:ocelot");
     }
@@ -671,7 +753,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=118
     //% blockId=mcfunction_entity_registry_minecraft_ominous_item_spawner
-    //% block="엔티티 minecraft:ominous_item_spawner"
+    //% block="entity minecraft:ominous_item_spawner"
+    //% block.loc.ko="엔티티 minecraft:ominous_item_spawner"
     export function entityRegistryOminousItemSpawner(): EntityValue {
         return new EntityValue("minecraft:ominous_item_spawner");
     }
@@ -679,7 +762,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=117
     //% blockId=mcfunction_entity_registry_minecraft_painting
-    //% block="엔티티 minecraft:painting"
+    //% block="entity minecraft:painting"
+    //% block.loc.ko="엔티티 minecraft:painting"
     export function entityRegistryPainting(): EntityValue {
         return new EntityValue("minecraft:painting");
     }
@@ -687,7 +771,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=116
     //% blockId=mcfunction_entity_registry_minecraft_panda
-    //% block="엔티티 minecraft:panda"
+    //% block="entity minecraft:panda"
+    //% block.loc.ko="엔티티 minecraft:panda"
     export function entityRegistryPanda(): EntityValue {
         return new EntityValue("minecraft:panda");
     }
@@ -695,7 +780,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=115
     //% blockId=mcfunction_entity_registry_minecraft_parched
-    //% block="엔티티 minecraft:parched"
+    //% block="entity minecraft:parched"
+    //% block.loc.ko="엔티티 minecraft:parched"
     export function entityRegistryParched(): EntityValue {
         return new EntityValue("minecraft:parched");
     }
@@ -703,7 +789,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=114
     //% blockId=mcfunction_entity_registry_minecraft_parrot
-    //% block="엔티티 minecraft:parrot"
+    //% block="entity minecraft:parrot"
+    //% block.loc.ko="엔티티 minecraft:parrot"
     export function entityRegistryParrot(): EntityValue {
         return new EntityValue("minecraft:parrot");
     }
@@ -711,7 +798,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=113
     //% blockId=mcfunction_entity_registry_minecraft_phantom
-    //% block="엔티티 minecraft:phantom"
+    //% block="entity minecraft:phantom"
+    //% block.loc.ko="엔티티 minecraft:phantom"
     export function entityRegistryPhantom(): EntityValue {
         return new EntityValue("minecraft:phantom");
     }
@@ -719,7 +807,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=112
     //% blockId=mcfunction_entity_registry_minecraft_piglin
-    //% block="엔티티 minecraft:piglin"
+    //% block="entity minecraft:piglin"
+    //% block.loc.ko="엔티티 minecraft:piglin"
     export function entityRegistryPiglin(): EntityValue {
         return new EntityValue("minecraft:piglin");
     }
@@ -727,7 +816,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=111
     //% blockId=mcfunction_entity_registry_minecraft_piglin_brute
-    //% block="엔티티 minecraft:piglin_brute"
+    //% block="entity minecraft:piglin_brute"
+    //% block.loc.ko="엔티티 minecraft:piglin_brute"
     export function entityRegistryPiglinBrute(): EntityValue {
         return new EntityValue("minecraft:piglin_brute");
     }
@@ -735,7 +825,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=110
     //% blockId=mcfunction_entity_registry_minecraft_pillager
-    //% block="엔티티 minecraft:pillager"
+    //% block="entity minecraft:pillager"
+    //% block.loc.ko="엔티티 minecraft:pillager"
     export function entityRegistryPillager(): EntityValue {
         return new EntityValue("minecraft:pillager");
     }
@@ -743,7 +834,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=109
     //% blockId=mcfunction_entity_registry_minecraft_polar_bear
-    //% block="엔티티 minecraft:polar_bear"
+    //% block="entity minecraft:polar_bear"
+    //% block.loc.ko="엔티티 minecraft:polar_bear"
     export function entityRegistryPolarBear(): EntityValue {
         return new EntityValue("minecraft:polar_bear");
     }
@@ -751,7 +843,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=108
     //% blockId=mcfunction_entity_registry_minecraft_pufferfish
-    //% block="엔티티 minecraft:pufferfish"
+    //% block="entity minecraft:pufferfish"
+    //% block.loc.ko="엔티티 minecraft:pufferfish"
     export function entityRegistryPufferfish(): EntityValue {
         return new EntityValue("minecraft:pufferfish");
     }
@@ -759,7 +852,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=107
     //% blockId=mcfunction_entity_registry_minecraft_rabbit
-    //% block="엔티티 minecraft:rabbit"
+    //% block="entity minecraft:rabbit"
+    //% block.loc.ko="엔티티 minecraft:rabbit"
     export function entityRegistryRabbit(): EntityValue {
         return new EntityValue("minecraft:rabbit");
     }
@@ -767,7 +861,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=106
     //% blockId=mcfunction_entity_registry_minecraft_ravager
-    //% block="엔티티 minecraft:ravager"
+    //% block="entity minecraft:ravager"
+    //% block.loc.ko="엔티티 minecraft:ravager"
     export function entityRegistryRavager(): EntityValue {
         return new EntityValue("minecraft:ravager");
     }
@@ -775,7 +870,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=105
     //% blockId=mcfunction_entity_registry_minecraft_salmon
-    //% block="엔티티 minecraft:salmon"
+    //% block="entity minecraft:salmon"
+    //% block.loc.ko="엔티티 minecraft:salmon"
     export function entityRegistrySalmon(): EntityValue {
         return new EntityValue("minecraft:salmon");
     }
@@ -783,7 +879,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=104
     //% blockId=mcfunction_entity_registry_minecraft_shield
-    //% block="엔티티 minecraft:shield"
+    //% block="entity minecraft:shield"
+    //% block.loc.ko="엔티티 minecraft:shield"
     export function entityRegistryShield(): EntityValue {
         return new EntityValue("minecraft:shield");
     }
@@ -791,7 +888,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=103
     //% blockId=mcfunction_entity_registry_minecraft_shulker
-    //% block="엔티티 minecraft:shulker"
+    //% block="entity minecraft:shulker"
+    //% block.loc.ko="엔티티 minecraft:shulker"
     export function entityRegistryShulker(): EntityValue {
         return new EntityValue("minecraft:shulker");
     }
@@ -799,7 +897,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=102
     //% blockId=mcfunction_entity_registry_minecraft_shulker_bullet
-    //% block="엔티티 minecraft:shulker_bullet"
+    //% block="entity minecraft:shulker_bullet"
+    //% block.loc.ko="엔티티 minecraft:shulker_bullet"
     export function entityRegistryShulkerBullet(): EntityValue {
         return new EntityValue("minecraft:shulker_bullet");
     }
@@ -807,7 +906,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=101
     //% blockId=mcfunction_entity_registry_minecraft_silverfish
-    //% block="엔티티 minecraft:silverfish"
+    //% block="entity minecraft:silverfish"
+    //% block.loc.ko="엔티티 minecraft:silverfish"
     export function entityRegistrySilverfish(): EntityValue {
         return new EntityValue("minecraft:silverfish");
     }
@@ -815,7 +915,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=100
     //% blockId=mcfunction_entity_registry_minecraft_skeleton_horse
-    //% block="엔티티 minecraft:skeleton_horse"
+    //% block="entity minecraft:skeleton_horse"
+    //% block.loc.ko="엔티티 minecraft:skeleton_horse"
     export function entityRegistrySkeletonHorse(): EntityValue {
         return new EntityValue("minecraft:skeleton_horse");
     }
@@ -823,7 +924,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=99
     //% blockId=mcfunction_entity_registry_minecraft_slime
-    //% block="엔티티 minecraft:slime"
+    //% block="entity minecraft:slime"
+    //% block.loc.ko="엔티티 minecraft:slime"
     export function entityRegistrySlime(): EntityValue {
         return new EntityValue("minecraft:slime");
     }
@@ -831,7 +933,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=98
     //% blockId=mcfunction_entity_registry_minecraft_small_fireball
-    //% block="엔티티 minecraft:small_fireball"
+    //% block="entity minecraft:small_fireball"
+    //% block.loc.ko="엔티티 minecraft:small_fireball"
     export function entityRegistrySmallFireball(): EntityValue {
         return new EntityValue("minecraft:small_fireball");
     }
@@ -839,7 +942,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=97
     //% blockId=mcfunction_entity_registry_minecraft_sniffer
-    //% block="엔티티 minecraft:sniffer"
+    //% block="entity minecraft:sniffer"
+    //% block.loc.ko="엔티티 minecraft:sniffer"
     export function entityRegistrySniffer(): EntityValue {
         return new EntityValue("minecraft:sniffer");
     }
@@ -847,7 +951,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=96
     //% blockId=mcfunction_entity_registry_minecraft_snow_golem
-    //% block="엔티티 minecraft:snow_golem"
+    //% block="entity minecraft:snow_golem"
+    //% block.loc.ko="엔티티 minecraft:snow_golem"
     export function entityRegistrySnowGolem(): EntityValue {
         return new EntityValue("minecraft:snow_golem");
     }
@@ -855,7 +960,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=95
     //% blockId=mcfunction_entity_registry_minecraft_snowball
-    //% block="엔티티 minecraft:snowball"
+    //% block="entity minecraft:snowball"
+    //% block.loc.ko="엔티티 minecraft:snowball"
     export function entityRegistrySnowball(): EntityValue {
         return new EntityValue("minecraft:snowball");
     }
@@ -863,7 +969,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=94
     //% blockId=mcfunction_entity_registry_minecraft_spider
-    //% block="엔티티 minecraft:spider"
+    //% block="entity minecraft:spider"
+    //% block.loc.ko="엔티티 minecraft:spider"
     export function entityRegistrySpider(): EntityValue {
         return new EntityValue("minecraft:spider");
     }
@@ -871,7 +978,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=93
     //% blockId=mcfunction_entity_registry_minecraft_splash_potion
-    //% block="엔티티 minecraft:splash_potion"
+    //% block="entity minecraft:splash_potion"
+    //% block.loc.ko="엔티티 minecraft:splash_potion"
     export function entityRegistrySplashPotion(): EntityValue {
         return new EntityValue("minecraft:splash_potion");
     }
@@ -879,7 +987,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=92
     //% blockId=mcfunction_entity_registry_minecraft_squid
-    //% block="엔티티 minecraft:squid"
+    //% block="entity minecraft:squid"
+    //% block.loc.ko="엔티티 minecraft:squid"
     export function entityRegistrySquid(): EntityValue {
         return new EntityValue("minecraft:squid");
     }
@@ -887,7 +996,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=91
     //% blockId=mcfunction_entity_registry_minecraft_stray
-    //% block="엔티티 minecraft:stray"
+    //% block="entity minecraft:stray"
+    //% block.loc.ko="엔티티 minecraft:stray"
     export function entityRegistryStray(): EntityValue {
         return new EntityValue("minecraft:stray");
     }
@@ -895,7 +1005,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=90
     //% blockId=mcfunction_entity_registry_minecraft_strider
-    //% block="엔티티 minecraft:strider"
+    //% block="entity minecraft:strider"
+    //% block.loc.ko="엔티티 minecraft:strider"
     export function entityRegistryStrider(): EntityValue {
         return new EntityValue("minecraft:strider");
     }
@@ -903,7 +1014,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=89
     //% blockId=mcfunction_entity_registry_minecraft_sulfur_cube
-    //% block="엔티티 minecraft:sulfur_cube"
+    //% block="entity minecraft:sulfur_cube"
+    //% block.loc.ko="엔티티 minecraft:sulfur_cube"
     export function entityRegistrySulfurCube(): EntityValue {
         return new EntityValue("minecraft:sulfur_cube");
     }
@@ -911,7 +1023,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=88
     //% blockId=mcfunction_entity_registry_minecraft_tadpole
-    //% block="엔티티 minecraft:tadpole"
+    //% block="entity minecraft:tadpole"
+    //% block.loc.ko="엔티티 minecraft:tadpole"
     export function entityRegistryTadpole(): EntityValue {
         return new EntityValue("minecraft:tadpole");
     }
@@ -919,7 +1032,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=87
     //% blockId=mcfunction_entity_registry_minecraft_thrown_trident
-    //% block="엔티티 minecraft:thrown_trident"
+    //% block="entity minecraft:thrown_trident"
+    //% block.loc.ko="엔티티 minecraft:thrown_trident"
     export function entityRegistryThrownTrident(): EntityValue {
         return new EntityValue("minecraft:thrown_trident");
     }
@@ -927,7 +1041,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=86
     //% blockId=mcfunction_entity_registry_minecraft_tnt
-    //% block="엔티티 minecraft:tnt"
+    //% block="entity minecraft:tnt"
+    //% block.loc.ko="엔티티 minecraft:tnt"
     export function entityRegistryTnt(): EntityValue {
         return new EntityValue("minecraft:tnt");
     }
@@ -935,7 +1050,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=85
     //% blockId=mcfunction_entity_registry_minecraft_tnt_minecart
-    //% block="엔티티 minecraft:tnt_minecart"
+    //% block="entity minecraft:tnt_minecart"
+    //% block.loc.ko="엔티티 minecraft:tnt_minecart"
     export function entityRegistryTntMinecart(): EntityValue {
         return new EntityValue("minecraft:tnt_minecart");
     }
@@ -943,7 +1059,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=84
     //% blockId=mcfunction_entity_registry_minecraft_trader_llama
-    //% block="엔티티 minecraft:trader_llama"
+    //% block="entity minecraft:trader_llama"
+    //% block.loc.ko="엔티티 minecraft:trader_llama"
     export function entityRegistryTraderLlama(): EntityValue {
         return new EntityValue("minecraft:trader_llama");
     }
@@ -951,7 +1068,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=83
     //% blockId=mcfunction_entity_registry_minecraft_tripod_camera
-    //% block="엔티티 minecraft:tripod_camera"
+    //% block="entity minecraft:tripod_camera"
+    //% block.loc.ko="엔티티 minecraft:tripod_camera"
     export function entityRegistryTripodCamera(): EntityValue {
         return new EntityValue("minecraft:tripod_camera");
     }
@@ -959,7 +1077,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=82
     //% blockId=mcfunction_entity_registry_minecraft_tropicalfish
-    //% block="엔티티 minecraft:tropicalfish"
+    //% block="entity minecraft:tropicalfish"
+    //% block.loc.ko="엔티티 minecraft:tropicalfish"
     export function entityRegistryTropicalfish(): EntityValue {
         return new EntityValue("minecraft:tropicalfish");
     }
@@ -967,7 +1086,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=81
     //% blockId=mcfunction_entity_registry_minecraft_turtle
-    //% block="엔티티 minecraft:turtle"
+    //% block="entity minecraft:turtle"
+    //% block.loc.ko="엔티티 minecraft:turtle"
     export function entityRegistryTurtle(): EntityValue {
         return new EntityValue("minecraft:turtle");
     }
@@ -975,7 +1095,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=80
     //% blockId=mcfunction_entity_registry_minecraft_vex
-    //% block="엔티티 minecraft:vex"
+    //% block="entity minecraft:vex"
+    //% block.loc.ko="엔티티 minecraft:vex"
     export function entityRegistryVex(): EntityValue {
         return new EntityValue("minecraft:vex");
     }
@@ -983,7 +1104,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=79
     //% blockId=mcfunction_entity_registry_minecraft_villager_v2
-    //% block="엔티티 minecraft:villager_v2"
+    //% block="entity minecraft:villager_v2"
+    //% block.loc.ko="엔티티 minecraft:villager_v2"
     export function entityRegistryVillagerV2(): EntityValue {
         return new EntityValue("minecraft:villager_v2");
     }
@@ -991,7 +1113,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=78
     //% blockId=mcfunction_entity_registry_minecraft_vindicator
-    //% block="엔티티 minecraft:vindicator"
+    //% block="entity minecraft:vindicator"
+    //% block.loc.ko="엔티티 minecraft:vindicator"
     export function entityRegistryVindicator(): EntityValue {
         return new EntityValue("minecraft:vindicator");
     }
@@ -999,7 +1122,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=77
     //% blockId=mcfunction_entity_registry_minecraft_wandering_trader
-    //% block="엔티티 minecraft:wandering_trader"
+    //% block="entity minecraft:wandering_trader"
+    //% block.loc.ko="엔티티 minecraft:wandering_trader"
     export function entityRegistryWanderingTrader(): EntityValue {
         return new EntityValue("minecraft:wandering_trader");
     }
@@ -1007,7 +1131,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=76
     //% blockId=mcfunction_entity_registry_minecraft_warden
-    //% block="엔티티 minecraft:warden"
+    //% block="entity minecraft:warden"
+    //% block.loc.ko="엔티티 minecraft:warden"
     export function entityRegistryWarden(): EntityValue {
         return new EntityValue("minecraft:warden");
     }
@@ -1015,7 +1140,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=75
     //% blockId=mcfunction_entity_registry_minecraft_wind_charge_projectile
-    //% block="엔티티 minecraft:wind_charge_projectile"
+    //% block="entity minecraft:wind_charge_projectile"
+    //% block.loc.ko="엔티티 minecraft:wind_charge_projectile"
     export function entityRegistryWindChargeProjectile(): EntityValue {
         return new EntityValue("minecraft:wind_charge_projectile");
     }
@@ -1023,7 +1149,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=74
     //% blockId=mcfunction_entity_registry_minecraft_witch
-    //% block="엔티티 minecraft:witch"
+    //% block="entity minecraft:witch"
+    //% block.loc.ko="엔티티 minecraft:witch"
     export function entityRegistryWitch(): EntityValue {
         return new EntityValue("minecraft:witch");
     }
@@ -1031,7 +1158,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=73
     //% blockId=mcfunction_entity_registry_minecraft_wither
-    //% block="엔티티 minecraft:wither"
+    //% block="entity minecraft:wither"
+    //% block.loc.ko="엔티티 minecraft:wither"
     export function entityRegistryWither(): EntityValue {
         return new EntityValue("minecraft:wither");
     }
@@ -1039,7 +1167,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=72
     //% blockId=mcfunction_entity_registry_minecraft_wither_skeleton
-    //% block="엔티티 minecraft:wither_skeleton"
+    //% block="entity minecraft:wither_skeleton"
+    //% block.loc.ko="엔티티 minecraft:wither_skeleton"
     export function entityRegistryWitherSkeleton(): EntityValue {
         return new EntityValue("minecraft:wither_skeleton");
     }
@@ -1047,7 +1176,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=71
     //% blockId=mcfunction_entity_registry_minecraft_wither_skull
-    //% block="엔티티 minecraft:wither_skull"
+    //% block="entity minecraft:wither_skull"
+    //% block.loc.ko="엔티티 minecraft:wither_skull"
     export function entityRegistryWitherSkull(): EntityValue {
         return new EntityValue("minecraft:wither_skull");
     }
@@ -1055,7 +1185,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=70
     //% blockId=mcfunction_entity_registry_minecraft_wither_skull_dangerous
-    //% block="엔티티 minecraft:wither_skull_dangerous"
+    //% block="entity minecraft:wither_skull_dangerous"
+    //% block.loc.ko="엔티티 minecraft:wither_skull_dangerous"
     export function entityRegistryWitherSkullDangerous(): EntityValue {
         return new EntityValue("minecraft:wither_skull_dangerous");
     }
@@ -1063,7 +1194,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=69
     //% blockId=mcfunction_entity_registry_minecraft_wolf
-    //% block="엔티티 minecraft:wolf"
+    //% block="entity minecraft:wolf"
+    //% block.loc.ko="엔티티 minecraft:wolf"
     export function entityRegistryWolf(): EntityValue {
         return new EntityValue("minecraft:wolf");
     }
@@ -1071,7 +1203,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=68
     //% blockId=mcfunction_entity_registry_minecraft_xp_bottle
-    //% block="엔티티 minecraft:xp_bottle"
+    //% block="entity minecraft:xp_bottle"
+    //% block.loc.ko="엔티티 minecraft:xp_bottle"
     export function entityRegistryXpBottle(): EntityValue {
         return new EntityValue("minecraft:xp_bottle");
     }
@@ -1079,7 +1212,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=67
     //% blockId=mcfunction_entity_registry_minecraft_xp_orb
-    //% block="엔티티 minecraft:xp_orb"
+    //% block="entity minecraft:xp_orb"
+    //% block.loc.ko="엔티티 minecraft:xp_orb"
     export function entityRegistryXpOrb(): EntityValue {
         return new EntityValue("minecraft:xp_orb");
     }
@@ -1087,7 +1221,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=66
     //% blockId=mcfunction_entity_registry_minecraft_zoglin
-    //% block="엔티티 minecraft:zoglin"
+    //% block="entity minecraft:zoglin"
+    //% block.loc.ko="엔티티 minecraft:zoglin"
     export function entityRegistryZoglin(): EntityValue {
         return new EntityValue("minecraft:zoglin");
     }
@@ -1095,7 +1230,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=65
     //% blockId=mcfunction_entity_registry_minecraft_zombie_horse
-    //% block="엔티티 minecraft:zombie_horse"
+    //% block="entity minecraft:zombie_horse"
+    //% block.loc.ko="엔티티 minecraft:zombie_horse"
     export function entityRegistryZombieHorse(): EntityValue {
         return new EntityValue("minecraft:zombie_horse");
     }
@@ -1103,7 +1239,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=64
     //% blockId=mcfunction_entity_registry_minecraft_zombie_nautilus
-    //% block="엔티티 minecraft:zombie_nautilus"
+    //% block="entity minecraft:zombie_nautilus"
+    //% block.loc.ko="엔티티 minecraft:zombie_nautilus"
     export function entityRegistryZombieNautilus(): EntityValue {
         return new EntityValue("minecraft:zombie_nautilus");
     }
@@ -1111,7 +1248,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=63
     //% blockId=mcfunction_entity_registry_minecraft_zombie_pigman
-    //% block="엔티티 minecraft:zombie_pigman"
+    //% block="entity minecraft:zombie_pigman"
+    //% block.loc.ko="엔티티 minecraft:zombie_pigman"
     export function entityRegistryZombiePigman(): EntityValue {
         return new EntityValue("minecraft:zombie_pigman");
     }
@@ -1119,7 +1257,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=62
     //% blockId=mcfunction_entity_registry_minecraft_zombie_villager
-    //% block="엔티티 minecraft:zombie_villager"
+    //% block="entity minecraft:zombie_villager"
+    //% block.loc.ko="엔티티 minecraft:zombie_villager"
     export function entityRegistryZombieVillager(): EntityValue {
         return new EntityValue("minecraft:zombie_villager");
     }
@@ -1127,7 +1266,8 @@ namespace MCFunctionFields {
     //% group="엔티티 검색"
     //% weight=61
     //% blockId=mcfunction_entity_registry_minecraft_zombie_villager_v2
-    //% block="엔티티 minecraft:zombie_villager_v2"
+    //% block="entity minecraft:zombie_villager_v2"
+    //% block.loc.ko="엔티티 minecraft:zombie_villager_v2"
     export function entityRegistryZombieVillagerV2(): EntityValue {
         return new EntityValue("minecraft:zombie_villager_v2");
     }
