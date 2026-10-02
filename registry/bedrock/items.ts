@@ -1,8 +1,8 @@
 /**
- * Bedrock Item Registry V1 Bootstrap
+ * AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
  *
- * 현재는 Registry 시스템/검색 흐름 검증용 대표 데이터.
- * 이후 공식 데이터 기준으로 전체 목록을 확장한다.
+ * Source: registry/source/bedrock/items.json
+ * Generator: tools/generate_registry.ps1
  */
 
 namespace MCFunctionRegistryBedrock {

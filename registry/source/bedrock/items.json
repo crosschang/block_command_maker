@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "platform": "bedrock",
+  "entries": [
+    {
+      "id": "minecraft:stone"
+    },
+    {
+      "id": "minecraft:dirt"
+    },
+    {
+      "id": "minecraft:diamond"
+    },
+    {
+      "id": "minecraft:emerald"
+    },
+    {
+      "id": "minecraft:iron_ingot"
+    },
+    {
+      "id": "minecraft:gold_ingot"
+    },
+    {
+      "id": "minecraft:diamond_sword"
+    },
+    {
+      "id": "minecraft:diamond_pickaxe"
+    },
+    {
+      "id": "minecraft:bow"
+    },
+    {
+      "id": "minecraft:arrow"
+    },
+    {
+      "id": "minecraft:apple"
+    },
+    {
+      "id": "minecraft:bread"
+    },
+    {
+      "id": "minecraft:paper"
+    },
+    {
+      "id": "minecraft:name_tag"
+    },
+    {
+      "id": "minecraft:compass"
+    },
+    {
+      "id": "minecraft:clock"
+    },
+    {
+      "id": "minecraft:stick"
+    },
+    {
+      "id": "minecraft:book"
+    }
+  ]
+}

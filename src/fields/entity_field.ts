@@ -3,49 +3,12 @@
  *
  * Registry 연결 버전.
  *
- * EntityPreset의 순서는 registry/bedrock/entities.ts의
- * entityIds() 순서와 같아야 한다.
+ * EntityPreset은 src/fields/registry_presets.generated.ts에서 자동 생성된다.
+ * 실제 Minecraft ID의 Source of Truth는 registry/source/bedrock/entities.json이다.
  */
 
 namespace MCFunctionFields {
 
-    export enum EntityPreset {
-        //% block="minecraft:player"
-        Player = 0,
-
-        //% block="minecraft:zombie"
-        Zombie = 1,
-
-        //% block="minecraft:skeleton"
-        Skeleton = 2,
-
-        //% block="minecraft:creeper"
-        Creeper = 3,
-
-        //% block="minecraft:armor_stand"
-        ArmorStand = 4,
-
-        //% block="minecraft:cow"
-        Cow = 5,
-
-        //% block="minecraft:pig"
-        Pig = 6,
-
-        //% block="minecraft:sheep"
-        Sheep = 7,
-
-        //% block="minecraft:villager"
-        Villager = 8,
-
-        //% block="minecraft:iron_golem"
-        IronGolem = 9,
-
-        //% block="minecraft:item"
-        Item = 10,
-
-        //% block="minecraft:arrow"
-        Arrow = 11
-    }
 
     export class EntityValue {
         entityId: string;

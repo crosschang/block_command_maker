@@ -3,55 +3,12 @@
  *
  * Registry 연결 버전.
  *
- * BlockPreset의 순서는 registry/bedrock/blocks.ts의
- * blockIds() 순서와 같아야 한다.
+ * BlockPreset은 src/fields/registry_presets.generated.ts에서 자동 생성된다.
+ * 실제 Minecraft ID의 Source of Truth는 registry/source/bedrock/blocks.json이다.
  */
 
 namespace MCFunctionFields {
 
-    export enum BlockPreset {
-        //% block="minecraft:stone"
-        Stone = 0,
-
-        //% block="minecraft:dirt"
-        Dirt = 1,
-
-        //% block="minecraft:grass_block"
-        GrassBlock = 2,
-
-        //% block="minecraft:cobblestone"
-        Cobblestone = 3,
-
-        //% block="minecraft:oak_planks"
-        OakPlanks = 4,
-
-        //% block="minecraft:glass"
-        Glass = 5,
-
-        //% block="minecraft:bedrock"
-        Bedrock = 6,
-
-        //% block="minecraft:diamond_block"
-        DiamondBlock = 7,
-
-        //% block="minecraft:gold_block"
-        GoldBlock = 8,
-
-        //% block="minecraft:iron_block"
-        IronBlock = 9,
-
-        //% block="minecraft:redstone_block"
-        RedstoneBlock = 10,
-
-        //% block="minecraft:air"
-        Air = 11,
-
-        //% block="minecraft:barrier"
-        Barrier = 12,
-
-        //% block="minecraft:chest"
-        Chest = 13
-    }
 
     export class BlockValue {
         blockId: string;

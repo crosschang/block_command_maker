@@ -3,69 +3,13 @@
  *
  * Registry 연결 버전.
  *
- * 중요:
- * - ItemPreset의 순서는 registry/bedrock/items.ts의 itemIds() 순서와 같아야 한다.
- * - 실제 Minecraft ID의 Source of Truth는 Registry다.
- * - 직접 입력은 Custom Namespace를 위해 계속 허용한다.
+ * ItemPreset은 src/fields/registry_presets.generated.ts에서 자동 생성된다.
+ * 실제 Minecraft ID의 Source of Truth는 registry/source/bedrock/items.json이다.
+ * 직접 입력은 Custom Namespace를 위해 계속 허용한다.
  */
 
 namespace MCFunctionFields {
 
-    export enum ItemPreset {
-        //% block="minecraft:stone"
-        Stone = 0,
-
-        //% block="minecraft:dirt"
-        Dirt = 1,
-
-        //% block="minecraft:diamond"
-        Diamond = 2,
-
-        //% block="minecraft:emerald"
-        Emerald = 3,
-
-        //% block="minecraft:iron_ingot"
-        IronIngot = 4,
-
-        //% block="minecraft:gold_ingot"
-        GoldIngot = 5,
-
-        //% block="minecraft:diamond_sword"
-        DiamondSword = 6,
-
-        //% block="minecraft:diamond_pickaxe"
-        DiamondPickaxe = 7,
-
-        //% block="minecraft:bow"
-        Bow = 8,
-
-        //% block="minecraft:arrow"
-        Arrow = 9,
-
-        //% block="minecraft:apple"
-        Apple = 10,
-
-        //% block="minecraft:bread"
-        Bread = 11,
-
-        //% block="minecraft:paper"
-        Paper = 12,
-
-        //% block="minecraft:name_tag"
-        NameTag = 13,
-
-        //% block="minecraft:compass"
-        Compass = 14,
-
-        //% block="minecraft:clock"
-        Clock = 15,
-
-        //% block="minecraft:stick"
-        Stick = 16,
-
-        //% block="minecraft:book"
-        Book = 17
-    }
 
     export class ItemValue {
         itemId: string;

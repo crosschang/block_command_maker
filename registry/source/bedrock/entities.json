@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "platform": "bedrock",
+  "entries": [
+    {
+      "id": "minecraft:player"
+    },
+    {
+      "id": "minecraft:zombie"
+    },
+    {
+      "id": "minecraft:skeleton"
+    },
+    {
+      "id": "minecraft:creeper"
+    },
+    {
+      "id": "minecraft:armor_stand"
+    },
+    {
+      "id": "minecraft:cow"
+    },
+    {
+      "id": "minecraft:pig"
+    },
+    {
+      "id": "minecraft:sheep"
+    },
+    {
+      "id": "minecraft:villager"
+    },
+    {
+      "id": "minecraft:iron_golem"
+    },
+    {
+      "id": "minecraft:item"
+    },
+    {
+      "id": "minecraft:arrow"
+    }
+  ]
+}

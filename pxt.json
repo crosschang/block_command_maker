@@ -21,14 +21,6 @@
         "src/ast/range.ts",
         "src/ast/slot.ts",
         "src/ast/item_components.ts",
-        "src/fields/entity_field.ts",
-        "src/fields/block_field.ts",
-        "src/fields/item_field.ts",
-        "src/fields/selector_field.ts",
-        "src/fields/item_components_field.ts",
-        "src/fields/range_field.ts",
-        "src/validator/validator.ts",
-        "src/compiler/compiler.ts",
         "registry/registry.ts",
         "registry/bedrock/version.ts",
         "registry/bedrock/items.ts",
@@ -38,6 +30,15 @@
         "registry/education/items.ts",
         "registry/education/blocks.ts",
         "registry/education/entities.ts",
+        "src/fields/registry_presets.generated.ts",
+        "src/fields/entity_field.ts",
+        "src/fields/block_field.ts",
+        "src/fields/item_field.ts",
+        "src/fields/selector_field.ts",
+        "src/fields/item_components_field.ts",
+        "src/fields/range_field.ts",
+        "src/validator/validator.ts",
+        "src/compiler/compiler.ts",
         "commands/say.ts",
         "commands/give.ts",
         "src/blocks/block_adapter.ts",
@@ -55,5 +56,5 @@
     "supportedTargets": [
         "minecraft"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }

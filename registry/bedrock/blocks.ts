@@ -1,5 +1,8 @@
 /**
- * Bedrock Block Registry V1 Bootstrap
+ * AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+ *
+ * Source: registry/source/bedrock/blocks.json
+ * Generator: tools/generate_registry.ps1
  */
 
 namespace MCFunctionRegistryBedrock {

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "platform": "bedrock",
+  "entries": [
+    {
+      "id": "minecraft:stone"
+    },
+    {
+      "id": "minecraft:dirt"
+    },
+    {
+      "id": "minecraft:grass_block"
+    },
+    {
+      "id": "minecraft:cobblestone"
+    },
+    {
+      "id": "minecraft:oak_planks"
+    },
+    {
+      "id": "minecraft:glass"
+    },
+    {
+      "id": "minecraft:bedrock"
+    },
+    {
+      "id": "minecraft:diamond_block"
+    },
+    {
+      "id": "minecraft:gold_block"
+    },
+    {
+      "id": "minecraft:iron_block"
+    },
+    {
+      "id": "minecraft:redstone_block"
+    },
+    {
+      "id": "minecraft:air"
+    },
+    {
+      "id": "minecraft:barrier"
+    },
+    {
+      "id": "minecraft:chest"
+    }
+  ]
+}
