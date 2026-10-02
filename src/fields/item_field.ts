@@ -44,9 +44,6 @@ namespace MCFunctionFields {
         return "minecraft:stone";
     }
 
-    //% group="아이템"
-    //% blockId=mcfunction_item_select
-    //% block="아이템 선택 $preset"
     export function itemSelect(
         preset: ItemPreset
     ): ItemValue {
@@ -58,10 +55,6 @@ namespace MCFunctionFields {
 
     // 기존 blockId는 직접 입력용으로 유지한다.
     // Registry에 없는 Custom Namespace도 허용한다.
-    //% group="아이템"
-    //% blockId=mcfunction_item
-    //% block="아이템 직접 입력 $itemId"
-    //% itemId.defl="minecraft:stone"
     export function item(
         itemId: string
     ): ItemValue {

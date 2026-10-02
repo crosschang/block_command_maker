@@ -6,7 +6,7 @@
  */
 
 //% color="#6A5ACD" weight=90 icon="\uf05b" block="MCFunction Selector"
-//% groups='["selector targets", "selector conditions", "entity search", "items", "item details", "common values", "others"]'
+//% groups='["selector targets", "selector conditions", "common values", "others"]'
 namespace MCFunctionFields {
 
     // ---------------------------------------------------------------------

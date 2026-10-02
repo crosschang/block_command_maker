@@ -76,7 +76,7 @@ player.onChat("tp_up", function () {
 ```blocks
 let zombieTarget = MCFunctionFields.allEntities(
     MCFunctionFields.addEntityTypeCondition(
-        MCFunctionFields.entityRegistryZombie(),
+        MCFunctionEntityLibrary.zombie(),
         false,
         MCFunctionFields.noSelectorCondition()
     )
@@ -84,8 +84,8 @@ let zombieTarget = MCFunctionFields.allEntities(
 ```
 
 ```ghost
-MCFunctionFields.entityRegistryZombie()
-MCFunctionFields.entityRegistryArmorStand()
+MCFunctionEntityLibrary.zombie()
+MCFunctionEntityLibrary.armorStand()
 ```
 
 ### ~

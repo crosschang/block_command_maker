@@ -1,3 +1,15 @@
+
+# -------------------------------------------------------------------------
+# Registry value library generation migration
+# Visible Registry value blocks now belong to:
+# - MCFunctionEntityLibrary
+# - MCFunctionItemLibrary
+# - MCFunctionBlockLibrary
+#
+# The committed generated files in src/libraries are the current V1 output.
+# The next generator pass should emit those three files from Registry JSON.
+# -------------------------------------------------------------------------
+
 param(
     [switch]$Check
 )
@@ -255,9 +267,27 @@ function Convert-ToSafeBlockIdPart {
     )
 }
 
-function New-EntityRegistryBlocksTs {
+function Convert-ToCamelFunctionName {
     param(
-        [object[]]$Entities
+        [object]$Entry
+    )
+
+    $pascal = Convert-ToEnumName $Entry
+
+    if ($pascal.Length -le 1) {
+        return $pascal.ToLowerInvariant()
+    }
+
+    return $pascal.Substring(0, 1).ToLowerInvariant() + $pascal.Substring(1)
+}
+
+function New-RegistryLibraryBlocksTs {
+    param(
+        [object[]]$Entries,
+        [string]$KindLower,
+        [string]$NamespaceName,
+        [string]$ValueType,
+        [string]$LegacyPrefix
     )
 
     $lines = New-Object System.Collections.Generic.List[string]
@@ -265,32 +295,42 @@ function New-EntityRegistryBlocksTs {
     $lines.Add("/**")
     $lines.Add(" * AUTO-GENERATED FILE. DO NOT EDIT BY HAND.")
     $lines.Add(" *")
-    $lines.Add(" * Search strategy:")
-    $lines.Add(" * - Minecraft MakeCode's built-in Toolbox Search searches block labels.")
-    $lines.Add(" * - Each Registry entity is exposed as a small EntityValue reporter block.")
-    $lines.Add(" * - Search an entity id, then drag the matching block into an EntityValue slot.")
-    $lines.Add(" *")
-    $lines.Add(" * Source: registry/source/bedrock/entities.json")
+    $lines.Add(" * Source: registry/source/bedrock/${KindLower}s.json")
     $lines.Add(" * Generator: tools/generate_registry.ps1")
     $lines.Add(" */")
     $lines.Add("")
-    $lines.Add("namespace MCFunctionFields {")
+    $lines.Add("namespace $NamespaceName {")
     $lines.Add("")
 
-    for ($i = 0; $i -lt $Entities.Count; $i++) {
-        $entry = $Entities[$i]
+    for ($i = 0; $i -lt $Entries.Count; $i++) {
+        $entry = $Entries[$i]
         $id = Escape-TsString ([string]$entry.id)
-        $name = Convert-ToEnumName $entry
+        $functionName = Convert-ToCamelFunctionName $entry
         $blockIdPart = Convert-ToSafeBlockIdPart ([string]$entry.id)
         $weight = [Math]::Max(1, 200 - $i)
 
-        $lines.Add("    //% group=`"엔티티 검색`"")
+        $lines.Add("    //% group=`"registry`"")
         $lines.Add("    //% weight=$weight")
-        $lines.Add("    //% blockId=mcfunction_entity_registry_$blockIdPart")
-        $lines.Add("    //% block=`"entity $id`"")
-        $lines.Add("    //% block.loc.ko=`"엔티티 $id`"")
-        $lines.Add("    export function entityRegistry$name(): EntityValue {")
-        $lines.Add("        return new EntityValue(`"$id`");")
+        $lines.Add("    //% blockId=mcfunction_${KindLower}_registry_$blockIdPart")
+        $lines.Add("    //% block=`"$KindLower $id`"")
+        $lines.Add("    export function $functionName(): MCFunctionFields.$ValueType {")
+        $lines.Add("        return new MCFunctionFields.$ValueType(`"$id`");")
+        $lines.Add("    }")
+        $lines.Add("")
+    }
+
+    $lines.Add("}")
+    $lines.Add("")
+    $lines.Add("/** Legacy JS API aliases. No Toolbox blocks here. */")
+    $lines.Add("namespace MCFunctionFields {")
+    $lines.Add("")
+
+    foreach ($entry in $Entries) {
+        $functionName = Convert-ToCamelFunctionName $entry
+        $pascal = Convert-ToEnumName $entry
+
+        $lines.Add("    export function $LegacyPrefix$pascal(): $ValueType {")
+        $lines.Add("        return $NamespaceName.$functionName();")
         $lines.Add("    }")
         $lines.Add("")
     }
@@ -365,8 +405,16 @@ Write-Or-Check `
     (New-PresetTs $items $blocks $entities)
 
 Write-Or-Check `
-    "src/fields/entity_registry_blocks.generated.ts" `
-    (New-EntityRegistryBlocksTs $entities)
+    "src/libraries/entity_library.generated.ts" `
+    (New-RegistryLibraryBlocksTs $entities "entity" "MCFunctionEntityLibrary" "EntityValue" "entityRegistry")
+
+Write-Or-Check `
+    "src/libraries/item_library.generated.ts" `
+    (New-RegistryLibraryBlocksTs $items "item" "MCFunctionItemLibrary" "ItemValue" "itemRegistry")
+
+Write-Or-Check `
+    "src/libraries/block_library.generated.ts" `
+    (New-RegistryLibraryBlocksTs $blocks "block" "MCFunctionBlockLibrary" "BlockValue" "blockRegistry")
 
 if ($Check) {
     Write-Host ""

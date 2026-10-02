@@ -37,9 +37,6 @@ namespace MCFunctionFields {
         return "minecraft:stone";
     }
 
-    //% group="공통 값"
-    //% blockId=mcfunction_block_select
-    //% block="블록 선택 $preset"
     export function blockSelect(
         preset: BlockPreset
     ): BlockValue {
@@ -51,10 +48,6 @@ namespace MCFunctionFields {
 
     // 기존 blockId는 직접 입력용으로 유지한다.
     // Custom Namespace / Add-on 블록 ID도 허용한다.
-    //% group="공통 값"
-    //% blockId=mcfunction_block
-    //% block="블록 직접 입력 $blockId"
-    //% blockId.defl="minecraft:stone"
     export function block(
         blockId: string
     ): BlockValue {

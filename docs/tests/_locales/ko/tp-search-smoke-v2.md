@@ -32,7 +32,7 @@ MakeCode의 Toolbox 검색창에서 다음을 입력합니다.
 ```blocks
 let target = MCFunctionFields.allEntities(
     MCFunctionFields.addEntityTypeCondition(
-        MCFunctionFields.entityRegistryZombie(),
+        MCFunctionEntityLibrary.zombie(),
         false,
         MCFunctionFields.noSelectorCondition()
     )
@@ -40,10 +40,10 @@ let target = MCFunctionFields.allEntities(
 ```
 
 ```ghost
-MCFunctionFields.entityRegistryZombie()
-MCFunctionFields.entityRegistryZombieHorse()
-MCFunctionFields.entityRegistryZombieVillager()
-MCFunctionFields.entityRegistryArmorStand()
+MCFunctionEntityLibrary.zombie()
+MCFunctionEntityLibrary.zombieHorse()
+MCFunctionEntityLibrary.zombieVillager()
+MCFunctionEntityLibrary.armorStand()
 MCFunctionFields.entity("my_pack:custom_entity")
 ```
 

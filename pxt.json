@@ -1,6 +1,6 @@
 {
     "name": "block_command_maker",
-    "version": "0.1.38",
+    "version": "0.1.37",
     "description": "Visual block editor for Minecraft Bedrock and Minecraft Education mcfunction commands",
     "dependencies": {
         "core": "*",
@@ -32,9 +32,14 @@
         "registry/education/entities.ts",
         "src/fields/registry_presets.generated.ts",
         "src/fields/entity_field.ts",
-        "src/fields/entity_registry_blocks.generated.ts",
         "src/fields/block_field.ts",
         "src/fields/item_field.ts",
+        "src/libraries/entity_library.ts",
+        "src/libraries/entity_library.generated.ts",
+        "src/libraries/item_library.ts",
+        "src/libraries/item_library.generated.ts",
+        "src/libraries/block_library.ts",
+        "src/libraries/block_library.generated.ts",
         "src/fields/selector_field.ts",
         "src/fields/item_components_field.ts",
         "src/fields/range_field.ts",
@@ -71,5 +76,5 @@
     "supportedTargets": [
         "minecraft"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }

@@ -37,9 +37,6 @@ namespace MCFunctionFields {
         return "minecraft:zombie";
     }
 
-    //% group="공통 값"
-    //% blockId=mcfunction_entity_select
-    //% block="엔티티 선택 $preset"
     export function entitySelect(
         preset: EntityPreset
     ): EntityValue {
@@ -51,10 +48,6 @@ namespace MCFunctionFields {
 
     // 기존 blockId는 직접 입력용으로 유지한다.
     // Custom Namespace / Add-on 엔티티 ID도 허용한다.
-    //% group="공통 값"
-    //% blockId=mcfunction_entity
-    //% block="엔티티 직접 입력 $entityId"
-    //% entityId.defl="minecraft:zombie"
     export function entity(
         entityId: string
     ): EntityValue {

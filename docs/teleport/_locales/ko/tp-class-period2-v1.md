@@ -82,7 +82,7 @@ player.onChat("tp_forward", function () {
 ```blocks
 let marker = MCFunctionFields.allEntities(
     MCFunctionFields.addEntityTypeCondition(
-        MCFunctionFields.entityRegistryArmorStand(),
+        MCFunctionEntityLibrary.armorStand(),
         false,
         MCFunctionFields.addTextCondition(
             MCFunctionFields.SelectorTextConditionType.Name,

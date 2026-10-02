@@ -80,7 +80,7 @@ Combine type, name, and count conditions.
 ```blocks
 let marker = MCFunctionFields.allEntities(
     MCFunctionFields.addEntityTypeCondition(
-        MCFunctionFields.entityRegistryArmorStand(),
+        MCFunctionEntityLibrary.armorStand(),
         false,
         MCFunctionFields.addTextCondition(
             MCFunctionFields.SelectorTextConditionType.Name,
