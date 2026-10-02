@@ -40,6 +40,15 @@ namespace MCFunctionAST {
     export interface SelectorHasItemCondition {
         itemId: string;
         quantity: NumberRange;
+
+        hasLocation: boolean;
+        location: SlotLocation;
+
+        hasSlot: boolean;
+        slot: NumberRange;
+
+        hasData: boolean;
+        data: number;
     }
 
     /**
@@ -143,9 +152,24 @@ namespace MCFunctionAST {
         itemId: string,
         quantity: NumberRange
     ): SelectorHasItemCondition {
+
         return {
             itemId: itemId,
-            quantity: quantity
+            quantity: quantity,
+
+            hasLocation: false,
+            location: SlotLocation.Inventory,
+
+            hasSlot: false,
+            slot: createRange(
+                false,
+                0,
+                false,
+                0
+            ),
+
+            hasData: false,
+            data: 0
         };
     }
 

@@ -111,6 +111,58 @@ namespace MCFunctionFields {
         return selector;
     }
 
+    export enum HasItemLocation {
+        MainHand = 0,
+        OffHand = 1,
+
+        Head = 2,
+        Chest = 3,
+        Legs = 4,
+        Feet = 5,
+
+        Hotbar = 6,
+        Inventory = 7,
+        EnderChest = 8
+    }
+
+    function toSlotLocation(
+        location: HasItemLocation
+    ): MCFunctionAST.SlotLocation {
+
+        switch (location) {
+
+            case HasItemLocation.MainHand:
+                return MCFunctionAST.SlotLocation.WeaponMainhand;
+
+            case HasItemLocation.OffHand:
+                return MCFunctionAST.SlotLocation.WeaponOffhand;
+
+            case HasItemLocation.Head:
+                return MCFunctionAST.SlotLocation.ArmorHead;
+
+            case HasItemLocation.Chest:
+                return MCFunctionAST.SlotLocation.ArmorChest;
+
+            case HasItemLocation.Legs:
+                return MCFunctionAST.SlotLocation.ArmorLegs;
+
+            case HasItemLocation.Feet:
+                return MCFunctionAST.SlotLocation.ArmorFeet;
+
+            case HasItemLocation.Hotbar:
+                return MCFunctionAST.SlotLocation.Hotbar;
+
+            case HasItemLocation.Inventory:
+                return MCFunctionAST.SlotLocation.Inventory;
+
+            case HasItemLocation.EnderChest:
+                return MCFunctionAST.SlotLocation.EnderChest;
+
+            default:
+                return MCFunctionAST.SlotLocation.Inventory;
+        }
+    }
+
     //% blockId=mcfunction_selector_position_filter
     //% block="선택자 $selector 위치 X $x Y $y Z $z"
     //% selector.shadow="mcfunction_selector_all_players"
@@ -354,6 +406,51 @@ namespace MCFunctionFields {
                 item.itemId,
                 quantity.range
             )
+        );
+
+        return selector;
+    }
+
+    //% blockId=mcfunction_selector_hasitem_advanced
+    //% block="선택자 $selector 아이템 보유 상세 $item 개수 $quantity 위치 $location 슬롯 $slot 데이터 $data"
+    //% selector.shadow="mcfunction_selector_all_players"
+    //% item.shadow="mcfunction_item"
+    //% quantity.shadow="mcfunction_range_min"
+    //% slot.defl=0
+    //% data.defl=0
+    export function addHasItemAdvancedFilter(
+        selector: SelectorValue,
+        item: ItemValue,
+        quantity: RangeValue,
+        location: HasItemLocation,
+        slot: number,
+        data: number
+    ): SelectorValue {
+
+        let slotRange =
+            MCFunctionAST.createMinMaxRange(
+                slot,
+                slot
+            );
+
+        let condition =
+            MCFunctionAST.createSelectorHasItemAdvancedCondition(
+                item.itemId,
+                quantity.range,
+
+                true,
+                toSlotLocation(location),
+
+                true,
+                slotRange,
+
+                true,
+                data
+            );
+
+        MCFunctionAST.addSelectorHasItemCondition(
+            selector.selector,
+            condition
         );
 
         return selector;

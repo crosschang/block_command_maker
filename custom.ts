@@ -141,30 +141,51 @@ namespace MCFunctionTest {
         player.say(result);
     }
 
-    //% block="HasItem 실제 테스트"
-    export function testHasItem(): void {
+    //% block="HasItem Location Slot 실제 테스트"
+    export function testHasItemLocationSlot(): void {
 
         player.execute(
-            "give @s minecraft:diamond 3"
+            "replaceitem entity @s slot.hotbar 0 minecraft:diamond 1"
         );
 
-        let selector = MCFunctionAST.createSelector(
-            MCFunctionAST.SelectorBase.AllPlayers
-        );
+        let selector =
+            MCFunctionAST.createSelector(
+                MCFunctionAST.SelectorBase.AllPlayers
+            );
 
         let quantity =
             MCFunctionAST.createMinRange(1);
 
+        let slot =
+            MCFunctionAST.createMinMaxRange(
+                0,
+                0
+            );
+
+        let condition =
+            MCFunctionAST.createSelectorHasItemAdvancedCondition(
+                "minecraft:diamond",
+                quantity,
+
+                true,
+                MCFunctionAST.SlotLocation.Hotbar,
+
+                true,
+                slot,
+
+                false,
+                0
+            );
+
         MCFunctionAST.addSelectorHasItemCondition(
             selector,
-            MCFunctionAST.createSelectorHasItemCondition(
-                "minecraft:diamond",
-                quantity
-            )
+            condition
         );
 
         let result =
-            MCFunctionCompiler.compileSelector(selector);
+            MCFunctionCompiler.compileSelector(
+                selector
+            );
 
         let success =
             player.execute(
@@ -172,9 +193,13 @@ namespace MCFunctionTest {
             );
 
         if (success) {
-            player.say("HASITEM TEST PASS");
+            player.say(
+                "HASITEM LOCATION SLOT PASS"
+            );
         } else {
-            player.say("HASITEM TEST FAIL");
+            player.say(
+                "HASITEM LOCATION SLOT FAIL"
+            );
         }
     }
 }
