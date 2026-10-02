@@ -789,7 +789,7 @@ namespace MCFunctionFields {
 
     //% group="선택자 대상"
     //% blockId=mcfunction_selector_all_players
-    //% block="모든 플레이어 @a 조건 $conditions"
+    //% block="모든 플레이어 @a $conditions"
     //% conditions.shadow="mcfunction_selector_no_condition"
     export function allPlayers(
         conditions: SelectorConditionValue
@@ -812,7 +812,7 @@ namespace MCFunctionFields {
 
     //% group="선택자 대상"
     //% blockId=mcfunction_selector_all_entities
-    //% block="모든 엔티티 @e 조건 $conditions"
+    //% block="모든 엔티티 @e $conditions"
     //% conditions.shadow="mcfunction_selector_no_condition"
     export function allEntities(
         conditions: SelectorConditionValue
@@ -835,7 +835,7 @@ namespace MCFunctionFields {
 
     //% group="선택자 대상"
     //% blockId=mcfunction_selector_nearest_player
-    //% block="가장 가까운 플레이어 @p 조건 $conditions"
+    //% block="가장 가까운 플레이어 @p $conditions"
     //% conditions.shadow="mcfunction_selector_no_condition"
     export function nearestPlayer(
         conditions: SelectorConditionValue
@@ -858,7 +858,7 @@ namespace MCFunctionFields {
 
     //% group="선택자 대상"
     //% blockId=mcfunction_selector_random_player
-    //% block="무작위 플레이어 @r 조건 $conditions"
+    //% block="무작위 플레이어 @r $conditions"
     //% conditions.shadow="mcfunction_selector_no_condition"
     export function randomPlayer(
         conditions: SelectorConditionValue
@@ -881,7 +881,7 @@ namespace MCFunctionFields {
 
     //% group="선택자 대상"
     //% blockId=mcfunction_selector_self
-    //% block="자신 @s 조건 $conditions"
+    //% block="자신 @s $conditions"
     //% conditions.shadow="mcfunction_selector_no_condition"
     export function self(
         conditions: SelectorConditionValue
