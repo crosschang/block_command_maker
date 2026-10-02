@@ -6,7 +6,7 @@
  */
 
 //% color="#6A5ACD" weight=90 icon="\uf1b2" block="MCFunction"
-//% groups='["선택자 대상", "조건 추가", "others"]'
+//% groups='["선택자 대상", "선택자 조건", "others"]'
 namespace MCFunctionFields {
 
     export enum SelectorNumberFilterType {
@@ -27,9 +27,9 @@ namespace MCFunctionFields {
         Count = 14
     }
 
-    //% group="조건 추가"
+    //% group="선택자 조건"
     //% blockId=mcfunction_selector_number_filter
-    //% block="선택자 $selector 숫자 조건 $filterType 값 $value"
+    //% block="$filterType 값 $value 조건 추가 → $selector"
     //% selector.shadow="mcfunction_selector_all_players"
     //% value.defl=0
     export function addNumberFilter(
@@ -173,9 +173,9 @@ namespace MCFunctionFields {
     // 실제 의미는 SelectorFilter AST에 저장한다.
     // ---------------------------------------------------------------------
 
-    //% group="조건 추가"
+    //% group="선택자 조건"
     //% blockId=mcfunction_selector_type_filter
-    //% block="선택자 $selector 종류 type $typeId 제외 $exclude"
+    //% block="종류 type $typeId 제외 $exclude 조건 추가 → $selector"
     //% selector.shadow="mcfunction_selector_all_entities"
     //% typeId.defl="minecraft:zombie"
     //% exclude.defl=false
@@ -197,9 +197,9 @@ namespace MCFunctionFields {
         return selector;
     }
 
-    //% group="조건 추가"
+    //% group="선택자 조건"
     //% blockId=mcfunction_selector_name_filter
-    //% block="선택자 $selector 이름 name $name 제외 $exclude"
+    //% block="이름 name $name 제외 $exclude 조건 추가 → $selector"
     //% selector.shadow="mcfunction_selector_all_entities"
     //% name.defl="Boss"
     //% exclude.defl=false
@@ -221,9 +221,9 @@ namespace MCFunctionFields {
         return selector;
     }
 
-    //% group="조건 추가"
+    //% group="선택자 조건"
     //% blockId=mcfunction_selector_tag_filter
-    //% block="선택자 $selector 태그 tag $tag 제외 $exclude"
+    //% block="태그 tag $tag 제외 $exclude 조건 추가 → $selector"
     //% selector.shadow="mcfunction_selector_all_entities"
     //% tag.defl="boss"
     //% exclude.defl=false
@@ -250,9 +250,9 @@ namespace MCFunctionFields {
     // family는 반복 가능, gamemode는 단일 조건으로 관리한다.
     // ---------------------------------------------------------------------
 
-    //% group="조건 추가"
+    //% group="선택자 조건"
     //% blockId=mcfunction_selector_family_filter
-    //% block="선택자 $selector 패밀리 family $family 제외 $exclude"
+    //% block="패밀리 family $family 제외 $exclude 조건 추가 → $selector"
     //% selector.shadow="mcfunction_selector_all_entities"
     //% family.defl="monster"
     //% exclude.defl=false
@@ -274,9 +274,9 @@ namespace MCFunctionFields {
         return selector;
     }
 
-    //% group="조건 추가"
+    //% group="선택자 조건"
     //% blockId=mcfunction_selector_gamemode_filter
-    //% block="선택자 $selector 게임모드 $gamemode 제외 $exclude"
+    //% block="게임모드 $gamemode 제외 $exclude 조건 추가 → $selector"
     //% selector.shadow="mcfunction_selector_all_players"
     //% gamemode.defl="survival"
     //% exclude.defl=false
@@ -298,9 +298,9 @@ namespace MCFunctionFields {
         return selector;
     }
 
-    //% group="조건 추가"
+    //% group="선택자 조건"
     //% blockId=mcfunction_selector_position_filter
-    //% block="선택자 $selector 위치 X $x Y $y Z $z"
+    //% block="위치 X $x Y $y Z $z 조건 추가 → $selector"
     //% selector.shadow="mcfunction_selector_all_players"
     //% x.defl=0
     //% y.defl=0
@@ -330,9 +330,9 @@ namespace MCFunctionFields {
         return selector;
     }
 
-    //% group="조건 추가"
+    //% group="선택자 조건"
     //% blockId=mcfunction_selector_area_filter
-    //% block="선택자 $selector 영역 X $x Y $y Z $z dX $dx dY $dy dZ $dz"
+    //% block="영역 X $x Y $y Z $z dX $dx dY $dy dZ $dz 조건 추가 → $selector"
     //% selector.shadow="mcfunction_selector_all_players"
     //% x.defl=0
     //% y.defl=0
@@ -367,9 +367,9 @@ namespace MCFunctionFields {
         return selector;
     }
 
-    //% group="조건 추가"
+    //% group="선택자 조건"
     //% blockId=mcfunction_selector_distance_filter
-    //% block="선택자 $selector 거리 $range"
+    //% block="거리 $range 조건 추가 → $selector"
     //% selector.shadow="mcfunction_selector_all_players"
     //% range.shadow="mcfunction_range_min_max"
     export function addDistanceFilter(
@@ -414,9 +414,9 @@ namespace MCFunctionFields {
         return selector;
     }
 
-    //% group="조건 추가"
+    //% group="선택자 조건"
     //% blockId=mcfunction_selector_level_filter
-    //% block="선택자 $selector 레벨 $range"
+    //% block="레벨 $range 조건 추가 → $selector"
     //% selector.shadow="mcfunction_selector_all_players"
     //% range.shadow="mcfunction_range_min_max"
     export function addLevelFilter(
@@ -460,9 +460,9 @@ namespace MCFunctionFields {
         return selector;
     }
 
-    //% group="조건 추가"
+    //% group="선택자 조건"
     //% blockId=mcfunction_selector_rotation_x_filter
-    //% block="선택자 $selector X 회전 $range"
+    //% block="X 회전 $range 조건 추가 → $selector"
     //% selector.shadow="mcfunction_selector_all_players"
     //% range.shadow="mcfunction_range_min_max"
     export function addRotationXFilter(
@@ -506,9 +506,9 @@ namespace MCFunctionFields {
         return selector;
     }
 
-    //% group="조건 추가"
+    //% group="선택자 조건"
     //% blockId=mcfunction_selector_rotation_y_filter
-    //% block="선택자 $selector Y 회전 $range"
+    //% block="Y 회전 $range 조건 추가 → $selector"
     //% selector.shadow="mcfunction_selector_all_players"
     //% range.shadow="mcfunction_range_min_max"
     export function addRotationYFilter(
@@ -552,9 +552,9 @@ namespace MCFunctionFields {
         return selector;
     }
 
-    //% group="조건 추가"
+    //% group="선택자 조건"
     //% blockId=mcfunction_selector_score_filter
-    //% block="선택자 $selector 스코어 목표 $objective 범위 $range"
+    //% block="스코어 목표 $objective 범위 $range 조건 추가 → $selector"
     //% selector.shadow="mcfunction_selector_all_players"
     //% objective.defl="money"
     //% range.shadow="mcfunction_range_min_max"
@@ -576,9 +576,9 @@ namespace MCFunctionFields {
         return selector;
     }
 
-    //% group="조건 추가"
+    //% group="선택자 조건"
     //% blockId=mcfunction_selector_hasitem_filter
-    //% block="선택자 $selector 아이템 보유 $item 개수 $quantity"
+    //% block="아이템 $item 개수 $quantity 보유 조건 추가 → $selector"
     //% selector.shadow="mcfunction_selector_all_players"
     //% item.shadow="mcfunction_item"
     //% quantity.shadow="mcfunction_range_min"
@@ -599,9 +599,9 @@ namespace MCFunctionFields {
         return selector;
     }
 
-    //% group="조건 추가"
+    //% group="선택자 조건"
     //% blockId=mcfunction_selector_hasitem_advanced
-    //% block="선택자 $selector 아이템 보유 상세 $item 개수 $quantity 위치 $location 슬롯 $slot 데이터 $data"
+    //% block="아이템 보유 상세 $item 개수 $quantity 위치 $location 슬롯 $slot 데이터 $data → $selector"
     //% selector.shadow="mcfunction_selector_all_players"
     //% item.shadow="mcfunction_item"
     //% quantity.shadow="mcfunction_range_min"
