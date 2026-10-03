@@ -38,6 +38,7 @@
         "src/libraries/entity_library.generated.ts",
         "src/libraries/item_library.ts",
         "src/libraries/item_library.generated.ts",
+        "src/libraries/item_visual_poc.ts",
         "src/libraries/block_library.ts",
         "src/libraries/block_library.generated.ts",
         "src/fields/selector_field.ts",
