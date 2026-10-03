@@ -10,6 +10,7 @@
         "main.blocks",
         "main.ts",
         "README.md",
+        "src/project/runtime_ready.ts",
         "src/ast/command.ts",
         "src/ast/item.ts",
         "src/ast/selector.ts",
