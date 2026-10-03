@@ -31,6 +31,7 @@
         "registry/education/blocks.ts",
         "registry/education/entities.ts",
         "src/fields/registry_presets.generated.ts",
+        "src/fields/registry_search_native_probe.ts",
         "src/fields/entity_field.ts",
         "src/fields/block_field.ts",
         "src/fields/item_field.ts",
