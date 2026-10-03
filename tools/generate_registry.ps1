@@ -234,29 +234,18 @@ function New-PresetEnum {
 function New-PresetIdFunction {
     param(
         [object[]]$Entries,
-        [string]$EnumName,
         [string]$FunctionName,
         [string]$FallbackId
     )
 
     $lines = New-Object System.Collections.Generic.List[string]
 
-    $lines.Add("    export function $FunctionName(")
-    $lines.Add("        preset: $EnumName")
-    $lines.Add("    ): string {")
+    $lines.Add("    export function $FunctionName(preset: number): string {")
     $lines.Add("")
     $lines.Add("        switch (preset) {")
 
     for ($i = 0; $i -lt $Entries.Count; $i++) {
-        $entry = $Entries[$i]
-        $id = Escape-TsString ([string]$entry.id)
-
-        # Use the generated enum's numeric value instead of referring to
-        # enum member names here. Minecraft MakeCode/PXT can rewrite enum
-        # member identifiers for block enums, so references such as
-        # ItemPreset.Stone may fail even though the enum declaration exists.
-        # The numeric value is stable because New-PresetEnum uses the same
-        # source order and writes "<member> = <index>".
+        $id = Escape-TsString ([string]$Entries[$i].id)
         $lines.Add("            case ${i}:")
         $lines.Add("                return `"$id`";")
     }
@@ -281,10 +270,6 @@ function New-PresetTs {
     $blockEnum = New-PresetEnum $Blocks "BlockPreset"
     $entityEnum = New-PresetEnum $Entities "EntityPreset"
 
-    $itemIdFunction = New-PresetIdFunction $Items "ItemPreset" "itemPresetId" "minecraft:stone"
-    $blockIdFunction = New-PresetIdFunction $Blocks "BlockPreset" "blockPresetId" "minecraft:stone"
-    $entityIdFunction = New-PresetIdFunction $Entities "EntityPreset" "entityPresetId" "minecraft:zombie"
-
     return @"
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
@@ -298,23 +283,49 @@ function New-PresetTs {
  * Generator:
  * - tools/generate_registry.ps1
  *
- * MakeCode enum dropdowns must exist at compile time, so this generated
- * TypeScript file is committed to Git and included by pxt.json.
+ * IMPORTANT: Keep this file enum-only for MakeCode/PXT block enum parsing.
  */
 
 namespace MCFunctionFields {
 
 $itemEnum
 
-$itemIdFunction
-
 $blockEnum
 
-$blockIdFunction
-
 $entityEnum
+}
+"@
+}
 
-$entityIdFunction
+function New-PresetIdsTs {
+    param(
+        [object[]]$Items,
+        [object[]]$Blocks,
+        [object[]]$Entities
+    )
+
+    $itemFn = New-PresetIdFunction $Items "item" "minecraft:stone"
+    $blockFn = New-PresetIdFunction $Blocks "block" "minecraft:stone"
+    $entityFn = New-PresetIdFunction $Entities "entity" "minecraft:zombie"
+
+    return @"
+/**
+ * AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+ *
+ * Source: registry/source/presets.json
+ * Generator: tools/generate_registry.ps1
+ *
+ * Quick Preset numeric value -> Minecraft ID mapping.
+ * Kept separate from registry_presets.generated.ts so PXT sees that file as enum-only.
+ */
+
+namespace MCFunctionPresetIds {
+
+$itemFn
+
+$blockFn
+
+$entityFn
 }
 "@
 }
@@ -477,6 +488,10 @@ Write-Or-Check `
 Write-Or-Check `
     "src/fields/registry_presets.generated.ts" `
     (New-PresetTs $itemPresets $blockPresets $entityPresets)
+
+Write-Or-Check `
+    "src/fields/registry_preset_ids.generated.ts" `
+    (New-PresetIdsTs $itemPresets $blockPresets $entityPresets)
 
 Write-Or-Check `
     "src/libraries/entity_library.generated.ts" `

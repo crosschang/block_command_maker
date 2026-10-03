@@ -12,7 +12,7 @@ namespace MCFunctionPresetIds {
 
     export function item(preset: number): string {
 
-        switch (preset) {{
+        switch (preset) {
             case 0:
                 return "minecraft:stone";
             case 1:
@@ -56,7 +56,7 @@ namespace MCFunctionPresetIds {
 
     export function block(preset: number): string {
 
-        switch (preset) {{
+        switch (preset) {
             case 0:
                 return "minecraft:stone";
             case 1:
@@ -92,7 +92,7 @@ namespace MCFunctionPresetIds {
 
     export function entity(preset: number): string {
 
-        switch (preset) {{
+        switch (preset) {
             case 0:
                 return "minecraft:player";
             case 1:
