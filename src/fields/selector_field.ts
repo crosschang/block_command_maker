@@ -312,7 +312,8 @@ namespace MCFunctionFields {
 
     //% group="Selector Conditions"
     //% blockId=mcfunction_selector_entity_type_condition
-    //% block="type $entity exclude $exclude next $next"
+    //% block="type $entity|exclude $exclude|next $next"
+    //% inlineInputMode=external
     //% entity.shadow="mcfunction_entity_select"
     //% exclude.defl=false
     //% next.shadow="mcfunction_selector_no_condition"
@@ -340,7 +341,8 @@ namespace MCFunctionFields {
 
     //% group="Selector Conditions"
     //% blockId=mcfunction_selector_text_condition
-    //% block="$conditionType value $value exclude $exclude next $next"
+    //% block="$conditionType value $value|exclude $exclude|next $next"
+    //% inlineInputMode=external
     //% value.defl="Boss"
     //% exclude.defl=false
     //% next.shadow="mcfunction_selector_no_condition"
@@ -386,7 +388,8 @@ namespace MCFunctionFields {
 
     //% group="Selector Conditions"
     //% blockId=mcfunction_selector_gamemode_condition
-    //% block="gamemode $mode exclude $exclude next $next"
+    //% block="gamemode $mode|exclude $exclude|next $next"
+    //% inlineInputMode=external
     //% exclude.defl=false
     //% next.shadow="mcfunction_selector_no_condition"
     export function addGameModeCondition(
@@ -413,7 +416,8 @@ namespace MCFunctionFields {
 
     //% group="Selector Conditions"
     //% blockId=mcfunction_selector_number_condition
-    //% block="$conditionType value $value next $next"
+    //% block="$conditionType value $value|next $next"
+    //% inlineInputMode=external
     //% value.defl=0
     //% next.shadow="mcfunction_selector_no_condition"
     export function addNumberCondition(
@@ -473,7 +477,8 @@ namespace MCFunctionFields {
 
     //% group="Selector Conditions"
     //% blockId=mcfunction_selector_range_condition
-    //% block="$conditionType $range next $next"
+    //% block="$conditionType $range|next $next"
+    //% inlineInputMode=external
     //% range.shadow="mcfunction_range_min_max"
     //% next.shadow="mcfunction_selector_no_condition"
     export function addRangeCondition(
@@ -539,7 +544,8 @@ namespace MCFunctionFields {
     //% group="Selector Conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_type_filter
-    //% block="type $typeId exclude $exclude next $next"
+    //% block="type $typeId|exclude $exclude|next $next"
+    //% inlineInputMode=external
     //% typeId.defl="minecraft:zombie"
     //% exclude.defl=false
     //% next.shadow="mcfunction_selector_no_condition"
@@ -568,7 +574,8 @@ namespace MCFunctionFields {
     //% group="Selector Conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_name_filter
-    //% block="name $name exclude $exclude next $next"
+    //% block="name $name|exclude $exclude|next $next"
+    //% inlineInputMode=external
     //% name.defl="Boss"
     //% exclude.defl=false
     //% next.shadow="mcfunction_selector_no_condition"
@@ -597,7 +604,8 @@ namespace MCFunctionFields {
     //% group="Selector Conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_tag_filter
-    //% block="tag $tag exclude $exclude next $next"
+    //% block="tag $tag|exclude $exclude|next $next"
+    //% inlineInputMode=external
     //% tag.defl="boss"
     //% exclude.defl=false
     //% next.shadow="mcfunction_selector_no_condition"
@@ -626,7 +634,8 @@ namespace MCFunctionFields {
     //% group="Selector Conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_family_filter
-    //% block="family $family exclude $exclude next $next"
+    //% block="family $family|exclude $exclude|next $next"
+    //% inlineInputMode=external
     //% family.defl="monster"
     //% exclude.defl=false
     //% next.shadow="mcfunction_selector_no_condition"
@@ -655,7 +664,8 @@ namespace MCFunctionFields {
     //% group="Selector Conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_gamemode_filter
-    //% block="gamemode $gamemode exclude $exclude next $next"
+    //% block="gamemode $gamemode|exclude $exclude|next $next"
+    //% inlineInputMode=external
     //% gamemode.defl="survival"
     //% exclude.defl=false
     //% next.shadow="mcfunction_selector_no_condition"
@@ -684,7 +694,8 @@ namespace MCFunctionFields {
     //% group="Selector Conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_number_filter
-    //% block="$filterType value $value next $next"
+    //% block="$filterType value $value|next $next"
+    //% inlineInputMode=external
     //% value.defl=0
     //% next.shadow="mcfunction_selector_no_condition"
     export function addNumberFilter(
@@ -776,7 +787,8 @@ namespace MCFunctionFields {
     //% group="Selector Conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_position_filter
-    //% block="position x $x y $y z $z next $next"
+    //% block="position|x $x|y $y|z $z|next $next"
+    //% inlineInputMode=external
     //% x.defl=0
     //% y.defl=0
     //% z.defl=0
@@ -823,7 +835,8 @@ namespace MCFunctionFields {
     //% group="Selector Conditions"
     //% blockHidden=true
     //% blockId=mcfunction_selector_area_filter
-    //% block="area x $x y $y z $z dx $dx dy $dy dz $dz next $next"
+    //% block="area|x $x|y $y|z $z|dx $dx|dy $dy|dz $dz|next $next"
+    //% inlineInputMode=external
     //% x.defl=0
     //% y.defl=0
     //% z.defl=0
@@ -1020,7 +1033,8 @@ namespace MCFunctionFields {
 
     //% group="Selector Conditions"
     //% blockId=mcfunction_selector_score_filter
-    //% block="score objective $objective range $range next $next"
+    //% block="score objective $objective|range $range|next $next"
+    //% inlineInputMode=external
     //% objective.defl="money"
     //% range.shadow="mcfunction_range_min_max"
     //% next.shadow="mcfunction_selector_no_condition"
@@ -1048,7 +1062,8 @@ namespace MCFunctionFields {
 
     //% group="Selector Conditions"
     //% blockId=mcfunction_selector_hasitem_filter
-    //% block="has item $item quantity $quantity next $next"
+    //% block="has item $item|quantity $quantity|next $next"
+    //% inlineInputMode=external
     //% item.shadow="mcfunction_item_select"
     //% quantity.shadow="mcfunction_range_min"
     //% next.shadow="mcfunction_selector_no_condition"
@@ -1075,7 +1090,8 @@ namespace MCFunctionFields {
 
     //% group="Selector Conditions"
     //% blockId=mcfunction_selector_hasitem_advanced
-    //% block="has item details $item quantity $quantity location $location slot $slot data $data next $next"
+    //% block="has item details $item|quantity $quantity|location $location|slot $slot|data $data|next $next"
+    //% inlineInputMode=external
     //% item.shadow="mcfunction_item_select"
     //% quantity.shadow="mcfunction_range_min"
     //% slot.defl=0
