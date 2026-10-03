@@ -148,21 +148,15 @@ function New-RegistryTs {
     param(
         [object[]]$Entries,
         [string]$KindLower,
-        [string]$KindTitle,
-        [string]$KindSingular
+        [string]$KindTitle
     )
 
     $lines = New-Object System.Collections.Generic.List[string]
 
-    $sourceBase = $KindLower + "s"
-    if ($KindLower -eq "entity") {
-        $sourceBase = "entities"
-    }
-
     $lines.Add("/**")
     $lines.Add(" * AUTO-GENERATED FILE. DO NOT EDIT BY HAND.")
     $lines.Add(" *")
-    $lines.Add(" * Source: registry/source/bedrock/$sourceBase.json")
+    $lines.Add(" * Source: registry/source/bedrock/${KindLower}s.json")
     $lines.Add(" * Generator: tools/generate_registry.ps1")
     $lines.Add(" */")
     $lines.Add("")
@@ -193,7 +187,7 @@ function New-RegistryTs {
     $lines.Add("        );")
     $lines.Add("    }")
     $lines.Add("")
-    $lines.Add("    export function isKnown$KindSingular(")
+    $lines.Add("    export function isKnown$($KindTitle.TrimEnd('s'))(")
     $lines.Add("        id: string")
     $lines.Add("    ): boolean {")
     $lines.Add("")
@@ -420,15 +414,15 @@ Assert-RegistryEntries $entityPresets "Entity preset"
 
 Write-Or-Check `
     "registry/bedrock/items.ts" `
-    (New-RegistryTs $items "item" "Items" "Item")
+    (New-RegistryTs $items "item" "Items")
 
 Write-Or-Check `
     "registry/bedrock/blocks.ts" `
-    (New-RegistryTs $blocks "block" "Blocks" "Block")
+    (New-RegistryTs $blocks "block" "Blocks")
 
 Write-Or-Check `
     "registry/bedrock/entities.ts" `
-    (New-RegistryTs $entities "entity" "Entities" "Entity")
+    (New-RegistryTs $entities "entity" "Entities")
 
 Write-Or-Check `
     "src/fields/registry_presets.generated.ts" `

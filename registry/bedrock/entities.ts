@@ -1,7 +1,7 @@
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
  *
- * Source: registry/source/bedrock/entities.json
+ * Source: registry/source/bedrock/entitys.json
  * Generator: tools/generate_registry.ps1
  */
 
@@ -165,7 +165,7 @@ namespace MCFunctionRegistryBedrock {
         );
     }
 
-    export function isKnownEntity(
+    export function isKnownEntitie(
         id: string
     ): boolean {
 

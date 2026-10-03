@@ -55,7 +55,25 @@ src/libraries/block_library.generated.ts
 src/libraries/entity_library.generated.ts
 ```
 
-The Korean localization JSON is extended with labels for newly generated Registry value blocks.
+The Korean Registry localization is synchronized by `tools/sync_korean_localization.ps1`.
+It rebuilds only generated Item / Block / Entity Registry labels and preserves manual UI translations.
+The sync is case-sensitive, so IDs whose generated function names differ only by letter case are kept separately.
+
+## Korean localization only
+
+To rebuild the Korean Registry labels without downloading Registry data:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\sync_korean_localization.ps1
+```
+
+Or double-click:
+
+```text
+tools\sync_korean_localization.cmd
+```
+
+The old one-off `fix_*` / `repair_*` localization patch scripts are no longer used.
 
 ## Quick presets are separate
 
