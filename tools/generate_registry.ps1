@@ -247,10 +247,17 @@ function New-PresetIdFunction {
     $lines.Add("")
     $lines.Add("        switch (preset) {")
 
-    foreach ($entry in $Entries) {
-        $enumName = Convert-ToEnumName $entry
+    for ($i = 0; $i -lt $Entries.Count; $i++) {
+        $entry = $Entries[$i]
         $id = Escape-TsString ([string]$entry.id)
-        $lines.Add("            case ${EnumName}.${enumName}:")
+
+        # Use the generated enum's numeric value instead of referring to
+        # enum member names here. Minecraft MakeCode/PXT can rewrite enum
+        # member identifiers for block enums, so references such as
+        # ItemPreset.Stone may fail even though the enum declaration exists.
+        # The numeric value is stable because New-PresetEnum uses the same
+        # source order and writes "<member> = <index>".
+        $lines.Add("            case ${i}:")
         $lines.Add("                return `"$id`";")
     }
 

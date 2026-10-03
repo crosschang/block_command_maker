@@ -77,41 +77,41 @@ namespace MCFunctionFields {
     ): string {
 
         switch (preset) {
-            case Stone.Stone:
+            case 0:
                 return "minecraft:stone";
-            case Dirt.Dirt:
+            case 1:
                 return "minecraft:dirt";
-            case Diamond.Diamond:
+            case 2:
                 return "minecraft:diamond";
-            case Emerald.Emerald:
+            case 3:
                 return "minecraft:emerald";
-            case IronIngot.IronIngot:
+            case 4:
                 return "minecraft:iron_ingot";
-            case GoldIngot.GoldIngot:
+            case 5:
                 return "minecraft:gold_ingot";
-            case DiamondSword.DiamondSword:
+            case 6:
                 return "minecraft:diamond_sword";
-            case DiamondPickaxe.DiamondPickaxe:
+            case 7:
                 return "minecraft:diamond_pickaxe";
-            case Bow.Bow:
+            case 8:
                 return "minecraft:bow";
-            case Arrow.Arrow:
+            case 9:
                 return "minecraft:arrow";
-            case Apple.Apple:
+            case 10:
                 return "minecraft:apple";
-            case Bread.Bread:
+            case 11:
                 return "minecraft:bread";
-            case Paper.Paper:
+            case 12:
                 return "minecraft:paper";
-            case NameTag.NameTag:
+            case 13:
                 return "minecraft:name_tag";
-            case Compass.Compass:
+            case 14:
                 return "minecraft:compass";
-            case Clock.Clock:
+            case 15:
                 return "minecraft:clock";
-            case Stick.Stick:
+            case 16:
                 return "minecraft:stick";
-            case Book.Book:
+            case 17:
                 return "minecraft:book";
             default:
                 return "minecraft:stone";
@@ -167,33 +167,33 @@ namespace MCFunctionFields {
     ): string {
 
         switch (preset) {
-            case Stone.Stone:
+            case 0:
                 return "minecraft:stone";
-            case Dirt.Dirt:
+            case 1:
                 return "minecraft:dirt";
-            case GrassBlock.GrassBlock:
+            case 2:
                 return "minecraft:grass_block";
-            case Cobblestone.Cobblestone:
+            case 3:
                 return "minecraft:cobblestone";
-            case OakPlanks.OakPlanks:
+            case 4:
                 return "minecraft:oak_planks";
-            case Glass.Glass:
+            case 5:
                 return "minecraft:glass";
-            case Bedrock.Bedrock:
+            case 6:
                 return "minecraft:bedrock";
-            case DiamondBlock.DiamondBlock:
+            case 7:
                 return "minecraft:diamond_block";
-            case GoldBlock.GoldBlock:
+            case 8:
                 return "minecraft:gold_block";
-            case IronBlock.IronBlock:
+            case 9:
                 return "minecraft:iron_block";
-            case RedstoneBlock.RedstoneBlock:
+            case 10:
                 return "minecraft:redstone_block";
-            case Air.Air:
+            case 11:
                 return "minecraft:air";
-            case Barrier.Barrier:
+            case 12:
                 return "minecraft:barrier";
-            case Chest.Chest:
+            case 13:
                 return "minecraft:chest";
             default:
                 return "minecraft:stone";
@@ -243,29 +243,29 @@ namespace MCFunctionFields {
     ): string {
 
         switch (preset) {
-            case Player.Player:
+            case 0:
                 return "minecraft:player";
-            case Zombie.Zombie:
+            case 1:
                 return "minecraft:zombie";
-            case Skeleton.Skeleton:
+            case 2:
                 return "minecraft:skeleton";
-            case Creeper.Creeper:
+            case 3:
                 return "minecraft:creeper";
-            case ArmorStand.ArmorStand:
+            case 4:
                 return "minecraft:armor_stand";
-            case Cow.Cow:
+            case 5:
                 return "minecraft:cow";
-            case Pig.Pig:
+            case 6:
                 return "minecraft:pig";
-            case Sheep.Sheep:
+            case 7:
                 return "minecraft:sheep";
-            case Villager.Villager:
+            case 8:
                 return "minecraft:villager";
-            case IronGolem.IronGolem:
+            case 9:
                 return "minecraft:iron_golem";
-            case Item.Item:
+            case 10:
                 return "minecraft:item";
-            case Arrow.Arrow:
+            case 11:
                 return "minecraft:arrow";
             default:
                 return "minecraft:zombie";
