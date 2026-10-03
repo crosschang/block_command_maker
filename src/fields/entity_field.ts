@@ -28,7 +28,7 @@ namespace MCFunctionFields {
         preset: EntityPreset
     ): string {
 
-        return entityPresetId(preset);
+        return MCFunctionPresetIds.entity(preset);
     }
 
     export function entitySelect(

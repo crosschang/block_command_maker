@@ -29,7 +29,7 @@ namespace MCFunctionFields {
         preset: ItemPreset
     ): string {
 
-        return itemPresetId(preset);
+        return MCFunctionPresetIds.item(preset);
     }
 
     export function itemSelect(

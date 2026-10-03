@@ -28,7 +28,7 @@ namespace MCFunctionFields {
         preset: BlockPreset
     ): string {
 
-        return blockPresetId(preset);
+        return MCFunctionPresetIds.block(preset);
     }
 
     export function blockSelect(
