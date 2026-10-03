@@ -1,10 +1,6 @@
 {
     "name": "block_command_maker",
-<<<<<<< Updated upstream
     "version": "0.2.7",
-=======
-    "version": "0.2.0",
->>>>>>> Stashed changes
     "description": "Visual block editor for Minecraft Bedrock and Minecraft Education mcfunction commands",
     "dependencies": {
         "core": "*",
