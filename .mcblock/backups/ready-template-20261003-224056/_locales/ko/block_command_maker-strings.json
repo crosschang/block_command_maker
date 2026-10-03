@@ -3186,6 +3186,5 @@
   "MCFunctionCommand.teleportToEntity|block": "순간이동|대상 %target|→ 대상 %destination|블록 충돌 확인 %checkForBlocks",
   "MCFunctionCommand.teleportWithRotation|block": "순간이동|대상 %target|→ 위치 %destination|회전 %rotation|블록 충돌 확인 %checkForBlocks",
   "MCFunctionCommand.teleportFacingPosition|block": "순간이동|대상 %target|→ 위치 %destination|바라볼 위치 %facingPosition|블록 충돌 확인 %checkForBlocks",
-  "MCFunctionCommand.teleportFacingEntity|block": "순간이동|대상 %target|→ 위치 %destination|바라볼 대상 %facingEntity|블록 충돌 확인 %checkForBlocks",
-  "MCFunctionRuntime.ready|block": "MCFunction 테스트 준비완료 표시"
+  "MCFunctionCommand.teleportFacingEntity|block": "순간이동|대상 %target|→ 위치 %destination|바라볼 대상 %facingEntity|블록 충돌 확인 %checkForBlocks"
 }

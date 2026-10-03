@@ -1,5 +1,3 @@
-MCFunctionRuntime.ready()
-
 player.onChat("run", function () {
 	
 })
