@@ -3180,11 +3180,11 @@
   "{id:category}MCFunction Command": "MCFunction 명령어",
   "{id:group}Give": "아이템 지급",
   "{id:group}Teleport": "순간이동",
-  "MCFunctionCommand.give|block": "아이템 지급 대상 %target|아이템 %item|개수 %amount",
-  "MCFunctionCommand.giveAdvanced|block": "아이템 지급 상세 대상 %target|아이템 %item|개수 %amount|데이터 %data|컴포넌트 %components",
-  "MCFunctionCommand.teleportToPosition|block": "순간이동 대상 %target|→ 위치 %destination|블록 충돌 확인 %checkForBlocks",
-  "MCFunctionCommand.teleportToEntity|block": "순간이동 대상 %target|→ 대상 %destination|블록 충돌 확인 %checkForBlocks",
-  "MCFunctionCommand.teleportWithRotation|block": "순간이동 대상 %target|→ 위치 %destination|회전 %rotation|블록 충돌 확인 %checkForBlocks",
-  "MCFunctionCommand.teleportFacingPosition|block": "순간이동 대상 %target|→ 위치 %destination|바라볼 위치 %facingPosition|블록 충돌 확인 %checkForBlocks",
-  "MCFunctionCommand.teleportFacingEntity|block": "순간이동 대상 %target|→ 위치 %destination|바라볼 대상 %facingEntity|블록 충돌 확인 %checkForBlocks"
+  "MCFunctionCommand.give|block": "아이템 지급|대상 %target|아이템 %item|개수 %amount",
+  "MCFunctionCommand.giveAdvanced|block": "아이템 지급 상세|대상 %target|아이템 %item|개수 %amount|데이터 %data|구성 요소 %components",
+  "MCFunctionCommand.teleportToPosition|block": "순간이동|대상 %target|→ 위치 %destination|블록 충돌 확인 %checkForBlocks",
+  "MCFunctionCommand.teleportToEntity|block": "순간이동|대상 %target|→ 대상 %destination|블록 충돌 확인 %checkForBlocks",
+  "MCFunctionCommand.teleportWithRotation|block": "순간이동|대상 %target|→ 위치 %destination|회전 %rotation|블록 충돌 확인 %checkForBlocks",
+  "MCFunctionCommand.teleportFacingPosition|block": "순간이동|대상 %target|→ 위치 %destination|바라볼 위치 %facingPosition|블록 충돌 확인 %checkForBlocks",
+  "MCFunctionCommand.teleportFacingEntity|block": "순간이동|대상 %target|→ 위치 %destination|바라볼 대상 %facingEntity|블록 충돌 확인 %checkForBlocks"
 }

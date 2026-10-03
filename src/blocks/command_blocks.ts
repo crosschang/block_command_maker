@@ -38,7 +38,8 @@ namespace MCFunctionCommand {
     //% group="Give"
     //% weight=100
     //% blockId=mcfunction_give_v1_basic
-    //% block="give target $target item $item amount $amount"
+    //% block="give|target $target|item $item|amount $amount"
+    //% inlineInputMode=external
     //% target.shadow="mcfunction_selector_self"
     //% item.shadow="mcfunction_item_select"
     //% amount.defl=1
@@ -62,7 +63,8 @@ namespace MCFunctionCommand {
     //% group="Give"
     //% weight=99
     //% blockId=mcfunction_give_v1_advanced
-    //% block="give advanced target $target item $item amount $amount data $data components $components"
+    //% block="give advanced|target $target|item $item|amount $amount|data $data|components $components"
+    //% inlineInputMode=external
     //% target.shadow="mcfunction_selector_self"
     //% item.shadow="mcfunction_item_select"
     //% amount.defl=1
@@ -95,7 +97,8 @@ namespace MCFunctionCommand {
     //% group="Teleport"
     //% weight=90
     //% blockId=mcfunction_tp_position
-    //% block="teleport target $target to position $destination check blocks $checkForBlocks"
+    //% block="teleport|target $target|to position $destination|check blocks $checkForBlocks"
+    //% inlineInputMode=external
     //% target.shadow="mcfunction_selector_self"
     //% destination.shadow="mcfunction_position_relative"
     //% checkForBlocks.defl=false
@@ -120,7 +123,8 @@ namespace MCFunctionCommand {
     //% group="Teleport"
     //% weight=89
     //% blockId=mcfunction_tp_entity
-    //% block="teleport target $target to entity $destination check blocks $checkForBlocks"
+    //% block="teleport|target $target|to entity $destination|check blocks $checkForBlocks"
+    //% inlineInputMode=external
     //% target.shadow="mcfunction_selector_self"
     //% destination.shadow="mcfunction_selector_nearest_player"
     //% checkForBlocks.defl=false
@@ -145,7 +149,8 @@ namespace MCFunctionCommand {
     //% group="Teleport"
     //% weight=88
     //% blockId=mcfunction_tp_rotation
-    //% block="teleport target $target to position $destination rotation $rotation check blocks $checkForBlocks"
+    //% block="teleport|target $target|to position $destination|rotation $rotation|check blocks $checkForBlocks"
+    //% inlineInputMode=external
     //% target.shadow="mcfunction_selector_self"
     //% destination.shadow="mcfunction_position_relative"
     //% rotation.shadow="mcfunction_rotation_absolute"
@@ -173,7 +178,8 @@ namespace MCFunctionCommand {
     //% group="Teleport"
     //% weight=87
     //% blockId=mcfunction_tp_facing_position
-    //% block="teleport target $target to position $destination facing position $facingPosition check blocks $checkForBlocks"
+    //% block="teleport|target $target|to position $destination|facing position $facingPosition|check blocks $checkForBlocks"
+    //% inlineInputMode=external
     //% target.shadow="mcfunction_selector_self"
     //% destination.shadow="mcfunction_position_relative"
     //% facingPosition.shadow="mcfunction_position_relative"
@@ -201,7 +207,8 @@ namespace MCFunctionCommand {
     //% group="Teleport"
     //% weight=86
     //% blockId=mcfunction_tp_facing_entity
-    //% block="teleport target $target to position $destination facing entity $facingEntity check blocks $checkForBlocks"
+    //% block="teleport|target $target|to position $destination|facing entity $facingEntity|check blocks $checkForBlocks"
+    //% inlineInputMode=external
     //% target.shadow="mcfunction_selector_self"
     //% destination.shadow="mcfunction_position_relative"
     //% facingEntity.shadow="mcfunction_selector_nearest_player"

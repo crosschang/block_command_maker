@@ -83,6 +83,15 @@ block_command_maker/
 - Selector / Position / Rotation / Item / Block / Entity / Registry Library처럼 여러 명령에서 재사용하는 입력·값 블록은 각각의 공통 카테고리를 유지한다.
 - Toolbox 구성 변경 때문에 AST / Parser / Compiler / Registry 계층을 변경하지 않는다.
 
+### MakeCode 명령 블록 레이아웃 원칙
+
+- 명령 블록의 입력이 **3개 이상**이면 기본적으로 `inlineInputMode=external`을 사용하여 세로형으로 표시한다.
+- 세로형 블록은 `|`로 줄을 명시하여 `대상`, `위치`, `아이템`, `개수`, `옵션` 등이 한 행씩 읽히게 한다.
+- 입력이 1~2개인 단순 명령은 필요하면 한 줄형을 유지한다.
+- 복잡한 명령을 가로로 길게 늘리는 것보다 세로형 상세 블록을 우선한다.
+- `execute`, `scoreboard`처럼 자체 구조가 복잡한 명령은 세로형 하나로 모두 합치지 않고 기존 원칙대로 조립형 하위 블록을 사용한다.
+- 블록 UI 레이아웃 변경은 UI 계층의 문제이며 AST / Parser / Compiler의 명령 의미에는 영향을 주지 않는다.
+
 초기에는 별도 패키지로 분리하지 않고 **하나의 MakeCode Extension 저장소 안에서 계층을 분리**해 개발한다.
 
 ---
