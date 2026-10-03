@@ -1,81 +1,69 @@
+
 (function () {
     "use strict";
 
-    const MARK = "data-mcfunction-search-poc";
-    const MIN_OPTIONS = 20;
+    const ATTR = "data-mcfunction-search-grid-v2";
+    const MIN_CELLS = 20;
 
-    function normalize(value) {
-        return (value || "")
+    function norm(s) {
+        return (s || "")
             .toLowerCase()
             .trim()
             .replace(/^minecraft:/, "")
             .replace(/\s+/g, "_");
     }
 
-    function candidateItems(container) {
-        const selectors = [
-            '[role="gridcell"]',
-            '[role="option"]',
-            '[role="menuitem"]',
-            '.blocklyMenuItem',
-            '.blocklyDropdownMenuItem'
-        ];
-
-        const seen = new Set();
-        const result = [];
-
-        for (const selector of selectors) {
-            for (const node of container.querySelectorAll(selector)) {
-                if (seen.has(node)) continue;
-
-                const label =
-                    node.getAttribute("aria-label") ||
-                    node.getAttribute("title") ||
-                    node.textContent ||
-                    "";
-
-                if (!label.trim()) continue;
-
-                seen.add(node);
-                result.push(node);
-            }
-        }
-
-        return result;
-    }
-
-    function itemLabel(node) {
+    function labelOf(cell) {
+        const button = cell.querySelector("button");
         return (
-            node.getAttribute("aria-label") ||
-            node.getAttribute("title") ||
-            node.textContent ||
+            cell.getAttribute("aria-label") ||
+            cell.getAttribute("title") ||
+            (button && (
+                button.getAttribute("aria-label") ||
+                button.getAttribute("title") ||
+                button.textContent
+            )) ||
+            cell.textContent ||
             ""
-        );
+        ).trim();
     }
 
-    function findDropdowns() {
-        return Array.from(document.querySelectorAll(
-            ".blocklyDropDownDiv, .blocklyWidgetDiv"
-        ));
+    function cellsOf(grid) {
+        return Array.from(grid.querySelectorAll('[role="gridcell"]'));
     }
 
-    function attach(container) {
-        if (!container || container.hasAttribute(MARK)) return;
+    function updateRows(grid) {
+        const rows = Array.from(grid.querySelectorAll('[role="row"]'));
+        for (const row of rows) {
+            const cells = Array.from(row.querySelectorAll(':scope > [role="gridcell"], [role="gridcell"]'));
+            if (!cells.length) continue;
+            row.style.display = cells.some(c => c.style.display !== "none") ? "" : "none";
+        }
+    }
 
-        let items = candidateItems(container);
-        if (items.length < MIN_OPTIONS) return;
+    function attach(grid) {
+        if (!grid || grid.hasAttribute(ATTR)) return;
 
-        container.setAttribute(MARK, "1");
+        let cells = cellsOf(grid);
+        if (cells.length < MIN_CELLS) return;
 
-        const wrap = document.createElement("div");
-        wrap.className = "mcfunction-search-poc-wrap";
-        wrap.style.cssText = [
+        grid.setAttribute(ATTR, "1");
+
+        const host = grid.parentElement || grid;
+
+        const bar = document.createElement("div");
+        bar.className = "mcfunction-search-grid-v2-bar";
+        bar.style.cssText = [
             "position:sticky",
             "top:0",
-            "z-index:99999",
+            "z-index:2147483647",
+            "display:flex",
+            "align-items:center",
+            "gap:8px",
             "padding:8px",
-            "background:var(--pxt-page-background,#fff)",
-            "border-bottom:1px solid rgba(0,0,0,.18)"
+            "margin:0 0 6px 0",
+            "background:#2f2f2f",
+            "border-bottom:1px solid rgba(255,255,255,.22)"
         ].join(";");
 
         const input = document.createElement("input");
@@ -84,112 +72,87 @@
         input.autocomplete = "off";
         input.spellcheck = false;
         input.style.cssText = [
-            "display:block",
-            "width:100%",
+            "flex:1",
             "min-width:260px",
-            "height:34px",
+            "height:36px",
             "padding:6px 10px",
-            "border:1px solid rgba(0,0,0,.35)",
+            "border:1px solid rgba(255,255,255,.35)",
             "border-radius:6px",
-            "font:14px system-ui,-apple-system,Segoe UI,sans-serif",
             "background:#fff",
             "color:#111",
+            "font:600 14px system-ui,-apple-system,Segoe UI,sans-serif",
             "outline:none"
         ].join(";");
 
-        const status = document.createElement("div");
-        status.style.cssText = [
-            "font:11px system-ui,-apple-system,Segoe UI,sans-serif",
-            "opacity:.7",
-            "padding-top:4px"
+        const count = document.createElement("span");
+        count.style.cssText = [
+            "min-width:76px",
+            "text-align:right",
+            "color:#fff",
+            "font:600 12px system-ui,-apple-system,Segoe UI,sans-serif"
         ].join(";");
 
-        wrap.appendChild(input);
-        wrap.appendChild(status);
+        bar.appendChild(input);
+        bar.appendChild(count);
 
-        const first = container.firstChild;
-        if (first) container.insertBefore(wrap, first);
-        else container.appendChild(wrap);
-
-        function refreshItems() {
-            items = candidateItems(container).filter(x => !wrap.contains(x));
-        }
+        host.insertBefore(bar, grid);
 
         function apply() {
-            refreshItems();
-
-            const q = normalize(input.value);
+            cells = cellsOf(grid);
+            const q = norm(input.value);
             let visible = 0;
 
-            for (const item of items) {
-                const label = normalize(itemLabel(item));
-                const match = !q || label.includes(q);
-
-                // Grid picker items are individual cells/menu items in current Blockly.
-                item.style.display = match ? "" : "none";
+            for (const cell of cells) {
+                const match = !q || norm(labelOf(cell)).includes(q);
+                cell.style.display = match ? "" : "none";
                 if (match) visible++;
             }
 
-            status.textContent =
-                visible.toLocaleString() +
-                " / " +
-                items.length.toLocaleString();
+            updateRows(grid);
+            count.textContent = visible + " / " + cells.length;
         }
 
         input.addEventListener("input", apply);
 
-        // Keep the search field from closing the Blockly dropdown.
-        for (const ev of ["mousedown", "pointerdown", "touchstart", "click"]) {
-            wrap.addEventListener(ev, e => e.stopPropagation());
+        // Prevent Blockly from interpreting typing/clicking as picker interactions.
+        for (const ev of ["mousedown", "pointerdown", "touchstart", "click", "keydown"]) {
+            bar.addEventListener(ev, e => e.stopPropagation());
         }
 
         const mo = new MutationObserver(() => {
-            if (!container.isConnected) {
+            if (!grid.isConnected) {
                 mo.disconnect();
                 return;
             }
             apply();
         });
 
-        mo.observe(container, {
-            childList: true,
-            subtree: true
-        });
+        mo.observe(grid, { childList: true, subtree: true });
 
         apply();
 
-        // Delay focus so Blockly finishes positioning the dropdown first.
         setTimeout(() => {
-            try {
-                input.focus({ preventScroll: true });
-            } catch (_) {
-                input.focus();
-            }
-        }, 30);
+            try { input.focus({ preventScroll: true }); }
+            catch (_) { input.focus(); }
+        }, 50);
 
-        console.info(
-            "[MCFunction Searchable Grid POC] attached:",
-            items.length,
-            "options"
-        );
+        console.info("[MCFunction Search Grid V2] attached", cells.length, "cells");
     }
 
     function scan() {
-        for (const dropdown of findDropdowns()) {
-            attach(dropdown);
-        }
+        document.querySelectorAll('[role="grid"]').forEach(attach);
     }
 
-    const observer = new MutationObserver(scan);
-    observer.observe(document.documentElement, {
+    const rootObserver = new MutationObserver(scan);
+    rootObserver.observe(document.documentElement, {
         childList: true,
         subtree: true,
         attributes: true,
-        attributeFilter: ["style", "class", "aria-hidden"]
+        attributeFilter: ["role", "class", "style", "aria-hidden"]
     });
 
-    setInterval(scan, 500);
+    setInterval(scan, 400);
     scan();
 
-    console.info("[MCFunction Searchable Grid POC] injector ready");
+    console.info("[MCFunction Search Grid V2] ready");
 })();
