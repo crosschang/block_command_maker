@@ -165,7 +165,7 @@ namespace MCFunctionRegistryBedrock {
         );
     }
 
-    export function isKnownEntitie(
+    export function isKnownEntity(
         id: string
     ): boolean {
 
