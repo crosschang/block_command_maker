@@ -3,9 +3,6 @@
  *
  * Source: registry/source/bedrock/items.json
  * Generator: tools/generate_registry.ps1
- *
- * MakeCode-facing registry values are primitive string IDs.
- * Core adapters convert the string into strong AST value types internally.
  */
 
 namespace MCFunctionItemLibrary {
@@ -14,12472 +11,12472 @@ namespace MCFunctionItemLibrary {
     //% weight=200
     //% blockId=mcfunction_item_registry_minecraft_cyan_terracotta
     //% block="item minecraft:cyan_terracotta"
-    export function cyanTerracotta(): string {
-        return "minecraft:cyan_terracotta";
+    export function cyanTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cyan_terracotta");
     }
 
     //% group="Registry"
     //% weight=199
     //% blockId=mcfunction_item_registry_minecraft_blue_candle
     //% block="item minecraft:blue_candle"
-    export function blueCandle(): string {
-        return "minecraft:blue_candle";
+    export function blueCandle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blue_candle");
     }
 
     //% group="Registry"
     //% weight=198
     //% blockId=mcfunction_item_registry_minecraft_dark_oak_wood
     //% block="item minecraft:dark_oak_wood"
-    export function darkOakWood(): string {
-        return "minecraft:dark_oak_wood";
+    export function darkOakWood(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dark_oak_wood");
     }
 
     //% group="Registry"
     //% weight=197
     //% blockId=mcfunction_item_registry_minecraft_polished_basalt
     //% block="item minecraft:polished_basalt"
-    export function polishedBasalt(): string {
-        return "minecraft:polished_basalt";
+    export function polishedBasalt(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_basalt");
     }
 
     //% group="Registry"
     //% weight=196
     //% blockId=mcfunction_item_registry_minecraft_nether_gold_ore
     //% block="item minecraft:nether_gold_ore"
-    export function netherGoldOre(): string {
-        return "minecraft:nether_gold_ore";
+    export function netherGoldOre(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:nether_gold_ore");
     }
 
     //% group="Registry"
     //% weight=195
     //% blockId=mcfunction_item_registry_minecraft_zombie_head
     //% block="item minecraft:zombie_head"
-    export function zombieHead(): string {
-        return "minecraft:zombie_head";
+    export function zombieHead(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:zombie_head");
     }
 
     //% group="Registry"
     //% weight=194
     //% blockId=mcfunction_item_registry_minecraft_waxed_weathered_copper_chain
     //% block="item minecraft:waxed_weathered_copper_chain"
-    export function waxedWeatheredCopperChain(): string {
-        return "minecraft:waxed_weathered_copper_chain";
+    export function waxedWeatheredCopperChain(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_weathered_copper_chain");
     }
 
     //% group="Registry"
     //% weight=193
     //% blockId=mcfunction_item_registry_minecraft_waxed_weathered_copper_chest
     //% block="item minecraft:waxed_weathered_copper_chest"
-    export function waxedWeatheredCopperChest(): string {
-        return "minecraft:waxed_weathered_copper_chest";
+    export function waxedWeatheredCopperChest(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_weathered_copper_chest");
     }
 
     //% group="Registry"
     //% weight=192
     //% blockId=mcfunction_item_registry_minecraft_leaf_litter
     //% block="item minecraft:leaf_litter"
-    export function leafLitter(): string {
-        return "minecraft:leaf_litter";
+    export function leafLitter(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:leaf_litter");
     }
 
     //% group="Registry"
     //% weight=191
     //% blockId=mcfunction_item_registry_minecraft_warped_door
     //% block="item minecraft:warped_door"
-    export function warpedDoor(): string {
-        return "minecraft:warped_door";
+    export function warpedDoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:warped_door");
     }
 
     //% group="Registry"
     //% weight=190
     //% blockId=mcfunction_item_registry_minecraft_light_blue_concrete_powder
     //% block="item minecraft:light_blue_concrete_powder"
-    export function lightBlueConcretePowder(): string {
-        return "minecraft:light_blue_concrete_powder";
+    export function lightBlueConcretePowder(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_blue_concrete_powder");
     }
 
     //% group="Registry"
     //% weight=189
     //% blockId=mcfunction_item_registry_minecraft_bamboo_block
     //% block="item minecraft:bamboo_block"
-    export function bambooBlock(): string {
-        return "minecraft:bamboo_block";
+    export function bambooBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bamboo_block");
     }
 
     //% group="Registry"
     //% weight=188
     //% blockId=mcfunction_item_registry_minecraft_waxed_oxidized_chiseled_copper
     //% block="item minecraft:waxed_oxidized_chiseled_copper"
-    export function waxedOxidizedChiseledCopper(): string {
-        return "minecraft:waxed_oxidized_chiseled_copper";
+    export function waxedOxidizedChiseledCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_oxidized_chiseled_copper");
     }
 
     //% group="Registry"
     //% weight=187
     //% blockId=mcfunction_item_registry_minecraft_wet_sponge
     //% block="item minecraft:wet_sponge"
-    export function wetSponge(): string {
-        return "minecraft:wet_sponge";
+    export function wetSponge(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wet_sponge");
     }
 
     //% group="Registry"
     //% weight=186
     //% blockId=mcfunction_item_registry_minecraft_end_stone_brick_wall
     //% block="item minecraft:end_stone_brick_wall"
-    export function endStoneBrickWall(): string {
-        return "minecraft:end_stone_brick_wall";
+    export function endStoneBrickWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:end_stone_brick_wall");
     }
 
     //% group="Registry"
     //% weight=185
     //% blockId=mcfunction_item_registry_minecraft_granite
     //% block="item minecraft:granite"
-    export function granite(): string {
-        return "minecraft:granite";
+    export function granite(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:granite");
     }
 
     //% group="Registry"
     //% weight=184
     //% blockId=mcfunction_item_registry_minecraft_blue_stained_glass_pane
     //% block="item minecraft:blue_stained_glass_pane"
-    export function blueStainedGlassPane(): string {
-        return "minecraft:blue_stained_glass_pane";
+    export function blueStainedGlassPane(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blue_stained_glass_pane");
     }
 
     //% group="Registry"
     //% weight=183
     //% blockId=mcfunction_item_registry_minecraft_fence_gate
     //% block="item minecraft:fence_gate"
-    export function fenceGate(): string {
-        return "minecraft:fence_gate";
+    export function fenceGate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:fence_gate");
     }
 
     //% group="Registry"
     //% weight=182
     //% blockId=mcfunction_item_registry_minecraft_birch_shelf
     //% block="item minecraft:birch_shelf"
-    export function birchShelf(): string {
-        return "minecraft:birch_shelf";
+    export function birchShelf(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:birch_shelf");
     }
 
     //% group="Registry"
     //% weight=181
     //% blockId=mcfunction_item_registry_minecraft_dark_oak_button
     //% block="item minecraft:dark_oak_button"
-    export function darkOakButton(): string {
-        return "minecraft:dark_oak_button";
+    export function darkOakButton(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dark_oak_button");
     }
 
     //% group="Registry"
     //% weight=180
     //% blockId=mcfunction_item_registry_minecraft_deepslate_copper_ore
     //% block="item minecraft:deepslate_copper_ore"
-    export function deepslateCopperOre(): string {
-        return "minecraft:deepslate_copper_ore";
+    export function deepslateCopperOre(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:deepslate_copper_ore");
     }
 
     //% group="Registry"
     //% weight=179
     //% blockId=mcfunction_item_registry_minecraft_chiseled_stone_bricks
     //% block="item minecraft:chiseled_stone_bricks"
-    export function chiseledStoneBricks(): string {
-        return "minecraft:chiseled_stone_bricks";
+    export function chiseledStoneBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chiseled_stone_bricks");
     }
 
     //% group="Registry"
     //% weight=178
     //% blockId=mcfunction_item_registry_minecraft_nether_brick_stairs
     //% block="item minecraft:nether_brick_stairs"
-    export function netherBrickStairs(): string {
-        return "minecraft:nether_brick_stairs";
+    export function netherBrickStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:nether_brick_stairs");
     }
 
     //% group="Registry"
     //% weight=177
     //% blockId=mcfunction_item_registry_minecraft_yellow_shulker_box
     //% block="item minecraft:yellow_shulker_box"
-    export function yellowShulkerBox(): string {
-        return "minecraft:yellow_shulker_box";
+    export function yellowShulkerBox(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:yellow_shulker_box");
     }
 
     //% group="Registry"
     //% weight=176
     //% blockId=mcfunction_item_registry_minecraft_lime_stained_glass
     //% block="item minecraft:lime_stained_glass"
-    export function limeStainedGlass(): string {
-        return "minecraft:lime_stained_glass";
+    export function limeStainedGlass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lime_stained_glass");
     }
 
     //% group="Registry"
     //% weight=175
     //% blockId=mcfunction_item_registry_minecraft_red_wool
     //% block="item minecraft:red_wool"
-    export function redWool(): string {
-        return "minecraft:red_wool";
+    export function redWool(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_wool");
     }
 
     //% group="Registry"
     //% weight=174
     //% blockId=mcfunction_item_registry_minecraft_jungle_button
     //% block="item minecraft:jungle_button"
-    export function jungleButton(): string {
-        return "minecraft:jungle_button";
+    export function jungleButton(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:jungle_button");
     }
 
     //% group="Registry"
     //% weight=173
     //% blockId=mcfunction_item_registry_minecraft_spruce_stairs
     //% block="item minecraft:spruce_stairs"
-    export function spruceStairs(): string {
-        return "minecraft:spruce_stairs";
+    export function spruceStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spruce_stairs");
     }
 
     //% group="Registry"
     //% weight=172
     //% blockId=mcfunction_item_registry_minecraft_acacia_shelf
     //% block="item minecraft:acacia_shelf"
-    export function acaciaShelf(): string {
-        return "minecraft:acacia_shelf";
+    export function acaciaShelf(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:acacia_shelf");
     }
 
     //% group="Registry"
     //% weight=171
     //% blockId=mcfunction_item_registry_minecraft_diorite
     //% block="item minecraft:diorite"
-    export function diorite(): string {
-        return "minecraft:diorite";
+    export function diorite(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:diorite");
     }
 
     //% group="Registry"
     //% weight=170
     //% blockId=mcfunction_item_registry_minecraft_pale_oak_fence_gate
     //% block="item minecraft:pale_oak_fence_gate"
-    export function paleOakFenceGate(): string {
-        return "minecraft:pale_oak_fence_gate";
+    export function paleOakFenceGate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pale_oak_fence_gate");
     }
 
     //% group="Registry"
     //% weight=169
     //% blockId=mcfunction_item_registry_minecraft_polished_tuff_slab
     //% block="item minecraft:polished_tuff_slab"
-    export function polishedTuffSlab(): string {
-        return "minecraft:polished_tuff_slab";
+    export function polishedTuffSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_tuff_slab");
     }
 
     //% group="Registry"
     //% weight=168
     //% blockId=mcfunction_item_registry_minecraft_cherry_pressure_plate
     //% block="item minecraft:cherry_pressure_plate"
-    export function cherryPressurePlate(): string {
-        return "minecraft:cherry_pressure_plate";
+    export function cherryPressurePlate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cherry_pressure_plate");
     }
 
     //% group="Registry"
     //% weight=167
     //% blockId=mcfunction_item_registry_minecraft_cherry_hanging_sign
     //% block="item minecraft:cherry_hanging_sign"
-    export function cherryHangingSign(): string {
-        return "minecraft:cherry_hanging_sign";
+    export function cherryHangingSign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cherry_hanging_sign");
     }
 
     //% group="Registry"
     //% weight=166
     //% blockId=mcfunction_item_registry_minecraft_yellow_wool
     //% block="item minecraft:yellow_wool"
-    export function yellowWool(): string {
-        return "minecraft:yellow_wool";
+    export function yellowWool(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:yellow_wool");
     }
 
     //% group="Registry"
     //% weight=165
     //% blockId=mcfunction_item_registry_minecraft_yellow_stained_glass_pane
     //% block="item minecraft:yellow_stained_glass_pane"
-    export function yellowStainedGlassPane(): string {
-        return "minecraft:yellow_stained_glass_pane";
+    export function yellowStainedGlassPane(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:yellow_stained_glass_pane");
     }
 
     //% group="Registry"
     //% weight=164
     //% blockId=mcfunction_item_registry_minecraft_azure_bluet
     //% block="item minecraft:azure_bluet"
-    export function azureBluet(): string {
-        return "minecraft:azure_bluet";
+    export function azureBluet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:azure_bluet");
     }
 
     //% group="Registry"
     //% weight=163
     //% blockId=mcfunction_item_registry_minecraft_beacon
     //% block="item minecraft:beacon"
-    export function beacon(): string {
-        return "minecraft:beacon";
+    export function beacon(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:beacon");
     }
 
     //% group="Registry"
     //% weight=162
     //% blockId=mcfunction_item_registry_minecraft_red_nether_brick
     //% block="item minecraft:red_nether_brick"
-    export function redNetherBrick(): string {
-        return "minecraft:red_nether_brick";
+    export function redNetherBrick(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_nether_brick");
     }
 
     //% group="Registry"
     //% weight=161
     //% blockId=mcfunction_item_registry_minecraft_brick_wall
     //% block="item minecraft:brick_wall"
-    export function brickWall(): string {
-        return "minecraft:brick_wall";
+    export function brickWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brick_wall");
     }
 
     //% group="Registry"
     //% weight=160
     //% blockId=mcfunction_item_registry_minecraft_polished_sulfur
     //% block="item minecraft:polished_sulfur"
-    export function polishedSulfur(): string {
-        return "minecraft:polished_sulfur";
+    export function polishedSulfur(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_sulfur");
     }
 
     //% group="Registry"
     //% weight=159
     //% blockId=mcfunction_item_registry_minecraft_cobbled_deepslate_stairs
     //% block="item minecraft:cobbled_deepslate_stairs"
-    export function cobbledDeepslateStairs(): string {
-        return "minecraft:cobbled_deepslate_stairs";
+    export function cobbledDeepslateStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cobbled_deepslate_stairs");
     }
 
     //% group="Registry"
     //% weight=158
     //% blockId=mcfunction_item_registry_minecraft_smooth_sandstone
     //% block="item minecraft:smooth_sandstone"
-    export function smoothSandstone(): string {
-        return "minecraft:smooth_sandstone";
+    export function smoothSandstone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:smooth_sandstone");
     }
 
     //% group="Registry"
     //% weight=157
     //% blockId=mcfunction_item_registry_minecraft_snow_layer
     //% block="item minecraft:snow_layer"
-    export function snowLayer(): string {
-        return "minecraft:snow_layer";
+    export function snowLayer(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:snow_layer");
     }
 
     //% group="Registry"
     //% weight=156
     //% blockId=mcfunction_item_registry_minecraft_black_candle
     //% block="item minecraft:black_candle"
-    export function blackCandle(): string {
-        return "minecraft:black_candle";
+    export function blackCandle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:black_candle");
     }
 
     //% group="Registry"
     //% weight=155
     //% blockId=mcfunction_item_registry_minecraft_blue_carpet
     //% block="item minecraft:blue_carpet"
-    export function blueCarpet(): string {
-        return "minecraft:blue_carpet";
+    export function blueCarpet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blue_carpet");
     }
 
     //% group="Registry"
     //% weight=154
     //% blockId=mcfunction_item_registry_minecraft_glow_frame
     //% block="item minecraft:glow_frame"
-    export function glowFrame(): string {
-        return "minecraft:glow_frame";
+    export function glowFrame(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:glow_frame");
     }
 
     //% group="Registry"
     //% weight=153
     //% blockId=mcfunction_item_registry_minecraft_hanging_roots
     //% block="item minecraft:hanging_roots"
-    export function hangingRoots(): string {
-        return "minecraft:hanging_roots";
+    export function hangingRoots(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:hanging_roots");
     }
 
     //% group="Registry"
     //% weight=152
     //% blockId=mcfunction_item_registry_minecraft_red_sandstone_wall
     //% block="item minecraft:red_sandstone_wall"
-    export function redSandstoneWall(): string {
-        return "minecraft:red_sandstone_wall";
+    export function redSandstoneWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_sandstone_wall");
     }
 
     //% group="Registry"
     //% weight=151
     //% blockId=mcfunction_item_registry_minecraft_prismarine_bricks_stairs
     //% block="item minecraft:prismarine_bricks_stairs"
-    export function prismarineBricksStairs(): string {
-        return "minecraft:prismarine_bricks_stairs";
+    export function prismarineBricksStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:prismarine_bricks_stairs");
     }
 
     //% group="Registry"
     //% weight=150
     //% blockId=mcfunction_item_registry_minecraft_waxed_oxidized_cut_copper
     //% block="item minecraft:waxed_oxidized_cut_copper"
-    export function waxedOxidizedCutCopper(): string {
-        return "minecraft:waxed_oxidized_cut_copper";
+    export function waxedOxidizedCutCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_oxidized_cut_copper");
     }
 
     //% group="Registry"
     //% weight=149
     //% blockId=mcfunction_item_registry_minecraft_waxed_exposed_copper_chain
     //% block="item minecraft:waxed_exposed_copper_chain"
-    export function waxedExposedCopperChain(): string {
-        return "minecraft:waxed_exposed_copper_chain";
+    export function waxedExposedCopperChain(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_exposed_copper_chain");
     }
 
     //% group="Registry"
     //% weight=148
     //% blockId=mcfunction_item_registry_minecraft_waxed_exposed_copper_chest
     //% block="item minecraft:waxed_exposed_copper_chest"
-    export function waxedExposedCopperChest(): string {
-        return "minecraft:waxed_exposed_copper_chest";
+    export function waxedExposedCopperChest(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_exposed_copper_chest");
     }
 
     //% group="Registry"
     //% weight=147
     //% blockId=mcfunction_item_registry_minecraft_calcite
     //% block="item minecraft:calcite"
-    export function calcite(): string {
-        return "minecraft:calcite";
+    export function calcite(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:calcite");
     }
 
     //% group="Registry"
     //% weight=146
     //% blockId=mcfunction_item_registry_minecraft_diorite_slab
     //% block="item minecraft:diorite_slab"
-    export function dioriteSlab(): string {
-        return "minecraft:diorite_slab";
+    export function dioriteSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:diorite_slab");
     }
 
     //% group="Registry"
     //% weight=145
     //% blockId=mcfunction_item_registry_minecraft_stripped_dark_oak_log
     //% block="item minecraft:stripped_dark_oak_log"
-    export function strippedDarkOakLog(): string {
-        return "minecraft:stripped_dark_oak_log";
+    export function strippedDarkOakLog(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stripped_dark_oak_log");
     }
 
     //% group="Registry"
     //% weight=144
     //% blockId=mcfunction_item_registry_minecraft_dead_bubble_coral_fan
     //% block="item minecraft:dead_bubble_coral_fan"
-    export function deadBubbleCoralFan(): string {
-        return "minecraft:dead_bubble_coral_fan";
+    export function deadBubbleCoralFan(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dead_bubble_coral_fan");
     }
 
     //% group="Registry"
     //% weight=143
     //% blockId=mcfunction_item_registry_minecraft_jungle_log
     //% block="item minecraft:jungle_log"
-    export function jungleLog(): string {
-        return "minecraft:jungle_log";
+    export function jungleLog(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:jungle_log");
     }
 
     //% group="Registry"
     //% weight=142
     //% blockId=mcfunction_item_registry_minecraft_bubble_coral_fan
     //% block="item minecraft:bubble_coral_fan"
-    export function bubbleCoralFan(): string {
-        return "minecraft:bubble_coral_fan";
+    export function bubbleCoralFan(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bubble_coral_fan");
     }
 
     //% group="Registry"
     //% weight=141
     //% blockId=mcfunction_item_registry_minecraft_sculk_shrieker
     //% block="item minecraft:sculk_shrieker"
-    export function sculkShrieker(): string {
-        return "minecraft:sculk_shrieker";
+    export function sculkShrieker(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sculk_shrieker");
     }
 
     //% group="Registry"
     //% weight=140
     //% blockId=mcfunction_item_registry_minecraft_gray_wool
     //% block="item minecraft:gray_wool"
-    export function grayWool(): string {
-        return "minecraft:gray_wool";
+    export function grayWool(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:gray_wool");
     }
 
     //% group="Registry"
     //% weight=139
     //% blockId=mcfunction_item_registry_minecraft_orange_stained_glass_pane
     //% block="item minecraft:orange_stained_glass_pane"
-    export function orangeStainedGlassPane(): string {
-        return "minecraft:orange_stained_glass_pane";
+    export function orangeStainedGlassPane(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:orange_stained_glass_pane");
     }
 
     //% group="Registry"
     //% weight=138
     //% blockId=mcfunction_item_registry_minecraft_gray_carpet
     //% block="item minecraft:gray_carpet"
-    export function grayCarpet(): string {
-        return "minecraft:gray_carpet";
+    export function grayCarpet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:gray_carpet");
     }
 
     //% group="Registry"
     //% weight=137
     //% blockId=mcfunction_item_registry_minecraft_lily_of_the_valley
     //% block="item minecraft:lily_of_the_valley"
-    export function lilyOfTheValley(): string {
-        return "minecraft:lily_of_the_valley";
+    export function lilyOfTheValley(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lily_of_the_valley");
     }
 
     //% group="Registry"
     //% weight=136
     //% blockId=mcfunction_item_registry_minecraft_lime_glazed_terracotta
     //% block="item minecraft:lime_glazed_terracotta"
-    export function limeGlazedTerracotta(): string {
-        return "minecraft:lime_glazed_terracotta";
+    export function limeGlazedTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lime_glazed_terracotta");
     }
 
     //% group="Registry"
     //% weight=135
     //% blockId=mcfunction_item_registry_minecraft_trapdoor
     //% block="item minecraft:trapdoor"
-    export function trapdoor(): string {
-        return "minecraft:trapdoor";
+    export function trapdoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:trapdoor");
     }
 
     //% group="Registry"
     //% weight=134
     //% blockId=mcfunction_item_registry_minecraft_cactus_flower
     //% block="item minecraft:cactus_flower"
-    export function cactusFlower(): string {
-        return "minecraft:cactus_flower";
+    export function cactusFlower(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cactus_flower");
     }
 
     //% group="Registry"
     //% weight=133
     //% blockId=mcfunction_item_registry_minecraft_dead_brain_coral_fan
     //% block="item minecraft:dead_brain_coral_fan"
-    export function deadBrainCoralFan(): string {
-        return "minecraft:dead_brain_coral_fan";
+    export function deadBrainCoralFan(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dead_brain_coral_fan");
     }
 
     //% group="Registry"
     //% weight=132
     //% blockId=mcfunction_item_registry_minecraft_seagrass
     //% block="item minecraft:seagrass"
-    export function seagrass(): string {
-        return "minecraft:seagrass";
+    export function seagrass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:seagrass");
     }
 
     //% group="Registry"
     //% weight=131
     //% blockId=mcfunction_item_registry_minecraft_tube_coral_fan
     //% block="item minecraft:tube_coral_fan"
-    export function tubeCoralFan(): string {
-        return "minecraft:tube_coral_fan";
+    export function tubeCoralFan(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tube_coral_fan");
     }
 
     //% group="Registry"
     //% weight=130
     //% blockId=mcfunction_item_registry_minecraft_waxed_exposed_cut_copper_slab
     //% block="item minecraft:waxed_exposed_cut_copper_slab"
-    export function waxedExposedCutCopperSlab(): string {
-        return "minecraft:waxed_exposed_cut_copper_slab";
+    export function waxedExposedCutCopperSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_exposed_cut_copper_slab");
     }
 
     //% group="Registry"
     //% weight=129
     //% blockId=mcfunction_item_registry_minecraft_redstone_lamp
     //% block="item minecraft:redstone_lamp"
-    export function redstoneLamp(): string {
-        return "minecraft:redstone_lamp";
+    export function redstoneLamp(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:redstone_lamp");
     }
 
     //% group="Registry"
     //% weight=128
     //% blockId=mcfunction_item_registry_minecraft_mossy_cobblestone
     //% block="item minecraft:mossy_cobblestone"
-    export function mossyCobblestone(): string {
-        return "minecraft:mossy_cobblestone";
+    export function mossyCobblestone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mossy_cobblestone");
     }
 
     //% group="Registry"
     //% weight=127
     //% blockId=mcfunction_item_registry_minecraft_deepslate
     //% block="item minecraft:deepslate"
-    export function deepslate(): string {
-        return "minecraft:deepslate";
+    export function deepslate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:deepslate");
     }
 
     //% group="Registry"
     //% weight=126
     //% blockId=mcfunction_item_registry_minecraft_magenta_carpet
     //% block="item minecraft:magenta_carpet"
-    export function magentaCarpet(): string {
-        return "minecraft:magenta_carpet";
+    export function magentaCarpet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:magenta_carpet");
     }
 
     //% group="Registry"
     //% weight=125
     //% blockId=mcfunction_item_registry_minecraft_brown_wool
     //% block="item minecraft:brown_wool"
-    export function brownWool(): string {
-        return "minecraft:brown_wool";
+    export function brownWool(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brown_wool");
     }
 
     //% group="Registry"
     //% weight=124
     //% blockId=mcfunction_item_registry_minecraft_waxed_exposed_chiseled_copper
     //% block="item minecraft:waxed_exposed_chiseled_copper"
-    export function waxedExposedChiseledCopper(): string {
-        return "minecraft:waxed_exposed_chiseled_copper";
+    export function waxedExposedChiseledCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_exposed_chiseled_copper");
     }
 
     //% group="Registry"
     //% weight=123
     //% blockId=mcfunction_item_registry_minecraft_tuff_slab
     //% block="item minecraft:tuff_slab"
-    export function tuffSlab(): string {
-        return "minecraft:tuff_slab";
+    export function tuffSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tuff_slab");
     }
 
     //% group="Registry"
     //% weight=122
     //% blockId=mcfunction_item_registry_minecraft_cinnabar_wall
     //% block="item minecraft:cinnabar_wall"
-    export function cinnabarWall(): string {
-        return "minecraft:cinnabar_wall";
+    export function cinnabarWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cinnabar_wall");
     }
 
     //% group="Registry"
     //% weight=121
     //% blockId=mcfunction_item_registry_minecraft_warped_pressure_plate
     //% block="item minecraft:warped_pressure_plate"
-    export function warpedPressurePlate(): string {
-        return "minecraft:warped_pressure_plate";
+    export function warpedPressurePlate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:warped_pressure_plate");
     }
 
     //% group="Registry"
     //% weight=120
     //% blockId=mcfunction_item_registry_minecraft_stripped_acacia_wood
     //% block="item minecraft:stripped_acacia_wood"
-    export function strippedAcaciaWood(): string {
-        return "minecraft:stripped_acacia_wood";
+    export function strippedAcaciaWood(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stripped_acacia_wood");
     }
 
     //% group="Registry"
     //% weight=119
     //% blockId=mcfunction_item_registry_minecraft_firefly_bush
     //% block="item minecraft:firefly_bush"
-    export function fireflyBush(): string {
-        return "minecraft:firefly_bush";
+    export function fireflyBush(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:firefly_bush");
     }
 
     //% group="Registry"
     //% weight=118
     //% blockId=mcfunction_item_registry_minecraft_diamond_block
     //% block="item minecraft:diamond_block"
-    export function diamondBlock(): string {
-        return "minecraft:diamond_block";
+    export function diamondBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:diamond_block");
     }
 
     //% group="Registry"
     //% weight=117
     //% blockId=mcfunction_item_registry_minecraft_oak_stairs
     //% block="item minecraft:oak_stairs"
-    export function oakStairs(): string {
-        return "minecraft:oak_stairs";
+    export function oakStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oak_stairs");
     }
 
     //% group="Registry"
     //% weight=116
     //% blockId=mcfunction_item_registry_minecraft_oak_log
     //% block="item minecraft:oak_log"
-    export function oakLog(): string {
-        return "minecraft:oak_log";
+    export function oakLog(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oak_log");
     }
 
     //% group="Registry"
     //% weight=115
     //% blockId=mcfunction_item_registry_minecraft_brown_stained_glass_pane
     //% block="item minecraft:brown_stained_glass_pane"
-    export function brownStainedGlassPane(): string {
-        return "minecraft:brown_stained_glass_pane";
+    export function brownStainedGlassPane(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brown_stained_glass_pane");
     }
 
     //% group="Registry"
     //% weight=114
     //% blockId=mcfunction_item_registry_minecraft_sulfur_spike
     //% block="item minecraft:sulfur_spike"
-    export function sulfurSpike(): string {
-        return "minecraft:sulfur_spike";
+    export function sulfurSpike(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sulfur_spike");
     }
 
     //% group="Registry"
     //% weight=113
     //% blockId=mcfunction_item_registry_minecraft_end_bricks
     //% block="item minecraft:end_bricks"
-    export function endBricks(): string {
-        return "minecraft:end_bricks";
+    export function endBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:end_bricks");
     }
 
     //% group="Registry"
     //% weight=112
     //% blockId=mcfunction_item_registry_minecraft_magenta_shulker_box
     //% block="item minecraft:magenta_shulker_box"
-    export function magentaShulkerBox(): string {
-        return "minecraft:magenta_shulker_box";
+    export function magentaShulkerBox(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:magenta_shulker_box");
     }
 
     //% group="Registry"
     //% weight=111
     //% blockId=mcfunction_item_registry_minecraft_packed_ice
     //% block="item minecraft:packed_ice"
-    export function packedIce(): string {
-        return "minecraft:packed_ice";
+    export function packedIce(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:packed_ice");
     }
 
     //% group="Registry"
     //% weight=110
     //% blockId=mcfunction_item_registry_minecraft_packed_mud
     //% block="item minecraft:packed_mud"
-    export function packedMud(): string {
-        return "minecraft:packed_mud";
+    export function packedMud(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:packed_mud");
     }
 
     //% group="Registry"
     //% weight=109
     //% blockId=mcfunction_item_registry_minecraft_moss_carpet
     //% block="item minecraft:moss_carpet"
-    export function mossCarpet(): string {
-        return "minecraft:moss_carpet";
+    export function mossCarpet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:moss_carpet");
     }
 
     //% group="Registry"
     //% weight=108
     //% blockId=mcfunction_item_registry_minecraft_warped_fungus
     //% block="item minecraft:warped_fungus"
-    export function warpedFungus(): string {
-        return "minecraft:warped_fungus";
+    export function warpedFungus(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:warped_fungus");
     }
 
     //% group="Registry"
     //% weight=107
     //% blockId=mcfunction_item_registry_minecraft_oxidized_lightning_rod
     //% block="item minecraft:oxidized_lightning_rod"
-    export function oxidizedLightningRod(): string {
-        return "minecraft:oxidized_lightning_rod";
+    export function oxidizedLightningRod(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oxidized_lightning_rod");
     }
 
     //% group="Registry"
     //% weight=106
     //% blockId=mcfunction_item_registry_minecraft_polished_deepslate_slab
     //% block="item minecraft:polished_deepslate_slab"
-    export function polishedDeepslateSlab(): string {
-        return "minecraft:polished_deepslate_slab";
+    export function polishedDeepslateSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_deepslate_slab");
     }
 
     //% group="Registry"
     //% weight=105
     //% blockId=mcfunction_item_registry_minecraft_bamboo_door
     //% block="item minecraft:bamboo_door"
-    export function bambooDoor(): string {
-        return "minecraft:bamboo_door";
+    export function bambooDoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bamboo_door");
     }
 
     //% group="Registry"
     //% weight=104
     //% blockId=mcfunction_item_registry_minecraft_amethyst_block
     //% block="item minecraft:amethyst_block"
-    export function amethystBlock(): string {
-        return "minecraft:amethyst_block";
+    export function amethystBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:amethyst_block");
     }
 
     //% group="Registry"
     //% weight=103
     //% blockId=mcfunction_item_registry_minecraft_gold_block
     //% block="item minecraft:gold_block"
-    export function goldBlock(): string {
-        return "minecraft:gold_block";
+    export function goldBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:gold_block");
     }
 
     //% group="Registry"
     //% weight=102
     //% blockId=mcfunction_item_registry_minecraft_flower_pot
     //% block="item minecraft:flower_pot"
-    export function flowerPot(): string {
-        return "minecraft:flower_pot";
+    export function flowerPot(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:flower_pot");
     }
 
     //% group="Registry"
     //% weight=101
     //% blockId=mcfunction_item_registry_minecraft_chiseled_bookshelf
     //% block="item minecraft:chiseled_bookshelf"
-    export function chiseledBookshelf(): string {
-        return "minecraft:chiseled_bookshelf";
+    export function chiseledBookshelf(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chiseled_bookshelf");
     }
 
     //% group="Registry"
     //% weight=100
     //% blockId=mcfunction_item_registry_minecraft_polished_deepslate_stairs
     //% block="item minecraft:polished_deepslate_stairs"
-    export function polishedDeepslateStairs(): string {
-        return "minecraft:polished_deepslate_stairs";
+    export function polishedDeepslateStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_deepslate_stairs");
     }
 
     //% group="Registry"
     //% weight=99
     //% blockId=mcfunction_item_registry_minecraft_lime_shulker_box
     //% block="item minecraft:lime_shulker_box"
-    export function limeShulkerBox(): string {
-        return "minecraft:lime_shulker_box";
+    export function limeShulkerBox(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lime_shulker_box");
     }
 
     //% group="Registry"
     //% weight=98
     //% blockId=mcfunction_item_registry_minecraft_weathered_chiseled_copper
     //% block="item minecraft:weathered_chiseled_copper"
-    export function weatheredChiseledCopper(): string {
-        return "minecraft:weathered_chiseled_copper";
+    export function weatheredChiseledCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:weathered_chiseled_copper");
     }
 
     //% group="Registry"
     //% weight=97
     //% blockId=mcfunction_item_registry_minecraft_small_amethyst_bud
     //% block="item minecraft:small_amethyst_bud"
-    export function smallAmethystBud(): string {
-        return "minecraft:small_amethyst_bud";
+    export function smallAmethystBud(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:small_amethyst_bud");
     }
 
     //% group="Registry"
     //% weight=96
     //% blockId=mcfunction_item_registry_minecraft_golden_dandelion
     //% block="item minecraft:golden_dandelion"
-    export function goldenDandelion(): string {
-        return "minecraft:golden_dandelion";
+    export function goldenDandelion(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:golden_dandelion");
     }
 
     //% group="Registry"
     //% weight=95
     //% blockId=mcfunction_item_registry_minecraft_activator_rail
     //% block="item minecraft:activator_rail"
-    export function activatorRail(): string {
-        return "minecraft:activator_rail";
+    export function activatorRail(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:activator_rail");
     }
 
     //% group="Registry"
     //% weight=94
     //% blockId=mcfunction_item_registry_minecraft_iron_trapdoor
     //% block="item minecraft:iron_trapdoor"
-    export function ironTrapdoor(): string {
-        return "minecraft:iron_trapdoor";
+    export function ironTrapdoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:iron_trapdoor");
     }
 
     //% group="Registry"
     //% weight=93
     //% blockId=mcfunction_item_registry_minecraft_muddy_mangrove_roots
     //% block="item minecraft:muddy_mangrove_roots"
-    export function muddyMangroveRoots(): string {
-        return "minecraft:muddy_mangrove_roots";
+    export function muddyMangroveRoots(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:muddy_mangrove_roots");
     }
 
     //% group="Registry"
     //% weight=92
     //% blockId=mcfunction_item_registry_minecraft_pale_oak_pressure_plate
     //% block="item minecraft:pale_oak_pressure_plate"
-    export function paleOakPressurePlate(): string {
-        return "minecraft:pale_oak_pressure_plate";
+    export function paleOakPressurePlate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pale_oak_pressure_plate");
     }
 
     //% group="Registry"
     //% weight=91
     //% blockId=mcfunction_item_registry_minecraft_stripped_jungle_wood
     //% block="item minecraft:stripped_jungle_wood"
-    export function strippedJungleWood(): string {
-        return "minecraft:stripped_jungle_wood";
+    export function strippedJungleWood(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stripped_jungle_wood");
     }
 
     //% group="Registry"
     //% weight=90
     //% blockId=mcfunction_item_registry_minecraft_noteblock
     //% block="item minecraft:noteblock"
-    export function noteblock(): string {
-        return "minecraft:noteblock";
+    export function noteblock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:noteblock");
     }
 
     //% group="Registry"
     //% weight=89
     //% blockId=mcfunction_item_registry_minecraft_tuff
     //% block="item minecraft:tuff"
-    export function tuff(): string {
-        return "minecraft:tuff";
+    export function tuff(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tuff");
     }
 
     //% group="Registry"
     //% weight=88
     //% blockId=mcfunction_item_registry_minecraft_mangrove_log
     //% block="item minecraft:mangrove_log"
-    export function mangroveLog(): string {
-        return "minecraft:mangrove_log";
+    export function mangroveLog(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mangrove_log");
     }
 
     //% group="Registry"
     //% weight=87
     //% blockId=mcfunction_item_registry_minecraft_oxidized_cut_copper_stairs
     //% block="item minecraft:oxidized_cut_copper_stairs"
-    export function oxidizedCutCopperStairs(): string {
-        return "minecraft:oxidized_cut_copper_stairs";
+    export function oxidizedCutCopperStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oxidized_cut_copper_stairs");
     }
 
     //% group="Registry"
     //% weight=86
     //% blockId=mcfunction_item_registry_minecraft_pale_oak_fence
     //% block="item minecraft:pale_oak_fence"
-    export function paleOakFence(): string {
-        return "minecraft:pale_oak_fence";
+    export function paleOakFence(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pale_oak_fence");
     }
 
     //% group="Registry"
     //% weight=85
     //% blockId=mcfunction_item_registry_minecraft_pale_oak_leaves
     //% block="item minecraft:pale_oak_leaves"
-    export function paleOakLeaves(): string {
-        return "minecraft:pale_oak_leaves";
+    export function paleOakLeaves(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pale_oak_leaves");
     }
 
     //% group="Registry"
     //% weight=84
     //% blockId=mcfunction_item_registry_minecraft_sandstone_slab
     //% block="item minecraft:sandstone_slab"
-    export function sandstoneSlab(): string {
-        return "minecraft:sandstone_slab";
+    export function sandstoneSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sandstone_slab");
     }
 
     //% group="Registry"
     //% weight=83
     //% blockId=mcfunction_item_registry_minecraft_mossy_stone_brick_slab
     //% block="item minecraft:mossy_stone_brick_slab"
-    export function mossyStoneBrickSlab(): string {
-        return "minecraft:mossy_stone_brick_slab";
+    export function mossyStoneBrickSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mossy_stone_brick_slab");
     }
 
     //% group="Registry"
     //% weight=82
     //% blockId=mcfunction_item_registry_minecraft_raw_gold_block
     //% block="item minecraft:raw_gold_block"
-    export function rawGoldBlock(): string {
-        return "minecraft:raw_gold_block";
+    export function rawGoldBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:raw_gold_block");
     }
 
     //% group="Registry"
     //% weight=81
     //% blockId=mcfunction_item_registry_minecraft_allium
     //% block="item minecraft:allium"
-    export function allium(): string {
-        return "minecraft:allium";
+    export function allium(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:allium");
     }
 
     //% group="Registry"
     //% weight=80
     //% blockId=mcfunction_item_registry_minecraft_white_shulker_box
     //% block="item minecraft:white_shulker_box"
-    export function whiteShulkerBox(): string {
-        return "minecraft:white_shulker_box";
+    export function whiteShulkerBox(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:white_shulker_box");
     }
 
     //% group="Registry"
     //% weight=79
     //% blockId=mcfunction_item_registry_minecraft_copper_grate
     //% block="item minecraft:copper_grate"
-    export function copperGrate(): string {
-        return "minecraft:copper_grate";
+    export function copperGrate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_grate");
     }
 
     //% group="Registry"
     //% weight=78
     //% blockId=mcfunction_item_registry_minecraft_black_wool
     //% block="item minecraft:black_wool"
-    export function blackWool(): string {
-        return "minecraft:black_wool";
+    export function blackWool(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:black_wool");
     }
 
     //% group="Registry"
     //% weight=77
     //% blockId=mcfunction_item_registry_minecraft_orange_candle
     //% block="item minecraft:orange_candle"
-    export function orangeCandle(): string {
-        return "minecraft:orange_candle";
+    export function orangeCandle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:orange_candle");
     }
 
     //% group="Registry"
     //% weight=76
     //% blockId=mcfunction_item_registry_minecraft_jungle_fence
     //% block="item minecraft:jungle_fence"
-    export function jungleFence(): string {
-        return "minecraft:jungle_fence";
+    export function jungleFence(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:jungle_fence");
     }
 
     //% group="Registry"
     //% weight=75
     //% blockId=mcfunction_item_registry_minecraft_spruce_fence
     //% block="item minecraft:spruce_fence"
-    export function spruceFence(): string {
-        return "minecraft:spruce_fence";
+    export function spruceFence(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spruce_fence");
     }
 
     //% group="Registry"
     //% weight=74
     //% blockId=mcfunction_item_registry_minecraft_dark_oak_sapling
     //% block="item minecraft:dark_oak_sapling"
-    export function darkOakSapling(): string {
-        return "minecraft:dark_oak_sapling";
+    export function darkOakSapling(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dark_oak_sapling");
     }
 
     //% group="Registry"
     //% weight=73
     //% blockId=mcfunction_item_registry_minecraft_melon_block
     //% block="item minecraft:melon_block"
-    export function melonBlock(): string {
-        return "minecraft:melon_block";
+    export function melonBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:melon_block");
     }
 
     //% group="Registry"
     //% weight=72
     //% blockId=mcfunction_item_registry_minecraft_black_concrete_powder
     //% block="item minecraft:black_concrete_powder"
-    export function blackConcretePowder(): string {
-        return "minecraft:black_concrete_powder";
+    export function blackConcretePowder(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:black_concrete_powder");
     }
 
     //% group="Registry"
     //% weight=71
     //% blockId=mcfunction_item_registry_minecraft_waxed_cut_copper_stairs
     //% block="item minecraft:waxed_cut_copper_stairs"
-    export function waxedCutCopperStairs(): string {
-        return "minecraft:waxed_cut_copper_stairs";
+    export function waxedCutCopperStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_cut_copper_stairs");
     }
 
     //% group="Registry"
     //% weight=70
     //% blockId=mcfunction_item_registry_minecraft_open_eyeblossom
     //% block="item minecraft:open_eyeblossom"
-    export function openEyeblossom(): string {
-        return "minecraft:open_eyeblossom";
+    export function openEyeblossom(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:open_eyeblossom");
     }
 
     //% group="Registry"
     //% weight=69
     //% blockId=mcfunction_item_registry_minecraft_mob_spawner
     //% block="item minecraft:mob_spawner"
-    export function mobSpawner(): string {
-        return "minecraft:mob_spawner";
+    export function mobSpawner(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mob_spawner");
     }
 
     //% group="Registry"
     //% weight=68
     //% blockId=mcfunction_item_registry_minecraft_pale_oak_sapling
     //% block="item minecraft:pale_oak_sapling"
-    export function paleOakSapling(): string {
-        return "minecraft:pale_oak_sapling";
+    export function paleOakSapling(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pale_oak_sapling");
     }
 
     //% group="Registry"
     //% weight=67
     //% blockId=mcfunction_item_registry_minecraft_polished_granite
     //% block="item minecraft:polished_granite"
-    export function polishedGranite(): string {
-        return "minecraft:polished_granite";
+    export function polishedGranite(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_granite");
     }
 
     //% group="Registry"
     //% weight=66
     //% blockId=mcfunction_item_registry_minecraft_magenta_candle
     //% block="item minecraft:magenta_candle"
-    export function magentaCandle(): string {
-        return "minecraft:magenta_candle";
+    export function magentaCandle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:magenta_candle");
     }
 
     //% group="Registry"
     //% weight=65
     //% blockId=mcfunction_item_registry_minecraft_light_gray_stained_glass
     //% block="item minecraft:light_gray_stained_glass"
-    export function lightGrayStainedGlass(): string {
-        return "minecraft:light_gray_stained_glass";
+    export function lightGrayStainedGlass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_gray_stained_glass");
     }
 
     //% group="Registry"
     //% weight=64
     //% blockId=mcfunction_item_registry_minecraft_obsidian
     //% block="item minecraft:obsidian"
-    export function obsidian(): string {
-        return "minecraft:obsidian";
+    export function obsidian(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:obsidian");
     }
 
     //% group="Registry"
     //% weight=63
     //% blockId=mcfunction_item_registry_minecraft_light_gray_stained_glass_pane
     //% block="item minecraft:light_gray_stained_glass_pane"
-    export function lightGrayStainedGlassPane(): string {
-        return "minecraft:light_gray_stained_glass_pane";
+    export function lightGrayStainedGlassPane(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_gray_stained_glass_pane");
     }
 
     //% group="Registry"
     //% weight=62
     //% blockId=mcfunction_item_registry_minecraft_dark_oak_slab
     //% block="item minecraft:dark_oak_slab"
-    export function darkOakSlab(): string {
-        return "minecraft:dark_oak_slab";
+    export function darkOakSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dark_oak_slab");
     }
 
     //% group="Registry"
     //% weight=61
     //% blockId=mcfunction_item_registry_minecraft_deepslate_brick_wall
     //% block="item minecraft:deepslate_brick_wall"
-    export function deepslateBrickWall(): string {
-        return "minecraft:deepslate_brick_wall";
+    export function deepslateBrickWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:deepslate_brick_wall");
     }
 
     //% group="Registry"
     //% weight=60
     //% blockId=mcfunction_item_registry_minecraft_waxed_exposed_copper_grate
     //% block="item minecraft:waxed_exposed_copper_grate"
-    export function waxedExposedCopperGrate(): string {
-        return "minecraft:waxed_exposed_copper_grate";
+    export function waxedExposedCopperGrate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_exposed_copper_grate");
     }
 
     //% group="Registry"
     //% weight=59
     //% blockId=mcfunction_item_registry_minecraft_exposed_copper
     //% block="item minecraft:exposed_copper"
-    export function exposedCopper(): string {
-        return "minecraft:exposed_copper";
+    export function exposedCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:exposed_copper");
     }
 
     //% group="Registry"
     //% weight=58
     //% blockId=mcfunction_item_registry_minecraft_waxed_copper_bars
     //% block="item minecraft:waxed_copper_bars"
-    export function waxedCopperBars(): string {
-        return "minecraft:waxed_copper_bars";
+    export function waxedCopperBars(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_copper_bars");
     }
 
     //% group="Registry"
     //% weight=57
     //% blockId=mcfunction_item_registry_minecraft_stone_button
     //% block="item minecraft:stone_button"
-    export function stoneButton(): string {
-        return "minecraft:stone_button";
+    export function stoneButton(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stone_button");
     }
 
     //% group="Registry"
     //% weight=56
     //% blockId=mcfunction_item_registry_minecraft_waxed_copper_bulb
     //% block="item minecraft:waxed_copper_bulb"
-    export function waxedCopperBulb(): string {
-        return "minecraft:waxed_copper_bulb";
+    export function waxedCopperBulb(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_copper_bulb");
     }
 
     //% group="Registry"
     //% weight=55
     //% blockId=mcfunction_item_registry_minecraft_sponge
     //% block="item minecraft:sponge"
-    export function sponge(): string {
-        return "minecraft:sponge";
+    export function sponge(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sponge");
     }
 
     //% group="Registry"
     //% weight=54
     //% blockId=mcfunction_item_registry_minecraft_bamboo_fence
     //% block="item minecraft:bamboo_fence"
-    export function bambooFence(): string {
-        return "minecraft:bamboo_fence";
+    export function bambooFence(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bamboo_fence");
     }
 
     //% group="Registry"
     //% weight=53
     //% blockId=mcfunction_item_registry_minecraft_normal_stone_stairs
     //% block="item minecraft:normal_stone_stairs"
-    export function normalStoneStairs(): string {
-        return "minecraft:normal_stone_stairs";
+    export function normalStoneStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:normal_stone_stairs");
     }
 
     //% group="Registry"
     //% weight=52
     //% blockId=mcfunction_item_registry_minecraft_end_stone_brick_slab
     //% block="item minecraft:end_stone_brick_slab"
-    export function endStoneBrickSlab(): string {
-        return "minecraft:end_stone_brick_slab";
+    export function endStoneBrickSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:end_stone_brick_slab");
     }
 
     //% group="Registry"
     //% weight=51
     //% blockId=mcfunction_item_registry_minecraft_hardened_clay
     //% block="item minecraft:hardened_clay"
-    export function hardenedClay(): string {
-        return "minecraft:hardened_clay";
+    export function hardenedClay(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:hardened_clay");
     }
 
     //% group="Registry"
     //% weight=50
     //% blockId=mcfunction_item_registry_minecraft_birch_hanging_sign
     //% block="item minecraft:birch_hanging_sign"
-    export function birchHangingSign(): string {
-        return "minecraft:birch_hanging_sign";
+    export function birchHangingSign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:birch_hanging_sign");
     }
 
     //% group="Registry"
     //% weight=49
     //% blockId=mcfunction_item_registry_minecraft_stripped_jungle_log
     //% block="item minecraft:stripped_jungle_log"
-    export function strippedJungleLog(): string {
-        return "minecraft:stripped_jungle_log";
+    export function strippedJungleLog(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stripped_jungle_log");
     }
 
     //% group="Registry"
     //% weight=48
     //% blockId=mcfunction_item_registry_minecraft_oxidized_copper_golem_statue
     //% block="item minecraft:oxidized_copper_golem_statue"
-    export function oxidizedCopperGolemStatue(): string {
-        return "minecraft:oxidized_copper_golem_statue";
+    export function oxidizedCopperGolemStatue(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oxidized_copper_golem_statue");
     }
 
     //% group="Registry"
     //% weight=47
     //% blockId=mcfunction_item_registry_minecraft_light_block_9
     //% block="item minecraft:light_block_9"
-    export function lightBlock9(): string {
-        return "minecraft:light_block_9";
+    export function lightBlock9(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_block_9");
     }
 
     //% group="Registry"
     //% weight=46
     //% blockId=mcfunction_item_registry_minecraft_light_block_8
     //% block="item minecraft:light_block_8"
-    export function lightBlock8(): string {
-        return "minecraft:light_block_8";
+    export function lightBlock8(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_block_8");
     }
 
     //% group="Registry"
     //% weight=45
     //% blockId=mcfunction_item_registry_minecraft_light_block_7
     //% block="item minecraft:light_block_7"
-    export function lightBlock7(): string {
-        return "minecraft:light_block_7";
+    export function lightBlock7(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_block_7");
     }
 
     //% group="Registry"
     //% weight=44
     //% blockId=mcfunction_item_registry_minecraft_light_block_6
     //% block="item minecraft:light_block_6"
-    export function lightBlock6(): string {
-        return "minecraft:light_block_6";
+    export function lightBlock6(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_block_6");
     }
 
     //% group="Registry"
     //% weight=43
     //% blockId=mcfunction_item_registry_minecraft_light_block_5
     //% block="item minecraft:light_block_5"
-    export function lightBlock5(): string {
-        return "minecraft:light_block_5";
+    export function lightBlock5(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_block_5");
     }
 
     //% group="Registry"
     //% weight=42
     //% blockId=mcfunction_item_registry_minecraft_light_block_4
     //% block="item minecraft:light_block_4"
-    export function lightBlock4(): string {
-        return "minecraft:light_block_4";
+    export function lightBlock4(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_block_4");
     }
 
     //% group="Registry"
     //% weight=41
     //% blockId=mcfunction_item_registry_minecraft_light_block_3
     //% block="item minecraft:light_block_3"
-    export function lightBlock3(): string {
-        return "minecraft:light_block_3";
+    export function lightBlock3(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_block_3");
     }
 
     //% group="Registry"
     //% weight=40
     //% blockId=mcfunction_item_registry_minecraft_light_block_2
     //% block="item minecraft:light_block_2"
-    export function lightBlock2(): string {
-        return "minecraft:light_block_2";
+    export function lightBlock2(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_block_2");
     }
 
     //% group="Registry"
     //% weight=39
     //% blockId=mcfunction_item_registry_minecraft_light_block_1
     //% block="item minecraft:light_block_1"
-    export function lightBlock1(): string {
-        return "minecraft:light_block_1";
+    export function lightBlock1(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_block_1");
     }
 
     //% group="Registry"
     //% weight=38
     //% blockId=mcfunction_item_registry_minecraft_light_block_0
     //% block="item minecraft:light_block_0"
-    export function lightBlock0(): string {
-        return "minecraft:light_block_0";
+    export function lightBlock0(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_block_0");
     }
 
     //% group="Registry"
     //% weight=37
     //% blockId=mcfunction_item_registry_minecraft_pale_oak_door
     //% block="item minecraft:pale_oak_door"
-    export function paleOakDoor(): string {
-        return "minecraft:pale_oak_door";
+    export function paleOakDoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pale_oak_door");
     }
 
     //% group="Registry"
     //% weight=36
     //% blockId=mcfunction_item_registry_minecraft_oak_sapling
     //% block="item minecraft:oak_sapling"
-    export function oakSapling(): string {
-        return "minecraft:oak_sapling";
+    export function oakSapling(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oak_sapling");
     }
 
     //% group="Registry"
     //% weight=35
     //% blockId=mcfunction_item_registry_minecraft_light_gray_terracotta
     //% block="item minecraft:light_gray_terracotta"
-    export function lightGrayTerracotta(): string {
-        return "minecraft:light_gray_terracotta";
+    export function lightGrayTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_gray_terracotta");
     }
 
     //% group="Registry"
     //% weight=34
     //% blockId=mcfunction_item_registry_minecraft_smoker
     //% block="item minecraft:smoker"
-    export function smoker(): string {
-        return "minecraft:smoker";
+    export function smoker(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:smoker");
     }
 
     //% group="Registry"
     //% weight=33
     //% blockId=mcfunction_item_registry_minecraft_brown_stained_glass
     //% block="item minecraft:brown_stained_glass"
-    export function brownStainedGlass(): string {
-        return "minecraft:brown_stained_glass";
+    export function brownStainedGlass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brown_stained_glass");
     }
 
     //% group="Registry"
     //% weight=32
     //% blockId=mcfunction_item_registry_minecraft_andesite
     //% block="item minecraft:andesite"
-    export function andesite(): string {
-        return "minecraft:andesite";
+    export function andesite(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:andesite");
     }
 
     //% group="Registry"
     //% weight=31
     //% blockId=mcfunction_item_registry_minecraft_fire_coral
     //% block="item minecraft:fire_coral"
-    export function fireCoral(): string {
-        return "minecraft:fire_coral";
+    export function fireCoral(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:fire_coral");
     }
 
     //% group="Registry"
     //% weight=30
     //% blockId=mcfunction_item_registry_minecraft_stone
     //% block="item minecraft:stone"
-    export function stone(): string {
-        return "minecraft:stone";
+    export function stone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stone");
     }
 
     //% group="Registry"
     //% weight=29
     //% blockId=mcfunction_item_registry_minecraft_smooth_sandstone_slab
     //% block="item minecraft:smooth_sandstone_slab"
-    export function smoothSandstoneSlab(): string {
-        return "minecraft:smooth_sandstone_slab";
+    export function smoothSandstoneSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:smooth_sandstone_slab");
     }
 
     //% group="Registry"
     //% weight=28
     //% blockId=mcfunction_item_registry_minecraft_birch_log
     //% block="item minecraft:birch_log"
-    export function birchLog(): string {
-        return "minecraft:birch_log";
+    export function birchLog(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:birch_log");
     }
 
     //% group="Registry"
     //% weight=27
     //% blockId=mcfunction_item_registry_minecraft_tuff_brick_wall
     //% block="item minecraft:tuff_brick_wall"
-    export function tuffBrickWall(): string {
-        return "minecraft:tuff_brick_wall";
+    export function tuffBrickWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tuff_brick_wall");
     }
 
     //% group="Registry"
     //% weight=26
     //% blockId=mcfunction_item_registry_minecraft_purpur_slab
     //% block="item minecraft:purpur_slab"
-    export function purpurSlab(): string {
-        return "minecraft:purpur_slab";
+    export function purpurSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:purpur_slab");
     }
 
     //% group="Registry"
     //% weight=25
     //% blockId=mcfunction_item_registry_minecraft_brain_coral
     //% block="item minecraft:brain_coral"
-    export function brainCoral(): string {
-        return "minecraft:brain_coral";
+    export function brainCoral(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brain_coral");
     }
 
     //% group="Registry"
     //% weight=24
     //% blockId=mcfunction_item_registry_minecraft_stripped_spruce_wood
     //% block="item minecraft:stripped_spruce_wood"
-    export function strippedSpruceWood(): string {
-        return "minecraft:stripped_spruce_wood";
+    export function strippedSpruceWood(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stripped_spruce_wood");
     }
 
     //% group="Registry"
     //% weight=23
     //% blockId=mcfunction_item_registry_minecraft_orange_wool
     //% block="item minecraft:orange_wool"
-    export function orangeWool(): string {
-        return "minecraft:orange_wool";
+    export function orangeWool(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:orange_wool");
     }
 
     //% group="Registry"
     //% weight=22
     //% blockId=mcfunction_item_registry_minecraft_respawn_anchor
     //% block="item minecraft:respawn_anchor"
-    export function respawnAnchor(): string {
-        return "minecraft:respawn_anchor";
+    export function respawnAnchor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:respawn_anchor");
     }
 
     //% group="Registry"
     //% weight=21
     //% blockId=mcfunction_item_registry_minecraft_light_gray_concrete
     //% block="item minecraft:light_gray_concrete"
-    export function lightGrayConcrete(): string {
-        return "minecraft:light_gray_concrete";
+    export function lightGrayConcrete(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_gray_concrete");
     }
 
     //% group="Registry"
     //% weight=20
     //% blockId=mcfunction_item_registry_minecraft_green_candle
     //% block="item minecraft:green_candle"
-    export function greenCandle(): string {
-        return "minecraft:green_candle";
+    export function greenCandle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:green_candle");
     }
 
     //% group="Registry"
     //% weight=19
     //% blockId=mcfunction_item_registry_minecraft_waxed_exposed_copper
     //% block="item minecraft:waxed_exposed_copper"
-    export function waxedExposedCopper(): string {
-        return "minecraft:waxed_exposed_copper";
+    export function waxedExposedCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_exposed_copper");
     }
 
     //% group="Registry"
     //% weight=18
     //% blockId=mcfunction_item_registry_minecraft_birch_wood
     //% block="item minecraft:birch_wood"
-    export function birchWood(): string {
-        return "minecraft:birch_wood";
+    export function birchWood(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:birch_wood");
     }
 
     //% group="Registry"
     //% weight=17
     //% blockId=mcfunction_item_registry_minecraft_red_sand
     //% block="item minecraft:red_sand"
-    export function redSand(): string {
-        return "minecraft:red_sand";
+    export function redSand(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_sand");
     }
 
     //% group="Registry"
     //% weight=16
     //% blockId=mcfunction_item_registry_minecraft_hay_block
     //% block="item minecraft:hay_block"
-    export function hayBlock(): string {
-        return "minecraft:hay_block";
+    export function hayBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:hay_block");
     }
 
     //% group="Registry"
     //% weight=15
     //% blockId=mcfunction_item_registry_minecraft_jungle_wood
     //% block="item minecraft:jungle_wood"
-    export function jungleWood(): string {
-        return "minecraft:jungle_wood";
+    export function jungleWood(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:jungle_wood");
     }
 
     //% group="Registry"
     //% weight=14
     //% blockId=mcfunction_item_registry_minecraft_waxed_weathered_copper
     //% block="item minecraft:waxed_weathered_copper"
-    export function waxedWeatheredCopper(): string {
-        return "minecraft:waxed_weathered_copper";
+    export function waxedWeatheredCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_weathered_copper");
     }
 
     //% group="Registry"
     //% weight=13
     //% blockId=mcfunction_item_registry_minecraft_infested_cracked_stone_bricks
     //% block="item minecraft:infested_cracked_stone_bricks"
-    export function infestedCrackedStoneBricks(): string {
-        return "minecraft:infested_cracked_stone_bricks";
+    export function infestedCrackedStoneBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:infested_cracked_stone_bricks");
     }
 
     //% group="Registry"
     //% weight=12
     //% blockId=mcfunction_item_registry_minecraft_waxed_oxidized_cut_copper_slab
     //% block="item minecraft:waxed_oxidized_cut_copper_slab"
-    export function waxedOxidizedCutCopperSlab(): string {
-        return "minecraft:waxed_oxidized_cut_copper_slab";
+    export function waxedOxidizedCutCopperSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_oxidized_cut_copper_slab");
     }
 
     //% group="Registry"
     //% weight=11
     //% blockId=mcfunction_item_registry_minecraft_oak_leaves
     //% block="item minecraft:oak_leaves"
-    export function oakLeaves(): string {
-        return "minecraft:oak_leaves";
+    export function oakLeaves(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oak_leaves");
     }
 
     //% group="Registry"
     //% weight=10
     //% blockId=mcfunction_item_registry_minecraft_resin_clump
     //% block="item minecraft:resin_clump"
-    export function resinClump(): string {
-        return "minecraft:resin_clump";
+    export function resinClump(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:resin_clump");
     }
 
     //% group="Registry"
     //% weight=9
     //% blockId=mcfunction_item_registry_minecraft_brain_coral_fan
     //% block="item minecraft:brain_coral_fan"
-    export function brainCoralFan(): string {
-        return "minecraft:brain_coral_fan";
+    export function brainCoralFan(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brain_coral_fan");
     }
 
     //% group="Registry"
     //% weight=8
     //% blockId=mcfunction_item_registry_minecraft_polished_tuff_wall
     //% block="item minecraft:polished_tuff_wall"
-    export function polishedTuffWall(): string {
-        return "minecraft:polished_tuff_wall";
+    export function polishedTuffWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_tuff_wall");
     }
 
     //% group="Registry"
     //% weight=7
     //% blockId=mcfunction_item_registry_minecraft_bamboo_stairs
     //% block="item minecraft:bamboo_stairs"
-    export function bambooStairs(): string {
-        return "minecraft:bamboo_stairs";
+    export function bambooStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bamboo_stairs");
     }
 
     //% group="Registry"
     //% weight=6
     //% blockId=mcfunction_item_registry_minecraft_infested_mossy_stone_bricks
     //% block="item minecraft:infested_mossy_stone_bricks"
-    export function infestedMossyStoneBricks(): string {
-        return "minecraft:infested_mossy_stone_bricks";
+    export function infestedMossyStoneBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:infested_mossy_stone_bricks");
     }
 
     //% group="Registry"
     //% weight=5
     //% blockId=mcfunction_item_registry_minecraft_torch
     //% block="item minecraft:torch"
-    export function torch(): string {
-        return "minecraft:torch";
+    export function torch(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:torch");
     }
 
     //% group="Registry"
     //% weight=4
     //% blockId=mcfunction_item_registry_minecraft_sulfur_bricks
     //% block="item minecraft:sulfur_bricks"
-    export function sulfurBricks(): string {
-        return "minecraft:sulfur_bricks";
+    export function sulfurBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sulfur_bricks");
     }
 
     //% group="Registry"
     //% weight=3
     //% blockId=mcfunction_item_registry_minecraft_mud_brick_wall
     //% block="item minecraft:mud_brick_wall"
-    export function mudBrickWall(): string {
-        return "minecraft:mud_brick_wall";
+    export function mudBrickWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mud_brick_wall");
     }
 
     //% group="Registry"
     //% weight=2
     //% blockId=mcfunction_item_registry_minecraft_honey_block
     //% block="item minecraft:honey_block"
-    export function honeyBlock(): string {
-        return "minecraft:honey_block";
+    export function honeyBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:honey_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dripstone_block
     //% block="item minecraft:dripstone_block"
-    export function dripstoneBlock(): string {
-        return "minecraft:dripstone_block";
+    export function dripstoneBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dripstone_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_vine
     //% block="item minecraft:vine"
-    export function vine(): string {
-        return "minecraft:vine";
+    export function vine(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:vine");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_red_sandstone_slab
     //% block="item minecraft:red_sandstone_slab"
-    export function redSandstoneSlab(): string {
-        return "minecraft:red_sandstone_slab";
+    export function redSandstoneSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_sandstone_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cherry_trapdoor
     //% block="item minecraft:cherry_trapdoor"
-    export function cherryTrapdoor(): string {
-        return "minecraft:cherry_trapdoor";
+    export function cherryTrapdoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cherry_trapdoor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_blackstone_slab
     //% block="item minecraft:blackstone_slab"
-    export function blackstoneSlab(): string {
-        return "minecraft:blackstone_slab";
+    export function blackstoneSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blackstone_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_gold_ore
     //% block="item minecraft:gold_ore"
-    export function goldOre(): string {
-        return "minecraft:gold_ore";
+    export function goldOre(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:gold_ore");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_yellow_glazed_terracotta
     //% block="item minecraft:yellow_glazed_terracotta"
-    export function yellowGlazedTerracotta(): string {
-        return "minecraft:yellow_glazed_terracotta";
+    export function yellowGlazedTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:yellow_glazed_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dried_ghast
     //% block="item minecraft:dried_ghast"
-    export function driedGhast(): string {
-        return "minecraft:dried_ghast";
+    export function driedGhast(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dried_ghast");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_warped_planks
     //% block="item minecraft:warped_planks"
-    export function warpedPlanks(): string {
-        return "minecraft:warped_planks";
+    export function warpedPlanks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:warped_planks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_piston
     //% block="item minecraft:piston"
-    export function piston(): string {
-        return "minecraft:piston";
+    export function piston(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:piston");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_brown_carpet
     //% block="item minecraft:brown_carpet"
-    export function brownCarpet(): string {
-        return "minecraft:brown_carpet";
+    export function brownCarpet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brown_carpet");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stone_brick_stairs
     //% block="item minecraft:stone_brick_stairs"
-    export function stoneBrickStairs(): string {
-        return "minecraft:stone_brick_stairs";
+    export function stoneBrickStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stone_brick_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dead_bubble_coral_block
     //% block="item minecraft:dead_bubble_coral_block"
-    export function deadBubbleCoralBlock(): string {
-        return "minecraft:dead_bubble_coral_block";
+    export function deadBubbleCoralBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dead_bubble_coral_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_gray_candle
     //% block="item minecraft:gray_candle"
-    export function grayCandle(): string {
-        return "minecraft:gray_candle";
+    export function grayCandle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:gray_candle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cherry_fence
     //% block="item minecraft:cherry_fence"
-    export function cherryFence(): string {
-        return "minecraft:cherry_fence";
+    export function cherryFence(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cherry_fence");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mangrove_planks
     //% block="item minecraft:mangrove_planks"
-    export function mangrovePlanks(): string {
-        return "minecraft:mangrove_planks";
+    export function mangrovePlanks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mangrove_planks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_red_terracotta
     //% block="item minecraft:red_terracotta"
-    export function redTerracotta(): string {
-        return "minecraft:red_terracotta";
+    export function redTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_diorite_wall
     //% block="item minecraft:diorite_wall"
-    export function dioriteWall(): string {
-        return "minecraft:diorite_wall";
+    export function dioriteWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:diorite_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dead_fire_coral_block
     //% block="item minecraft:dead_fire_coral_block"
-    export function deadFireCoralBlock(): string {
-        return "minecraft:dead_fire_coral_block";
+    export function deadFireCoralBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dead_fire_coral_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_oxidized_copper_bulb
     //% block="item minecraft:oxidized_copper_bulb"
-    export function oxidizedCopperBulb(): string {
-        return "minecraft:oxidized_copper_bulb";
+    export function oxidizedCopperBulb(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oxidized_copper_bulb");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_magenta_wool
     //% block="item minecraft:magenta_wool"
-    export function magentaWool(): string {
-        return "minecraft:magenta_wool";
+    export function magentaWool(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:magenta_wool");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_oxidized_copper_bars
     //% block="item minecraft:oxidized_copper_bars"
-    export function oxidizedCopperBars(): string {
-        return "minecraft:oxidized_copper_bars";
+    export function oxidizedCopperBars(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oxidized_copper_bars");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_magenta_glazed_terracotta
     //% block="item minecraft:magenta_glazed_terracotta"
-    export function magentaGlazedTerracotta(): string {
-        return "minecraft:magenta_glazed_terracotta";
+    export function magentaGlazedTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:magenta_glazed_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_blackstone_brick_wall
     //% block="item minecraft:polished_blackstone_brick_wall"
-    export function polishedBlackstoneBrickWall(): string {
-        return "minecraft:polished_blackstone_brick_wall";
+    export function polishedBlackstoneBrickWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_blackstone_brick_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mangrove_slab
     //% block="item minecraft:mangrove_slab"
-    export function mangroveSlab(): string {
-        return "minecraft:mangrove_slab";
+    export function mangroveSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mangrove_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_orange_glazed_terracotta
     //% block="item minecraft:orange_glazed_terracotta"
-    export function orangeGlazedTerracotta(): string {
-        return "minecraft:orange_glazed_terracotta";
+    export function orangeGlazedTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:orange_glazed_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_smooth_basalt
     //% block="item minecraft:smooth_basalt"
-    export function smoothBasalt(): string {
-        return "minecraft:smooth_basalt";
+    export function smoothBasalt(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:smooth_basalt");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waterlily
     //% block="item minecraft:waterlily"
-    export function waterlily(): string {
-        return "minecraft:waterlily";
+    export function waterlily(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waterlily");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stripped_pale_oak_wood
     //% block="item minecraft:stripped_pale_oak_wood"
-    export function strippedPaleOakWood(): string {
-        return "minecraft:stripped_pale_oak_wood";
+    export function strippedPaleOakWood(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stripped_pale_oak_wood");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_emerald_block
     //% block="item minecraft:emerald_block"
-    export function emeraldBlock(): string {
-        return "minecraft:emerald_block";
+    export function emeraldBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:emerald_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_suspicious_sand
     //% block="item minecraft:suspicious_sand"
-    export function suspiciousSand(): string {
-        return "minecraft:suspicious_sand";
+    export function suspiciousSand(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:suspicious_sand");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mossy_cobblestone_wall
     //% block="item minecraft:mossy_cobblestone_wall"
-    export function mossyCobblestoneWall(): string {
-        return "minecraft:mossy_cobblestone_wall";
+    export function mossyCobblestoneWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mossy_cobblestone_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_heavy_weighted_pressure_plate
     //% block="item minecraft:heavy_weighted_pressure_plate"
-    export function heavyWeightedPressurePlate(): string {
-        return "minecraft:heavy_weighted_pressure_plate";
+    export function heavyWeightedPressurePlate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:heavy_weighted_pressure_plate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_purple_stained_glass
     //% block="item minecraft:purple_stained_glass"
-    export function purpleStainedGlass(): string {
-        return "minecraft:purple_stained_glass";
+    export function purpleStainedGlass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:purple_stained_glass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lightning_rod
     //% block="item minecraft:lightning_rod"
-    export function lightningRod(): string {
-        return "minecraft:lightning_rod";
+    export function lightningRod(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lightning_rod");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_acacia_leaves
     //% block="item minecraft:acacia_leaves"
-    export function acaciaLeaves(): string {
-        return "minecraft:acacia_leaves";
+    export function acaciaLeaves(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:acacia_leaves");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_black_stained_glass_pane
     //% block="item minecraft:black_stained_glass_pane"
-    export function blackStainedGlassPane(): string {
-        return "minecraft:black_stained_glass_pane";
+    export function blackStainedGlassPane(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:black_stained_glass_pane");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cobblestone_wall
     //% block="item minecraft:cobblestone_wall"
-    export function cobblestoneWall(): string {
-        return "minecraft:cobblestone_wall";
+    export function cobblestoneWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cobblestone_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bamboo_mosaic_slab
     //% block="item minecraft:bamboo_mosaic_slab"
-    export function bambooMosaicSlab(): string {
-        return "minecraft:bamboo_mosaic_slab";
+    export function bambooMosaicSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bamboo_mosaic_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dark_oak_log
     //% block="item minecraft:dark_oak_log"
-    export function darkOakLog(): string {
-        return "minecraft:dark_oak_log";
+    export function darkOakLog(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dark_oak_log");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_acacia_hanging_sign
     //% block="item minecraft:acacia_hanging_sign"
-    export function acaciaHangingSign(): string {
-        return "minecraft:acacia_hanging_sign";
+    export function acaciaHangingSign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:acacia_hanging_sign");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_ochre_froglight
     //% block="item minecraft:ochre_froglight"
-    export function ochreFroglight(): string {
-        return "minecraft:ochre_froglight";
+    export function ochreFroglight(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:ochre_froglight");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_tuff_wall
     //% block="item minecraft:tuff_wall"
-    export function tuffWall(): string {
-        return "minecraft:tuff_wall";
+    export function tuffWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tuff_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_observer
     //% block="item minecraft:observer"
-    export function observer(): string {
-        return "minecraft:observer";
+    export function observer(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:observer");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_redstone_torch
     //% block="item minecraft:redstone_torch"
-    export function redstoneTorch(): string {
-        return "minecraft:redstone_torch";
+    export function redstoneTorch(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:redstone_torch");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_silver_glazed_terracotta
     //% block="item minecraft:silver_glazed_terracotta"
-    export function silverGlazedTerracotta(): string {
-        return "minecraft:silver_glazed_terracotta";
+    export function silverGlazedTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:silver_glazed_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_granite_stairs
     //% block="item minecraft:granite_stairs"
-    export function graniteStairs(): string {
-        return "minecraft:granite_stairs";
+    export function graniteStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:granite_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pink_concrete
     //% block="item minecraft:pink_concrete"
-    export function pinkConcrete(): string {
-        return "minecraft:pink_concrete";
+    export function pinkConcrete(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pink_concrete");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dark_oak_hanging_sign
     //% block="item minecraft:dark_oak_hanging_sign"
-    export function darkOakHangingSign(): string {
-        return "minecraft:dark_oak_hanging_sign";
+    export function darkOakHangingSign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dark_oak_hanging_sign");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_brown_mushroom
     //% block="item minecraft:brown_mushroom"
-    export function brownMushroom(): string {
-        return "minecraft:brown_mushroom";
+    export function brownMushroom(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brown_mushroom");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cyan_concrete_powder
     //% block="item minecraft:cyan_concrete_powder"
-    export function cyanConcretePowder(): string {
-        return "minecraft:cyan_concrete_powder";
+    export function cyanConcretePowder(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cyan_concrete_powder");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_brown_glazed_terracotta
     //% block="item minecraft:brown_glazed_terracotta"
-    export function brownGlazedTerracotta(): string {
-        return "minecraft:brown_glazed_terracotta";
+    export function brownGlazedTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brown_glazed_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_copper_trapdoor
     //% block="item minecraft:waxed_copper_trapdoor"
-    export function waxedCopperTrapdoor(): string {
-        return "minecraft:waxed_copper_trapdoor";
+    export function waxedCopperTrapdoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_copper_trapdoor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_spruce_shelf
     //% block="item minecraft:spruce_shelf"
-    export function spruceShelf(): string {
-        return "minecraft:spruce_shelf";
+    export function spruceShelf(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spruce_shelf");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_oxidized_copper
     //% block="item minecraft:oxidized_copper"
-    export function oxidizedCopper(): string {
-        return "minecraft:oxidized_copper";
+    export function oxidizedCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oxidized_copper");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_ore
     //% block="item minecraft:copper_ore"
-    export function copperOre(): string {
-        return "minecraft:copper_ore";
+    export function copperOre(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_ore");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dark_oak_planks
     //% block="item minecraft:dark_oak_planks"
-    export function darkOakPlanks(): string {
-        return "minecraft:dark_oak_planks";
+    export function darkOakPlanks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dark_oak_planks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_birch_pressure_plate
     //% block="item minecraft:birch_pressure_plate"
-    export function birchPressurePlate(): string {
-        return "minecraft:birch_pressure_plate";
+    export function birchPressurePlate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:birch_pressure_plate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_scaffolding
     //% block="item minecraft:scaffolding"
-    export function scaffolding(): string {
-        return "minecraft:scaffolding";
+    export function scaffolding(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:scaffolding");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sandstone_stairs
     //% block="item minecraft:sandstone_stairs"
-    export function sandstoneStairs(): string {
-        return "minecraft:sandstone_stairs";
+    export function sandstoneStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sandstone_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stripped_bamboo_block
     //% block="item minecraft:stripped_bamboo_block"
-    export function strippedBambooBlock(): string {
-        return "minecraft:stripped_bamboo_block";
+    export function strippedBambooBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stripped_bamboo_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_red_mushroom_block
     //% block="item minecraft:red_mushroom_block"
-    export function redMushroomBlock(): string {
-        return "minecraft:red_mushroom_block";
+    export function redMushroomBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_mushroom_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cracked_stone_bricks
     //% block="item minecraft:cracked_stone_bricks"
-    export function crackedStoneBricks(): string {
-        return "minecraft:cracked_stone_bricks";
+    export function crackedStoneBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cracked_stone_bricks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sculk_catalyst
     //% block="item minecraft:sculk_catalyst"
-    export function sculkCatalyst(): string {
-        return "minecraft:sculk_catalyst";
+    export function sculkCatalyst(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sculk_catalyst");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cobblestone
     //% block="item minecraft:cobblestone"
-    export function cobblestone(): string {
-        return "minecraft:cobblestone";
+    export function cobblestone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cobblestone");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_lightning_rod
     //% block="item minecraft:waxed_lightning_rod"
-    export function waxedLightningRod(): string {
-        return "minecraft:waxed_lightning_rod";
+    export function waxedLightningRod(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_lightning_rod");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_horn_coral
     //% block="item minecraft:horn_coral"
-    export function hornCoral(): string {
-        return "minecraft:horn_coral";
+    export function hornCoral(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:horn_coral");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_yellow_concrete
     //% block="item minecraft:yellow_concrete"
-    export function yellowConcrete(): string {
-        return "minecraft:yellow_concrete";
+    export function yellowConcrete(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:yellow_concrete");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mangrove_shelf
     //% block="item minecraft:mangrove_shelf"
-    export function mangroveShelf(): string {
-        return "minecraft:mangrove_shelf";
+    export function mangroveShelf(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mangrove_shelf");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cyan_carpet
     //% block="item minecraft:cyan_carpet"
-    export function cyanCarpet(): string {
-        return "minecraft:cyan_carpet";
+    export function cyanCarpet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cyan_carpet");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_warped_shelf
     //% block="item minecraft:warped_shelf"
-    export function warpedShelf(): string {
-        return "minecraft:warped_shelf";
+    export function warpedShelf(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:warped_shelf");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_smooth_sandstone_stairs
     //% block="item minecraft:smooth_sandstone_stairs"
-    export function smoothSandstoneStairs(): string {
-        return "minecraft:smooth_sandstone_stairs";
+    export function smoothSandstoneStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:smooth_sandstone_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_jungle_pressure_plate
     //% block="item minecraft:jungle_pressure_plate"
-    export function junglePressurePlate(): string {
-        return "minecraft:jungle_pressure_plate";
+    export function junglePressurePlate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:jungle_pressure_plate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_blue_terracotta
     //% block="item minecraft:blue_terracotta"
-    export function blueTerracotta(): string {
-        return "minecraft:blue_terracotta";
+    export function blueTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blue_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sandstone
     //% block="item minecraft:sandstone"
-    export function sandstone(): string {
-        return "minecraft:sandstone";
+    export function sandstone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sandstone");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_weighted_pressure_plate
     //% block="item minecraft:light_weighted_pressure_plate"
-    export function lightWeightedPressurePlate(): string {
-        return "minecraft:light_weighted_pressure_plate";
+    export function lightWeightedPressurePlate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_weighted_pressure_plate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_undyed_shulker_box
     //% block="item minecraft:undyed_shulker_box"
-    export function undyedShulkerBox(): string {
-        return "minecraft:undyed_shulker_box";
+    export function undyedShulkerBox(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:undyed_shulker_box");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_blackstone
     //% block="item minecraft:polished_blackstone"
-    export function polishedBlackstone(): string {
-        return "minecraft:polished_blackstone";
+    export function polishedBlackstone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_blackstone");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mycelium
     //% block="item minecraft:mycelium"
-    export function mycelium(): string {
-        return "minecraft:mycelium";
+    export function mycelium(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mycelium");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_exposed_lightning_rod
     //% block="item minecraft:exposed_lightning_rod"
-    export function exposedLightningRod(): string {
-        return "minecraft:exposed_lightning_rod";
+    export function exposedLightningRod(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:exposed_lightning_rod");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bamboo
     //% block="item minecraft:bamboo"
-    export function bamboo(): string {
-        return "minecraft:bamboo";
+    export function bamboo(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bamboo");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_quartz_block
     //% block="item minecraft:quartz_block"
-    export function quartzBlock(): string {
-        return "minecraft:quartz_block";
+    export function quartzBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:quartz_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pale_oak_planks
     //% block="item minecraft:pale_oak_planks"
-    export function paleOakPlanks(): string {
-        return "minecraft:pale_oak_planks";
+    export function paleOakPlanks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pale_oak_planks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stone_stairs
     //% block="item minecraft:stone_stairs"
-    export function stoneStairs(): string {
-        return "minecraft:stone_stairs";
+    export function stoneStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stone_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_weathered_chiseled_copper
     //% block="item minecraft:waxed_weathered_chiseled_copper"
-    export function waxedWeatheredChiseledCopper(): string {
-        return "minecraft:waxed_weathered_chiseled_copper";
+    export function waxedWeatheredChiseledCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_weathered_chiseled_copper");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_gray_stained_glass
     //% block="item minecraft:gray_stained_glass"
-    export function grayStainedGlass(): string {
-        return "minecraft:gray_stained_glass";
+    export function grayStainedGlass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:gray_stained_glass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_green_terracotta
     //% block="item minecraft:green_terracotta"
-    export function greenTerracotta(): string {
-        return "minecraft:green_terracotta";
+    export function greenTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:green_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_deepslate_brick_slab
     //% block="item minecraft:deepslate_brick_slab"
-    export function deepslateBrickSlab(): string {
-        return "minecraft:deepslate_brick_slab";
+    export function deepslateBrickSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:deepslate_brick_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_warped_stairs
     //% block="item minecraft:warped_stairs"
-    export function warpedStairs(): string {
-        return "minecraft:warped_stairs";
+    export function warpedStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:warped_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_smithing_table
     //% block="item minecraft:smithing_table"
-    export function smithingTable(): string {
-        return "minecraft:smithing_table";
+    export function smithingTable(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:smithing_table");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_player_head
     //% block="item minecraft:player_head"
-    export function playerHead(): string {
-        return "minecraft:player_head";
+    export function playerHead(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:player_head");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_weathered_copper_grate
     //% block="item minecraft:weathered_copper_grate"
-    export function weatheredCopperGrate(): string {
-        return "minecraft:weathered_copper_grate";
+    export function weatheredCopperGrate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:weathered_copper_grate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_poppy
     //% block="item minecraft:poppy"
-    export function poppy(): string {
-        return "minecraft:poppy";
+    export function poppy(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:poppy");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sulfur_slab
     //% block="item minecraft:sulfur_slab"
-    export function sulfurSlab(): string {
-        return "minecraft:sulfur_slab";
+    export function sulfurSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sulfur_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_tuff_brick_slab
     //% block="item minecraft:tuff_brick_slab"
-    export function tuffBrickSlab(): string {
-        return "minecraft:tuff_brick_slab";
+    export function tuffBrickSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tuff_brick_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_chain
     //% block="item minecraft:copper_chain"
-    export function copperChain(): string {
-        return "minecraft:copper_chain";
+    export function copperChain(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_chain");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_chest
     //% block="item minecraft:copper_chest"
-    export function copperChest(): string {
-        return "minecraft:copper_chest";
+    export function copperChest(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_chest");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mossy_stone_bricks
     //% block="item minecraft:mossy_stone_bricks"
-    export function mossyStoneBricks(): string {
-        return "minecraft:mossy_stone_bricks";
+    export function mossyStoneBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mossy_stone_bricks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_green_wool
     //% block="item minecraft:green_wool"
-    export function greenWool(): string {
-        return "minecraft:green_wool";
+    export function greenWool(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:green_wool");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_green_carpet
     //% block="item minecraft:green_carpet"
-    export function greenCarpet(): string {
-        return "minecraft:green_carpet";
+    export function greenCarpet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:green_carpet");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_prismarine_brick_slab
     //% block="item minecraft:prismarine_brick_slab"
-    export function prismarineBrickSlab(): string {
-        return "minecraft:prismarine_brick_slab";
+    export function prismarineBrickSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:prismarine_brick_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wooden_door
     //% block="item minecraft:wooden_door"
-    export function woodenDoor(): string {
-        return "minecraft:wooden_door";
+    export function woodenDoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wooden_door");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pitcher_plant
     //% block="item minecraft:pitcher_plant"
-    export function pitcherPlant(): string {
-        return "minecraft:pitcher_plant";
+    export function pitcherPlant(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pitcher_plant");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_spruce_pressure_plate
     //% block="item minecraft:spruce_pressure_plate"
-    export function sprucePressurePlate(): string {
-        return "minecraft:spruce_pressure_plate";
+    export function sprucePressurePlate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spruce_pressure_plate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_netherite_block
     //% block="item minecraft:netherite_block"
-    export function netheriteBlock(): string {
-        return "minecraft:netherite_block";
+    export function netheriteBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:netherite_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pink_wool
     //% block="item minecraft:pink_wool"
-    export function pinkWool(): string {
-        return "minecraft:pink_wool";
+    export function pinkWool(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pink_wool");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_redstone_block
     //% block="item minecraft:redstone_block"
-    export function redstoneBlock(): string {
-        return "minecraft:redstone_block";
+    export function redstoneBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:redstone_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_birch_fence_gate
     //% block="item minecraft:birch_fence_gate"
-    export function birchFenceGate(): string {
-        return "minecraft:birch_fence_gate";
+    export function birchFenceGate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:birch_fence_gate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_quartz_pillar
     //% block="item minecraft:quartz_pillar"
-    export function quartzPillar(): string {
-        return "minecraft:quartz_pillar";
+    export function quartzPillar(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:quartz_pillar");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_exposed_cut_copper
     //% block="item minecraft:waxed_exposed_cut_copper"
-    export function waxedExposedCutCopper(): string {
-        return "minecraft:waxed_exposed_cut_copper";
+    export function waxedExposedCutCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_exposed_cut_copper");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_jungle_hanging_sign
     //% block="item minecraft:jungle_hanging_sign"
-    export function jungleHangingSign(): string {
-        return "minecraft:jungle_hanging_sign";
+    export function jungleHangingSign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:jungle_hanging_sign");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_birch_slab
     //% block="item minecraft:birch_slab"
-    export function birchSlab(): string {
-        return "minecraft:birch_slab";
+    export function birchSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:birch_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_loom
     //% block="item minecraft:loom"
-    export function loom(): string {
-        return "minecraft:loom";
+    export function loom(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:loom");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_weathered_copper_lantern
     //% block="item minecraft:waxed_weathered_copper_lantern"
-    export function waxedWeatheredCopperLantern(): string {
-        return "minecraft:waxed_weathered_copper_lantern";
+    export function waxedWeatheredCopperLantern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_weathered_copper_lantern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dead_tube_coral_block
     //% block="item minecraft:dead_tube_coral_block"
-    export function deadTubeCoralBlock(): string {
-        return "minecraft:dead_tube_coral_block";
+    export function deadTubeCoralBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dead_tube_coral_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_end_stone
     //% block="item minecraft:end_stone"
-    export function endStone(): string {
-        return "minecraft:end_stone";
+    export function endStone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:end_stone");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_crimson_door
     //% block="item minecraft:crimson_door"
-    export function crimsonDoor(): string {
-        return "minecraft:crimson_door";
+    export function crimsonDoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:crimson_door");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mangrove_pressure_plate
     //% block="item minecraft:mangrove_pressure_plate"
-    export function mangrovePressurePlate(): string {
-        return "minecraft:mangrove_pressure_plate";
+    export function mangrovePressurePlate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mangrove_pressure_plate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_jungle_shelf
     //% block="item minecraft:jungle_shelf"
-    export function jungleShelf(): string {
-        return "minecraft:jungle_shelf";
+    export function jungleShelf(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:jungle_shelf");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_jungle_slab
     //% block="item minecraft:jungle_slab"
-    export function jungleSlab(): string {
-        return "minecraft:jungle_slab";
+    export function jungleSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:jungle_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_blue_stained_glass_pane
     //% block="item minecraft:light_blue_stained_glass_pane"
-    export function lightBlueStainedGlassPane(): string {
-        return "minecraft:light_blue_stained_glass_pane";
+    export function lightBlueStainedGlassPane(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_blue_stained_glass_pane");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_glowstone
     //% block="item minecraft:glowstone"
-    export function glowstone(): string {
-        return "minecraft:glowstone";
+    export function glowstone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:glowstone");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stone_pressure_plate
     //% block="item minecraft:stone_pressure_plate"
-    export function stonePressurePlate(): string {
-        return "minecraft:stone_pressure_plate";
+    export function stonePressurePlate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stone_pressure_plate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_exposed_cut_copper_stairs
     //% block="item minecraft:waxed_exposed_cut_copper_stairs"
-    export function waxedExposedCutCopperStairs(): string {
-        return "minecraft:waxed_exposed_cut_copper_stairs";
+    export function waxedExposedCutCopperStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_exposed_cut_copper_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mud_brick_slab
     //% block="item minecraft:mud_brick_slab"
-    export function mudBrickSlab(): string {
-        return "minecraft:mud_brick_slab";
+    export function mudBrickSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mud_brick_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_exposed_lightning_rod
     //% block="item minecraft:waxed_exposed_lightning_rod"
-    export function waxedExposedLightningRod(): string {
-        return "minecraft:waxed_exposed_lightning_rod";
+    export function waxedExposedLightningRod(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_exposed_lightning_rod");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_exposed_copper_lantern
     //% block="item minecraft:exposed_copper_lantern"
-    export function exposedCopperLantern(): string {
-        return "minecraft:exposed_copper_lantern";
+    export function exposedCopperLantern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:exposed_copper_lantern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_farmland
     //% block="item minecraft:farmland"
-    export function farmland(): string {
-        return "minecraft:farmland";
+    export function farmland(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:farmland");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cut_red_sandstone
     //% block="item minecraft:cut_red_sandstone"
-    export function cutRedSandstone(): string {
-        return "minecraft:cut_red_sandstone";
+    export function cutRedSandstone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cut_red_sandstone");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_rail
     //% block="item minecraft:rail"
-    export function rail(): string {
-        return "minecraft:rail";
+    export function rail(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:rail");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_blackstone_wall
     //% block="item minecraft:blackstone_wall"
-    export function blackstoneWall(): string {
-        return "minecraft:blackstone_wall";
+    export function blackstoneWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blackstone_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stone_bricks
     //% block="item minecraft:stone_bricks"
-    export function stoneBricks(): string {
-        return "minecraft:stone_bricks";
+    export function stoneBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stone_bricks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mossy_cobblestone_stairs
     //% block="item minecraft:mossy_cobblestone_stairs"
-    export function mossyCobblestoneStairs(): string {
-        return "minecraft:mossy_cobblestone_stairs";
+    export function mossyCobblestoneStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mossy_cobblestone_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_detector_rail
     //% block="item minecraft:detector_rail"
-    export function detectorRail(): string {
-        return "minecraft:detector_rail";
+    export function detectorRail(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:detector_rail");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_blue_orchid
     //% block="item minecraft:blue_orchid"
-    export function blueOrchid(): string {
-        return "minecraft:blue_orchid";
+    export function blueOrchid(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blue_orchid");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_green_stained_glass_pane
     //% block="item minecraft:green_stained_glass_pane"
-    export function greenStainedGlassPane(): string {
-        return "minecraft:green_stained_glass_pane";
+    export function greenStainedGlassPane(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:green_stained_glass_pane");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_granite_stairs
     //% block="item minecraft:polished_granite_stairs"
-    export function polishedGraniteStairs(): string {
-        return "minecraft:polished_granite_stairs";
+    export function polishedGraniteStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_granite_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_birch_leaves
     //% block="item minecraft:birch_leaves"
-    export function birchLeaves(): string {
-        return "minecraft:birch_leaves";
+    export function birchLeaves(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:birch_leaves");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pink_terracotta
     //% block="item minecraft:pink_terracotta"
-    export function pinkTerracotta(): string {
-        return "minecraft:pink_terracotta";
+    export function pinkTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pink_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_infested_cobblestone
     //% block="item minecraft:infested_cobblestone"
-    export function infestedCobblestone(): string {
-        return "minecraft:infested_cobblestone";
+    export function infestedCobblestone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:infested_cobblestone");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cracked_deepslate_tiles
     //% block="item minecraft:cracked_deepslate_tiles"
-    export function crackedDeepslateTiles(): string {
-        return "minecraft:cracked_deepslate_tiles";
+    export function crackedDeepslateTiles(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cracked_deepslate_tiles");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mangrove_wood
     //% block="item minecraft:mangrove_wood"
-    export function mangroveWood(): string {
-        return "minecraft:mangrove_wood";
+    export function mangroveWood(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mangrove_wood");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_exposed_copper_golem_statue
     //% block="item minecraft:waxed_exposed_copper_golem_statue"
-    export function waxedExposedCopperGolemStatue(): string {
-        return "minecraft:waxed_exposed_copper_golem_statue";
+    export function waxedExposedCopperGolemStatue(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_exposed_copper_golem_statue");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_red_glazed_terracotta
     //% block="item minecraft:red_glazed_terracotta"
-    export function redGlazedTerracotta(): string {
-        return "minecraft:red_glazed_terracotta";
+    export function redGlazedTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_glazed_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_oxidized_copper_chest
     //% block="item minecraft:waxed_oxidized_copper_chest"
-    export function waxedOxidizedCopperChest(): string {
-        return "minecraft:waxed_oxidized_copper_chest";
+    export function waxedOxidizedCopperChest(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_oxidized_copper_chest");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_oxidized_copper_chain
     //% block="item minecraft:waxed_oxidized_copper_chain"
-    export function waxedOxidizedCopperChain(): string {
-        return "minecraft:waxed_oxidized_copper_chain";
+    export function waxedOxidizedCopperChain(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_oxidized_copper_chain");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dark_oak_fence_gate
     //% block="item minecraft:dark_oak_fence_gate"
-    export function darkOakFenceGate(): string {
-        return "minecraft:dark_oak_fence_gate";
+    export function darkOakFenceGate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dark_oak_fence_gate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mossy_cobblestone_slab
     //% block="item minecraft:mossy_cobblestone_slab"
-    export function mossyCobblestoneSlab(): string {
-        return "minecraft:mossy_cobblestone_slab";
+    export function mossyCobblestoneSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mossy_cobblestone_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cobblestone_slab
     //% block="item minecraft:cobblestone_slab"
-    export function cobblestoneSlab(): string {
-        return "minecraft:cobblestone_slab";
+    export function cobblestoneSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cobblestone_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_crimson_nylium
     //% block="item minecraft:crimson_nylium"
-    export function crimsonNylium(): string {
-        return "minecraft:crimson_nylium";
+    export function crimsonNylium(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:crimson_nylium");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_structure_void
     //% block="item minecraft:structure_void"
-    export function structureVoid(): string {
-        return "minecraft:structure_void";
+    export function structureVoid(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:structure_void");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_exposed_copper_bars
     //% block="item minecraft:waxed_exposed_copper_bars"
-    export function waxedExposedCopperBars(): string {
-        return "minecraft:waxed_exposed_copper_bars";
+    export function waxedExposedCopperBars(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_exposed_copper_bars");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_purple_concrete
     //% block="item minecraft:purple_concrete"
-    export function purpleConcrete(): string {
-        return "minecraft:purple_concrete";
+    export function purpleConcrete(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:purple_concrete");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_exposed_copper_bulb
     //% block="item minecraft:waxed_exposed_copper_bulb"
-    export function waxedExposedCopperBulb(): string {
-        return "minecraft:waxed_exposed_copper_bulb";
+    export function waxedExposedCopperBulb(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_exposed_copper_bulb");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_blackstone_brick_slab
     //% block="item minecraft:polished_blackstone_brick_slab"
-    export function polishedBlackstoneBrickSlab(): string {
-        return "minecraft:polished_blackstone_brick_slab";
+    export function polishedBlackstoneBrickSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_blackstone_brick_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_normal_stone_slab
     //% block="item minecraft:normal_stone_slab"
-    export function normalStoneSlab(): string {
-        return "minecraft:normal_stone_slab";
+    export function normalStoneSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:normal_stone_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sulfur_stairs
     //% block="item minecraft:sulfur_stairs"
-    export function sulfurStairs(): string {
-        return "minecraft:sulfur_stairs";
+    export function sulfurStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sulfur_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_spruce_sapling
     //% block="item minecraft:spruce_sapling"
-    export function spruceSapling(): string {
-        return "minecraft:spruce_sapling";
+    export function spruceSapling(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spruce_sapling");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_yellow_terracotta
     //% block="item minecraft:yellow_terracotta"
-    export function yellowTerracotta(): string {
-        return "minecraft:yellow_terracotta";
+    export function yellowTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:yellow_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_snow
     //% block="item minecraft:snow"
-    export function snow(): string {
-        return "minecraft:snow";
+    export function snow(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:snow");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sand
     //% block="item minecraft:sand"
-    export function sand(): string {
-        return "minecraft:sand";
+    export function sand(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sand");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_daylight_detector
     //% block="item minecraft:daylight_detector"
-    export function daylightDetector(): string {
-        return "minecraft:daylight_detector";
+    export function daylightDetector(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:daylight_detector");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stripped_mangrove_wood
     //% block="item minecraft:stripped_mangrove_wood"
-    export function strippedMangroveWood(): string {
-        return "minecraft:stripped_mangrove_wood";
+    export function strippedMangroveWood(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stripped_mangrove_wood");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_conduit
     //% block="item minecraft:conduit"
-    export function conduit(): string {
-        return "minecraft:conduit";
+    export function conduit(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:conduit");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_slime
     //% block="item minecraft:slime"
-    export function slime(): string {
-        return "minecraft:slime";
+    export function slime(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:slime");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_torch
     //% block="item minecraft:copper_torch"
-    export function copperTorch(): string {
-        return "minecraft:copper_torch";
+    export function copperTorch(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_torch");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bone_block
     //% block="item minecraft:bone_block"
-    export function boneBlock(): string {
-        return "minecraft:bone_block";
+    export function boneBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bone_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_frame
     //% block="item minecraft:frame"
-    export function frame(): string {
-        return "minecraft:frame";
+    export function frame(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:frame");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_spruce_log
     //% block="item minecraft:spruce_log"
-    export function spruceLog(): string {
-        return "minecraft:spruce_log";
+    export function spruceLog(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spruce_log");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lapis_block
     //% block="item minecraft:lapis_block"
-    export function lapisBlock(): string {
-        return "minecraft:lapis_block";
+    export function lapisBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lapis_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_coal_ore
     //% block="item minecraft:coal_ore"
-    export function coalOre(): string {
-        return "minecraft:coal_ore";
+    export function coalOre(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:coal_ore");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bamboo_shelf
     //% block="item minecraft:bamboo_shelf"
-    export function bambooShelf(): string {
-        return "minecraft:bamboo_shelf";
+    export function bambooShelf(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bamboo_shelf");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_redstone_ore
     //% block="item minecraft:redstone_ore"
-    export function redstoneOre(): string {
-        return "minecraft:redstone_ore";
+    export function redstoneOre(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:redstone_ore");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_copper_chest
     //% block="item minecraft:waxed_copper_chest"
-    export function waxedCopperChest(): string {
-        return "minecraft:waxed_copper_chest";
+    export function waxedCopperChest(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_copper_chest");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_green_stained_glass
     //% block="item minecraft:green_stained_glass"
-    export function greenStainedGlass(): string {
-        return "minecraft:green_stained_glass";
+    export function greenStainedGlass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:green_stained_glass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_copper_chain
     //% block="item minecraft:waxed_copper_chain"
-    export function waxedCopperChain(): string {
-        return "minecraft:waxed_copper_chain";
+    export function waxedCopperChain(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_copper_chain");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bubble_coral_block
     //% block="item minecraft:bubble_coral_block"
-    export function bubbleCoralBlock(): string {
-        return "minecraft:bubble_coral_block";
+    export function bubbleCoralBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bubble_coral_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_infested_chiseled_stone_bricks
     //% block="item minecraft:infested_chiseled_stone_bricks"
-    export function infestedChiseledStoneBricks(): string {
-        return "minecraft:infested_chiseled_stone_bricks";
+    export function infestedChiseledStoneBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:infested_chiseled_stone_bricks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_cinnabar_wall
     //% block="item minecraft:polished_cinnabar_wall"
-    export function polishedCinnabarWall(): string {
-        return "minecraft:polished_cinnabar_wall";
+    export function polishedCinnabarWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_cinnabar_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_nether_brick_fence
     //% block="item minecraft:nether_brick_fence"
-    export function netherBrickFence(): string {
-        return "minecraft:nether_brick_fence";
+    export function netherBrickFence(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:nether_brick_fence");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pink_tulip
     //% block="item minecraft:pink_tulip"
-    export function pinkTulip(): string {
-        return "minecraft:pink_tulip";
+    export function pinkTulip(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pink_tulip");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_oak_slab
     //% block="item minecraft:oak_slab"
-    export function oakSlab(): string {
-        return "minecraft:oak_slab";
+    export function oakSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oak_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stripped_pale_oak_log
     //% block="item minecraft:stripped_pale_oak_log"
-    export function strippedPaleOakLog(): string {
-        return "minecraft:stripped_pale_oak_log";
+    export function strippedPaleOakLog(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stripped_pale_oak_log");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_deepslate_tile_slab
     //% block="item minecraft:deepslate_tile_slab"
-    export function deepslateTileSlab(): string {
-        return "minecraft:deepslate_tile_slab";
+    export function deepslateTileSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:deepslate_tile_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pink_concrete_powder
     //% block="item minecraft:pink_concrete_powder"
-    export function pinkConcretePowder(): string {
-        return "minecraft:pink_concrete_powder";
+    export function pinkConcretePowder(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pink_concrete_powder");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pale_oak_slab
     //% block="item minecraft:pale_oak_slab"
-    export function paleOakSlab(): string {
-        return "minecraft:pale_oak_slab";
+    export function paleOakSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pale_oak_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dead_tube_coral
     //% block="item minecraft:dead_tube_coral"
-    export function deadTubeCoral(): string {
-        return "minecraft:dead_tube_coral";
+    export function deadTubeCoral(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dead_tube_coral");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_nether_wart_block
     //% block="item minecraft:nether_wart_block"
-    export function netherWartBlock(): string {
-        return "minecraft:nether_wart_block";
+    export function netherWartBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:nether_wart_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_prismarine_slab
     //% block="item minecraft:prismarine_slab"
-    export function prismarineSlab(): string {
-        return "minecraft:prismarine_slab";
+    export function prismarineSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:prismarine_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cherry_door
     //% block="item minecraft:cherry_door"
-    export function cherryDoor(): string {
-        return "minecraft:cherry_door";
+    export function cherryDoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cherry_door");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_crimson_hyphae
     //% block="item minecraft:crimson_hyphae"
-    export function crimsonHyphae(): string {
-        return "minecraft:crimson_hyphae";
+    export function crimsonHyphae(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:crimson_hyphae");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_blackstone_stairs
     //% block="item minecraft:polished_blackstone_stairs"
-    export function polishedBlackstoneStairs(): string {
-        return "minecraft:polished_blackstone_stairs";
+    export function polishedBlackstoneStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_blackstone_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_weathered_cut_copper_stairs
     //% block="item minecraft:weathered_cut_copper_stairs"
-    export function weatheredCutCopperStairs(): string {
-        return "minecraft:weathered_cut_copper_stairs";
+    export function weatheredCutCopperStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:weathered_cut_copper_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_small_dripleaf_block
     //% block="item minecraft:small_dripleaf_block"
-    export function smallDripleafBlock(): string {
-        return "minecraft:small_dripleaf_block";
+    export function smallDripleafBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:small_dripleaf_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_sulfur_stairs
     //% block="item minecraft:polished_sulfur_stairs"
-    export function polishedSulfurStairs(): string {
-        return "minecraft:polished_sulfur_stairs";
+    export function polishedSulfurStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_sulfur_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pink_stained_glass
     //% block="item minecraft:pink_stained_glass"
-    export function pinkStainedGlass(): string {
-        return "minecraft:pink_stained_glass";
+    export function pinkStainedGlass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pink_stained_glass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_weathered_copper_grate
     //% block="item minecraft:waxed_weathered_copper_grate"
-    export function waxedWeatheredCopperGrate(): string {
-        return "minecraft:waxed_weathered_copper_grate";
+    export function waxedWeatheredCopperGrate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_weathered_copper_grate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_spruce_button
     //% block="item minecraft:spruce_button"
-    export function spruceButton(): string {
-        return "minecraft:spruce_button";
+    export function spruceButton(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spruce_button");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_acacia_log
     //% block="item minecraft:acacia_log"
-    export function acaciaLog(): string {
-        return "minecraft:acacia_log";
+    export function acaciaLog(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:acacia_log");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_crimson_trapdoor
     //% block="item minecraft:crimson_trapdoor"
-    export function crimsonTrapdoor(): string {
-        return "minecraft:crimson_trapdoor";
+    export function crimsonTrapdoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:crimson_trapdoor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_basalt
     //% block="item minecraft:basalt"
-    export function basalt(): string {
-        return "minecraft:basalt";
+    export function basalt(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:basalt");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_blue_terracotta
     //% block="item minecraft:light_blue_terracotta"
-    export function lightBlueTerracotta(): string {
-        return "minecraft:light_blue_terracotta";
+    export function lightBlueTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_blue_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_golem_statue
     //% block="item minecraft:copper_golem_statue"
-    export function copperGolemStatue(): string {
-        return "minecraft:copper_golem_statue";
+    export function copperGolemStatue(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_golem_statue");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_diamond_ore
     //% block="item minecraft:diamond_ore"
-    export function diamondOre(): string {
-        return "minecraft:diamond_ore";
+    export function diamondOre(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:diamond_ore");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_warped_roots
     //% block="item minecraft:warped_roots"
-    export function warpedRoots(): string {
-        return "minecraft:warped_roots";
+    export function warpedRoots(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:warped_roots");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_magenta_concrete
     //% block="item minecraft:magenta_concrete"
-    export function magentaConcrete(): string {
-        return "minecraft:magenta_concrete";
+    export function magentaConcrete(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:magenta_concrete");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dark_prismarine
     //% block="item minecraft:dark_prismarine"
-    export function darkPrismarine(): string {
-        return "minecraft:dark_prismarine";
+    export function darkPrismarine(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dark_prismarine");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sticky_piston
     //% block="item minecraft:sticky_piston"
-    export function stickyPiston(): string {
-        return "minecraft:sticky_piston";
+    export function stickyPiston(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sticky_piston");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_ender_chest
     //% block="item minecraft:ender_chest"
-    export function enderChest(): string {
-        return "minecraft:ender_chest";
+    export function enderChest(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:ender_chest");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_medium_amethyst_bud
     //% block="item minecraft:medium_amethyst_bud"
-    export function mediumAmethystBud(): string {
-        return "minecraft:medium_amethyst_bud";
+    export function mediumAmethystBud(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:medium_amethyst_bud");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pink_shulker_box
     //% block="item minecraft:pink_shulker_box"
-    export function pinkShulkerBox(): string {
-        return "minecraft:pink_shulker_box";
+    export function pinkShulkerBox(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pink_shulker_box");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sculk_sensor
     //% block="item minecraft:sculk_sensor"
-    export function sculkSensor(): string {
-        return "minecraft:sculk_sensor";
+    export function sculkSensor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sculk_sensor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_bulb
     //% block="item minecraft:copper_bulb"
-    export function copperBulb(): string {
-        return "minecraft:copper_bulb";
+    export function copperBulb(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_bulb");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_bars
     //% block="item minecraft:copper_bars"
-    export function copperBars(): string {
-        return "minecraft:copper_bars";
+    export function copperBars(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_bars");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_oak_shelf
     //% block="item minecraft:oak_shelf"
-    export function oakShelf(): string {
-        return "minecraft:oak_shelf";
+    export function oakShelf(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oak_shelf");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_diorite_stairs
     //% block="item minecraft:diorite_stairs"
-    export function dioriteStairs(): string {
-        return "minecraft:diorite_stairs";
+    export function dioriteStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:diorite_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_spruce_leaves
     //% block="item minecraft:spruce_leaves"
-    export function spruceLeaves(): string {
-        return "minecraft:spruce_leaves";
+    export function spruceLeaves(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spruce_leaves");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_frog_spawn
     //% block="item minecraft:frog_spawn"
-    export function frogSpawn(): string {
-        return "minecraft:frog_spawn";
+    export function frogSpawn(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:frog_spawn");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_acacia_door
     //% block="item minecraft:acacia_door"
-    export function acaciaDoor(): string {
-        return "minecraft:acacia_door";
+    export function acaciaDoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:acacia_door");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_red_shulker_box
     //% block="item minecraft:red_shulker_box"
-    export function redShulkerBox(): string {
-        return "minecraft:red_shulker_box";
+    export function redShulkerBox(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_shulker_box");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stripped_cherry_log
     //% block="item minecraft:stripped_cherry_log"
-    export function strippedCherryLog(): string {
-        return "minecraft:stripped_cherry_log";
+    export function strippedCherryLog(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stripped_cherry_log");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_crimson_button
     //% block="item minecraft:crimson_button"
-    export function crimsonButton(): string {
-        return "minecraft:crimson_button";
+    export function crimsonButton(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:crimson_button");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_acacia_planks
     //% block="item minecraft:acacia_planks"
-    export function acaciaPlanks(): string {
-        return "minecraft:acacia_planks";
+    export function acaciaPlanks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:acacia_planks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_fire_coral_block
     //% block="item minecraft:fire_coral_block"
-    export function fireCoralBlock(): string {
-        return "minecraft:fire_coral_block";
+    export function fireCoralBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:fire_coral_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_magenta_concrete_powder
     //% block="item minecraft:magenta_concrete_powder"
-    export function magentaConcretePowder(): string {
-        return "minecraft:magenta_concrete_powder";
+    export function magentaConcretePowder(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:magenta_concrete_powder");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_iron_door
     //% block="item minecraft:iron_door"
-    export function ironDoor(): string {
-        return "minecraft:iron_door";
+    export function ironDoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:iron_door");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_honeycomb_block
     //% block="item minecraft:honeycomb_block"
-    export function honeycombBlock(): string {
-        return "minecraft:honeycomb_block";
+    export function honeycombBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:honeycomb_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_blackstone_brick_stairs
     //% block="item minecraft:polished_blackstone_brick_stairs"
-    export function polishedBlackstoneBrickStairs(): string {
-        return "minecraft:polished_blackstone_brick_stairs";
+    export function polishedBlackstoneBrickStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_blackstone_brick_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mangrove_trapdoor
     //% block="item minecraft:mangrove_trapdoor"
-    export function mangroveTrapdoor(): string {
-        return "minecraft:mangrove_trapdoor";
+    export function mangroveTrapdoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mangrove_trapdoor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_quartz_ore
     //% block="item minecraft:quartz_ore"
-    export function quartzOre(): string {
-        return "minecraft:quartz_ore";
+    export function quartzOre(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:quartz_ore");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_barrel
     //% block="item minecraft:barrel"
-    export function barrel(): string {
-        return "minecraft:barrel";
+    export function barrel(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:barrel");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_smooth_quartz
     //% block="item minecraft:smooth_quartz"
-    export function smoothQuartz(): string {
-        return "minecraft:smooth_quartz";
+    export function smoothQuartz(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:smooth_quartz");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_coarse_dirt
     //% block="item minecraft:coarse_dirt"
-    export function coarseDirt(): string {
-        return "minecraft:coarse_dirt";
+    export function coarseDirt(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:coarse_dirt");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chorus_flower
     //% block="item minecraft:chorus_flower"
-    export function chorusFlower(): string {
-        return "minecraft:chorus_flower";
+    export function chorusFlower(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chorus_flower");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_orange_stained_glass
     //% block="item minecraft:orange_stained_glass"
-    export function orangeStainedGlass(): string {
-        return "minecraft:orange_stained_glass";
+    export function orangeStainedGlass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:orange_stained_glass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_white_stained_glass_pane
     //% block="item minecraft:white_stained_glass_pane"
-    export function whiteStainedGlassPane(): string {
-        return "minecraft:white_stained_glass_pane";
+    export function whiteStainedGlassPane(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:white_stained_glass_pane");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sulfur_wall
     //% block="item minecraft:sulfur_wall"
-    export function sulfurWall(): string {
-        return "minecraft:sulfur_wall";
+    export function sulfurWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sulfur_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sulfur_brick_stairs
     //% block="item minecraft:sulfur_brick_stairs"
-    export function sulfurBrickStairs(): string {
-        return "minecraft:sulfur_brick_stairs";
+    export function sulfurBrickStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sulfur_brick_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stripped_birch_wood
     //% block="item minecraft:stripped_birch_wood"
-    export function strippedBirchWood(): string {
-        return "minecraft:stripped_birch_wood";
+    export function strippedBirchWood(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stripped_birch_wood");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cracked_nether_bricks
     //% block="item minecraft:cracked_nether_bricks"
-    export function crackedNetherBricks(): string {
-        return "minecraft:cracked_nether_bricks";
+    export function crackedNetherBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cracked_nether_bricks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_blue_candle
     //% block="item minecraft:light_blue_candle"
-    export function lightBlueCandle(): string {
-        return "minecraft:light_blue_candle";
+    export function lightBlueCandle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_blue_candle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pumpkin
     //% block="item minecraft:pumpkin"
-    export function pumpkin(): string {
-        return "minecraft:pumpkin";
+    export function pumpkin(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pumpkin");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_deepslate_tiles
     //% block="item minecraft:deepslate_tiles"
-    export function deepslateTiles(): string {
-        return "minecraft:deepslate_tiles";
+    export function deepslateTiles(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:deepslate_tiles");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_smooth_stone
     //% block="item minecraft:smooth_stone"
-    export function smoothStone(): string {
-        return "minecraft:smooth_stone";
+    export function smoothStone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:smooth_stone");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_gray_terracotta
     //% block="item minecraft:gray_terracotta"
-    export function grayTerracotta(): string {
-        return "minecraft:gray_terracotta";
+    export function grayTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:gray_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_oxidized_copper_trapdoor
     //% block="item minecraft:oxidized_copper_trapdoor"
-    export function oxidizedCopperTrapdoor(): string {
-        return "minecraft:oxidized_copper_trapdoor";
+    export function oxidizedCopperTrapdoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oxidized_copper_trapdoor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_granite_slab
     //% block="item minecraft:granite_slab"
-    export function graniteSlab(): string {
-        return "minecraft:granite_slab";
+    export function graniteSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:granite_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_white_tulip
     //% block="item minecraft:white_tulip"
-    export function whiteTulip(): string {
-        return "minecraft:white_tulip";
+    export function whiteTulip(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:white_tulip");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lime_concrete
     //% block="item minecraft:lime_concrete"
-    export function limeConcrete(): string {
-        return "minecraft:lime_concrete";
+    export function limeConcrete(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lime_concrete");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_red_mushroom
     //% block="item minecraft:red_mushroom"
-    export function redMushroom(): string {
-        return "minecraft:red_mushroom";
+    export function redMushroom(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_mushroom");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_gilded_blackstone
     //% block="item minecraft:gilded_blackstone"
-    export function gildedBlackstone(): string {
-        return "minecraft:gilded_blackstone";
+    export function gildedBlackstone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:gilded_blackstone");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_magenta_terracotta
     //% block="item minecraft:magenta_terracotta"
-    export function magentaTerracotta(): string {
-        return "minecraft:magenta_terracotta";
+    export function magentaTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:magenta_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_exposed_cut_copper_stairs
     //% block="item minecraft:exposed_cut_copper_stairs"
-    export function exposedCutCopperStairs(): string {
-        return "minecraft:exposed_cut_copper_stairs";
+    export function exposedCutCopperStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:exposed_cut_copper_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mangrove_stairs
     //% block="item minecraft:mangrove_stairs"
-    export function mangroveStairs(): string {
-        return "minecraft:mangrove_stairs";
+    export function mangroveStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mangrove_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_diorite_slab
     //% block="item minecraft:polished_diorite_slab"
-    export function polishedDioriteSlab(): string {
-        return "minecraft:polished_diorite_slab";
+    export function polishedDioriteSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_diorite_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cut_copper_stairs
     //% block="item minecraft:cut_copper_stairs"
-    export function cutCopperStairs(): string {
-        return "minecraft:cut_copper_stairs";
+    export function cutCopperStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cut_copper_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_oxidized_copper_lantern
     //% block="item minecraft:waxed_oxidized_copper_lantern"
-    export function waxedOxidizedCopperLantern(): string {
-        return "minecraft:waxed_oxidized_copper_lantern";
+    export function waxedOxidizedCopperLantern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_oxidized_copper_lantern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cherry_button
     //% block="item minecraft:cherry_button"
-    export function cherryButton(): string {
-        return "minecraft:cherry_button";
+    export function cherryButton(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cherry_button");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mangrove_fence_gate
     //% block="item minecraft:mangrove_fence_gate"
-    export function mangroveFenceGate(): string {
-        return "minecraft:mangrove_fence_gate";
+    export function mangroveFenceGate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mangrove_fence_gate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sunflower
     //% block="item minecraft:sunflower"
-    export function sunflower(): string {
-        return "minecraft:sunflower";
+    export function sunflower(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sunflower");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pink_petals
     //% block="item minecraft:pink_petals"
-    export function pinkPetals(): string {
-        return "minecraft:pink_petals";
+    export function pinkPetals(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pink_petals");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bamboo_hanging_sign
     //% block="item minecraft:bamboo_hanging_sign"
-    export function bambooHangingSign(): string {
-        return "minecraft:bamboo_hanging_sign";
+    export function bambooHangingSign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bamboo_hanging_sign");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_infested_deepslate
     //% block="item minecraft:infested_deepslate"
-    export function infestedDeepslate(): string {
-        return "minecraft:infested_deepslate";
+    export function infestedDeepslate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:infested_deepslate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_soul_torch
     //% block="item minecraft:soul_torch"
-    export function soulTorch(): string {
-        return "minecraft:soul_torch";
+    export function soulTorch(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:soul_torch");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_podzol
     //% block="item minecraft:podzol"
-    export function podzol(): string {
-        return "minecraft:podzol";
+    export function podzol(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:podzol");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_block
     //% block="item minecraft:copper_block"
-    export function copperBlock(): string {
-        return "minecraft:copper_block";
+    export function copperBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_deepslate_tile_stairs
     //% block="item minecraft:deepslate_tile_stairs"
-    export function deepslateTileStairs(): string {
-        return "minecraft:deepslate_tile_stairs";
+    export function deepslateTileStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:deepslate_tile_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_crimson_fence_gate
     //% block="item minecraft:crimson_fence_gate"
-    export function crimsonFenceGate(): string {
-        return "minecraft:crimson_fence_gate";
+    export function crimsonFenceGate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:crimson_fence_gate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_deadbush
     //% block="item minecraft:deadbush"
-    export function deadbush(): string {
-        return "minecraft:deadbush";
+    export function deadbush(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:deadbush");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_blackstone_bricks
     //% block="item minecraft:polished_blackstone_bricks"
-    export function polishedBlackstoneBricks(): string {
-        return "minecraft:polished_blackstone_bricks";
+    export function polishedBlackstoneBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_blackstone_bricks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_red_candle
     //% block="item minecraft:red_candle"
-    export function redCandle(): string {
-        return "minecraft:red_candle";
+    export function redCandle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_candle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cut_copper
     //% block="item minecraft:cut_copper"
-    export function cutCopper(): string {
-        return "minecraft:cut_copper";
+    export function cutCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cut_copper");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_weathered_copper_golem_statue
     //% block="item minecraft:waxed_weathered_copper_golem_statue"
-    export function waxedWeatheredCopperGolemStatue(): string {
-        return "minecraft:waxed_weathered_copper_golem_statue";
+    export function waxedWeatheredCopperGolemStatue(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_weathered_copper_golem_statue");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_iron_ore
     //% block="item minecraft:iron_ore"
-    export function ironOre(): string {
-        return "minecraft:iron_ore";
+    export function ironOre(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:iron_ore");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_spruce_door
     //% block="item minecraft:spruce_door"
-    export function spruceDoor(): string {
-        return "minecraft:spruce_door";
+    export function spruceDoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spruce_door");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_frosted_ice
     //% block="item minecraft:frosted_ice"
-    export function frostedIce(): string {
-        return "minecraft:frosted_ice";
+    export function frostedIce(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:frosted_ice");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chipped_anvil
     //% block="item minecraft:chipped_anvil"
-    export function chippedAnvil(): string {
-        return "minecraft:chipped_anvil";
+    export function chippedAnvil(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chipped_anvil");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_large_amethyst_bud
     //% block="item minecraft:large_amethyst_bud"
-    export function largeAmethystBud(): string {
-        return "minecraft:large_amethyst_bud";
+    export function largeAmethystBud(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:large_amethyst_bud");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_exposed_copper_door
     //% block="item minecraft:exposed_copper_door"
-    export function exposedCopperDoor(): string {
-        return "minecraft:exposed_copper_door";
+    export function exposedCopperDoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:exposed_copper_door");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_suspicious_gravel
     //% block="item minecraft:suspicious_gravel"
-    export function suspiciousGravel(): string {
-        return "minecraft:suspicious_gravel";
+    export function suspiciousGravel(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:suspicious_gravel");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_warped_trapdoor
     //% block="item minecraft:warped_trapdoor"
-    export function warpedTrapdoor(): string {
-        return "minecraft:warped_trapdoor";
+    export function warpedTrapdoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:warped_trapdoor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_brick_block
     //% block="item minecraft:brick_block"
-    export function brickBlock(): string {
-        return "minecraft:brick_block";
+    export function brickBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brick_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_weathered_copper_trapdoor
     //% block="item minecraft:waxed_weathered_copper_trapdoor"
-    export function waxedWeatheredCopperTrapdoor(): string {
-        return "minecraft:waxed_weathered_copper_trapdoor";
+    export function waxedWeatheredCopperTrapdoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_weathered_copper_trapdoor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_quartz_stairs
     //% block="item minecraft:quartz_stairs"
-    export function quartzStairs(): string {
-        return "minecraft:quartz_stairs";
+    export function quartzStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:quartz_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_magenta_stained_glass_pane
     //% block="item minecraft:magenta_stained_glass_pane"
-    export function magentaStainedGlassPane(): string {
-        return "minecraft:magenta_stained_glass_pane";
+    export function magentaStainedGlassPane(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:magenta_stained_glass_pane");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_iron_bars
     //% block="item minecraft:iron_bars"
-    export function ironBars(): string {
-        return "minecraft:iron_bars";
+    export function ironBars(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:iron_bars");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_white_terracotta
     //% block="item minecraft:white_terracotta"
-    export function whiteTerracotta(): string {
-        return "minecraft:white_terracotta";
+    export function whiteTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:white_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stripped_oak_wood
     //% block="item minecraft:stripped_oak_wood"
-    export function strippedOakWood(): string {
-        return "minecraft:stripped_oak_wood";
+    export function strippedOakWood(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stripped_oak_wood");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_blue_carpet
     //% block="item minecraft:light_blue_carpet"
-    export function lightBlueCarpet(): string {
-        return "minecraft:light_blue_carpet";
+    export function lightBlueCarpet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_blue_carpet");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_oak_hanging_sign
     //% block="item minecraft:oak_hanging_sign"
-    export function oakHangingSign(): string {
-        return "minecraft:oak_hanging_sign";
+    export function oakHangingSign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oak_hanging_sign");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_white_concrete_powder
     //% block="item minecraft:white_concrete_powder"
-    export function whiteConcretePowder(): string {
-        return "minecraft:white_concrete_powder";
+    export function whiteConcretePowder(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:white_concrete_powder");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_crimson_planks
     //% block="item minecraft:crimson_planks"
-    export function crimsonPlanks(): string {
-        return "minecraft:crimson_planks";
+    export function crimsonPlanks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:crimson_planks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stripped_dark_oak_wood
     //% block="item minecraft:stripped_dark_oak_wood"
-    export function strippedDarkOakWood(): string {
-        return "minecraft:stripped_dark_oak_wood";
+    export function strippedDarkOakWood(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stripped_dark_oak_wood");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_weathered_cut_copper
     //% block="item minecraft:waxed_weathered_cut_copper"
-    export function waxedWeatheredCutCopper(): string {
-        return "minecraft:waxed_weathered_cut_copper";
+    export function waxedWeatheredCutCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_weathered_cut_copper");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_white_stained_glass
     //% block="item minecraft:white_stained_glass"
-    export function whiteStainedGlass(): string {
-        return "minecraft:white_stained_glass";
+    export function whiteStainedGlass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:white_stained_glass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_oak_wood
     //% block="item minecraft:oak_wood"
-    export function oakWood(): string {
-        return "minecraft:oak_wood";
+    export function oakWood(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oak_wood");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_purple_stained_glass_pane
     //% block="item minecraft:purple_stained_glass_pane"
-    export function purpleStainedGlassPane(): string {
-        return "minecraft:purple_stained_glass_pane";
+    export function purpleStainedGlassPane(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:purple_stained_glass_pane");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_oxidized_copper_trapdoor
     //% block="item minecraft:waxed_oxidized_copper_trapdoor"
-    export function waxedOxidizedCopperTrapdoor(): string {
-        return "minecraft:waxed_oxidized_copper_trapdoor";
+    export function waxedOxidizedCopperTrapdoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_oxidized_copper_trapdoor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_jukebox
     //% block="item minecraft:jukebox"
-    export function jukebox(): string {
-        return "minecraft:jukebox";
+    export function jukebox(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:jukebox");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stripped_cherry_wood
     //% block="item minecraft:stripped_cherry_wood"
-    export function strippedCherryWood(): string {
-        return "minecraft:stripped_cherry_wood";
+    export function strippedCherryWood(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stripped_cherry_wood");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_jigsaw
     //% block="item minecraft:jigsaw"
-    export function jigsaw(): string {
-        return "minecraft:jigsaw";
+    export function jigsaw(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:jigsaw");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_oxidized_copper_golem_statue
     //% block="item minecraft:waxed_oxidized_copper_golem_statue"
-    export function waxedOxidizedCopperGolemStatue(): string {
-        return "minecraft:waxed_oxidized_copper_golem_statue";
+    export function waxedOxidizedCopperGolemStatue(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_oxidized_copper_golem_statue");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chiseled_sulfur
     //% block="item minecraft:chiseled_sulfur"
-    export function chiseledSulfur(): string {
-        return "minecraft:chiseled_sulfur";
+    export function chiseledSulfur(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chiseled_sulfur");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_cinnabar_slab
     //% block="item minecraft:polished_cinnabar_slab"
-    export function polishedCinnabarSlab(): string {
-        return "minecraft:polished_cinnabar_slab";
+    export function polishedCinnabarSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_cinnabar_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_prismarine_wall
     //% block="item minecraft:prismarine_wall"
-    export function prismarineWall(): string {
-        return "minecraft:prismarine_wall";
+    export function prismarineWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:prismarine_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_border_block
     //% block="item minecraft:border_block"
-    export function borderBlock(): string {
-        return "minecraft:border_block";
+    export function borderBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:border_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_shroomlight
     //% block="item minecraft:shroomlight"
-    export function shroomlight(): string {
-        return "minecraft:shroomlight";
+    export function shroomlight(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:shroomlight");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bamboo_fence_gate
     //% block="item minecraft:bamboo_fence_gate"
-    export function bambooFenceGate(): string {
-        return "minecraft:bamboo_fence_gate";
+    export function bambooFenceGate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bamboo_fence_gate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cornflower
     //% block="item minecraft:cornflower"
-    export function cornflower(): string {
-        return "minecraft:cornflower";
+    export function cornflower(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cornflower");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chiseled_polished_blackstone
     //% block="item minecraft:chiseled_polished_blackstone"
-    export function chiseledPolishedBlackstone(): string {
-        return "minecraft:chiseled_polished_blackstone";
+    export function chiseledPolishedBlackstone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chiseled_polished_blackstone");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dark_oak_stairs
     //% block="item minecraft:dark_oak_stairs"
-    export function darkOakStairs(): string {
-        return "minecraft:dark_oak_stairs";
+    export function darkOakStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dark_oak_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_deepslate_tile_wall
     //% block="item minecraft:deepslate_tile_wall"
-    export function deepslateTileWall(): string {
-        return "minecraft:deepslate_tile_wall";
+    export function deepslateTileWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:deepslate_tile_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_glass_pane
     //% block="item minecraft:glass_pane"
-    export function glassPane(): string {
-        return "minecraft:glass_pane";
+    export function glassPane(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:glass_pane");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chiseled_deepslate
     //% block="item minecraft:chiseled_deepslate"
-    export function chiseledDeepslate(): string {
-        return "minecraft:chiseled_deepslate";
+    export function chiseledDeepslate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chiseled_deepslate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cut_copper_slab
     //% block="item minecraft:cut_copper_slab"
-    export function cutCopperSlab(): string {
-        return "minecraft:cut_copper_slab";
+    export function cutCopperSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cut_copper_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_red_stained_glass
     //% block="item minecraft:red_stained_glass"
-    export function redStainedGlass(): string {
-        return "minecraft:red_stained_glass";
+    export function redStainedGlass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_stained_glass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pale_oak_wood
     //% block="item minecraft:pale_oak_wood"
-    export function paleOakWood(): string {
-        return "minecraft:pale_oak_wood";
+    export function paleOakWood(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pale_oak_wood");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_infested_stone_bricks
     //% block="item minecraft:infested_stone_bricks"
-    export function infestedStoneBricks(): string {
-        return "minecraft:infested_stone_bricks";
+    export function infestedStoneBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:infested_stone_bricks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_acacia_pressure_plate
     //% block="item minecraft:acacia_pressure_plate"
-    export function acaciaPressurePlate(): string {
-        return "minecraft:acacia_pressure_plate";
+    export function acaciaPressurePlate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:acacia_pressure_plate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_weathered_lightning_rod
     //% block="item minecraft:weathered_lightning_rod"
-    export function weatheredLightningRod(): string {
-        return "minecraft:weathered_lightning_rod";
+    export function weatheredLightningRod(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:weathered_lightning_rod");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bamboo_trapdoor
     //% block="item minecraft:bamboo_trapdoor"
-    export function bambooTrapdoor(): string {
-        return "minecraft:bamboo_trapdoor";
+    export function bambooTrapdoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bamboo_trapdoor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_oxidized_chiseled_copper
     //% block="item minecraft:oxidized_chiseled_copper"
-    export function oxidizedChiseledCopper(): string {
-        return "minecraft:oxidized_chiseled_copper";
+    export function oxidizedChiseledCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oxidized_chiseled_copper");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_raw_copper_block
     //% block="item minecraft:raw_copper_block"
-    export function rawCopperBlock(): string {
-        return "minecraft:raw_copper_block";
+    export function rawCopperBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:raw_copper_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_tall_dry_grass
     //% block="item minecraft:tall_dry_grass"
-    export function tallDryGrass(): string {
-        return "minecraft:tall_dry_grass";
+    export function tallDryGrass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tall_dry_grass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_oxidized_cut_copper_slab
     //% block="item minecraft:oxidized_cut_copper_slab"
-    export function oxidizedCutCopperSlab(): string {
-        return "minecraft:oxidized_cut_copper_slab";
+    export function oxidizedCutCopperSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oxidized_cut_copper_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_horn_coral_block
     //% block="item minecraft:horn_coral_block"
-    export function hornCoralBlock(): string {
-        return "minecraft:horn_coral_block";
+    export function hornCoralBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:horn_coral_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dark_oak_shelf
     //% block="item minecraft:dark_oak_shelf"
-    export function darkOakShelf(): string {
-        return "minecraft:dark_oak_shelf";
+    export function darkOakShelf(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dark_oak_shelf");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_beetroot
     //% block="item minecraft:beetroot"
-    export function beetroot(): string {
-        return "minecraft:beetroot";
+    export function beetroot(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:beetroot");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_white_candle
     //% block="item minecraft:white_candle"
-    export function whiteCandle(): string {
-        return "minecraft:white_candle";
+    export function whiteCandle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:white_candle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_andesite_stairs
     //% block="item minecraft:andesite_stairs"
-    export function andesiteStairs(): string {
-        return "minecraft:andesite_stairs";
+    export function andesiteStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:andesite_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_birch_planks
     //% block="item minecraft:birch_planks"
-    export function birchPlanks(): string {
-        return "minecraft:birch_planks";
+    export function birchPlanks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:birch_planks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_golden_rail
     //% block="item minecraft:golden_rail"
-    export function goldenRail(): string {
-        return "minecraft:golden_rail";
+    export function goldenRail(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:golden_rail");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cyan_wool
     //% block="item minecraft:cyan_wool"
-    export function cyanWool(): string {
-        return "minecraft:cyan_wool";
+    export function cyanWool(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cyan_wool");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_jungle_leaves
     //% block="item minecraft:jungle_leaves"
-    export function jungleLeaves(): string {
-        return "minecraft:jungle_leaves";
+    export function jungleLeaves(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:jungle_leaves");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_gray_shulker_box
     //% block="item minecraft:gray_shulker_box"
-    export function grayShulkerBox(): string {
-        return "minecraft:gray_shulker_box";
+    export function grayShulkerBox(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:gray_shulker_box");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_red_sandstone_stairs
     //% block="item minecraft:red_sandstone_stairs"
-    export function redSandstoneStairs(): string {
-        return "minecraft:red_sandstone_stairs";
+    export function redSandstoneStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_sandstone_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cyan_glazed_terracotta
     //% block="item minecraft:cyan_glazed_terracotta"
-    export function cyanGlazedTerracotta(): string {
-        return "minecraft:cyan_glazed_terracotta";
+    export function cyanGlazedTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cyan_glazed_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cracked_deepslate_bricks
     //% block="item minecraft:cracked_deepslate_bricks"
-    export function crackedDeepslateBricks(): string {
-        return "minecraft:cracked_deepslate_bricks";
+    export function crackedDeepslateBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cracked_deepslate_bricks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_jungle_fence_gate
     //% block="item minecraft:jungle_fence_gate"
-    export function jungleFenceGate(): string {
-        return "minecraft:jungle_fence_gate";
+    export function jungleFenceGate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:jungle_fence_gate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_exposed_copper_grate
     //% block="item minecraft:exposed_copper_grate"
-    export function exposedCopperGrate(): string {
-        return "minecraft:exposed_copper_grate";
+    export function exposedCopperGrate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:exposed_copper_grate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_copper_grate
     //% block="item minecraft:waxed_copper_grate"
-    export function waxedCopperGrate(): string {
-        return "minecraft:waxed_copper_grate";
+    export function waxedCopperGrate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_copper_grate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_jungle_trapdoor
     //% block="item minecraft:jungle_trapdoor"
-    export function jungleTrapdoor(): string {
-        return "minecraft:jungle_trapdoor";
+    export function jungleTrapdoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:jungle_trapdoor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dirt_with_roots
     //% block="item minecraft:dirt_with_roots"
-    export function dirtWithRoots(): string {
-        return "minecraft:dirt_with_roots";
+    export function dirtWithRoots(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dirt_with_roots");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_coal_block
     //% block="item minecraft:coal_block"
-    export function coalBlock(): string {
-        return "minecraft:coal_block";
+    export function coalBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:coal_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_white_wool
     //% block="item minecraft:white_wool"
-    export function whiteWool(): string {
-        return "minecraft:white_wool";
+    export function whiteWool(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:white_wool");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_warped_fence_gate
     //% block="item minecraft:warped_fence_gate"
-    export function warpedFenceGate(): string {
-        return "minecraft:warped_fence_gate";
+    export function warpedFenceGate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:warped_fence_gate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cut_sandstone_slab
     //% block="item minecraft:cut_sandstone_slab"
-    export function cutSandstoneSlab(): string {
-        return "minecraft:cut_sandstone_slab";
+    export function cutSandstoneSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cut_sandstone_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_skeleton_skull
     //% block="item minecraft:skeleton_skull"
-    export function skeletonSkull(): string {
-        return "minecraft:skeleton_skull";
+    export function skeletonSkull(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:skeleton_skull");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_exposed_copper_chest
     //% block="item minecraft:exposed_copper_chest"
-    export function exposedCopperChest(): string {
-        return "minecraft:exposed_copper_chest";
+    export function exposedCopperChest(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:exposed_copper_chest");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_exposed_copper_chain
     //% block="item minecraft:exposed_copper_chain"
-    export function exposedCopperChain(): string {
-        return "minecraft:exposed_copper_chain";
+    export function exposedCopperChain(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:exposed_copper_chain");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_composter
     //% block="item minecraft:composter"
-    export function composter(): string {
-        return "minecraft:composter";
+    export function composter(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:composter");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_kelp
     //% block="item minecraft:kelp"
-    export function kelp(): string {
-        return "minecraft:kelp";
+    export function kelp(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:kelp");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_exposed_copper_door
     //% block="item minecraft:waxed_exposed_copper_door"
-    export function waxedExposedCopperDoor(): string {
-        return "minecraft:waxed_exposed_copper_door";
+    export function waxedExposedCopperDoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_exposed_copper_door");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_deepslate_bricks
     //% block="item minecraft:deepslate_bricks"
-    export function deepslateBricks(): string {
-        return "minecraft:deepslate_bricks";
+    export function deepslateBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:deepslate_bricks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_blue_glazed_terracotta
     //% block="item minecraft:blue_glazed_terracotta"
-    export function blueGlazedTerracotta(): string {
-        return "minecraft:blue_glazed_terracotta";
+    export function blueGlazedTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blue_glazed_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_blue_glazed_terracotta
     //% block="item minecraft:light_blue_glazed_terracotta"
-    export function lightBlueGlazedTerracotta(): string {
-        return "minecraft:light_blue_glazed_terracotta";
+    export function lightBlueGlazedTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_blue_glazed_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_rose_bush
     //% block="item minecraft:rose_bush"
-    export function roseBush(): string {
-        return "minecraft:rose_bush";
+    export function roseBush(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:rose_bush");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_flowering_azalea
     //% block="item minecraft:flowering_azalea"
-    export function floweringAzalea(): string {
-        return "minecraft:flowering_azalea";
+    export function floweringAzalea(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:flowering_azalea");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_oxidized_cut_copper
     //% block="item minecraft:oxidized_cut_copper"
-    export function oxidizedCutCopper(): string {
-        return "minecraft:oxidized_cut_copper";
+    export function oxidizedCutCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oxidized_cut_copper");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_blue_wool
     //% block="item minecraft:blue_wool"
-    export function blueWool(): string {
-        return "minecraft:blue_wool";
+    export function blueWool(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blue_wool");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pale_oak_hanging_sign
     //% block="item minecraft:pale_oak_hanging_sign"
-    export function paleOakHangingSign(): string {
-        return "minecraft:pale_oak_hanging_sign";
+    export function paleOakHangingSign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pale_oak_hanging_sign");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_weeping_vines
     //% block="item minecraft:weeping_vines"
-    export function weepingVines(): string {
-        return "minecraft:weeping_vines";
+    export function weepingVines(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:weeping_vines");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chorus_plant
     //% block="item minecraft:chorus_plant"
-    export function chorusPlant(): string {
-        return "minecraft:chorus_plant";
+    export function chorusPlant(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chorus_plant");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mud_brick_stairs
     //% block="item minecraft:mud_brick_stairs"
-    export function mudBrickStairs(): string {
-        return "minecraft:mud_brick_stairs";
+    export function mudBrickStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mud_brick_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stone_brick_wall
     //% block="item minecraft:stone_brick_wall"
-    export function stoneBrickWall(): string {
-        return "minecraft:stone_brick_wall";
+    export function stoneBrickWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stone_brick_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_smooth_red_sandstone_stairs
     //% block="item minecraft:smooth_red_sandstone_stairs"
-    export function smoothRedSandstoneStairs(): string {
-        return "minecraft:smooth_red_sandstone_stairs";
+    export function smoothRedSandstoneStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:smooth_red_sandstone_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_andesite_wall
     //% block="item minecraft:andesite_wall"
-    export function andesiteWall(): string {
-        return "minecraft:andesite_wall";
+    export function andesiteWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:andesite_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_white_glazed_terracotta
     //% block="item minecraft:white_glazed_terracotta"
-    export function whiteGlazedTerracotta(): string {
-        return "minecraft:white_glazed_terracotta";
+    export function whiteGlazedTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:white_glazed_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stripped_warped_hyphae
     //% block="item minecraft:stripped_warped_hyphae"
-    export function strippedWarpedHyphae(): string {
-        return "minecraft:stripped_warped_hyphae";
+    export function strippedWarpedHyphae(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stripped_warped_hyphae");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_trapped_chest
     //% block="item minecraft:trapped_chest"
-    export function trappedChest(): string {
-        return "minecraft:trapped_chest";
+    export function trappedChest(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:trapped_chest");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_acacia_trapdoor
     //% block="item minecraft:acacia_trapdoor"
-    export function acaciaTrapdoor(): string {
-        return "minecraft:acacia_trapdoor";
+    export function acaciaTrapdoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:acacia_trapdoor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_weathered_copper_chest
     //% block="item minecraft:weathered_copper_chest"
-    export function weatheredCopperChest(): string {
-        return "minecraft:weathered_copper_chest";
+    export function weatheredCopperChest(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:weathered_copper_chest");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_brain_coral_block
     //% block="item minecraft:brain_coral_block"
-    export function brainCoralBlock(): string {
-        return "minecraft:brain_coral_block";
+    export function brainCoralBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brain_coral_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_weathered_copper_chain
     //% block="item minecraft:weathered_copper_chain"
-    export function weatheredCopperChain(): string {
-        return "minecraft:weathered_copper_chain";
+    export function weatheredCopperChain(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:weathered_copper_chain");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bamboo_planks
     //% block="item minecraft:bamboo_planks"
-    export function bambooPlanks(): string {
-        return "minecraft:bamboo_planks";
+    export function bambooPlanks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bamboo_planks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_glow_lichen
     //% block="item minecraft:glow_lichen"
-    export function glowLichen(): string {
-        return "minecraft:glow_lichen";
+    export function glowLichen(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:glow_lichen");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_purpur_pillar
     //% block="item minecraft:purpur_pillar"
-    export function purpurPillar(): string {
-        return "minecraft:purpur_pillar";
+    export function purpurPillar(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:purpur_pillar");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_twisting_vines
     //% block="item minecraft:twisting_vines"
-    export function twistingVines(): string {
-        return "minecraft:twisting_vines";
+    export function twistingVines(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:twisting_vines");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chiseled_copper
     //% block="item minecraft:chiseled_copper"
-    export function chiseledCopper(): string {
-        return "minecraft:chiseled_copper";
+    export function chiseledCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chiseled_copper");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dark_oak_door
     //% block="item minecraft:dark_oak_door"
-    export function darkOakDoor(): string {
-        return "minecraft:dark_oak_door";
+    export function darkOakDoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dark_oak_door");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_oak_fence
     //% block="item minecraft:oak_fence"
-    export function oakFence(): string {
-        return "minecraft:oak_fence";
+    export function oakFence(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oak_fence");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pale_moss_block
     //% block="item minecraft:pale_moss_block"
-    export function paleMossBlock(): string {
-        return "minecraft:pale_moss_block";
+    export function paleMossBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pale_moss_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_soul_lantern
     //% block="item minecraft:soul_lantern"
-    export function soulLantern(): string {
-        return "minecraft:soul_lantern";
+    export function soulLantern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:soul_lantern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dirt
     //% block="item minecraft:dirt"
-    export function dirt(): string {
-        return "minecraft:dirt";
+    export function dirt(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dirt");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_blue_stained_glass
     //% block="item minecraft:blue_stained_glass"
-    export function blueStainedGlass(): string {
-        return "minecraft:blue_stained_glass";
+    export function blueStainedGlass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blue_stained_glass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_deny
     //% block="item minecraft:deny"
-    export function deny(): string {
-        return "minecraft:deny";
+    export function deny(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:deny");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bee_nest
     //% block="item minecraft:bee_nest"
-    export function beeNest(): string {
-        return "minecraft:bee_nest";
+    export function beeNest(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bee_nest");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_campfire
     //% block="item minecraft:campfire"
-    export function campfire(): string {
-        return "minecraft:campfire";
+    export function campfire(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:campfire");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_blue_stained_glass
     //% block="item minecraft:light_blue_stained_glass"
-    export function lightBlueStainedGlass(): string {
-        return "minecraft:light_blue_stained_glass";
+    export function lightBlueStainedGlass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_blue_stained_glass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_soul_soil
     //% block="item minecraft:soul_soil"
-    export function soulSoil(): string {
-        return "minecraft:soul_soil";
+    export function soulSoil(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:soul_soil");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_soul_sand
     //% block="item minecraft:soul_sand"
-    export function soulSand(): string {
-        return "minecraft:soul_sand";
+    export function soulSand(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:soul_sand");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_granite_wall
     //% block="item minecraft:granite_wall"
-    export function graniteWall(): string {
-        return "minecraft:granite_wall";
+    export function graniteWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:granite_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_spruce_hanging_sign
     //% block="item minecraft:spruce_hanging_sign"
-    export function spruceHangingSign(): string {
-        return "minecraft:spruce_hanging_sign";
+    export function spruceHangingSign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spruce_hanging_sign");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_diorite
     //% block="item minecraft:polished_diorite"
-    export function polishedDiorite(): string {
-        return "minecraft:polished_diorite";
+    export function polishedDiorite(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_diorite");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_reinforced_deepslate
     //% block="item minecraft:reinforced_deepslate"
-    export function reinforcedDeepslate(): string {
-        return "minecraft:reinforced_deepslate";
+    export function reinforcedDeepslate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:reinforced_deepslate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_fletching_table
     //% block="item minecraft:fletching_table"
-    export function fletchingTable(): string {
-        return "minecraft:fletching_table";
+    export function fletchingTable(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:fletching_table");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cherry_leaves
     //% block="item minecraft:cherry_leaves"
-    export function cherryLeaves(): string {
-        return "minecraft:cherry_leaves";
+    export function cherryLeaves(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cherry_leaves");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_creeper_head
     //% block="item minecraft:creeper_head"
-    export function creeperHead(): string {
-        return "minecraft:creeper_head";
+    export function creeperHead(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:creeper_head");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_black_glazed_terracotta
     //% block="item minecraft:black_glazed_terracotta"
-    export function blackGlazedTerracotta(): string {
-        return "minecraft:black_glazed_terracotta";
+    export function blackGlazedTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:black_glazed_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_oxidized_cut_copper_stairs
     //% block="item minecraft:waxed_oxidized_cut_copper_stairs"
-    export function waxedOxidizedCutCopperStairs(): string {
-        return "minecraft:waxed_oxidized_cut_copper_stairs";
+    export function waxedOxidizedCutCopperStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_oxidized_cut_copper_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_weathered_copper_bulb
     //% block="item minecraft:waxed_weathered_copper_bulb"
-    export function waxedWeatheredCopperBulb(): string {
-        return "minecraft:waxed_weathered_copper_bulb";
+    export function waxedWeatheredCopperBulb(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_weathered_copper_bulb");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dragon_head
     //% block="item minecraft:dragon_head"
-    export function dragonHead(): string {
-        return "minecraft:dragon_head";
+    export function dragonHead(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dragon_head");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_weathered_copper_bars
     //% block="item minecraft:waxed_weathered_copper_bars"
-    export function waxedWeatheredCopperBars(): string {
-        return "minecraft:waxed_weathered_copper_bars";
+    export function waxedWeatheredCopperBars(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_weathered_copper_bars");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_calibrated_sculk_sensor
     //% block="item minecraft:calibrated_sculk_sensor"
-    export function calibratedSculkSensor(): string {
-        return "minecraft:calibrated_sculk_sensor";
+    export function calibratedSculkSensor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:calibrated_sculk_sensor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dark_prismarine_slab
     //% block="item minecraft:dark_prismarine_slab"
-    export function darkPrismarineSlab(): string {
-        return "minecraft:dark_prismarine_slab";
+    export function darkPrismarineSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dark_prismarine_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_trapdoor
     //% block="item minecraft:copper_trapdoor"
-    export function copperTrapdoor(): string {
-        return "minecraft:copper_trapdoor";
+    export function copperTrapdoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_trapdoor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stripped_acacia_log
     //% block="item minecraft:stripped_acacia_log"
-    export function strippedAcaciaLog(): string {
-        return "minecraft:stripped_acacia_log";
+    export function strippedAcaciaLog(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stripped_acacia_log");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cinnabar_bricks
     //% block="item minecraft:cinnabar_bricks"
-    export function cinnabarBricks(): string {
-        return "minecraft:cinnabar_bricks";
+    export function cinnabarBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cinnabar_bricks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_warped_fence
     //% block="item minecraft:warped_fence"
-    export function warpedFence(): string {
-        return "minecraft:warped_fence";
+    export function warpedFence(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:warped_fence");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_crafting_table
     //% block="item minecraft:crafting_table"
-    export function craftingTable(): string {
-        return "minecraft:crafting_table";
+    export function craftingTable(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:crafting_table");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sea_pickle
     //% block="item minecraft:sea_pickle"
-    export function seaPickle(): string {
-        return "minecraft:sea_pickle";
+    export function seaPickle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sea_pickle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pale_oak_shelf
     //% block="item minecraft:pale_oak_shelf"
-    export function paleOakShelf(): string {
-        return "minecraft:pale_oak_shelf";
+    export function paleOakShelf(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pale_oak_shelf");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_potent_sulfur
     //% block="item minecraft:potent_sulfur"
-    export function potentSulfur(): string {
-        return "minecraft:potent_sulfur";
+    export function potentSulfur(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:potent_sulfur");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_brown_concrete_powder
     //% block="item minecraft:brown_concrete_powder"
-    export function brownConcretePowder(): string {
-        return "minecraft:brown_concrete_powder";
+    export function brownConcretePowder(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brown_concrete_powder");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mangrove_hanging_sign
     //% block="item minecraft:mangrove_hanging_sign"
-    export function mangroveHangingSign(): string {
-        return "minecraft:mangrove_hanging_sign";
+    export function mangroveHangingSign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mangrove_hanging_sign");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_exposed_copper_trapdoor
     //% block="item minecraft:waxed_exposed_copper_trapdoor"
-    export function waxedExposedCopperTrapdoor(): string {
-        return "minecraft:waxed_exposed_copper_trapdoor";
+    export function waxedExposedCopperTrapdoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_exposed_copper_trapdoor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_brown_candle
     //% block="item minecraft:brown_candle"
-    export function brownCandle(): string {
-        return "minecraft:brown_candle";
+    export function brownCandle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brown_candle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mossy_stone_brick_stairs
     //% block="item minecraft:mossy_stone_brick_stairs"
-    export function mossyStoneBrickStairs(): string {
-        return "minecraft:mossy_stone_brick_stairs";
+    export function mossyStoneBrickStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mossy_stone_brick_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_end_rod
     //% block="item minecraft:end_rod"
-    export function endRod(): string {
-        return "minecraft:end_rod";
+    export function endRod(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:end_rod");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_crimson_stem
     //% block="item minecraft:crimson_stem"
-    export function crimsonStem(): string {
-        return "minecraft:crimson_stem";
+    export function crimsonStem(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:crimson_stem");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_green_concrete
     //% block="item minecraft:green_concrete"
-    export function greenConcrete(): string {
-        return "minecraft:green_concrete";
+    export function greenConcrete(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:green_concrete");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_crimson_slab
     //% block="item minecraft:crimson_slab"
-    export function crimsonSlab(): string {
-        return "minecraft:crimson_slab";
+    export function crimsonSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:crimson_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_warped_hyphae
     //% block="item minecraft:warped_hyphae"
-    export function warpedHyphae(): string {
-        return "minecraft:warped_hyphae";
+    export function warpedHyphae(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:warped_hyphae");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_warped_wart_block
     //% block="item minecraft:warped_wart_block"
-    export function warpedWartBlock(): string {
-        return "minecraft:warped_wart_block";
+    export function warpedWartBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:warped_wart_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_gray_shulker_box
     //% block="item minecraft:light_gray_shulker_box"
-    export function lightGrayShulkerBox(): string {
-        return "minecraft:light_gray_shulker_box";
+    export function lightGrayShulkerBox(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_gray_shulker_box");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_resin_bricks
     //% block="item minecraft:resin_bricks"
-    export function resinBricks(): string {
-        return "minecraft:resin_bricks";
+    export function resinBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:resin_bricks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_tuff_stairs
     //% block="item minecraft:tuff_stairs"
-    export function tuffStairs(): string {
-        return "minecraft:tuff_stairs";
+    export function tuffStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tuff_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_yellow_carpet
     //% block="item minecraft:yellow_carpet"
-    export function yellowCarpet(): string {
-        return "minecraft:yellow_carpet";
+    export function yellowCarpet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:yellow_carpet");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cyan_stained_glass
     //% block="item minecraft:cyan_stained_glass"
-    export function cyanStainedGlass(): string {
-        return "minecraft:cyan_stained_glass";
+    export function cyanStainedGlass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cyan_stained_glass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_black_stained_glass
     //% block="item minecraft:black_stained_glass"
-    export function blackStainedGlass(): string {
-        return "minecraft:black_stained_glass";
+    export function blackStainedGlass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:black_stained_glass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_oxidized_copper_door
     //% block="item minecraft:waxed_oxidized_copper_door"
-    export function waxedOxidizedCopperDoor(): string {
-        return "minecraft:waxed_oxidized_copper_door";
+    export function waxedOxidizedCopperDoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_oxidized_copper_door");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dead_horn_coral
     //% block="item minecraft:dead_horn_coral"
-    export function deadHornCoral(): string {
-        return "minecraft:dead_horn_coral";
+    export function deadHornCoral(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dead_horn_coral");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_grass_block
     //% block="item minecraft:grass_block"
-    export function grassBlock(): string {
-        return "minecraft:grass_block";
+    export function grassBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:grass_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_tripwire_hook
     //% block="item minecraft:tripwire_hook"
-    export function tripwireHook(): string {
-        return "minecraft:tripwire_hook";
+    export function tripwireHook(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tripwire_hook");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dark_oak_pressure_plate
     //% block="item minecraft:dark_oak_pressure_plate"
-    export function darkOakPressurePlate(): string {
-        return "minecraft:dark_oak_pressure_plate";
+    export function darkOakPressurePlate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dark_oak_pressure_plate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_door
     //% block="item minecraft:copper_door"
-    export function copperDoor(): string {
-        return "minecraft:copper_door";
+    export function copperDoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_door");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stripped_birch_log
     //% block="item minecraft:stripped_birch_log"
-    export function strippedBirchLog(): string {
-        return "minecraft:stripped_birch_log";
+    export function strippedBirchLog(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stripped_birch_log");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_tinted_glass
     //% block="item minecraft:tinted_glass"
-    export function tintedGlass(): string {
-        return "minecraft:tinted_glass";
+    export function tintedGlass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tinted_glass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_big_dripleaf
     //% block="item minecraft:big_dripleaf"
-    export function bigDripleaf(): string {
-        return "minecraft:big_dripleaf";
+    export function bigDripleaf(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:big_dripleaf");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cut_sandstone
     //% block="item minecraft:cut_sandstone"
-    export function cutSandstone(): string {
-        return "minecraft:cut_sandstone";
+    export function cutSandstone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cut_sandstone");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_warped_hanging_sign
     //% block="item minecraft:warped_hanging_sign"
-    export function warpedHangingSign(): string {
-        return "minecraft:warped_hanging_sign";
+    export function warpedHangingSign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:warped_hanging_sign");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lime_wool
     //% block="item minecraft:lime_wool"
-    export function limeWool(): string {
-        return "minecraft:lime_wool";
+    export function limeWool(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lime_wool");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_blackstone_slab
     //% block="item minecraft:polished_blackstone_slab"
-    export function polishedBlackstoneSlab(): string {
-        return "minecraft:polished_blackstone_slab";
+    export function polishedBlackstoneSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_blackstone_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_black_shulker_box
     //% block="item minecraft:black_shulker_box"
-    export function blackShulkerBox(): string {
-        return "minecraft:black_shulker_box";
+    export function blackShulkerBox(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:black_shulker_box");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_weathered_copper_golem_statue
     //% block="item minecraft:weathered_copper_golem_statue"
-    export function weatheredCopperGolemStatue(): string {
-        return "minecraft:weathered_copper_golem_statue";
+    export function weatheredCopperGolemStatue(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:weathered_copper_golem_statue");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_jungle_sapling
     //% block="item minecraft:jungle_sapling"
-    export function jungleSapling(): string {
-        return "minecraft:jungle_sapling";
+    export function jungleSapling(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:jungle_sapling");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chiseled_sandstone
     //% block="item minecraft:chiseled_sandstone"
-    export function chiseledSandstone(): string {
-        return "minecraft:chiseled_sandstone";
+    export function chiseledSandstone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chiseled_sandstone");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_barrier
     //% block="item minecraft:barrier"
-    export function barrier(): string {
-        return "minecraft:barrier";
+    export function barrier(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:barrier");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_black_carpet
     //% block="item minecraft:black_carpet"
-    export function blackCarpet(): string {
-        return "minecraft:black_carpet";
+    export function blackCarpet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:black_carpet");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pale_oak_log
     //% block="item minecraft:pale_oak_log"
-    export function paleOakLog(): string {
-        return "minecraft:pale_oak_log";
+    export function paleOakLog(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pale_oak_log");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_weathered_cut_copper_slab
     //% block="item minecraft:weathered_cut_copper_slab"
-    export function weatheredCutCopperSlab(): string {
-        return "minecraft:weathered_cut_copper_slab";
+    export function weatheredCutCopperSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:weathered_cut_copper_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_oxidized_copper_lantern
     //% block="item minecraft:oxidized_copper_lantern"
-    export function oxidizedCopperLantern(): string {
-        return "minecraft:oxidized_copper_lantern";
+    export function oxidizedCopperLantern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oxidized_copper_lantern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dark_oak_leaves
     //% block="item minecraft:dark_oak_leaves"
-    export function darkOakLeaves(): string {
-        return "minecraft:dark_oak_leaves";
+    export function darkOakLeaves(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dark_oak_leaves");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_nether_brick_slab
     //% block="item minecraft:nether_brick_slab"
-    export function netherBrickSlab(): string {
-        return "minecraft:nether_brick_slab";
+    export function netherBrickSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:nether_brick_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_fern
     //% block="item minecraft:fern"
-    export function fern(): string {
-        return "minecraft:fern";
+    export function fern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:fern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_torchflower
     //% block="item minecraft:torchflower"
-    export function torchflower(): string {
-        return "minecraft:torchflower";
+    export function torchflower(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:torchflower");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_short_dry_grass
     //% block="item minecraft:short_dry_grass"
-    export function shortDryGrass(): string {
-        return "minecraft:short_dry_grass";
+    export function shortDryGrass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:short_dry_grass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_infested_stone
     //% block="item minecraft:infested_stone"
-    export function infestedStone(): string {
-        return "minecraft:infested_stone";
+    export function infestedStone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:infested_stone");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pale_hanging_moss
     //% block="item minecraft:pale_hanging_moss"
-    export function paleHangingMoss(): string {
-        return "minecraft:pale_hanging_moss";
+    export function paleHangingMoss(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pale_hanging_moss");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pale_moss_carpet
     //% block="item minecraft:pale_moss_carpet"
-    export function paleMossCarpet(): string {
-        return "minecraft:pale_moss_carpet";
+    export function paleMossCarpet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pale_moss_carpet");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_end_portal_frame
     //% block="item minecraft:end_portal_frame"
-    export function endPortalFrame(): string {
-        return "minecraft:end_portal_frame";
+    export function endPortalFrame(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:end_portal_frame");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bamboo_pressure_plate
     //% block="item minecraft:bamboo_pressure_plate"
-    export function bambooPressurePlate(): string {
-        return "minecraft:bamboo_pressure_plate";
+    export function bambooPressurePlate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bamboo_pressure_plate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_prismarine
     //% block="item minecraft:prismarine"
-    export function prismarine(): string {
-        return "minecraft:prismarine";
+    export function prismarine(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:prismarine");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_exposed_copper_trapdoor
     //% block="item minecraft:exposed_copper_trapdoor"
-    export function exposedCopperTrapdoor(): string {
-        return "minecraft:exposed_copper_trapdoor";
+    export function exposedCopperTrapdoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:exposed_copper_trapdoor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mushroom_stem
     //% block="item minecraft:mushroom_stem"
-    export function mushroomStem(): string {
-        return "minecraft:mushroom_stem";
+    export function mushroomStem(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mushroom_stem");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_black_terracotta
     //% block="item minecraft:black_terracotta"
-    export function blackTerracotta(): string {
-        return "minecraft:black_terracotta";
+    export function blackTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:black_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_resin_brick_stairs
     //% block="item minecraft:resin_brick_stairs"
-    export function resinBrickStairs(): string {
-        return "minecraft:resin_brick_stairs";
+    export function resinBrickStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:resin_brick_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cinnabar_brick_stairs
     //% block="item minecraft:cinnabar_brick_stairs"
-    export function cinnabarBrickStairs(): string {
-        return "minecraft:cinnabar_brick_stairs";
+    export function cinnabarBrickStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cinnabar_brick_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_deepslate_gold_ore
     //% block="item minecraft:deepslate_gold_ore"
-    export function deepslateGoldOre(): string {
-        return "minecraft:deepslate_gold_ore";
+    export function deepslateGoldOre(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:deepslate_gold_ore");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_ancient_debris
     //% block="item minecraft:ancient_debris"
-    export function ancientDebris(): string {
-        return "minecraft:ancient_debris";
+    export function ancientDebris(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:ancient_debris");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_vault
     //% block="item minecraft:vault"
-    export function vault(): string {
-        return "minecraft:vault";
+    export function vault(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:vault");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_beehive
     //% block="item minecraft:beehive"
-    export function beehive(): string {
-        return "minecraft:beehive";
+    export function beehive(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:beehive");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_jungle_door
     //% block="item minecraft:jungle_door"
-    export function jungleDoor(): string {
-        return "minecraft:jungle_door";
+    export function jungleDoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:jungle_door");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_glass
     //% block="item minecraft:glass"
-    export function glass(): string {
-        return "minecraft:glass";
+    export function glass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:glass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wither_rose
     //% block="item minecraft:wither_rose"
-    export function witherRose(): string {
-        return "minecraft:wither_rose";
+    export function witherRose(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wither_rose");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_exposed_cut_copper
     //% block="item minecraft:exposed_cut_copper"
-    export function exposedCutCopper(): string {
-        return "minecraft:exposed_cut_copper";
+    export function exposedCutCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:exposed_cut_copper");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_weathered_cut_copper_stairs
     //% block="item minecraft:waxed_weathered_cut_copper_stairs"
-    export function waxedWeatheredCutCopperStairs(): string {
-        return "minecraft:waxed_weathered_cut_copper_stairs";
+    export function waxedWeatheredCutCopperStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_weathered_cut_copper_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mangrove_roots
     //% block="item minecraft:mangrove_roots"
-    export function mangroveRoots(): string {
-        return "minecraft:mangrove_roots";
+    export function mangroveRoots(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mangrove_roots");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_yellow_candle
     //% block="item minecraft:yellow_candle"
-    export function yellowCandle(): string {
-        return "minecraft:yellow_candle";
+    export function yellowCandle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:yellow_candle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_acacia_stairs
     //% block="item minecraft:acacia_stairs"
-    export function acaciaStairs(): string {
-        return "minecraft:acacia_stairs";
+    export function acaciaStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:acacia_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bamboo_mosaic_stairs
     //% block="item minecraft:bamboo_mosaic_stairs"
-    export function bambooMosaicStairs(): string {
-        return "minecraft:bamboo_mosaic_stairs";
+    export function bambooMosaicStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bamboo_mosaic_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_brown_concrete
     //% block="item minecraft:brown_concrete"
-    export function brownConcrete(): string {
-        return "minecraft:brown_concrete";
+    export function brownConcrete(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brown_concrete");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cherry_slab
     //% block="item minecraft:cherry_slab"
-    export function cherrySlab(): string {
-        return "minecraft:cherry_slab";
+    export function cherrySlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cherry_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chiseled_resin_bricks
     //% block="item minecraft:chiseled_resin_bricks"
-    export function chiseledResinBricks(): string {
-        return "minecraft:chiseled_resin_bricks";
+    export function chiseledResinBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chiseled_resin_bricks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bubble_coral
     //% block="item minecraft:bubble_coral"
-    export function bubbleCoral(): string {
-        return "minecraft:bubble_coral";
+    export function bubbleCoral(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bubble_coral");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_orange_shulker_box
     //% block="item minecraft:orange_shulker_box"
-    export function orangeShulkerBox(): string {
-        return "minecraft:orange_shulker_box";
+    export function orangeShulkerBox(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:orange_shulker_box");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_gray_candle
     //% block="item minecraft:light_gray_candle"
-    export function lightGrayCandle(): string {
-        return "minecraft:light_gray_candle";
+    export function lightGrayCandle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_gray_candle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_blackstone_pressure_plate
     //% block="item minecraft:polished_blackstone_pressure_plate"
-    export function polishedBlackstonePressurePlate(): string {
-        return "minecraft:polished_blackstone_pressure_plate";
+    export function polishedBlackstonePressurePlate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_blackstone_pressure_plate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_granite_slab
     //% block="item minecraft:polished_granite_slab"
-    export function polishedGraniteSlab(): string {
-        return "minecraft:polished_granite_slab";
+    export function polishedGraniteSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_granite_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cinnabar
     //% block="item minecraft:cinnabar"
-    export function cinnabar(): string {
-        return "minecraft:cinnabar";
+    export function cinnabar(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cinnabar");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_tuff_brick_stairs
     //% block="item minecraft:tuff_brick_stairs"
-    export function tuffBrickStairs(): string {
-        return "minecraft:tuff_brick_stairs";
+    export function tuffBrickStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tuff_brick_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_blue_shulker_box
     //% block="item minecraft:blue_shulker_box"
-    export function blueShulkerBox(): string {
-        return "minecraft:blue_shulker_box";
+    export function blueShulkerBox(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blue_shulker_box");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_exposed_copper_bulb
     //% block="item minecraft:exposed_copper_bulb"
-    export function exposedCopperBulb(): string {
-        return "minecraft:exposed_copper_bulb";
+    export function exposedCopperBulb(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:exposed_copper_bulb");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_exposed_copper_bars
     //% block="item minecraft:exposed_copper_bars"
-    export function exposedCopperBars(): string {
-        return "minecraft:exposed_copper_bars";
+    export function exposedCopperBars(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:exposed_copper_bars");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dead_fire_coral
     //% block="item minecraft:dead_fire_coral"
-    export function deadFireCoral(): string {
-        return "minecraft:dead_fire_coral";
+    export function deadFireCoral(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dead_fire_coral");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stone_brick_slab
     //% block="item minecraft:stone_brick_slab"
-    export function stoneBrickSlab(): string {
-        return "minecraft:stone_brick_slab";
+    export function stoneBrickSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stone_brick_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_crimson_stairs
     //% block="item minecraft:crimson_stairs"
-    export function crimsonStairs(): string {
-        return "minecraft:crimson_stairs";
+    export function crimsonStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:crimson_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_oxidized_copper_bars
     //% block="item minecraft:waxed_oxidized_copper_bars"
-    export function waxedOxidizedCopperBars(): string {
-        return "minecraft:waxed_oxidized_copper_bars";
+    export function waxedOxidizedCopperBars(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_oxidized_copper_bars");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stripped_spruce_log
     //% block="item minecraft:stripped_spruce_log"
-    export function strippedSpruceLog(): string {
-        return "minecraft:stripped_spruce_log";
+    export function strippedSpruceLog(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stripped_spruce_log");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_oxidized_copper_bulb
     //% block="item minecraft:waxed_oxidized_copper_bulb"
-    export function waxedOxidizedCopperBulb(): string {
-        return "minecraft:waxed_oxidized_copper_bulb";
+    export function waxedOxidizedCopperBulb(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_oxidized_copper_bulb");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_azalea_leaves_flowered
     //% block="item minecraft:azalea_leaves_flowered"
-    export function azaleaLeavesFlowered(): string {
-        return "minecraft:azalea_leaves_flowered";
+    export function azaleaLeavesFlowered(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:azalea_leaves_flowered");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chiseled_cinnabar
     //% block="item minecraft:chiseled_cinnabar"
-    export function chiseledCinnabar(): string {
-        return "minecraft:chiseled_cinnabar";
+    export function chiseledCinnabar(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chiseled_cinnabar");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_warped_nylium
     //% block="item minecraft:warped_nylium"
-    export function warpedNylium(): string {
-        return "minecraft:warped_nylium";
+    export function warpedNylium(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:warped_nylium");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_deepslate_emerald_ore
     //% block="item minecraft:deepslate_emerald_ore"
-    export function deepslateEmeraldOre(): string {
-        return "minecraft:deepslate_emerald_ore";
+    export function deepslateEmeraldOre(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:deepslate_emerald_ore");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_acacia_sapling
     //% block="item minecraft:acacia_sapling"
-    export function acaciaSapling(): string {
-        return "minecraft:acacia_sapling";
+    export function acaciaSapling(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:acacia_sapling");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_quartz_bricks
     //% block="item minecraft:quartz_bricks"
-    export function quartzBricks(): string {
-        return "minecraft:quartz_bricks";
+    export function quartzBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:quartz_bricks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_andesite_slab
     //% block="item minecraft:andesite_slab"
-    export function andesiteSlab(): string {
-        return "minecraft:andesite_slab";
+    export function andesiteSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:andesite_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lime_candle
     //% block="item minecraft:lime_candle"
-    export function limeCandle(): string {
-        return "minecraft:lime_candle";
+    export function limeCandle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lime_candle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_structure_block
     //% block="item minecraft:structure_block"
-    export function structureBlock(): string {
-        return "minecraft:structure_block";
+    export function structureBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:structure_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_end_brick_stairs
     //% block="item minecraft:end_brick_stairs"
-    export function endBrickStairs(): string {
-        return "minecraft:end_brick_stairs";
+    export function endBrickStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:end_brick_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_purple_terracotta
     //% block="item minecraft:purple_terracotta"
-    export function purpleTerracotta(): string {
-        return "minecraft:purple_terracotta";
+    export function purpleTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:purple_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_target
     //% block="item minecraft:target"
-    export function target(): string {
-        return "minecraft:target";
+    export function target(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:target");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wooden_button
     //% block="item minecraft:wooden_button"
-    export function woodenButton(): string {
-        return "minecraft:wooden_button";
+    export function woodenButton(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wooden_button");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mangrove_door
     //% block="item minecraft:mangrove_door"
-    export function mangroveDoor(): string {
-        return "minecraft:mangrove_door";
+    export function mangroveDoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mangrove_door");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_weathered_copper_door
     //% block="item minecraft:weathered_copper_door"
-    export function weatheredCopperDoor(): string {
-        return "minecraft:weathered_copper_door";
+    export function weatheredCopperDoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:weathered_copper_door");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pearlescent_froglight
     //% block="item minecraft:pearlescent_froglight"
-    export function pearlescentFroglight(): string {
-        return "minecraft:pearlescent_froglight";
+    export function pearlescentFroglight(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pearlescent_froglight");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bamboo_button
     //% block="item minecraft:bamboo_button"
-    export function bambooButton(): string {
-        return "minecraft:bamboo_button";
+    export function bambooButton(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bamboo_button");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_tall_grass
     //% block="item minecraft:tall_grass"
-    export function tallGrass(): string {
-        return "minecraft:tall_grass";
+    export function tallGrass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tall_grass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_weathered_copper_lantern
     //% block="item minecraft:weathered_copper_lantern"
-    export function weatheredCopperLantern(): string {
-        return "minecraft:weathered_copper_lantern";
+    export function weatheredCopperLantern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:weathered_copper_lantern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_block_12
     //% block="item minecraft:light_block_12"
-    export function lightBlock12(): string {
-        return "minecraft:light_block_12";
+    export function lightBlock12(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_block_12");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_block_13
     //% block="item minecraft:light_block_13"
-    export function lightBlock13(): string {
-        return "minecraft:light_block_13";
+    export function lightBlock13(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_block_13");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_block_10
     //% block="item minecraft:light_block_10"
-    export function lightBlock10(): string {
-        return "minecraft:light_block_10";
+    export function lightBlock10(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_block_10");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_block_11
     //% block="item minecraft:light_block_11"
-    export function lightBlock11(): string {
-        return "minecraft:light_block_11";
+    export function lightBlock11(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_block_11");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_block_14
     //% block="item minecraft:light_block_14"
-    export function lightBlock14(): string {
-        return "minecraft:light_block_14";
+    export function lightBlock14(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_block_14");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_block_15
     //% block="item minecraft:light_block_15"
-    export function lightBlock15(): string {
-        return "minecraft:light_block_15";
+    export function lightBlock15(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_block_15");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_nether_sprouts
     //% block="item minecraft:nether_sprouts"
-    export function netherSprouts(): string {
-        return "minecraft:nether_sprouts";
+    export function netherSprouts(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:nether_sprouts");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cyan_stained_glass_pane
     //% block="item minecraft:cyan_stained_glass_pane"
-    export function cyanStainedGlassPane(): string {
-        return "minecraft:cyan_stained_glass_pane";
+    export function cyanStainedGlassPane(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cyan_stained_glass_pane");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dead_horn_coral_block
     //% block="item minecraft:dead_horn_coral_block"
-    export function deadHornCoralBlock(): string {
-        return "minecraft:dead_horn_coral_block";
+    export function deadHornCoralBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dead_horn_coral_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_verdant_froglight
     //% block="item minecraft:verdant_froglight"
-    export function verdantFroglight(): string {
-        return "minecraft:verdant_froglight";
+    export function verdantFroglight(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:verdant_froglight");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_resin_block
     //% block="item minecraft:resin_block"
-    export function resinBlock(): string {
-        return "minecraft:resin_block";
+    export function resinBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:resin_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_warped_slab
     //% block="item minecraft:warped_slab"
-    export function warpedSlab(): string {
-        return "minecraft:warped_slab";
+    export function warpedSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:warped_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_warped_stem
     //% block="item minecraft:warped_stem"
-    export function warpedStem(): string {
-        return "minecraft:warped_stem";
+    export function warpedStem(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:warped_stem");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_horn_coral_fan
     //% block="item minecraft:horn_coral_fan"
-    export function hornCoralFan(): string {
-        return "minecraft:horn_coral_fan";
+    export function hornCoralFan(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:horn_coral_fan");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_green_shulker_box
     //% block="item minecraft:green_shulker_box"
-    export function greenShulkerBox(): string {
-        return "minecraft:green_shulker_box";
+    export function greenShulkerBox(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:green_shulker_box");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_large_fern
     //% block="item minecraft:large_fern"
-    export function largeFern(): string {
-        return "minecraft:large_fern";
+    export function largeFern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:large_fern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stripped_crimson_hyphae
     //% block="item minecraft:stripped_crimson_hyphae"
-    export function strippedCrimsonHyphae(): string {
-        return "minecraft:stripped_crimson_hyphae";
+    export function strippedCrimsonHyphae(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stripped_crimson_hyphae");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lever
     //% block="item minecraft:lever"
-    export function lever(): string {
-        return "minecraft:lever";
+    export function lever(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lever");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cinnabar_stairs
     //% block="item minecraft:cinnabar_stairs"
-    export function cinnabarStairs(): string {
-        return "minecraft:cinnabar_stairs";
+    export function cinnabarStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cinnabar_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bamboo_slab
     //% block="item minecraft:bamboo_slab"
-    export function bambooSlab(): string {
-        return "minecraft:bamboo_slab";
+    export function bambooSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bamboo_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_brick_stairs
     //% block="item minecraft:brick_stairs"
-    export function brickStairs(): string {
-        return "minecraft:brick_stairs";
+    export function brickStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brick_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_weathered_copper_trapdoor
     //% block="item minecraft:weathered_copper_trapdoor"
-    export function weatheredCopperTrapdoor(): string {
-        return "minecraft:weathered_copper_trapdoor";
+    export function weatheredCopperTrapdoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:weathered_copper_trapdoor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_smooth_red_sandstone_slab
     //% block="item minecraft:smooth_red_sandstone_slab"
-    export function smoothRedSandstoneSlab(): string {
-        return "minecraft:smooth_red_sandstone_slab";
+    export function smoothRedSandstoneSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:smooth_red_sandstone_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_moss_block
     //% block="item minecraft:moss_block"
-    export function mossBlock(): string {
-        return "minecraft:moss_block";
+    export function mossBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:moss_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_purple_concrete_powder
     //% block="item minecraft:purple_concrete_powder"
-    export function purpleConcretePowder(): string {
-        return "minecraft:purple_concrete_powder";
+    export function purpleConcretePowder(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:purple_concrete_powder");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pink_glazed_terracotta
     //% block="item minecraft:pink_glazed_terracotta"
-    export function pinkGlazedTerracotta(): string {
-        return "minecraft:pink_glazed_terracotta";
+    export function pinkGlazedTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pink_glazed_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_short_grass
     //% block="item minecraft:short_grass"
-    export function shortGrass(): string {
-        return "minecraft:short_grass";
+    export function shortGrass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:short_grass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_weathered_cut_copper_slab
     //% block="item minecraft:waxed_weathered_cut_copper_slab"
-    export function waxedWeatheredCutCopperSlab(): string {
-        return "minecraft:waxed_weathered_cut_copper_slab";
+    export function waxedWeatheredCutCopperSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_weathered_cut_copper_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_fire_coral_fan
     //% block="item minecraft:fire_coral_fan"
-    export function fireCoralFan(): string {
-        return "minecraft:fire_coral_fan";
+    export function fireCoralFan(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:fire_coral_fan");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_spruce_trapdoor
     //% block="item minecraft:spruce_trapdoor"
-    export function spruceTrapdoor(): string {
-        return "minecraft:spruce_trapdoor";
+    export function spruceTrapdoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spruce_trapdoor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chain_command_block
     //% block="item minecraft:chain_command_block"
-    export function chainCommandBlock(): string {
-        return "minecraft:chain_command_block";
+    export function chainCommandBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chain_command_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_red_sandstone
     //% block="item minecraft:red_sandstone"
-    export function redSandstone(): string {
-        return "minecraft:red_sandstone";
+    export function redSandstone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_sandstone");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_red_nether_brick_slab
     //% block="item minecraft:red_nether_brick_slab"
-    export function redNetherBrickSlab(): string {
-        return "minecraft:red_nether_brick_slab";
+    export function redNetherBrickSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_nether_brick_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_exposed_chiseled_copper
     //% block="item minecraft:exposed_chiseled_copper"
-    export function exposedChiseledCopper(): string {
-        return "minecraft:exposed_chiseled_copper";
+    export function exposedChiseledCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:exposed_chiseled_copper");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_spruce_fence_gate
     //% block="item minecraft:spruce_fence_gate"
-    export function spruceFenceGate(): string {
-        return "minecraft:spruce_fence_gate";
+    export function spruceFenceGate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spruce_fence_gate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_exposed_cut_copper_slab
     //% block="item minecraft:exposed_cut_copper_slab"
-    export function exposedCutCopperSlab(): string {
-        return "minecraft:exposed_cut_copper_slab";
+    export function exposedCutCopperSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:exposed_cut_copper_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_red_nether_brick_stairs
     //% block="item minecraft:red_nether_brick_stairs"
-    export function redNetherBrickStairs(): string {
-        return "minecraft:red_nether_brick_stairs";
+    export function redNetherBrickStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_nether_brick_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_green_glazed_terracotta
     //% block="item minecraft:green_glazed_terracotta"
-    export function greenGlazedTerracotta(): string {
-        return "minecraft:green_glazed_terracotta";
+    export function greenGlazedTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:green_glazed_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_jungle_planks
     //% block="item minecraft:jungle_planks"
-    export function junglePlanks(): string {
-        return "minecraft:jungle_planks";
+    export function junglePlanks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:jungle_planks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_deepslate_redstone_ore
     //% block="item minecraft:deepslate_redstone_ore"
-    export function deepslateRedstoneOre(): string {
-        return "minecraft:deepslate_redstone_ore";
+    export function deepslateRedstoneOre(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:deepslate_redstone_ore");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dead_brain_coral_block
     //% block="item minecraft:dead_brain_coral_block"
-    export function deadBrainCoralBlock(): string {
-        return "minecraft:dead_brain_coral_block";
+    export function deadBrainCoralBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dead_brain_coral_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mangrove_fence
     //% block="item minecraft:mangrove_fence"
-    export function mangroveFence(): string {
-        return "minecraft:mangrove_fence";
+    export function mangroveFence(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mangrove_fence");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_oxidized_copper_grate
     //% block="item minecraft:oxidized_copper_grate"
-    export function oxidizedCopperGrate(): string {
-        return "minecraft:oxidized_copper_grate";
+    export function oxidizedCopperGrate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oxidized_copper_grate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_anvil
     //% block="item minecraft:anvil"
-    export function anvil(): string {
-        return "minecraft:anvil";
+    export function anvil(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:anvil");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_birch_trapdoor
     //% block="item minecraft:birch_trapdoor"
-    export function birchTrapdoor(): string {
-        return "minecraft:birch_trapdoor";
+    export function birchTrapdoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:birch_trapdoor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_tuff_bricks
     //% block="item minecraft:tuff_bricks"
-    export function tuffBricks(): string {
-        return "minecraft:tuff_bricks";
+    export function tuffBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tuff_bricks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mangrove_leaves
     //% block="item minecraft:mangrove_leaves"
-    export function mangroveLeaves(): string {
-        return "minecraft:mangrove_leaves";
+    export function mangroveLeaves(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mangrove_leaves");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cobbled_deepslate
     //% block="item minecraft:cobbled_deepslate"
-    export function cobbledDeepslate(): string {
-        return "minecraft:cobbled_deepslate";
+    export function cobbledDeepslate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cobbled_deepslate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_quartz_slab
     //% block="item minecraft:quartz_slab"
-    export function quartzSlab(): string {
-        return "minecraft:quartz_slab";
+    export function quartzSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:quartz_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bookshelf
     //% block="item minecraft:bookshelf"
-    export function bookshelf(): string {
-        return "minecraft:bookshelf";
+    export function bookshelf(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bookshelf");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mud
     //% block="item minecraft:mud"
-    export function mud(): string {
-        return "minecraft:mud";
+    export function mud(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mud");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lit_pumpkin
     //% block="item minecraft:lit_pumpkin"
-    export function litPumpkin(): string {
-        return "minecraft:lit_pumpkin";
+    export function litPumpkin(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lit_pumpkin");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_ice
     //% block="item minecraft:ice"
-    export function ice(): string {
-        return "minecraft:ice";
+    export function ice(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:ice");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_air
     //% block="item minecraft:air"
-    export function air(): string {
-        return "minecraft:air";
+    export function air(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:air");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bed
     //% block="item minecraft:bed"
-    export function bed(): string {
-        return "minecraft:bed";
+    export function bed(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bed");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_black_concrete
     //% block="item minecraft:black_concrete"
-    export function blackConcrete(): string {
-        return "minecraft:black_concrete";
+    export function blackConcrete(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:black_concrete");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_tnt
     //% block="item minecraft:tnt"
-    export function tnt(): string {
-        return "minecraft:tnt";
+    export function tnt(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tnt");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_web
     //% block="item minecraft:web"
-    export function web(): string {
-        return "minecraft:web";
+    export function web(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:web");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dead_tube_coral_fan
     //% block="item minecraft:dead_tube_coral_fan"
-    export function deadTubeCoralFan(): string {
-        return "minecraft:dead_tube_coral_fan";
+    export function deadTubeCoralFan(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dead_tube_coral_fan");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_oxidized_copper_chest
     //% block="item minecraft:oxidized_copper_chest"
-    export function oxidizedCopperChest(): string {
-        return "minecraft:oxidized_copper_chest";
+    export function oxidizedCopperChest(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oxidized_copper_chest");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_oxidized_copper_chain
     //% block="item minecraft:oxidized_copper_chain"
-    export function oxidizedCopperChain(): string {
-        return "minecraft:oxidized_copper_chain";
+    export function oxidizedCopperChain(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oxidized_copper_chain");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_diorite_stairs
     //% block="item minecraft:polished_diorite_stairs"
-    export function polishedDioriteStairs(): string {
-        return "minecraft:polished_diorite_stairs";
+    export function polishedDioriteStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_diorite_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_blue_concrete_powder
     //% block="item minecraft:blue_concrete_powder"
-    export function blueConcretePowder(): string {
-        return "minecraft:blue_concrete_powder";
+    export function blueConcretePowder(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blue_concrete_powder");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_orange_concrete
     //% block="item minecraft:orange_concrete"
-    export function orangeConcrete(): string {
-        return "minecraft:orange_concrete";
+    export function orangeConcrete(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:orange_concrete");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_crying_obsidian
     //% block="item minecraft:crying_obsidian"
-    export function cryingObsidian(): string {
-        return "minecraft:crying_obsidian";
+    export function cryingObsidian(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:crying_obsidian");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lime_carpet
     //% block="item minecraft:lime_carpet"
-    export function limeCarpet(): string {
-        return "minecraft:lime_carpet";
+    export function limeCarpet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lime_carpet");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_closed_eyeblossom
     //% block="item minecraft:closed_eyeblossom"
-    export function closedEyeblossom(): string {
-        return "minecraft:closed_eyeblossom";
+    export function closedEyeblossom(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:closed_eyeblossom");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dead_fire_coral_fan
     //% block="item minecraft:dead_fire_coral_fan"
-    export function deadFireCoralFan(): string {
-        return "minecraft:dead_fire_coral_fan";
+    export function deadFireCoralFan(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dead_fire_coral_fan");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_decorated_pot
     //% block="item minecraft:decorated_pot"
-    export function decoratedPot(): string {
-        return "minecraft:decorated_pot";
+    export function decoratedPot(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:decorated_pot");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_enchanting_table
     //% block="item minecraft:enchanting_table"
-    export function enchantingTable(): string {
-        return "minecraft:enchanting_table";
+    export function enchantingTable(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:enchanting_table");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_blackstone_wall
     //% block="item minecraft:polished_blackstone_wall"
-    export function polishedBlackstoneWall(): string {
-        return "minecraft:polished_blackstone_wall";
+    export function polishedBlackstoneWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_blackstone_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_orange_tulip
     //% block="item minecraft:orange_tulip"
-    export function orangeTulip(): string {
-        return "minecraft:orange_tulip";
+    export function orangeTulip(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:orange_tulip");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_brown_shulker_box
     //% block="item minecraft:brown_shulker_box"
-    export function brownShulkerBox(): string {
-        return "minecraft:brown_shulker_box";
+    export function brownShulkerBox(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brown_shulker_box");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_azalea
     //% block="item minecraft:azalea"
-    export function azalea(): string {
-        return "minecraft:azalea";
+    export function azalea(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:azalea");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mud_bricks
     //% block="item minecraft:mud_bricks"
-    export function mudBricks(): string {
-        return "minecraft:mud_bricks";
+    export function mudBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mud_bricks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_acacia_wood
     //% block="item minecraft:acacia_wood"
-    export function acaciaWood(): string {
-        return "minecraft:acacia_wood";
+    export function acaciaWood(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:acacia_wood");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sulfur_brick_wall
     //% block="item minecraft:sulfur_brick_wall"
-    export function sulfurBrickWall(): string {
-        return "minecraft:sulfur_brick_wall";
+    export function sulfurBrickWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sulfur_brick_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_gray_stained_glass_pane
     //% block="item minecraft:gray_stained_glass_pane"
-    export function grayStainedGlassPane(): string {
-        return "minecraft:gray_stained_glass_pane";
+    export function grayStainedGlassPane(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:gray_stained_glass_pane");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_hopper
     //% block="item minecraft:hopper"
-    export function hopper(): string {
-        return "minecraft:hopper";
+    export function hopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:hopper");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bell
     //% block="item minecraft:bell"
-    export function bell(): string {
-        return "minecraft:bell";
+    export function bell(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bell");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lectern
     //% block="item minecraft:lectern"
-    export function lectern(): string {
-        return "minecraft:lectern";
+    export function lectern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lectern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bush
     //% block="item minecraft:bush"
-    export function bush(): string {
-        return "minecraft:bush";
+    export function bush(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bush");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stripped_crimson_stem
     //% block="item minecraft:stripped_crimson_stem"
-    export function strippedCrimsonStem(): string {
-        return "minecraft:stripped_crimson_stem";
+    export function strippedCrimsonStem(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stripped_crimson_stem");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_blue_shulker_box
     //% block="item minecraft:light_blue_shulker_box"
-    export function lightBlueShulkerBox(): string {
-        return "minecraft:light_blue_shulker_box";
+    export function lightBlueShulkerBox(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_blue_shulker_box");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_jungle_stairs
     //% block="item minecraft:jungle_stairs"
-    export function jungleStairs(): string {
-        return "minecraft:jungle_stairs";
+    export function jungleStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:jungle_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mangrove_propagule
     //% block="item minecraft:mangrove_propagule"
-    export function mangrovePropagule(): string {
-        return "minecraft:mangrove_propagule";
+    export function mangrovePropagule(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mangrove_propagule");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cactus
     //% block="item minecraft:cactus"
-    export function cactus(): string {
-        return "minecraft:cactus";
+    export function cactus(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cactus");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_budding_amethyst
     //% block="item minecraft:budding_amethyst"
-    export function buddingAmethyst(): string {
-        return "minecraft:budding_amethyst";
+    export function buddingAmethyst(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:budding_amethyst");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sniffer_egg
     //% block="item minecraft:sniffer_egg"
-    export function snifferEgg(): string {
-        return "minecraft:sniffer_egg";
+    export function snifferEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sniffer_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_birch_stairs
     //% block="item minecraft:birch_stairs"
-    export function birchStairs(): string {
-        return "minecraft:birch_stairs";
+    export function birchStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:birch_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_nether_brick_wall
     //% block="item minecraft:nether_brick_wall"
-    export function netherBrickWall(): string {
-        return "minecraft:nether_brick_wall";
+    export function netherBrickWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:nether_brick_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_purple_glazed_terracotta
     //% block="item minecraft:purple_glazed_terracotta"
-    export function purpleGlazedTerracotta(): string {
-        return "minecraft:purple_glazed_terracotta";
+    export function purpleGlazedTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:purple_glazed_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_green_concrete_powder
     //% block="item minecraft:green_concrete_powder"
-    export function greenConcretePowder(): string {
-        return "minecraft:green_concrete_powder";
+    export function greenConcretePowder(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:green_concrete_powder");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bedrock
     //% block="item minecraft:bedrock"
-    export function bedrock(): string {
-        return "minecraft:bedrock";
+    export function bedrock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bedrock");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_spruce_slab
     //% block="item minecraft:spruce_slab"
-    export function spruceSlab(): string {
-        return "minecraft:spruce_slab";
+    export function spruceSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spruce_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_blackstone_stairs
     //% block="item minecraft:blackstone_stairs"
-    export function blackstoneStairs(): string {
-        return "minecraft:blackstone_stairs";
+    export function blackstoneStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blackstone_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_blue_ice
     //% block="item minecraft:blue_ice"
-    export function blueIce(): string {
-        return "minecraft:blue_ice";
+    export function blueIce(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blue_ice");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cyan_shulker_box
     //% block="item minecraft:cyan_shulker_box"
-    export function cyanShulkerBox(): string {
-        return "minecraft:cyan_shulker_box";
+    export function cyanShulkerBox(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cyan_shulker_box");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_andesite_stairs
     //% block="item minecraft:polished_andesite_stairs"
-    export function polishedAndesiteStairs(): string {
-        return "minecraft:polished_andesite_stairs";
+    export function polishedAndesiteStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_andesite_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_piglin_head
     //% block="item minecraft:piglin_head"
-    export function piglinHead(): string {
-        return "minecraft:piglin_head";
+    export function piglinHead(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:piglin_head");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sculk
     //% block="item minecraft:sculk"
-    export function sculk(): string {
-        return "minecraft:sculk";
+    export function sculk(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sculk");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_netherrack
     //% block="item minecraft:netherrack"
-    export function netherrack(): string {
-        return "minecraft:netherrack";
+    export function netherrack(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:netherrack");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_purple_candle
     //% block="item minecraft:purple_candle"
-    export function purpleCandle(): string {
-        return "minecraft:purple_candle";
+    export function purpleCandle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:purple_candle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mangrove_button
     //% block="item minecraft:mangrove_button"
-    export function mangroveButton(): string {
-        return "minecraft:mangrove_button";
+    export function mangroveButton(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mangrove_button");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_orange_carpet
     //% block="item minecraft:orange_carpet"
-    export function orangeCarpet(): string {
-        return "minecraft:orange_carpet";
+    export function orangeCarpet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:orange_carpet");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dead_horn_coral_fan
     //% block="item minecraft:dead_horn_coral_fan"
-    export function deadHornCoralFan(): string {
-        return "minecraft:dead_horn_coral_fan";
+    export function deadHornCoralFan(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dead_horn_coral_fan");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lantern
     //% block="item minecraft:lantern"
-    export function lantern(): string {
-        return "minecraft:lantern";
+    export function lantern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lantern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_crimson_shelf
     //% block="item minecraft:crimson_shelf"
-    export function crimsonShelf(): string {
-        return "minecraft:crimson_shelf";
+    export function crimsonShelf(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:crimson_shelf");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_weathered_copper_door
     //% block="item minecraft:waxed_weathered_copper_door"
-    export function waxedWeatheredCopperDoor(): string {
-        return "minecraft:waxed_weathered_copper_door";
+    export function waxedWeatheredCopperDoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_weathered_copper_door");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_red_stained_glass_pane
     //% block="item minecraft:red_stained_glass_pane"
-    export function redStainedGlassPane(): string {
-        return "minecraft:red_stained_glass_pane";
+    export function redStainedGlassPane(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_stained_glass_pane");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_oxidized_lightning_rod
     //% block="item minecraft:waxed_oxidized_lightning_rod"
-    export function waxedOxidizedLightningRod(): string {
-        return "minecraft:waxed_oxidized_lightning_rod";
+    export function waxedOxidizedLightningRod(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_oxidized_lightning_rod");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cinnabar_brick_slab
     //% block="item minecraft:cinnabar_brick_slab"
-    export function cinnabarBrickSlab(): string {
-        return "minecraft:cinnabar_brick_slab";
+    export function cinnabarBrickSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cinnabar_brick_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pink_stained_glass_pane
     //% block="item minecraft:pink_stained_glass_pane"
-    export function pinkStainedGlassPane(): string {
-        return "minecraft:pink_stained_glass_pane";
+    export function pinkStainedGlassPane(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pink_stained_glass_pane");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_blue_wool
     //% block="item minecraft:light_blue_wool"
-    export function lightBlueWool(): string {
-        return "minecraft:light_blue_wool";
+    export function lightBlueWool(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_blue_wool");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_allow
     //% block="item minecraft:allow"
-    export function allow(): string {
-        return "minecraft:allow";
+    export function allow(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:allow");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dark_oak_fence
     //% block="item minecraft:dark_oak_fence"
-    export function darkOakFence(): string {
-        return "minecraft:dark_oak_fence";
+    export function darkOakFence(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dark_oak_fence");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_birch_door
     //% block="item minecraft:birch_door"
-    export function birchDoor(): string {
-        return "minecraft:birch_door";
+    export function birchDoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:birch_door");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cherry_shelf
     //% block="item minecraft:cherry_shelf"
-    export function cherryShelf(): string {
-        return "minecraft:cherry_shelf";
+    export function cherryShelf(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cherry_shelf");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chest
     //% block="item minecraft:chest"
-    export function chest(): string {
-        return "minecraft:chest";
+    export function chest(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chest");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cherry_wood
     //% block="item minecraft:cherry_wood"
-    export function cherryWood(): string {
-        return "minecraft:cherry_wood";
+    export function cherryWood(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cherry_wood");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_clay
     //% block="item minecraft:clay"
-    export function clay(): string {
-        return "minecraft:clay";
+    export function clay(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:clay");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cherry_stairs
     //% block="item minecraft:cherry_stairs"
-    export function cherryStairs(): string {
-        return "minecraft:cherry_stairs";
+    export function cherryStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cherry_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cake
     //% block="item minecraft:cake"
-    export function cake(): string {
-        return "minecraft:cake";
+    export function cake(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cake");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_crimson_hanging_sign
     //% block="item minecraft:crimson_hanging_sign"
-    export function crimsonHangingSign(): string {
-        return "minecraft:crimson_hanging_sign";
+    export function crimsonHangingSign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:crimson_hanging_sign");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sculk_vein
     //% block="item minecraft:sculk_vein"
-    export function sculkVein(): string {
-        return "minecraft:sculk_vein";
+    export function sculkVein(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sculk_vein");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dead_brain_coral
     //% block="item minecraft:dead_brain_coral"
-    export function deadBrainCoral(): string {
-        return "minecraft:dead_brain_coral";
+    export function deadBrainCoral(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dead_brain_coral");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_deepslate_coal_ore
     //% block="item minecraft:deepslate_coal_ore"
-    export function deepslateCoalOre(): string {
-        return "minecraft:deepslate_coal_ore";
+    export function deepslateCoalOre(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:deepslate_coal_ore");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_weathered_cut_copper
     //% block="item minecraft:weathered_cut_copper"
-    export function weatheredCutCopper(): string {
-        return "minecraft:weathered_cut_copper";
+    export function weatheredCutCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:weathered_cut_copper");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_cinnabar
     //% block="item minecraft:polished_cinnabar"
-    export function polishedCinnabar(): string {
-        return "minecraft:polished_cinnabar";
+    export function polishedCinnabar(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_cinnabar");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cracked_polished_blackstone_bricks
     //% block="item minecraft:cracked_polished_blackstone_bricks"
-    export function crackedPolishedBlackstoneBricks(): string {
-        return "minecraft:cracked_polished_blackstone_bricks";
+    export function crackedPolishedBlackstoneBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cracked_polished_blackstone_bricks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wither_skeleton_skull
     //% block="item minecraft:wither_skeleton_skull"
-    export function witherSkeletonSkull(): string {
-        return "minecraft:wither_skeleton_skull";
+    export function witherSkeletonSkull(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wither_skeleton_skull");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_tuff
     //% block="item minecraft:polished_tuff"
-    export function polishedTuff(): string {
-        return "minecraft:polished_tuff";
+    export function polishedTuff(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_tuff");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_magenta_stained_glass
     //% block="item minecraft:magenta_stained_glass"
-    export function magentaStainedGlass(): string {
-        return "minecraft:magenta_stained_glass";
+    export function magentaStainedGlass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:magenta_stained_glass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_acacia_button
     //% block="item minecraft:acacia_button"
-    export function acaciaButton(): string {
-        return "minecraft:acacia_button";
+    export function acaciaButton(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:acacia_button");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chiseled_nether_bricks
     //% block="item minecraft:chiseled_nether_bricks"
-    export function chiseledNetherBricks(): string {
-        return "minecraft:chiseled_nether_bricks";
+    export function chiseledNetherBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chiseled_nether_bricks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_warped_button
     //% block="item minecraft:warped_button"
-    export function warpedButton(): string {
-        return "minecraft:warped_button";
+    export function warpedButton(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:warped_button");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_red_concrete_powder
     //% block="item minecraft:red_concrete_powder"
-    export function redConcretePowder(): string {
-        return "minecraft:red_concrete_powder";
+    export function redConcretePowder(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_concrete_powder");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_gray_concrete_powder
     //% block="item minecraft:light_gray_concrete_powder"
-    export function lightGrayConcretePowder(): string {
-        return "minecraft:light_gray_concrete_powder";
+    export function lightGrayConcretePowder(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_gray_concrete_powder");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_deepslate_lapis_ore
     //% block="item minecraft:deepslate_lapis_ore"
-    export function deepslateLapisOre(): string {
-        return "minecraft:deepslate_lapis_ore";
+    export function deepslateLapisOre(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:deepslate_lapis_ore");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dead_bubble_coral
     //% block="item minecraft:dead_bubble_coral"
-    export function deadBubbleCoral(): string {
-        return "minecraft:dead_bubble_coral";
+    export function deadBubbleCoral(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dead_bubble_coral");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cherry_sapling
     //% block="item minecraft:cherry_sapling"
-    export function cherrySapling(): string {
-        return "minecraft:cherry_sapling";
+    export function cherrySapling(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cherry_sapling");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cherry_log
     //% block="item minecraft:cherry_log"
-    export function cherryLog(): string {
-        return "minecraft:cherry_log";
+    export function cherryLog(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cherry_log");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_prismarine_stairs
     //% block="item minecraft:prismarine_stairs"
-    export function prismarineStairs(): string {
-        return "minecraft:prismarine_stairs";
+    export function prismarineStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:prismarine_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_white_carpet
     //% block="item minecraft:white_carpet"
-    export function whiteCarpet(): string {
-        return "minecraft:white_carpet";
+    export function whiteCarpet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:white_carpet");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_sulfur_slab
     //% block="item minecraft:polished_sulfur_slab"
-    export function polishedSulfurSlab(): string {
-        return "minecraft:polished_sulfur_slab";
+    export function polishedSulfurSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_sulfur_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cyan_concrete
     //% block="item minecraft:cyan_concrete"
-    export function cyanConcrete(): string {
-        return "minecraft:cyan_concrete";
+    export function cyanConcrete(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cyan_concrete");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_tuff_stairs
     //% block="item minecraft:polished_tuff_stairs"
-    export function polishedTuffStairs(): string {
-        return "minecraft:polished_tuff_stairs";
+    export function polishedTuffStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_tuff_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dragon_egg
     //% block="item minecraft:dragon_egg"
-    export function dragonEgg(): string {
-        return "minecraft:dragon_egg";
+    export function dragonEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dragon_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_blue_concrete
     //% block="item minecraft:blue_concrete"
-    export function blueConcrete(): string {
-        return "minecraft:blue_concrete";
+    export function blueConcrete(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blue_concrete");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_nether_brick
     //% block="item minecraft:nether_brick"
-    export function netherBrick(): string {
-        return "minecraft:nether_brick";
+    export function netherBrick(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:nether_brick");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_deepslate_iron_ore
     //% block="item minecraft:deepslate_iron_ore"
-    export function deepslateIronOre(): string {
-        return "minecraft:deepslate_iron_ore";
+    export function deepslateIronOre(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:deepslate_iron_ore");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_oxeye_daisy
     //% block="item minecraft:oxeye_daisy"
-    export function oxeyeDaisy(): string {
-        return "minecraft:oxeye_daisy";
+    export function oxeyeDaisy(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oxeye_daisy");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wheat
     //% block="item minecraft:wheat"
-    export function wheat(): string {
-        return "minecraft:wheat";
+    export function wheat(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wheat");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_cut_copper
     //% block="item minecraft:waxed_cut_copper"
-    export function waxedCutCopper(): string {
-        return "minecraft:waxed_cut_copper";
+    export function waxedCutCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_cut_copper");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sulfur
     //% block="item minecraft:sulfur"
-    export function sulfur(): string {
-        return "minecraft:sulfur";
+    export function sulfur(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sulfur");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_iron_chain
     //% block="item minecraft:iron_chain"
-    export function ironChain(): string {
-        return "minecraft:iron_chain";
+    export function ironChain(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:iron_chain");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_resin_brick_slab
     //% block="item minecraft:resin_brick_slab"
-    export function resinBrickSlab(): string {
-        return "minecraft:resin_brick_slab";
+    export function resinBrickSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:resin_brick_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_heavy_core
     //% block="item minecraft:heavy_core"
-    export function heavyCore(): string {
-        return "minecraft:heavy_core";
+    export function heavyCore(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:heavy_core");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cobbled_deepslate_slab
     //% block="item minecraft:cobbled_deepslate_slab"
-    export function cobbledDeepslateSlab(): string {
-        return "minecraft:cobbled_deepslate_slab";
+    export function cobbledDeepslateSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cobbled_deepslate_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lilac
     //% block="item minecraft:lilac"
-    export function lilac(): string {
-        return "minecraft:lilac";
+    export function lilac(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lilac");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pale_oak_trapdoor
     //% block="item minecraft:pale_oak_trapdoor"
-    export function paleOakTrapdoor(): string {
-        return "minecraft:pale_oak_trapdoor";
+    export function paleOakTrapdoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pale_oak_trapdoor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chiseled_quartz_block
     //% block="item minecraft:chiseled_quartz_block"
-    export function chiseledQuartzBlock(): string {
-        return "minecraft:chiseled_quartz_block";
+    export function chiseledQuartzBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chiseled_quartz_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_spore_blossom
     //% block="item minecraft:spore_blossom"
-    export function sporeBlossom(): string {
-        return "minecraft:spore_blossom";
+    export function sporeBlossom(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spore_blossom");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_exposed_copper_lantern
     //% block="item minecraft:waxed_exposed_copper_lantern"
-    export function waxedExposedCopperLantern(): string {
-        return "minecraft:waxed_exposed_copper_lantern";
+    export function waxedExposedCopperLantern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_exposed_copper_lantern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pale_oak_stairs
     //% block="item minecraft:pale_oak_stairs"
-    export function paleOakStairs(): string {
-        return "minecraft:pale_oak_stairs";
+    export function paleOakStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pale_oak_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_emerald_ore
     //% block="item minecraft:emerald_ore"
-    export function emeraldOre(): string {
-        return "minecraft:emerald_ore";
+    export function emeraldOre(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:emerald_ore");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_brown_mushroom_block
     //% block="item minecraft:brown_mushroom_block"
-    export function brownMushroomBlock(): string {
-        return "minecraft:brown_mushroom_block";
+    export function brownMushroomBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brown_mushroom_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_gray_concrete_powder
     //% block="item minecraft:gray_concrete_powder"
-    export function grayConcretePowder(): string {
-        return "minecraft:gray_concrete_powder";
+    export function grayConcretePowder(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:gray_concrete_powder");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_petrified_oak_slab
     //% block="item minecraft:petrified_oak_slab"
-    export function petrifiedOakSlab(): string {
-        return "minecraft:petrified_oak_slab";
+    export function petrifiedOakSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:petrified_oak_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_gray_concrete
     //% block="item minecraft:gray_concrete"
-    export function grayConcrete(): string {
-        return "minecraft:gray_concrete";
+    export function grayConcrete(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:gray_concrete");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pink_candle
     //% block="item minecraft:pink_candle"
-    export function pinkCandle(): string {
-        return "minecraft:pink_candle";
+    export function pinkCandle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pink_candle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_red_nether_brick_wall
     //% block="item minecraft:red_nether_brick_wall"
-    export function redNetherBrickWall(): string {
-        return "minecraft:red_nether_brick_wall";
+    export function redNetherBrickWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_nether_brick_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_purple_shulker_box
     //% block="item minecraft:purple_shulker_box"
-    export function purpleShulkerBox(): string {
-        return "minecraft:purple_shulker_box";
+    export function purpleShulkerBox(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:purple_shulker_box");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_carved_pumpkin
     //% block="item minecraft:carved_pumpkin"
-    export function carvedPumpkin(): string {
-        return "minecraft:carved_pumpkin";
+    export function carvedPumpkin(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:carved_pumpkin");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dropper
     //% block="item minecraft:dropper"
-    export function dropper(): string {
-        return "minecraft:dropper";
+    export function dropper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dropper");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stripped_warped_stem
     //% block="item minecraft:stripped_warped_stem"
-    export function strippedWarpedStem(): string {
-        return "minecraft:stripped_warped_stem";
+    export function strippedWarpedStem(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stripped_warped_stem");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_candle
     //% block="item minecraft:candle"
-    export function candle(): string {
-        return "minecraft:candle";
+    export function candle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:candle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_andesite_slab
     //% block="item minecraft:polished_andesite_slab"
-    export function polishedAndesiteSlab(): string {
-        return "minecraft:polished_andesite_slab";
+    export function polishedAndesiteSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_andesite_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pointed_dripstone
     //% block="item minecraft:pointed_dripstone"
-    export function pointedDripstone(): string {
-        return "minecraft:pointed_dripstone";
+    export function pointedDripstone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pointed_dripstone");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_red_carpet
     //% block="item minecraft:red_carpet"
-    export function redCarpet(): string {
-        return "minecraft:red_carpet";
+    export function redCarpet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_carpet");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cut_red_sandstone_slab
     //% block="item minecraft:cut_red_sandstone_slab"
-    export function cutRedSandstoneSlab(): string {
-        return "minecraft:cut_red_sandstone_slab";
+    export function cutRedSandstoneSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cut_red_sandstone_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_deepslate_brick_stairs
     //% block="item minecraft:deepslate_brick_stairs"
-    export function deepslateBrickStairs(): string {
-        return "minecraft:deepslate_brick_stairs";
+    export function deepslateBrickStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:deepslate_brick_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dark_prismarine_stairs
     //% block="item minecraft:dark_prismarine_stairs"
-    export function darkPrismarineStairs(): string {
-        return "minecraft:dark_prismarine_stairs";
+    export function darkPrismarineStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dark_prismarine_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_creaking_heart
     //% block="item minecraft:creaking_heart"
-    export function creakingHeart(): string {
-        return "minecraft:creaking_heart";
+    export function creakingHeart(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:creaking_heart");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pale_oak_button
     //% block="item minecraft:pale_oak_button"
-    export function paleOakButton(): string {
-        return "minecraft:pale_oak_button";
+    export function paleOakButton(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pale_oak_button");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chiseled_tuff_bricks
     //% block="item minecraft:chiseled_tuff_bricks"
-    export function chiseledTuffBricks(): string {
-        return "minecraft:chiseled_tuff_bricks";
+    export function chiseledTuffBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chiseled_tuff_bricks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_blue_concrete
     //% block="item minecraft:light_blue_concrete"
-    export function lightBlueConcrete(): string {
-        return "minecraft:light_blue_concrete";
+    export function lightBlueConcrete(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_blue_concrete");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_exposed_copper_golem_statue
     //% block="item minecraft:exposed_copper_golem_statue"
-    export function exposedCopperGolemStatue(): string {
-        return "minecraft:exposed_copper_golem_statue";
+    export function exposedCopperGolemStatue(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:exposed_copper_golem_statue");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_red_tulip
     //% block="item minecraft:red_tulip"
-    export function redTulip(): string {
-        return "minecraft:red_tulip";
+    export function redTulip(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_tulip");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cauldron
     //% block="item minecraft:cauldron"
-    export function cauldron(): string {
-        return "minecraft:cauldron";
+    export function cauldron(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cauldron");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_tube_coral_block
     //% block="item minecraft:tube_coral_block"
-    export function tubeCoralBlock(): string {
-        return "minecraft:tube_coral_block";
+    export function tubeCoralBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tube_coral_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chiseled_red_sandstone
     //% block="item minecraft:chiseled_red_sandstone"
-    export function chiseledRedSandstone(): string {
-        return "minecraft:chiseled_red_sandstone";
+    export function chiseledRedSandstone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chiseled_red_sandstone");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_birch_sapling
     //% block="item minecraft:birch_sapling"
-    export function birchSapling(): string {
-        return "minecraft:birch_sapling";
+    export function birchSapling(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:birch_sapling");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dark_oak_trapdoor
     //% block="item minecraft:dark_oak_trapdoor"
-    export function darkOakTrapdoor(): string {
-        return "minecraft:dark_oak_trapdoor";
+    export function darkOakTrapdoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dark_oak_trapdoor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_orange_terracotta
     //% block="item minecraft:orange_terracotta"
-    export function orangeTerracotta(): string {
-        return "minecraft:orange_terracotta";
+    export function orangeTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:orange_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_brick_slab
     //% block="item minecraft:brick_slab"
-    export function brickSlab(): string {
-        return "minecraft:brick_slab";
+    export function brickSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brick_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_oxidized_copper
     //% block="item minecraft:waxed_oxidized_copper"
-    export function waxedOxidizedCopper(): string {
-        return "minecraft:waxed_oxidized_copper";
+    export function waxedOxidizedCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_oxidized_copper");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_oak_planks
     //% block="item minecraft:oak_planks"
-    export function oakPlanks(): string {
-        return "minecraft:oak_planks";
+    export function oakPlanks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oak_planks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stripped_oak_log
     //% block="item minecraft:stripped_oak_log"
-    export function strippedOakLog(): string {
-        return "minecraft:stripped_oak_log";
+    export function strippedOakLog(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stripped_oak_log");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_smooth_stone_slab
     //% block="item minecraft:smooth_stone_slab"
-    export function smoothStoneSlab(): string {
-        return "minecraft:smooth_stone_slab";
+    export function smoothStoneSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:smooth_stone_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_andesite
     //% block="item minecraft:polished_andesite"
-    export function polishedAndesite(): string {
-        return "minecraft:polished_andesite";
+    export function polishedAndesite(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_andesite");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sea_lantern
     //% block="item minecraft:sea_lantern"
-    export function seaLantern(): string {
-        return "minecraft:sea_lantern";
+    export function seaLantern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sea_lantern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_brewing_stand
     //% block="item minecraft:brewing_stand"
-    export function brewingStand(): string {
-        return "minecraft:brewing_stand";
+    export function brewingStand(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brewing_stand");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_weathered_copper_bulb
     //% block="item minecraft:weathered_copper_bulb"
-    export function weatheredCopperBulb(): string {
-        return "minecraft:weathered_copper_bulb";
+    export function weatheredCopperBulb(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:weathered_copper_bulb");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_weathered_copper_bars
     //% block="item minecraft:weathered_copper_bars"
-    export function weatheredCopperBars(): string {
-        return "minecraft:weathered_copper_bars";
+    export function weatheredCopperBars(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:weathered_copper_bars");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_blast_furnace
     //% block="item minecraft:blast_furnace"
-    export function blastFurnace(): string {
-        return "minecraft:blast_furnace";
+    export function blastFurnace(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blast_furnace");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_crimson_roots
     //% block="item minecraft:crimson_roots"
-    export function crimsonRoots(): string {
-        return "minecraft:crimson_roots";
+    export function crimsonRoots(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:crimson_roots");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_acacia_slab
     //% block="item minecraft:acacia_slab"
-    export function acaciaSlab(): string {
-        return "minecraft:acacia_slab";
+    export function acaciaSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:acacia_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stonecutter_block
     //% block="item minecraft:stonecutter_block"
-    export function stonecutterBlock(): string {
-        return "minecraft:stonecutter_block";
+    export function stonecutterBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stonecutter_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_smooth_quartz_slab
     //% block="item minecraft:smooth_quartz_slab"
-    export function smoothQuartzSlab(): string {
-        return "minecraft:smooth_quartz_slab";
+    export function smoothQuartzSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:smooth_quartz_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sulfur_brick_slab
     //% block="item minecraft:sulfur_brick_slab"
-    export function sulfurBrickSlab(): string {
-        return "minecraft:sulfur_brick_slab";
+    export function sulfurBrickSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sulfur_brick_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_yellow_concrete_powder
     //% block="item minecraft:yellow_concrete_powder"
-    export function yellowConcretePowder(): string {
-        return "minecraft:yellow_concrete_powder";
+    export function yellowConcretePowder(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:yellow_concrete_powder");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lime_stained_glass_pane
     //% block="item minecraft:lime_stained_glass_pane"
-    export function limeStainedGlassPane(): string {
-        return "minecraft:lime_stained_glass_pane";
+    export function limeStainedGlassPane(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lime_stained_glass_pane");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_yellow_stained_glass
     //% block="item minecraft:yellow_stained_glass"
-    export function yellowStainedGlass(): string {
-        return "minecraft:yellow_stained_glass";
+    export function yellowStainedGlass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:yellow_stained_glass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_cinnabar_stairs
     //% block="item minecraft:polished_cinnabar_stairs"
-    export function polishedCinnabarStairs(): string {
-        return "minecraft:polished_cinnabar_stairs";
+    export function polishedCinnabarStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_cinnabar_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_spruce_wood
     //% block="item minecraft:spruce_wood"
-    export function spruceWood(): string {
-        return "minecraft:spruce_wood";
+    export function spruceWood(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spruce_wood");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_blackstone
     //% block="item minecraft:blackstone"
-    export function blackstone(): string {
-        return "minecraft:blackstone";
+    export function blackstone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blackstone");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_acacia_fence_gate
     //% block="item minecraft:acacia_fence_gate"
-    export function acaciaFenceGate(): string {
-        return "minecraft:acacia_fence_gate";
+    export function acaciaFenceGate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:acacia_fence_gate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wildflowers
     //% block="item minecraft:wildflowers"
-    export function wildflowers(): string {
-        return "minecraft:wildflowers";
+    export function wildflowers(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wildflowers");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lapis_ore
     //% block="item minecraft:lapis_ore"
-    export function lapisOre(): string {
-        return "minecraft:lapis_ore";
+    export function lapisOre(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lapis_ore");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_red_concrete
     //% block="item minecraft:red_concrete"
-    export function redConcrete(): string {
-        return "minecraft:red_concrete";
+    export function redConcrete(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_concrete");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pink_carpet
     //% block="item minecraft:pink_carpet"
-    export function pinkCarpet(): string {
-        return "minecraft:pink_carpet";
+    export function pinkCarpet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pink_carpet");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_smooth_quartz_stairs
     //% block="item minecraft:smooth_quartz_stairs"
-    export function smoothQuartzStairs(): string {
-        return "minecraft:smooth_quartz_stairs";
+    export function smoothQuartzStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:smooth_quartz_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_copper_lantern
     //% block="item minecraft:waxed_copper_lantern"
-    export function waxedCopperLantern(): string {
-        return "minecraft:waxed_copper_lantern";
+    export function waxedCopperLantern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_copper_lantern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_azalea_leaves
     //% block="item minecraft:azalea_leaves"
-    export function azaleaLeaves(): string {
-        return "minecraft:azalea_leaves";
+    export function azaleaLeaves(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:azalea_leaves");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_purpur_block
     //% block="item minecraft:purpur_block"
-    export function purpurBlock(): string {
-        return "minecraft:purpur_block";
+    export function purpurBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:purpur_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cyan_candle
     //% block="item minecraft:cyan_candle"
-    export function cyanCandle(): string {
-        return "minecraft:cyan_candle";
+    export function cyanCandle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cyan_candle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_copper
     //% block="item minecraft:waxed_copper"
-    export function waxedCopper(): string {
-        return "minecraft:waxed_copper";
+    export function waxedCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_copper");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_repeating_command_block
     //% block="item minecraft:repeating_command_block"
-    export function repeatingCommandBlock(): string {
-        return "minecraft:repeating_command_block";
+    export function repeatingCommandBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:repeating_command_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_nether_wart
     //% block="item minecraft:nether_wart"
-    export function netherWart(): string {
-        return "minecraft:nether_wart";
+    export function netherWart(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:nether_wart");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_purple_carpet
     //% block="item minecraft:purple_carpet"
-    export function purpleCarpet(): string {
-        return "minecraft:purple_carpet";
+    export function purpleCarpet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:purple_carpet");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_crimson_fungus
     //% block="item minecraft:crimson_fungus"
-    export function crimsonFungus(): string {
-        return "minecraft:crimson_fungus";
+    export function crimsonFungus(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:crimson_fungus");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cherry_planks
     //% block="item minecraft:cherry_planks"
-    export function cherryPlanks(): string {
-        return "minecraft:cherry_planks";
+    export function cherryPlanks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cherry_planks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_deepslate
     //% block="item minecraft:polished_deepslate"
-    export function polishedDeepslate(): string {
-        return "minecraft:polished_deepslate";
+    export function polishedDeepslate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_deepslate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_smooth_red_sandstone
     //% block="item minecraft:smooth_red_sandstone"
-    export function smoothRedSandstone(): string {
-        return "minecraft:smooth_red_sandstone";
+    export function smoothRedSandstone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:smooth_red_sandstone");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_purpur_stairs
     //% block="item minecraft:purpur_stairs"
-    export function purpurStairs(): string {
-        return "minecraft:purpur_stairs";
+    export function purpurStairs(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:purpur_stairs");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_tube_coral
     //% block="item minecraft:tube_coral"
-    export function tubeCoral(): string {
-        return "minecraft:tube_coral";
+    export function tubeCoral(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tube_coral");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_copper_door
     //% block="item minecraft:waxed_copper_door"
-    export function waxedCopperDoor(): string {
-        return "minecraft:waxed_copper_door";
+    export function waxedCopperDoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_copper_door");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cinnabar_brick_wall
     //% block="item minecraft:cinnabar_brick_wall"
-    export function cinnabarBrickWall(): string {
-        return "minecraft:cinnabar_brick_wall";
+    export function cinnabarBrickWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cinnabar_brick_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_birch_button
     //% block="item minecraft:birch_button"
-    export function birchButton(): string {
-        return "minecraft:birch_button";
+    export function birchButton(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:birch_button");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_peony
     //% block="item minecraft:peony"
-    export function peony(): string {
-        return "minecraft:peony";
+    export function peony(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:peony");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_command_block
     //% block="item minecraft:command_block"
-    export function commandBlock(): string {
-        return "minecraft:command_block";
+    export function commandBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:command_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_blackstone_button
     //% block="item minecraft:polished_blackstone_button"
-    export function polishedBlackstoneButton(): string {
-        return "minecraft:polished_blackstone_button";
+    export function polishedBlackstoneButton(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_blackstone_button");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_crafter
     //% block="item minecraft:crafter"
-    export function crafter(): string {
-        return "minecraft:crafter";
+    export function crafter(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:crafter");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_spruce_planks
     //% block="item minecraft:spruce_planks"
-    export function sprucePlanks(): string {
-        return "minecraft:spruce_planks";
+    export function sprucePlanks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spruce_planks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_furnace
     //% block="item minecraft:furnace"
-    export function furnace(): string {
-        return "minecraft:furnace";
+    export function furnace(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:furnace");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_amethyst_cluster
     //% block="item minecraft:amethyst_cluster"
-    export function amethystCluster(): string {
-        return "minecraft:amethyst_cluster";
+    export function amethystCluster(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:amethyst_cluster");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_chiseled_copper
     //% block="item minecraft:waxed_chiseled_copper"
-    export function waxedChiseledCopper(): string {
-        return "minecraft:waxed_chiseled_copper";
+    export function waxedChiseledCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_chiseled_copper");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_cut_copper_slab
     //% block="item minecraft:waxed_cut_copper_slab"
-    export function waxedCutCopperSlab(): string {
-        return "minecraft:waxed_cut_copper_slab";
+    export function waxedCutCopperSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_cut_copper_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_deepslate_wall
     //% block="item minecraft:polished_deepslate_wall"
-    export function polishedDeepslateWall(): string {
-        return "minecraft:polished_deepslate_wall";
+    export function polishedDeepslateWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_deepslate_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dried_kelp_block
     //% block="item minecraft:dried_kelp_block"
-    export function driedKelpBlock(): string {
-        return "minecraft:dried_kelp_block";
+    export function driedKelpBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dried_kelp_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_crimson_fence
     //% block="item minecraft:crimson_fence"
-    export function crimsonFence(): string {
-        return "minecraft:crimson_fence";
+    export function crimsonFence(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:crimson_fence");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cinnabar_slab
     //% block="item minecraft:cinnabar_slab"
-    export function cinnabarSlab(): string {
-        return "minecraft:cinnabar_slab";
+    export function cinnabarSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cinnabar_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chiseled_tuff
     //% block="item minecraft:chiseled_tuff"
-    export function chiseledTuff(): string {
-        return "minecraft:chiseled_tuff";
+    export function chiseledTuff(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chiseled_tuff");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lime_concrete_powder
     //% block="item minecraft:lime_concrete_powder"
-    export function limeConcretePowder(): string {
-        return "minecraft:lime_concrete_powder";
+    export function limeConcretePowder(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lime_concrete_powder");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_turtle_egg
     //% block="item minecraft:turtle_egg"
-    export function turtleEgg(): string {
-        return "minecraft:turtle_egg";
+    export function turtleEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:turtle_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_magma
     //% block="item minecraft:magma"
-    export function magma(): string {
-        return "minecraft:magma";
+    export function magma(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:magma");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dispenser
     //% block="item minecraft:dispenser"
-    export function dispenser(): string {
-        return "minecraft:dispenser";
+    export function dispenser(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dispenser");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_brown_terracotta
     //% block="item minecraft:brown_terracotta"
-    export function brownTerracotta(): string {
-        return "minecraft:brown_terracotta";
+    export function brownTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brown_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_deepslate_diamond_ore
     //% block="item minecraft:deepslate_diamond_ore"
-    export function deepslateDiamondOre(): string {
-        return "minecraft:deepslate_diamond_ore";
+    export function deepslateDiamondOre(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:deepslate_diamond_ore");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_grindstone
     //% block="item minecraft:grindstone"
-    export function grindstone(): string {
-        return "minecraft:grindstone";
+    export function grindstone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:grindstone");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_copper_golem_statue
     //% block="item minecraft:waxed_copper_golem_statue"
-    export function waxedCopperGolemStatue(): string {
-        return "minecraft:waxed_copper_golem_statue";
+    export function waxedCopperGolemStatue(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_copper_golem_statue");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_gray_wool
     //% block="item minecraft:light_gray_wool"
-    export function lightGrayWool(): string {
-        return "minecraft:light_gray_wool";
+    export function lightGrayWool(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_gray_wool");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_soul_campfire
     //% block="item minecraft:soul_campfire"
-    export function soulCampfire(): string {
-        return "minecraft:soul_campfire";
+    export function soulCampfire(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:soul_campfire");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_prismarine_bricks
     //% block="item minecraft:prismarine_bricks"
-    export function prismarineBricks(): string {
-        return "minecraft:prismarine_bricks";
+    export function prismarineBricks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:prismarine_bricks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wooden_pressure_plate
     //% block="item minecraft:wooden_pressure_plate"
-    export function woodenPressurePlate(): string {
-        return "minecraft:wooden_pressure_plate";
+    export function woodenPressurePlate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wooden_pressure_plate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sandstone_wall
     //% block="item minecraft:sandstone_wall"
-    export function sandstoneWall(): string {
-        return "minecraft:sandstone_wall";
+    export function sandstoneWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sandstone_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_birch_fence
     //% block="item minecraft:birch_fence"
-    export function birchFence(): string {
-        return "minecraft:birch_fence";
+    export function birchFence(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:birch_fence");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_oxidized_copper_grate
     //% block="item minecraft:waxed_oxidized_copper_grate"
-    export function waxedOxidizedCopperGrate(): string {
-        return "minecraft:waxed_oxidized_copper_grate";
+    export function waxedOxidizedCopperGrate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_oxidized_copper_grate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_damaged_anvil
     //% block="item minecraft:damaged_anvil"
-    export function damagedAnvil(): string {
-        return "minecraft:damaged_anvil";
+    export function damagedAnvil(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:damaged_anvil");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_white_concrete
     //% block="item minecraft:white_concrete"
-    export function whiteConcrete(): string {
-        return "minecraft:white_concrete";
+    export function whiteConcrete(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:white_concrete");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_trial_spawner
     //% block="item minecraft:trial_spawner"
-    export function trialSpawner(): string {
-        return "minecraft:trial_spawner";
+    export function trialSpawner(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:trial_spawner");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_acacia_fence
     //% block="item minecraft:acacia_fence"
-    export function acaciaFence(): string {
-        return "minecraft:acacia_fence";
+    export function acaciaFence(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:acacia_fence");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_grass_path
     //% block="item minecraft:grass_path"
-    export function grassPath(): string {
-        return "minecraft:grass_path";
+    export function grassPath(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:grass_path");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_resin_brick_wall
     //% block="item minecraft:resin_brick_wall"
-    export function resinBrickWall(): string {
-        return "minecraft:resin_brick_wall";
+    export function resinBrickWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:resin_brick_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cobbled_deepslate_wall
     //% block="item minecraft:cobbled_deepslate_wall"
-    export function cobbledDeepslateWall(): string {
-        return "minecraft:cobbled_deepslate_wall";
+    export function cobbledDeepslateWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cobbled_deepslate_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_waxed_weathered_lightning_rod
     //% block="item minecraft:waxed_weathered_lightning_rod"
-    export function waxedWeatheredLightningRod(): string {
-        return "minecraft:waxed_weathered_lightning_rod";
+    export function waxedWeatheredLightningRod(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:waxed_weathered_lightning_rod");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_orange_concrete_powder
     //% block="item minecraft:orange_concrete_powder"
-    export function orangeConcretePowder(): string {
-        return "minecraft:orange_concrete_powder";
+    export function orangeConcretePowder(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:orange_concrete_powder");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_weathered_copper
     //% block="item minecraft:weathered_copper"
-    export function weatheredCopper(): string {
-        return "minecraft:weathered_copper";
+    export function weatheredCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:weathered_copper");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mossy_stone_brick_wall
     //% block="item minecraft:mossy_stone_brick_wall"
-    export function mossyStoneBrickWall(): string {
-        return "minecraft:mossy_stone_brick_wall";
+    export function mossyStoneBrickWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mossy_stone_brick_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polished_sulfur_wall
     //% block="item minecraft:polished_sulfur_wall"
-    export function polishedSulfurWall(): string {
-        return "minecraft:polished_sulfur_wall";
+    export function polishedSulfurWall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polished_sulfur_wall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lime_terracotta
     //% block="item minecraft:lime_terracotta"
-    export function limeTerracotta(): string {
-        return "minecraft:lime_terracotta";
+    export function limeTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lime_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cherry_fence_gate
     //% block="item minecraft:cherry_fence_gate"
-    export function cherryFenceGate(): string {
-        return "minecraft:cherry_fence_gate";
+    export function cherryFenceGate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cherry_fence_gate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_gray_glazed_terracotta
     //% block="item minecraft:gray_glazed_terracotta"
-    export function grayGlazedTerracotta(): string {
-        return "minecraft:gray_glazed_terracotta";
+    export function grayGlazedTerracotta(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:gray_glazed_terracotta");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lodestone
     //% block="item minecraft:lodestone"
-    export function lodestone(): string {
-        return "minecraft:lodestone";
+    export function lodestone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lodestone");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bamboo_mosaic
     //% block="item minecraft:bamboo_mosaic"
-    export function bambooMosaic(): string {
-        return "minecraft:bamboo_mosaic";
+    export function bambooMosaic(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bamboo_mosaic");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_raw_iron_block
     //% block="item minecraft:raw_iron_block"
-    export function rawIronBlock(): string {
-        return "minecraft:raw_iron_block";
+    export function rawIronBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:raw_iron_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_gray_carpet
     //% block="item minecraft:light_gray_carpet"
-    export function lightGrayCarpet(): string {
-        return "minecraft:light_gray_carpet";
+    export function lightGrayCarpet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_gray_carpet");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_purple_wool
     //% block="item minecraft:purple_wool"
-    export function purpleWool(): string {
-        return "minecraft:purple_wool";
+    export function purpleWool(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:purple_wool");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_iron_block
     //% block="item minecraft:iron_block"
-    export function ironBlock(): string {
-        return "minecraft:iron_block";
+    export function ironBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:iron_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_ladder
     //% block="item minecraft:ladder"
-    export function ladder(): string {
-        return "minecraft:ladder";
+    export function ladder(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:ladder");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_crimson_pressure_plate
     //% block="item minecraft:crimson_pressure_plate"
-    export function crimsonPressurePlate(): string {
-        return "minecraft:crimson_pressure_plate";
+    export function crimsonPressurePlate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:crimson_pressure_plate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stripped_mangrove_log
     //% block="item minecraft:stripped_mangrove_log"
-    export function strippedMangroveLog(): string {
-        return "minecraft:stripped_mangrove_log";
+    export function strippedMangroveLog(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stripped_mangrove_log");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_lantern
     //% block="item minecraft:copper_lantern"
-    export function copperLantern(): string {
-        return "minecraft:copper_lantern";
+    export function copperLantern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_lantern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_gravel
     //% block="item minecraft:gravel"
-    export function gravel(): string {
-        return "minecraft:gravel";
+    export function gravel(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:gravel");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cartography_table
     //% block="item minecraft:cartography_table"
-    export function cartographyTable(): string {
-        return "minecraft:cartography_table";
+    export function cartographyTable(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cartography_table");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_oxidized_copper_door
     //% block="item minecraft:oxidized_copper_door"
-    export function oxidizedCopperDoor(): string {
-        return "minecraft:oxidized_copper_door";
+    export function oxidizedCopperDoor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oxidized_copper_door");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dandelion
     //% block="item minecraft:dandelion"
-    export function dandelion(): string {
-        return "minecraft:dandelion";
+    export function dandelion(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dandelion");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wool
     //% block="item minecraft:wool"
-    export function wool(): string {
-        return "minecraft:wool";
+    export function wool(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wool");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_log
     //% block="item minecraft:log"
-    export function log(): string {
-        return "minecraft:log";
+    export function log(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:log");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_log2
     //% block="item minecraft:log2"
-    export function log2(): string {
-        return "minecraft:log2";
+    export function log2(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:log2");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_coral
     //% block="item minecraft:coral"
-    export function coral(): string {
-        return "minecraft:coral";
+    export function coral(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:coral");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_fence
     //% block="item minecraft:fence"
-    export function fence(): string {
-        return "minecraft:fence";
+    export function fence(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:fence");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_carpet
     //% block="item minecraft:carpet"
-    export function carpet(): string {
-        return "minecraft:carpet";
+    export function carpet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:carpet");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_shulker_box
     //% block="item minecraft:shulker_box"
-    export function shulkerBox(): string {
-        return "minecraft:shulker_box";
+    export function shulkerBox(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:shulker_box");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_concrete
     //% block="item minecraft:concrete"
-    export function concrete(): string {
-        return "minecraft:concrete";
+    export function concrete(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:concrete");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stained_hardened_clay
     //% block="item minecraft:stained_hardened_clay"
-    export function stainedHardenedClay(): string {
-        return "minecraft:stained_hardened_clay";
+    export function stainedHardenedClay(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stained_hardened_clay");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_concrete_powder
     //% block="item minecraft:concrete_powder"
-    export function concretePowder(): string {
-        return "minecraft:concrete_powder";
+    export function concretePowder(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:concrete_powder");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stained_glass
     //% block="item minecraft:stained_glass"
-    export function stainedGlass(): string {
-        return "minecraft:stained_glass";
+    export function stainedGlass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stained_glass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stained_glass_pane
     //% block="item minecraft:stained_glass_pane"
-    export function stainedGlassPane(): string {
-        return "minecraft:stained_glass_pane";
+    export function stainedGlassPane(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stained_glass_pane");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_planks
     //% block="item minecraft:planks"
-    export function planks(): string {
-        return "minecraft:planks";
+    export function planks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:planks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wooden_slab
     //% block="item minecraft:wooden_slab"
-    export function woodenSlab(): string {
-        return "minecraft:wooden_slab";
+    export function woodenSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wooden_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_leaves
     //% block="item minecraft:leaves"
-    export function leaves(): string {
-        return "minecraft:leaves";
+    export function leaves(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:leaves");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_leaves2
     //% block="item minecraft:leaves2"
-    export function leaves2(): string {
-        return "minecraft:leaves2";
+    export function leaves2(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:leaves2");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wood
     //% block="item minecraft:wood"
-    export function wood(): string {
-        return "minecraft:wood";
+    export function wood(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wood");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sapling
     //% block="item minecraft:sapling"
-    export function sapling(): string {
-        return "minecraft:sapling";
+    export function sapling(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sapling");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_coral_fan
     //% block="item minecraft:coral_fan"
-    export function coralFan(): string {
-        return "minecraft:coral_fan";
+    export function coralFan(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:coral_fan");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_coral_fan_dead
     //% block="item minecraft:coral_fan_dead"
-    export function coralFanDead(): string {
-        return "minecraft:coral_fan_dead";
+    export function coralFanDead(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:coral_fan_dead");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_red_flower
     //% block="item minecraft:red_flower"
-    export function redFlower(): string {
-        return "minecraft:red_flower";
+    export function redFlower(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_flower");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_tallgrass
     //% block="item minecraft:tallgrass"
-    export function tallgrass(): string {
-        return "minecraft:tallgrass";
+    export function tallgrass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tallgrass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_coral_block
     //% block="item minecraft:coral_block"
-    export function coralBlock(): string {
-        return "minecraft:coral_block";
+    export function coralBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:coral_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_double_plant
     //% block="item minecraft:double_plant"
-    export function doublePlant(): string {
-        return "minecraft:double_plant";
+    export function doublePlant(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:double_plant");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stone_block_slab
     //% block="item minecraft:stone_block_slab"
-    export function stoneBlockSlab(): string {
-        return "minecraft:stone_block_slab";
+    export function stoneBlockSlab(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stone_block_slab");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stone_block_slab2
     //% block="item minecraft:stone_block_slab2"
-    export function stoneBlockSlab2(): string {
-        return "minecraft:stone_block_slab2";
+    export function stoneBlockSlab2(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stone_block_slab2");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stone_block_slab3
     //% block="item minecraft:stone_block_slab3"
-    export function stoneBlockSlab3(): string {
-        return "minecraft:stone_block_slab3";
+    export function stoneBlockSlab3(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stone_block_slab3");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stone_block_slab4
     //% block="item minecraft:stone_block_slab4"
-    export function stoneBlockSlab4(): string {
-        return "minecraft:stone_block_slab4";
+    export function stoneBlockSlab4(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stone_block_slab4");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_monster_egg
     //% block="item minecraft:monster_egg"
-    export function monsterEgg(): string {
-        return "minecraft:monster_egg";
+    export function monsterEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:monster_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stonebrick
     //% block="item minecraft:stonebrick"
-    export function stonebrick(): string {
-        return "minecraft:stonebrick";
+    export function stonebrick(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stonebrick");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_block
     //% block="item minecraft:light_block"
-    export function lightBlock(): string {
-        return "minecraft:light_block";
+    export function lightBlock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_block");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_skull
     //% block="item minecraft:skull"
-    export function skull(): string {
-        return "minecraft:skull";
+    export function skull(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:skull");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chicken
     //% block="item minecraft:chicken"
-    export function chicken(): string {
-        return "minecraft:chicken";
+    export function chicken(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chicken");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_rabbit
     //% block="item minecraft:rabbit"
-    export function rabbit(): string {
-        return "minecraft:rabbit";
+    export function rabbit(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:rabbit");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cod
     //% block="item minecraft:cod"
-    export function cod(): string {
-        return "minecraft:cod";
+    export function cod(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cod");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pufferfish
     //% block="item minecraft:pufferfish"
-    export function pufferfish(): string {
-        return "minecraft:pufferfish";
+    export function pufferfish(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pufferfish");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_salmon
     //% block="item minecraft:salmon"
-    export function salmon(): string {
-        return "minecraft:salmon";
+    export function salmon(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:salmon");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_minecart
     //% block="item minecraft:minecart"
-    export function minecart(): string {
-        return "minecraft:minecart";
+    export function minecart(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:minecart");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_hopper_minecart
     //% block="item minecraft:hopper_minecart"
-    export function hopperMinecart(): string {
-        return "minecraft:hopper_minecart";
+    export function hopperMinecart(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:hopper_minecart");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_tnt_minecart
     //% block="item minecraft:tnt_minecart"
-    export function tntMinecart(): string {
-        return "minecraft:tnt_minecart";
+    export function tntMinecart(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tnt_minecart");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chest_minecart
     //% block="item minecraft:chest_minecart"
-    export function chestMinecart(): string {
-        return "minecraft:chest_minecart";
+    export function chestMinecart(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chest_minecart");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_command_block_minecart
     //% block="item minecraft:command_block_minecart"
-    export function commandBlockMinecart(): string {
-        return "minecraft:command_block_minecart";
+    export function commandBlockMinecart(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:command_block_minecart");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_arrow
     //% block="item minecraft:arrow"
-    export function arrow(): string {
-        return "minecraft:arrow";
+    export function arrow(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:arrow");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_snowball
     //% block="item minecraft:snowball"
-    export function snowball(): string {
-        return "minecraft:snowball";
+    export function snowball(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:snowball");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_egg
     //% block="item minecraft:egg"
-    export function egg(): string {
-        return "minecraft:egg";
+    export function egg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_painting
     //% block="item minecraft:painting"
-    export function painting(): string {
-        return "minecraft:painting";
+    export function painting(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:painting");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_splash_potion
     //% block="item minecraft:splash_potion"
-    export function splashPotion(): string {
-        return "minecraft:splash_potion";
+    export function splashPotion(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:splash_potion");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_ender_pearl
     //% block="item minecraft:ender_pearl"
-    export function enderPearl(): string {
-        return "minecraft:ender_pearl";
+    export function enderPearl(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:ender_pearl");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_boat
     //% block="item minecraft:boat"
-    export function boat(): string {
-        return "minecraft:boat";
+    export function boat(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:boat");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chest_boat
     //% block="item minecraft:chest_boat"
-    export function chestBoat(): string {
-        return "minecraft:chest_boat";
+    export function chestBoat(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chest_boat");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lingering_potion
     //% block="item minecraft:lingering_potion"
-    export function lingeringPotion(): string {
-        return "minecraft:lingering_potion";
+    export function lingeringPotion(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lingering_potion");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_armor_stand
     //% block="item minecraft:armor_stand"
-    export function armorStand(): string {
-        return "minecraft:armor_stand";
+    export function armorStand(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:armor_stand");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wheat_seeds
     //% block="item minecraft:wheat_seeds"
-    export function wheatSeeds(): string {
-        return "minecraft:wheat_seeds";
+    export function wheatSeeds(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wheat_seeds");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pumpkin_seeds
     //% block="item minecraft:pumpkin_seeds"
-    export function pumpkinSeeds(): string {
-        return "minecraft:pumpkin_seeds";
+    export function pumpkinSeeds(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pumpkin_seeds");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_melon_seeds
     //% block="item minecraft:melon_seeds"
-    export function melonSeeds(): string {
-        return "minecraft:melon_seeds";
+    export function melonSeeds(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:melon_seeds");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_beetroot_seeds
     //% block="item minecraft:beetroot_seeds"
-    export function beetrootSeeds(): string {
-        return "minecraft:beetroot_seeds";
+    export function beetrootSeeds(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:beetroot_seeds");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_torchflower_seeds
     //% block="item minecraft:torchflower_seeds"
-    export function torchflowerSeeds(): string {
-        return "minecraft:torchflower_seeds";
+    export function torchflowerSeeds(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:torchflower_seeds");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pitcher_pod
     //% block="item minecraft:pitcher_pod"
-    export function pitcherPod(): string {
-        return "minecraft:pitcher_pod";
+    export function pitcherPod(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pitcher_pod");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_potato
     //% block="item minecraft:potato"
-    export function potato(): string {
-        return "minecraft:potato";
+    export function potato(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:potato");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_poisonous_potato
     //% block="item minecraft:poisonous_potato"
-    export function poisonousPotato(): string {
-        return "minecraft:poisonous_potato";
+    export function poisonousPotato(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:poisonous_potato");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_carrot
     //% block="item minecraft:carrot"
-    export function carrot(): string {
-        return "minecraft:carrot";
+    export function carrot(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:carrot");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_golden_carrot
     //% block="item minecraft:golden_carrot"
-    export function goldenCarrot(): string {
-        return "minecraft:golden_carrot";
+    export function goldenCarrot(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:golden_carrot");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_apple
     //% block="item minecraft:apple"
-    export function apple(): string {
-        return "minecraft:apple";
+    export function apple(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:apple");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_golden_apple
     //% block="item minecraft:golden_apple"
-    export function goldenApple(): string {
-        return "minecraft:golden_apple";
+    export function goldenApple(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:golden_apple");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_enchanted_golden_apple
     //% block="item minecraft:enchanted_golden_apple"
-    export function enchantedGoldenApple(): string {
-        return "minecraft:enchanted_golden_apple";
+    export function enchantedGoldenApple(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:enchanted_golden_apple");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_melon_slice
     //% block="item minecraft:melon_slice"
-    export function melonSlice(): string {
-        return "minecraft:melon_slice";
+    export function melonSlice(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:melon_slice");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_glistering_melon_slice
     //% block="item minecraft:glistering_melon_slice"
-    export function glisteringMelonSlice(): string {
-        return "minecraft:glistering_melon_slice";
+    export function glisteringMelonSlice(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:glistering_melon_slice");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sweet_berries
     //% block="item minecraft:sweet_berries"
-    export function sweetBerries(): string {
-        return "minecraft:sweet_berries";
+    export function sweetBerries(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sweet_berries");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_glow_berries
     //% block="item minecraft:glow_berries"
-    export function glowBerries(): string {
-        return "minecraft:glow_berries";
+    export function glowBerries(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:glow_berries");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_honeycomb
     //% block="item minecraft:honeycomb"
-    export function honeycomb(): string {
-        return "minecraft:honeycomb";
+    export function honeycomb(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:honeycomb");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_white_dye
     //% block="item minecraft:white_dye"
-    export function whiteDye(): string {
-        return "minecraft:white_dye";
+    export function whiteDye(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:white_dye");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_gray_dye
     //% block="item minecraft:light_gray_dye"
-    export function lightGrayDye(): string {
-        return "minecraft:light_gray_dye";
+    export function lightGrayDye(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_gray_dye");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_gray_dye
     //% block="item minecraft:gray_dye"
-    export function grayDye(): string {
-        return "minecraft:gray_dye";
+    export function grayDye(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:gray_dye");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_black_dye
     //% block="item minecraft:black_dye"
-    export function blackDye(): string {
-        return "minecraft:black_dye";
+    export function blackDye(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:black_dye");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_brown_dye
     //% block="item minecraft:brown_dye"
-    export function brownDye(): string {
-        return "minecraft:brown_dye";
+    export function brownDye(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brown_dye");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_red_dye
     //% block="item minecraft:red_dye"
-    export function redDye(): string {
-        return "minecraft:red_dye";
+    export function redDye(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_dye");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_orange_dye
     //% block="item minecraft:orange_dye"
-    export function orangeDye(): string {
-        return "minecraft:orange_dye";
+    export function orangeDye(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:orange_dye");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_yellow_dye
     //% block="item minecraft:yellow_dye"
-    export function yellowDye(): string {
-        return "minecraft:yellow_dye";
+    export function yellowDye(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:yellow_dye");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lime_dye
     //% block="item minecraft:lime_dye"
-    export function limeDye(): string {
-        return "minecraft:lime_dye";
+    export function limeDye(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lime_dye");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_green_dye
     //% block="item minecraft:green_dye"
-    export function greenDye(): string {
-        return "minecraft:green_dye";
+    export function greenDye(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:green_dye");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cyan_dye
     //% block="item minecraft:cyan_dye"
-    export function cyanDye(): string {
-        return "minecraft:cyan_dye";
+    export function cyanDye(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cyan_dye");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_blue_dye
     //% block="item minecraft:light_blue_dye"
-    export function lightBlueDye(): string {
-        return "minecraft:light_blue_dye";
+    export function lightBlueDye(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_blue_dye");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_blue_dye
     //% block="item minecraft:blue_dye"
-    export function blueDye(): string {
-        return "minecraft:blue_dye";
+    export function blueDye(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blue_dye");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_purple_dye
     //% block="item minecraft:purple_dye"
-    export function purpleDye(): string {
-        return "minecraft:purple_dye";
+    export function purpleDye(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:purple_dye");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_magenta_dye
     //% block="item minecraft:magenta_dye"
-    export function magentaDye(): string {
-        return "minecraft:magenta_dye";
+    export function magentaDye(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:magenta_dye");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pink_dye
     //% block="item minecraft:pink_dye"
-    export function pinkDye(): string {
-        return "minecraft:pink_dye";
+    export function pinkDye(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pink_dye");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_ink_sac
     //% block="item minecraft:ink_sac"
-    export function inkSac(): string {
-        return "minecraft:ink_sac";
+    export function inkSac(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:ink_sac");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_glow_ink_sac
     //% block="item minecraft:glow_ink_sac"
-    export function glowInkSac(): string {
-        return "minecraft:glow_ink_sac";
+    export function glowInkSac(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:glow_ink_sac");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cocoa_beans
     //% block="item minecraft:cocoa_beans"
-    export function cocoaBeans(): string {
-        return "minecraft:cocoa_beans";
+    export function cocoaBeans(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cocoa_beans");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lapis_lazuli
     //% block="item minecraft:lapis_lazuli"
-    export function lapisLazuli(): string {
-        return "minecraft:lapis_lazuli";
+    export function lapisLazuli(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lapis_lazuli");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bone_meal
     //% block="item minecraft:bone_meal"
-    export function boneMeal(): string {
-        return "minecraft:bone_meal";
+    export function boneMeal(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bone_meal");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_porkchop
     //% block="item minecraft:porkchop"
-    export function porkchop(): string {
-        return "minecraft:porkchop";
+    export function porkchop(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:porkchop");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_beef
     //% block="item minecraft:beef"
-    export function beef(): string {
-        return "minecraft:beef";
+    export function beef(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:beef");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mutton
     //% block="item minecraft:mutton"
-    export function mutton(): string {
-        return "minecraft:mutton";
+    export function mutton(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mutton");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_tropical_fish
     //% block="item minecraft:tropical_fish"
-    export function tropicalFish(): string {
-        return "minecraft:tropical_fish";
+    export function tropicalFish(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tropical_fish");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_brown_egg
     //% block="item minecraft:brown_egg"
-    export function brownEgg(): string {
-        return "minecraft:brown_egg";
+    export function brownEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brown_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_blue_egg
     //% block="item minecraft:blue_egg"
-    export function blueEgg(): string {
-        return "minecraft:blue_egg";
+    export function blueEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blue_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sugar_cane
     //% block="item minecraft:sugar_cane"
-    export function sugarCane(): string {
-        return "minecraft:sugar_cane";
+    export function sugarCane(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sugar_cane");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sugar
     //% block="item minecraft:sugar"
-    export function sugar(): string {
-        return "minecraft:sugar";
+    export function sugar(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sugar");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_rotten_flesh
     //% block="item minecraft:rotten_flesh"
-    export function rottenFlesh(): string {
-        return "minecraft:rotten_flesh";
+    export function rottenFlesh(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:rotten_flesh");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bone
     //% block="item minecraft:bone"
-    export function bone(): string {
-        return "minecraft:bone";
+    export function bone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bone");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_spider_eye
     //% block="item minecraft:spider_eye"
-    export function spiderEye(): string {
-        return "minecraft:spider_eye";
+    export function spiderEye(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spider_eye");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chicken_spawn_egg
     //% block="item minecraft:chicken_spawn_egg"
-    export function chickenSpawnEgg(): string {
-        return "minecraft:chicken_spawn_egg";
+    export function chickenSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chicken_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cow_spawn_egg
     //% block="item minecraft:cow_spawn_egg"
-    export function cowSpawnEgg(): string {
-        return "minecraft:cow_spawn_egg";
+    export function cowSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cow_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pig_spawn_egg
     //% block="item minecraft:pig_spawn_egg"
-    export function pigSpawnEgg(): string {
-        return "minecraft:pig_spawn_egg";
+    export function pigSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pig_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sheep_spawn_egg
     //% block="item minecraft:sheep_spawn_egg"
-    export function sheepSpawnEgg(): string {
-        return "minecraft:sheep_spawn_egg";
+    export function sheepSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sheep_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_camel_spawn_egg
     //% block="item minecraft:camel_spawn_egg"
-    export function camelSpawnEgg(): string {
-        return "minecraft:camel_spawn_egg";
+    export function camelSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:camel_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_donkey_spawn_egg
     //% block="item minecraft:donkey_spawn_egg"
-    export function donkeySpawnEgg(): string {
-        return "minecraft:donkey_spawn_egg";
+    export function donkeySpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:donkey_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_horse_spawn_egg
     //% block="item minecraft:horse_spawn_egg"
-    export function horseSpawnEgg(): string {
-        return "minecraft:horse_spawn_egg";
+    export function horseSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:horse_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mule_spawn_egg
     //% block="item minecraft:mule_spawn_egg"
-    export function muleSpawnEgg(): string {
-        return "minecraft:mule_spawn_egg";
+    export function muleSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mule_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cat_spawn_egg
     //% block="item minecraft:cat_spawn_egg"
-    export function catSpawnEgg(): string {
-        return "minecraft:cat_spawn_egg";
+    export function catSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cat_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_parrot_spawn_egg
     //% block="item minecraft:parrot_spawn_egg"
-    export function parrotSpawnEgg(): string {
-        return "minecraft:parrot_spawn_egg";
+    export function parrotSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:parrot_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wolf_spawn_egg
     //% block="item minecraft:wolf_spawn_egg"
-    export function wolfSpawnEgg(): string {
-        return "minecraft:wolf_spawn_egg";
+    export function wolfSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wolf_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_armadillo_spawn_egg
     //% block="item minecraft:armadillo_spawn_egg"
-    export function armadilloSpawnEgg(): string {
-        return "minecraft:armadillo_spawn_egg";
+    export function armadilloSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:armadillo_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bat_spawn_egg
     //% block="item minecraft:bat_spawn_egg"
-    export function batSpawnEgg(): string {
-        return "minecraft:bat_spawn_egg";
+    export function batSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bat_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bee_spawn_egg
     //% block="item minecraft:bee_spawn_egg"
-    export function beeSpawnEgg(): string {
-        return "minecraft:bee_spawn_egg";
+    export function beeSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bee_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_fox_spawn_egg
     //% block="item minecraft:fox_spawn_egg"
-    export function foxSpawnEgg(): string {
-        return "minecraft:fox_spawn_egg";
+    export function foxSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:fox_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_goat_spawn_egg
     //% block="item minecraft:goat_spawn_egg"
-    export function goatSpawnEgg(): string {
-        return "minecraft:goat_spawn_egg";
+    export function goatSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:goat_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_llama_spawn_egg
     //% block="item minecraft:llama_spawn_egg"
-    export function llamaSpawnEgg(): string {
-        return "minecraft:llama_spawn_egg";
+    export function llamaSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:llama_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_ocelot_spawn_egg
     //% block="item minecraft:ocelot_spawn_egg"
-    export function ocelotSpawnEgg(): string {
-        return "minecraft:ocelot_spawn_egg";
+    export function ocelotSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:ocelot_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_panda_spawn_egg
     //% block="item minecraft:panda_spawn_egg"
-    export function pandaSpawnEgg(): string {
-        return "minecraft:panda_spawn_egg";
+    export function pandaSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:panda_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_polar_bear_spawn_egg
     //% block="item minecraft:polar_bear_spawn_egg"
-    export function polarBearSpawnEgg(): string {
-        return "minecraft:polar_bear_spawn_egg";
+    export function polarBearSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:polar_bear_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_rabbit_spawn_egg
     //% block="item minecraft:rabbit_spawn_egg"
-    export function rabbitSpawnEgg(): string {
-        return "minecraft:rabbit_spawn_egg";
+    export function rabbitSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:rabbit_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_axolotl_spawn_egg
     //% block="item minecraft:axolotl_spawn_egg"
-    export function axolotlSpawnEgg(): string {
-        return "minecraft:axolotl_spawn_egg";
+    export function axolotlSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:axolotl_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cod_spawn_egg
     //% block="item minecraft:cod_spawn_egg"
-    export function codSpawnEgg(): string {
-        return "minecraft:cod_spawn_egg";
+    export function codSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cod_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dolphin_spawn_egg
     //% block="item minecraft:dolphin_spawn_egg"
-    export function dolphinSpawnEgg(): string {
-        return "minecraft:dolphin_spawn_egg";
+    export function dolphinSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dolphin_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_frog_spawn_egg
     //% block="item minecraft:frog_spawn_egg"
-    export function frogSpawnEgg(): string {
-        return "minecraft:frog_spawn_egg";
+    export function frogSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:frog_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_glow_squid_spawn_egg
     //% block="item minecraft:glow_squid_spawn_egg"
-    export function glowSquidSpawnEgg(): string {
-        return "minecraft:glow_squid_spawn_egg";
+    export function glowSquidSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:glow_squid_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_nautilus_spawn_egg
     //% block="item minecraft:nautilus_spawn_egg"
-    export function nautilusSpawnEgg(): string {
-        return "minecraft:nautilus_spawn_egg";
+    export function nautilusSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:nautilus_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pufferfish_spawn_egg
     //% block="item minecraft:pufferfish_spawn_egg"
-    export function pufferfishSpawnEgg(): string {
-        return "minecraft:pufferfish_spawn_egg";
+    export function pufferfishSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pufferfish_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_salmon_spawn_egg
     //% block="item minecraft:salmon_spawn_egg"
-    export function salmonSpawnEgg(): string {
-        return "minecraft:salmon_spawn_egg";
+    export function salmonSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:salmon_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_squid_spawn_egg
     //% block="item minecraft:squid_spawn_egg"
-    export function squidSpawnEgg(): string {
-        return "minecraft:squid_spawn_egg";
+    export function squidSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:squid_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_tadpole_spawn_egg
     //% block="item minecraft:tadpole_spawn_egg"
-    export function tadpoleSpawnEgg(): string {
-        return "minecraft:tadpole_spawn_egg";
+    export function tadpoleSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tadpole_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_tropical_fish_spawn_egg
     //% block="item minecraft:tropical_fish_spawn_egg"
-    export function tropicalFishSpawnEgg(): string {
-        return "minecraft:tropical_fish_spawn_egg";
+    export function tropicalFishSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tropical_fish_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_turtle_spawn_egg
     //% block="item minecraft:turtle_spawn_egg"
-    export function turtleSpawnEgg(): string {
-        return "minecraft:turtle_spawn_egg";
+    export function turtleSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:turtle_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_allay_spawn_egg
     //% block="item minecraft:allay_spawn_egg"
-    export function allaySpawnEgg(): string {
-        return "minecraft:allay_spawn_egg";
+    export function allaySpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:allay_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mooshroom_spawn_egg
     //% block="item minecraft:mooshroom_spawn_egg"
-    export function mooshroomSpawnEgg(): string {
-        return "minecraft:mooshroom_spawn_egg";
+    export function mooshroomSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mooshroom_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sniffer_spawn_egg
     //% block="item minecraft:sniffer_spawn_egg"
-    export function snifferSpawnEgg(): string {
-        return "minecraft:sniffer_spawn_egg";
+    export function snifferSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sniffer_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_golem_spawn_egg
     //% block="item minecraft:copper_golem_spawn_egg"
-    export function copperGolemSpawnEgg(): string {
-        return "minecraft:copper_golem_spawn_egg";
+    export function copperGolemSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_golem_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_iron_golem_spawn_egg
     //% block="item minecraft:iron_golem_spawn_egg"
-    export function ironGolemSpawnEgg(): string {
-        return "minecraft:iron_golem_spawn_egg";
+    export function ironGolemSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:iron_golem_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_snow_golem_spawn_egg
     //% block="item minecraft:snow_golem_spawn_egg"
-    export function snowGolemSpawnEgg(): string {
-        return "minecraft:snow_golem_spawn_egg";
+    export function snowGolemSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:snow_golem_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_trader_llama_spawn_egg
     //% block="item minecraft:trader_llama_spawn_egg"
-    export function traderLlamaSpawnEgg(): string {
-        return "minecraft:trader_llama_spawn_egg";
+    export function traderLlamaSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:trader_llama_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_villager_spawn_egg
     //% block="item minecraft:villager_spawn_egg"
-    export function villagerSpawnEgg(): string {
-        return "minecraft:villager_spawn_egg";
+    export function villagerSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:villager_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wandering_trader_spawn_egg
     //% block="item minecraft:wandering_trader_spawn_egg"
-    export function wanderingTraderSpawnEgg(): string {
-        return "minecraft:wandering_trader_spawn_egg";
+    export function wanderingTraderSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wandering_trader_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bogged_spawn_egg
     //% block="item minecraft:bogged_spawn_egg"
-    export function boggedSpawnEgg(): string {
-        return "minecraft:bogged_spawn_egg";
+    export function boggedSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bogged_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_camel_husk_spawn_egg
     //% block="item minecraft:camel_husk_spawn_egg"
-    export function camelHuskSpawnEgg(): string {
-        return "minecraft:camel_husk_spawn_egg";
+    export function camelHuskSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:camel_husk_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_drowned_spawn_egg
     //% block="item minecraft:drowned_spawn_egg"
-    export function drownedSpawnEgg(): string {
-        return "minecraft:drowned_spawn_egg";
+    export function drownedSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:drowned_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_husk_spawn_egg
     //% block="item minecraft:husk_spawn_egg"
-    export function huskSpawnEgg(): string {
-        return "minecraft:husk_spawn_egg";
+    export function huskSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:husk_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_parched_spawn_egg
     //% block="item minecraft:parched_spawn_egg"
-    export function parchedSpawnEgg(): string {
-        return "minecraft:parched_spawn_egg";
+    export function parchedSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:parched_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_skeleton_spawn_egg
     //% block="item minecraft:skeleton_spawn_egg"
-    export function skeletonSpawnEgg(): string {
-        return "minecraft:skeleton_spawn_egg";
+    export function skeletonSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:skeleton_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_skeleton_horse_spawn_egg
     //% block="item minecraft:skeleton_horse_spawn_egg"
-    export function skeletonHorseSpawnEgg(): string {
-        return "minecraft:skeleton_horse_spawn_egg";
+    export function skeletonHorseSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:skeleton_horse_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stray_spawn_egg
     //% block="item minecraft:stray_spawn_egg"
-    export function straySpawnEgg(): string {
-        return "minecraft:stray_spawn_egg";
+    export function straySpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stray_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_zombie_spawn_egg
     //% block="item minecraft:zombie_spawn_egg"
-    export function zombieSpawnEgg(): string {
-        return "minecraft:zombie_spawn_egg";
+    export function zombieSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:zombie_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_zombie_horse_spawn_egg
     //% block="item minecraft:zombie_horse_spawn_egg"
-    export function zombieHorseSpawnEgg(): string {
-        return "minecraft:zombie_horse_spawn_egg";
+    export function zombieHorseSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:zombie_horse_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_zombie_nautilus_spawn_egg
     //% block="item minecraft:zombie_nautilus_spawn_egg"
-    export function zombieNautilusSpawnEgg(): string {
-        return "minecraft:zombie_nautilus_spawn_egg";
+    export function zombieNautilusSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:zombie_nautilus_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_zombie_villager_spawn_egg
     //% block="item minecraft:zombie_villager_spawn_egg"
-    export function zombieVillagerSpawnEgg(): string {
-        return "minecraft:zombie_villager_spawn_egg";
+    export function zombieVillagerSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:zombie_villager_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cave_spider_spawn_egg
     //% block="item minecraft:cave_spider_spawn_egg"
-    export function caveSpiderSpawnEgg(): string {
-        return "minecraft:cave_spider_spawn_egg";
+    export function caveSpiderSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cave_spider_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_spider_spawn_egg
     //% block="item minecraft:spider_spawn_egg"
-    export function spiderSpawnEgg(): string {
-        return "minecraft:spider_spawn_egg";
+    export function spiderSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spider_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_breeze_spawn_egg
     //% block="item minecraft:breeze_spawn_egg"
-    export function breezeSpawnEgg(): string {
-        return "minecraft:breeze_spawn_egg";
+    export function breezeSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:breeze_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_creaking_spawn_egg
     //% block="item minecraft:creaking_spawn_egg"
-    export function creakingSpawnEgg(): string {
-        return "minecraft:creaking_spawn_egg";
+    export function creakingSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:creaking_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_creeper_spawn_egg
     //% block="item minecraft:creeper_spawn_egg"
-    export function creeperSpawnEgg(): string {
-        return "minecraft:creeper_spawn_egg";
+    export function creeperSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:creeper_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_elder_guardian_spawn_egg
     //% block="item minecraft:elder_guardian_spawn_egg"
-    export function elderGuardianSpawnEgg(): string {
-        return "minecraft:elder_guardian_spawn_egg";
+    export function elderGuardianSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:elder_guardian_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_guardian_spawn_egg
     //% block="item minecraft:guardian_spawn_egg"
-    export function guardianSpawnEgg(): string {
-        return "minecraft:guardian_spawn_egg";
+    export function guardianSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:guardian_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_phantom_spawn_egg
     //% block="item minecraft:phantom_spawn_egg"
-    export function phantomSpawnEgg(): string {
-        return "minecraft:phantom_spawn_egg";
+    export function phantomSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:phantom_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_silverfish_spawn_egg
     //% block="item minecraft:silverfish_spawn_egg"
-    export function silverfishSpawnEgg(): string {
-        return "minecraft:silverfish_spawn_egg";
+    export function silverfishSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:silverfish_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_slime_spawn_egg
     //% block="item minecraft:slime_spawn_egg"
-    export function slimeSpawnEgg(): string {
-        return "minecraft:slime_spawn_egg";
+    export function slimeSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:slime_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sulfur_cube_spawn_egg
     //% block="item minecraft:sulfur_cube_spawn_egg"
-    export function sulfurCubeSpawnEgg(): string {
-        return "minecraft:sulfur_cube_spawn_egg";
+    export function sulfurCubeSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sulfur_cube_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_warden_spawn_egg
     //% block="item minecraft:warden_spawn_egg"
-    export function wardenSpawnEgg(): string {
-        return "minecraft:warden_spawn_egg";
+    export function wardenSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:warden_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_witch_spawn_egg
     //% block="item minecraft:witch_spawn_egg"
-    export function witchSpawnEgg(): string {
-        return "minecraft:witch_spawn_egg";
+    export function witchSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:witch_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_evoker_spawn_egg
     //% block="item minecraft:evoker_spawn_egg"
-    export function evokerSpawnEgg(): string {
-        return "minecraft:evoker_spawn_egg";
+    export function evokerSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:evoker_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pillager_spawn_egg
     //% block="item minecraft:pillager_spawn_egg"
-    export function pillagerSpawnEgg(): string {
-        return "minecraft:pillager_spawn_egg";
+    export function pillagerSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pillager_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_ravager_spawn_egg
     //% block="item minecraft:ravager_spawn_egg"
-    export function ravagerSpawnEgg(): string {
-        return "minecraft:ravager_spawn_egg";
+    export function ravagerSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:ravager_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_vex_spawn_egg
     //% block="item minecraft:vex_spawn_egg"
-    export function vexSpawnEgg(): string {
-        return "minecraft:vex_spawn_egg";
+    export function vexSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:vex_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_vindicator_spawn_egg
     //% block="item minecraft:vindicator_spawn_egg"
-    export function vindicatorSpawnEgg(): string {
-        return "minecraft:vindicator_spawn_egg";
+    export function vindicatorSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:vindicator_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_blaze_spawn_egg
     //% block="item minecraft:blaze_spawn_egg"
-    export function blazeSpawnEgg(): string {
-        return "minecraft:blaze_spawn_egg";
+    export function blazeSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blaze_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_ghast_spawn_egg
     //% block="item minecraft:ghast_spawn_egg"
-    export function ghastSpawnEgg(): string {
-        return "minecraft:ghast_spawn_egg";
+    export function ghastSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:ghast_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_happy_ghast_spawn_egg
     //% block="item minecraft:happy_ghast_spawn_egg"
-    export function happyGhastSpawnEgg(): string {
-        return "minecraft:happy_ghast_spawn_egg";
+    export function happyGhastSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:happy_ghast_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_hoglin_spawn_egg
     //% block="item minecraft:hoglin_spawn_egg"
-    export function hoglinSpawnEgg(): string {
-        return "minecraft:hoglin_spawn_egg";
+    export function hoglinSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:hoglin_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_magma_cube_spawn_egg
     //% block="item minecraft:magma_cube_spawn_egg"
-    export function magmaCubeSpawnEgg(): string {
-        return "minecraft:magma_cube_spawn_egg";
+    export function magmaCubeSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:magma_cube_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_piglin_spawn_egg
     //% block="item minecraft:piglin_spawn_egg"
-    export function piglinSpawnEgg(): string {
-        return "minecraft:piglin_spawn_egg";
+    export function piglinSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:piglin_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_piglin_brute_spawn_egg
     //% block="item minecraft:piglin_brute_spawn_egg"
-    export function piglinBruteSpawnEgg(): string {
-        return "minecraft:piglin_brute_spawn_egg";
+    export function piglinBruteSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:piglin_brute_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_strider_spawn_egg
     //% block="item minecraft:strider_spawn_egg"
-    export function striderSpawnEgg(): string {
-        return "minecraft:strider_spawn_egg";
+    export function striderSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:strider_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wither_skeleton_spawn_egg
     //% block="item minecraft:wither_skeleton_spawn_egg"
-    export function witherSkeletonSpawnEgg(): string {
-        return "minecraft:wither_skeleton_spawn_egg";
+    export function witherSkeletonSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wither_skeleton_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_zoglin_spawn_egg
     //% block="item minecraft:zoglin_spawn_egg"
-    export function zoglinSpawnEgg(): string {
-        return "minecraft:zoglin_spawn_egg";
+    export function zoglinSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:zoglin_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_zombie_pigman_spawn_egg
     //% block="item minecraft:zombie_pigman_spawn_egg"
-    export function zombiePigmanSpawnEgg(): string {
-        return "minecraft:zombie_pigman_spawn_egg";
+    export function zombiePigmanSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:zombie_pigman_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_enderman_spawn_egg
     //% block="item minecraft:enderman_spawn_egg"
-    export function endermanSpawnEgg(): string {
-        return "minecraft:enderman_spawn_egg";
+    export function endermanSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:enderman_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_endermite_spawn_egg
     //% block="item minecraft:endermite_spawn_egg"
-    export function endermiteSpawnEgg(): string {
-        return "minecraft:endermite_spawn_egg";
+    export function endermiteSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:endermite_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_shulker_spawn_egg
     //% block="item minecraft:shulker_spawn_egg"
-    export function shulkerSpawnEgg(): string {
-        return "minecraft:shulker_spawn_egg";
+    export function shulkerSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:shulker_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chorus_fruit
     //% block="item minecraft:chorus_fruit"
-    export function chorusFruit(): string {
-        return "minecraft:chorus_fruit";
+    export function chorusFruit(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chorus_fruit");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_popped_chorus_fruit
     //% block="item minecraft:popped_chorus_fruit"
-    export function poppedChorusFruit(): string {
-        return "minecraft:popped_chorus_fruit";
+    export function poppedChorusFruit(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:popped_chorus_fruit");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_leather_helmet
     //% block="item minecraft:leather_helmet"
-    export function leatherHelmet(): string {
-        return "minecraft:leather_helmet";
+    export function leatherHelmet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:leather_helmet");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_helmet
     //% block="item minecraft:copper_helmet"
-    export function copperHelmet(): string {
-        return "minecraft:copper_helmet";
+    export function copperHelmet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_helmet");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chainmail_helmet
     //% block="item minecraft:chainmail_helmet"
-    export function chainmailHelmet(): string {
-        return "minecraft:chainmail_helmet";
+    export function chainmailHelmet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chainmail_helmet");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_iron_helmet
     //% block="item minecraft:iron_helmet"
-    export function ironHelmet(): string {
-        return "minecraft:iron_helmet";
+    export function ironHelmet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:iron_helmet");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_golden_helmet
     //% block="item minecraft:golden_helmet"
-    export function goldenHelmet(): string {
-        return "minecraft:golden_helmet";
+    export function goldenHelmet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:golden_helmet");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_diamond_helmet
     //% block="item minecraft:diamond_helmet"
-    export function diamondHelmet(): string {
-        return "minecraft:diamond_helmet";
+    export function diamondHelmet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:diamond_helmet");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_netherite_helmet
     //% block="item minecraft:netherite_helmet"
-    export function netheriteHelmet(): string {
-        return "minecraft:netherite_helmet";
+    export function netheriteHelmet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:netherite_helmet");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_leather_chestplate
     //% block="item minecraft:leather_chestplate"
-    export function leatherChestplate(): string {
-        return "minecraft:leather_chestplate";
+    export function leatherChestplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:leather_chestplate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_chestplate
     //% block="item minecraft:copper_chestplate"
-    export function copperChestplate(): string {
-        return "minecraft:copper_chestplate";
+    export function copperChestplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_chestplate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chainmail_chestplate
     //% block="item minecraft:chainmail_chestplate"
-    export function chainmailChestplate(): string {
-        return "minecraft:chainmail_chestplate";
+    export function chainmailChestplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chainmail_chestplate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_iron_chestplate
     //% block="item minecraft:iron_chestplate"
-    export function ironChestplate(): string {
-        return "minecraft:iron_chestplate";
+    export function ironChestplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:iron_chestplate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_golden_chestplate
     //% block="item minecraft:golden_chestplate"
-    export function goldenChestplate(): string {
-        return "minecraft:golden_chestplate";
+    export function goldenChestplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:golden_chestplate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_diamond_chestplate
     //% block="item minecraft:diamond_chestplate"
-    export function diamondChestplate(): string {
-        return "minecraft:diamond_chestplate";
+    export function diamondChestplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:diamond_chestplate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_netherite_chestplate
     //% block="item minecraft:netherite_chestplate"
-    export function netheriteChestplate(): string {
-        return "minecraft:netherite_chestplate";
+    export function netheriteChestplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:netherite_chestplate");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_leather_leggings
     //% block="item minecraft:leather_leggings"
-    export function leatherLeggings(): string {
-        return "minecraft:leather_leggings";
+    export function leatherLeggings(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:leather_leggings");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_leggings
     //% block="item minecraft:copper_leggings"
-    export function copperLeggings(): string {
-        return "minecraft:copper_leggings";
+    export function copperLeggings(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_leggings");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chainmail_leggings
     //% block="item minecraft:chainmail_leggings"
-    export function chainmailLeggings(): string {
-        return "minecraft:chainmail_leggings";
+    export function chainmailLeggings(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chainmail_leggings");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_iron_leggings
     //% block="item minecraft:iron_leggings"
-    export function ironLeggings(): string {
-        return "minecraft:iron_leggings";
+    export function ironLeggings(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:iron_leggings");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_golden_leggings
     //% block="item minecraft:golden_leggings"
-    export function goldenLeggings(): string {
-        return "minecraft:golden_leggings";
+    export function goldenLeggings(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:golden_leggings");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_diamond_leggings
     //% block="item minecraft:diamond_leggings"
-    export function diamondLeggings(): string {
-        return "minecraft:diamond_leggings";
+    export function diamondLeggings(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:diamond_leggings");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_netherite_leggings
     //% block="item minecraft:netherite_leggings"
-    export function netheriteLeggings(): string {
-        return "minecraft:netherite_leggings";
+    export function netheriteLeggings(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:netherite_leggings");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_leather_boots
     //% block="item minecraft:leather_boots"
-    export function leatherBoots(): string {
-        return "minecraft:leather_boots";
+    export function leatherBoots(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:leather_boots");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_boots
     //% block="item minecraft:copper_boots"
-    export function copperBoots(): string {
-        return "minecraft:copper_boots";
+    export function copperBoots(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_boots");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chainmail_boots
     //% block="item minecraft:chainmail_boots"
-    export function chainmailBoots(): string {
-        return "minecraft:chainmail_boots";
+    export function chainmailBoots(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chainmail_boots");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_iron_boots
     //% block="item minecraft:iron_boots"
-    export function ironBoots(): string {
-        return "minecraft:iron_boots";
+    export function ironBoots(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:iron_boots");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_golden_boots
     //% block="item minecraft:golden_boots"
-    export function goldenBoots(): string {
-        return "minecraft:golden_boots";
+    export function goldenBoots(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:golden_boots");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_diamond_boots
     //% block="item minecraft:diamond_boots"
-    export function diamondBoots(): string {
-        return "minecraft:diamond_boots";
+    export function diamondBoots(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:diamond_boots");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_netherite_boots
     //% block="item minecraft:netherite_boots"
-    export function netheriteBoots(): string {
-        return "minecraft:netherite_boots";
+    export function netheriteBoots(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:netherite_boots");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wooden_sword
     //% block="item minecraft:wooden_sword"
-    export function woodenSword(): string {
-        return "minecraft:wooden_sword";
+    export function woodenSword(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wooden_sword");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stone_sword
     //% block="item minecraft:stone_sword"
-    export function stoneSword(): string {
-        return "minecraft:stone_sword";
+    export function stoneSword(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stone_sword");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_sword
     //% block="item minecraft:copper_sword"
-    export function copperSword(): string {
-        return "minecraft:copper_sword";
+    export function copperSword(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_sword");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_iron_sword
     //% block="item minecraft:iron_sword"
-    export function ironSword(): string {
-        return "minecraft:iron_sword";
+    export function ironSword(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:iron_sword");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_golden_sword
     //% block="item minecraft:golden_sword"
-    export function goldenSword(): string {
-        return "minecraft:golden_sword";
+    export function goldenSword(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:golden_sword");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_diamond_sword
     //% block="item minecraft:diamond_sword"
-    export function diamondSword(): string {
-        return "minecraft:diamond_sword";
+    export function diamondSword(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:diamond_sword");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_netherite_sword
     //% block="item minecraft:netherite_sword"
-    export function netheriteSword(): string {
-        return "minecraft:netherite_sword";
+    export function netheriteSword(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:netherite_sword");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wooden_spear
     //% block="item minecraft:wooden_spear"
-    export function woodenSpear(): string {
-        return "minecraft:wooden_spear";
+    export function woodenSpear(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wooden_spear");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stone_spear
     //% block="item minecraft:stone_spear"
-    export function stoneSpear(): string {
-        return "minecraft:stone_spear";
+    export function stoneSpear(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stone_spear");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_spear
     //% block="item minecraft:copper_spear"
-    export function copperSpear(): string {
-        return "minecraft:copper_spear";
+    export function copperSpear(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_spear");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_iron_spear
     //% block="item minecraft:iron_spear"
-    export function ironSpear(): string {
-        return "minecraft:iron_spear";
+    export function ironSpear(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:iron_spear");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_golden_spear
     //% block="item minecraft:golden_spear"
-    export function goldenSpear(): string {
-        return "minecraft:golden_spear";
+    export function goldenSpear(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:golden_spear");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_diamond_spear
     //% block="item minecraft:diamond_spear"
-    export function diamondSpear(): string {
-        return "minecraft:diamond_spear";
+    export function diamondSpear(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:diamond_spear");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_netherite_spear
     //% block="item minecraft:netherite_spear"
-    export function netheriteSpear(): string {
-        return "minecraft:netherite_spear";
+    export function netheriteSpear(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:netherite_spear");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wooden_axe
     //% block="item minecraft:wooden_axe"
-    export function woodenAxe(): string {
-        return "minecraft:wooden_axe";
+    export function woodenAxe(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wooden_axe");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stone_axe
     //% block="item minecraft:stone_axe"
-    export function stoneAxe(): string {
-        return "minecraft:stone_axe";
+    export function stoneAxe(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stone_axe");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_axe
     //% block="item minecraft:copper_axe"
-    export function copperAxe(): string {
-        return "minecraft:copper_axe";
+    export function copperAxe(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_axe");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_iron_axe
     //% block="item minecraft:iron_axe"
-    export function ironAxe(): string {
-        return "minecraft:iron_axe";
+    export function ironAxe(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:iron_axe");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_golden_axe
     //% block="item minecraft:golden_axe"
-    export function goldenAxe(): string {
-        return "minecraft:golden_axe";
+    export function goldenAxe(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:golden_axe");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_diamond_axe
     //% block="item minecraft:diamond_axe"
-    export function diamondAxe(): string {
-        return "minecraft:diamond_axe";
+    export function diamondAxe(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:diamond_axe");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_netherite_axe
     //% block="item minecraft:netherite_axe"
-    export function netheriteAxe(): string {
-        return "minecraft:netherite_axe";
+    export function netheriteAxe(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:netherite_axe");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wooden_pickaxe
     //% block="item minecraft:wooden_pickaxe"
-    export function woodenPickaxe(): string {
-        return "minecraft:wooden_pickaxe";
+    export function woodenPickaxe(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wooden_pickaxe");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stone_pickaxe
     //% block="item minecraft:stone_pickaxe"
-    export function stonePickaxe(): string {
-        return "minecraft:stone_pickaxe";
+    export function stonePickaxe(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stone_pickaxe");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_pickaxe
     //% block="item minecraft:copper_pickaxe"
-    export function copperPickaxe(): string {
-        return "minecraft:copper_pickaxe";
+    export function copperPickaxe(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_pickaxe");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_iron_pickaxe
     //% block="item minecraft:iron_pickaxe"
-    export function ironPickaxe(): string {
-        return "minecraft:iron_pickaxe";
+    export function ironPickaxe(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:iron_pickaxe");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_golden_pickaxe
     //% block="item minecraft:golden_pickaxe"
-    export function goldenPickaxe(): string {
-        return "minecraft:golden_pickaxe";
+    export function goldenPickaxe(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:golden_pickaxe");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_diamond_pickaxe
     //% block="item minecraft:diamond_pickaxe"
-    export function diamondPickaxe(): string {
-        return "minecraft:diamond_pickaxe";
+    export function diamondPickaxe(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:diamond_pickaxe");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_netherite_pickaxe
     //% block="item minecraft:netherite_pickaxe"
-    export function netheritePickaxe(): string {
-        return "minecraft:netherite_pickaxe";
+    export function netheritePickaxe(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:netherite_pickaxe");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wooden_shovel
     //% block="item minecraft:wooden_shovel"
-    export function woodenShovel(): string {
-        return "minecraft:wooden_shovel";
+    export function woodenShovel(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wooden_shovel");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stone_shovel
     //% block="item minecraft:stone_shovel"
-    export function stoneShovel(): string {
-        return "minecraft:stone_shovel";
+    export function stoneShovel(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stone_shovel");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_shovel
     //% block="item minecraft:copper_shovel"
-    export function copperShovel(): string {
-        return "minecraft:copper_shovel";
+    export function copperShovel(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_shovel");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_iron_shovel
     //% block="item minecraft:iron_shovel"
-    export function ironShovel(): string {
-        return "minecraft:iron_shovel";
+    export function ironShovel(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:iron_shovel");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_golden_shovel
     //% block="item minecraft:golden_shovel"
-    export function goldenShovel(): string {
-        return "minecraft:golden_shovel";
+    export function goldenShovel(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:golden_shovel");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_diamond_shovel
     //% block="item minecraft:diamond_shovel"
-    export function diamondShovel(): string {
-        return "minecraft:diamond_shovel";
+    export function diamondShovel(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:diamond_shovel");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_netherite_shovel
     //% block="item minecraft:netherite_shovel"
-    export function netheriteShovel(): string {
-        return "minecraft:netherite_shovel";
+    export function netheriteShovel(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:netherite_shovel");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wooden_hoe
     //% block="item minecraft:wooden_hoe"
-    export function woodenHoe(): string {
-        return "minecraft:wooden_hoe";
+    export function woodenHoe(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wooden_hoe");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stone_hoe
     //% block="item minecraft:stone_hoe"
-    export function stoneHoe(): string {
-        return "minecraft:stone_hoe";
+    export function stoneHoe(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stone_hoe");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_hoe
     //% block="item minecraft:copper_hoe"
-    export function copperHoe(): string {
-        return "minecraft:copper_hoe";
+    export function copperHoe(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_hoe");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_iron_hoe
     //% block="item minecraft:iron_hoe"
-    export function ironHoe(): string {
-        return "minecraft:iron_hoe";
+    export function ironHoe(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:iron_hoe");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_golden_hoe
     //% block="item minecraft:golden_hoe"
-    export function goldenHoe(): string {
-        return "minecraft:golden_hoe";
+    export function goldenHoe(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:golden_hoe");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_diamond_hoe
     //% block="item minecraft:diamond_hoe"
-    export function diamondHoe(): string {
-        return "minecraft:diamond_hoe";
+    export function diamondHoe(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:diamond_hoe");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_netherite_hoe
     //% block="item minecraft:netherite_hoe"
-    export function netheriteHoe(): string {
-        return "minecraft:netherite_hoe";
+    export function netheriteHoe(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:netherite_hoe");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bow
     //% block="item minecraft:bow"
-    export function bow(): string {
-        return "minecraft:bow";
+    export function bow(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bow");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_crossbow
     //% block="item minecraft:crossbow"
-    export function crossbow(): string {
-        return "minecraft:crossbow";
+    export function crossbow(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:crossbow");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mace
     //% block="item minecraft:mace"
-    export function mace(): string {
-        return "minecraft:mace";
+    export function mace(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mace");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_trident
     //% block="item minecraft:trident"
-    export function trident(): string {
-        return "minecraft:trident";
+    export function trident(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:trident");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_shield
     //% block="item minecraft:shield"
-    export function shield(): string {
-        return "minecraft:shield";
+    export function shield(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:shield");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cooked_chicken
     //% block="item minecraft:cooked_chicken"
-    export function cookedChicken(): string {
-        return "minecraft:cooked_chicken";
+    export function cookedChicken(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cooked_chicken");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cooked_porkchop
     //% block="item minecraft:cooked_porkchop"
-    export function cookedPorkchop(): string {
-        return "minecraft:cooked_porkchop";
+    export function cookedPorkchop(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cooked_porkchop");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cooked_beef
     //% block="item minecraft:cooked_beef"
-    export function cookedBeef(): string {
-        return "minecraft:cooked_beef";
+    export function cookedBeef(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cooked_beef");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cooked_mutton
     //% block="item minecraft:cooked_mutton"
-    export function cookedMutton(): string {
-        return "minecraft:cooked_mutton";
+    export function cookedMutton(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cooked_mutton");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cooked_rabbit
     //% block="item minecraft:cooked_rabbit"
-    export function cookedRabbit(): string {
-        return "minecraft:cooked_rabbit";
+    export function cookedRabbit(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cooked_rabbit");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cooked_cod
     //% block="item minecraft:cooked_cod"
-    export function cookedCod(): string {
-        return "minecraft:cooked_cod";
+    export function cookedCod(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cooked_cod");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cooked_salmon
     //% block="item minecraft:cooked_salmon"
-    export function cookedSalmon(): string {
-        return "minecraft:cooked_salmon";
+    export function cookedSalmon(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cooked_salmon");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bread
     //% block="item minecraft:bread"
-    export function bread(): string {
-        return "minecraft:bread";
+    export function bread(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bread");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mushroom_stew
     //% block="item minecraft:mushroom_stew"
-    export function mushroomStew(): string {
-        return "minecraft:mushroom_stew";
+    export function mushroomStew(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mushroom_stew");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_beetroot_soup
     //% block="item minecraft:beetroot_soup"
-    export function beetrootSoup(): string {
-        return "minecraft:beetroot_soup";
+    export function beetrootSoup(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:beetroot_soup");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_rabbit_stew
     //% block="item minecraft:rabbit_stew"
-    export function rabbitStew(): string {
-        return "minecraft:rabbit_stew";
+    export function rabbitStew(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:rabbit_stew");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_suspicious_stew
     //% block="item minecraft:suspicious_stew"
-    export function suspiciousStew(): string {
-        return "minecraft:suspicious_stew";
+    export function suspiciousStew(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:suspicious_stew");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_baked_potato
     //% block="item minecraft:baked_potato"
-    export function bakedPotato(): string {
-        return "minecraft:baked_potato";
+    export function bakedPotato(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:baked_potato");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cookie
     //% block="item minecraft:cookie"
-    export function cookie(): string {
-        return "minecraft:cookie";
+    export function cookie(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cookie");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pumpkin_pie
     //% block="item minecraft:pumpkin_pie"
-    export function pumpkinPie(): string {
-        return "minecraft:pumpkin_pie";
+    export function pumpkinPie(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pumpkin_pie");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dried_kelp
     //% block="item minecraft:dried_kelp"
-    export function driedKelp(): string {
-        return "minecraft:dried_kelp";
+    export function driedKelp(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dried_kelp");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_fishing_rod
     //% block="item minecraft:fishing_rod"
-    export function fishingRod(): string {
-        return "minecraft:fishing_rod";
+    export function fishingRod(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:fishing_rod");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_carrot_on_a_stick
     //% block="item minecraft:carrot_on_a_stick"
-    export function carrotOnAStick(): string {
-        return "minecraft:carrot_on_a_stick";
+    export function carrotOnAStick(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:carrot_on_a_stick");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_warped_fungus_on_a_stick
     //% block="item minecraft:warped_fungus_on_a_stick"
-    export function warpedFungusOnAStick(): string {
-        return "minecraft:warped_fungus_on_a_stick";
+    export function warpedFungusOnAStick(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:warped_fungus_on_a_stick");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wind_charge
     //% block="item minecraft:wind_charge"
-    export function windCharge(): string {
-        return "minecraft:wind_charge";
+    export function windCharge(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wind_charge");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_shears
     //% block="item minecraft:shears"
-    export function shears(): string {
-        return "minecraft:shears";
+    export function shears(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:shears");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_flint_and_steel
     //% block="item minecraft:flint_and_steel"
-    export function flintAndSteel(): string {
-        return "minecraft:flint_and_steel";
+    export function flintAndSteel(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:flint_and_steel");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lead
     //% block="item minecraft:lead"
-    export function lead(): string {
-        return "minecraft:lead";
+    export function lead(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lead");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_clock
     //% block="item minecraft:clock"
-    export function clock(): string {
-        return "minecraft:clock";
+    export function clock(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:clock");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_compass
     //% block="item minecraft:compass"
-    export function compass(): string {
-        return "minecraft:compass";
+    export function compass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:compass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_recovery_compass
     //% block="item minecraft:recovery_compass"
-    export function recoveryCompass(): string {
-        return "minecraft:recovery_compass";
+    export function recoveryCompass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:recovery_compass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_goat_horn
     //% block="item minecraft:goat_horn"
-    export function goatHorn(): string {
-        return "minecraft:goat_horn";
+    export function goatHorn(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:goat_horn");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_empty_map
     //% block="item minecraft:empty_map"
-    export function emptyMap(): string {
-        return "minecraft:empty_map";
+    export function emptyMap(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:empty_map");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_saddle
     //% block="item minecraft:saddle"
-    export function saddle(): string {
-        return "minecraft:saddle";
+    export function saddle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:saddle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_white_harness
     //% block="item minecraft:white_harness"
-    export function whiteHarness(): string {
-        return "minecraft:white_harness";
+    export function whiteHarness(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:white_harness");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_gray_harness
     //% block="item minecraft:light_gray_harness"
-    export function lightGrayHarness(): string {
-        return "minecraft:light_gray_harness";
+    export function lightGrayHarness(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_gray_harness");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_gray_harness
     //% block="item minecraft:gray_harness"
-    export function grayHarness(): string {
-        return "minecraft:gray_harness";
+    export function grayHarness(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:gray_harness");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_black_harness
     //% block="item minecraft:black_harness"
-    export function blackHarness(): string {
-        return "minecraft:black_harness";
+    export function blackHarness(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:black_harness");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_brown_harness
     //% block="item minecraft:brown_harness"
-    export function brownHarness(): string {
-        return "minecraft:brown_harness";
+    export function brownHarness(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brown_harness");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_red_harness
     //% block="item minecraft:red_harness"
-    export function redHarness(): string {
-        return "minecraft:red_harness";
+    export function redHarness(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_harness");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_orange_harness
     //% block="item minecraft:orange_harness"
-    export function orangeHarness(): string {
-        return "minecraft:orange_harness";
+    export function orangeHarness(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:orange_harness");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_yellow_harness
     //% block="item minecraft:yellow_harness"
-    export function yellowHarness(): string {
-        return "minecraft:yellow_harness";
+    export function yellowHarness(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:yellow_harness");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lime_harness
     //% block="item minecraft:lime_harness"
-    export function limeHarness(): string {
-        return "minecraft:lime_harness";
+    export function limeHarness(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lime_harness");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_green_harness
     //% block="item minecraft:green_harness"
-    export function greenHarness(): string {
-        return "minecraft:green_harness";
+    export function greenHarness(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:green_harness");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cyan_harness
     //% block="item minecraft:cyan_harness"
-    export function cyanHarness(): string {
-        return "minecraft:cyan_harness";
+    export function cyanHarness(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cyan_harness");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_blue_harness
     //% block="item minecraft:light_blue_harness"
-    export function lightBlueHarness(): string {
-        return "minecraft:light_blue_harness";
+    export function lightBlueHarness(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_blue_harness");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_blue_harness
     //% block="item minecraft:blue_harness"
-    export function blueHarness(): string {
-        return "minecraft:blue_harness";
+    export function blueHarness(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blue_harness");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_purple_harness
     //% block="item minecraft:purple_harness"
-    export function purpleHarness(): string {
-        return "minecraft:purple_harness";
+    export function purpleHarness(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:purple_harness");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_magenta_harness
     //% block="item minecraft:magenta_harness"
-    export function magentaHarness(): string {
-        return "minecraft:magenta_harness";
+    export function magentaHarness(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:magenta_harness");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pink_harness
     //% block="item minecraft:pink_harness"
-    export function pinkHarness(): string {
-        return "minecraft:pink_harness";
+    export function pinkHarness(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pink_harness");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bundle
     //% block="item minecraft:bundle"
-    export function bundle(): string {
-        return "minecraft:bundle";
+    export function bundle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bundle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_white_bundle
     //% block="item minecraft:white_bundle"
-    export function whiteBundle(): string {
-        return "minecraft:white_bundle";
+    export function whiteBundle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:white_bundle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_gray_bundle
     //% block="item minecraft:light_gray_bundle"
-    export function lightGrayBundle(): string {
-        return "minecraft:light_gray_bundle";
+    export function lightGrayBundle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_gray_bundle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_gray_bundle
     //% block="item minecraft:gray_bundle"
-    export function grayBundle(): string {
-        return "minecraft:gray_bundle";
+    export function grayBundle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:gray_bundle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_black_bundle
     //% block="item minecraft:black_bundle"
-    export function blackBundle(): string {
-        return "minecraft:black_bundle";
+    export function blackBundle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:black_bundle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_brown_bundle
     //% block="item minecraft:brown_bundle"
-    export function brownBundle(): string {
-        return "minecraft:brown_bundle";
+    export function brownBundle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brown_bundle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_red_bundle
     //% block="item minecraft:red_bundle"
-    export function redBundle(): string {
-        return "minecraft:red_bundle";
+    export function redBundle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:red_bundle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_orange_bundle
     //% block="item minecraft:orange_bundle"
-    export function orangeBundle(): string {
-        return "minecraft:orange_bundle";
+    export function orangeBundle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:orange_bundle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_yellow_bundle
     //% block="item minecraft:yellow_bundle"
-    export function yellowBundle(): string {
-        return "minecraft:yellow_bundle";
+    export function yellowBundle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:yellow_bundle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lime_bundle
     //% block="item minecraft:lime_bundle"
-    export function limeBundle(): string {
-        return "minecraft:lime_bundle";
+    export function limeBundle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lime_bundle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_green_bundle
     //% block="item minecraft:green_bundle"
-    export function greenBundle(): string {
-        return "minecraft:green_bundle";
+    export function greenBundle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:green_bundle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cyan_bundle
     //% block="item minecraft:cyan_bundle"
-    export function cyanBundle(): string {
-        return "minecraft:cyan_bundle";
+    export function cyanBundle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cyan_bundle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_light_blue_bundle
     //% block="item minecraft:light_blue_bundle"
-    export function lightBlueBundle(): string {
-        return "minecraft:light_blue_bundle";
+    export function lightBlueBundle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:light_blue_bundle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_blue_bundle
     //% block="item minecraft:blue_bundle"
-    export function blueBundle(): string {
-        return "minecraft:blue_bundle";
+    export function blueBundle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blue_bundle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_purple_bundle
     //% block="item minecraft:purple_bundle"
-    export function purpleBundle(): string {
-        return "minecraft:purple_bundle";
+    export function purpleBundle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:purple_bundle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_magenta_bundle
     //% block="item minecraft:magenta_bundle"
-    export function magentaBundle(): string {
-        return "minecraft:magenta_bundle";
+    export function magentaBundle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:magenta_bundle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pink_bundle
     //% block="item minecraft:pink_bundle"
-    export function pinkBundle(): string {
-        return "minecraft:pink_bundle";
+    export function pinkBundle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pink_bundle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_leather_horse_armor
     //% block="item minecraft:leather_horse_armor"
-    export function leatherHorseArmor(): string {
-        return "minecraft:leather_horse_armor";
+    export function leatherHorseArmor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:leather_horse_armor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_horse_armor
     //% block="item minecraft:copper_horse_armor"
-    export function copperHorseArmor(): string {
-        return "minecraft:copper_horse_armor";
+    export function copperHorseArmor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_horse_armor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_iron_horse_armor
     //% block="item minecraft:iron_horse_armor"
-    export function ironHorseArmor(): string {
-        return "minecraft:iron_horse_armor";
+    export function ironHorseArmor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:iron_horse_armor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_golden_horse_armor
     //% block="item minecraft:golden_horse_armor"
-    export function goldenHorseArmor(): string {
-        return "minecraft:golden_horse_armor";
+    export function goldenHorseArmor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:golden_horse_armor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_diamond_horse_armor
     //% block="item minecraft:diamond_horse_armor"
-    export function diamondHorseArmor(): string {
-        return "minecraft:diamond_horse_armor";
+    export function diamondHorseArmor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:diamond_horse_armor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_netherite_horse_armor
     //% block="item minecraft:netherite_horse_armor"
-    export function netheriteHorseArmor(): string {
-        return "minecraft:netherite_horse_armor";
+    export function netheriteHorseArmor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:netherite_horse_armor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wolf_armor
     //% block="item minecraft:wolf_armor"
-    export function wolfArmor(): string {
-        return "minecraft:wolf_armor";
+    export function wolfArmor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wolf_armor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_nautilus_armor
     //% block="item minecraft:copper_nautilus_armor"
-    export function copperNautilusArmor(): string {
-        return "minecraft:copper_nautilus_armor";
+    export function copperNautilusArmor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_nautilus_armor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_iron_nautilus_armor
     //% block="item minecraft:iron_nautilus_armor"
-    export function ironNautilusArmor(): string {
-        return "minecraft:iron_nautilus_armor";
+    export function ironNautilusArmor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:iron_nautilus_armor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_golden_nautilus_armor
     //% block="item minecraft:golden_nautilus_armor"
-    export function goldenNautilusArmor(): string {
-        return "minecraft:golden_nautilus_armor";
+    export function goldenNautilusArmor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:golden_nautilus_armor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_diamond_nautilus_armor
     //% block="item minecraft:diamond_nautilus_armor"
-    export function diamondNautilusArmor(): string {
-        return "minecraft:diamond_nautilus_armor";
+    export function diamondNautilusArmor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:diamond_nautilus_armor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_netherite_nautilus_armor
     //% block="item minecraft:netherite_nautilus_armor"
-    export function netheriteNautilusArmor(): string {
-        return "minecraft:netherite_nautilus_armor";
+    export function netheriteNautilusArmor(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:netherite_nautilus_armor");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_turtle_helmet
     //% block="item minecraft:turtle_helmet"
-    export function turtleHelmet(): string {
-        return "minecraft:turtle_helmet";
+    export function turtleHelmet(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:turtle_helmet");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_elytra
     //% block="item minecraft:elytra"
-    export function elytra(): string {
-        return "minecraft:elytra";
+    export function elytra(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:elytra");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_totem_of_undying
     //% block="item minecraft:totem_of_undying"
-    export function totemOfUndying(): string {
-        return "minecraft:totem_of_undying";
+    export function totemOfUndying(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:totem_of_undying");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_glass_bottle
     //% block="item minecraft:glass_bottle"
-    export function glassBottle(): string {
-        return "minecraft:glass_bottle";
+    export function glassBottle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:glass_bottle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_experience_bottle
     //% block="item minecraft:experience_bottle"
-    export function experienceBottle(): string {
-        return "minecraft:experience_bottle";
+    export function experienceBottle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:experience_bottle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_potion
     //% block="item minecraft:potion"
-    export function potion(): string {
-        return "minecraft:potion";
+    export function potion(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:potion");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_ominous_bottle
     //% block="item minecraft:ominous_bottle"
-    export function ominousBottle(): string {
-        return "minecraft:ominous_bottle";
+    export function ominousBottle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:ominous_bottle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_spyglass
     //% block="item minecraft:spyglass"
-    export function spyglass(): string {
-        return "minecraft:spyglass";
+    export function spyglass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spyglass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_brush
     //% block="item minecraft:brush"
-    export function brush(): string {
-        return "minecraft:brush";
+    export function brush(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brush");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_stick
     //% block="item minecraft:stick"
-    export function stick(): string {
-        return "minecraft:stick";
+    export function stick(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:stick");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_music_disc_13
     //% block="item minecraft:music_disc_13"
-    export function musicDisc13(): string {
-        return "minecraft:music_disc_13";
+    export function musicDisc13(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:music_disc_13");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_music_disc_cat
     //% block="item minecraft:music_disc_cat"
-    export function musicDiscCat(): string {
-        return "minecraft:music_disc_cat";
+    export function musicDiscCat(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:music_disc_cat");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_music_disc_blocks
     //% block="item minecraft:music_disc_blocks"
-    export function musicDiscBlocks(): string {
-        return "minecraft:music_disc_blocks";
+    export function musicDiscBlocks(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:music_disc_blocks");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_music_disc_chirp
     //% block="item minecraft:music_disc_chirp"
-    export function musicDiscChirp(): string {
-        return "minecraft:music_disc_chirp";
+    export function musicDiscChirp(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:music_disc_chirp");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_music_disc_far
     //% block="item minecraft:music_disc_far"
-    export function musicDiscFar(): string {
-        return "minecraft:music_disc_far";
+    export function musicDiscFar(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:music_disc_far");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_music_disc_mall
     //% block="item minecraft:music_disc_mall"
-    export function musicDiscMall(): string {
-        return "minecraft:music_disc_mall";
+    export function musicDiscMall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:music_disc_mall");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_music_disc_mellohi
     //% block="item minecraft:music_disc_mellohi"
-    export function musicDiscMellohi(): string {
-        return "minecraft:music_disc_mellohi";
+    export function musicDiscMellohi(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:music_disc_mellohi");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_music_disc_stal
     //% block="item minecraft:music_disc_stal"
-    export function musicDiscStal(): string {
-        return "minecraft:music_disc_stal";
+    export function musicDiscStal(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:music_disc_stal");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_music_disc_strad
     //% block="item minecraft:music_disc_strad"
-    export function musicDiscStrad(): string {
-        return "minecraft:music_disc_strad";
+    export function musicDiscStrad(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:music_disc_strad");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_music_disc_ward
     //% block="item minecraft:music_disc_ward"
-    export function musicDiscWard(): string {
-        return "minecraft:music_disc_ward";
+    export function musicDiscWard(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:music_disc_ward");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_music_disc_11
     //% block="item minecraft:music_disc_11"
-    export function musicDisc11(): string {
-        return "minecraft:music_disc_11";
+    export function musicDisc11(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:music_disc_11");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_music_disc_wait
     //% block="item minecraft:music_disc_wait"
-    export function musicDiscWait(): string {
-        return "minecraft:music_disc_wait";
+    export function musicDiscWait(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:music_disc_wait");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_music_disc_otherside
     //% block="item minecraft:music_disc_otherside"
-    export function musicDiscOtherside(): string {
-        return "minecraft:music_disc_otherside";
+    export function musicDiscOtherside(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:music_disc_otherside");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_music_disc_5
     //% block="item minecraft:music_disc_5"
-    export function musicDisc5(): string {
-        return "minecraft:music_disc_5";
+    export function musicDisc5(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:music_disc_5");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_music_disc_pigstep
     //% block="item minecraft:music_disc_pigstep"
-    export function musicDiscPigstep(): string {
-        return "minecraft:music_disc_pigstep";
+    export function musicDiscPigstep(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:music_disc_pigstep");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_music_disc_relic
     //% block="item minecraft:music_disc_relic"
-    export function musicDiscRelic(): string {
-        return "minecraft:music_disc_relic";
+    export function musicDiscRelic(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:music_disc_relic");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_music_disc_creator
     //% block="item minecraft:music_disc_creator"
-    export function musicDiscCreator(): string {
-        return "minecraft:music_disc_creator";
+    export function musicDiscCreator(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:music_disc_creator");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_music_disc_creator_music_box
     //% block="item minecraft:music_disc_creator_music_box"
-    export function musicDiscCreatorMusicBox(): string {
-        return "minecraft:music_disc_creator_music_box";
+    export function musicDiscCreatorMusicBox(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:music_disc_creator_music_box");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_music_disc_precipice
     //% block="item minecraft:music_disc_precipice"
-    export function musicDiscPrecipice(): string {
-        return "minecraft:music_disc_precipice";
+    export function musicDiscPrecipice(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:music_disc_precipice");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_music_disc_tears
     //% block="item minecraft:music_disc_tears"
-    export function musicDiscTears(): string {
-        return "minecraft:music_disc_tears";
+    export function musicDiscTears(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:music_disc_tears");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_music_disc_lava_chicken
     //% block="item minecraft:music_disc_lava_chicken"
-    export function musicDiscLavaChicken(): string {
-        return "minecraft:music_disc_lava_chicken";
+    export function musicDiscLavaChicken(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:music_disc_lava_chicken");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_music_disc_bounce
     //% block="item minecraft:music_disc_bounce"
-    export function musicDiscBounce(): string {
-        return "minecraft:music_disc_bounce";
+    export function musicDiscBounce(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:music_disc_bounce");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_disc_fragment_5
     //% block="item minecraft:disc_fragment_5"
-    export function discFragment5(): string {
-        return "minecraft:disc_fragment_5";
+    export function discFragment5(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:disc_fragment_5");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_glowstone_dust
     //% block="item minecraft:glowstone_dust"
-    export function glowstoneDust(): string {
-        return "minecraft:glowstone_dust";
+    export function glowstoneDust(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:glowstone_dust");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_oak_sign
     //% block="item minecraft:oak_sign"
-    export function oakSign(): string {
-        return "minecraft:oak_sign";
+    export function oakSign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oak_sign");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_spruce_sign
     //% block="item minecraft:spruce_sign"
-    export function spruceSign(): string {
-        return "minecraft:spruce_sign";
+    export function spruceSign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spruce_sign");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_birch_sign
     //% block="item minecraft:birch_sign"
-    export function birchSign(): string {
-        return "minecraft:birch_sign";
+    export function birchSign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:birch_sign");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_jungle_sign
     //% block="item minecraft:jungle_sign"
-    export function jungleSign(): string {
-        return "minecraft:jungle_sign";
+    export function jungleSign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:jungle_sign");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_acacia_sign
     //% block="item minecraft:acacia_sign"
-    export function acaciaSign(): string {
-        return "minecraft:acacia_sign";
+    export function acaciaSign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:acacia_sign");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dark_oak_sign
     //% block="item minecraft:dark_oak_sign"
-    export function darkOakSign(): string {
-        return "minecraft:dark_oak_sign";
+    export function darkOakSign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dark_oak_sign");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mangrove_sign
     //% block="item minecraft:mangrove_sign"
-    export function mangroveSign(): string {
-        return "minecraft:mangrove_sign";
+    export function mangroveSign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mangrove_sign");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cherry_sign
     //% block="item minecraft:cherry_sign"
-    export function cherrySign(): string {
-        return "minecraft:cherry_sign";
+    export function cherrySign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cherry_sign");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pale_oak_sign
     //% block="item minecraft:pale_oak_sign"
-    export function paleOakSign(): string {
-        return "minecraft:pale_oak_sign";
+    export function paleOakSign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pale_oak_sign");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bamboo_sign
     //% block="item minecraft:bamboo_sign"
-    export function bambooSign(): string {
-        return "minecraft:bamboo_sign";
+    export function bambooSign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bamboo_sign");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_crimson_sign
     //% block="item minecraft:crimson_sign"
-    export function crimsonSign(): string {
-        return "minecraft:crimson_sign";
+    export function crimsonSign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:crimson_sign");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_warped_sign
     //% block="item minecraft:warped_sign"
-    export function warpedSign(): string {
-        return "minecraft:warped_sign";
+    export function warpedSign(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:warped_sign");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_honey_bottle
     //% block="item minecraft:honey_bottle"
-    export function honeyBottle(): string {
-        return "minecraft:honey_bottle";
+    export function honeyBottle(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:honey_bottle");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bowl
     //% block="item minecraft:bowl"
-    export function bowl(): string {
-        return "minecraft:bowl";
+    export function bowl(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bowl");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bucket
     //% block="item minecraft:bucket"
-    export function bucket(): string {
-        return "minecraft:bucket";
+    export function bucket(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bucket");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_milk_bucket
     //% block="item minecraft:milk_bucket"
-    export function milkBucket(): string {
-        return "minecraft:milk_bucket";
+    export function milkBucket(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:milk_bucket");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_water_bucket
     //% block="item minecraft:water_bucket"
-    export function waterBucket(): string {
-        return "minecraft:water_bucket";
+    export function waterBucket(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:water_bucket");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lava_bucket
     //% block="item minecraft:lava_bucket"
-    export function lavaBucket(): string {
-        return "minecraft:lava_bucket";
+    export function lavaBucket(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lava_bucket");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cod_bucket
     //% block="item minecraft:cod_bucket"
-    export function codBucket(): string {
-        return "minecraft:cod_bucket";
+    export function codBucket(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cod_bucket");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_salmon_bucket
     //% block="item minecraft:salmon_bucket"
-    export function salmonBucket(): string {
-        return "minecraft:salmon_bucket";
+    export function salmonBucket(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:salmon_bucket");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_tropical_fish_bucket
     //% block="item minecraft:tropical_fish_bucket"
-    export function tropicalFishBucket(): string {
-        return "minecraft:tropical_fish_bucket";
+    export function tropicalFishBucket(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tropical_fish_bucket");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pufferfish_bucket
     //% block="item minecraft:pufferfish_bucket"
-    export function pufferfishBucket(): string {
-        return "minecraft:pufferfish_bucket";
+    export function pufferfishBucket(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pufferfish_bucket");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_powder_snow_bucket
     //% block="item minecraft:powder_snow_bucket"
-    export function powderSnowBucket(): string {
-        return "minecraft:powder_snow_bucket";
+    export function powderSnowBucket(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:powder_snow_bucket");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_axolotl_bucket
     //% block="item minecraft:axolotl_bucket"
-    export function axolotlBucket(): string {
-        return "minecraft:axolotl_bucket";
+    export function axolotlBucket(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:axolotl_bucket");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_tadpole_bucket
     //% block="item minecraft:tadpole_bucket"
-    export function tadpoleBucket(): string {
-        return "minecraft:tadpole_bucket";
+    export function tadpoleBucket(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tadpole_bucket");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sulfur_cube_bucket
     //% block="item minecraft:sulfur_cube_bucket"
-    export function sulfurCubeBucket(): string {
-        return "minecraft:sulfur_cube_bucket";
+    export function sulfurCubeBucket(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sulfur_cube_bucket");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_coal
     //% block="item minecraft:coal"
-    export function coal(): string {
-        return "minecraft:coal";
+    export function coal(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:coal");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_charcoal
     //% block="item minecraft:charcoal"
-    export function charcoal(): string {
-        return "minecraft:charcoal";
+    export function charcoal(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:charcoal");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_diamond
     //% block="item minecraft:diamond"
-    export function diamond(): string {
-        return "minecraft:diamond";
+    export function diamond(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:diamond");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_iron_nugget
     //% block="item minecraft:iron_nugget"
-    export function ironNugget(): string {
-        return "minecraft:iron_nugget";
+    export function ironNugget(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:iron_nugget");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_raw_iron
     //% block="item minecraft:raw_iron"
-    export function rawIron(): string {
-        return "minecraft:raw_iron";
+    export function rawIron(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:raw_iron");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_raw_gold
     //% block="item minecraft:raw_gold"
-    export function rawGold(): string {
-        return "minecraft:raw_gold";
+    export function rawGold(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:raw_gold");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_nugget
     //% block="item minecraft:copper_nugget"
-    export function copperNugget(): string {
-        return "minecraft:copper_nugget";
+    export function copperNugget(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_nugget");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_raw_copper
     //% block="item minecraft:raw_copper"
-    export function rawCopper(): string {
-        return "minecraft:raw_copper";
+    export function rawCopper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:raw_copper");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_copper_ingot
     //% block="item minecraft:copper_ingot"
-    export function copperIngot(): string {
-        return "minecraft:copper_ingot";
+    export function copperIngot(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:copper_ingot");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_iron_ingot
     //% block="item minecraft:iron_ingot"
-    export function ironIngot(): string {
-        return "minecraft:iron_ingot";
+    export function ironIngot(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:iron_ingot");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_netherite_scrap
     //% block="item minecraft:netherite_scrap"
-    export function netheriteScrap(): string {
-        return "minecraft:netherite_scrap";
+    export function netheriteScrap(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:netherite_scrap");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_netherite_ingot
     //% block="item minecraft:netherite_ingot"
-    export function netheriteIngot(): string {
-        return "minecraft:netherite_ingot";
+    export function netheriteIngot(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:netherite_ingot");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_gold_nugget
     //% block="item minecraft:gold_nugget"
-    export function goldNugget(): string {
-        return "minecraft:gold_nugget";
+    export function goldNugget(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:gold_nugget");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_gold_ingot
     //% block="item minecraft:gold_ingot"
-    export function goldIngot(): string {
-        return "minecraft:gold_ingot";
+    export function goldIngot(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:gold_ingot");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_emerald
     //% block="item minecraft:emerald"
-    export function emerald(): string {
-        return "minecraft:emerald";
+    export function emerald(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:emerald");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_quartz
     //% block="item minecraft:quartz"
-    export function quartz(): string {
-        return "minecraft:quartz";
+    export function quartz(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:quartz");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_clay_ball
     //% block="item minecraft:clay_ball"
-    export function clayBall(): string {
-        return "minecraft:clay_ball";
+    export function clayBall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:clay_ball");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_brick
     //% block="item minecraft:brick"
-    export function brick(): string {
-        return "minecraft:brick";
+    export function brick(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brick");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_netherbrick
     //% block="item minecraft:netherbrick"
-    export function netherbrick(): string {
-        return "minecraft:netherbrick";
+    export function netherbrick(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:netherbrick");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_resin_brick
     //% block="item minecraft:resin_brick"
-    export function resinBrick(): string {
-        return "minecraft:resin_brick";
+    export function resinBrick(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:resin_brick");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_prismarine_shard
     //% block="item minecraft:prismarine_shard"
-    export function prismarineShard(): string {
-        return "minecraft:prismarine_shard";
+    export function prismarineShard(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:prismarine_shard");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_amethyst_shard
     //% block="item minecraft:amethyst_shard"
-    export function amethystShard(): string {
-        return "minecraft:amethyst_shard";
+    export function amethystShard(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:amethyst_shard");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_prismarine_crystals
     //% block="item minecraft:prismarine_crystals"
-    export function prismarineCrystals(): string {
-        return "minecraft:prismarine_crystals";
+    export function prismarineCrystals(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:prismarine_crystals");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_nautilus_shell
     //% block="item minecraft:nautilus_shell"
-    export function nautilusShell(): string {
-        return "minecraft:nautilus_shell";
+    export function nautilusShell(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:nautilus_shell");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_heart_of_the_sea
     //% block="item minecraft:heart_of_the_sea"
-    export function heartOfTheSea(): string {
-        return "minecraft:heart_of_the_sea";
+    export function heartOfTheSea(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:heart_of_the_sea");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_turtle_scute
     //% block="item minecraft:turtle_scute"
-    export function turtleScute(): string {
-        return "minecraft:turtle_scute";
+    export function turtleScute(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:turtle_scute");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_armadillo_scute
     //% block="item minecraft:armadillo_scute"
-    export function armadilloScute(): string {
-        return "minecraft:armadillo_scute";
+    export function armadilloScute(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:armadillo_scute");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_phantom_membrane
     //% block="item minecraft:phantom_membrane"
-    export function phantomMembrane(): string {
-        return "minecraft:phantom_membrane";
+    export function phantomMembrane(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:phantom_membrane");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_string
     //% block="item minecraft:string"
-    export function string(): string {
-        return "minecraft:string";
+    export function string(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:string");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_feather
     //% block="item minecraft:feather"
-    export function feather(): string {
-        return "minecraft:feather";
+    export function feather(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:feather");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_flint
     //% block="item minecraft:flint"
-    export function flint(): string {
-        return "minecraft:flint";
+    export function flint(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:flint");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_gunpowder
     //% block="item minecraft:gunpowder"
-    export function gunpowder(): string {
-        return "minecraft:gunpowder";
+    export function gunpowder(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:gunpowder");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_leather
     //% block="item minecraft:leather"
-    export function leather(): string {
-        return "minecraft:leather";
+    export function leather(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:leather");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_rabbit_hide
     //% block="item minecraft:rabbit_hide"
-    export function rabbitHide(): string {
-        return "minecraft:rabbit_hide";
+    export function rabbitHide(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:rabbit_hide");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_rabbit_foot
     //% block="item minecraft:rabbit_foot"
-    export function rabbitFoot(): string {
-        return "minecraft:rabbit_foot";
+    export function rabbitFoot(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:rabbit_foot");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_fire_charge
     //% block="item minecraft:fire_charge"
-    export function fireCharge(): string {
-        return "minecraft:fire_charge";
+    export function fireCharge(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:fire_charge");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_blaze_rod
     //% block="item minecraft:blaze_rod"
-    export function blazeRod(): string {
-        return "minecraft:blaze_rod";
+    export function blazeRod(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blaze_rod");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_breeze_rod
     //% block="item minecraft:breeze_rod"
-    export function breezeRod(): string {
-        return "minecraft:breeze_rod";
+    export function breezeRod(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:breeze_rod");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_blaze_powder
     //% block="item minecraft:blaze_powder"
-    export function blazePowder(): string {
-        return "minecraft:blaze_powder";
+    export function blazePowder(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blaze_powder");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_magma_cream
     //% block="item minecraft:magma_cream"
-    export function magmaCream(): string {
-        return "minecraft:magma_cream";
+    export function magmaCream(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:magma_cream");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_fermented_spider_eye
     //% block="item minecraft:fermented_spider_eye"
-    export function fermentedSpiderEye(): string {
-        return "minecraft:fermented_spider_eye";
+    export function fermentedSpiderEye(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:fermented_spider_eye");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_echo_shard
     //% block="item minecraft:echo_shard"
-    export function echoShard(): string {
-        return "minecraft:echo_shard";
+    export function echoShard(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:echo_shard");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dragon_breath
     //% block="item minecraft:dragon_breath"
-    export function dragonBreath(): string {
-        return "minecraft:dragon_breath";
+    export function dragonBreath(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dragon_breath");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_shulker_shell
     //% block="item minecraft:shulker_shell"
-    export function shulkerShell(): string {
-        return "minecraft:shulker_shell";
+    export function shulkerShell(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:shulker_shell");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_ghast_tear
     //% block="item minecraft:ghast_tear"
-    export function ghastTear(): string {
-        return "minecraft:ghast_tear";
+    export function ghastTear(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:ghast_tear");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_slime_ball
     //% block="item minecraft:slime_ball"
-    export function slimeBall(): string {
-        return "minecraft:slime_ball";
+    export function slimeBall(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:slime_ball");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_ender_eye
     //% block="item minecraft:ender_eye"
-    export function enderEye(): string {
-        return "minecraft:ender_eye";
+    export function enderEye(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:ender_eye");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_nether_star
     //% block="item minecraft:nether_star"
-    export function netherStar(): string {
-        return "minecraft:nether_star";
+    export function netherStar(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:nether_star");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_end_crystal
     //% block="item minecraft:end_crystal"
-    export function endCrystal(): string {
-        return "minecraft:end_crystal";
+    export function endCrystal(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:end_crystal");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_paper
     //% block="item minecraft:paper"
-    export function paper(): string {
-        return "minecraft:paper";
+    export function paper(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:paper");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_book
     //% block="item minecraft:book"
-    export function book(): string {
-        return "minecraft:book";
+    export function book(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:book");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_writable_book
     //% block="item minecraft:writable_book"
-    export function writableBook(): string {
-        return "minecraft:writable_book";
+    export function writableBook(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:writable_book");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_enchanted_book
     //% block="item minecraft:enchanted_book"
-    export function enchantedBook(): string {
-        return "minecraft:enchanted_book";
+    export function enchantedBook(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:enchanted_book");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_oak_boat
     //% block="item minecraft:oak_boat"
-    export function oakBoat(): string {
-        return "minecraft:oak_boat";
+    export function oakBoat(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oak_boat");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_spruce_boat
     //% block="item minecraft:spruce_boat"
-    export function spruceBoat(): string {
-        return "minecraft:spruce_boat";
+    export function spruceBoat(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spruce_boat");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_birch_boat
     //% block="item minecraft:birch_boat"
-    export function birchBoat(): string {
-        return "minecraft:birch_boat";
+    export function birchBoat(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:birch_boat");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_jungle_boat
     //% block="item minecraft:jungle_boat"
-    export function jungleBoat(): string {
-        return "minecraft:jungle_boat";
+    export function jungleBoat(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:jungle_boat");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_acacia_boat
     //% block="item minecraft:acacia_boat"
-    export function acaciaBoat(): string {
-        return "minecraft:acacia_boat";
+    export function acaciaBoat(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:acacia_boat");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dark_oak_boat
     //% block="item minecraft:dark_oak_boat"
-    export function darkOakBoat(): string {
-        return "minecraft:dark_oak_boat";
+    export function darkOakBoat(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dark_oak_boat");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mangrove_boat
     //% block="item minecraft:mangrove_boat"
-    export function mangroveBoat(): string {
-        return "minecraft:mangrove_boat";
+    export function mangroveBoat(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mangrove_boat");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cherry_boat
     //% block="item minecraft:cherry_boat"
-    export function cherryBoat(): string {
-        return "minecraft:cherry_boat";
+    export function cherryBoat(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cherry_boat");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pale_oak_boat
     //% block="item minecraft:pale_oak_boat"
-    export function paleOakBoat(): string {
-        return "minecraft:pale_oak_boat";
+    export function paleOakBoat(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pale_oak_boat");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bamboo_raft
     //% block="item minecraft:bamboo_raft"
-    export function bambooRaft(): string {
-        return "minecraft:bamboo_raft";
+    export function bambooRaft(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bamboo_raft");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_oak_chest_boat
     //% block="item minecraft:oak_chest_boat"
-    export function oakChestBoat(): string {
-        return "minecraft:oak_chest_boat";
+    export function oakChestBoat(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:oak_chest_boat");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_spruce_chest_boat
     //% block="item minecraft:spruce_chest_boat"
-    export function spruceChestBoat(): string {
-        return "minecraft:spruce_chest_boat";
+    export function spruceChestBoat(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spruce_chest_boat");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_birch_chest_boat
     //% block="item minecraft:birch_chest_boat"
-    export function birchChestBoat(): string {
-        return "minecraft:birch_chest_boat";
+    export function birchChestBoat(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:birch_chest_boat");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_jungle_chest_boat
     //% block="item minecraft:jungle_chest_boat"
-    export function jungleChestBoat(): string {
-        return "minecraft:jungle_chest_boat";
+    export function jungleChestBoat(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:jungle_chest_boat");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_acacia_chest_boat
     //% block="item minecraft:acacia_chest_boat"
-    export function acaciaChestBoat(): string {
-        return "minecraft:acacia_chest_boat";
+    export function acaciaChestBoat(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:acacia_chest_boat");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dark_oak_chest_boat
     //% block="item minecraft:dark_oak_chest_boat"
-    export function darkOakChestBoat(): string {
-        return "minecraft:dark_oak_chest_boat";
+    export function darkOakChestBoat(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dark_oak_chest_boat");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mangrove_chest_boat
     //% block="item minecraft:mangrove_chest_boat"
-    export function mangroveChestBoat(): string {
-        return "minecraft:mangrove_chest_boat";
+    export function mangroveChestBoat(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mangrove_chest_boat");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_cherry_chest_boat
     //% block="item minecraft:cherry_chest_boat"
-    export function cherryChestBoat(): string {
-        return "minecraft:cherry_chest_boat";
+    export function cherryChestBoat(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:cherry_chest_boat");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_pale_oak_chest_boat
     //% block="item minecraft:pale_oak_chest_boat"
-    export function paleOakChestBoat(): string {
-        return "minecraft:pale_oak_chest_boat";
+    export function paleOakChestBoat(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:pale_oak_chest_boat");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bamboo_chest_raft
     //% block="item minecraft:bamboo_chest_raft"
-    export function bambooChestRaft(): string {
-        return "minecraft:bamboo_chest_raft";
+    export function bambooChestRaft(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bamboo_chest_raft");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_redstone
     //% block="item minecraft:redstone"
-    export function redstone(): string {
-        return "minecraft:redstone";
+    export function redstone(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:redstone");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_repeater
     //% block="item minecraft:repeater"
-    export function repeater(): string {
-        return "minecraft:repeater";
+    export function repeater(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:repeater");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_comparator
     //% block="item minecraft:comparator"
-    export function comparator(): string {
-        return "minecraft:comparator";
+    export function comparator(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:comparator");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_name_tag
     //% block="item minecraft:name_tag"
-    export function nameTag(): string {
-        return "minecraft:name_tag";
+    export function nameTag(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:name_tag");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_banner
     //% block="item minecraft:banner"
-    export function banner(): string {
-        return "minecraft:banner";
+    export function banner(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:banner");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_creeper_banner_pattern
     //% block="item minecraft:creeper_banner_pattern"
-    export function creeperBannerPattern(): string {
-        return "minecraft:creeper_banner_pattern";
+    export function creeperBannerPattern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:creeper_banner_pattern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_skull_banner_pattern
     //% block="item minecraft:skull_banner_pattern"
-    export function skullBannerPattern(): string {
-        return "minecraft:skull_banner_pattern";
+    export function skullBannerPattern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:skull_banner_pattern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_flower_banner_pattern
     //% block="item minecraft:flower_banner_pattern"
-    export function flowerBannerPattern(): string {
-        return "minecraft:flower_banner_pattern";
+    export function flowerBannerPattern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:flower_banner_pattern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mojang_banner_pattern
     //% block="item minecraft:mojang_banner_pattern"
-    export function mojangBannerPattern(): string {
-        return "minecraft:mojang_banner_pattern";
+    export function mojangBannerPattern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mojang_banner_pattern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_field_masoned_banner_pattern
     //% block="item minecraft:field_masoned_banner_pattern"
-    export function fieldMasonedBannerPattern(): string {
-        return "minecraft:field_masoned_banner_pattern";
+    export function fieldMasonedBannerPattern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:field_masoned_banner_pattern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bordure_indented_banner_pattern
     //% block="item minecraft:bordure_indented_banner_pattern"
-    export function bordureIndentedBannerPattern(): string {
-        return "minecraft:bordure_indented_banner_pattern";
+    export function bordureIndentedBannerPattern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bordure_indented_banner_pattern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_piglin_banner_pattern
     //% block="item minecraft:piglin_banner_pattern"
-    export function piglinBannerPattern(): string {
-        return "minecraft:piglin_banner_pattern";
+    export function piglinBannerPattern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:piglin_banner_pattern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_globe_banner_pattern
     //% block="item minecraft:globe_banner_pattern"
-    export function globeBannerPattern(): string {
-        return "minecraft:globe_banner_pattern";
+    export function globeBannerPattern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:globe_banner_pattern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_flow_banner_pattern
     //% block="item minecraft:flow_banner_pattern"
-    export function flowBannerPattern(): string {
-        return "minecraft:flow_banner_pattern";
+    export function flowBannerPattern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:flow_banner_pattern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_guster_banner_pattern
     //% block="item minecraft:guster_banner_pattern"
-    export function gusterBannerPattern(): string {
-        return "minecraft:guster_banner_pattern";
+    export function gusterBannerPattern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:guster_banner_pattern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_angler_pottery_sherd
     //% block="item minecraft:angler_pottery_sherd"
-    export function anglerPotterySherd(): string {
-        return "minecraft:angler_pottery_sherd";
+    export function anglerPotterySherd(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:angler_pottery_sherd");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_archer_pottery_sherd
     //% block="item minecraft:archer_pottery_sherd"
-    export function archerPotterySherd(): string {
-        return "minecraft:archer_pottery_sherd";
+    export function archerPotterySherd(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:archer_pottery_sherd");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_arms_up_pottery_sherd
     //% block="item minecraft:arms_up_pottery_sherd"
-    export function armsUpPotterySherd(): string {
-        return "minecraft:arms_up_pottery_sherd";
+    export function armsUpPotterySherd(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:arms_up_pottery_sherd");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_blade_pottery_sherd
     //% block="item minecraft:blade_pottery_sherd"
-    export function bladePotterySherd(): string {
-        return "minecraft:blade_pottery_sherd";
+    export function bladePotterySherd(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:blade_pottery_sherd");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_brewer_pottery_sherd
     //% block="item minecraft:brewer_pottery_sherd"
-    export function brewerPotterySherd(): string {
-        return "minecraft:brewer_pottery_sherd";
+    export function brewerPotterySherd(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:brewer_pottery_sherd");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_burn_pottery_sherd
     //% block="item minecraft:burn_pottery_sherd"
-    export function burnPotterySherd(): string {
-        return "minecraft:burn_pottery_sherd";
+    export function burnPotterySherd(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:burn_pottery_sherd");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_danger_pottery_sherd
     //% block="item minecraft:danger_pottery_sherd"
-    export function dangerPotterySherd(): string {
-        return "minecraft:danger_pottery_sherd";
+    export function dangerPotterySherd(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:danger_pottery_sherd");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_explorer_pottery_sherd
     //% block="item minecraft:explorer_pottery_sherd"
-    export function explorerPotterySherd(): string {
-        return "minecraft:explorer_pottery_sherd";
+    export function explorerPotterySherd(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:explorer_pottery_sherd");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_flow_pottery_sherd
     //% block="item minecraft:flow_pottery_sherd"
-    export function flowPotterySherd(): string {
-        return "minecraft:flow_pottery_sherd";
+    export function flowPotterySherd(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:flow_pottery_sherd");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_friend_pottery_sherd
     //% block="item minecraft:friend_pottery_sherd"
-    export function friendPotterySherd(): string {
-        return "minecraft:friend_pottery_sherd";
+    export function friendPotterySherd(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:friend_pottery_sherd");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_guster_pottery_sherd
     //% block="item minecraft:guster_pottery_sherd"
-    export function gusterPotterySherd(): string {
-        return "minecraft:guster_pottery_sherd";
+    export function gusterPotterySherd(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:guster_pottery_sherd");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_heart_pottery_sherd
     //% block="item minecraft:heart_pottery_sherd"
-    export function heartPotterySherd(): string {
-        return "minecraft:heart_pottery_sherd";
+    export function heartPotterySherd(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:heart_pottery_sherd");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_heartbreak_pottery_sherd
     //% block="item minecraft:heartbreak_pottery_sherd"
-    export function heartbreakPotterySherd(): string {
-        return "minecraft:heartbreak_pottery_sherd";
+    export function heartbreakPotterySherd(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:heartbreak_pottery_sherd");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_howl_pottery_sherd
     //% block="item minecraft:howl_pottery_sherd"
-    export function howlPotterySherd(): string {
-        return "minecraft:howl_pottery_sherd";
+    export function howlPotterySherd(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:howl_pottery_sherd");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_miner_pottery_sherd
     //% block="item minecraft:miner_pottery_sherd"
-    export function minerPotterySherd(): string {
-        return "minecraft:miner_pottery_sherd";
+    export function minerPotterySherd(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:miner_pottery_sherd");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_mourner_pottery_sherd
     //% block="item minecraft:mourner_pottery_sherd"
-    export function mournerPotterySherd(): string {
-        return "minecraft:mourner_pottery_sherd";
+    export function mournerPotterySherd(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:mourner_pottery_sherd");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_plenty_pottery_sherd
     //% block="item minecraft:plenty_pottery_sherd"
-    export function plentyPotterySherd(): string {
-        return "minecraft:plenty_pottery_sherd";
+    export function plentyPotterySherd(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:plenty_pottery_sherd");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_prize_pottery_sherd
     //% block="item minecraft:prize_pottery_sherd"
-    export function prizePotterySherd(): string {
-        return "minecraft:prize_pottery_sherd";
+    export function prizePotterySherd(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:prize_pottery_sherd");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_scrape_pottery_sherd
     //% block="item minecraft:scrape_pottery_sherd"
-    export function scrapePotterySherd(): string {
-        return "minecraft:scrape_pottery_sherd";
+    export function scrapePotterySherd(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:scrape_pottery_sherd");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sheaf_pottery_sherd
     //% block="item minecraft:sheaf_pottery_sherd"
-    export function sheafPotterySherd(): string {
-        return "minecraft:sheaf_pottery_sherd";
+    export function sheafPotterySherd(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sheaf_pottery_sherd");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_shelter_pottery_sherd
     //% block="item minecraft:shelter_pottery_sherd"
-    export function shelterPotterySherd(): string {
-        return "minecraft:shelter_pottery_sherd";
+    export function shelterPotterySherd(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:shelter_pottery_sherd");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_skull_pottery_sherd
     //% block="item minecraft:skull_pottery_sherd"
-    export function skullPotterySherd(): string {
-        return "minecraft:skull_pottery_sherd";
+    export function skullPotterySherd(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:skull_pottery_sherd");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_snort_pottery_sherd
     //% block="item minecraft:snort_pottery_sherd"
-    export function snortPotterySherd(): string {
-        return "minecraft:snort_pottery_sherd";
+    export function snortPotterySherd(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:snort_pottery_sherd");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_netherite_upgrade_smithing_template
     //% block="item minecraft:netherite_upgrade_smithing_template"
-    export function netheriteUpgradeSmithingTemplate(): string {
-        return "minecraft:netherite_upgrade_smithing_template";
+    export function netheriteUpgradeSmithingTemplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:netherite_upgrade_smithing_template");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_sentry_armor_trim_smithing_template
     //% block="item minecraft:sentry_armor_trim_smithing_template"
-    export function sentryArmorTrimSmithingTemplate(): string {
-        return "minecraft:sentry_armor_trim_smithing_template";
+    export function sentryArmorTrimSmithingTemplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:sentry_armor_trim_smithing_template");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_vex_armor_trim_smithing_template
     //% block="item minecraft:vex_armor_trim_smithing_template"
-    export function vexArmorTrimSmithingTemplate(): string {
-        return "minecraft:vex_armor_trim_smithing_template";
+    export function vexArmorTrimSmithingTemplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:vex_armor_trim_smithing_template");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wild_armor_trim_smithing_template
     //% block="item minecraft:wild_armor_trim_smithing_template"
-    export function wildArmorTrimSmithingTemplate(): string {
-        return "minecraft:wild_armor_trim_smithing_template";
+    export function wildArmorTrimSmithingTemplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wild_armor_trim_smithing_template");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_coast_armor_trim_smithing_template
     //% block="item minecraft:coast_armor_trim_smithing_template"
-    export function coastArmorTrimSmithingTemplate(): string {
-        return "minecraft:coast_armor_trim_smithing_template";
+    export function coastArmorTrimSmithingTemplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:coast_armor_trim_smithing_template");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dune_armor_trim_smithing_template
     //% block="item minecraft:dune_armor_trim_smithing_template"
-    export function duneArmorTrimSmithingTemplate(): string {
-        return "minecraft:dune_armor_trim_smithing_template";
+    export function duneArmorTrimSmithingTemplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dune_armor_trim_smithing_template");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wayfinder_armor_trim_smithing_template
     //% block="item minecraft:wayfinder_armor_trim_smithing_template"
-    export function wayfinderArmorTrimSmithingTemplate(): string {
-        return "minecraft:wayfinder_armor_trim_smithing_template";
+    export function wayfinderArmorTrimSmithingTemplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wayfinder_armor_trim_smithing_template");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_shaper_armor_trim_smithing_template
     //% block="item minecraft:shaper_armor_trim_smithing_template"
-    export function shaperArmorTrimSmithingTemplate(): string {
-        return "minecraft:shaper_armor_trim_smithing_template";
+    export function shaperArmorTrimSmithingTemplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:shaper_armor_trim_smithing_template");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_raiser_armor_trim_smithing_template
     //% block="item minecraft:raiser_armor_trim_smithing_template"
-    export function raiserArmorTrimSmithingTemplate(): string {
-        return "minecraft:raiser_armor_trim_smithing_template";
+    export function raiserArmorTrimSmithingTemplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:raiser_armor_trim_smithing_template");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_host_armor_trim_smithing_template
     //% block="item minecraft:host_armor_trim_smithing_template"
-    export function hostArmorTrimSmithingTemplate(): string {
-        return "minecraft:host_armor_trim_smithing_template";
+    export function hostArmorTrimSmithingTemplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:host_armor_trim_smithing_template");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_ward_armor_trim_smithing_template
     //% block="item minecraft:ward_armor_trim_smithing_template"
-    export function wardArmorTrimSmithingTemplate(): string {
-        return "minecraft:ward_armor_trim_smithing_template";
+    export function wardArmorTrimSmithingTemplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:ward_armor_trim_smithing_template");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_silence_armor_trim_smithing_template
     //% block="item minecraft:silence_armor_trim_smithing_template"
-    export function silenceArmorTrimSmithingTemplate(): string {
-        return "minecraft:silence_armor_trim_smithing_template";
+    export function silenceArmorTrimSmithingTemplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:silence_armor_trim_smithing_template");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_tide_armor_trim_smithing_template
     //% block="item minecraft:tide_armor_trim_smithing_template"
-    export function tideArmorTrimSmithingTemplate(): string {
-        return "minecraft:tide_armor_trim_smithing_template";
+    export function tideArmorTrimSmithingTemplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:tide_armor_trim_smithing_template");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_snout_armor_trim_smithing_template
     //% block="item minecraft:snout_armor_trim_smithing_template"
-    export function snoutArmorTrimSmithingTemplate(): string {
-        return "minecraft:snout_armor_trim_smithing_template";
+    export function snoutArmorTrimSmithingTemplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:snout_armor_trim_smithing_template");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_rib_armor_trim_smithing_template
     //% block="item minecraft:rib_armor_trim_smithing_template"
-    export function ribArmorTrimSmithingTemplate(): string {
-        return "minecraft:rib_armor_trim_smithing_template";
+    export function ribArmorTrimSmithingTemplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:rib_armor_trim_smithing_template");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_eye_armor_trim_smithing_template
     //% block="item minecraft:eye_armor_trim_smithing_template"
-    export function eyeArmorTrimSmithingTemplate(): string {
-        return "minecraft:eye_armor_trim_smithing_template";
+    export function eyeArmorTrimSmithingTemplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:eye_armor_trim_smithing_template");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_spire_armor_trim_smithing_template
     //% block="item minecraft:spire_armor_trim_smithing_template"
-    export function spireArmorTrimSmithingTemplate(): string {
-        return "minecraft:spire_armor_trim_smithing_template";
+    export function spireArmorTrimSmithingTemplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spire_armor_trim_smithing_template");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_flow_armor_trim_smithing_template
     //% block="item minecraft:flow_armor_trim_smithing_template"
-    export function flowArmorTrimSmithingTemplate(): string {
-        return "minecraft:flow_armor_trim_smithing_template";
+    export function flowArmorTrimSmithingTemplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:flow_armor_trim_smithing_template");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_bolt_armor_trim_smithing_template
     //% block="item minecraft:bolt_armor_trim_smithing_template"
-    export function boltArmorTrimSmithingTemplate(): string {
-        return "minecraft:bolt_armor_trim_smithing_template";
+    export function boltArmorTrimSmithingTemplate(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:bolt_armor_trim_smithing_template");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_firework_rocket
     //% block="item minecraft:firework_rocket"
-    export function fireworkRocket(): string {
-        return "minecraft:firework_rocket";
+    export function fireworkRocket(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:firework_rocket");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_firework_star
     //% block="item minecraft:firework_star"
-    export function fireworkStar(): string {
-        return "minecraft:firework_star";
+    export function fireworkStar(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:firework_star");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_trial_key
     //% block="item minecraft:trial_key"
-    export function trialKey(): string {
-        return "minecraft:trial_key";
+    export function trialKey(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:trial_key");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_ominous_trial_key
     //% block="item minecraft:ominous_trial_key"
-    export function ominousTrialKey(): string {
-        return "minecraft:ominous_trial_key";
+    export function ominousTrialKey(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:ominous_trial_key");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_filled_map
     //% block="item minecraft:filled_map"
-    export function filledMap(): string {
-        return "minecraft:filled_map";
+    export function filledMap(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:filled_map");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_colored_torch_rg
     //% block="item minecraft:colored_torch_rg"
-    export function coloredTorchRg(): string {
-        return "minecraft:colored_torch_rg";
+    export function coloredTorchRg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:colored_torch_rg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_ender_dragon_spawn_egg
     //% block="item minecraft:ender_dragon_spawn_egg"
-    export function enderDragonSpawnEgg(): string {
-        return "minecraft:ender_dragon_spawn_egg";
+    export function enderDragonSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:ender_dragon_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_wither_spawn_egg
     //% block="item minecraft:wither_spawn_egg"
-    export function witherSpawnEgg(): string {
-        return "minecraft:wither_spawn_egg";
+    export function witherSpawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:wither_spawn_egg");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_colored_torch_bp
     //% block="item minecraft:colored_torch_bp"
-    export function coloredTorchBp(): string {
-        return "minecraft:colored_torch_bp";
+    export function coloredTorchBp(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:colored_torch_bp");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_lodestone_compass
     //% block="item minecraft:lodestone_compass"
-    export function lodestoneCompass(): string {
-        return "minecraft:lodestone_compass";
+    export function lodestoneCompass(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:lodestone_compass");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_chemistry_table
     //% block="item minecraft:chemistry_table"
-    export function chemistryTable(): string {
-        return "minecraft:chemistry_table";
+    export function chemistryTable(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:chemistry_table");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_dye
     //% block="item minecraft:dye"
-    export function dye(): string {
-        return "minecraft:dye";
+    export function dye(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:dye");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_banner_pattern
     //% block="item minecraft:banner_pattern"
-    export function bannerPattern(): string {
-        return "minecraft:banner_pattern";
+    export function bannerPattern(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:banner_pattern");
     }
 
     //% group="Registry"
     //% weight=1
     //% blockId=mcfunction_item_registry_minecraft_spawn_egg
     //% block="item minecraft:spawn_egg"
-    export function spawnEgg(): string {
-        return "minecraft:spawn_egg";
+    export function spawnEgg(): MCFunctionFields.ItemValue {
+        return new MCFunctionFields.ItemValue("minecraft:spawn_egg");
     }
 
 }
@@ -12487,6239 +12484,6239 @@ namespace MCFunctionItemLibrary {
 /** Legacy JS API aliases. No Toolbox blocks here. */
 namespace MCFunctionFields {
 
-    export function itemRegistryCyanTerracotta(): string {
+    export function itemRegistryCyanTerracotta(): ItemValue {
         return MCFunctionItemLibrary.cyanTerracotta();
     }
 
-    export function itemRegistryBlueCandle(): string {
+    export function itemRegistryBlueCandle(): ItemValue {
         return MCFunctionItemLibrary.blueCandle();
     }
 
-    export function itemRegistryDarkOakWood(): string {
+    export function itemRegistryDarkOakWood(): ItemValue {
         return MCFunctionItemLibrary.darkOakWood();
     }
 
-    export function itemRegistryPolishedBasalt(): string {
+    export function itemRegistryPolishedBasalt(): ItemValue {
         return MCFunctionItemLibrary.polishedBasalt();
     }
 
-    export function itemRegistryNetherGoldOre(): string {
+    export function itemRegistryNetherGoldOre(): ItemValue {
         return MCFunctionItemLibrary.netherGoldOre();
     }
 
-    export function itemRegistryZombieHead(): string {
+    export function itemRegistryZombieHead(): ItemValue {
         return MCFunctionItemLibrary.zombieHead();
     }
 
-    export function itemRegistryWaxedWeatheredCopperChain(): string {
+    export function itemRegistryWaxedWeatheredCopperChain(): ItemValue {
         return MCFunctionItemLibrary.waxedWeatheredCopperChain();
     }
 
-    export function itemRegistryWaxedWeatheredCopperChest(): string {
+    export function itemRegistryWaxedWeatheredCopperChest(): ItemValue {
         return MCFunctionItemLibrary.waxedWeatheredCopperChest();
     }
 
-    export function itemRegistryLeafLitter(): string {
+    export function itemRegistryLeafLitter(): ItemValue {
         return MCFunctionItemLibrary.leafLitter();
     }
 
-    export function itemRegistryWarpedDoor(): string {
+    export function itemRegistryWarpedDoor(): ItemValue {
         return MCFunctionItemLibrary.warpedDoor();
     }
 
-    export function itemRegistryLightBlueConcretePowder(): string {
+    export function itemRegistryLightBlueConcretePowder(): ItemValue {
         return MCFunctionItemLibrary.lightBlueConcretePowder();
     }
 
-    export function itemRegistryBambooBlock(): string {
+    export function itemRegistryBambooBlock(): ItemValue {
         return MCFunctionItemLibrary.bambooBlock();
     }
 
-    export function itemRegistryWaxedOxidizedChiseledCopper(): string {
+    export function itemRegistryWaxedOxidizedChiseledCopper(): ItemValue {
         return MCFunctionItemLibrary.waxedOxidizedChiseledCopper();
     }
 
-    export function itemRegistryWetSponge(): string {
+    export function itemRegistryWetSponge(): ItemValue {
         return MCFunctionItemLibrary.wetSponge();
     }
 
-    export function itemRegistryEndStoneBrickWall(): string {
+    export function itemRegistryEndStoneBrickWall(): ItemValue {
         return MCFunctionItemLibrary.endStoneBrickWall();
     }
 
-    export function itemRegistryGranite(): string {
+    export function itemRegistryGranite(): ItemValue {
         return MCFunctionItemLibrary.granite();
     }
 
-    export function itemRegistryBlueStainedGlassPane(): string {
+    export function itemRegistryBlueStainedGlassPane(): ItemValue {
         return MCFunctionItemLibrary.blueStainedGlassPane();
     }
 
-    export function itemRegistryFenceGate(): string {
+    export function itemRegistryFenceGate(): ItemValue {
         return MCFunctionItemLibrary.fenceGate();
     }
 
-    export function itemRegistryBirchShelf(): string {
+    export function itemRegistryBirchShelf(): ItemValue {
         return MCFunctionItemLibrary.birchShelf();
     }
 
-    export function itemRegistryDarkOakButton(): string {
+    export function itemRegistryDarkOakButton(): ItemValue {
         return MCFunctionItemLibrary.darkOakButton();
     }
 
-    export function itemRegistryDeepslateCopperOre(): string {
+    export function itemRegistryDeepslateCopperOre(): ItemValue {
         return MCFunctionItemLibrary.deepslateCopperOre();
     }
 
-    export function itemRegistryChiseledStoneBricks(): string {
+    export function itemRegistryChiseledStoneBricks(): ItemValue {
         return MCFunctionItemLibrary.chiseledStoneBricks();
     }
 
-    export function itemRegistryNetherBrickStairs(): string {
+    export function itemRegistryNetherBrickStairs(): ItemValue {
         return MCFunctionItemLibrary.netherBrickStairs();
     }
 
-    export function itemRegistryYellowShulkerBox(): string {
+    export function itemRegistryYellowShulkerBox(): ItemValue {
         return MCFunctionItemLibrary.yellowShulkerBox();
     }
 
-    export function itemRegistryLimeStainedGlass(): string {
+    export function itemRegistryLimeStainedGlass(): ItemValue {
         return MCFunctionItemLibrary.limeStainedGlass();
     }
 
-    export function itemRegistryRedWool(): string {
+    export function itemRegistryRedWool(): ItemValue {
         return MCFunctionItemLibrary.redWool();
     }
 
-    export function itemRegistryJungleButton(): string {
+    export function itemRegistryJungleButton(): ItemValue {
         return MCFunctionItemLibrary.jungleButton();
     }
 
-    export function itemRegistrySpruceStairs(): string {
+    export function itemRegistrySpruceStairs(): ItemValue {
         return MCFunctionItemLibrary.spruceStairs();
     }
 
-    export function itemRegistryAcaciaShelf(): string {
+    export function itemRegistryAcaciaShelf(): ItemValue {
         return MCFunctionItemLibrary.acaciaShelf();
     }
 
-    export function itemRegistryDiorite(): string {
+    export function itemRegistryDiorite(): ItemValue {
         return MCFunctionItemLibrary.diorite();
     }
 
-    export function itemRegistryPaleOakFenceGate(): string {
+    export function itemRegistryPaleOakFenceGate(): ItemValue {
         return MCFunctionItemLibrary.paleOakFenceGate();
     }
 
-    export function itemRegistryPolishedTuffSlab(): string {
+    export function itemRegistryPolishedTuffSlab(): ItemValue {
         return MCFunctionItemLibrary.polishedTuffSlab();
     }
 
-    export function itemRegistryCherryPressurePlate(): string {
+    export function itemRegistryCherryPressurePlate(): ItemValue {
         return MCFunctionItemLibrary.cherryPressurePlate();
     }
 
-    export function itemRegistryCherryHangingSign(): string {
+    export function itemRegistryCherryHangingSign(): ItemValue {
         return MCFunctionItemLibrary.cherryHangingSign();
     }
 
-    export function itemRegistryYellowWool(): string {
+    export function itemRegistryYellowWool(): ItemValue {
         return MCFunctionItemLibrary.yellowWool();
     }
 
-    export function itemRegistryYellowStainedGlassPane(): string {
+    export function itemRegistryYellowStainedGlassPane(): ItemValue {
         return MCFunctionItemLibrary.yellowStainedGlassPane();
     }
 
-    export function itemRegistryAzureBluet(): string {
+    export function itemRegistryAzureBluet(): ItemValue {
         return MCFunctionItemLibrary.azureBluet();
     }
 
-    export function itemRegistryBeacon(): string {
+    export function itemRegistryBeacon(): ItemValue {
         return MCFunctionItemLibrary.beacon();
     }
 
-    export function itemRegistryRedNetherBrick(): string {
+    export function itemRegistryRedNetherBrick(): ItemValue {
         return MCFunctionItemLibrary.redNetherBrick();
     }
 
-    export function itemRegistryBrickWall(): string {
+    export function itemRegistryBrickWall(): ItemValue {
         return MCFunctionItemLibrary.brickWall();
     }
 
-    export function itemRegistryPolishedSulfur(): string {
+    export function itemRegistryPolishedSulfur(): ItemValue {
         return MCFunctionItemLibrary.polishedSulfur();
     }
 
-    export function itemRegistryCobbledDeepslateStairs(): string {
+    export function itemRegistryCobbledDeepslateStairs(): ItemValue {
         return MCFunctionItemLibrary.cobbledDeepslateStairs();
     }
 
-    export function itemRegistrySmoothSandstone(): string {
+    export function itemRegistrySmoothSandstone(): ItemValue {
         return MCFunctionItemLibrary.smoothSandstone();
     }
 
-    export function itemRegistrySnowLayer(): string {
+    export function itemRegistrySnowLayer(): ItemValue {
         return MCFunctionItemLibrary.snowLayer();
     }
 
-    export function itemRegistryBlackCandle(): string {
+    export function itemRegistryBlackCandle(): ItemValue {
         return MCFunctionItemLibrary.blackCandle();
     }
 
-    export function itemRegistryBlueCarpet(): string {
+    export function itemRegistryBlueCarpet(): ItemValue {
         return MCFunctionItemLibrary.blueCarpet();
     }
 
-    export function itemRegistryGlowFrame(): string {
+    export function itemRegistryGlowFrame(): ItemValue {
         return MCFunctionItemLibrary.glowFrame();
     }
 
-    export function itemRegistryHangingRoots(): string {
+    export function itemRegistryHangingRoots(): ItemValue {
         return MCFunctionItemLibrary.hangingRoots();
     }
 
-    export function itemRegistryRedSandstoneWall(): string {
+    export function itemRegistryRedSandstoneWall(): ItemValue {
         return MCFunctionItemLibrary.redSandstoneWall();
     }
 
-    export function itemRegistryPrismarineBricksStairs(): string {
+    export function itemRegistryPrismarineBricksStairs(): ItemValue {
         return MCFunctionItemLibrary.prismarineBricksStairs();
     }
 
-    export function itemRegistryWaxedOxidizedCutCopper(): string {
+    export function itemRegistryWaxedOxidizedCutCopper(): ItemValue {
         return MCFunctionItemLibrary.waxedOxidizedCutCopper();
     }
 
-    export function itemRegistryWaxedExposedCopperChain(): string {
+    export function itemRegistryWaxedExposedCopperChain(): ItemValue {
         return MCFunctionItemLibrary.waxedExposedCopperChain();
     }
 
-    export function itemRegistryWaxedExposedCopperChest(): string {
+    export function itemRegistryWaxedExposedCopperChest(): ItemValue {
         return MCFunctionItemLibrary.waxedExposedCopperChest();
     }
 
-    export function itemRegistryCalcite(): string {
+    export function itemRegistryCalcite(): ItemValue {
         return MCFunctionItemLibrary.calcite();
     }
 
-    export function itemRegistryDioriteSlab(): string {
+    export function itemRegistryDioriteSlab(): ItemValue {
         return MCFunctionItemLibrary.dioriteSlab();
     }
 
-    export function itemRegistryStrippedDarkOakLog(): string {
+    export function itemRegistryStrippedDarkOakLog(): ItemValue {
         return MCFunctionItemLibrary.strippedDarkOakLog();
     }
 
-    export function itemRegistryDeadBubbleCoralFan(): string {
+    export function itemRegistryDeadBubbleCoralFan(): ItemValue {
         return MCFunctionItemLibrary.deadBubbleCoralFan();
     }
 
-    export function itemRegistryJungleLog(): string {
+    export function itemRegistryJungleLog(): ItemValue {
         return MCFunctionItemLibrary.jungleLog();
     }
 
-    export function itemRegistryBubbleCoralFan(): string {
+    export function itemRegistryBubbleCoralFan(): ItemValue {
         return MCFunctionItemLibrary.bubbleCoralFan();
     }
 
-    export function itemRegistrySculkShrieker(): string {
+    export function itemRegistrySculkShrieker(): ItemValue {
         return MCFunctionItemLibrary.sculkShrieker();
     }
 
-    export function itemRegistryGrayWool(): string {
+    export function itemRegistryGrayWool(): ItemValue {
         return MCFunctionItemLibrary.grayWool();
     }
 
-    export function itemRegistryOrangeStainedGlassPane(): string {
+    export function itemRegistryOrangeStainedGlassPane(): ItemValue {
         return MCFunctionItemLibrary.orangeStainedGlassPane();
     }
 
-    export function itemRegistryGrayCarpet(): string {
+    export function itemRegistryGrayCarpet(): ItemValue {
         return MCFunctionItemLibrary.grayCarpet();
     }
 
-    export function itemRegistryLilyOfTheValley(): string {
+    export function itemRegistryLilyOfTheValley(): ItemValue {
         return MCFunctionItemLibrary.lilyOfTheValley();
     }
 
-    export function itemRegistryLimeGlazedTerracotta(): string {
+    export function itemRegistryLimeGlazedTerracotta(): ItemValue {
         return MCFunctionItemLibrary.limeGlazedTerracotta();
     }
 
-    export function itemRegistryTrapdoor(): string {
+    export function itemRegistryTrapdoor(): ItemValue {
         return MCFunctionItemLibrary.trapdoor();
     }
 
-    export function itemRegistryCactusFlower(): string {
+    export function itemRegistryCactusFlower(): ItemValue {
         return MCFunctionItemLibrary.cactusFlower();
     }
 
-    export function itemRegistryDeadBrainCoralFan(): string {
+    export function itemRegistryDeadBrainCoralFan(): ItemValue {
         return MCFunctionItemLibrary.deadBrainCoralFan();
     }
 
-    export function itemRegistrySeagrass(): string {
+    export function itemRegistrySeagrass(): ItemValue {
         return MCFunctionItemLibrary.seagrass();
     }
 
-    export function itemRegistryTubeCoralFan(): string {
+    export function itemRegistryTubeCoralFan(): ItemValue {
         return MCFunctionItemLibrary.tubeCoralFan();
     }
 
-    export function itemRegistryWaxedExposedCutCopperSlab(): string {
+    export function itemRegistryWaxedExposedCutCopperSlab(): ItemValue {
         return MCFunctionItemLibrary.waxedExposedCutCopperSlab();
     }
 
-    export function itemRegistryRedstoneLamp(): string {
+    export function itemRegistryRedstoneLamp(): ItemValue {
         return MCFunctionItemLibrary.redstoneLamp();
     }
 
-    export function itemRegistryMossyCobblestone(): string {
+    export function itemRegistryMossyCobblestone(): ItemValue {
         return MCFunctionItemLibrary.mossyCobblestone();
     }
 
-    export function itemRegistryDeepslate(): string {
+    export function itemRegistryDeepslate(): ItemValue {
         return MCFunctionItemLibrary.deepslate();
     }
 
-    export function itemRegistryMagentaCarpet(): string {
+    export function itemRegistryMagentaCarpet(): ItemValue {
         return MCFunctionItemLibrary.magentaCarpet();
     }
 
-    export function itemRegistryBrownWool(): string {
+    export function itemRegistryBrownWool(): ItemValue {
         return MCFunctionItemLibrary.brownWool();
     }
 
-    export function itemRegistryWaxedExposedChiseledCopper(): string {
+    export function itemRegistryWaxedExposedChiseledCopper(): ItemValue {
         return MCFunctionItemLibrary.waxedExposedChiseledCopper();
     }
 
-    export function itemRegistryTuffSlab(): string {
+    export function itemRegistryTuffSlab(): ItemValue {
         return MCFunctionItemLibrary.tuffSlab();
     }
 
-    export function itemRegistryCinnabarWall(): string {
+    export function itemRegistryCinnabarWall(): ItemValue {
         return MCFunctionItemLibrary.cinnabarWall();
     }
 
-    export function itemRegistryWarpedPressurePlate(): string {
+    export function itemRegistryWarpedPressurePlate(): ItemValue {
         return MCFunctionItemLibrary.warpedPressurePlate();
     }
 
-    export function itemRegistryStrippedAcaciaWood(): string {
+    export function itemRegistryStrippedAcaciaWood(): ItemValue {
         return MCFunctionItemLibrary.strippedAcaciaWood();
     }
 
-    export function itemRegistryFireflyBush(): string {
+    export function itemRegistryFireflyBush(): ItemValue {
         return MCFunctionItemLibrary.fireflyBush();
     }
 
-    export function itemRegistryDiamondBlock(): string {
+    export function itemRegistryDiamondBlock(): ItemValue {
         return MCFunctionItemLibrary.diamondBlock();
     }
 
-    export function itemRegistryOakStairs(): string {
+    export function itemRegistryOakStairs(): ItemValue {
         return MCFunctionItemLibrary.oakStairs();
     }
 
-    export function itemRegistryOakLog(): string {
+    export function itemRegistryOakLog(): ItemValue {
         return MCFunctionItemLibrary.oakLog();
     }
 
-    export function itemRegistryBrownStainedGlassPane(): string {
+    export function itemRegistryBrownStainedGlassPane(): ItemValue {
         return MCFunctionItemLibrary.brownStainedGlassPane();
     }
 
-    export function itemRegistrySulfurSpike(): string {
+    export function itemRegistrySulfurSpike(): ItemValue {
         return MCFunctionItemLibrary.sulfurSpike();
     }
 
-    export function itemRegistryEndBricks(): string {
+    export function itemRegistryEndBricks(): ItemValue {
         return MCFunctionItemLibrary.endBricks();
     }
 
-    export function itemRegistryMagentaShulkerBox(): string {
+    export function itemRegistryMagentaShulkerBox(): ItemValue {
         return MCFunctionItemLibrary.magentaShulkerBox();
     }
 
-    export function itemRegistryPackedIce(): string {
+    export function itemRegistryPackedIce(): ItemValue {
         return MCFunctionItemLibrary.packedIce();
     }
 
-    export function itemRegistryPackedMud(): string {
+    export function itemRegistryPackedMud(): ItemValue {
         return MCFunctionItemLibrary.packedMud();
     }
 
-    export function itemRegistryMossCarpet(): string {
+    export function itemRegistryMossCarpet(): ItemValue {
         return MCFunctionItemLibrary.mossCarpet();
     }
 
-    export function itemRegistryWarpedFungus(): string {
+    export function itemRegistryWarpedFungus(): ItemValue {
         return MCFunctionItemLibrary.warpedFungus();
     }
 
-    export function itemRegistryOxidizedLightningRod(): string {
+    export function itemRegistryOxidizedLightningRod(): ItemValue {
         return MCFunctionItemLibrary.oxidizedLightningRod();
     }
 
-    export function itemRegistryPolishedDeepslateSlab(): string {
+    export function itemRegistryPolishedDeepslateSlab(): ItemValue {
         return MCFunctionItemLibrary.polishedDeepslateSlab();
     }
 
-    export function itemRegistryBambooDoor(): string {
+    export function itemRegistryBambooDoor(): ItemValue {
         return MCFunctionItemLibrary.bambooDoor();
     }
 
-    export function itemRegistryAmethystBlock(): string {
+    export function itemRegistryAmethystBlock(): ItemValue {
         return MCFunctionItemLibrary.amethystBlock();
     }
 
-    export function itemRegistryGoldBlock(): string {
+    export function itemRegistryGoldBlock(): ItemValue {
         return MCFunctionItemLibrary.goldBlock();
     }
 
-    export function itemRegistryFlowerPot(): string {
+    export function itemRegistryFlowerPot(): ItemValue {
         return MCFunctionItemLibrary.flowerPot();
     }
 
-    export function itemRegistryChiseledBookshelf(): string {
+    export function itemRegistryChiseledBookshelf(): ItemValue {
         return MCFunctionItemLibrary.chiseledBookshelf();
     }
 
-    export function itemRegistryPolishedDeepslateStairs(): string {
+    export function itemRegistryPolishedDeepslateStairs(): ItemValue {
         return MCFunctionItemLibrary.polishedDeepslateStairs();
     }
 
-    export function itemRegistryLimeShulkerBox(): string {
+    export function itemRegistryLimeShulkerBox(): ItemValue {
         return MCFunctionItemLibrary.limeShulkerBox();
     }
 
-    export function itemRegistryWeatheredChiseledCopper(): string {
+    export function itemRegistryWeatheredChiseledCopper(): ItemValue {
         return MCFunctionItemLibrary.weatheredChiseledCopper();
     }
 
-    export function itemRegistrySmallAmethystBud(): string {
+    export function itemRegistrySmallAmethystBud(): ItemValue {
         return MCFunctionItemLibrary.smallAmethystBud();
     }
 
-    export function itemRegistryGoldenDandelion(): string {
+    export function itemRegistryGoldenDandelion(): ItemValue {
         return MCFunctionItemLibrary.goldenDandelion();
     }
 
-    export function itemRegistryActivatorRail(): string {
+    export function itemRegistryActivatorRail(): ItemValue {
         return MCFunctionItemLibrary.activatorRail();
     }
 
-    export function itemRegistryIronTrapdoor(): string {
+    export function itemRegistryIronTrapdoor(): ItemValue {
         return MCFunctionItemLibrary.ironTrapdoor();
     }
 
-    export function itemRegistryMuddyMangroveRoots(): string {
+    export function itemRegistryMuddyMangroveRoots(): ItemValue {
         return MCFunctionItemLibrary.muddyMangroveRoots();
     }
 
-    export function itemRegistryPaleOakPressurePlate(): string {
+    export function itemRegistryPaleOakPressurePlate(): ItemValue {
         return MCFunctionItemLibrary.paleOakPressurePlate();
     }
 
-    export function itemRegistryStrippedJungleWood(): string {
+    export function itemRegistryStrippedJungleWood(): ItemValue {
         return MCFunctionItemLibrary.strippedJungleWood();
     }
 
-    export function itemRegistryNoteblock(): string {
+    export function itemRegistryNoteblock(): ItemValue {
         return MCFunctionItemLibrary.noteblock();
     }
 
-    export function itemRegistryTuff(): string {
+    export function itemRegistryTuff(): ItemValue {
         return MCFunctionItemLibrary.tuff();
     }
 
-    export function itemRegistryMangroveLog(): string {
+    export function itemRegistryMangroveLog(): ItemValue {
         return MCFunctionItemLibrary.mangroveLog();
     }
 
-    export function itemRegistryOxidizedCutCopperStairs(): string {
+    export function itemRegistryOxidizedCutCopperStairs(): ItemValue {
         return MCFunctionItemLibrary.oxidizedCutCopperStairs();
     }
 
-    export function itemRegistryPaleOakFence(): string {
+    export function itemRegistryPaleOakFence(): ItemValue {
         return MCFunctionItemLibrary.paleOakFence();
     }
 
-    export function itemRegistryPaleOakLeaves(): string {
+    export function itemRegistryPaleOakLeaves(): ItemValue {
         return MCFunctionItemLibrary.paleOakLeaves();
     }
 
-    export function itemRegistrySandstoneSlab(): string {
+    export function itemRegistrySandstoneSlab(): ItemValue {
         return MCFunctionItemLibrary.sandstoneSlab();
     }
 
-    export function itemRegistryMossyStoneBrickSlab(): string {
+    export function itemRegistryMossyStoneBrickSlab(): ItemValue {
         return MCFunctionItemLibrary.mossyStoneBrickSlab();
     }
 
-    export function itemRegistryRawGoldBlock(): string {
+    export function itemRegistryRawGoldBlock(): ItemValue {
         return MCFunctionItemLibrary.rawGoldBlock();
     }
 
-    export function itemRegistryAllium(): string {
+    export function itemRegistryAllium(): ItemValue {
         return MCFunctionItemLibrary.allium();
     }
 
-    export function itemRegistryWhiteShulkerBox(): string {
+    export function itemRegistryWhiteShulkerBox(): ItemValue {
         return MCFunctionItemLibrary.whiteShulkerBox();
     }
 
-    export function itemRegistryCopperGrate(): string {
+    export function itemRegistryCopperGrate(): ItemValue {
         return MCFunctionItemLibrary.copperGrate();
     }
 
-    export function itemRegistryBlackWool(): string {
+    export function itemRegistryBlackWool(): ItemValue {
         return MCFunctionItemLibrary.blackWool();
     }
 
-    export function itemRegistryOrangeCandle(): string {
+    export function itemRegistryOrangeCandle(): ItemValue {
         return MCFunctionItemLibrary.orangeCandle();
     }
 
-    export function itemRegistryJungleFence(): string {
+    export function itemRegistryJungleFence(): ItemValue {
         return MCFunctionItemLibrary.jungleFence();
     }
 
-    export function itemRegistrySpruceFence(): string {
+    export function itemRegistrySpruceFence(): ItemValue {
         return MCFunctionItemLibrary.spruceFence();
     }
 
-    export function itemRegistryDarkOakSapling(): string {
+    export function itemRegistryDarkOakSapling(): ItemValue {
         return MCFunctionItemLibrary.darkOakSapling();
     }
 
-    export function itemRegistryMelonBlock(): string {
+    export function itemRegistryMelonBlock(): ItemValue {
         return MCFunctionItemLibrary.melonBlock();
     }
 
-    export function itemRegistryBlackConcretePowder(): string {
+    export function itemRegistryBlackConcretePowder(): ItemValue {
         return MCFunctionItemLibrary.blackConcretePowder();
     }
 
-    export function itemRegistryWaxedCutCopperStairs(): string {
+    export function itemRegistryWaxedCutCopperStairs(): ItemValue {
         return MCFunctionItemLibrary.waxedCutCopperStairs();
     }
 
-    export function itemRegistryOpenEyeblossom(): string {
+    export function itemRegistryOpenEyeblossom(): ItemValue {
         return MCFunctionItemLibrary.openEyeblossom();
     }
 
-    export function itemRegistryMobSpawner(): string {
+    export function itemRegistryMobSpawner(): ItemValue {
         return MCFunctionItemLibrary.mobSpawner();
     }
 
-    export function itemRegistryPaleOakSapling(): string {
+    export function itemRegistryPaleOakSapling(): ItemValue {
         return MCFunctionItemLibrary.paleOakSapling();
     }
 
-    export function itemRegistryPolishedGranite(): string {
+    export function itemRegistryPolishedGranite(): ItemValue {
         return MCFunctionItemLibrary.polishedGranite();
     }
 
-    export function itemRegistryMagentaCandle(): string {
+    export function itemRegistryMagentaCandle(): ItemValue {
         return MCFunctionItemLibrary.magentaCandle();
     }
 
-    export function itemRegistryLightGrayStainedGlass(): string {
+    export function itemRegistryLightGrayStainedGlass(): ItemValue {
         return MCFunctionItemLibrary.lightGrayStainedGlass();
     }
 
-    export function itemRegistryObsidian(): string {
+    export function itemRegistryObsidian(): ItemValue {
         return MCFunctionItemLibrary.obsidian();
     }
 
-    export function itemRegistryLightGrayStainedGlassPane(): string {
+    export function itemRegistryLightGrayStainedGlassPane(): ItemValue {
         return MCFunctionItemLibrary.lightGrayStainedGlassPane();
     }
 
-    export function itemRegistryDarkOakSlab(): string {
+    export function itemRegistryDarkOakSlab(): ItemValue {
         return MCFunctionItemLibrary.darkOakSlab();
     }
 
-    export function itemRegistryDeepslateBrickWall(): string {
+    export function itemRegistryDeepslateBrickWall(): ItemValue {
         return MCFunctionItemLibrary.deepslateBrickWall();
     }
 
-    export function itemRegistryWaxedExposedCopperGrate(): string {
+    export function itemRegistryWaxedExposedCopperGrate(): ItemValue {
         return MCFunctionItemLibrary.waxedExposedCopperGrate();
     }
 
-    export function itemRegistryExposedCopper(): string {
+    export function itemRegistryExposedCopper(): ItemValue {
         return MCFunctionItemLibrary.exposedCopper();
     }
 
-    export function itemRegistryWaxedCopperBars(): string {
+    export function itemRegistryWaxedCopperBars(): ItemValue {
         return MCFunctionItemLibrary.waxedCopperBars();
     }
 
-    export function itemRegistryStoneButton(): string {
+    export function itemRegistryStoneButton(): ItemValue {
         return MCFunctionItemLibrary.stoneButton();
     }
 
-    export function itemRegistryWaxedCopperBulb(): string {
+    export function itemRegistryWaxedCopperBulb(): ItemValue {
         return MCFunctionItemLibrary.waxedCopperBulb();
     }
 
-    export function itemRegistrySponge(): string {
+    export function itemRegistrySponge(): ItemValue {
         return MCFunctionItemLibrary.sponge();
     }
 
-    export function itemRegistryBambooFence(): string {
+    export function itemRegistryBambooFence(): ItemValue {
         return MCFunctionItemLibrary.bambooFence();
     }
 
-    export function itemRegistryNormalStoneStairs(): string {
+    export function itemRegistryNormalStoneStairs(): ItemValue {
         return MCFunctionItemLibrary.normalStoneStairs();
     }
 
-    export function itemRegistryEndStoneBrickSlab(): string {
+    export function itemRegistryEndStoneBrickSlab(): ItemValue {
         return MCFunctionItemLibrary.endStoneBrickSlab();
     }
 
-    export function itemRegistryHardenedClay(): string {
+    export function itemRegistryHardenedClay(): ItemValue {
         return MCFunctionItemLibrary.hardenedClay();
     }
 
-    export function itemRegistryBirchHangingSign(): string {
+    export function itemRegistryBirchHangingSign(): ItemValue {
         return MCFunctionItemLibrary.birchHangingSign();
     }
 
-    export function itemRegistryStrippedJungleLog(): string {
+    export function itemRegistryStrippedJungleLog(): ItemValue {
         return MCFunctionItemLibrary.strippedJungleLog();
     }
 
-    export function itemRegistryOxidizedCopperGolemStatue(): string {
+    export function itemRegistryOxidizedCopperGolemStatue(): ItemValue {
         return MCFunctionItemLibrary.oxidizedCopperGolemStatue();
     }
 
-    export function itemRegistryLightBlock9(): string {
+    export function itemRegistryLightBlock9(): ItemValue {
         return MCFunctionItemLibrary.lightBlock9();
     }
 
-    export function itemRegistryLightBlock8(): string {
+    export function itemRegistryLightBlock8(): ItemValue {
         return MCFunctionItemLibrary.lightBlock8();
     }
 
-    export function itemRegistryLightBlock7(): string {
+    export function itemRegistryLightBlock7(): ItemValue {
         return MCFunctionItemLibrary.lightBlock7();
     }
 
-    export function itemRegistryLightBlock6(): string {
+    export function itemRegistryLightBlock6(): ItemValue {
         return MCFunctionItemLibrary.lightBlock6();
     }
 
-    export function itemRegistryLightBlock5(): string {
+    export function itemRegistryLightBlock5(): ItemValue {
         return MCFunctionItemLibrary.lightBlock5();
     }
 
-    export function itemRegistryLightBlock4(): string {
+    export function itemRegistryLightBlock4(): ItemValue {
         return MCFunctionItemLibrary.lightBlock4();
     }
 
-    export function itemRegistryLightBlock3(): string {
+    export function itemRegistryLightBlock3(): ItemValue {
         return MCFunctionItemLibrary.lightBlock3();
     }
 
-    export function itemRegistryLightBlock2(): string {
+    export function itemRegistryLightBlock2(): ItemValue {
         return MCFunctionItemLibrary.lightBlock2();
     }
 
-    export function itemRegistryLightBlock1(): string {
+    export function itemRegistryLightBlock1(): ItemValue {
         return MCFunctionItemLibrary.lightBlock1();
     }
 
-    export function itemRegistryLightBlock0(): string {
+    export function itemRegistryLightBlock0(): ItemValue {
         return MCFunctionItemLibrary.lightBlock0();
     }
 
-    export function itemRegistryPaleOakDoor(): string {
+    export function itemRegistryPaleOakDoor(): ItemValue {
         return MCFunctionItemLibrary.paleOakDoor();
     }
 
-    export function itemRegistryOakSapling(): string {
+    export function itemRegistryOakSapling(): ItemValue {
         return MCFunctionItemLibrary.oakSapling();
     }
 
-    export function itemRegistryLightGrayTerracotta(): string {
+    export function itemRegistryLightGrayTerracotta(): ItemValue {
         return MCFunctionItemLibrary.lightGrayTerracotta();
     }
 
-    export function itemRegistrySmoker(): string {
+    export function itemRegistrySmoker(): ItemValue {
         return MCFunctionItemLibrary.smoker();
     }
 
-    export function itemRegistryBrownStainedGlass(): string {
+    export function itemRegistryBrownStainedGlass(): ItemValue {
         return MCFunctionItemLibrary.brownStainedGlass();
     }
 
-    export function itemRegistryAndesite(): string {
+    export function itemRegistryAndesite(): ItemValue {
         return MCFunctionItemLibrary.andesite();
     }
 
-    export function itemRegistryFireCoral(): string {
+    export function itemRegistryFireCoral(): ItemValue {
         return MCFunctionItemLibrary.fireCoral();
     }
 
-    export function itemRegistryStone(): string {
+    export function itemRegistryStone(): ItemValue {
         return MCFunctionItemLibrary.stone();
     }
 
-    export function itemRegistrySmoothSandstoneSlab(): string {
+    export function itemRegistrySmoothSandstoneSlab(): ItemValue {
         return MCFunctionItemLibrary.smoothSandstoneSlab();
     }
 
-    export function itemRegistryBirchLog(): string {
+    export function itemRegistryBirchLog(): ItemValue {
         return MCFunctionItemLibrary.birchLog();
     }
 
-    export function itemRegistryTuffBrickWall(): string {
+    export function itemRegistryTuffBrickWall(): ItemValue {
         return MCFunctionItemLibrary.tuffBrickWall();
     }
 
-    export function itemRegistryPurpurSlab(): string {
+    export function itemRegistryPurpurSlab(): ItemValue {
         return MCFunctionItemLibrary.purpurSlab();
     }
 
-    export function itemRegistryBrainCoral(): string {
+    export function itemRegistryBrainCoral(): ItemValue {
         return MCFunctionItemLibrary.brainCoral();
     }
 
-    export function itemRegistryStrippedSpruceWood(): string {
+    export function itemRegistryStrippedSpruceWood(): ItemValue {
         return MCFunctionItemLibrary.strippedSpruceWood();
     }
 
-    export function itemRegistryOrangeWool(): string {
+    export function itemRegistryOrangeWool(): ItemValue {
         return MCFunctionItemLibrary.orangeWool();
     }
 
-    export function itemRegistryRespawnAnchor(): string {
+    export function itemRegistryRespawnAnchor(): ItemValue {
         return MCFunctionItemLibrary.respawnAnchor();
     }
 
-    export function itemRegistryLightGrayConcrete(): string {
+    export function itemRegistryLightGrayConcrete(): ItemValue {
         return MCFunctionItemLibrary.lightGrayConcrete();
     }
 
-    export function itemRegistryGreenCandle(): string {
+    export function itemRegistryGreenCandle(): ItemValue {
         return MCFunctionItemLibrary.greenCandle();
     }
 
-    export function itemRegistryWaxedExposedCopper(): string {
+    export function itemRegistryWaxedExposedCopper(): ItemValue {
         return MCFunctionItemLibrary.waxedExposedCopper();
     }
 
-    export function itemRegistryBirchWood(): string {
+    export function itemRegistryBirchWood(): ItemValue {
         return MCFunctionItemLibrary.birchWood();
     }
 
-    export function itemRegistryRedSand(): string {
+    export function itemRegistryRedSand(): ItemValue {
         return MCFunctionItemLibrary.redSand();
     }
 
-    export function itemRegistryHayBlock(): string {
+    export function itemRegistryHayBlock(): ItemValue {
         return MCFunctionItemLibrary.hayBlock();
     }
 
-    export function itemRegistryJungleWood(): string {
+    export function itemRegistryJungleWood(): ItemValue {
         return MCFunctionItemLibrary.jungleWood();
     }
 
-    export function itemRegistryWaxedWeatheredCopper(): string {
+    export function itemRegistryWaxedWeatheredCopper(): ItemValue {
         return MCFunctionItemLibrary.waxedWeatheredCopper();
     }
 
-    export function itemRegistryInfestedCrackedStoneBricks(): string {
+    export function itemRegistryInfestedCrackedStoneBricks(): ItemValue {
         return MCFunctionItemLibrary.infestedCrackedStoneBricks();
     }
 
-    export function itemRegistryWaxedOxidizedCutCopperSlab(): string {
+    export function itemRegistryWaxedOxidizedCutCopperSlab(): ItemValue {
         return MCFunctionItemLibrary.waxedOxidizedCutCopperSlab();
     }
 
-    export function itemRegistryOakLeaves(): string {
+    export function itemRegistryOakLeaves(): ItemValue {
         return MCFunctionItemLibrary.oakLeaves();
     }
 
-    export function itemRegistryResinClump(): string {
+    export function itemRegistryResinClump(): ItemValue {
         return MCFunctionItemLibrary.resinClump();
     }
 
-    export function itemRegistryBrainCoralFan(): string {
+    export function itemRegistryBrainCoralFan(): ItemValue {
         return MCFunctionItemLibrary.brainCoralFan();
     }
 
-    export function itemRegistryPolishedTuffWall(): string {
+    export function itemRegistryPolishedTuffWall(): ItemValue {
         return MCFunctionItemLibrary.polishedTuffWall();
     }
 
-    export function itemRegistryBambooStairs(): string {
+    export function itemRegistryBambooStairs(): ItemValue {
         return MCFunctionItemLibrary.bambooStairs();
     }
 
-    export function itemRegistryInfestedMossyStoneBricks(): string {
+    export function itemRegistryInfestedMossyStoneBricks(): ItemValue {
         return MCFunctionItemLibrary.infestedMossyStoneBricks();
     }
 
-    export function itemRegistryTorch(): string {
+    export function itemRegistryTorch(): ItemValue {
         return MCFunctionItemLibrary.torch();
     }
 
-    export function itemRegistrySulfurBricks(): string {
+    export function itemRegistrySulfurBricks(): ItemValue {
         return MCFunctionItemLibrary.sulfurBricks();
     }
 
-    export function itemRegistryMudBrickWall(): string {
+    export function itemRegistryMudBrickWall(): ItemValue {
         return MCFunctionItemLibrary.mudBrickWall();
     }
 
-    export function itemRegistryHoneyBlock(): string {
+    export function itemRegistryHoneyBlock(): ItemValue {
         return MCFunctionItemLibrary.honeyBlock();
     }
 
-    export function itemRegistryDripstoneBlock(): string {
+    export function itemRegistryDripstoneBlock(): ItemValue {
         return MCFunctionItemLibrary.dripstoneBlock();
     }
 
-    export function itemRegistryVine(): string {
+    export function itemRegistryVine(): ItemValue {
         return MCFunctionItemLibrary.vine();
     }
 
-    export function itemRegistryRedSandstoneSlab(): string {
+    export function itemRegistryRedSandstoneSlab(): ItemValue {
         return MCFunctionItemLibrary.redSandstoneSlab();
     }
 
-    export function itemRegistryCherryTrapdoor(): string {
+    export function itemRegistryCherryTrapdoor(): ItemValue {
         return MCFunctionItemLibrary.cherryTrapdoor();
     }
 
-    export function itemRegistryBlackstoneSlab(): string {
+    export function itemRegistryBlackstoneSlab(): ItemValue {
         return MCFunctionItemLibrary.blackstoneSlab();
     }
 
-    export function itemRegistryGoldOre(): string {
+    export function itemRegistryGoldOre(): ItemValue {
         return MCFunctionItemLibrary.goldOre();
     }
 
-    export function itemRegistryYellowGlazedTerracotta(): string {
+    export function itemRegistryYellowGlazedTerracotta(): ItemValue {
         return MCFunctionItemLibrary.yellowGlazedTerracotta();
     }
 
-    export function itemRegistryDriedGhast(): string {
+    export function itemRegistryDriedGhast(): ItemValue {
         return MCFunctionItemLibrary.driedGhast();
     }
 
-    export function itemRegistryWarpedPlanks(): string {
+    export function itemRegistryWarpedPlanks(): ItemValue {
         return MCFunctionItemLibrary.warpedPlanks();
     }
 
-    export function itemRegistryPiston(): string {
+    export function itemRegistryPiston(): ItemValue {
         return MCFunctionItemLibrary.piston();
     }
 
-    export function itemRegistryBrownCarpet(): string {
+    export function itemRegistryBrownCarpet(): ItemValue {
         return MCFunctionItemLibrary.brownCarpet();
     }
 
-    export function itemRegistryStoneBrickStairs(): string {
+    export function itemRegistryStoneBrickStairs(): ItemValue {
         return MCFunctionItemLibrary.stoneBrickStairs();
     }
 
-    export function itemRegistryDeadBubbleCoralBlock(): string {
+    export function itemRegistryDeadBubbleCoralBlock(): ItemValue {
         return MCFunctionItemLibrary.deadBubbleCoralBlock();
     }
 
-    export function itemRegistryGrayCandle(): string {
+    export function itemRegistryGrayCandle(): ItemValue {
         return MCFunctionItemLibrary.grayCandle();
     }
 
-    export function itemRegistryCherryFence(): string {
+    export function itemRegistryCherryFence(): ItemValue {
         return MCFunctionItemLibrary.cherryFence();
     }
 
-    export function itemRegistryMangrovePlanks(): string {
+    export function itemRegistryMangrovePlanks(): ItemValue {
         return MCFunctionItemLibrary.mangrovePlanks();
     }
 
-    export function itemRegistryRedTerracotta(): string {
+    export function itemRegistryRedTerracotta(): ItemValue {
         return MCFunctionItemLibrary.redTerracotta();
     }
 
-    export function itemRegistryDioriteWall(): string {
+    export function itemRegistryDioriteWall(): ItemValue {
         return MCFunctionItemLibrary.dioriteWall();
     }
 
-    export function itemRegistryDeadFireCoralBlock(): string {
+    export function itemRegistryDeadFireCoralBlock(): ItemValue {
         return MCFunctionItemLibrary.deadFireCoralBlock();
     }
 
-    export function itemRegistryOxidizedCopperBulb(): string {
+    export function itemRegistryOxidizedCopperBulb(): ItemValue {
         return MCFunctionItemLibrary.oxidizedCopperBulb();
     }
 
-    export function itemRegistryMagentaWool(): string {
+    export function itemRegistryMagentaWool(): ItemValue {
         return MCFunctionItemLibrary.magentaWool();
     }
 
-    export function itemRegistryOxidizedCopperBars(): string {
+    export function itemRegistryOxidizedCopperBars(): ItemValue {
         return MCFunctionItemLibrary.oxidizedCopperBars();
     }
 
-    export function itemRegistryMagentaGlazedTerracotta(): string {
+    export function itemRegistryMagentaGlazedTerracotta(): ItemValue {
         return MCFunctionItemLibrary.magentaGlazedTerracotta();
     }
 
-    export function itemRegistryPolishedBlackstoneBrickWall(): string {
+    export function itemRegistryPolishedBlackstoneBrickWall(): ItemValue {
         return MCFunctionItemLibrary.polishedBlackstoneBrickWall();
     }
 
-    export function itemRegistryMangroveSlab(): string {
+    export function itemRegistryMangroveSlab(): ItemValue {
         return MCFunctionItemLibrary.mangroveSlab();
     }
 
-    export function itemRegistryOrangeGlazedTerracotta(): string {
+    export function itemRegistryOrangeGlazedTerracotta(): ItemValue {
         return MCFunctionItemLibrary.orangeGlazedTerracotta();
     }
 
-    export function itemRegistrySmoothBasalt(): string {
+    export function itemRegistrySmoothBasalt(): ItemValue {
         return MCFunctionItemLibrary.smoothBasalt();
     }
 
-    export function itemRegistryWaterlily(): string {
+    export function itemRegistryWaterlily(): ItemValue {
         return MCFunctionItemLibrary.waterlily();
     }
 
-    export function itemRegistryStrippedPaleOakWood(): string {
+    export function itemRegistryStrippedPaleOakWood(): ItemValue {
         return MCFunctionItemLibrary.strippedPaleOakWood();
     }
 
-    export function itemRegistryEmeraldBlock(): string {
+    export function itemRegistryEmeraldBlock(): ItemValue {
         return MCFunctionItemLibrary.emeraldBlock();
     }
 
-    export function itemRegistrySuspiciousSand(): string {
+    export function itemRegistrySuspiciousSand(): ItemValue {
         return MCFunctionItemLibrary.suspiciousSand();
     }
 
-    export function itemRegistryMossyCobblestoneWall(): string {
+    export function itemRegistryMossyCobblestoneWall(): ItemValue {
         return MCFunctionItemLibrary.mossyCobblestoneWall();
     }
 
-    export function itemRegistryHeavyWeightedPressurePlate(): string {
+    export function itemRegistryHeavyWeightedPressurePlate(): ItemValue {
         return MCFunctionItemLibrary.heavyWeightedPressurePlate();
     }
 
-    export function itemRegistryPurpleStainedGlass(): string {
+    export function itemRegistryPurpleStainedGlass(): ItemValue {
         return MCFunctionItemLibrary.purpleStainedGlass();
     }
 
-    export function itemRegistryLightningRod(): string {
+    export function itemRegistryLightningRod(): ItemValue {
         return MCFunctionItemLibrary.lightningRod();
     }
 
-    export function itemRegistryAcaciaLeaves(): string {
+    export function itemRegistryAcaciaLeaves(): ItemValue {
         return MCFunctionItemLibrary.acaciaLeaves();
     }
 
-    export function itemRegistryBlackStainedGlassPane(): string {
+    export function itemRegistryBlackStainedGlassPane(): ItemValue {
         return MCFunctionItemLibrary.blackStainedGlassPane();
     }
 
-    export function itemRegistryCobblestoneWall(): string {
+    export function itemRegistryCobblestoneWall(): ItemValue {
         return MCFunctionItemLibrary.cobblestoneWall();
     }
 
-    export function itemRegistryBambooMosaicSlab(): string {
+    export function itemRegistryBambooMosaicSlab(): ItemValue {
         return MCFunctionItemLibrary.bambooMosaicSlab();
     }
 
-    export function itemRegistryDarkOakLog(): string {
+    export function itemRegistryDarkOakLog(): ItemValue {
         return MCFunctionItemLibrary.darkOakLog();
     }
 
-    export function itemRegistryAcaciaHangingSign(): string {
+    export function itemRegistryAcaciaHangingSign(): ItemValue {
         return MCFunctionItemLibrary.acaciaHangingSign();
     }
 
-    export function itemRegistryOchreFroglight(): string {
+    export function itemRegistryOchreFroglight(): ItemValue {
         return MCFunctionItemLibrary.ochreFroglight();
     }
 
-    export function itemRegistryTuffWall(): string {
+    export function itemRegistryTuffWall(): ItemValue {
         return MCFunctionItemLibrary.tuffWall();
     }
 
-    export function itemRegistryObserver(): string {
+    export function itemRegistryObserver(): ItemValue {
         return MCFunctionItemLibrary.observer();
     }
 
-    export function itemRegistryRedstoneTorch(): string {
+    export function itemRegistryRedstoneTorch(): ItemValue {
         return MCFunctionItemLibrary.redstoneTorch();
     }
 
-    export function itemRegistrySilverGlazedTerracotta(): string {
+    export function itemRegistrySilverGlazedTerracotta(): ItemValue {
         return MCFunctionItemLibrary.silverGlazedTerracotta();
     }
 
-    export function itemRegistryGraniteStairs(): string {
+    export function itemRegistryGraniteStairs(): ItemValue {
         return MCFunctionItemLibrary.graniteStairs();
     }
 
-    export function itemRegistryPinkConcrete(): string {
+    export function itemRegistryPinkConcrete(): ItemValue {
         return MCFunctionItemLibrary.pinkConcrete();
     }
 
-    export function itemRegistryDarkOakHangingSign(): string {
+    export function itemRegistryDarkOakHangingSign(): ItemValue {
         return MCFunctionItemLibrary.darkOakHangingSign();
     }
 
-    export function itemRegistryBrownMushroom(): string {
+    export function itemRegistryBrownMushroom(): ItemValue {
         return MCFunctionItemLibrary.brownMushroom();
     }
 
-    export function itemRegistryCyanConcretePowder(): string {
+    export function itemRegistryCyanConcretePowder(): ItemValue {
         return MCFunctionItemLibrary.cyanConcretePowder();
     }
 
-    export function itemRegistryBrownGlazedTerracotta(): string {
+    export function itemRegistryBrownGlazedTerracotta(): ItemValue {
         return MCFunctionItemLibrary.brownGlazedTerracotta();
     }
 
-    export function itemRegistryWaxedCopperTrapdoor(): string {
+    export function itemRegistryWaxedCopperTrapdoor(): ItemValue {
         return MCFunctionItemLibrary.waxedCopperTrapdoor();
     }
 
-    export function itemRegistrySpruceShelf(): string {
+    export function itemRegistrySpruceShelf(): ItemValue {
         return MCFunctionItemLibrary.spruceShelf();
     }
 
-    export function itemRegistryOxidizedCopper(): string {
+    export function itemRegistryOxidizedCopper(): ItemValue {
         return MCFunctionItemLibrary.oxidizedCopper();
     }
 
-    export function itemRegistryCopperOre(): string {
+    export function itemRegistryCopperOre(): ItemValue {
         return MCFunctionItemLibrary.copperOre();
     }
 
-    export function itemRegistryDarkOakPlanks(): string {
+    export function itemRegistryDarkOakPlanks(): ItemValue {
         return MCFunctionItemLibrary.darkOakPlanks();
     }
 
-    export function itemRegistryBirchPressurePlate(): string {
+    export function itemRegistryBirchPressurePlate(): ItemValue {
         return MCFunctionItemLibrary.birchPressurePlate();
     }
 
-    export function itemRegistryScaffolding(): string {
+    export function itemRegistryScaffolding(): ItemValue {
         return MCFunctionItemLibrary.scaffolding();
     }
 
-    export function itemRegistrySandstoneStairs(): string {
+    export function itemRegistrySandstoneStairs(): ItemValue {
         return MCFunctionItemLibrary.sandstoneStairs();
     }
 
-    export function itemRegistryStrippedBambooBlock(): string {
+    export function itemRegistryStrippedBambooBlock(): ItemValue {
         return MCFunctionItemLibrary.strippedBambooBlock();
     }
 
-    export function itemRegistryRedMushroomBlock(): string {
+    export function itemRegistryRedMushroomBlock(): ItemValue {
         return MCFunctionItemLibrary.redMushroomBlock();
     }
 
-    export function itemRegistryCrackedStoneBricks(): string {
+    export function itemRegistryCrackedStoneBricks(): ItemValue {
         return MCFunctionItemLibrary.crackedStoneBricks();
     }
 
-    export function itemRegistrySculkCatalyst(): string {
+    export function itemRegistrySculkCatalyst(): ItemValue {
         return MCFunctionItemLibrary.sculkCatalyst();
     }
 
-    export function itemRegistryCobblestone(): string {
+    export function itemRegistryCobblestone(): ItemValue {
         return MCFunctionItemLibrary.cobblestone();
     }
 
-    export function itemRegistryWaxedLightningRod(): string {
+    export function itemRegistryWaxedLightningRod(): ItemValue {
         return MCFunctionItemLibrary.waxedLightningRod();
     }
 
-    export function itemRegistryHornCoral(): string {
+    export function itemRegistryHornCoral(): ItemValue {
         return MCFunctionItemLibrary.hornCoral();
     }
 
-    export function itemRegistryYellowConcrete(): string {
+    export function itemRegistryYellowConcrete(): ItemValue {
         return MCFunctionItemLibrary.yellowConcrete();
     }
 
-    export function itemRegistryMangroveShelf(): string {
+    export function itemRegistryMangroveShelf(): ItemValue {
         return MCFunctionItemLibrary.mangroveShelf();
     }
 
-    export function itemRegistryCyanCarpet(): string {
+    export function itemRegistryCyanCarpet(): ItemValue {
         return MCFunctionItemLibrary.cyanCarpet();
     }
 
-    export function itemRegistryWarpedShelf(): string {
+    export function itemRegistryWarpedShelf(): ItemValue {
         return MCFunctionItemLibrary.warpedShelf();
     }
 
-    export function itemRegistrySmoothSandstoneStairs(): string {
+    export function itemRegistrySmoothSandstoneStairs(): ItemValue {
         return MCFunctionItemLibrary.smoothSandstoneStairs();
     }
 
-    export function itemRegistryJunglePressurePlate(): string {
+    export function itemRegistryJunglePressurePlate(): ItemValue {
         return MCFunctionItemLibrary.junglePressurePlate();
     }
 
-    export function itemRegistryBlueTerracotta(): string {
+    export function itemRegistryBlueTerracotta(): ItemValue {
         return MCFunctionItemLibrary.blueTerracotta();
     }
 
-    export function itemRegistrySandstone(): string {
+    export function itemRegistrySandstone(): ItemValue {
         return MCFunctionItemLibrary.sandstone();
     }
 
-    export function itemRegistryLightWeightedPressurePlate(): string {
+    export function itemRegistryLightWeightedPressurePlate(): ItemValue {
         return MCFunctionItemLibrary.lightWeightedPressurePlate();
     }
 
-    export function itemRegistryUndyedShulkerBox(): string {
+    export function itemRegistryUndyedShulkerBox(): ItemValue {
         return MCFunctionItemLibrary.undyedShulkerBox();
     }
 
-    export function itemRegistryPolishedBlackstone(): string {
+    export function itemRegistryPolishedBlackstone(): ItemValue {
         return MCFunctionItemLibrary.polishedBlackstone();
     }
 
-    export function itemRegistryMycelium(): string {
+    export function itemRegistryMycelium(): ItemValue {
         return MCFunctionItemLibrary.mycelium();
     }
 
-    export function itemRegistryExposedLightningRod(): string {
+    export function itemRegistryExposedLightningRod(): ItemValue {
         return MCFunctionItemLibrary.exposedLightningRod();
     }
 
-    export function itemRegistryBamboo(): string {
+    export function itemRegistryBamboo(): ItemValue {
         return MCFunctionItemLibrary.bamboo();
     }
 
-    export function itemRegistryQuartzBlock(): string {
+    export function itemRegistryQuartzBlock(): ItemValue {
         return MCFunctionItemLibrary.quartzBlock();
     }
 
-    export function itemRegistryPaleOakPlanks(): string {
+    export function itemRegistryPaleOakPlanks(): ItemValue {
         return MCFunctionItemLibrary.paleOakPlanks();
     }
 
-    export function itemRegistryStoneStairs(): string {
+    export function itemRegistryStoneStairs(): ItemValue {
         return MCFunctionItemLibrary.stoneStairs();
     }
 
-    export function itemRegistryWaxedWeatheredChiseledCopper(): string {
+    export function itemRegistryWaxedWeatheredChiseledCopper(): ItemValue {
         return MCFunctionItemLibrary.waxedWeatheredChiseledCopper();
     }
 
-    export function itemRegistryGrayStainedGlass(): string {
+    export function itemRegistryGrayStainedGlass(): ItemValue {
         return MCFunctionItemLibrary.grayStainedGlass();
     }
 
-    export function itemRegistryGreenTerracotta(): string {
+    export function itemRegistryGreenTerracotta(): ItemValue {
         return MCFunctionItemLibrary.greenTerracotta();
     }
 
-    export function itemRegistryDeepslateBrickSlab(): string {
+    export function itemRegistryDeepslateBrickSlab(): ItemValue {
         return MCFunctionItemLibrary.deepslateBrickSlab();
     }
 
-    export function itemRegistryWarpedStairs(): string {
+    export function itemRegistryWarpedStairs(): ItemValue {
         return MCFunctionItemLibrary.warpedStairs();
     }
 
-    export function itemRegistrySmithingTable(): string {
+    export function itemRegistrySmithingTable(): ItemValue {
         return MCFunctionItemLibrary.smithingTable();
     }
 
-    export function itemRegistryPlayerHead(): string {
+    export function itemRegistryPlayerHead(): ItemValue {
         return MCFunctionItemLibrary.playerHead();
     }
 
-    export function itemRegistryWeatheredCopperGrate(): string {
+    export function itemRegistryWeatheredCopperGrate(): ItemValue {
         return MCFunctionItemLibrary.weatheredCopperGrate();
     }
 
-    export function itemRegistryPoppy(): string {
+    export function itemRegistryPoppy(): ItemValue {
         return MCFunctionItemLibrary.poppy();
     }
 
-    export function itemRegistrySulfurSlab(): string {
+    export function itemRegistrySulfurSlab(): ItemValue {
         return MCFunctionItemLibrary.sulfurSlab();
     }
 
-    export function itemRegistryTuffBrickSlab(): string {
+    export function itemRegistryTuffBrickSlab(): ItemValue {
         return MCFunctionItemLibrary.tuffBrickSlab();
     }
 
-    export function itemRegistryCopperChain(): string {
+    export function itemRegistryCopperChain(): ItemValue {
         return MCFunctionItemLibrary.copperChain();
     }
 
-    export function itemRegistryCopperChest(): string {
+    export function itemRegistryCopperChest(): ItemValue {
         return MCFunctionItemLibrary.copperChest();
     }
 
-    export function itemRegistryMossyStoneBricks(): string {
+    export function itemRegistryMossyStoneBricks(): ItemValue {
         return MCFunctionItemLibrary.mossyStoneBricks();
     }
 
-    export function itemRegistryGreenWool(): string {
+    export function itemRegistryGreenWool(): ItemValue {
         return MCFunctionItemLibrary.greenWool();
     }
 
-    export function itemRegistryGreenCarpet(): string {
+    export function itemRegistryGreenCarpet(): ItemValue {
         return MCFunctionItemLibrary.greenCarpet();
     }
 
-    export function itemRegistryPrismarineBrickSlab(): string {
+    export function itemRegistryPrismarineBrickSlab(): ItemValue {
         return MCFunctionItemLibrary.prismarineBrickSlab();
     }
 
-    export function itemRegistryWoodenDoor(): string {
+    export function itemRegistryWoodenDoor(): ItemValue {
         return MCFunctionItemLibrary.woodenDoor();
     }
 
-    export function itemRegistryPitcherPlant(): string {
+    export function itemRegistryPitcherPlant(): ItemValue {
         return MCFunctionItemLibrary.pitcherPlant();
     }
 
-    export function itemRegistrySprucePressurePlate(): string {
+    export function itemRegistrySprucePressurePlate(): ItemValue {
         return MCFunctionItemLibrary.sprucePressurePlate();
     }
 
-    export function itemRegistryNetheriteBlock(): string {
+    export function itemRegistryNetheriteBlock(): ItemValue {
         return MCFunctionItemLibrary.netheriteBlock();
     }
 
-    export function itemRegistryPinkWool(): string {
+    export function itemRegistryPinkWool(): ItemValue {
         return MCFunctionItemLibrary.pinkWool();
     }
 
-    export function itemRegistryRedstoneBlock(): string {
+    export function itemRegistryRedstoneBlock(): ItemValue {
         return MCFunctionItemLibrary.redstoneBlock();
     }
 
-    export function itemRegistryBirchFenceGate(): string {
+    export function itemRegistryBirchFenceGate(): ItemValue {
         return MCFunctionItemLibrary.birchFenceGate();
     }
 
-    export function itemRegistryQuartzPillar(): string {
+    export function itemRegistryQuartzPillar(): ItemValue {
         return MCFunctionItemLibrary.quartzPillar();
     }
 
-    export function itemRegistryWaxedExposedCutCopper(): string {
+    export function itemRegistryWaxedExposedCutCopper(): ItemValue {
         return MCFunctionItemLibrary.waxedExposedCutCopper();
     }
 
-    export function itemRegistryJungleHangingSign(): string {
+    export function itemRegistryJungleHangingSign(): ItemValue {
         return MCFunctionItemLibrary.jungleHangingSign();
     }
 
-    export function itemRegistryBirchSlab(): string {
+    export function itemRegistryBirchSlab(): ItemValue {
         return MCFunctionItemLibrary.birchSlab();
     }
 
-    export function itemRegistryLoom(): string {
+    export function itemRegistryLoom(): ItemValue {
         return MCFunctionItemLibrary.loom();
     }
 
-    export function itemRegistryWaxedWeatheredCopperLantern(): string {
+    export function itemRegistryWaxedWeatheredCopperLantern(): ItemValue {
         return MCFunctionItemLibrary.waxedWeatheredCopperLantern();
     }
 
-    export function itemRegistryDeadTubeCoralBlock(): string {
+    export function itemRegistryDeadTubeCoralBlock(): ItemValue {
         return MCFunctionItemLibrary.deadTubeCoralBlock();
     }
 
-    export function itemRegistryEndStone(): string {
+    export function itemRegistryEndStone(): ItemValue {
         return MCFunctionItemLibrary.endStone();
     }
 
-    export function itemRegistryCrimsonDoor(): string {
+    export function itemRegistryCrimsonDoor(): ItemValue {
         return MCFunctionItemLibrary.crimsonDoor();
     }
 
-    export function itemRegistryMangrovePressurePlate(): string {
+    export function itemRegistryMangrovePressurePlate(): ItemValue {
         return MCFunctionItemLibrary.mangrovePressurePlate();
     }
 
-    export function itemRegistryJungleShelf(): string {
+    export function itemRegistryJungleShelf(): ItemValue {
         return MCFunctionItemLibrary.jungleShelf();
     }
 
-    export function itemRegistryJungleSlab(): string {
+    export function itemRegistryJungleSlab(): ItemValue {
         return MCFunctionItemLibrary.jungleSlab();
     }
 
-    export function itemRegistryLightBlueStainedGlassPane(): string {
+    export function itemRegistryLightBlueStainedGlassPane(): ItemValue {
         return MCFunctionItemLibrary.lightBlueStainedGlassPane();
     }
 
-    export function itemRegistryGlowstone(): string {
+    export function itemRegistryGlowstone(): ItemValue {
         return MCFunctionItemLibrary.glowstone();
     }
 
-    export function itemRegistryStonePressurePlate(): string {
+    export function itemRegistryStonePressurePlate(): ItemValue {
         return MCFunctionItemLibrary.stonePressurePlate();
     }
 
-    export function itemRegistryWaxedExposedCutCopperStairs(): string {
+    export function itemRegistryWaxedExposedCutCopperStairs(): ItemValue {
         return MCFunctionItemLibrary.waxedExposedCutCopperStairs();
     }
 
-    export function itemRegistryMudBrickSlab(): string {
+    export function itemRegistryMudBrickSlab(): ItemValue {
         return MCFunctionItemLibrary.mudBrickSlab();
     }
 
-    export function itemRegistryWaxedExposedLightningRod(): string {
+    export function itemRegistryWaxedExposedLightningRod(): ItemValue {
         return MCFunctionItemLibrary.waxedExposedLightningRod();
     }
 
-    export function itemRegistryExposedCopperLantern(): string {
+    export function itemRegistryExposedCopperLantern(): ItemValue {
         return MCFunctionItemLibrary.exposedCopperLantern();
     }
 
-    export function itemRegistryFarmland(): string {
+    export function itemRegistryFarmland(): ItemValue {
         return MCFunctionItemLibrary.farmland();
     }
 
-    export function itemRegistryCutRedSandstone(): string {
+    export function itemRegistryCutRedSandstone(): ItemValue {
         return MCFunctionItemLibrary.cutRedSandstone();
     }
 
-    export function itemRegistryRail(): string {
+    export function itemRegistryRail(): ItemValue {
         return MCFunctionItemLibrary.rail();
     }
 
-    export function itemRegistryBlackstoneWall(): string {
+    export function itemRegistryBlackstoneWall(): ItemValue {
         return MCFunctionItemLibrary.blackstoneWall();
     }
 
-    export function itemRegistryStoneBricks(): string {
+    export function itemRegistryStoneBricks(): ItemValue {
         return MCFunctionItemLibrary.stoneBricks();
     }
 
-    export function itemRegistryMossyCobblestoneStairs(): string {
+    export function itemRegistryMossyCobblestoneStairs(): ItemValue {
         return MCFunctionItemLibrary.mossyCobblestoneStairs();
     }
 
-    export function itemRegistryDetectorRail(): string {
+    export function itemRegistryDetectorRail(): ItemValue {
         return MCFunctionItemLibrary.detectorRail();
     }
 
-    export function itemRegistryBlueOrchid(): string {
+    export function itemRegistryBlueOrchid(): ItemValue {
         return MCFunctionItemLibrary.blueOrchid();
     }
 
-    export function itemRegistryGreenStainedGlassPane(): string {
+    export function itemRegistryGreenStainedGlassPane(): ItemValue {
         return MCFunctionItemLibrary.greenStainedGlassPane();
     }
 
-    export function itemRegistryPolishedGraniteStairs(): string {
+    export function itemRegistryPolishedGraniteStairs(): ItemValue {
         return MCFunctionItemLibrary.polishedGraniteStairs();
     }
 
-    export function itemRegistryBirchLeaves(): string {
+    export function itemRegistryBirchLeaves(): ItemValue {
         return MCFunctionItemLibrary.birchLeaves();
     }
 
-    export function itemRegistryPinkTerracotta(): string {
+    export function itemRegistryPinkTerracotta(): ItemValue {
         return MCFunctionItemLibrary.pinkTerracotta();
     }
 
-    export function itemRegistryInfestedCobblestone(): string {
+    export function itemRegistryInfestedCobblestone(): ItemValue {
         return MCFunctionItemLibrary.infestedCobblestone();
     }
 
-    export function itemRegistryCrackedDeepslateTiles(): string {
+    export function itemRegistryCrackedDeepslateTiles(): ItemValue {
         return MCFunctionItemLibrary.crackedDeepslateTiles();
     }
 
-    export function itemRegistryMangroveWood(): string {
+    export function itemRegistryMangroveWood(): ItemValue {
         return MCFunctionItemLibrary.mangroveWood();
     }
 
-    export function itemRegistryWaxedExposedCopperGolemStatue(): string {
+    export function itemRegistryWaxedExposedCopperGolemStatue(): ItemValue {
         return MCFunctionItemLibrary.waxedExposedCopperGolemStatue();
     }
 
-    export function itemRegistryRedGlazedTerracotta(): string {
+    export function itemRegistryRedGlazedTerracotta(): ItemValue {
         return MCFunctionItemLibrary.redGlazedTerracotta();
     }
 
-    export function itemRegistryWaxedOxidizedCopperChest(): string {
+    export function itemRegistryWaxedOxidizedCopperChest(): ItemValue {
         return MCFunctionItemLibrary.waxedOxidizedCopperChest();
     }
 
-    export function itemRegistryWaxedOxidizedCopperChain(): string {
+    export function itemRegistryWaxedOxidizedCopperChain(): ItemValue {
         return MCFunctionItemLibrary.waxedOxidizedCopperChain();
     }
 
-    export function itemRegistryDarkOakFenceGate(): string {
+    export function itemRegistryDarkOakFenceGate(): ItemValue {
         return MCFunctionItemLibrary.darkOakFenceGate();
     }
 
-    export function itemRegistryMossyCobblestoneSlab(): string {
+    export function itemRegistryMossyCobblestoneSlab(): ItemValue {
         return MCFunctionItemLibrary.mossyCobblestoneSlab();
     }
 
-    export function itemRegistryCobblestoneSlab(): string {
+    export function itemRegistryCobblestoneSlab(): ItemValue {
         return MCFunctionItemLibrary.cobblestoneSlab();
     }
 
-    export function itemRegistryCrimsonNylium(): string {
+    export function itemRegistryCrimsonNylium(): ItemValue {
         return MCFunctionItemLibrary.crimsonNylium();
     }
 
-    export function itemRegistryStructureVoid(): string {
+    export function itemRegistryStructureVoid(): ItemValue {
         return MCFunctionItemLibrary.structureVoid();
     }
 
-    export function itemRegistryWaxedExposedCopperBars(): string {
+    export function itemRegistryWaxedExposedCopperBars(): ItemValue {
         return MCFunctionItemLibrary.waxedExposedCopperBars();
     }
 
-    export function itemRegistryPurpleConcrete(): string {
+    export function itemRegistryPurpleConcrete(): ItemValue {
         return MCFunctionItemLibrary.purpleConcrete();
     }
 
-    export function itemRegistryWaxedExposedCopperBulb(): string {
+    export function itemRegistryWaxedExposedCopperBulb(): ItemValue {
         return MCFunctionItemLibrary.waxedExposedCopperBulb();
     }
 
-    export function itemRegistryPolishedBlackstoneBrickSlab(): string {
+    export function itemRegistryPolishedBlackstoneBrickSlab(): ItemValue {
         return MCFunctionItemLibrary.polishedBlackstoneBrickSlab();
     }
 
-    export function itemRegistryNormalStoneSlab(): string {
+    export function itemRegistryNormalStoneSlab(): ItemValue {
         return MCFunctionItemLibrary.normalStoneSlab();
     }
 
-    export function itemRegistrySulfurStairs(): string {
+    export function itemRegistrySulfurStairs(): ItemValue {
         return MCFunctionItemLibrary.sulfurStairs();
     }
 
-    export function itemRegistrySpruceSapling(): string {
+    export function itemRegistrySpruceSapling(): ItemValue {
         return MCFunctionItemLibrary.spruceSapling();
     }
 
-    export function itemRegistryYellowTerracotta(): string {
+    export function itemRegistryYellowTerracotta(): ItemValue {
         return MCFunctionItemLibrary.yellowTerracotta();
     }
 
-    export function itemRegistrySnow(): string {
+    export function itemRegistrySnow(): ItemValue {
         return MCFunctionItemLibrary.snow();
     }
 
-    export function itemRegistrySand(): string {
+    export function itemRegistrySand(): ItemValue {
         return MCFunctionItemLibrary.sand();
     }
 
-    export function itemRegistryDaylightDetector(): string {
+    export function itemRegistryDaylightDetector(): ItemValue {
         return MCFunctionItemLibrary.daylightDetector();
     }
 
-    export function itemRegistryStrippedMangroveWood(): string {
+    export function itemRegistryStrippedMangroveWood(): ItemValue {
         return MCFunctionItemLibrary.strippedMangroveWood();
     }
 
-    export function itemRegistryConduit(): string {
+    export function itemRegistryConduit(): ItemValue {
         return MCFunctionItemLibrary.conduit();
     }
 
-    export function itemRegistrySlime(): string {
+    export function itemRegistrySlime(): ItemValue {
         return MCFunctionItemLibrary.slime();
     }
 
-    export function itemRegistryCopperTorch(): string {
+    export function itemRegistryCopperTorch(): ItemValue {
         return MCFunctionItemLibrary.copperTorch();
     }
 
-    export function itemRegistryBoneBlock(): string {
+    export function itemRegistryBoneBlock(): ItemValue {
         return MCFunctionItemLibrary.boneBlock();
     }
 
-    export function itemRegistryFrame(): string {
+    export function itemRegistryFrame(): ItemValue {
         return MCFunctionItemLibrary.frame();
     }
 
-    export function itemRegistrySpruceLog(): string {
+    export function itemRegistrySpruceLog(): ItemValue {
         return MCFunctionItemLibrary.spruceLog();
     }
 
-    export function itemRegistryLapisBlock(): string {
+    export function itemRegistryLapisBlock(): ItemValue {
         return MCFunctionItemLibrary.lapisBlock();
     }
 
-    export function itemRegistryCoalOre(): string {
+    export function itemRegistryCoalOre(): ItemValue {
         return MCFunctionItemLibrary.coalOre();
     }
 
-    export function itemRegistryBambooShelf(): string {
+    export function itemRegistryBambooShelf(): ItemValue {
         return MCFunctionItemLibrary.bambooShelf();
     }
 
-    export function itemRegistryRedstoneOre(): string {
+    export function itemRegistryRedstoneOre(): ItemValue {
         return MCFunctionItemLibrary.redstoneOre();
     }
 
-    export function itemRegistryWaxedCopperChest(): string {
+    export function itemRegistryWaxedCopperChest(): ItemValue {
         return MCFunctionItemLibrary.waxedCopperChest();
     }
 
-    export function itemRegistryGreenStainedGlass(): string {
+    export function itemRegistryGreenStainedGlass(): ItemValue {
         return MCFunctionItemLibrary.greenStainedGlass();
     }
 
-    export function itemRegistryWaxedCopperChain(): string {
+    export function itemRegistryWaxedCopperChain(): ItemValue {
         return MCFunctionItemLibrary.waxedCopperChain();
     }
 
-    export function itemRegistryBubbleCoralBlock(): string {
+    export function itemRegistryBubbleCoralBlock(): ItemValue {
         return MCFunctionItemLibrary.bubbleCoralBlock();
     }
 
-    export function itemRegistryInfestedChiseledStoneBricks(): string {
+    export function itemRegistryInfestedChiseledStoneBricks(): ItemValue {
         return MCFunctionItemLibrary.infestedChiseledStoneBricks();
     }
 
-    export function itemRegistryPolishedCinnabarWall(): string {
+    export function itemRegistryPolishedCinnabarWall(): ItemValue {
         return MCFunctionItemLibrary.polishedCinnabarWall();
     }
 
-    export function itemRegistryNetherBrickFence(): string {
+    export function itemRegistryNetherBrickFence(): ItemValue {
         return MCFunctionItemLibrary.netherBrickFence();
     }
 
-    export function itemRegistryPinkTulip(): string {
+    export function itemRegistryPinkTulip(): ItemValue {
         return MCFunctionItemLibrary.pinkTulip();
     }
 
-    export function itemRegistryOakSlab(): string {
+    export function itemRegistryOakSlab(): ItemValue {
         return MCFunctionItemLibrary.oakSlab();
     }
 
-    export function itemRegistryStrippedPaleOakLog(): string {
+    export function itemRegistryStrippedPaleOakLog(): ItemValue {
         return MCFunctionItemLibrary.strippedPaleOakLog();
     }
 
-    export function itemRegistryDeepslateTileSlab(): string {
+    export function itemRegistryDeepslateTileSlab(): ItemValue {
         return MCFunctionItemLibrary.deepslateTileSlab();
     }
 
-    export function itemRegistryPinkConcretePowder(): string {
+    export function itemRegistryPinkConcretePowder(): ItemValue {
         return MCFunctionItemLibrary.pinkConcretePowder();
     }
 
-    export function itemRegistryPaleOakSlab(): string {
+    export function itemRegistryPaleOakSlab(): ItemValue {
         return MCFunctionItemLibrary.paleOakSlab();
     }
 
-    export function itemRegistryDeadTubeCoral(): string {
+    export function itemRegistryDeadTubeCoral(): ItemValue {
         return MCFunctionItemLibrary.deadTubeCoral();
     }
 
-    export function itemRegistryNetherWartBlock(): string {
+    export function itemRegistryNetherWartBlock(): ItemValue {
         return MCFunctionItemLibrary.netherWartBlock();
     }
 
-    export function itemRegistryPrismarineSlab(): string {
+    export function itemRegistryPrismarineSlab(): ItemValue {
         return MCFunctionItemLibrary.prismarineSlab();
     }
 
-    export function itemRegistryCherryDoor(): string {
+    export function itemRegistryCherryDoor(): ItemValue {
         return MCFunctionItemLibrary.cherryDoor();
     }
 
-    export function itemRegistryCrimsonHyphae(): string {
+    export function itemRegistryCrimsonHyphae(): ItemValue {
         return MCFunctionItemLibrary.crimsonHyphae();
     }
 
-    export function itemRegistryPolishedBlackstoneStairs(): string {
+    export function itemRegistryPolishedBlackstoneStairs(): ItemValue {
         return MCFunctionItemLibrary.polishedBlackstoneStairs();
     }
 
-    export function itemRegistryWeatheredCutCopperStairs(): string {
+    export function itemRegistryWeatheredCutCopperStairs(): ItemValue {
         return MCFunctionItemLibrary.weatheredCutCopperStairs();
     }
 
-    export function itemRegistrySmallDripleafBlock(): string {
+    export function itemRegistrySmallDripleafBlock(): ItemValue {
         return MCFunctionItemLibrary.smallDripleafBlock();
     }
 
-    export function itemRegistryPolishedSulfurStairs(): string {
+    export function itemRegistryPolishedSulfurStairs(): ItemValue {
         return MCFunctionItemLibrary.polishedSulfurStairs();
     }
 
-    export function itemRegistryPinkStainedGlass(): string {
+    export function itemRegistryPinkStainedGlass(): ItemValue {
         return MCFunctionItemLibrary.pinkStainedGlass();
     }
 
-    export function itemRegistryWaxedWeatheredCopperGrate(): string {
+    export function itemRegistryWaxedWeatheredCopperGrate(): ItemValue {
         return MCFunctionItemLibrary.waxedWeatheredCopperGrate();
     }
 
-    export function itemRegistrySpruceButton(): string {
+    export function itemRegistrySpruceButton(): ItemValue {
         return MCFunctionItemLibrary.spruceButton();
     }
 
-    export function itemRegistryAcaciaLog(): string {
+    export function itemRegistryAcaciaLog(): ItemValue {
         return MCFunctionItemLibrary.acaciaLog();
     }
 
-    export function itemRegistryCrimsonTrapdoor(): string {
+    export function itemRegistryCrimsonTrapdoor(): ItemValue {
         return MCFunctionItemLibrary.crimsonTrapdoor();
     }
 
-    export function itemRegistryBasalt(): string {
+    export function itemRegistryBasalt(): ItemValue {
         return MCFunctionItemLibrary.basalt();
     }
 
-    export function itemRegistryLightBlueTerracotta(): string {
+    export function itemRegistryLightBlueTerracotta(): ItemValue {
         return MCFunctionItemLibrary.lightBlueTerracotta();
     }
 
-    export function itemRegistryCopperGolemStatue(): string {
+    export function itemRegistryCopperGolemStatue(): ItemValue {
         return MCFunctionItemLibrary.copperGolemStatue();
     }
 
-    export function itemRegistryDiamondOre(): string {
+    export function itemRegistryDiamondOre(): ItemValue {
         return MCFunctionItemLibrary.diamondOre();
     }
 
-    export function itemRegistryWarpedRoots(): string {
+    export function itemRegistryWarpedRoots(): ItemValue {
         return MCFunctionItemLibrary.warpedRoots();
     }
 
-    export function itemRegistryMagentaConcrete(): string {
+    export function itemRegistryMagentaConcrete(): ItemValue {
         return MCFunctionItemLibrary.magentaConcrete();
     }
 
-    export function itemRegistryDarkPrismarine(): string {
+    export function itemRegistryDarkPrismarine(): ItemValue {
         return MCFunctionItemLibrary.darkPrismarine();
     }
 
-    export function itemRegistryStickyPiston(): string {
+    export function itemRegistryStickyPiston(): ItemValue {
         return MCFunctionItemLibrary.stickyPiston();
     }
 
-    export function itemRegistryEnderChest(): string {
+    export function itemRegistryEnderChest(): ItemValue {
         return MCFunctionItemLibrary.enderChest();
     }
 
-    export function itemRegistryMediumAmethystBud(): string {
+    export function itemRegistryMediumAmethystBud(): ItemValue {
         return MCFunctionItemLibrary.mediumAmethystBud();
     }
 
-    export function itemRegistryPinkShulkerBox(): string {
+    export function itemRegistryPinkShulkerBox(): ItemValue {
         return MCFunctionItemLibrary.pinkShulkerBox();
     }
 
-    export function itemRegistrySculkSensor(): string {
+    export function itemRegistrySculkSensor(): ItemValue {
         return MCFunctionItemLibrary.sculkSensor();
     }
 
-    export function itemRegistryCopperBulb(): string {
+    export function itemRegistryCopperBulb(): ItemValue {
         return MCFunctionItemLibrary.copperBulb();
     }
 
-    export function itemRegistryCopperBars(): string {
+    export function itemRegistryCopperBars(): ItemValue {
         return MCFunctionItemLibrary.copperBars();
     }
 
-    export function itemRegistryOakShelf(): string {
+    export function itemRegistryOakShelf(): ItemValue {
         return MCFunctionItemLibrary.oakShelf();
     }
 
-    export function itemRegistryDioriteStairs(): string {
+    export function itemRegistryDioriteStairs(): ItemValue {
         return MCFunctionItemLibrary.dioriteStairs();
     }
 
-    export function itemRegistrySpruceLeaves(): string {
+    export function itemRegistrySpruceLeaves(): ItemValue {
         return MCFunctionItemLibrary.spruceLeaves();
     }
 
-    export function itemRegistryFrogSpawn(): string {
+    export function itemRegistryFrogSpawn(): ItemValue {
         return MCFunctionItemLibrary.frogSpawn();
     }
 
-    export function itemRegistryAcaciaDoor(): string {
+    export function itemRegistryAcaciaDoor(): ItemValue {
         return MCFunctionItemLibrary.acaciaDoor();
     }
 
-    export function itemRegistryRedShulkerBox(): string {
+    export function itemRegistryRedShulkerBox(): ItemValue {
         return MCFunctionItemLibrary.redShulkerBox();
     }
 
-    export function itemRegistryStrippedCherryLog(): string {
+    export function itemRegistryStrippedCherryLog(): ItemValue {
         return MCFunctionItemLibrary.strippedCherryLog();
     }
 
-    export function itemRegistryCrimsonButton(): string {
+    export function itemRegistryCrimsonButton(): ItemValue {
         return MCFunctionItemLibrary.crimsonButton();
     }
 
-    export function itemRegistryAcaciaPlanks(): string {
+    export function itemRegistryAcaciaPlanks(): ItemValue {
         return MCFunctionItemLibrary.acaciaPlanks();
     }
 
-    export function itemRegistryFireCoralBlock(): string {
+    export function itemRegistryFireCoralBlock(): ItemValue {
         return MCFunctionItemLibrary.fireCoralBlock();
     }
 
-    export function itemRegistryMagentaConcretePowder(): string {
+    export function itemRegistryMagentaConcretePowder(): ItemValue {
         return MCFunctionItemLibrary.magentaConcretePowder();
     }
 
-    export function itemRegistryIronDoor(): string {
+    export function itemRegistryIronDoor(): ItemValue {
         return MCFunctionItemLibrary.ironDoor();
     }
 
-    export function itemRegistryHoneycombBlock(): string {
+    export function itemRegistryHoneycombBlock(): ItemValue {
         return MCFunctionItemLibrary.honeycombBlock();
     }
 
-    export function itemRegistryPolishedBlackstoneBrickStairs(): string {
+    export function itemRegistryPolishedBlackstoneBrickStairs(): ItemValue {
         return MCFunctionItemLibrary.polishedBlackstoneBrickStairs();
     }
 
-    export function itemRegistryMangroveTrapdoor(): string {
+    export function itemRegistryMangroveTrapdoor(): ItemValue {
         return MCFunctionItemLibrary.mangroveTrapdoor();
     }
 
-    export function itemRegistryQuartzOre(): string {
+    export function itemRegistryQuartzOre(): ItemValue {
         return MCFunctionItemLibrary.quartzOre();
     }
 
-    export function itemRegistryBarrel(): string {
+    export function itemRegistryBarrel(): ItemValue {
         return MCFunctionItemLibrary.barrel();
     }
 
-    export function itemRegistrySmoothQuartz(): string {
+    export function itemRegistrySmoothQuartz(): ItemValue {
         return MCFunctionItemLibrary.smoothQuartz();
     }
 
-    export function itemRegistryCoarseDirt(): string {
+    export function itemRegistryCoarseDirt(): ItemValue {
         return MCFunctionItemLibrary.coarseDirt();
     }
 
-    export function itemRegistryChorusFlower(): string {
+    export function itemRegistryChorusFlower(): ItemValue {
         return MCFunctionItemLibrary.chorusFlower();
     }
 
-    export function itemRegistryOrangeStainedGlass(): string {
+    export function itemRegistryOrangeStainedGlass(): ItemValue {
         return MCFunctionItemLibrary.orangeStainedGlass();
     }
 
-    export function itemRegistryWhiteStainedGlassPane(): string {
+    export function itemRegistryWhiteStainedGlassPane(): ItemValue {
         return MCFunctionItemLibrary.whiteStainedGlassPane();
     }
 
-    export function itemRegistrySulfurWall(): string {
+    export function itemRegistrySulfurWall(): ItemValue {
         return MCFunctionItemLibrary.sulfurWall();
     }
 
-    export function itemRegistrySulfurBrickStairs(): string {
+    export function itemRegistrySulfurBrickStairs(): ItemValue {
         return MCFunctionItemLibrary.sulfurBrickStairs();
     }
 
-    export function itemRegistryStrippedBirchWood(): string {
+    export function itemRegistryStrippedBirchWood(): ItemValue {
         return MCFunctionItemLibrary.strippedBirchWood();
     }
 
-    export function itemRegistryCrackedNetherBricks(): string {
+    export function itemRegistryCrackedNetherBricks(): ItemValue {
         return MCFunctionItemLibrary.crackedNetherBricks();
     }
 
-    export function itemRegistryLightBlueCandle(): string {
+    export function itemRegistryLightBlueCandle(): ItemValue {
         return MCFunctionItemLibrary.lightBlueCandle();
     }
 
-    export function itemRegistryPumpkin(): string {
+    export function itemRegistryPumpkin(): ItemValue {
         return MCFunctionItemLibrary.pumpkin();
     }
 
-    export function itemRegistryDeepslateTiles(): string {
+    export function itemRegistryDeepslateTiles(): ItemValue {
         return MCFunctionItemLibrary.deepslateTiles();
     }
 
-    export function itemRegistrySmoothStone(): string {
+    export function itemRegistrySmoothStone(): ItemValue {
         return MCFunctionItemLibrary.smoothStone();
     }
 
-    export function itemRegistryGrayTerracotta(): string {
+    export function itemRegistryGrayTerracotta(): ItemValue {
         return MCFunctionItemLibrary.grayTerracotta();
     }
 
-    export function itemRegistryOxidizedCopperTrapdoor(): string {
+    export function itemRegistryOxidizedCopperTrapdoor(): ItemValue {
         return MCFunctionItemLibrary.oxidizedCopperTrapdoor();
     }
 
-    export function itemRegistryGraniteSlab(): string {
+    export function itemRegistryGraniteSlab(): ItemValue {
         return MCFunctionItemLibrary.graniteSlab();
     }
 
-    export function itemRegistryWhiteTulip(): string {
+    export function itemRegistryWhiteTulip(): ItemValue {
         return MCFunctionItemLibrary.whiteTulip();
     }
 
-    export function itemRegistryLimeConcrete(): string {
+    export function itemRegistryLimeConcrete(): ItemValue {
         return MCFunctionItemLibrary.limeConcrete();
     }
 
-    export function itemRegistryRedMushroom(): string {
+    export function itemRegistryRedMushroom(): ItemValue {
         return MCFunctionItemLibrary.redMushroom();
     }
 
-    export function itemRegistryGildedBlackstone(): string {
+    export function itemRegistryGildedBlackstone(): ItemValue {
         return MCFunctionItemLibrary.gildedBlackstone();
     }
 
-    export function itemRegistryMagentaTerracotta(): string {
+    export function itemRegistryMagentaTerracotta(): ItemValue {
         return MCFunctionItemLibrary.magentaTerracotta();
     }
 
-    export function itemRegistryExposedCutCopperStairs(): string {
+    export function itemRegistryExposedCutCopperStairs(): ItemValue {
         return MCFunctionItemLibrary.exposedCutCopperStairs();
     }
 
-    export function itemRegistryMangroveStairs(): string {
+    export function itemRegistryMangroveStairs(): ItemValue {
         return MCFunctionItemLibrary.mangroveStairs();
     }
 
-    export function itemRegistryPolishedDioriteSlab(): string {
+    export function itemRegistryPolishedDioriteSlab(): ItemValue {
         return MCFunctionItemLibrary.polishedDioriteSlab();
     }
 
-    export function itemRegistryCutCopperStairs(): string {
+    export function itemRegistryCutCopperStairs(): ItemValue {
         return MCFunctionItemLibrary.cutCopperStairs();
     }
 
-    export function itemRegistryWaxedOxidizedCopperLantern(): string {
+    export function itemRegistryWaxedOxidizedCopperLantern(): ItemValue {
         return MCFunctionItemLibrary.waxedOxidizedCopperLantern();
     }
 
-    export function itemRegistryCherryButton(): string {
+    export function itemRegistryCherryButton(): ItemValue {
         return MCFunctionItemLibrary.cherryButton();
     }
 
-    export function itemRegistryMangroveFenceGate(): string {
+    export function itemRegistryMangroveFenceGate(): ItemValue {
         return MCFunctionItemLibrary.mangroveFenceGate();
     }
 
-    export function itemRegistrySunflower(): string {
+    export function itemRegistrySunflower(): ItemValue {
         return MCFunctionItemLibrary.sunflower();
     }
 
-    export function itemRegistryPinkPetals(): string {
+    export function itemRegistryPinkPetals(): ItemValue {
         return MCFunctionItemLibrary.pinkPetals();
     }
 
-    export function itemRegistryBambooHangingSign(): string {
+    export function itemRegistryBambooHangingSign(): ItemValue {
         return MCFunctionItemLibrary.bambooHangingSign();
     }
 
-    export function itemRegistryInfestedDeepslate(): string {
+    export function itemRegistryInfestedDeepslate(): ItemValue {
         return MCFunctionItemLibrary.infestedDeepslate();
     }
 
-    export function itemRegistrySoulTorch(): string {
+    export function itemRegistrySoulTorch(): ItemValue {
         return MCFunctionItemLibrary.soulTorch();
     }
 
-    export function itemRegistryPodzol(): string {
+    export function itemRegistryPodzol(): ItemValue {
         return MCFunctionItemLibrary.podzol();
     }
 
-    export function itemRegistryCopperBlock(): string {
+    export function itemRegistryCopperBlock(): ItemValue {
         return MCFunctionItemLibrary.copperBlock();
     }
 
-    export function itemRegistryDeepslateTileStairs(): string {
+    export function itemRegistryDeepslateTileStairs(): ItemValue {
         return MCFunctionItemLibrary.deepslateTileStairs();
     }
 
-    export function itemRegistryCrimsonFenceGate(): string {
+    export function itemRegistryCrimsonFenceGate(): ItemValue {
         return MCFunctionItemLibrary.crimsonFenceGate();
     }
 
-    export function itemRegistryDeadbush(): string {
+    export function itemRegistryDeadbush(): ItemValue {
         return MCFunctionItemLibrary.deadbush();
     }
 
-    export function itemRegistryPolishedBlackstoneBricks(): string {
+    export function itemRegistryPolishedBlackstoneBricks(): ItemValue {
         return MCFunctionItemLibrary.polishedBlackstoneBricks();
     }
 
-    export function itemRegistryRedCandle(): string {
+    export function itemRegistryRedCandle(): ItemValue {
         return MCFunctionItemLibrary.redCandle();
     }
 
-    export function itemRegistryCutCopper(): string {
+    export function itemRegistryCutCopper(): ItemValue {
         return MCFunctionItemLibrary.cutCopper();
     }
 
-    export function itemRegistryWaxedWeatheredCopperGolemStatue(): string {
+    export function itemRegistryWaxedWeatheredCopperGolemStatue(): ItemValue {
         return MCFunctionItemLibrary.waxedWeatheredCopperGolemStatue();
     }
 
-    export function itemRegistryIronOre(): string {
+    export function itemRegistryIronOre(): ItemValue {
         return MCFunctionItemLibrary.ironOre();
     }
 
-    export function itemRegistrySpruceDoor(): string {
+    export function itemRegistrySpruceDoor(): ItemValue {
         return MCFunctionItemLibrary.spruceDoor();
     }
 
-    export function itemRegistryFrostedIce(): string {
+    export function itemRegistryFrostedIce(): ItemValue {
         return MCFunctionItemLibrary.frostedIce();
     }
 
-    export function itemRegistryChippedAnvil(): string {
+    export function itemRegistryChippedAnvil(): ItemValue {
         return MCFunctionItemLibrary.chippedAnvil();
     }
 
-    export function itemRegistryLargeAmethystBud(): string {
+    export function itemRegistryLargeAmethystBud(): ItemValue {
         return MCFunctionItemLibrary.largeAmethystBud();
     }
 
-    export function itemRegistryExposedCopperDoor(): string {
+    export function itemRegistryExposedCopperDoor(): ItemValue {
         return MCFunctionItemLibrary.exposedCopperDoor();
     }
 
-    export function itemRegistrySuspiciousGravel(): string {
+    export function itemRegistrySuspiciousGravel(): ItemValue {
         return MCFunctionItemLibrary.suspiciousGravel();
     }
 
-    export function itemRegistryWarpedTrapdoor(): string {
+    export function itemRegistryWarpedTrapdoor(): ItemValue {
         return MCFunctionItemLibrary.warpedTrapdoor();
     }
 
-    export function itemRegistryBrickBlock(): string {
+    export function itemRegistryBrickBlock(): ItemValue {
         return MCFunctionItemLibrary.brickBlock();
     }
 
-    export function itemRegistryWaxedWeatheredCopperTrapdoor(): string {
+    export function itemRegistryWaxedWeatheredCopperTrapdoor(): ItemValue {
         return MCFunctionItemLibrary.waxedWeatheredCopperTrapdoor();
     }
 
-    export function itemRegistryQuartzStairs(): string {
+    export function itemRegistryQuartzStairs(): ItemValue {
         return MCFunctionItemLibrary.quartzStairs();
     }
 
-    export function itemRegistryMagentaStainedGlassPane(): string {
+    export function itemRegistryMagentaStainedGlassPane(): ItemValue {
         return MCFunctionItemLibrary.magentaStainedGlassPane();
     }
 
-    export function itemRegistryIronBars(): string {
+    export function itemRegistryIronBars(): ItemValue {
         return MCFunctionItemLibrary.ironBars();
     }
 
-    export function itemRegistryWhiteTerracotta(): string {
+    export function itemRegistryWhiteTerracotta(): ItemValue {
         return MCFunctionItemLibrary.whiteTerracotta();
     }
 
-    export function itemRegistryStrippedOakWood(): string {
+    export function itemRegistryStrippedOakWood(): ItemValue {
         return MCFunctionItemLibrary.strippedOakWood();
     }
 
-    export function itemRegistryLightBlueCarpet(): string {
+    export function itemRegistryLightBlueCarpet(): ItemValue {
         return MCFunctionItemLibrary.lightBlueCarpet();
     }
 
-    export function itemRegistryOakHangingSign(): string {
+    export function itemRegistryOakHangingSign(): ItemValue {
         return MCFunctionItemLibrary.oakHangingSign();
     }
 
-    export function itemRegistryWhiteConcretePowder(): string {
+    export function itemRegistryWhiteConcretePowder(): ItemValue {
         return MCFunctionItemLibrary.whiteConcretePowder();
     }
 
-    export function itemRegistryCrimsonPlanks(): string {
+    export function itemRegistryCrimsonPlanks(): ItemValue {
         return MCFunctionItemLibrary.crimsonPlanks();
     }
 
-    export function itemRegistryStrippedDarkOakWood(): string {
+    export function itemRegistryStrippedDarkOakWood(): ItemValue {
         return MCFunctionItemLibrary.strippedDarkOakWood();
     }
 
-    export function itemRegistryWaxedWeatheredCutCopper(): string {
+    export function itemRegistryWaxedWeatheredCutCopper(): ItemValue {
         return MCFunctionItemLibrary.waxedWeatheredCutCopper();
     }
 
-    export function itemRegistryWhiteStainedGlass(): string {
+    export function itemRegistryWhiteStainedGlass(): ItemValue {
         return MCFunctionItemLibrary.whiteStainedGlass();
     }
 
-    export function itemRegistryOakWood(): string {
+    export function itemRegistryOakWood(): ItemValue {
         return MCFunctionItemLibrary.oakWood();
     }
 
-    export function itemRegistryPurpleStainedGlassPane(): string {
+    export function itemRegistryPurpleStainedGlassPane(): ItemValue {
         return MCFunctionItemLibrary.purpleStainedGlassPane();
     }
 
-    export function itemRegistryWaxedOxidizedCopperTrapdoor(): string {
+    export function itemRegistryWaxedOxidizedCopperTrapdoor(): ItemValue {
         return MCFunctionItemLibrary.waxedOxidizedCopperTrapdoor();
     }
 
-    export function itemRegistryJukebox(): string {
+    export function itemRegistryJukebox(): ItemValue {
         return MCFunctionItemLibrary.jukebox();
     }
 
-    export function itemRegistryStrippedCherryWood(): string {
+    export function itemRegistryStrippedCherryWood(): ItemValue {
         return MCFunctionItemLibrary.strippedCherryWood();
     }
 
-    export function itemRegistryJigsaw(): string {
+    export function itemRegistryJigsaw(): ItemValue {
         return MCFunctionItemLibrary.jigsaw();
     }
 
-    export function itemRegistryWaxedOxidizedCopperGolemStatue(): string {
+    export function itemRegistryWaxedOxidizedCopperGolemStatue(): ItemValue {
         return MCFunctionItemLibrary.waxedOxidizedCopperGolemStatue();
     }
 
-    export function itemRegistryChiseledSulfur(): string {
+    export function itemRegistryChiseledSulfur(): ItemValue {
         return MCFunctionItemLibrary.chiseledSulfur();
     }
 
-    export function itemRegistryPolishedCinnabarSlab(): string {
+    export function itemRegistryPolishedCinnabarSlab(): ItemValue {
         return MCFunctionItemLibrary.polishedCinnabarSlab();
     }
 
-    export function itemRegistryPrismarineWall(): string {
+    export function itemRegistryPrismarineWall(): ItemValue {
         return MCFunctionItemLibrary.prismarineWall();
     }
 
-    export function itemRegistryBorderBlock(): string {
+    export function itemRegistryBorderBlock(): ItemValue {
         return MCFunctionItemLibrary.borderBlock();
     }
 
-    export function itemRegistryShroomlight(): string {
+    export function itemRegistryShroomlight(): ItemValue {
         return MCFunctionItemLibrary.shroomlight();
     }
 
-    export function itemRegistryBambooFenceGate(): string {
+    export function itemRegistryBambooFenceGate(): ItemValue {
         return MCFunctionItemLibrary.bambooFenceGate();
     }
 
-    export function itemRegistryCornflower(): string {
+    export function itemRegistryCornflower(): ItemValue {
         return MCFunctionItemLibrary.cornflower();
     }
 
-    export function itemRegistryChiseledPolishedBlackstone(): string {
+    export function itemRegistryChiseledPolishedBlackstone(): ItemValue {
         return MCFunctionItemLibrary.chiseledPolishedBlackstone();
     }
 
-    export function itemRegistryDarkOakStairs(): string {
+    export function itemRegistryDarkOakStairs(): ItemValue {
         return MCFunctionItemLibrary.darkOakStairs();
     }
 
-    export function itemRegistryDeepslateTileWall(): string {
+    export function itemRegistryDeepslateTileWall(): ItemValue {
         return MCFunctionItemLibrary.deepslateTileWall();
     }
 
-    export function itemRegistryGlassPane(): string {
+    export function itemRegistryGlassPane(): ItemValue {
         return MCFunctionItemLibrary.glassPane();
     }
 
-    export function itemRegistryChiseledDeepslate(): string {
+    export function itemRegistryChiseledDeepslate(): ItemValue {
         return MCFunctionItemLibrary.chiseledDeepslate();
     }
 
-    export function itemRegistryCutCopperSlab(): string {
+    export function itemRegistryCutCopperSlab(): ItemValue {
         return MCFunctionItemLibrary.cutCopperSlab();
     }
 
-    export function itemRegistryRedStainedGlass(): string {
+    export function itemRegistryRedStainedGlass(): ItemValue {
         return MCFunctionItemLibrary.redStainedGlass();
     }
 
-    export function itemRegistryPaleOakWood(): string {
+    export function itemRegistryPaleOakWood(): ItemValue {
         return MCFunctionItemLibrary.paleOakWood();
     }
 
-    export function itemRegistryInfestedStoneBricks(): string {
+    export function itemRegistryInfestedStoneBricks(): ItemValue {
         return MCFunctionItemLibrary.infestedStoneBricks();
     }
 
-    export function itemRegistryAcaciaPressurePlate(): string {
+    export function itemRegistryAcaciaPressurePlate(): ItemValue {
         return MCFunctionItemLibrary.acaciaPressurePlate();
     }
 
-    export function itemRegistryWeatheredLightningRod(): string {
+    export function itemRegistryWeatheredLightningRod(): ItemValue {
         return MCFunctionItemLibrary.weatheredLightningRod();
     }
 
-    export function itemRegistryBambooTrapdoor(): string {
+    export function itemRegistryBambooTrapdoor(): ItemValue {
         return MCFunctionItemLibrary.bambooTrapdoor();
     }
 
-    export function itemRegistryOxidizedChiseledCopper(): string {
+    export function itemRegistryOxidizedChiseledCopper(): ItemValue {
         return MCFunctionItemLibrary.oxidizedChiseledCopper();
     }
 
-    export function itemRegistryRawCopperBlock(): string {
+    export function itemRegistryRawCopperBlock(): ItemValue {
         return MCFunctionItemLibrary.rawCopperBlock();
     }
 
-    export function itemRegistryTallDryGrass(): string {
+    export function itemRegistryTallDryGrass(): ItemValue {
         return MCFunctionItemLibrary.tallDryGrass();
     }
 
-    export function itemRegistryOxidizedCutCopperSlab(): string {
+    export function itemRegistryOxidizedCutCopperSlab(): ItemValue {
         return MCFunctionItemLibrary.oxidizedCutCopperSlab();
     }
 
-    export function itemRegistryHornCoralBlock(): string {
+    export function itemRegistryHornCoralBlock(): ItemValue {
         return MCFunctionItemLibrary.hornCoralBlock();
     }
 
-    export function itemRegistryDarkOakShelf(): string {
+    export function itemRegistryDarkOakShelf(): ItemValue {
         return MCFunctionItemLibrary.darkOakShelf();
     }
 
-    export function itemRegistryBeetroot(): string {
+    export function itemRegistryBeetroot(): ItemValue {
         return MCFunctionItemLibrary.beetroot();
     }
 
-    export function itemRegistryWhiteCandle(): string {
+    export function itemRegistryWhiteCandle(): ItemValue {
         return MCFunctionItemLibrary.whiteCandle();
     }
 
-    export function itemRegistryAndesiteStairs(): string {
+    export function itemRegistryAndesiteStairs(): ItemValue {
         return MCFunctionItemLibrary.andesiteStairs();
     }
 
-    export function itemRegistryBirchPlanks(): string {
+    export function itemRegistryBirchPlanks(): ItemValue {
         return MCFunctionItemLibrary.birchPlanks();
     }
 
-    export function itemRegistryGoldenRail(): string {
+    export function itemRegistryGoldenRail(): ItemValue {
         return MCFunctionItemLibrary.goldenRail();
     }
 
-    export function itemRegistryCyanWool(): string {
+    export function itemRegistryCyanWool(): ItemValue {
         return MCFunctionItemLibrary.cyanWool();
     }
 
-    export function itemRegistryJungleLeaves(): string {
+    export function itemRegistryJungleLeaves(): ItemValue {
         return MCFunctionItemLibrary.jungleLeaves();
     }
 
-    export function itemRegistryGrayShulkerBox(): string {
+    export function itemRegistryGrayShulkerBox(): ItemValue {
         return MCFunctionItemLibrary.grayShulkerBox();
     }
 
-    export function itemRegistryRedSandstoneStairs(): string {
+    export function itemRegistryRedSandstoneStairs(): ItemValue {
         return MCFunctionItemLibrary.redSandstoneStairs();
     }
 
-    export function itemRegistryCyanGlazedTerracotta(): string {
+    export function itemRegistryCyanGlazedTerracotta(): ItemValue {
         return MCFunctionItemLibrary.cyanGlazedTerracotta();
     }
 
-    export function itemRegistryCrackedDeepslateBricks(): string {
+    export function itemRegistryCrackedDeepslateBricks(): ItemValue {
         return MCFunctionItemLibrary.crackedDeepslateBricks();
     }
 
-    export function itemRegistryJungleFenceGate(): string {
+    export function itemRegistryJungleFenceGate(): ItemValue {
         return MCFunctionItemLibrary.jungleFenceGate();
     }
 
-    export function itemRegistryExposedCopperGrate(): string {
+    export function itemRegistryExposedCopperGrate(): ItemValue {
         return MCFunctionItemLibrary.exposedCopperGrate();
     }
 
-    export function itemRegistryWaxedCopperGrate(): string {
+    export function itemRegistryWaxedCopperGrate(): ItemValue {
         return MCFunctionItemLibrary.waxedCopperGrate();
     }
 
-    export function itemRegistryJungleTrapdoor(): string {
+    export function itemRegistryJungleTrapdoor(): ItemValue {
         return MCFunctionItemLibrary.jungleTrapdoor();
     }
 
-    export function itemRegistryDirtWithRoots(): string {
+    export function itemRegistryDirtWithRoots(): ItemValue {
         return MCFunctionItemLibrary.dirtWithRoots();
     }
 
-    export function itemRegistryCoalBlock(): string {
+    export function itemRegistryCoalBlock(): ItemValue {
         return MCFunctionItemLibrary.coalBlock();
     }
 
-    export function itemRegistryWhiteWool(): string {
+    export function itemRegistryWhiteWool(): ItemValue {
         return MCFunctionItemLibrary.whiteWool();
     }
 
-    export function itemRegistryWarpedFenceGate(): string {
+    export function itemRegistryWarpedFenceGate(): ItemValue {
         return MCFunctionItemLibrary.warpedFenceGate();
     }
 
-    export function itemRegistryCutSandstoneSlab(): string {
+    export function itemRegistryCutSandstoneSlab(): ItemValue {
         return MCFunctionItemLibrary.cutSandstoneSlab();
     }
 
-    export function itemRegistrySkeletonSkull(): string {
+    export function itemRegistrySkeletonSkull(): ItemValue {
         return MCFunctionItemLibrary.skeletonSkull();
     }
 
-    export function itemRegistryExposedCopperChest(): string {
+    export function itemRegistryExposedCopperChest(): ItemValue {
         return MCFunctionItemLibrary.exposedCopperChest();
     }
 
-    export function itemRegistryExposedCopperChain(): string {
+    export function itemRegistryExposedCopperChain(): ItemValue {
         return MCFunctionItemLibrary.exposedCopperChain();
     }
 
-    export function itemRegistryComposter(): string {
+    export function itemRegistryComposter(): ItemValue {
         return MCFunctionItemLibrary.composter();
     }
 
-    export function itemRegistryKelp(): string {
+    export function itemRegistryKelp(): ItemValue {
         return MCFunctionItemLibrary.kelp();
     }
 
-    export function itemRegistryWaxedExposedCopperDoor(): string {
+    export function itemRegistryWaxedExposedCopperDoor(): ItemValue {
         return MCFunctionItemLibrary.waxedExposedCopperDoor();
     }
 
-    export function itemRegistryDeepslateBricks(): string {
+    export function itemRegistryDeepslateBricks(): ItemValue {
         return MCFunctionItemLibrary.deepslateBricks();
     }
 
-    export function itemRegistryBlueGlazedTerracotta(): string {
+    export function itemRegistryBlueGlazedTerracotta(): ItemValue {
         return MCFunctionItemLibrary.blueGlazedTerracotta();
     }
 
-    export function itemRegistryLightBlueGlazedTerracotta(): string {
+    export function itemRegistryLightBlueGlazedTerracotta(): ItemValue {
         return MCFunctionItemLibrary.lightBlueGlazedTerracotta();
     }
 
-    export function itemRegistryRoseBush(): string {
+    export function itemRegistryRoseBush(): ItemValue {
         return MCFunctionItemLibrary.roseBush();
     }
 
-    export function itemRegistryFloweringAzalea(): string {
+    export function itemRegistryFloweringAzalea(): ItemValue {
         return MCFunctionItemLibrary.floweringAzalea();
     }
 
-    export function itemRegistryOxidizedCutCopper(): string {
+    export function itemRegistryOxidizedCutCopper(): ItemValue {
         return MCFunctionItemLibrary.oxidizedCutCopper();
     }
 
-    export function itemRegistryBlueWool(): string {
+    export function itemRegistryBlueWool(): ItemValue {
         return MCFunctionItemLibrary.blueWool();
     }
 
-    export function itemRegistryPaleOakHangingSign(): string {
+    export function itemRegistryPaleOakHangingSign(): ItemValue {
         return MCFunctionItemLibrary.paleOakHangingSign();
     }
 
-    export function itemRegistryWeepingVines(): string {
+    export function itemRegistryWeepingVines(): ItemValue {
         return MCFunctionItemLibrary.weepingVines();
     }
 
-    export function itemRegistryChorusPlant(): string {
+    export function itemRegistryChorusPlant(): ItemValue {
         return MCFunctionItemLibrary.chorusPlant();
     }
 
-    export function itemRegistryMudBrickStairs(): string {
+    export function itemRegistryMudBrickStairs(): ItemValue {
         return MCFunctionItemLibrary.mudBrickStairs();
     }
 
-    export function itemRegistryStoneBrickWall(): string {
+    export function itemRegistryStoneBrickWall(): ItemValue {
         return MCFunctionItemLibrary.stoneBrickWall();
     }
 
-    export function itemRegistrySmoothRedSandstoneStairs(): string {
+    export function itemRegistrySmoothRedSandstoneStairs(): ItemValue {
         return MCFunctionItemLibrary.smoothRedSandstoneStairs();
     }
 
-    export function itemRegistryAndesiteWall(): string {
+    export function itemRegistryAndesiteWall(): ItemValue {
         return MCFunctionItemLibrary.andesiteWall();
     }
 
-    export function itemRegistryWhiteGlazedTerracotta(): string {
+    export function itemRegistryWhiteGlazedTerracotta(): ItemValue {
         return MCFunctionItemLibrary.whiteGlazedTerracotta();
     }
 
-    export function itemRegistryStrippedWarpedHyphae(): string {
+    export function itemRegistryStrippedWarpedHyphae(): ItemValue {
         return MCFunctionItemLibrary.strippedWarpedHyphae();
     }
 
-    export function itemRegistryTrappedChest(): string {
+    export function itemRegistryTrappedChest(): ItemValue {
         return MCFunctionItemLibrary.trappedChest();
     }
 
-    export function itemRegistryAcaciaTrapdoor(): string {
+    export function itemRegistryAcaciaTrapdoor(): ItemValue {
         return MCFunctionItemLibrary.acaciaTrapdoor();
     }
 
-    export function itemRegistryWeatheredCopperChest(): string {
+    export function itemRegistryWeatheredCopperChest(): ItemValue {
         return MCFunctionItemLibrary.weatheredCopperChest();
     }
 
-    export function itemRegistryBrainCoralBlock(): string {
+    export function itemRegistryBrainCoralBlock(): ItemValue {
         return MCFunctionItemLibrary.brainCoralBlock();
     }
 
-    export function itemRegistryWeatheredCopperChain(): string {
+    export function itemRegistryWeatheredCopperChain(): ItemValue {
         return MCFunctionItemLibrary.weatheredCopperChain();
     }
 
-    export function itemRegistryBambooPlanks(): string {
+    export function itemRegistryBambooPlanks(): ItemValue {
         return MCFunctionItemLibrary.bambooPlanks();
     }
 
-    export function itemRegistryGlowLichen(): string {
+    export function itemRegistryGlowLichen(): ItemValue {
         return MCFunctionItemLibrary.glowLichen();
     }
 
-    export function itemRegistryPurpurPillar(): string {
+    export function itemRegistryPurpurPillar(): ItemValue {
         return MCFunctionItemLibrary.purpurPillar();
     }
 
-    export function itemRegistryTwistingVines(): string {
+    export function itemRegistryTwistingVines(): ItemValue {
         return MCFunctionItemLibrary.twistingVines();
     }
 
-    export function itemRegistryChiseledCopper(): string {
+    export function itemRegistryChiseledCopper(): ItemValue {
         return MCFunctionItemLibrary.chiseledCopper();
     }
 
-    export function itemRegistryDarkOakDoor(): string {
+    export function itemRegistryDarkOakDoor(): ItemValue {
         return MCFunctionItemLibrary.darkOakDoor();
     }
 
-    export function itemRegistryOakFence(): string {
+    export function itemRegistryOakFence(): ItemValue {
         return MCFunctionItemLibrary.oakFence();
     }
 
-    export function itemRegistryPaleMossBlock(): string {
+    export function itemRegistryPaleMossBlock(): ItemValue {
         return MCFunctionItemLibrary.paleMossBlock();
     }
 
-    export function itemRegistrySoulLantern(): string {
+    export function itemRegistrySoulLantern(): ItemValue {
         return MCFunctionItemLibrary.soulLantern();
     }
 
-    export function itemRegistryDirt(): string {
+    export function itemRegistryDirt(): ItemValue {
         return MCFunctionItemLibrary.dirt();
     }
 
-    export function itemRegistryBlueStainedGlass(): string {
+    export function itemRegistryBlueStainedGlass(): ItemValue {
         return MCFunctionItemLibrary.blueStainedGlass();
     }
 
-    export function itemRegistryDeny(): string {
+    export function itemRegistryDeny(): ItemValue {
         return MCFunctionItemLibrary.deny();
     }
 
-    export function itemRegistryBeeNest(): string {
+    export function itemRegistryBeeNest(): ItemValue {
         return MCFunctionItemLibrary.beeNest();
     }
 
-    export function itemRegistryCampfire(): string {
+    export function itemRegistryCampfire(): ItemValue {
         return MCFunctionItemLibrary.campfire();
     }
 
-    export function itemRegistryLightBlueStainedGlass(): string {
+    export function itemRegistryLightBlueStainedGlass(): ItemValue {
         return MCFunctionItemLibrary.lightBlueStainedGlass();
     }
 
-    export function itemRegistrySoulSoil(): string {
+    export function itemRegistrySoulSoil(): ItemValue {
         return MCFunctionItemLibrary.soulSoil();
     }
 
-    export function itemRegistrySoulSand(): string {
+    export function itemRegistrySoulSand(): ItemValue {
         return MCFunctionItemLibrary.soulSand();
     }
 
-    export function itemRegistryGraniteWall(): string {
+    export function itemRegistryGraniteWall(): ItemValue {
         return MCFunctionItemLibrary.graniteWall();
     }
 
-    export function itemRegistrySpruceHangingSign(): string {
+    export function itemRegistrySpruceHangingSign(): ItemValue {
         return MCFunctionItemLibrary.spruceHangingSign();
     }
 
-    export function itemRegistryPolishedDiorite(): string {
+    export function itemRegistryPolishedDiorite(): ItemValue {
         return MCFunctionItemLibrary.polishedDiorite();
     }
 
-    export function itemRegistryReinforcedDeepslate(): string {
+    export function itemRegistryReinforcedDeepslate(): ItemValue {
         return MCFunctionItemLibrary.reinforcedDeepslate();
     }
 
-    export function itemRegistryFletchingTable(): string {
+    export function itemRegistryFletchingTable(): ItemValue {
         return MCFunctionItemLibrary.fletchingTable();
     }
 
-    export function itemRegistryCherryLeaves(): string {
+    export function itemRegistryCherryLeaves(): ItemValue {
         return MCFunctionItemLibrary.cherryLeaves();
     }
 
-    export function itemRegistryCreeperHead(): string {
+    export function itemRegistryCreeperHead(): ItemValue {
         return MCFunctionItemLibrary.creeperHead();
     }
 
-    export function itemRegistryBlackGlazedTerracotta(): string {
+    export function itemRegistryBlackGlazedTerracotta(): ItemValue {
         return MCFunctionItemLibrary.blackGlazedTerracotta();
     }
 
-    export function itemRegistryWaxedOxidizedCutCopperStairs(): string {
+    export function itemRegistryWaxedOxidizedCutCopperStairs(): ItemValue {
         return MCFunctionItemLibrary.waxedOxidizedCutCopperStairs();
     }
 
-    export function itemRegistryWaxedWeatheredCopperBulb(): string {
+    export function itemRegistryWaxedWeatheredCopperBulb(): ItemValue {
         return MCFunctionItemLibrary.waxedWeatheredCopperBulb();
     }
 
-    export function itemRegistryDragonHead(): string {
+    export function itemRegistryDragonHead(): ItemValue {
         return MCFunctionItemLibrary.dragonHead();
     }
 
-    export function itemRegistryWaxedWeatheredCopperBars(): string {
+    export function itemRegistryWaxedWeatheredCopperBars(): ItemValue {
         return MCFunctionItemLibrary.waxedWeatheredCopperBars();
     }
 
-    export function itemRegistryCalibratedSculkSensor(): string {
+    export function itemRegistryCalibratedSculkSensor(): ItemValue {
         return MCFunctionItemLibrary.calibratedSculkSensor();
     }
 
-    export function itemRegistryDarkPrismarineSlab(): string {
+    export function itemRegistryDarkPrismarineSlab(): ItemValue {
         return MCFunctionItemLibrary.darkPrismarineSlab();
     }
 
-    export function itemRegistryCopperTrapdoor(): string {
+    export function itemRegistryCopperTrapdoor(): ItemValue {
         return MCFunctionItemLibrary.copperTrapdoor();
     }
 
-    export function itemRegistryStrippedAcaciaLog(): string {
+    export function itemRegistryStrippedAcaciaLog(): ItemValue {
         return MCFunctionItemLibrary.strippedAcaciaLog();
     }
 
-    export function itemRegistryCinnabarBricks(): string {
+    export function itemRegistryCinnabarBricks(): ItemValue {
         return MCFunctionItemLibrary.cinnabarBricks();
     }
 
-    export function itemRegistryWarpedFence(): string {
+    export function itemRegistryWarpedFence(): ItemValue {
         return MCFunctionItemLibrary.warpedFence();
     }
 
-    export function itemRegistryCraftingTable(): string {
+    export function itemRegistryCraftingTable(): ItemValue {
         return MCFunctionItemLibrary.craftingTable();
     }
 
-    export function itemRegistrySeaPickle(): string {
+    export function itemRegistrySeaPickle(): ItemValue {
         return MCFunctionItemLibrary.seaPickle();
     }
 
-    export function itemRegistryPaleOakShelf(): string {
+    export function itemRegistryPaleOakShelf(): ItemValue {
         return MCFunctionItemLibrary.paleOakShelf();
     }
 
-    export function itemRegistryPotentSulfur(): string {
+    export function itemRegistryPotentSulfur(): ItemValue {
         return MCFunctionItemLibrary.potentSulfur();
     }
 
-    export function itemRegistryBrownConcretePowder(): string {
+    export function itemRegistryBrownConcretePowder(): ItemValue {
         return MCFunctionItemLibrary.brownConcretePowder();
     }
 
-    export function itemRegistryMangroveHangingSign(): string {
+    export function itemRegistryMangroveHangingSign(): ItemValue {
         return MCFunctionItemLibrary.mangroveHangingSign();
     }
 
-    export function itemRegistryWaxedExposedCopperTrapdoor(): string {
+    export function itemRegistryWaxedExposedCopperTrapdoor(): ItemValue {
         return MCFunctionItemLibrary.waxedExposedCopperTrapdoor();
     }
 
-    export function itemRegistryBrownCandle(): string {
+    export function itemRegistryBrownCandle(): ItemValue {
         return MCFunctionItemLibrary.brownCandle();
     }
 
-    export function itemRegistryMossyStoneBrickStairs(): string {
+    export function itemRegistryMossyStoneBrickStairs(): ItemValue {
         return MCFunctionItemLibrary.mossyStoneBrickStairs();
     }
 
-    export function itemRegistryEndRod(): string {
+    export function itemRegistryEndRod(): ItemValue {
         return MCFunctionItemLibrary.endRod();
     }
 
-    export function itemRegistryCrimsonStem(): string {
+    export function itemRegistryCrimsonStem(): ItemValue {
         return MCFunctionItemLibrary.crimsonStem();
     }
 
-    export function itemRegistryGreenConcrete(): string {
+    export function itemRegistryGreenConcrete(): ItemValue {
         return MCFunctionItemLibrary.greenConcrete();
     }
 
-    export function itemRegistryCrimsonSlab(): string {
+    export function itemRegistryCrimsonSlab(): ItemValue {
         return MCFunctionItemLibrary.crimsonSlab();
     }
 
-    export function itemRegistryWarpedHyphae(): string {
+    export function itemRegistryWarpedHyphae(): ItemValue {
         return MCFunctionItemLibrary.warpedHyphae();
     }
 
-    export function itemRegistryWarpedWartBlock(): string {
+    export function itemRegistryWarpedWartBlock(): ItemValue {
         return MCFunctionItemLibrary.warpedWartBlock();
     }
 
-    export function itemRegistryLightGrayShulkerBox(): string {
+    export function itemRegistryLightGrayShulkerBox(): ItemValue {
         return MCFunctionItemLibrary.lightGrayShulkerBox();
     }
 
-    export function itemRegistryResinBricks(): string {
+    export function itemRegistryResinBricks(): ItemValue {
         return MCFunctionItemLibrary.resinBricks();
     }
 
-    export function itemRegistryTuffStairs(): string {
+    export function itemRegistryTuffStairs(): ItemValue {
         return MCFunctionItemLibrary.tuffStairs();
     }
 
-    export function itemRegistryYellowCarpet(): string {
+    export function itemRegistryYellowCarpet(): ItemValue {
         return MCFunctionItemLibrary.yellowCarpet();
     }
 
-    export function itemRegistryCyanStainedGlass(): string {
+    export function itemRegistryCyanStainedGlass(): ItemValue {
         return MCFunctionItemLibrary.cyanStainedGlass();
     }
 
-    export function itemRegistryBlackStainedGlass(): string {
+    export function itemRegistryBlackStainedGlass(): ItemValue {
         return MCFunctionItemLibrary.blackStainedGlass();
     }
 
-    export function itemRegistryWaxedOxidizedCopperDoor(): string {
+    export function itemRegistryWaxedOxidizedCopperDoor(): ItemValue {
         return MCFunctionItemLibrary.waxedOxidizedCopperDoor();
     }
 
-    export function itemRegistryDeadHornCoral(): string {
+    export function itemRegistryDeadHornCoral(): ItemValue {
         return MCFunctionItemLibrary.deadHornCoral();
     }
 
-    export function itemRegistryGrassBlock(): string {
+    export function itemRegistryGrassBlock(): ItemValue {
         return MCFunctionItemLibrary.grassBlock();
     }
 
-    export function itemRegistryTripwireHook(): string {
+    export function itemRegistryTripwireHook(): ItemValue {
         return MCFunctionItemLibrary.tripwireHook();
     }
 
-    export function itemRegistryDarkOakPressurePlate(): string {
+    export function itemRegistryDarkOakPressurePlate(): ItemValue {
         return MCFunctionItemLibrary.darkOakPressurePlate();
     }
 
-    export function itemRegistryCopperDoor(): string {
+    export function itemRegistryCopperDoor(): ItemValue {
         return MCFunctionItemLibrary.copperDoor();
     }
 
-    export function itemRegistryStrippedBirchLog(): string {
+    export function itemRegistryStrippedBirchLog(): ItemValue {
         return MCFunctionItemLibrary.strippedBirchLog();
     }
 
-    export function itemRegistryTintedGlass(): string {
+    export function itemRegistryTintedGlass(): ItemValue {
         return MCFunctionItemLibrary.tintedGlass();
     }
 
-    export function itemRegistryBigDripleaf(): string {
+    export function itemRegistryBigDripleaf(): ItemValue {
         return MCFunctionItemLibrary.bigDripleaf();
     }
 
-    export function itemRegistryCutSandstone(): string {
+    export function itemRegistryCutSandstone(): ItemValue {
         return MCFunctionItemLibrary.cutSandstone();
     }
 
-    export function itemRegistryWarpedHangingSign(): string {
+    export function itemRegistryWarpedHangingSign(): ItemValue {
         return MCFunctionItemLibrary.warpedHangingSign();
     }
 
-    export function itemRegistryLimeWool(): string {
+    export function itemRegistryLimeWool(): ItemValue {
         return MCFunctionItemLibrary.limeWool();
     }
 
-    export function itemRegistryPolishedBlackstoneSlab(): string {
+    export function itemRegistryPolishedBlackstoneSlab(): ItemValue {
         return MCFunctionItemLibrary.polishedBlackstoneSlab();
     }
 
-    export function itemRegistryBlackShulkerBox(): string {
+    export function itemRegistryBlackShulkerBox(): ItemValue {
         return MCFunctionItemLibrary.blackShulkerBox();
     }
 
-    export function itemRegistryWeatheredCopperGolemStatue(): string {
+    export function itemRegistryWeatheredCopperGolemStatue(): ItemValue {
         return MCFunctionItemLibrary.weatheredCopperGolemStatue();
     }
 
-    export function itemRegistryJungleSapling(): string {
+    export function itemRegistryJungleSapling(): ItemValue {
         return MCFunctionItemLibrary.jungleSapling();
     }
 
-    export function itemRegistryChiseledSandstone(): string {
+    export function itemRegistryChiseledSandstone(): ItemValue {
         return MCFunctionItemLibrary.chiseledSandstone();
     }
 
-    export function itemRegistryBarrier(): string {
+    export function itemRegistryBarrier(): ItemValue {
         return MCFunctionItemLibrary.barrier();
     }
 
-    export function itemRegistryBlackCarpet(): string {
+    export function itemRegistryBlackCarpet(): ItemValue {
         return MCFunctionItemLibrary.blackCarpet();
     }
 
-    export function itemRegistryPaleOakLog(): string {
+    export function itemRegistryPaleOakLog(): ItemValue {
         return MCFunctionItemLibrary.paleOakLog();
     }
 
-    export function itemRegistryWeatheredCutCopperSlab(): string {
+    export function itemRegistryWeatheredCutCopperSlab(): ItemValue {
         return MCFunctionItemLibrary.weatheredCutCopperSlab();
     }
 
-    export function itemRegistryOxidizedCopperLantern(): string {
+    export function itemRegistryOxidizedCopperLantern(): ItemValue {
         return MCFunctionItemLibrary.oxidizedCopperLantern();
     }
 
-    export function itemRegistryDarkOakLeaves(): string {
+    export function itemRegistryDarkOakLeaves(): ItemValue {
         return MCFunctionItemLibrary.darkOakLeaves();
     }
 
-    export function itemRegistryNetherBrickSlab(): string {
+    export function itemRegistryNetherBrickSlab(): ItemValue {
         return MCFunctionItemLibrary.netherBrickSlab();
     }
 
-    export function itemRegistryFern(): string {
+    export function itemRegistryFern(): ItemValue {
         return MCFunctionItemLibrary.fern();
     }
 
-    export function itemRegistryTorchflower(): string {
+    export function itemRegistryTorchflower(): ItemValue {
         return MCFunctionItemLibrary.torchflower();
     }
 
-    export function itemRegistryShortDryGrass(): string {
+    export function itemRegistryShortDryGrass(): ItemValue {
         return MCFunctionItemLibrary.shortDryGrass();
     }
 
-    export function itemRegistryInfestedStone(): string {
+    export function itemRegistryInfestedStone(): ItemValue {
         return MCFunctionItemLibrary.infestedStone();
     }
 
-    export function itemRegistryPaleHangingMoss(): string {
+    export function itemRegistryPaleHangingMoss(): ItemValue {
         return MCFunctionItemLibrary.paleHangingMoss();
     }
 
-    export function itemRegistryPaleMossCarpet(): string {
+    export function itemRegistryPaleMossCarpet(): ItemValue {
         return MCFunctionItemLibrary.paleMossCarpet();
     }
 
-    export function itemRegistryEndPortalFrame(): string {
+    export function itemRegistryEndPortalFrame(): ItemValue {
         return MCFunctionItemLibrary.endPortalFrame();
     }
 
-    export function itemRegistryBambooPressurePlate(): string {
+    export function itemRegistryBambooPressurePlate(): ItemValue {
         return MCFunctionItemLibrary.bambooPressurePlate();
     }
 
-    export function itemRegistryPrismarine(): string {
+    export function itemRegistryPrismarine(): ItemValue {
         return MCFunctionItemLibrary.prismarine();
     }
 
-    export function itemRegistryExposedCopperTrapdoor(): string {
+    export function itemRegistryExposedCopperTrapdoor(): ItemValue {
         return MCFunctionItemLibrary.exposedCopperTrapdoor();
     }
 
-    export function itemRegistryMushroomStem(): string {
+    export function itemRegistryMushroomStem(): ItemValue {
         return MCFunctionItemLibrary.mushroomStem();
     }
 
-    export function itemRegistryBlackTerracotta(): string {
+    export function itemRegistryBlackTerracotta(): ItemValue {
         return MCFunctionItemLibrary.blackTerracotta();
     }
 
-    export function itemRegistryResinBrickStairs(): string {
+    export function itemRegistryResinBrickStairs(): ItemValue {
         return MCFunctionItemLibrary.resinBrickStairs();
     }
 
-    export function itemRegistryCinnabarBrickStairs(): string {
+    export function itemRegistryCinnabarBrickStairs(): ItemValue {
         return MCFunctionItemLibrary.cinnabarBrickStairs();
     }
 
-    export function itemRegistryDeepslateGoldOre(): string {
+    export function itemRegistryDeepslateGoldOre(): ItemValue {
         return MCFunctionItemLibrary.deepslateGoldOre();
     }
 
-    export function itemRegistryAncientDebris(): string {
+    export function itemRegistryAncientDebris(): ItemValue {
         return MCFunctionItemLibrary.ancientDebris();
     }
 
-    export function itemRegistryVault(): string {
+    export function itemRegistryVault(): ItemValue {
         return MCFunctionItemLibrary.vault();
     }
 
-    export function itemRegistryBeehive(): string {
+    export function itemRegistryBeehive(): ItemValue {
         return MCFunctionItemLibrary.beehive();
     }
 
-    export function itemRegistryJungleDoor(): string {
+    export function itemRegistryJungleDoor(): ItemValue {
         return MCFunctionItemLibrary.jungleDoor();
     }
 
-    export function itemRegistryGlass(): string {
+    export function itemRegistryGlass(): ItemValue {
         return MCFunctionItemLibrary.glass();
     }
 
-    export function itemRegistryWitherRose(): string {
+    export function itemRegistryWitherRose(): ItemValue {
         return MCFunctionItemLibrary.witherRose();
     }
 
-    export function itemRegistryExposedCutCopper(): string {
+    export function itemRegistryExposedCutCopper(): ItemValue {
         return MCFunctionItemLibrary.exposedCutCopper();
     }
 
-    export function itemRegistryWaxedWeatheredCutCopperStairs(): string {
+    export function itemRegistryWaxedWeatheredCutCopperStairs(): ItemValue {
         return MCFunctionItemLibrary.waxedWeatheredCutCopperStairs();
     }
 
-    export function itemRegistryMangroveRoots(): string {
+    export function itemRegistryMangroveRoots(): ItemValue {
         return MCFunctionItemLibrary.mangroveRoots();
     }
 
-    export function itemRegistryYellowCandle(): string {
+    export function itemRegistryYellowCandle(): ItemValue {
         return MCFunctionItemLibrary.yellowCandle();
     }
 
-    export function itemRegistryAcaciaStairs(): string {
+    export function itemRegistryAcaciaStairs(): ItemValue {
         return MCFunctionItemLibrary.acaciaStairs();
     }
 
-    export function itemRegistryBambooMosaicStairs(): string {
+    export function itemRegistryBambooMosaicStairs(): ItemValue {
         return MCFunctionItemLibrary.bambooMosaicStairs();
     }
 
-    export function itemRegistryBrownConcrete(): string {
+    export function itemRegistryBrownConcrete(): ItemValue {
         return MCFunctionItemLibrary.brownConcrete();
     }
 
-    export function itemRegistryCherrySlab(): string {
+    export function itemRegistryCherrySlab(): ItemValue {
         return MCFunctionItemLibrary.cherrySlab();
     }
 
-    export function itemRegistryChiseledResinBricks(): string {
+    export function itemRegistryChiseledResinBricks(): ItemValue {
         return MCFunctionItemLibrary.chiseledResinBricks();
     }
 
-    export function itemRegistryBubbleCoral(): string {
+    export function itemRegistryBubbleCoral(): ItemValue {
         return MCFunctionItemLibrary.bubbleCoral();
     }
 
-    export function itemRegistryOrangeShulkerBox(): string {
+    export function itemRegistryOrangeShulkerBox(): ItemValue {
         return MCFunctionItemLibrary.orangeShulkerBox();
     }
 
-    export function itemRegistryLightGrayCandle(): string {
+    export function itemRegistryLightGrayCandle(): ItemValue {
         return MCFunctionItemLibrary.lightGrayCandle();
     }
 
-    export function itemRegistryPolishedBlackstonePressurePlate(): string {
+    export function itemRegistryPolishedBlackstonePressurePlate(): ItemValue {
         return MCFunctionItemLibrary.polishedBlackstonePressurePlate();
     }
 
-    export function itemRegistryPolishedGraniteSlab(): string {
+    export function itemRegistryPolishedGraniteSlab(): ItemValue {
         return MCFunctionItemLibrary.polishedGraniteSlab();
     }
 
-    export function itemRegistryCinnabar(): string {
+    export function itemRegistryCinnabar(): ItemValue {
         return MCFunctionItemLibrary.cinnabar();
     }
 
-    export function itemRegistryTuffBrickStairs(): string {
+    export function itemRegistryTuffBrickStairs(): ItemValue {
         return MCFunctionItemLibrary.tuffBrickStairs();
     }
 
-    export function itemRegistryBlueShulkerBox(): string {
+    export function itemRegistryBlueShulkerBox(): ItemValue {
         return MCFunctionItemLibrary.blueShulkerBox();
     }
 
-    export function itemRegistryExposedCopperBulb(): string {
+    export function itemRegistryExposedCopperBulb(): ItemValue {
         return MCFunctionItemLibrary.exposedCopperBulb();
     }
 
-    export function itemRegistryExposedCopperBars(): string {
+    export function itemRegistryExposedCopperBars(): ItemValue {
         return MCFunctionItemLibrary.exposedCopperBars();
     }
 
-    export function itemRegistryDeadFireCoral(): string {
+    export function itemRegistryDeadFireCoral(): ItemValue {
         return MCFunctionItemLibrary.deadFireCoral();
     }
 
-    export function itemRegistryStoneBrickSlab(): string {
+    export function itemRegistryStoneBrickSlab(): ItemValue {
         return MCFunctionItemLibrary.stoneBrickSlab();
     }
 
-    export function itemRegistryCrimsonStairs(): string {
+    export function itemRegistryCrimsonStairs(): ItemValue {
         return MCFunctionItemLibrary.crimsonStairs();
     }
 
-    export function itemRegistryWaxedOxidizedCopperBars(): string {
+    export function itemRegistryWaxedOxidizedCopperBars(): ItemValue {
         return MCFunctionItemLibrary.waxedOxidizedCopperBars();
     }
 
-    export function itemRegistryStrippedSpruceLog(): string {
+    export function itemRegistryStrippedSpruceLog(): ItemValue {
         return MCFunctionItemLibrary.strippedSpruceLog();
     }
 
-    export function itemRegistryWaxedOxidizedCopperBulb(): string {
+    export function itemRegistryWaxedOxidizedCopperBulb(): ItemValue {
         return MCFunctionItemLibrary.waxedOxidizedCopperBulb();
     }
 
-    export function itemRegistryAzaleaLeavesFlowered(): string {
+    export function itemRegistryAzaleaLeavesFlowered(): ItemValue {
         return MCFunctionItemLibrary.azaleaLeavesFlowered();
     }
 
-    export function itemRegistryChiseledCinnabar(): string {
+    export function itemRegistryChiseledCinnabar(): ItemValue {
         return MCFunctionItemLibrary.chiseledCinnabar();
     }
 
-    export function itemRegistryWarpedNylium(): string {
+    export function itemRegistryWarpedNylium(): ItemValue {
         return MCFunctionItemLibrary.warpedNylium();
     }
 
-    export function itemRegistryDeepslateEmeraldOre(): string {
+    export function itemRegistryDeepslateEmeraldOre(): ItemValue {
         return MCFunctionItemLibrary.deepslateEmeraldOre();
     }
 
-    export function itemRegistryAcaciaSapling(): string {
+    export function itemRegistryAcaciaSapling(): ItemValue {
         return MCFunctionItemLibrary.acaciaSapling();
     }
 
-    export function itemRegistryQuartzBricks(): string {
+    export function itemRegistryQuartzBricks(): ItemValue {
         return MCFunctionItemLibrary.quartzBricks();
     }
 
-    export function itemRegistryAndesiteSlab(): string {
+    export function itemRegistryAndesiteSlab(): ItemValue {
         return MCFunctionItemLibrary.andesiteSlab();
     }
 
-    export function itemRegistryLimeCandle(): string {
+    export function itemRegistryLimeCandle(): ItemValue {
         return MCFunctionItemLibrary.limeCandle();
     }
 
-    export function itemRegistryStructureBlock(): string {
+    export function itemRegistryStructureBlock(): ItemValue {
         return MCFunctionItemLibrary.structureBlock();
     }
 
-    export function itemRegistryEndBrickStairs(): string {
+    export function itemRegistryEndBrickStairs(): ItemValue {
         return MCFunctionItemLibrary.endBrickStairs();
     }
 
-    export function itemRegistryPurpleTerracotta(): string {
+    export function itemRegistryPurpleTerracotta(): ItemValue {
         return MCFunctionItemLibrary.purpleTerracotta();
     }
 
-    export function itemRegistryTarget(): string {
+    export function itemRegistryTarget(): ItemValue {
         return MCFunctionItemLibrary.target();
     }
 
-    export function itemRegistryWoodenButton(): string {
+    export function itemRegistryWoodenButton(): ItemValue {
         return MCFunctionItemLibrary.woodenButton();
     }
 
-    export function itemRegistryMangroveDoor(): string {
+    export function itemRegistryMangroveDoor(): ItemValue {
         return MCFunctionItemLibrary.mangroveDoor();
     }
 
-    export function itemRegistryWeatheredCopperDoor(): string {
+    export function itemRegistryWeatheredCopperDoor(): ItemValue {
         return MCFunctionItemLibrary.weatheredCopperDoor();
     }
 
-    export function itemRegistryPearlescentFroglight(): string {
+    export function itemRegistryPearlescentFroglight(): ItemValue {
         return MCFunctionItemLibrary.pearlescentFroglight();
     }
 
-    export function itemRegistryBambooButton(): string {
+    export function itemRegistryBambooButton(): ItemValue {
         return MCFunctionItemLibrary.bambooButton();
     }
 
-    export function itemRegistryTallGrass(): string {
+    export function itemRegistryTallGrass(): ItemValue {
         return MCFunctionItemLibrary.tallGrass();
     }
 
-    export function itemRegistryWeatheredCopperLantern(): string {
+    export function itemRegistryWeatheredCopperLantern(): ItemValue {
         return MCFunctionItemLibrary.weatheredCopperLantern();
     }
 
-    export function itemRegistryLightBlock12(): string {
+    export function itemRegistryLightBlock12(): ItemValue {
         return MCFunctionItemLibrary.lightBlock12();
     }
 
-    export function itemRegistryLightBlock13(): string {
+    export function itemRegistryLightBlock13(): ItemValue {
         return MCFunctionItemLibrary.lightBlock13();
     }
 
-    export function itemRegistryLightBlock10(): string {
+    export function itemRegistryLightBlock10(): ItemValue {
         return MCFunctionItemLibrary.lightBlock10();
     }
 
-    export function itemRegistryLightBlock11(): string {
+    export function itemRegistryLightBlock11(): ItemValue {
         return MCFunctionItemLibrary.lightBlock11();
     }
 
-    export function itemRegistryLightBlock14(): string {
+    export function itemRegistryLightBlock14(): ItemValue {
         return MCFunctionItemLibrary.lightBlock14();
     }
 
-    export function itemRegistryLightBlock15(): string {
+    export function itemRegistryLightBlock15(): ItemValue {
         return MCFunctionItemLibrary.lightBlock15();
     }
 
-    export function itemRegistryNetherSprouts(): string {
+    export function itemRegistryNetherSprouts(): ItemValue {
         return MCFunctionItemLibrary.netherSprouts();
     }
 
-    export function itemRegistryCyanStainedGlassPane(): string {
+    export function itemRegistryCyanStainedGlassPane(): ItemValue {
         return MCFunctionItemLibrary.cyanStainedGlassPane();
     }
 
-    export function itemRegistryDeadHornCoralBlock(): string {
+    export function itemRegistryDeadHornCoralBlock(): ItemValue {
         return MCFunctionItemLibrary.deadHornCoralBlock();
     }
 
-    export function itemRegistryVerdantFroglight(): string {
+    export function itemRegistryVerdantFroglight(): ItemValue {
         return MCFunctionItemLibrary.verdantFroglight();
     }
 
-    export function itemRegistryResinBlock(): string {
+    export function itemRegistryResinBlock(): ItemValue {
         return MCFunctionItemLibrary.resinBlock();
     }
 
-    export function itemRegistryWarpedSlab(): string {
+    export function itemRegistryWarpedSlab(): ItemValue {
         return MCFunctionItemLibrary.warpedSlab();
     }
 
-    export function itemRegistryWarpedStem(): string {
+    export function itemRegistryWarpedStem(): ItemValue {
         return MCFunctionItemLibrary.warpedStem();
     }
 
-    export function itemRegistryHornCoralFan(): string {
+    export function itemRegistryHornCoralFan(): ItemValue {
         return MCFunctionItemLibrary.hornCoralFan();
     }
 
-    export function itemRegistryGreenShulkerBox(): string {
+    export function itemRegistryGreenShulkerBox(): ItemValue {
         return MCFunctionItemLibrary.greenShulkerBox();
     }
 
-    export function itemRegistryLargeFern(): string {
+    export function itemRegistryLargeFern(): ItemValue {
         return MCFunctionItemLibrary.largeFern();
     }
 
-    export function itemRegistryStrippedCrimsonHyphae(): string {
+    export function itemRegistryStrippedCrimsonHyphae(): ItemValue {
         return MCFunctionItemLibrary.strippedCrimsonHyphae();
     }
 
-    export function itemRegistryLever(): string {
+    export function itemRegistryLever(): ItemValue {
         return MCFunctionItemLibrary.lever();
     }
 
-    export function itemRegistryCinnabarStairs(): string {
+    export function itemRegistryCinnabarStairs(): ItemValue {
         return MCFunctionItemLibrary.cinnabarStairs();
     }
 
-    export function itemRegistryBambooSlab(): string {
+    export function itemRegistryBambooSlab(): ItemValue {
         return MCFunctionItemLibrary.bambooSlab();
     }
 
-    export function itemRegistryBrickStairs(): string {
+    export function itemRegistryBrickStairs(): ItemValue {
         return MCFunctionItemLibrary.brickStairs();
     }
 
-    export function itemRegistryWeatheredCopperTrapdoor(): string {
+    export function itemRegistryWeatheredCopperTrapdoor(): ItemValue {
         return MCFunctionItemLibrary.weatheredCopperTrapdoor();
     }
 
-    export function itemRegistrySmoothRedSandstoneSlab(): string {
+    export function itemRegistrySmoothRedSandstoneSlab(): ItemValue {
         return MCFunctionItemLibrary.smoothRedSandstoneSlab();
     }
 
-    export function itemRegistryMossBlock(): string {
+    export function itemRegistryMossBlock(): ItemValue {
         return MCFunctionItemLibrary.mossBlock();
     }
 
-    export function itemRegistryPurpleConcretePowder(): string {
+    export function itemRegistryPurpleConcretePowder(): ItemValue {
         return MCFunctionItemLibrary.purpleConcretePowder();
     }
 
-    export function itemRegistryPinkGlazedTerracotta(): string {
+    export function itemRegistryPinkGlazedTerracotta(): ItemValue {
         return MCFunctionItemLibrary.pinkGlazedTerracotta();
     }
 
-    export function itemRegistryShortGrass(): string {
+    export function itemRegistryShortGrass(): ItemValue {
         return MCFunctionItemLibrary.shortGrass();
     }
 
-    export function itemRegistryWaxedWeatheredCutCopperSlab(): string {
+    export function itemRegistryWaxedWeatheredCutCopperSlab(): ItemValue {
         return MCFunctionItemLibrary.waxedWeatheredCutCopperSlab();
     }
 
-    export function itemRegistryFireCoralFan(): string {
+    export function itemRegistryFireCoralFan(): ItemValue {
         return MCFunctionItemLibrary.fireCoralFan();
     }
 
-    export function itemRegistrySpruceTrapdoor(): string {
+    export function itemRegistrySpruceTrapdoor(): ItemValue {
         return MCFunctionItemLibrary.spruceTrapdoor();
     }
 
-    export function itemRegistryChainCommandBlock(): string {
+    export function itemRegistryChainCommandBlock(): ItemValue {
         return MCFunctionItemLibrary.chainCommandBlock();
     }
 
-    export function itemRegistryRedSandstone(): string {
+    export function itemRegistryRedSandstone(): ItemValue {
         return MCFunctionItemLibrary.redSandstone();
     }
 
-    export function itemRegistryRedNetherBrickSlab(): string {
+    export function itemRegistryRedNetherBrickSlab(): ItemValue {
         return MCFunctionItemLibrary.redNetherBrickSlab();
     }
 
-    export function itemRegistryExposedChiseledCopper(): string {
+    export function itemRegistryExposedChiseledCopper(): ItemValue {
         return MCFunctionItemLibrary.exposedChiseledCopper();
     }
 
-    export function itemRegistrySpruceFenceGate(): string {
+    export function itemRegistrySpruceFenceGate(): ItemValue {
         return MCFunctionItemLibrary.spruceFenceGate();
     }
 
-    export function itemRegistryExposedCutCopperSlab(): string {
+    export function itemRegistryExposedCutCopperSlab(): ItemValue {
         return MCFunctionItemLibrary.exposedCutCopperSlab();
     }
 
-    export function itemRegistryRedNetherBrickStairs(): string {
+    export function itemRegistryRedNetherBrickStairs(): ItemValue {
         return MCFunctionItemLibrary.redNetherBrickStairs();
     }
 
-    export function itemRegistryGreenGlazedTerracotta(): string {
+    export function itemRegistryGreenGlazedTerracotta(): ItemValue {
         return MCFunctionItemLibrary.greenGlazedTerracotta();
     }
 
-    export function itemRegistryJunglePlanks(): string {
+    export function itemRegistryJunglePlanks(): ItemValue {
         return MCFunctionItemLibrary.junglePlanks();
     }
 
-    export function itemRegistryDeepslateRedstoneOre(): string {
+    export function itemRegistryDeepslateRedstoneOre(): ItemValue {
         return MCFunctionItemLibrary.deepslateRedstoneOre();
     }
 
-    export function itemRegistryDeadBrainCoralBlock(): string {
+    export function itemRegistryDeadBrainCoralBlock(): ItemValue {
         return MCFunctionItemLibrary.deadBrainCoralBlock();
     }
 
-    export function itemRegistryMangroveFence(): string {
+    export function itemRegistryMangroveFence(): ItemValue {
         return MCFunctionItemLibrary.mangroveFence();
     }
 
-    export function itemRegistryOxidizedCopperGrate(): string {
+    export function itemRegistryOxidizedCopperGrate(): ItemValue {
         return MCFunctionItemLibrary.oxidizedCopperGrate();
     }
 
-    export function itemRegistryAnvil(): string {
+    export function itemRegistryAnvil(): ItemValue {
         return MCFunctionItemLibrary.anvil();
     }
 
-    export function itemRegistryBirchTrapdoor(): string {
+    export function itemRegistryBirchTrapdoor(): ItemValue {
         return MCFunctionItemLibrary.birchTrapdoor();
     }
 
-    export function itemRegistryTuffBricks(): string {
+    export function itemRegistryTuffBricks(): ItemValue {
         return MCFunctionItemLibrary.tuffBricks();
     }
 
-    export function itemRegistryMangroveLeaves(): string {
+    export function itemRegistryMangroveLeaves(): ItemValue {
         return MCFunctionItemLibrary.mangroveLeaves();
     }
 
-    export function itemRegistryCobbledDeepslate(): string {
+    export function itemRegistryCobbledDeepslate(): ItemValue {
         return MCFunctionItemLibrary.cobbledDeepslate();
     }
 
-    export function itemRegistryQuartzSlab(): string {
+    export function itemRegistryQuartzSlab(): ItemValue {
         return MCFunctionItemLibrary.quartzSlab();
     }
 
-    export function itemRegistryBookshelf(): string {
+    export function itemRegistryBookshelf(): ItemValue {
         return MCFunctionItemLibrary.bookshelf();
     }
 
-    export function itemRegistryMud(): string {
+    export function itemRegistryMud(): ItemValue {
         return MCFunctionItemLibrary.mud();
     }
 
-    export function itemRegistryLitPumpkin(): string {
+    export function itemRegistryLitPumpkin(): ItemValue {
         return MCFunctionItemLibrary.litPumpkin();
     }
 
-    export function itemRegistryIce(): string {
+    export function itemRegistryIce(): ItemValue {
         return MCFunctionItemLibrary.ice();
     }
 
-    export function itemRegistryAir(): string {
+    export function itemRegistryAir(): ItemValue {
         return MCFunctionItemLibrary.air();
     }
 
-    export function itemRegistryBed(): string {
+    export function itemRegistryBed(): ItemValue {
         return MCFunctionItemLibrary.bed();
     }
 
-    export function itemRegistryBlackConcrete(): string {
+    export function itemRegistryBlackConcrete(): ItemValue {
         return MCFunctionItemLibrary.blackConcrete();
     }
 
-    export function itemRegistryTnt(): string {
+    export function itemRegistryTnt(): ItemValue {
         return MCFunctionItemLibrary.tnt();
     }
 
-    export function itemRegistryWeb(): string {
+    export function itemRegistryWeb(): ItemValue {
         return MCFunctionItemLibrary.web();
     }
 
-    export function itemRegistryDeadTubeCoralFan(): string {
+    export function itemRegistryDeadTubeCoralFan(): ItemValue {
         return MCFunctionItemLibrary.deadTubeCoralFan();
     }
 
-    export function itemRegistryOxidizedCopperChest(): string {
+    export function itemRegistryOxidizedCopperChest(): ItemValue {
         return MCFunctionItemLibrary.oxidizedCopperChest();
     }
 
-    export function itemRegistryOxidizedCopperChain(): string {
+    export function itemRegistryOxidizedCopperChain(): ItemValue {
         return MCFunctionItemLibrary.oxidizedCopperChain();
     }
 
-    export function itemRegistryPolishedDioriteStairs(): string {
+    export function itemRegistryPolishedDioriteStairs(): ItemValue {
         return MCFunctionItemLibrary.polishedDioriteStairs();
     }
 
-    export function itemRegistryBlueConcretePowder(): string {
+    export function itemRegistryBlueConcretePowder(): ItemValue {
         return MCFunctionItemLibrary.blueConcretePowder();
     }
 
-    export function itemRegistryOrangeConcrete(): string {
+    export function itemRegistryOrangeConcrete(): ItemValue {
         return MCFunctionItemLibrary.orangeConcrete();
     }
 
-    export function itemRegistryCryingObsidian(): string {
+    export function itemRegistryCryingObsidian(): ItemValue {
         return MCFunctionItemLibrary.cryingObsidian();
     }
 
-    export function itemRegistryLimeCarpet(): string {
+    export function itemRegistryLimeCarpet(): ItemValue {
         return MCFunctionItemLibrary.limeCarpet();
     }
 
-    export function itemRegistryClosedEyeblossom(): string {
+    export function itemRegistryClosedEyeblossom(): ItemValue {
         return MCFunctionItemLibrary.closedEyeblossom();
     }
 
-    export function itemRegistryDeadFireCoralFan(): string {
+    export function itemRegistryDeadFireCoralFan(): ItemValue {
         return MCFunctionItemLibrary.deadFireCoralFan();
     }
 
-    export function itemRegistryDecoratedPot(): string {
+    export function itemRegistryDecoratedPot(): ItemValue {
         return MCFunctionItemLibrary.decoratedPot();
     }
 
-    export function itemRegistryEnchantingTable(): string {
+    export function itemRegistryEnchantingTable(): ItemValue {
         return MCFunctionItemLibrary.enchantingTable();
     }
 
-    export function itemRegistryPolishedBlackstoneWall(): string {
+    export function itemRegistryPolishedBlackstoneWall(): ItemValue {
         return MCFunctionItemLibrary.polishedBlackstoneWall();
     }
 
-    export function itemRegistryOrangeTulip(): string {
+    export function itemRegistryOrangeTulip(): ItemValue {
         return MCFunctionItemLibrary.orangeTulip();
     }
 
-    export function itemRegistryBrownShulkerBox(): string {
+    export function itemRegistryBrownShulkerBox(): ItemValue {
         return MCFunctionItemLibrary.brownShulkerBox();
     }
 
-    export function itemRegistryAzalea(): string {
+    export function itemRegistryAzalea(): ItemValue {
         return MCFunctionItemLibrary.azalea();
     }
 
-    export function itemRegistryMudBricks(): string {
+    export function itemRegistryMudBricks(): ItemValue {
         return MCFunctionItemLibrary.mudBricks();
     }
 
-    export function itemRegistryAcaciaWood(): string {
+    export function itemRegistryAcaciaWood(): ItemValue {
         return MCFunctionItemLibrary.acaciaWood();
     }
 
-    export function itemRegistrySulfurBrickWall(): string {
+    export function itemRegistrySulfurBrickWall(): ItemValue {
         return MCFunctionItemLibrary.sulfurBrickWall();
     }
 
-    export function itemRegistryGrayStainedGlassPane(): string {
+    export function itemRegistryGrayStainedGlassPane(): ItemValue {
         return MCFunctionItemLibrary.grayStainedGlassPane();
     }
 
-    export function itemRegistryHopper(): string {
+    export function itemRegistryHopper(): ItemValue {
         return MCFunctionItemLibrary.hopper();
     }
 
-    export function itemRegistryBell(): string {
+    export function itemRegistryBell(): ItemValue {
         return MCFunctionItemLibrary.bell();
     }
 
-    export function itemRegistryLectern(): string {
+    export function itemRegistryLectern(): ItemValue {
         return MCFunctionItemLibrary.lectern();
     }
 
-    export function itemRegistryBush(): string {
+    export function itemRegistryBush(): ItemValue {
         return MCFunctionItemLibrary.bush();
     }
 
-    export function itemRegistryStrippedCrimsonStem(): string {
+    export function itemRegistryStrippedCrimsonStem(): ItemValue {
         return MCFunctionItemLibrary.strippedCrimsonStem();
     }
 
-    export function itemRegistryLightBlueShulkerBox(): string {
+    export function itemRegistryLightBlueShulkerBox(): ItemValue {
         return MCFunctionItemLibrary.lightBlueShulkerBox();
     }
 
-    export function itemRegistryJungleStairs(): string {
+    export function itemRegistryJungleStairs(): ItemValue {
         return MCFunctionItemLibrary.jungleStairs();
     }
 
-    export function itemRegistryMangrovePropagule(): string {
+    export function itemRegistryMangrovePropagule(): ItemValue {
         return MCFunctionItemLibrary.mangrovePropagule();
     }
 
-    export function itemRegistryCactus(): string {
+    export function itemRegistryCactus(): ItemValue {
         return MCFunctionItemLibrary.cactus();
     }
 
-    export function itemRegistryBuddingAmethyst(): string {
+    export function itemRegistryBuddingAmethyst(): ItemValue {
         return MCFunctionItemLibrary.buddingAmethyst();
     }
 
-    export function itemRegistrySnifferEgg(): string {
+    export function itemRegistrySnifferEgg(): ItemValue {
         return MCFunctionItemLibrary.snifferEgg();
     }
 
-    export function itemRegistryBirchStairs(): string {
+    export function itemRegistryBirchStairs(): ItemValue {
         return MCFunctionItemLibrary.birchStairs();
     }
 
-    export function itemRegistryNetherBrickWall(): string {
+    export function itemRegistryNetherBrickWall(): ItemValue {
         return MCFunctionItemLibrary.netherBrickWall();
     }
 
-    export function itemRegistryPurpleGlazedTerracotta(): string {
+    export function itemRegistryPurpleGlazedTerracotta(): ItemValue {
         return MCFunctionItemLibrary.purpleGlazedTerracotta();
     }
 
-    export function itemRegistryGreenConcretePowder(): string {
+    export function itemRegistryGreenConcretePowder(): ItemValue {
         return MCFunctionItemLibrary.greenConcretePowder();
     }
 
-    export function itemRegistryBedrock(): string {
+    export function itemRegistryBedrock(): ItemValue {
         return MCFunctionItemLibrary.bedrock();
     }
 
-    export function itemRegistrySpruceSlab(): string {
+    export function itemRegistrySpruceSlab(): ItemValue {
         return MCFunctionItemLibrary.spruceSlab();
     }
 
-    export function itemRegistryBlackstoneStairs(): string {
+    export function itemRegistryBlackstoneStairs(): ItemValue {
         return MCFunctionItemLibrary.blackstoneStairs();
     }
 
-    export function itemRegistryBlueIce(): string {
+    export function itemRegistryBlueIce(): ItemValue {
         return MCFunctionItemLibrary.blueIce();
     }
 
-    export function itemRegistryCyanShulkerBox(): string {
+    export function itemRegistryCyanShulkerBox(): ItemValue {
         return MCFunctionItemLibrary.cyanShulkerBox();
     }
 
-    export function itemRegistryPolishedAndesiteStairs(): string {
+    export function itemRegistryPolishedAndesiteStairs(): ItemValue {
         return MCFunctionItemLibrary.polishedAndesiteStairs();
     }
 
-    export function itemRegistryPiglinHead(): string {
+    export function itemRegistryPiglinHead(): ItemValue {
         return MCFunctionItemLibrary.piglinHead();
     }
 
-    export function itemRegistrySculk(): string {
+    export function itemRegistrySculk(): ItemValue {
         return MCFunctionItemLibrary.sculk();
     }
 
-    export function itemRegistryNetherrack(): string {
+    export function itemRegistryNetherrack(): ItemValue {
         return MCFunctionItemLibrary.netherrack();
     }
 
-    export function itemRegistryPurpleCandle(): string {
+    export function itemRegistryPurpleCandle(): ItemValue {
         return MCFunctionItemLibrary.purpleCandle();
     }
 
-    export function itemRegistryMangroveButton(): string {
+    export function itemRegistryMangroveButton(): ItemValue {
         return MCFunctionItemLibrary.mangroveButton();
     }
 
-    export function itemRegistryOrangeCarpet(): string {
+    export function itemRegistryOrangeCarpet(): ItemValue {
         return MCFunctionItemLibrary.orangeCarpet();
     }
 
-    export function itemRegistryDeadHornCoralFan(): string {
+    export function itemRegistryDeadHornCoralFan(): ItemValue {
         return MCFunctionItemLibrary.deadHornCoralFan();
     }
 
-    export function itemRegistryLantern(): string {
+    export function itemRegistryLantern(): ItemValue {
         return MCFunctionItemLibrary.lantern();
     }
 
-    export function itemRegistryCrimsonShelf(): string {
+    export function itemRegistryCrimsonShelf(): ItemValue {
         return MCFunctionItemLibrary.crimsonShelf();
     }
 
-    export function itemRegistryWaxedWeatheredCopperDoor(): string {
+    export function itemRegistryWaxedWeatheredCopperDoor(): ItemValue {
         return MCFunctionItemLibrary.waxedWeatheredCopperDoor();
     }
 
-    export function itemRegistryRedStainedGlassPane(): string {
+    export function itemRegistryRedStainedGlassPane(): ItemValue {
         return MCFunctionItemLibrary.redStainedGlassPane();
     }
 
-    export function itemRegistryWaxedOxidizedLightningRod(): string {
+    export function itemRegistryWaxedOxidizedLightningRod(): ItemValue {
         return MCFunctionItemLibrary.waxedOxidizedLightningRod();
     }
 
-    export function itemRegistryCinnabarBrickSlab(): string {
+    export function itemRegistryCinnabarBrickSlab(): ItemValue {
         return MCFunctionItemLibrary.cinnabarBrickSlab();
     }
 
-    export function itemRegistryPinkStainedGlassPane(): string {
+    export function itemRegistryPinkStainedGlassPane(): ItemValue {
         return MCFunctionItemLibrary.pinkStainedGlassPane();
     }
 
-    export function itemRegistryLightBlueWool(): string {
+    export function itemRegistryLightBlueWool(): ItemValue {
         return MCFunctionItemLibrary.lightBlueWool();
     }
 
-    export function itemRegistryAllow(): string {
+    export function itemRegistryAllow(): ItemValue {
         return MCFunctionItemLibrary.allow();
     }
 
-    export function itemRegistryDarkOakFence(): string {
+    export function itemRegistryDarkOakFence(): ItemValue {
         return MCFunctionItemLibrary.darkOakFence();
     }
 
-    export function itemRegistryBirchDoor(): string {
+    export function itemRegistryBirchDoor(): ItemValue {
         return MCFunctionItemLibrary.birchDoor();
     }
 
-    export function itemRegistryCherryShelf(): string {
+    export function itemRegistryCherryShelf(): ItemValue {
         return MCFunctionItemLibrary.cherryShelf();
     }
 
-    export function itemRegistryChest(): string {
+    export function itemRegistryChest(): ItemValue {
         return MCFunctionItemLibrary.chest();
     }
 
-    export function itemRegistryCherryWood(): string {
+    export function itemRegistryCherryWood(): ItemValue {
         return MCFunctionItemLibrary.cherryWood();
     }
 
-    export function itemRegistryClay(): string {
+    export function itemRegistryClay(): ItemValue {
         return MCFunctionItemLibrary.clay();
     }
 
-    export function itemRegistryCherryStairs(): string {
+    export function itemRegistryCherryStairs(): ItemValue {
         return MCFunctionItemLibrary.cherryStairs();
     }
 
-    export function itemRegistryCake(): string {
+    export function itemRegistryCake(): ItemValue {
         return MCFunctionItemLibrary.cake();
     }
 
-    export function itemRegistryCrimsonHangingSign(): string {
+    export function itemRegistryCrimsonHangingSign(): ItemValue {
         return MCFunctionItemLibrary.crimsonHangingSign();
     }
 
-    export function itemRegistrySculkVein(): string {
+    export function itemRegistrySculkVein(): ItemValue {
         return MCFunctionItemLibrary.sculkVein();
     }
 
-    export function itemRegistryDeadBrainCoral(): string {
+    export function itemRegistryDeadBrainCoral(): ItemValue {
         return MCFunctionItemLibrary.deadBrainCoral();
     }
 
-    export function itemRegistryDeepslateCoalOre(): string {
+    export function itemRegistryDeepslateCoalOre(): ItemValue {
         return MCFunctionItemLibrary.deepslateCoalOre();
     }
 
-    export function itemRegistryWeatheredCutCopper(): string {
+    export function itemRegistryWeatheredCutCopper(): ItemValue {
         return MCFunctionItemLibrary.weatheredCutCopper();
     }
 
-    export function itemRegistryPolishedCinnabar(): string {
+    export function itemRegistryPolishedCinnabar(): ItemValue {
         return MCFunctionItemLibrary.polishedCinnabar();
     }
 
-    export function itemRegistryCrackedPolishedBlackstoneBricks(): string {
+    export function itemRegistryCrackedPolishedBlackstoneBricks(): ItemValue {
         return MCFunctionItemLibrary.crackedPolishedBlackstoneBricks();
     }
 
-    export function itemRegistryWitherSkeletonSkull(): string {
+    export function itemRegistryWitherSkeletonSkull(): ItemValue {
         return MCFunctionItemLibrary.witherSkeletonSkull();
     }
 
-    export function itemRegistryPolishedTuff(): string {
+    export function itemRegistryPolishedTuff(): ItemValue {
         return MCFunctionItemLibrary.polishedTuff();
     }
 
-    export function itemRegistryMagentaStainedGlass(): string {
+    export function itemRegistryMagentaStainedGlass(): ItemValue {
         return MCFunctionItemLibrary.magentaStainedGlass();
     }
 
-    export function itemRegistryAcaciaButton(): string {
+    export function itemRegistryAcaciaButton(): ItemValue {
         return MCFunctionItemLibrary.acaciaButton();
     }
 
-    export function itemRegistryChiseledNetherBricks(): string {
+    export function itemRegistryChiseledNetherBricks(): ItemValue {
         return MCFunctionItemLibrary.chiseledNetherBricks();
     }
 
-    export function itemRegistryWarpedButton(): string {
+    export function itemRegistryWarpedButton(): ItemValue {
         return MCFunctionItemLibrary.warpedButton();
     }
 
-    export function itemRegistryRedConcretePowder(): string {
+    export function itemRegistryRedConcretePowder(): ItemValue {
         return MCFunctionItemLibrary.redConcretePowder();
     }
 
-    export function itemRegistryLightGrayConcretePowder(): string {
+    export function itemRegistryLightGrayConcretePowder(): ItemValue {
         return MCFunctionItemLibrary.lightGrayConcretePowder();
     }
 
-    export function itemRegistryDeepslateLapisOre(): string {
+    export function itemRegistryDeepslateLapisOre(): ItemValue {
         return MCFunctionItemLibrary.deepslateLapisOre();
     }
 
-    export function itemRegistryDeadBubbleCoral(): string {
+    export function itemRegistryDeadBubbleCoral(): ItemValue {
         return MCFunctionItemLibrary.deadBubbleCoral();
     }
 
-    export function itemRegistryCherrySapling(): string {
+    export function itemRegistryCherrySapling(): ItemValue {
         return MCFunctionItemLibrary.cherrySapling();
     }
 
-    export function itemRegistryCherryLog(): string {
+    export function itemRegistryCherryLog(): ItemValue {
         return MCFunctionItemLibrary.cherryLog();
     }
 
-    export function itemRegistryPrismarineStairs(): string {
+    export function itemRegistryPrismarineStairs(): ItemValue {
         return MCFunctionItemLibrary.prismarineStairs();
     }
 
-    export function itemRegistryWhiteCarpet(): string {
+    export function itemRegistryWhiteCarpet(): ItemValue {
         return MCFunctionItemLibrary.whiteCarpet();
     }
 
-    export function itemRegistryPolishedSulfurSlab(): string {
+    export function itemRegistryPolishedSulfurSlab(): ItemValue {
         return MCFunctionItemLibrary.polishedSulfurSlab();
     }
 
-    export function itemRegistryCyanConcrete(): string {
+    export function itemRegistryCyanConcrete(): ItemValue {
         return MCFunctionItemLibrary.cyanConcrete();
     }
 
-    export function itemRegistryPolishedTuffStairs(): string {
+    export function itemRegistryPolishedTuffStairs(): ItemValue {
         return MCFunctionItemLibrary.polishedTuffStairs();
     }
 
-    export function itemRegistryDragonEgg(): string {
+    export function itemRegistryDragonEgg(): ItemValue {
         return MCFunctionItemLibrary.dragonEgg();
     }
 
-    export function itemRegistryBlueConcrete(): string {
+    export function itemRegistryBlueConcrete(): ItemValue {
         return MCFunctionItemLibrary.blueConcrete();
     }
 
-    export function itemRegistryNetherBrick(): string {
+    export function itemRegistryNetherBrick(): ItemValue {
         return MCFunctionItemLibrary.netherBrick();
     }
 
-    export function itemRegistryDeepslateIronOre(): string {
+    export function itemRegistryDeepslateIronOre(): ItemValue {
         return MCFunctionItemLibrary.deepslateIronOre();
     }
 
-    export function itemRegistryOxeyeDaisy(): string {
+    export function itemRegistryOxeyeDaisy(): ItemValue {
         return MCFunctionItemLibrary.oxeyeDaisy();
     }
 
-    export function itemRegistryWheat(): string {
+    export function itemRegistryWheat(): ItemValue {
         return MCFunctionItemLibrary.wheat();
     }
 
-    export function itemRegistryWaxedCutCopper(): string {
+    export function itemRegistryWaxedCutCopper(): ItemValue {
         return MCFunctionItemLibrary.waxedCutCopper();
     }
 
-    export function itemRegistrySulfur(): string {
+    export function itemRegistrySulfur(): ItemValue {
         return MCFunctionItemLibrary.sulfur();
     }
 
-    export function itemRegistryIronChain(): string {
+    export function itemRegistryIronChain(): ItemValue {
         return MCFunctionItemLibrary.ironChain();
     }
 
-    export function itemRegistryResinBrickSlab(): string {
+    export function itemRegistryResinBrickSlab(): ItemValue {
         return MCFunctionItemLibrary.resinBrickSlab();
     }
 
-    export function itemRegistryHeavyCore(): string {
+    export function itemRegistryHeavyCore(): ItemValue {
         return MCFunctionItemLibrary.heavyCore();
     }
 
-    export function itemRegistryCobbledDeepslateSlab(): string {
+    export function itemRegistryCobbledDeepslateSlab(): ItemValue {
         return MCFunctionItemLibrary.cobbledDeepslateSlab();
     }
 
-    export function itemRegistryLilac(): string {
+    export function itemRegistryLilac(): ItemValue {
         return MCFunctionItemLibrary.lilac();
     }
 
-    export function itemRegistryPaleOakTrapdoor(): string {
+    export function itemRegistryPaleOakTrapdoor(): ItemValue {
         return MCFunctionItemLibrary.paleOakTrapdoor();
     }
 
-    export function itemRegistryChiseledQuartzBlock(): string {
+    export function itemRegistryChiseledQuartzBlock(): ItemValue {
         return MCFunctionItemLibrary.chiseledQuartzBlock();
     }
 
-    export function itemRegistrySporeBlossom(): string {
+    export function itemRegistrySporeBlossom(): ItemValue {
         return MCFunctionItemLibrary.sporeBlossom();
     }
 
-    export function itemRegistryWaxedExposedCopperLantern(): string {
+    export function itemRegistryWaxedExposedCopperLantern(): ItemValue {
         return MCFunctionItemLibrary.waxedExposedCopperLantern();
     }
 
-    export function itemRegistryPaleOakStairs(): string {
+    export function itemRegistryPaleOakStairs(): ItemValue {
         return MCFunctionItemLibrary.paleOakStairs();
     }
 
-    export function itemRegistryEmeraldOre(): string {
+    export function itemRegistryEmeraldOre(): ItemValue {
         return MCFunctionItemLibrary.emeraldOre();
     }
 
-    export function itemRegistryBrownMushroomBlock(): string {
+    export function itemRegistryBrownMushroomBlock(): ItemValue {
         return MCFunctionItemLibrary.brownMushroomBlock();
     }
 
-    export function itemRegistryGrayConcretePowder(): string {
+    export function itemRegistryGrayConcretePowder(): ItemValue {
         return MCFunctionItemLibrary.grayConcretePowder();
     }
 
-    export function itemRegistryPetrifiedOakSlab(): string {
+    export function itemRegistryPetrifiedOakSlab(): ItemValue {
         return MCFunctionItemLibrary.petrifiedOakSlab();
     }
 
-    export function itemRegistryGrayConcrete(): string {
+    export function itemRegistryGrayConcrete(): ItemValue {
         return MCFunctionItemLibrary.grayConcrete();
     }
 
-    export function itemRegistryPinkCandle(): string {
+    export function itemRegistryPinkCandle(): ItemValue {
         return MCFunctionItemLibrary.pinkCandle();
     }
 
-    export function itemRegistryRedNetherBrickWall(): string {
+    export function itemRegistryRedNetherBrickWall(): ItemValue {
         return MCFunctionItemLibrary.redNetherBrickWall();
     }
 
-    export function itemRegistryPurpleShulkerBox(): string {
+    export function itemRegistryPurpleShulkerBox(): ItemValue {
         return MCFunctionItemLibrary.purpleShulkerBox();
     }
 
-    export function itemRegistryCarvedPumpkin(): string {
+    export function itemRegistryCarvedPumpkin(): ItemValue {
         return MCFunctionItemLibrary.carvedPumpkin();
     }
 
-    export function itemRegistryDropper(): string {
+    export function itemRegistryDropper(): ItemValue {
         return MCFunctionItemLibrary.dropper();
     }
 
-    export function itemRegistryStrippedWarpedStem(): string {
+    export function itemRegistryStrippedWarpedStem(): ItemValue {
         return MCFunctionItemLibrary.strippedWarpedStem();
     }
 
-    export function itemRegistryCandle(): string {
+    export function itemRegistryCandle(): ItemValue {
         return MCFunctionItemLibrary.candle();
     }
 
-    export function itemRegistryPolishedAndesiteSlab(): string {
+    export function itemRegistryPolishedAndesiteSlab(): ItemValue {
         return MCFunctionItemLibrary.polishedAndesiteSlab();
     }
 
-    export function itemRegistryPointedDripstone(): string {
+    export function itemRegistryPointedDripstone(): ItemValue {
         return MCFunctionItemLibrary.pointedDripstone();
     }
 
-    export function itemRegistryRedCarpet(): string {
+    export function itemRegistryRedCarpet(): ItemValue {
         return MCFunctionItemLibrary.redCarpet();
     }
 
-    export function itemRegistryCutRedSandstoneSlab(): string {
+    export function itemRegistryCutRedSandstoneSlab(): ItemValue {
         return MCFunctionItemLibrary.cutRedSandstoneSlab();
     }
 
-    export function itemRegistryDeepslateBrickStairs(): string {
+    export function itemRegistryDeepslateBrickStairs(): ItemValue {
         return MCFunctionItemLibrary.deepslateBrickStairs();
     }
 
-    export function itemRegistryDarkPrismarineStairs(): string {
+    export function itemRegistryDarkPrismarineStairs(): ItemValue {
         return MCFunctionItemLibrary.darkPrismarineStairs();
     }
 
-    export function itemRegistryCreakingHeart(): string {
+    export function itemRegistryCreakingHeart(): ItemValue {
         return MCFunctionItemLibrary.creakingHeart();
     }
 
-    export function itemRegistryPaleOakButton(): string {
+    export function itemRegistryPaleOakButton(): ItemValue {
         return MCFunctionItemLibrary.paleOakButton();
     }
 
-    export function itemRegistryChiseledTuffBricks(): string {
+    export function itemRegistryChiseledTuffBricks(): ItemValue {
         return MCFunctionItemLibrary.chiseledTuffBricks();
     }
 
-    export function itemRegistryLightBlueConcrete(): string {
+    export function itemRegistryLightBlueConcrete(): ItemValue {
         return MCFunctionItemLibrary.lightBlueConcrete();
     }
 
-    export function itemRegistryExposedCopperGolemStatue(): string {
+    export function itemRegistryExposedCopperGolemStatue(): ItemValue {
         return MCFunctionItemLibrary.exposedCopperGolemStatue();
     }
 
-    export function itemRegistryRedTulip(): string {
+    export function itemRegistryRedTulip(): ItemValue {
         return MCFunctionItemLibrary.redTulip();
     }
 
-    export function itemRegistryCauldron(): string {
+    export function itemRegistryCauldron(): ItemValue {
         return MCFunctionItemLibrary.cauldron();
     }
 
-    export function itemRegistryTubeCoralBlock(): string {
+    export function itemRegistryTubeCoralBlock(): ItemValue {
         return MCFunctionItemLibrary.tubeCoralBlock();
     }
 
-    export function itemRegistryChiseledRedSandstone(): string {
+    export function itemRegistryChiseledRedSandstone(): ItemValue {
         return MCFunctionItemLibrary.chiseledRedSandstone();
     }
 
-    export function itemRegistryBirchSapling(): string {
+    export function itemRegistryBirchSapling(): ItemValue {
         return MCFunctionItemLibrary.birchSapling();
     }
 
-    export function itemRegistryDarkOakTrapdoor(): string {
+    export function itemRegistryDarkOakTrapdoor(): ItemValue {
         return MCFunctionItemLibrary.darkOakTrapdoor();
     }
 
-    export function itemRegistryOrangeTerracotta(): string {
+    export function itemRegistryOrangeTerracotta(): ItemValue {
         return MCFunctionItemLibrary.orangeTerracotta();
     }
 
-    export function itemRegistryBrickSlab(): string {
+    export function itemRegistryBrickSlab(): ItemValue {
         return MCFunctionItemLibrary.brickSlab();
     }
 
-    export function itemRegistryWaxedOxidizedCopper(): string {
+    export function itemRegistryWaxedOxidizedCopper(): ItemValue {
         return MCFunctionItemLibrary.waxedOxidizedCopper();
     }
 
-    export function itemRegistryOakPlanks(): string {
+    export function itemRegistryOakPlanks(): ItemValue {
         return MCFunctionItemLibrary.oakPlanks();
     }
 
-    export function itemRegistryStrippedOakLog(): string {
+    export function itemRegistryStrippedOakLog(): ItemValue {
         return MCFunctionItemLibrary.strippedOakLog();
     }
 
-    export function itemRegistrySmoothStoneSlab(): string {
+    export function itemRegistrySmoothStoneSlab(): ItemValue {
         return MCFunctionItemLibrary.smoothStoneSlab();
     }
 
-    export function itemRegistryPolishedAndesite(): string {
+    export function itemRegistryPolishedAndesite(): ItemValue {
         return MCFunctionItemLibrary.polishedAndesite();
     }
 
-    export function itemRegistrySeaLantern(): string {
+    export function itemRegistrySeaLantern(): ItemValue {
         return MCFunctionItemLibrary.seaLantern();
     }
 
-    export function itemRegistryBrewingStand(): string {
+    export function itemRegistryBrewingStand(): ItemValue {
         return MCFunctionItemLibrary.brewingStand();
     }
 
-    export function itemRegistryWeatheredCopperBulb(): string {
+    export function itemRegistryWeatheredCopperBulb(): ItemValue {
         return MCFunctionItemLibrary.weatheredCopperBulb();
     }
 
-    export function itemRegistryWeatheredCopperBars(): string {
+    export function itemRegistryWeatheredCopperBars(): ItemValue {
         return MCFunctionItemLibrary.weatheredCopperBars();
     }
 
-    export function itemRegistryBlastFurnace(): string {
+    export function itemRegistryBlastFurnace(): ItemValue {
         return MCFunctionItemLibrary.blastFurnace();
     }
 
-    export function itemRegistryCrimsonRoots(): string {
+    export function itemRegistryCrimsonRoots(): ItemValue {
         return MCFunctionItemLibrary.crimsonRoots();
     }
 
-    export function itemRegistryAcaciaSlab(): string {
+    export function itemRegistryAcaciaSlab(): ItemValue {
         return MCFunctionItemLibrary.acaciaSlab();
     }
 
-    export function itemRegistryStonecutterBlock(): string {
+    export function itemRegistryStonecutterBlock(): ItemValue {
         return MCFunctionItemLibrary.stonecutterBlock();
     }
 
-    export function itemRegistrySmoothQuartzSlab(): string {
+    export function itemRegistrySmoothQuartzSlab(): ItemValue {
         return MCFunctionItemLibrary.smoothQuartzSlab();
     }
 
-    export function itemRegistrySulfurBrickSlab(): string {
+    export function itemRegistrySulfurBrickSlab(): ItemValue {
         return MCFunctionItemLibrary.sulfurBrickSlab();
     }
 
-    export function itemRegistryYellowConcretePowder(): string {
+    export function itemRegistryYellowConcretePowder(): ItemValue {
         return MCFunctionItemLibrary.yellowConcretePowder();
     }
 
-    export function itemRegistryLimeStainedGlassPane(): string {
+    export function itemRegistryLimeStainedGlassPane(): ItemValue {
         return MCFunctionItemLibrary.limeStainedGlassPane();
     }
 
-    export function itemRegistryYellowStainedGlass(): string {
+    export function itemRegistryYellowStainedGlass(): ItemValue {
         return MCFunctionItemLibrary.yellowStainedGlass();
     }
 
-    export function itemRegistryPolishedCinnabarStairs(): string {
+    export function itemRegistryPolishedCinnabarStairs(): ItemValue {
         return MCFunctionItemLibrary.polishedCinnabarStairs();
     }
 
-    export function itemRegistrySpruceWood(): string {
+    export function itemRegistrySpruceWood(): ItemValue {
         return MCFunctionItemLibrary.spruceWood();
     }
 
-    export function itemRegistryBlackstone(): string {
+    export function itemRegistryBlackstone(): ItemValue {
         return MCFunctionItemLibrary.blackstone();
     }
 
-    export function itemRegistryAcaciaFenceGate(): string {
+    export function itemRegistryAcaciaFenceGate(): ItemValue {
         return MCFunctionItemLibrary.acaciaFenceGate();
     }
 
-    export function itemRegistryWildflowers(): string {
+    export function itemRegistryWildflowers(): ItemValue {
         return MCFunctionItemLibrary.wildflowers();
     }
 
-    export function itemRegistryLapisOre(): string {
+    export function itemRegistryLapisOre(): ItemValue {
         return MCFunctionItemLibrary.lapisOre();
     }
 
-    export function itemRegistryRedConcrete(): string {
+    export function itemRegistryRedConcrete(): ItemValue {
         return MCFunctionItemLibrary.redConcrete();
     }
 
-    export function itemRegistryPinkCarpet(): string {
+    export function itemRegistryPinkCarpet(): ItemValue {
         return MCFunctionItemLibrary.pinkCarpet();
     }
 
-    export function itemRegistrySmoothQuartzStairs(): string {
+    export function itemRegistrySmoothQuartzStairs(): ItemValue {
         return MCFunctionItemLibrary.smoothQuartzStairs();
     }
 
-    export function itemRegistryWaxedCopperLantern(): string {
+    export function itemRegistryWaxedCopperLantern(): ItemValue {
         return MCFunctionItemLibrary.waxedCopperLantern();
     }
 
-    export function itemRegistryAzaleaLeaves(): string {
+    export function itemRegistryAzaleaLeaves(): ItemValue {
         return MCFunctionItemLibrary.azaleaLeaves();
     }
 
-    export function itemRegistryPurpurBlock(): string {
+    export function itemRegistryPurpurBlock(): ItemValue {
         return MCFunctionItemLibrary.purpurBlock();
     }
 
-    export function itemRegistryCyanCandle(): string {
+    export function itemRegistryCyanCandle(): ItemValue {
         return MCFunctionItemLibrary.cyanCandle();
     }
 
-    export function itemRegistryWaxedCopper(): string {
+    export function itemRegistryWaxedCopper(): ItemValue {
         return MCFunctionItemLibrary.waxedCopper();
     }
 
-    export function itemRegistryRepeatingCommandBlock(): string {
+    export function itemRegistryRepeatingCommandBlock(): ItemValue {
         return MCFunctionItemLibrary.repeatingCommandBlock();
     }
 
-    export function itemRegistryNetherWart(): string {
+    export function itemRegistryNetherWart(): ItemValue {
         return MCFunctionItemLibrary.netherWart();
     }
 
-    export function itemRegistryPurpleCarpet(): string {
+    export function itemRegistryPurpleCarpet(): ItemValue {
         return MCFunctionItemLibrary.purpleCarpet();
     }
 
-    export function itemRegistryCrimsonFungus(): string {
+    export function itemRegistryCrimsonFungus(): ItemValue {
         return MCFunctionItemLibrary.crimsonFungus();
     }
 
-    export function itemRegistryCherryPlanks(): string {
+    export function itemRegistryCherryPlanks(): ItemValue {
         return MCFunctionItemLibrary.cherryPlanks();
     }
 
-    export function itemRegistryPolishedDeepslate(): string {
+    export function itemRegistryPolishedDeepslate(): ItemValue {
         return MCFunctionItemLibrary.polishedDeepslate();
     }
 
-    export function itemRegistrySmoothRedSandstone(): string {
+    export function itemRegistrySmoothRedSandstone(): ItemValue {
         return MCFunctionItemLibrary.smoothRedSandstone();
     }
 
-    export function itemRegistryPurpurStairs(): string {
+    export function itemRegistryPurpurStairs(): ItemValue {
         return MCFunctionItemLibrary.purpurStairs();
     }
 
-    export function itemRegistryTubeCoral(): string {
+    export function itemRegistryTubeCoral(): ItemValue {
         return MCFunctionItemLibrary.tubeCoral();
     }
 
-    export function itemRegistryWaxedCopperDoor(): string {
+    export function itemRegistryWaxedCopperDoor(): ItemValue {
         return MCFunctionItemLibrary.waxedCopperDoor();
     }
 
-    export function itemRegistryCinnabarBrickWall(): string {
+    export function itemRegistryCinnabarBrickWall(): ItemValue {
         return MCFunctionItemLibrary.cinnabarBrickWall();
     }
 
-    export function itemRegistryBirchButton(): string {
+    export function itemRegistryBirchButton(): ItemValue {
         return MCFunctionItemLibrary.birchButton();
     }
 
-    export function itemRegistryPeony(): string {
+    export function itemRegistryPeony(): ItemValue {
         return MCFunctionItemLibrary.peony();
     }
 
-    export function itemRegistryCommandBlock(): string {
+    export function itemRegistryCommandBlock(): ItemValue {
         return MCFunctionItemLibrary.commandBlock();
     }
 
-    export function itemRegistryPolishedBlackstoneButton(): string {
+    export function itemRegistryPolishedBlackstoneButton(): ItemValue {
         return MCFunctionItemLibrary.polishedBlackstoneButton();
     }
 
-    export function itemRegistryCrafter(): string {
+    export function itemRegistryCrafter(): ItemValue {
         return MCFunctionItemLibrary.crafter();
     }
 
-    export function itemRegistrySprucePlanks(): string {
+    export function itemRegistrySprucePlanks(): ItemValue {
         return MCFunctionItemLibrary.sprucePlanks();
     }
 
-    export function itemRegistryFurnace(): string {
+    export function itemRegistryFurnace(): ItemValue {
         return MCFunctionItemLibrary.furnace();
     }
 
-    export function itemRegistryAmethystCluster(): string {
+    export function itemRegistryAmethystCluster(): ItemValue {
         return MCFunctionItemLibrary.amethystCluster();
     }
 
-    export function itemRegistryWaxedChiseledCopper(): string {
+    export function itemRegistryWaxedChiseledCopper(): ItemValue {
         return MCFunctionItemLibrary.waxedChiseledCopper();
     }
 
-    export function itemRegistryWaxedCutCopperSlab(): string {
+    export function itemRegistryWaxedCutCopperSlab(): ItemValue {
         return MCFunctionItemLibrary.waxedCutCopperSlab();
     }
 
-    export function itemRegistryPolishedDeepslateWall(): string {
+    export function itemRegistryPolishedDeepslateWall(): ItemValue {
         return MCFunctionItemLibrary.polishedDeepslateWall();
     }
 
-    export function itemRegistryDriedKelpBlock(): string {
+    export function itemRegistryDriedKelpBlock(): ItemValue {
         return MCFunctionItemLibrary.driedKelpBlock();
     }
 
-    export function itemRegistryCrimsonFence(): string {
+    export function itemRegistryCrimsonFence(): ItemValue {
         return MCFunctionItemLibrary.crimsonFence();
     }
 
-    export function itemRegistryCinnabarSlab(): string {
+    export function itemRegistryCinnabarSlab(): ItemValue {
         return MCFunctionItemLibrary.cinnabarSlab();
     }
 
-    export function itemRegistryChiseledTuff(): string {
+    export function itemRegistryChiseledTuff(): ItemValue {
         return MCFunctionItemLibrary.chiseledTuff();
     }
 
-    export function itemRegistryLimeConcretePowder(): string {
+    export function itemRegistryLimeConcretePowder(): ItemValue {
         return MCFunctionItemLibrary.limeConcretePowder();
     }
 
-    export function itemRegistryTurtleEgg(): string {
+    export function itemRegistryTurtleEgg(): ItemValue {
         return MCFunctionItemLibrary.turtleEgg();
     }
 
-    export function itemRegistryMagma(): string {
+    export function itemRegistryMagma(): ItemValue {
         return MCFunctionItemLibrary.magma();
     }
 
-    export function itemRegistryDispenser(): string {
+    export function itemRegistryDispenser(): ItemValue {
         return MCFunctionItemLibrary.dispenser();
     }
 
-    export function itemRegistryBrownTerracotta(): string {
+    export function itemRegistryBrownTerracotta(): ItemValue {
         return MCFunctionItemLibrary.brownTerracotta();
     }
 
-    export function itemRegistryDeepslateDiamondOre(): string {
+    export function itemRegistryDeepslateDiamondOre(): ItemValue {
         return MCFunctionItemLibrary.deepslateDiamondOre();
     }
 
-    export function itemRegistryGrindstone(): string {
+    export function itemRegistryGrindstone(): ItemValue {
         return MCFunctionItemLibrary.grindstone();
     }
 
-    export function itemRegistryWaxedCopperGolemStatue(): string {
+    export function itemRegistryWaxedCopperGolemStatue(): ItemValue {
         return MCFunctionItemLibrary.waxedCopperGolemStatue();
     }
 
-    export function itemRegistryLightGrayWool(): string {
+    export function itemRegistryLightGrayWool(): ItemValue {
         return MCFunctionItemLibrary.lightGrayWool();
     }
 
-    export function itemRegistrySoulCampfire(): string {
+    export function itemRegistrySoulCampfire(): ItemValue {
         return MCFunctionItemLibrary.soulCampfire();
     }
 
-    export function itemRegistryPrismarineBricks(): string {
+    export function itemRegistryPrismarineBricks(): ItemValue {
         return MCFunctionItemLibrary.prismarineBricks();
     }
 
-    export function itemRegistryWoodenPressurePlate(): string {
+    export function itemRegistryWoodenPressurePlate(): ItemValue {
         return MCFunctionItemLibrary.woodenPressurePlate();
     }
 
-    export function itemRegistrySandstoneWall(): string {
+    export function itemRegistrySandstoneWall(): ItemValue {
         return MCFunctionItemLibrary.sandstoneWall();
     }
 
-    export function itemRegistryBirchFence(): string {
+    export function itemRegistryBirchFence(): ItemValue {
         return MCFunctionItemLibrary.birchFence();
     }
 
-    export function itemRegistryWaxedOxidizedCopperGrate(): string {
+    export function itemRegistryWaxedOxidizedCopperGrate(): ItemValue {
         return MCFunctionItemLibrary.waxedOxidizedCopperGrate();
     }
 
-    export function itemRegistryDamagedAnvil(): string {
+    export function itemRegistryDamagedAnvil(): ItemValue {
         return MCFunctionItemLibrary.damagedAnvil();
     }
 
-    export function itemRegistryWhiteConcrete(): string {
+    export function itemRegistryWhiteConcrete(): ItemValue {
         return MCFunctionItemLibrary.whiteConcrete();
     }
 
-    export function itemRegistryTrialSpawner(): string {
+    export function itemRegistryTrialSpawner(): ItemValue {
         return MCFunctionItemLibrary.trialSpawner();
     }
 
-    export function itemRegistryAcaciaFence(): string {
+    export function itemRegistryAcaciaFence(): ItemValue {
         return MCFunctionItemLibrary.acaciaFence();
     }
 
-    export function itemRegistryGrassPath(): string {
+    export function itemRegistryGrassPath(): ItemValue {
         return MCFunctionItemLibrary.grassPath();
     }
 
-    export function itemRegistryResinBrickWall(): string {
+    export function itemRegistryResinBrickWall(): ItemValue {
         return MCFunctionItemLibrary.resinBrickWall();
     }
 
-    export function itemRegistryCobbledDeepslateWall(): string {
+    export function itemRegistryCobbledDeepslateWall(): ItemValue {
         return MCFunctionItemLibrary.cobbledDeepslateWall();
     }
 
-    export function itemRegistryWaxedWeatheredLightningRod(): string {
+    export function itemRegistryWaxedWeatheredLightningRod(): ItemValue {
         return MCFunctionItemLibrary.waxedWeatheredLightningRod();
     }
 
-    export function itemRegistryOrangeConcretePowder(): string {
+    export function itemRegistryOrangeConcretePowder(): ItemValue {
         return MCFunctionItemLibrary.orangeConcretePowder();
     }
 
-    export function itemRegistryWeatheredCopper(): string {
+    export function itemRegistryWeatheredCopper(): ItemValue {
         return MCFunctionItemLibrary.weatheredCopper();
     }
 
-    export function itemRegistryMossyStoneBrickWall(): string {
+    export function itemRegistryMossyStoneBrickWall(): ItemValue {
         return MCFunctionItemLibrary.mossyStoneBrickWall();
     }
 
-    export function itemRegistryPolishedSulfurWall(): string {
+    export function itemRegistryPolishedSulfurWall(): ItemValue {
         return MCFunctionItemLibrary.polishedSulfurWall();
     }
 
-    export function itemRegistryLimeTerracotta(): string {
+    export function itemRegistryLimeTerracotta(): ItemValue {
         return MCFunctionItemLibrary.limeTerracotta();
     }
 
-    export function itemRegistryCherryFenceGate(): string {
+    export function itemRegistryCherryFenceGate(): ItemValue {
         return MCFunctionItemLibrary.cherryFenceGate();
     }
 
-    export function itemRegistryGrayGlazedTerracotta(): string {
+    export function itemRegistryGrayGlazedTerracotta(): ItemValue {
         return MCFunctionItemLibrary.grayGlazedTerracotta();
     }
 
-    export function itemRegistryLodestone(): string {
+    export function itemRegistryLodestone(): ItemValue {
         return MCFunctionItemLibrary.lodestone();
     }
 
-    export function itemRegistryBambooMosaic(): string {
+    export function itemRegistryBambooMosaic(): ItemValue {
         return MCFunctionItemLibrary.bambooMosaic();
     }
 
-    export function itemRegistryRawIronBlock(): string {
+    export function itemRegistryRawIronBlock(): ItemValue {
         return MCFunctionItemLibrary.rawIronBlock();
     }
 
-    export function itemRegistryLightGrayCarpet(): string {
+    export function itemRegistryLightGrayCarpet(): ItemValue {
         return MCFunctionItemLibrary.lightGrayCarpet();
     }
 
-    export function itemRegistryPurpleWool(): string {
+    export function itemRegistryPurpleWool(): ItemValue {
         return MCFunctionItemLibrary.purpleWool();
     }
 
-    export function itemRegistryIronBlock(): string {
+    export function itemRegistryIronBlock(): ItemValue {
         return MCFunctionItemLibrary.ironBlock();
     }
 
-    export function itemRegistryLadder(): string {
+    export function itemRegistryLadder(): ItemValue {
         return MCFunctionItemLibrary.ladder();
     }
 
-    export function itemRegistryCrimsonPressurePlate(): string {
+    export function itemRegistryCrimsonPressurePlate(): ItemValue {
         return MCFunctionItemLibrary.crimsonPressurePlate();
     }
 
-    export function itemRegistryStrippedMangroveLog(): string {
+    export function itemRegistryStrippedMangroveLog(): ItemValue {
         return MCFunctionItemLibrary.strippedMangroveLog();
     }
 
-    export function itemRegistryCopperLantern(): string {
+    export function itemRegistryCopperLantern(): ItemValue {
         return MCFunctionItemLibrary.copperLantern();
     }
 
-    export function itemRegistryGravel(): string {
+    export function itemRegistryGravel(): ItemValue {
         return MCFunctionItemLibrary.gravel();
     }
 
-    export function itemRegistryCartographyTable(): string {
+    export function itemRegistryCartographyTable(): ItemValue {
         return MCFunctionItemLibrary.cartographyTable();
     }
 
-    export function itemRegistryOxidizedCopperDoor(): string {
+    export function itemRegistryOxidizedCopperDoor(): ItemValue {
         return MCFunctionItemLibrary.oxidizedCopperDoor();
     }
 
-    export function itemRegistryDandelion(): string {
+    export function itemRegistryDandelion(): ItemValue {
         return MCFunctionItemLibrary.dandelion();
     }
 
-    export function itemRegistryWool(): string {
+    export function itemRegistryWool(): ItemValue {
         return MCFunctionItemLibrary.wool();
     }
 
-    export function itemRegistryLog(): string {
+    export function itemRegistryLog(): ItemValue {
         return MCFunctionItemLibrary.log();
     }
 
-    export function itemRegistryLog2(): string {
+    export function itemRegistryLog2(): ItemValue {
         return MCFunctionItemLibrary.log2();
     }
 
-    export function itemRegistryCoral(): string {
+    export function itemRegistryCoral(): ItemValue {
         return MCFunctionItemLibrary.coral();
     }
 
-    export function itemRegistryFence(): string {
+    export function itemRegistryFence(): ItemValue {
         return MCFunctionItemLibrary.fence();
     }
 
-    export function itemRegistryCarpet(): string {
+    export function itemRegistryCarpet(): ItemValue {
         return MCFunctionItemLibrary.carpet();
     }
 
-    export function itemRegistryShulkerBox(): string {
+    export function itemRegistryShulkerBox(): ItemValue {
         return MCFunctionItemLibrary.shulkerBox();
     }
 
-    export function itemRegistryConcrete(): string {
+    export function itemRegistryConcrete(): ItemValue {
         return MCFunctionItemLibrary.concrete();
     }
 
-    export function itemRegistryStainedHardenedClay(): string {
+    export function itemRegistryStainedHardenedClay(): ItemValue {
         return MCFunctionItemLibrary.stainedHardenedClay();
     }
 
-    export function itemRegistryConcretePowder(): string {
+    export function itemRegistryConcretePowder(): ItemValue {
         return MCFunctionItemLibrary.concretePowder();
     }
 
-    export function itemRegistryStainedGlass(): string {
+    export function itemRegistryStainedGlass(): ItemValue {
         return MCFunctionItemLibrary.stainedGlass();
     }
 
-    export function itemRegistryStainedGlassPane(): string {
+    export function itemRegistryStainedGlassPane(): ItemValue {
         return MCFunctionItemLibrary.stainedGlassPane();
     }
 
-    export function itemRegistryPlanks(): string {
+    export function itemRegistryPlanks(): ItemValue {
         return MCFunctionItemLibrary.planks();
     }
 
-    export function itemRegistryWoodenSlab(): string {
+    export function itemRegistryWoodenSlab(): ItemValue {
         return MCFunctionItemLibrary.woodenSlab();
     }
 
-    export function itemRegistryLeaves(): string {
+    export function itemRegistryLeaves(): ItemValue {
         return MCFunctionItemLibrary.leaves();
     }
 
-    export function itemRegistryLeaves2(): string {
+    export function itemRegistryLeaves2(): ItemValue {
         return MCFunctionItemLibrary.leaves2();
     }
 
-    export function itemRegistryWood(): string {
+    export function itemRegistryWood(): ItemValue {
         return MCFunctionItemLibrary.wood();
     }
 
-    export function itemRegistrySapling(): string {
+    export function itemRegistrySapling(): ItemValue {
         return MCFunctionItemLibrary.sapling();
     }
 
-    export function itemRegistryCoralFan(): string {
+    export function itemRegistryCoralFan(): ItemValue {
         return MCFunctionItemLibrary.coralFan();
     }
 
-    export function itemRegistryCoralFanDead(): string {
+    export function itemRegistryCoralFanDead(): ItemValue {
         return MCFunctionItemLibrary.coralFanDead();
     }
 
-    export function itemRegistryRedFlower(): string {
+    export function itemRegistryRedFlower(): ItemValue {
         return MCFunctionItemLibrary.redFlower();
     }
 
-    export function itemRegistryTallgrass(): string {
+    export function itemRegistryTallgrass(): ItemValue {
         return MCFunctionItemLibrary.tallgrass();
     }
 
-    export function itemRegistryCoralBlock(): string {
+    export function itemRegistryCoralBlock(): ItemValue {
         return MCFunctionItemLibrary.coralBlock();
     }
 
-    export function itemRegistryDoublePlant(): string {
+    export function itemRegistryDoublePlant(): ItemValue {
         return MCFunctionItemLibrary.doublePlant();
     }
 
-    export function itemRegistryStoneBlockSlab(): string {
+    export function itemRegistryStoneBlockSlab(): ItemValue {
         return MCFunctionItemLibrary.stoneBlockSlab();
     }
 
-    export function itemRegistryStoneBlockSlab2(): string {
+    export function itemRegistryStoneBlockSlab2(): ItemValue {
         return MCFunctionItemLibrary.stoneBlockSlab2();
     }
 
-    export function itemRegistryStoneBlockSlab3(): string {
+    export function itemRegistryStoneBlockSlab3(): ItemValue {
         return MCFunctionItemLibrary.stoneBlockSlab3();
     }
 
-    export function itemRegistryStoneBlockSlab4(): string {
+    export function itemRegistryStoneBlockSlab4(): ItemValue {
         return MCFunctionItemLibrary.stoneBlockSlab4();
     }
 
-    export function itemRegistryMonsterEgg(): string {
+    export function itemRegistryMonsterEgg(): ItemValue {
         return MCFunctionItemLibrary.monsterEgg();
     }
 
-    export function itemRegistryStonebrick(): string {
+    export function itemRegistryStonebrick(): ItemValue {
         return MCFunctionItemLibrary.stonebrick();
     }
 
-    export function itemRegistryLightBlock(): string {
+    export function itemRegistryLightBlock(): ItemValue {
         return MCFunctionItemLibrary.lightBlock();
     }
 
-    export function itemRegistrySkull(): string {
+    export function itemRegistrySkull(): ItemValue {
         return MCFunctionItemLibrary.skull();
     }
 
-    export function itemRegistryChicken(): string {
+    export function itemRegistryChicken(): ItemValue {
         return MCFunctionItemLibrary.chicken();
     }
 
-    export function itemRegistryRabbit(): string {
+    export function itemRegistryRabbit(): ItemValue {
         return MCFunctionItemLibrary.rabbit();
     }
 
-    export function itemRegistryCod(): string {
+    export function itemRegistryCod(): ItemValue {
         return MCFunctionItemLibrary.cod();
     }
 
-    export function itemRegistryPufferfish(): string {
+    export function itemRegistryPufferfish(): ItemValue {
         return MCFunctionItemLibrary.pufferfish();
     }
 
-    export function itemRegistrySalmon(): string {
+    export function itemRegistrySalmon(): ItemValue {
         return MCFunctionItemLibrary.salmon();
     }
 
-    export function itemRegistryMinecart(): string {
+    export function itemRegistryMinecart(): ItemValue {
         return MCFunctionItemLibrary.minecart();
     }
 
-    export function itemRegistryHopperMinecart(): string {
+    export function itemRegistryHopperMinecart(): ItemValue {
         return MCFunctionItemLibrary.hopperMinecart();
     }
 
-    export function itemRegistryTntMinecart(): string {
+    export function itemRegistryTntMinecart(): ItemValue {
         return MCFunctionItemLibrary.tntMinecart();
     }
 
-    export function itemRegistryChestMinecart(): string {
+    export function itemRegistryChestMinecart(): ItemValue {
         return MCFunctionItemLibrary.chestMinecart();
     }
 
-    export function itemRegistryCommandBlockMinecart(): string {
+    export function itemRegistryCommandBlockMinecart(): ItemValue {
         return MCFunctionItemLibrary.commandBlockMinecart();
     }
 
-    export function itemRegistryArrow(): string {
+    export function itemRegistryArrow(): ItemValue {
         return MCFunctionItemLibrary.arrow();
     }
 
-    export function itemRegistrySnowball(): string {
+    export function itemRegistrySnowball(): ItemValue {
         return MCFunctionItemLibrary.snowball();
     }
 
-    export function itemRegistryEgg(): string {
+    export function itemRegistryEgg(): ItemValue {
         return MCFunctionItemLibrary.egg();
     }
 
-    export function itemRegistryPainting(): string {
+    export function itemRegistryPainting(): ItemValue {
         return MCFunctionItemLibrary.painting();
     }
 
-    export function itemRegistrySplashPotion(): string {
+    export function itemRegistrySplashPotion(): ItemValue {
         return MCFunctionItemLibrary.splashPotion();
     }
 
-    export function itemRegistryEnderPearl(): string {
+    export function itemRegistryEnderPearl(): ItemValue {
         return MCFunctionItemLibrary.enderPearl();
     }
 
-    export function itemRegistryBoat(): string {
+    export function itemRegistryBoat(): ItemValue {
         return MCFunctionItemLibrary.boat();
     }
 
-    export function itemRegistryChestBoat(): string {
+    export function itemRegistryChestBoat(): ItemValue {
         return MCFunctionItemLibrary.chestBoat();
     }
 
-    export function itemRegistryLingeringPotion(): string {
+    export function itemRegistryLingeringPotion(): ItemValue {
         return MCFunctionItemLibrary.lingeringPotion();
     }
 
-    export function itemRegistryArmorStand(): string {
+    export function itemRegistryArmorStand(): ItemValue {
         return MCFunctionItemLibrary.armorStand();
     }
 
-    export function itemRegistryWheatSeeds(): string {
+    export function itemRegistryWheatSeeds(): ItemValue {
         return MCFunctionItemLibrary.wheatSeeds();
     }
 
-    export function itemRegistryPumpkinSeeds(): string {
+    export function itemRegistryPumpkinSeeds(): ItemValue {
         return MCFunctionItemLibrary.pumpkinSeeds();
     }
 
-    export function itemRegistryMelonSeeds(): string {
+    export function itemRegistryMelonSeeds(): ItemValue {
         return MCFunctionItemLibrary.melonSeeds();
     }
 
-    export function itemRegistryBeetrootSeeds(): string {
+    export function itemRegistryBeetrootSeeds(): ItemValue {
         return MCFunctionItemLibrary.beetrootSeeds();
     }
 
-    export function itemRegistryTorchflowerSeeds(): string {
+    export function itemRegistryTorchflowerSeeds(): ItemValue {
         return MCFunctionItemLibrary.torchflowerSeeds();
     }
 
-    export function itemRegistryPitcherPod(): string {
+    export function itemRegistryPitcherPod(): ItemValue {
         return MCFunctionItemLibrary.pitcherPod();
     }
 
-    export function itemRegistryPotato(): string {
+    export function itemRegistryPotato(): ItemValue {
         return MCFunctionItemLibrary.potato();
     }
 
-    export function itemRegistryPoisonousPotato(): string {
+    export function itemRegistryPoisonousPotato(): ItemValue {
         return MCFunctionItemLibrary.poisonousPotato();
     }
 
-    export function itemRegistryCarrot(): string {
+    export function itemRegistryCarrot(): ItemValue {
         return MCFunctionItemLibrary.carrot();
     }
 
-    export function itemRegistryGoldenCarrot(): string {
+    export function itemRegistryGoldenCarrot(): ItemValue {
         return MCFunctionItemLibrary.goldenCarrot();
     }
 
-    export function itemRegistryApple(): string {
+    export function itemRegistryApple(): ItemValue {
         return MCFunctionItemLibrary.apple();
     }
 
-    export function itemRegistryGoldenApple(): string {
+    export function itemRegistryGoldenApple(): ItemValue {
         return MCFunctionItemLibrary.goldenApple();
     }
 
-    export function itemRegistryEnchantedGoldenApple(): string {
+    export function itemRegistryEnchantedGoldenApple(): ItemValue {
         return MCFunctionItemLibrary.enchantedGoldenApple();
     }
 
-    export function itemRegistryMelonSlice(): string {
+    export function itemRegistryMelonSlice(): ItemValue {
         return MCFunctionItemLibrary.melonSlice();
     }
 
-    export function itemRegistryGlisteringMelonSlice(): string {
+    export function itemRegistryGlisteringMelonSlice(): ItemValue {
         return MCFunctionItemLibrary.glisteringMelonSlice();
     }
 
-    export function itemRegistrySweetBerries(): string {
+    export function itemRegistrySweetBerries(): ItemValue {
         return MCFunctionItemLibrary.sweetBerries();
     }
 
-    export function itemRegistryGlowBerries(): string {
+    export function itemRegistryGlowBerries(): ItemValue {
         return MCFunctionItemLibrary.glowBerries();
     }
 
-    export function itemRegistryHoneycomb(): string {
+    export function itemRegistryHoneycomb(): ItemValue {
         return MCFunctionItemLibrary.honeycomb();
     }
 
-    export function itemRegistryWhiteDye(): string {
+    export function itemRegistryWhiteDye(): ItemValue {
         return MCFunctionItemLibrary.whiteDye();
     }
 
-    export function itemRegistryLightGrayDye(): string {
+    export function itemRegistryLightGrayDye(): ItemValue {
         return MCFunctionItemLibrary.lightGrayDye();
     }
 
-    export function itemRegistryGrayDye(): string {
+    export function itemRegistryGrayDye(): ItemValue {
         return MCFunctionItemLibrary.grayDye();
     }
 
-    export function itemRegistryBlackDye(): string {
+    export function itemRegistryBlackDye(): ItemValue {
         return MCFunctionItemLibrary.blackDye();
     }
 
-    export function itemRegistryBrownDye(): string {
+    export function itemRegistryBrownDye(): ItemValue {
         return MCFunctionItemLibrary.brownDye();
     }
 
-    export function itemRegistryRedDye(): string {
+    export function itemRegistryRedDye(): ItemValue {
         return MCFunctionItemLibrary.redDye();
     }
 
-    export function itemRegistryOrangeDye(): string {
+    export function itemRegistryOrangeDye(): ItemValue {
         return MCFunctionItemLibrary.orangeDye();
     }
 
-    export function itemRegistryYellowDye(): string {
+    export function itemRegistryYellowDye(): ItemValue {
         return MCFunctionItemLibrary.yellowDye();
     }
 
-    export function itemRegistryLimeDye(): string {
+    export function itemRegistryLimeDye(): ItemValue {
         return MCFunctionItemLibrary.limeDye();
     }
 
-    export function itemRegistryGreenDye(): string {
+    export function itemRegistryGreenDye(): ItemValue {
         return MCFunctionItemLibrary.greenDye();
     }
 
-    export function itemRegistryCyanDye(): string {
+    export function itemRegistryCyanDye(): ItemValue {
         return MCFunctionItemLibrary.cyanDye();
     }
 
-    export function itemRegistryLightBlueDye(): string {
+    export function itemRegistryLightBlueDye(): ItemValue {
         return MCFunctionItemLibrary.lightBlueDye();
     }
 
-    export function itemRegistryBlueDye(): string {
+    export function itemRegistryBlueDye(): ItemValue {
         return MCFunctionItemLibrary.blueDye();
     }
 
-    export function itemRegistryPurpleDye(): string {
+    export function itemRegistryPurpleDye(): ItemValue {
         return MCFunctionItemLibrary.purpleDye();
     }
 
-    export function itemRegistryMagentaDye(): string {
+    export function itemRegistryMagentaDye(): ItemValue {
         return MCFunctionItemLibrary.magentaDye();
     }
 
-    export function itemRegistryPinkDye(): string {
+    export function itemRegistryPinkDye(): ItemValue {
         return MCFunctionItemLibrary.pinkDye();
     }
 
-    export function itemRegistryInkSac(): string {
+    export function itemRegistryInkSac(): ItemValue {
         return MCFunctionItemLibrary.inkSac();
     }
 
-    export function itemRegistryGlowInkSac(): string {
+    export function itemRegistryGlowInkSac(): ItemValue {
         return MCFunctionItemLibrary.glowInkSac();
     }
 
-    export function itemRegistryCocoaBeans(): string {
+    export function itemRegistryCocoaBeans(): ItemValue {
         return MCFunctionItemLibrary.cocoaBeans();
     }
 
-    export function itemRegistryLapisLazuli(): string {
+    export function itemRegistryLapisLazuli(): ItemValue {
         return MCFunctionItemLibrary.lapisLazuli();
     }
 
-    export function itemRegistryBoneMeal(): string {
+    export function itemRegistryBoneMeal(): ItemValue {
         return MCFunctionItemLibrary.boneMeal();
     }
 
-    export function itemRegistryPorkchop(): string {
+    export function itemRegistryPorkchop(): ItemValue {
         return MCFunctionItemLibrary.porkchop();
     }
 
-    export function itemRegistryBeef(): string {
+    export function itemRegistryBeef(): ItemValue {
         return MCFunctionItemLibrary.beef();
     }
 
-    export function itemRegistryMutton(): string {
+    export function itemRegistryMutton(): ItemValue {
         return MCFunctionItemLibrary.mutton();
     }
 
-    export function itemRegistryTropicalFish(): string {
+    export function itemRegistryTropicalFish(): ItemValue {
         return MCFunctionItemLibrary.tropicalFish();
     }
 
-    export function itemRegistryBrownEgg(): string {
+    export function itemRegistryBrownEgg(): ItemValue {
         return MCFunctionItemLibrary.brownEgg();
     }
 
-    export function itemRegistryBlueEgg(): string {
+    export function itemRegistryBlueEgg(): ItemValue {
         return MCFunctionItemLibrary.blueEgg();
     }
 
-    export function itemRegistrySugarCane(): string {
+    export function itemRegistrySugarCane(): ItemValue {
         return MCFunctionItemLibrary.sugarCane();
     }
 
-    export function itemRegistrySugar(): string {
+    export function itemRegistrySugar(): ItemValue {
         return MCFunctionItemLibrary.sugar();
     }
 
-    export function itemRegistryRottenFlesh(): string {
+    export function itemRegistryRottenFlesh(): ItemValue {
         return MCFunctionItemLibrary.rottenFlesh();
     }
 
-    export function itemRegistryBone(): string {
+    export function itemRegistryBone(): ItemValue {
         return MCFunctionItemLibrary.bone();
     }
 
-    export function itemRegistrySpiderEye(): string {
+    export function itemRegistrySpiderEye(): ItemValue {
         return MCFunctionItemLibrary.spiderEye();
     }
 
-    export function itemRegistryChickenSpawnEgg(): string {
+    export function itemRegistryChickenSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.chickenSpawnEgg();
     }
 
-    export function itemRegistryCowSpawnEgg(): string {
+    export function itemRegistryCowSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.cowSpawnEgg();
     }
 
-    export function itemRegistryPigSpawnEgg(): string {
+    export function itemRegistryPigSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.pigSpawnEgg();
     }
 
-    export function itemRegistrySheepSpawnEgg(): string {
+    export function itemRegistrySheepSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.sheepSpawnEgg();
     }
 
-    export function itemRegistryCamelSpawnEgg(): string {
+    export function itemRegistryCamelSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.camelSpawnEgg();
     }
 
-    export function itemRegistryDonkeySpawnEgg(): string {
+    export function itemRegistryDonkeySpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.donkeySpawnEgg();
     }
 
-    export function itemRegistryHorseSpawnEgg(): string {
+    export function itemRegistryHorseSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.horseSpawnEgg();
     }
 
-    export function itemRegistryMuleSpawnEgg(): string {
+    export function itemRegistryMuleSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.muleSpawnEgg();
     }
 
-    export function itemRegistryCatSpawnEgg(): string {
+    export function itemRegistryCatSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.catSpawnEgg();
     }
 
-    export function itemRegistryParrotSpawnEgg(): string {
+    export function itemRegistryParrotSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.parrotSpawnEgg();
     }
 
-    export function itemRegistryWolfSpawnEgg(): string {
+    export function itemRegistryWolfSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.wolfSpawnEgg();
     }
 
-    export function itemRegistryArmadilloSpawnEgg(): string {
+    export function itemRegistryArmadilloSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.armadilloSpawnEgg();
     }
 
-    export function itemRegistryBatSpawnEgg(): string {
+    export function itemRegistryBatSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.batSpawnEgg();
     }
 
-    export function itemRegistryBeeSpawnEgg(): string {
+    export function itemRegistryBeeSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.beeSpawnEgg();
     }
 
-    export function itemRegistryFoxSpawnEgg(): string {
+    export function itemRegistryFoxSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.foxSpawnEgg();
     }
 
-    export function itemRegistryGoatSpawnEgg(): string {
+    export function itemRegistryGoatSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.goatSpawnEgg();
     }
 
-    export function itemRegistryLlamaSpawnEgg(): string {
+    export function itemRegistryLlamaSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.llamaSpawnEgg();
     }
 
-    export function itemRegistryOcelotSpawnEgg(): string {
+    export function itemRegistryOcelotSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.ocelotSpawnEgg();
     }
 
-    export function itemRegistryPandaSpawnEgg(): string {
+    export function itemRegistryPandaSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.pandaSpawnEgg();
     }
 
-    export function itemRegistryPolarBearSpawnEgg(): string {
+    export function itemRegistryPolarBearSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.polarBearSpawnEgg();
     }
 
-    export function itemRegistryRabbitSpawnEgg(): string {
+    export function itemRegistryRabbitSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.rabbitSpawnEgg();
     }
 
-    export function itemRegistryAxolotlSpawnEgg(): string {
+    export function itemRegistryAxolotlSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.axolotlSpawnEgg();
     }
 
-    export function itemRegistryCodSpawnEgg(): string {
+    export function itemRegistryCodSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.codSpawnEgg();
     }
 
-    export function itemRegistryDolphinSpawnEgg(): string {
+    export function itemRegistryDolphinSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.dolphinSpawnEgg();
     }
 
-    export function itemRegistryFrogSpawnEgg(): string {
+    export function itemRegistryFrogSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.frogSpawnEgg();
     }
 
-    export function itemRegistryGlowSquidSpawnEgg(): string {
+    export function itemRegistryGlowSquidSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.glowSquidSpawnEgg();
     }
 
-    export function itemRegistryNautilusSpawnEgg(): string {
+    export function itemRegistryNautilusSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.nautilusSpawnEgg();
     }
 
-    export function itemRegistryPufferfishSpawnEgg(): string {
+    export function itemRegistryPufferfishSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.pufferfishSpawnEgg();
     }
 
-    export function itemRegistrySalmonSpawnEgg(): string {
+    export function itemRegistrySalmonSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.salmonSpawnEgg();
     }
 
-    export function itemRegistrySquidSpawnEgg(): string {
+    export function itemRegistrySquidSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.squidSpawnEgg();
     }
 
-    export function itemRegistryTadpoleSpawnEgg(): string {
+    export function itemRegistryTadpoleSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.tadpoleSpawnEgg();
     }
 
-    export function itemRegistryTropicalFishSpawnEgg(): string {
+    export function itemRegistryTropicalFishSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.tropicalFishSpawnEgg();
     }
 
-    export function itemRegistryTurtleSpawnEgg(): string {
+    export function itemRegistryTurtleSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.turtleSpawnEgg();
     }
 
-    export function itemRegistryAllaySpawnEgg(): string {
+    export function itemRegistryAllaySpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.allaySpawnEgg();
     }
 
-    export function itemRegistryMooshroomSpawnEgg(): string {
+    export function itemRegistryMooshroomSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.mooshroomSpawnEgg();
     }
 
-    export function itemRegistrySnifferSpawnEgg(): string {
+    export function itemRegistrySnifferSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.snifferSpawnEgg();
     }
 
-    export function itemRegistryCopperGolemSpawnEgg(): string {
+    export function itemRegistryCopperGolemSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.copperGolemSpawnEgg();
     }
 
-    export function itemRegistryIronGolemSpawnEgg(): string {
+    export function itemRegistryIronGolemSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.ironGolemSpawnEgg();
     }
 
-    export function itemRegistrySnowGolemSpawnEgg(): string {
+    export function itemRegistrySnowGolemSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.snowGolemSpawnEgg();
     }
 
-    export function itemRegistryTraderLlamaSpawnEgg(): string {
+    export function itemRegistryTraderLlamaSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.traderLlamaSpawnEgg();
     }
 
-    export function itemRegistryVillagerSpawnEgg(): string {
+    export function itemRegistryVillagerSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.villagerSpawnEgg();
     }
 
-    export function itemRegistryWanderingTraderSpawnEgg(): string {
+    export function itemRegistryWanderingTraderSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.wanderingTraderSpawnEgg();
     }
 
-    export function itemRegistryBoggedSpawnEgg(): string {
+    export function itemRegistryBoggedSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.boggedSpawnEgg();
     }
 
-    export function itemRegistryCamelHuskSpawnEgg(): string {
+    export function itemRegistryCamelHuskSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.camelHuskSpawnEgg();
     }
 
-    export function itemRegistryDrownedSpawnEgg(): string {
+    export function itemRegistryDrownedSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.drownedSpawnEgg();
     }
 
-    export function itemRegistryHuskSpawnEgg(): string {
+    export function itemRegistryHuskSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.huskSpawnEgg();
     }
 
-    export function itemRegistryParchedSpawnEgg(): string {
+    export function itemRegistryParchedSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.parchedSpawnEgg();
     }
 
-    export function itemRegistrySkeletonSpawnEgg(): string {
+    export function itemRegistrySkeletonSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.skeletonSpawnEgg();
     }
 
-    export function itemRegistrySkeletonHorseSpawnEgg(): string {
+    export function itemRegistrySkeletonHorseSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.skeletonHorseSpawnEgg();
     }
 
-    export function itemRegistryStraySpawnEgg(): string {
+    export function itemRegistryStraySpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.straySpawnEgg();
     }
 
-    export function itemRegistryZombieSpawnEgg(): string {
+    export function itemRegistryZombieSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.zombieSpawnEgg();
     }
 
-    export function itemRegistryZombieHorseSpawnEgg(): string {
+    export function itemRegistryZombieHorseSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.zombieHorseSpawnEgg();
     }
 
-    export function itemRegistryZombieNautilusSpawnEgg(): string {
+    export function itemRegistryZombieNautilusSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.zombieNautilusSpawnEgg();
     }
 
-    export function itemRegistryZombieVillagerSpawnEgg(): string {
+    export function itemRegistryZombieVillagerSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.zombieVillagerSpawnEgg();
     }
 
-    export function itemRegistryCaveSpiderSpawnEgg(): string {
+    export function itemRegistryCaveSpiderSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.caveSpiderSpawnEgg();
     }
 
-    export function itemRegistrySpiderSpawnEgg(): string {
+    export function itemRegistrySpiderSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.spiderSpawnEgg();
     }
 
-    export function itemRegistryBreezeSpawnEgg(): string {
+    export function itemRegistryBreezeSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.breezeSpawnEgg();
     }
 
-    export function itemRegistryCreakingSpawnEgg(): string {
+    export function itemRegistryCreakingSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.creakingSpawnEgg();
     }
 
-    export function itemRegistryCreeperSpawnEgg(): string {
+    export function itemRegistryCreeperSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.creeperSpawnEgg();
     }
 
-    export function itemRegistryElderGuardianSpawnEgg(): string {
+    export function itemRegistryElderGuardianSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.elderGuardianSpawnEgg();
     }
 
-    export function itemRegistryGuardianSpawnEgg(): string {
+    export function itemRegistryGuardianSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.guardianSpawnEgg();
     }
 
-    export function itemRegistryPhantomSpawnEgg(): string {
+    export function itemRegistryPhantomSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.phantomSpawnEgg();
     }
 
-    export function itemRegistrySilverfishSpawnEgg(): string {
+    export function itemRegistrySilverfishSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.silverfishSpawnEgg();
     }
 
-    export function itemRegistrySlimeSpawnEgg(): string {
+    export function itemRegistrySlimeSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.slimeSpawnEgg();
     }
 
-    export function itemRegistrySulfurCubeSpawnEgg(): string {
+    export function itemRegistrySulfurCubeSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.sulfurCubeSpawnEgg();
     }
 
-    export function itemRegistryWardenSpawnEgg(): string {
+    export function itemRegistryWardenSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.wardenSpawnEgg();
     }
 
-    export function itemRegistryWitchSpawnEgg(): string {
+    export function itemRegistryWitchSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.witchSpawnEgg();
     }
 
-    export function itemRegistryEvokerSpawnEgg(): string {
+    export function itemRegistryEvokerSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.evokerSpawnEgg();
     }
 
-    export function itemRegistryPillagerSpawnEgg(): string {
+    export function itemRegistryPillagerSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.pillagerSpawnEgg();
     }
 
-    export function itemRegistryRavagerSpawnEgg(): string {
+    export function itemRegistryRavagerSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.ravagerSpawnEgg();
     }
 
-    export function itemRegistryVexSpawnEgg(): string {
+    export function itemRegistryVexSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.vexSpawnEgg();
     }
 
-    export function itemRegistryVindicatorSpawnEgg(): string {
+    export function itemRegistryVindicatorSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.vindicatorSpawnEgg();
     }
 
-    export function itemRegistryBlazeSpawnEgg(): string {
+    export function itemRegistryBlazeSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.blazeSpawnEgg();
     }
 
-    export function itemRegistryGhastSpawnEgg(): string {
+    export function itemRegistryGhastSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.ghastSpawnEgg();
     }
 
-    export function itemRegistryHappyGhastSpawnEgg(): string {
+    export function itemRegistryHappyGhastSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.happyGhastSpawnEgg();
     }
 
-    export function itemRegistryHoglinSpawnEgg(): string {
+    export function itemRegistryHoglinSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.hoglinSpawnEgg();
     }
 
-    export function itemRegistryMagmaCubeSpawnEgg(): string {
+    export function itemRegistryMagmaCubeSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.magmaCubeSpawnEgg();
     }
 
-    export function itemRegistryPiglinSpawnEgg(): string {
+    export function itemRegistryPiglinSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.piglinSpawnEgg();
     }
 
-    export function itemRegistryPiglinBruteSpawnEgg(): string {
+    export function itemRegistryPiglinBruteSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.piglinBruteSpawnEgg();
     }
 
-    export function itemRegistryStriderSpawnEgg(): string {
+    export function itemRegistryStriderSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.striderSpawnEgg();
     }
 
-    export function itemRegistryWitherSkeletonSpawnEgg(): string {
+    export function itemRegistryWitherSkeletonSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.witherSkeletonSpawnEgg();
     }
 
-    export function itemRegistryZoglinSpawnEgg(): string {
+    export function itemRegistryZoglinSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.zoglinSpawnEgg();
     }
 
-    export function itemRegistryZombiePigmanSpawnEgg(): string {
+    export function itemRegistryZombiePigmanSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.zombiePigmanSpawnEgg();
     }
 
-    export function itemRegistryEndermanSpawnEgg(): string {
+    export function itemRegistryEndermanSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.endermanSpawnEgg();
     }
 
-    export function itemRegistryEndermiteSpawnEgg(): string {
+    export function itemRegistryEndermiteSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.endermiteSpawnEgg();
     }
 
-    export function itemRegistryShulkerSpawnEgg(): string {
+    export function itemRegistryShulkerSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.shulkerSpawnEgg();
     }
 
-    export function itemRegistryChorusFruit(): string {
+    export function itemRegistryChorusFruit(): ItemValue {
         return MCFunctionItemLibrary.chorusFruit();
     }
 
-    export function itemRegistryPoppedChorusFruit(): string {
+    export function itemRegistryPoppedChorusFruit(): ItemValue {
         return MCFunctionItemLibrary.poppedChorusFruit();
     }
 
-    export function itemRegistryLeatherHelmet(): string {
+    export function itemRegistryLeatherHelmet(): ItemValue {
         return MCFunctionItemLibrary.leatherHelmet();
     }
 
-    export function itemRegistryCopperHelmet(): string {
+    export function itemRegistryCopperHelmet(): ItemValue {
         return MCFunctionItemLibrary.copperHelmet();
     }
 
-    export function itemRegistryChainmailHelmet(): string {
+    export function itemRegistryChainmailHelmet(): ItemValue {
         return MCFunctionItemLibrary.chainmailHelmet();
     }
 
-    export function itemRegistryIronHelmet(): string {
+    export function itemRegistryIronHelmet(): ItemValue {
         return MCFunctionItemLibrary.ironHelmet();
     }
 
-    export function itemRegistryGoldenHelmet(): string {
+    export function itemRegistryGoldenHelmet(): ItemValue {
         return MCFunctionItemLibrary.goldenHelmet();
     }
 
-    export function itemRegistryDiamondHelmet(): string {
+    export function itemRegistryDiamondHelmet(): ItemValue {
         return MCFunctionItemLibrary.diamondHelmet();
     }
 
-    export function itemRegistryNetheriteHelmet(): string {
+    export function itemRegistryNetheriteHelmet(): ItemValue {
         return MCFunctionItemLibrary.netheriteHelmet();
     }
 
-    export function itemRegistryLeatherChestplate(): string {
+    export function itemRegistryLeatherChestplate(): ItemValue {
         return MCFunctionItemLibrary.leatherChestplate();
     }
 
-    export function itemRegistryCopperChestplate(): string {
+    export function itemRegistryCopperChestplate(): ItemValue {
         return MCFunctionItemLibrary.copperChestplate();
     }
 
-    export function itemRegistryChainmailChestplate(): string {
+    export function itemRegistryChainmailChestplate(): ItemValue {
         return MCFunctionItemLibrary.chainmailChestplate();
     }
 
-    export function itemRegistryIronChestplate(): string {
+    export function itemRegistryIronChestplate(): ItemValue {
         return MCFunctionItemLibrary.ironChestplate();
     }
 
-    export function itemRegistryGoldenChestplate(): string {
+    export function itemRegistryGoldenChestplate(): ItemValue {
         return MCFunctionItemLibrary.goldenChestplate();
     }
 
-    export function itemRegistryDiamondChestplate(): string {
+    export function itemRegistryDiamondChestplate(): ItemValue {
         return MCFunctionItemLibrary.diamondChestplate();
     }
 
-    export function itemRegistryNetheriteChestplate(): string {
+    export function itemRegistryNetheriteChestplate(): ItemValue {
         return MCFunctionItemLibrary.netheriteChestplate();
     }
 
-    export function itemRegistryLeatherLeggings(): string {
+    export function itemRegistryLeatherLeggings(): ItemValue {
         return MCFunctionItemLibrary.leatherLeggings();
     }
 
-    export function itemRegistryCopperLeggings(): string {
+    export function itemRegistryCopperLeggings(): ItemValue {
         return MCFunctionItemLibrary.copperLeggings();
     }
 
-    export function itemRegistryChainmailLeggings(): string {
+    export function itemRegistryChainmailLeggings(): ItemValue {
         return MCFunctionItemLibrary.chainmailLeggings();
     }
 
-    export function itemRegistryIronLeggings(): string {
+    export function itemRegistryIronLeggings(): ItemValue {
         return MCFunctionItemLibrary.ironLeggings();
     }
 
-    export function itemRegistryGoldenLeggings(): string {
+    export function itemRegistryGoldenLeggings(): ItemValue {
         return MCFunctionItemLibrary.goldenLeggings();
     }
 
-    export function itemRegistryDiamondLeggings(): string {
+    export function itemRegistryDiamondLeggings(): ItemValue {
         return MCFunctionItemLibrary.diamondLeggings();
     }
 
-    export function itemRegistryNetheriteLeggings(): string {
+    export function itemRegistryNetheriteLeggings(): ItemValue {
         return MCFunctionItemLibrary.netheriteLeggings();
     }
 
-    export function itemRegistryLeatherBoots(): string {
+    export function itemRegistryLeatherBoots(): ItemValue {
         return MCFunctionItemLibrary.leatherBoots();
     }
 
-    export function itemRegistryCopperBoots(): string {
+    export function itemRegistryCopperBoots(): ItemValue {
         return MCFunctionItemLibrary.copperBoots();
     }
 
-    export function itemRegistryChainmailBoots(): string {
+    export function itemRegistryChainmailBoots(): ItemValue {
         return MCFunctionItemLibrary.chainmailBoots();
     }
 
-    export function itemRegistryIronBoots(): string {
+    export function itemRegistryIronBoots(): ItemValue {
         return MCFunctionItemLibrary.ironBoots();
     }
 
-    export function itemRegistryGoldenBoots(): string {
+    export function itemRegistryGoldenBoots(): ItemValue {
         return MCFunctionItemLibrary.goldenBoots();
     }
 
-    export function itemRegistryDiamondBoots(): string {
+    export function itemRegistryDiamondBoots(): ItemValue {
         return MCFunctionItemLibrary.diamondBoots();
     }
 
-    export function itemRegistryNetheriteBoots(): string {
+    export function itemRegistryNetheriteBoots(): ItemValue {
         return MCFunctionItemLibrary.netheriteBoots();
     }
 
-    export function itemRegistryWoodenSword(): string {
+    export function itemRegistryWoodenSword(): ItemValue {
         return MCFunctionItemLibrary.woodenSword();
     }
 
-    export function itemRegistryStoneSword(): string {
+    export function itemRegistryStoneSword(): ItemValue {
         return MCFunctionItemLibrary.stoneSword();
     }
 
-    export function itemRegistryCopperSword(): string {
+    export function itemRegistryCopperSword(): ItemValue {
         return MCFunctionItemLibrary.copperSword();
     }
 
-    export function itemRegistryIronSword(): string {
+    export function itemRegistryIronSword(): ItemValue {
         return MCFunctionItemLibrary.ironSword();
     }
 
-    export function itemRegistryGoldenSword(): string {
+    export function itemRegistryGoldenSword(): ItemValue {
         return MCFunctionItemLibrary.goldenSword();
     }
 
-    export function itemRegistryDiamondSword(): string {
+    export function itemRegistryDiamondSword(): ItemValue {
         return MCFunctionItemLibrary.diamondSword();
     }
 
-    export function itemRegistryNetheriteSword(): string {
+    export function itemRegistryNetheriteSword(): ItemValue {
         return MCFunctionItemLibrary.netheriteSword();
     }
 
-    export function itemRegistryWoodenSpear(): string {
+    export function itemRegistryWoodenSpear(): ItemValue {
         return MCFunctionItemLibrary.woodenSpear();
     }
 
-    export function itemRegistryStoneSpear(): string {
+    export function itemRegistryStoneSpear(): ItemValue {
         return MCFunctionItemLibrary.stoneSpear();
     }
 
-    export function itemRegistryCopperSpear(): string {
+    export function itemRegistryCopperSpear(): ItemValue {
         return MCFunctionItemLibrary.copperSpear();
     }
 
-    export function itemRegistryIronSpear(): string {
+    export function itemRegistryIronSpear(): ItemValue {
         return MCFunctionItemLibrary.ironSpear();
     }
 
-    export function itemRegistryGoldenSpear(): string {
+    export function itemRegistryGoldenSpear(): ItemValue {
         return MCFunctionItemLibrary.goldenSpear();
     }
 
-    export function itemRegistryDiamondSpear(): string {
+    export function itemRegistryDiamondSpear(): ItemValue {
         return MCFunctionItemLibrary.diamondSpear();
     }
 
-    export function itemRegistryNetheriteSpear(): string {
+    export function itemRegistryNetheriteSpear(): ItemValue {
         return MCFunctionItemLibrary.netheriteSpear();
     }
 
-    export function itemRegistryWoodenAxe(): string {
+    export function itemRegistryWoodenAxe(): ItemValue {
         return MCFunctionItemLibrary.woodenAxe();
     }
 
-    export function itemRegistryStoneAxe(): string {
+    export function itemRegistryStoneAxe(): ItemValue {
         return MCFunctionItemLibrary.stoneAxe();
     }
 
-    export function itemRegistryCopperAxe(): string {
+    export function itemRegistryCopperAxe(): ItemValue {
         return MCFunctionItemLibrary.copperAxe();
     }
 
-    export function itemRegistryIronAxe(): string {
+    export function itemRegistryIronAxe(): ItemValue {
         return MCFunctionItemLibrary.ironAxe();
     }
 
-    export function itemRegistryGoldenAxe(): string {
+    export function itemRegistryGoldenAxe(): ItemValue {
         return MCFunctionItemLibrary.goldenAxe();
     }
 
-    export function itemRegistryDiamondAxe(): string {
+    export function itemRegistryDiamondAxe(): ItemValue {
         return MCFunctionItemLibrary.diamondAxe();
     }
 
-    export function itemRegistryNetheriteAxe(): string {
+    export function itemRegistryNetheriteAxe(): ItemValue {
         return MCFunctionItemLibrary.netheriteAxe();
     }
 
-    export function itemRegistryWoodenPickaxe(): string {
+    export function itemRegistryWoodenPickaxe(): ItemValue {
         return MCFunctionItemLibrary.woodenPickaxe();
     }
 
-    export function itemRegistryStonePickaxe(): string {
+    export function itemRegistryStonePickaxe(): ItemValue {
         return MCFunctionItemLibrary.stonePickaxe();
     }
 
-    export function itemRegistryCopperPickaxe(): string {
+    export function itemRegistryCopperPickaxe(): ItemValue {
         return MCFunctionItemLibrary.copperPickaxe();
     }
 
-    export function itemRegistryIronPickaxe(): string {
+    export function itemRegistryIronPickaxe(): ItemValue {
         return MCFunctionItemLibrary.ironPickaxe();
     }
 
-    export function itemRegistryGoldenPickaxe(): string {
+    export function itemRegistryGoldenPickaxe(): ItemValue {
         return MCFunctionItemLibrary.goldenPickaxe();
     }
 
-    export function itemRegistryDiamondPickaxe(): string {
+    export function itemRegistryDiamondPickaxe(): ItemValue {
         return MCFunctionItemLibrary.diamondPickaxe();
     }
 
-    export function itemRegistryNetheritePickaxe(): string {
+    export function itemRegistryNetheritePickaxe(): ItemValue {
         return MCFunctionItemLibrary.netheritePickaxe();
     }
 
-    export function itemRegistryWoodenShovel(): string {
+    export function itemRegistryWoodenShovel(): ItemValue {
         return MCFunctionItemLibrary.woodenShovel();
     }
 
-    export function itemRegistryStoneShovel(): string {
+    export function itemRegistryStoneShovel(): ItemValue {
         return MCFunctionItemLibrary.stoneShovel();
     }
 
-    export function itemRegistryCopperShovel(): string {
+    export function itemRegistryCopperShovel(): ItemValue {
         return MCFunctionItemLibrary.copperShovel();
     }
 
-    export function itemRegistryIronShovel(): string {
+    export function itemRegistryIronShovel(): ItemValue {
         return MCFunctionItemLibrary.ironShovel();
     }
 
-    export function itemRegistryGoldenShovel(): string {
+    export function itemRegistryGoldenShovel(): ItemValue {
         return MCFunctionItemLibrary.goldenShovel();
     }
 
-    export function itemRegistryDiamondShovel(): string {
+    export function itemRegistryDiamondShovel(): ItemValue {
         return MCFunctionItemLibrary.diamondShovel();
     }
 
-    export function itemRegistryNetheriteShovel(): string {
+    export function itemRegistryNetheriteShovel(): ItemValue {
         return MCFunctionItemLibrary.netheriteShovel();
     }
 
-    export function itemRegistryWoodenHoe(): string {
+    export function itemRegistryWoodenHoe(): ItemValue {
         return MCFunctionItemLibrary.woodenHoe();
     }
 
-    export function itemRegistryStoneHoe(): string {
+    export function itemRegistryStoneHoe(): ItemValue {
         return MCFunctionItemLibrary.stoneHoe();
     }
 
-    export function itemRegistryCopperHoe(): string {
+    export function itemRegistryCopperHoe(): ItemValue {
         return MCFunctionItemLibrary.copperHoe();
     }
 
-    export function itemRegistryIronHoe(): string {
+    export function itemRegistryIronHoe(): ItemValue {
         return MCFunctionItemLibrary.ironHoe();
     }
 
-    export function itemRegistryGoldenHoe(): string {
+    export function itemRegistryGoldenHoe(): ItemValue {
         return MCFunctionItemLibrary.goldenHoe();
     }
 
-    export function itemRegistryDiamondHoe(): string {
+    export function itemRegistryDiamondHoe(): ItemValue {
         return MCFunctionItemLibrary.diamondHoe();
     }
 
-    export function itemRegistryNetheriteHoe(): string {
+    export function itemRegistryNetheriteHoe(): ItemValue {
         return MCFunctionItemLibrary.netheriteHoe();
     }
 
-    export function itemRegistryBow(): string {
+    export function itemRegistryBow(): ItemValue {
         return MCFunctionItemLibrary.bow();
     }
 
-    export function itemRegistryCrossbow(): string {
+    export function itemRegistryCrossbow(): ItemValue {
         return MCFunctionItemLibrary.crossbow();
     }
 
-    export function itemRegistryMace(): string {
+    export function itemRegistryMace(): ItemValue {
         return MCFunctionItemLibrary.mace();
     }
 
-    export function itemRegistryTrident(): string {
+    export function itemRegistryTrident(): ItemValue {
         return MCFunctionItemLibrary.trident();
     }
 
-    export function itemRegistryShield(): string {
+    export function itemRegistryShield(): ItemValue {
         return MCFunctionItemLibrary.shield();
     }
 
-    export function itemRegistryCookedChicken(): string {
+    export function itemRegistryCookedChicken(): ItemValue {
         return MCFunctionItemLibrary.cookedChicken();
     }
 
-    export function itemRegistryCookedPorkchop(): string {
+    export function itemRegistryCookedPorkchop(): ItemValue {
         return MCFunctionItemLibrary.cookedPorkchop();
     }
 
-    export function itemRegistryCookedBeef(): string {
+    export function itemRegistryCookedBeef(): ItemValue {
         return MCFunctionItemLibrary.cookedBeef();
     }
 
-    export function itemRegistryCookedMutton(): string {
+    export function itemRegistryCookedMutton(): ItemValue {
         return MCFunctionItemLibrary.cookedMutton();
     }
 
-    export function itemRegistryCookedRabbit(): string {
+    export function itemRegistryCookedRabbit(): ItemValue {
         return MCFunctionItemLibrary.cookedRabbit();
     }
 
-    export function itemRegistryCookedCod(): string {
+    export function itemRegistryCookedCod(): ItemValue {
         return MCFunctionItemLibrary.cookedCod();
     }
 
-    export function itemRegistryCookedSalmon(): string {
+    export function itemRegistryCookedSalmon(): ItemValue {
         return MCFunctionItemLibrary.cookedSalmon();
     }
 
-    export function itemRegistryBread(): string {
+    export function itemRegistryBread(): ItemValue {
         return MCFunctionItemLibrary.bread();
     }
 
-    export function itemRegistryMushroomStew(): string {
+    export function itemRegistryMushroomStew(): ItemValue {
         return MCFunctionItemLibrary.mushroomStew();
     }
 
-    export function itemRegistryBeetrootSoup(): string {
+    export function itemRegistryBeetrootSoup(): ItemValue {
         return MCFunctionItemLibrary.beetrootSoup();
     }
 
-    export function itemRegistryRabbitStew(): string {
+    export function itemRegistryRabbitStew(): ItemValue {
         return MCFunctionItemLibrary.rabbitStew();
     }
 
-    export function itemRegistrySuspiciousStew(): string {
+    export function itemRegistrySuspiciousStew(): ItemValue {
         return MCFunctionItemLibrary.suspiciousStew();
     }
 
-    export function itemRegistryBakedPotato(): string {
+    export function itemRegistryBakedPotato(): ItemValue {
         return MCFunctionItemLibrary.bakedPotato();
     }
 
-    export function itemRegistryCookie(): string {
+    export function itemRegistryCookie(): ItemValue {
         return MCFunctionItemLibrary.cookie();
     }
 
-    export function itemRegistryPumpkinPie(): string {
+    export function itemRegistryPumpkinPie(): ItemValue {
         return MCFunctionItemLibrary.pumpkinPie();
     }
 
-    export function itemRegistryDriedKelp(): string {
+    export function itemRegistryDriedKelp(): ItemValue {
         return MCFunctionItemLibrary.driedKelp();
     }
 
-    export function itemRegistryFishingRod(): string {
+    export function itemRegistryFishingRod(): ItemValue {
         return MCFunctionItemLibrary.fishingRod();
     }
 
-    export function itemRegistryCarrotOnAStick(): string {
+    export function itemRegistryCarrotOnAStick(): ItemValue {
         return MCFunctionItemLibrary.carrotOnAStick();
     }
 
-    export function itemRegistryWarpedFungusOnAStick(): string {
+    export function itemRegistryWarpedFungusOnAStick(): ItemValue {
         return MCFunctionItemLibrary.warpedFungusOnAStick();
     }
 
-    export function itemRegistryWindCharge(): string {
+    export function itemRegistryWindCharge(): ItemValue {
         return MCFunctionItemLibrary.windCharge();
     }
 
-    export function itemRegistryShears(): string {
+    export function itemRegistryShears(): ItemValue {
         return MCFunctionItemLibrary.shears();
     }
 
-    export function itemRegistryFlintAndSteel(): string {
+    export function itemRegistryFlintAndSteel(): ItemValue {
         return MCFunctionItemLibrary.flintAndSteel();
     }
 
-    export function itemRegistryLead(): string {
+    export function itemRegistryLead(): ItemValue {
         return MCFunctionItemLibrary.lead();
     }
 
-    export function itemRegistryClock(): string {
+    export function itemRegistryClock(): ItemValue {
         return MCFunctionItemLibrary.clock();
     }
 
-    export function itemRegistryCompass(): string {
+    export function itemRegistryCompass(): ItemValue {
         return MCFunctionItemLibrary.compass();
     }
 
-    export function itemRegistryRecoveryCompass(): string {
+    export function itemRegistryRecoveryCompass(): ItemValue {
         return MCFunctionItemLibrary.recoveryCompass();
     }
 
-    export function itemRegistryGoatHorn(): string {
+    export function itemRegistryGoatHorn(): ItemValue {
         return MCFunctionItemLibrary.goatHorn();
     }
 
-    export function itemRegistryEmptyMap(): string {
+    export function itemRegistryEmptyMap(): ItemValue {
         return MCFunctionItemLibrary.emptyMap();
     }
 
-    export function itemRegistrySaddle(): string {
+    export function itemRegistrySaddle(): ItemValue {
         return MCFunctionItemLibrary.saddle();
     }
 
-    export function itemRegistryWhiteHarness(): string {
+    export function itemRegistryWhiteHarness(): ItemValue {
         return MCFunctionItemLibrary.whiteHarness();
     }
 
-    export function itemRegistryLightGrayHarness(): string {
+    export function itemRegistryLightGrayHarness(): ItemValue {
         return MCFunctionItemLibrary.lightGrayHarness();
     }
 
-    export function itemRegistryGrayHarness(): string {
+    export function itemRegistryGrayHarness(): ItemValue {
         return MCFunctionItemLibrary.grayHarness();
     }
 
-    export function itemRegistryBlackHarness(): string {
+    export function itemRegistryBlackHarness(): ItemValue {
         return MCFunctionItemLibrary.blackHarness();
     }
 
-    export function itemRegistryBrownHarness(): string {
+    export function itemRegistryBrownHarness(): ItemValue {
         return MCFunctionItemLibrary.brownHarness();
     }
 
-    export function itemRegistryRedHarness(): string {
+    export function itemRegistryRedHarness(): ItemValue {
         return MCFunctionItemLibrary.redHarness();
     }
 
-    export function itemRegistryOrangeHarness(): string {
+    export function itemRegistryOrangeHarness(): ItemValue {
         return MCFunctionItemLibrary.orangeHarness();
     }
 
-    export function itemRegistryYellowHarness(): string {
+    export function itemRegistryYellowHarness(): ItemValue {
         return MCFunctionItemLibrary.yellowHarness();
     }
 
-    export function itemRegistryLimeHarness(): string {
+    export function itemRegistryLimeHarness(): ItemValue {
         return MCFunctionItemLibrary.limeHarness();
     }
 
-    export function itemRegistryGreenHarness(): string {
+    export function itemRegistryGreenHarness(): ItemValue {
         return MCFunctionItemLibrary.greenHarness();
     }
 
-    export function itemRegistryCyanHarness(): string {
+    export function itemRegistryCyanHarness(): ItemValue {
         return MCFunctionItemLibrary.cyanHarness();
     }
 
-    export function itemRegistryLightBlueHarness(): string {
+    export function itemRegistryLightBlueHarness(): ItemValue {
         return MCFunctionItemLibrary.lightBlueHarness();
     }
 
-    export function itemRegistryBlueHarness(): string {
+    export function itemRegistryBlueHarness(): ItemValue {
         return MCFunctionItemLibrary.blueHarness();
     }
 
-    export function itemRegistryPurpleHarness(): string {
+    export function itemRegistryPurpleHarness(): ItemValue {
         return MCFunctionItemLibrary.purpleHarness();
     }
 
-    export function itemRegistryMagentaHarness(): string {
+    export function itemRegistryMagentaHarness(): ItemValue {
         return MCFunctionItemLibrary.magentaHarness();
     }
 
-    export function itemRegistryPinkHarness(): string {
+    export function itemRegistryPinkHarness(): ItemValue {
         return MCFunctionItemLibrary.pinkHarness();
     }
 
-    export function itemRegistryBundle(): string {
+    export function itemRegistryBundle(): ItemValue {
         return MCFunctionItemLibrary.bundle();
     }
 
-    export function itemRegistryWhiteBundle(): string {
+    export function itemRegistryWhiteBundle(): ItemValue {
         return MCFunctionItemLibrary.whiteBundle();
     }
 
-    export function itemRegistryLightGrayBundle(): string {
+    export function itemRegistryLightGrayBundle(): ItemValue {
         return MCFunctionItemLibrary.lightGrayBundle();
     }
 
-    export function itemRegistryGrayBundle(): string {
+    export function itemRegistryGrayBundle(): ItemValue {
         return MCFunctionItemLibrary.grayBundle();
     }
 
-    export function itemRegistryBlackBundle(): string {
+    export function itemRegistryBlackBundle(): ItemValue {
         return MCFunctionItemLibrary.blackBundle();
     }
 
-    export function itemRegistryBrownBundle(): string {
+    export function itemRegistryBrownBundle(): ItemValue {
         return MCFunctionItemLibrary.brownBundle();
     }
 
-    export function itemRegistryRedBundle(): string {
+    export function itemRegistryRedBundle(): ItemValue {
         return MCFunctionItemLibrary.redBundle();
     }
 
-    export function itemRegistryOrangeBundle(): string {
+    export function itemRegistryOrangeBundle(): ItemValue {
         return MCFunctionItemLibrary.orangeBundle();
     }
 
-    export function itemRegistryYellowBundle(): string {
+    export function itemRegistryYellowBundle(): ItemValue {
         return MCFunctionItemLibrary.yellowBundle();
     }
 
-    export function itemRegistryLimeBundle(): string {
+    export function itemRegistryLimeBundle(): ItemValue {
         return MCFunctionItemLibrary.limeBundle();
     }
 
-    export function itemRegistryGreenBundle(): string {
+    export function itemRegistryGreenBundle(): ItemValue {
         return MCFunctionItemLibrary.greenBundle();
     }
 
-    export function itemRegistryCyanBundle(): string {
+    export function itemRegistryCyanBundle(): ItemValue {
         return MCFunctionItemLibrary.cyanBundle();
     }
 
-    export function itemRegistryLightBlueBundle(): string {
+    export function itemRegistryLightBlueBundle(): ItemValue {
         return MCFunctionItemLibrary.lightBlueBundle();
     }
 
-    export function itemRegistryBlueBundle(): string {
+    export function itemRegistryBlueBundle(): ItemValue {
         return MCFunctionItemLibrary.blueBundle();
     }
 
-    export function itemRegistryPurpleBundle(): string {
+    export function itemRegistryPurpleBundle(): ItemValue {
         return MCFunctionItemLibrary.purpleBundle();
     }
 
-    export function itemRegistryMagentaBundle(): string {
+    export function itemRegistryMagentaBundle(): ItemValue {
         return MCFunctionItemLibrary.magentaBundle();
     }
 
-    export function itemRegistryPinkBundle(): string {
+    export function itemRegistryPinkBundle(): ItemValue {
         return MCFunctionItemLibrary.pinkBundle();
     }
 
-    export function itemRegistryLeatherHorseArmor(): string {
+    export function itemRegistryLeatherHorseArmor(): ItemValue {
         return MCFunctionItemLibrary.leatherHorseArmor();
     }
 
-    export function itemRegistryCopperHorseArmor(): string {
+    export function itemRegistryCopperHorseArmor(): ItemValue {
         return MCFunctionItemLibrary.copperHorseArmor();
     }
 
-    export function itemRegistryIronHorseArmor(): string {
+    export function itemRegistryIronHorseArmor(): ItemValue {
         return MCFunctionItemLibrary.ironHorseArmor();
     }
 
-    export function itemRegistryGoldenHorseArmor(): string {
+    export function itemRegistryGoldenHorseArmor(): ItemValue {
         return MCFunctionItemLibrary.goldenHorseArmor();
     }
 
-    export function itemRegistryDiamondHorseArmor(): string {
+    export function itemRegistryDiamondHorseArmor(): ItemValue {
         return MCFunctionItemLibrary.diamondHorseArmor();
     }
 
-    export function itemRegistryNetheriteHorseArmor(): string {
+    export function itemRegistryNetheriteHorseArmor(): ItemValue {
         return MCFunctionItemLibrary.netheriteHorseArmor();
     }
 
-    export function itemRegistryWolfArmor(): string {
+    export function itemRegistryWolfArmor(): ItemValue {
         return MCFunctionItemLibrary.wolfArmor();
     }
 
-    export function itemRegistryCopperNautilusArmor(): string {
+    export function itemRegistryCopperNautilusArmor(): ItemValue {
         return MCFunctionItemLibrary.copperNautilusArmor();
     }
 
-    export function itemRegistryIronNautilusArmor(): string {
+    export function itemRegistryIronNautilusArmor(): ItemValue {
         return MCFunctionItemLibrary.ironNautilusArmor();
     }
 
-    export function itemRegistryGoldenNautilusArmor(): string {
+    export function itemRegistryGoldenNautilusArmor(): ItemValue {
         return MCFunctionItemLibrary.goldenNautilusArmor();
     }
 
-    export function itemRegistryDiamondNautilusArmor(): string {
+    export function itemRegistryDiamondNautilusArmor(): ItemValue {
         return MCFunctionItemLibrary.diamondNautilusArmor();
     }
 
-    export function itemRegistryNetheriteNautilusArmor(): string {
+    export function itemRegistryNetheriteNautilusArmor(): ItemValue {
         return MCFunctionItemLibrary.netheriteNautilusArmor();
     }
 
-    export function itemRegistryTurtleHelmet(): string {
+    export function itemRegistryTurtleHelmet(): ItemValue {
         return MCFunctionItemLibrary.turtleHelmet();
     }
 
-    export function itemRegistryElytra(): string {
+    export function itemRegistryElytra(): ItemValue {
         return MCFunctionItemLibrary.elytra();
     }
 
-    export function itemRegistryTotemOfUndying(): string {
+    export function itemRegistryTotemOfUndying(): ItemValue {
         return MCFunctionItemLibrary.totemOfUndying();
     }
 
-    export function itemRegistryGlassBottle(): string {
+    export function itemRegistryGlassBottle(): ItemValue {
         return MCFunctionItemLibrary.glassBottle();
     }
 
-    export function itemRegistryExperienceBottle(): string {
+    export function itemRegistryExperienceBottle(): ItemValue {
         return MCFunctionItemLibrary.experienceBottle();
     }
 
-    export function itemRegistryPotion(): string {
+    export function itemRegistryPotion(): ItemValue {
         return MCFunctionItemLibrary.potion();
     }
 
-    export function itemRegistryOminousBottle(): string {
+    export function itemRegistryOminousBottle(): ItemValue {
         return MCFunctionItemLibrary.ominousBottle();
     }
 
-    export function itemRegistrySpyglass(): string {
+    export function itemRegistrySpyglass(): ItemValue {
         return MCFunctionItemLibrary.spyglass();
     }
 
-    export function itemRegistryBrush(): string {
+    export function itemRegistryBrush(): ItemValue {
         return MCFunctionItemLibrary.brush();
     }
 
-    export function itemRegistryStick(): string {
+    export function itemRegistryStick(): ItemValue {
         return MCFunctionItemLibrary.stick();
     }
 
-    export function itemRegistryMusicDisc13(): string {
+    export function itemRegistryMusicDisc13(): ItemValue {
         return MCFunctionItemLibrary.musicDisc13();
     }
 
-    export function itemRegistryMusicDiscCat(): string {
+    export function itemRegistryMusicDiscCat(): ItemValue {
         return MCFunctionItemLibrary.musicDiscCat();
     }
 
-    export function itemRegistryMusicDiscBlocks(): string {
+    export function itemRegistryMusicDiscBlocks(): ItemValue {
         return MCFunctionItemLibrary.musicDiscBlocks();
     }
 
-    export function itemRegistryMusicDiscChirp(): string {
+    export function itemRegistryMusicDiscChirp(): ItemValue {
         return MCFunctionItemLibrary.musicDiscChirp();
     }
 
-    export function itemRegistryMusicDiscFar(): string {
+    export function itemRegistryMusicDiscFar(): ItemValue {
         return MCFunctionItemLibrary.musicDiscFar();
     }
 
-    export function itemRegistryMusicDiscMall(): string {
+    export function itemRegistryMusicDiscMall(): ItemValue {
         return MCFunctionItemLibrary.musicDiscMall();
     }
 
-    export function itemRegistryMusicDiscMellohi(): string {
+    export function itemRegistryMusicDiscMellohi(): ItemValue {
         return MCFunctionItemLibrary.musicDiscMellohi();
     }
 
-    export function itemRegistryMusicDiscStal(): string {
+    export function itemRegistryMusicDiscStal(): ItemValue {
         return MCFunctionItemLibrary.musicDiscStal();
     }
 
-    export function itemRegistryMusicDiscStrad(): string {
+    export function itemRegistryMusicDiscStrad(): ItemValue {
         return MCFunctionItemLibrary.musicDiscStrad();
     }
 
-    export function itemRegistryMusicDiscWard(): string {
+    export function itemRegistryMusicDiscWard(): ItemValue {
         return MCFunctionItemLibrary.musicDiscWard();
     }
 
-    export function itemRegistryMusicDisc11(): string {
+    export function itemRegistryMusicDisc11(): ItemValue {
         return MCFunctionItemLibrary.musicDisc11();
     }
 
-    export function itemRegistryMusicDiscWait(): string {
+    export function itemRegistryMusicDiscWait(): ItemValue {
         return MCFunctionItemLibrary.musicDiscWait();
     }
 
-    export function itemRegistryMusicDiscOtherside(): string {
+    export function itemRegistryMusicDiscOtherside(): ItemValue {
         return MCFunctionItemLibrary.musicDiscOtherside();
     }
 
-    export function itemRegistryMusicDisc5(): string {
+    export function itemRegistryMusicDisc5(): ItemValue {
         return MCFunctionItemLibrary.musicDisc5();
     }
 
-    export function itemRegistryMusicDiscPigstep(): string {
+    export function itemRegistryMusicDiscPigstep(): ItemValue {
         return MCFunctionItemLibrary.musicDiscPigstep();
     }
 
-    export function itemRegistryMusicDiscRelic(): string {
+    export function itemRegistryMusicDiscRelic(): ItemValue {
         return MCFunctionItemLibrary.musicDiscRelic();
     }
 
-    export function itemRegistryMusicDiscCreator(): string {
+    export function itemRegistryMusicDiscCreator(): ItemValue {
         return MCFunctionItemLibrary.musicDiscCreator();
     }
 
-    export function itemRegistryMusicDiscCreatorMusicBox(): string {
+    export function itemRegistryMusicDiscCreatorMusicBox(): ItemValue {
         return MCFunctionItemLibrary.musicDiscCreatorMusicBox();
     }
 
-    export function itemRegistryMusicDiscPrecipice(): string {
+    export function itemRegistryMusicDiscPrecipice(): ItemValue {
         return MCFunctionItemLibrary.musicDiscPrecipice();
     }
 
-    export function itemRegistryMusicDiscTears(): string {
+    export function itemRegistryMusicDiscTears(): ItemValue {
         return MCFunctionItemLibrary.musicDiscTears();
     }
 
-    export function itemRegistryMusicDiscLavaChicken(): string {
+    export function itemRegistryMusicDiscLavaChicken(): ItemValue {
         return MCFunctionItemLibrary.musicDiscLavaChicken();
     }
 
-    export function itemRegistryMusicDiscBounce(): string {
+    export function itemRegistryMusicDiscBounce(): ItemValue {
         return MCFunctionItemLibrary.musicDiscBounce();
     }
 
-    export function itemRegistryDiscFragment5(): string {
+    export function itemRegistryDiscFragment5(): ItemValue {
         return MCFunctionItemLibrary.discFragment5();
     }
 
-    export function itemRegistryGlowstoneDust(): string {
+    export function itemRegistryGlowstoneDust(): ItemValue {
         return MCFunctionItemLibrary.glowstoneDust();
     }
 
-    export function itemRegistryOakSign(): string {
+    export function itemRegistryOakSign(): ItemValue {
         return MCFunctionItemLibrary.oakSign();
     }
 
-    export function itemRegistrySpruceSign(): string {
+    export function itemRegistrySpruceSign(): ItemValue {
         return MCFunctionItemLibrary.spruceSign();
     }
 
-    export function itemRegistryBirchSign(): string {
+    export function itemRegistryBirchSign(): ItemValue {
         return MCFunctionItemLibrary.birchSign();
     }
 
-    export function itemRegistryJungleSign(): string {
+    export function itemRegistryJungleSign(): ItemValue {
         return MCFunctionItemLibrary.jungleSign();
     }
 
-    export function itemRegistryAcaciaSign(): string {
+    export function itemRegistryAcaciaSign(): ItemValue {
         return MCFunctionItemLibrary.acaciaSign();
     }
 
-    export function itemRegistryDarkOakSign(): string {
+    export function itemRegistryDarkOakSign(): ItemValue {
         return MCFunctionItemLibrary.darkOakSign();
     }
 
-    export function itemRegistryMangroveSign(): string {
+    export function itemRegistryMangroveSign(): ItemValue {
         return MCFunctionItemLibrary.mangroveSign();
     }
 
-    export function itemRegistryCherrySign(): string {
+    export function itemRegistryCherrySign(): ItemValue {
         return MCFunctionItemLibrary.cherrySign();
     }
 
-    export function itemRegistryPaleOakSign(): string {
+    export function itemRegistryPaleOakSign(): ItemValue {
         return MCFunctionItemLibrary.paleOakSign();
     }
 
-    export function itemRegistryBambooSign(): string {
+    export function itemRegistryBambooSign(): ItemValue {
         return MCFunctionItemLibrary.bambooSign();
     }
 
-    export function itemRegistryCrimsonSign(): string {
+    export function itemRegistryCrimsonSign(): ItemValue {
         return MCFunctionItemLibrary.crimsonSign();
     }
 
-    export function itemRegistryWarpedSign(): string {
+    export function itemRegistryWarpedSign(): ItemValue {
         return MCFunctionItemLibrary.warpedSign();
     }
 
-    export function itemRegistryHoneyBottle(): string {
+    export function itemRegistryHoneyBottle(): ItemValue {
         return MCFunctionItemLibrary.honeyBottle();
     }
 
-    export function itemRegistryBowl(): string {
+    export function itemRegistryBowl(): ItemValue {
         return MCFunctionItemLibrary.bowl();
     }
 
-    export function itemRegistryBucket(): string {
+    export function itemRegistryBucket(): ItemValue {
         return MCFunctionItemLibrary.bucket();
     }
 
-    export function itemRegistryMilkBucket(): string {
+    export function itemRegistryMilkBucket(): ItemValue {
         return MCFunctionItemLibrary.milkBucket();
     }
 
-    export function itemRegistryWaterBucket(): string {
+    export function itemRegistryWaterBucket(): ItemValue {
         return MCFunctionItemLibrary.waterBucket();
     }
 
-    export function itemRegistryLavaBucket(): string {
+    export function itemRegistryLavaBucket(): ItemValue {
         return MCFunctionItemLibrary.lavaBucket();
     }
 
-    export function itemRegistryCodBucket(): string {
+    export function itemRegistryCodBucket(): ItemValue {
         return MCFunctionItemLibrary.codBucket();
     }
 
-    export function itemRegistrySalmonBucket(): string {
+    export function itemRegistrySalmonBucket(): ItemValue {
         return MCFunctionItemLibrary.salmonBucket();
     }
 
-    export function itemRegistryTropicalFishBucket(): string {
+    export function itemRegistryTropicalFishBucket(): ItemValue {
         return MCFunctionItemLibrary.tropicalFishBucket();
     }
 
-    export function itemRegistryPufferfishBucket(): string {
+    export function itemRegistryPufferfishBucket(): ItemValue {
         return MCFunctionItemLibrary.pufferfishBucket();
     }
 
-    export function itemRegistryPowderSnowBucket(): string {
+    export function itemRegistryPowderSnowBucket(): ItemValue {
         return MCFunctionItemLibrary.powderSnowBucket();
     }
 
-    export function itemRegistryAxolotlBucket(): string {
+    export function itemRegistryAxolotlBucket(): ItemValue {
         return MCFunctionItemLibrary.axolotlBucket();
     }
 
-    export function itemRegistryTadpoleBucket(): string {
+    export function itemRegistryTadpoleBucket(): ItemValue {
         return MCFunctionItemLibrary.tadpoleBucket();
     }
 
-    export function itemRegistrySulfurCubeBucket(): string {
+    export function itemRegistrySulfurCubeBucket(): ItemValue {
         return MCFunctionItemLibrary.sulfurCubeBucket();
     }
 
-    export function itemRegistryCoal(): string {
+    export function itemRegistryCoal(): ItemValue {
         return MCFunctionItemLibrary.coal();
     }
 
-    export function itemRegistryCharcoal(): string {
+    export function itemRegistryCharcoal(): ItemValue {
         return MCFunctionItemLibrary.charcoal();
     }
 
-    export function itemRegistryDiamond(): string {
+    export function itemRegistryDiamond(): ItemValue {
         return MCFunctionItemLibrary.diamond();
     }
 
-    export function itemRegistryIronNugget(): string {
+    export function itemRegistryIronNugget(): ItemValue {
         return MCFunctionItemLibrary.ironNugget();
     }
 
-    export function itemRegistryRawIron(): string {
+    export function itemRegistryRawIron(): ItemValue {
         return MCFunctionItemLibrary.rawIron();
     }
 
-    export function itemRegistryRawGold(): string {
+    export function itemRegistryRawGold(): ItemValue {
         return MCFunctionItemLibrary.rawGold();
     }
 
-    export function itemRegistryCopperNugget(): string {
+    export function itemRegistryCopperNugget(): ItemValue {
         return MCFunctionItemLibrary.copperNugget();
     }
 
-    export function itemRegistryRawCopper(): string {
+    export function itemRegistryRawCopper(): ItemValue {
         return MCFunctionItemLibrary.rawCopper();
     }
 
-    export function itemRegistryCopperIngot(): string {
+    export function itemRegistryCopperIngot(): ItemValue {
         return MCFunctionItemLibrary.copperIngot();
     }
 
-    export function itemRegistryIronIngot(): string {
+    export function itemRegistryIronIngot(): ItemValue {
         return MCFunctionItemLibrary.ironIngot();
     }
 
-    export function itemRegistryNetheriteScrap(): string {
+    export function itemRegistryNetheriteScrap(): ItemValue {
         return MCFunctionItemLibrary.netheriteScrap();
     }
 
-    export function itemRegistryNetheriteIngot(): string {
+    export function itemRegistryNetheriteIngot(): ItemValue {
         return MCFunctionItemLibrary.netheriteIngot();
     }
 
-    export function itemRegistryGoldNugget(): string {
+    export function itemRegistryGoldNugget(): ItemValue {
         return MCFunctionItemLibrary.goldNugget();
     }
 
-    export function itemRegistryGoldIngot(): string {
+    export function itemRegistryGoldIngot(): ItemValue {
         return MCFunctionItemLibrary.goldIngot();
     }
 
-    export function itemRegistryEmerald(): string {
+    export function itemRegistryEmerald(): ItemValue {
         return MCFunctionItemLibrary.emerald();
     }
 
-    export function itemRegistryQuartz(): string {
+    export function itemRegistryQuartz(): ItemValue {
         return MCFunctionItemLibrary.quartz();
     }
 
-    export function itemRegistryClayBall(): string {
+    export function itemRegistryClayBall(): ItemValue {
         return MCFunctionItemLibrary.clayBall();
     }
 
-    export function itemRegistryBrick(): string {
+    export function itemRegistryBrick(): ItemValue {
         return MCFunctionItemLibrary.brick();
     }
 
-    export function itemRegistryNetherbrick(): string {
+    export function itemRegistryNetherbrick(): ItemValue {
         return MCFunctionItemLibrary.netherbrick();
     }
 
-    export function itemRegistryResinBrick(): string {
+    export function itemRegistryResinBrick(): ItemValue {
         return MCFunctionItemLibrary.resinBrick();
     }
 
-    export function itemRegistryPrismarineShard(): string {
+    export function itemRegistryPrismarineShard(): ItemValue {
         return MCFunctionItemLibrary.prismarineShard();
     }
 
-    export function itemRegistryAmethystShard(): string {
+    export function itemRegistryAmethystShard(): ItemValue {
         return MCFunctionItemLibrary.amethystShard();
     }
 
-    export function itemRegistryPrismarineCrystals(): string {
+    export function itemRegistryPrismarineCrystals(): ItemValue {
         return MCFunctionItemLibrary.prismarineCrystals();
     }
 
-    export function itemRegistryNautilusShell(): string {
+    export function itemRegistryNautilusShell(): ItemValue {
         return MCFunctionItemLibrary.nautilusShell();
     }
 
-    export function itemRegistryHeartOfTheSea(): string {
+    export function itemRegistryHeartOfTheSea(): ItemValue {
         return MCFunctionItemLibrary.heartOfTheSea();
     }
 
-    export function itemRegistryTurtleScute(): string {
+    export function itemRegistryTurtleScute(): ItemValue {
         return MCFunctionItemLibrary.turtleScute();
     }
 
-    export function itemRegistryArmadilloScute(): string {
+    export function itemRegistryArmadilloScute(): ItemValue {
         return MCFunctionItemLibrary.armadilloScute();
     }
 
-    export function itemRegistryPhantomMembrane(): string {
+    export function itemRegistryPhantomMembrane(): ItemValue {
         return MCFunctionItemLibrary.phantomMembrane();
     }
 
-    export function itemRegistryString(): string {
+    export function itemRegistryString(): ItemValue {
         return MCFunctionItemLibrary.string();
     }
 
-    export function itemRegistryFeather(): string {
+    export function itemRegistryFeather(): ItemValue {
         return MCFunctionItemLibrary.feather();
     }
 
-    export function itemRegistryFlint(): string {
+    export function itemRegistryFlint(): ItemValue {
         return MCFunctionItemLibrary.flint();
     }
 
-    export function itemRegistryGunpowder(): string {
+    export function itemRegistryGunpowder(): ItemValue {
         return MCFunctionItemLibrary.gunpowder();
     }
 
-    export function itemRegistryLeather(): string {
+    export function itemRegistryLeather(): ItemValue {
         return MCFunctionItemLibrary.leather();
     }
 
-    export function itemRegistryRabbitHide(): string {
+    export function itemRegistryRabbitHide(): ItemValue {
         return MCFunctionItemLibrary.rabbitHide();
     }
 
-    export function itemRegistryRabbitFoot(): string {
+    export function itemRegistryRabbitFoot(): ItemValue {
         return MCFunctionItemLibrary.rabbitFoot();
     }
 
-    export function itemRegistryFireCharge(): string {
+    export function itemRegistryFireCharge(): ItemValue {
         return MCFunctionItemLibrary.fireCharge();
     }
 
-    export function itemRegistryBlazeRod(): string {
+    export function itemRegistryBlazeRod(): ItemValue {
         return MCFunctionItemLibrary.blazeRod();
     }
 
-    export function itemRegistryBreezeRod(): string {
+    export function itemRegistryBreezeRod(): ItemValue {
         return MCFunctionItemLibrary.breezeRod();
     }
 
-    export function itemRegistryBlazePowder(): string {
+    export function itemRegistryBlazePowder(): ItemValue {
         return MCFunctionItemLibrary.blazePowder();
     }
 
-    export function itemRegistryMagmaCream(): string {
+    export function itemRegistryMagmaCream(): ItemValue {
         return MCFunctionItemLibrary.magmaCream();
     }
 
-    export function itemRegistryFermentedSpiderEye(): string {
+    export function itemRegistryFermentedSpiderEye(): ItemValue {
         return MCFunctionItemLibrary.fermentedSpiderEye();
     }
 
-    export function itemRegistryEchoShard(): string {
+    export function itemRegistryEchoShard(): ItemValue {
         return MCFunctionItemLibrary.echoShard();
     }
 
-    export function itemRegistryDragonBreath(): string {
+    export function itemRegistryDragonBreath(): ItemValue {
         return MCFunctionItemLibrary.dragonBreath();
     }
 
-    export function itemRegistryShulkerShell(): string {
+    export function itemRegistryShulkerShell(): ItemValue {
         return MCFunctionItemLibrary.shulkerShell();
     }
 
-    export function itemRegistryGhastTear(): string {
+    export function itemRegistryGhastTear(): ItemValue {
         return MCFunctionItemLibrary.ghastTear();
     }
 
-    export function itemRegistrySlimeBall(): string {
+    export function itemRegistrySlimeBall(): ItemValue {
         return MCFunctionItemLibrary.slimeBall();
     }
 
-    export function itemRegistryEnderEye(): string {
+    export function itemRegistryEnderEye(): ItemValue {
         return MCFunctionItemLibrary.enderEye();
     }
 
-    export function itemRegistryNetherStar(): string {
+    export function itemRegistryNetherStar(): ItemValue {
         return MCFunctionItemLibrary.netherStar();
     }
 
-    export function itemRegistryEndCrystal(): string {
+    export function itemRegistryEndCrystal(): ItemValue {
         return MCFunctionItemLibrary.endCrystal();
     }
 
-    export function itemRegistryPaper(): string {
+    export function itemRegistryPaper(): ItemValue {
         return MCFunctionItemLibrary.paper();
     }
 
-    export function itemRegistryBook(): string {
+    export function itemRegistryBook(): ItemValue {
         return MCFunctionItemLibrary.book();
     }
 
-    export function itemRegistryWritableBook(): string {
+    export function itemRegistryWritableBook(): ItemValue {
         return MCFunctionItemLibrary.writableBook();
     }
 
-    export function itemRegistryEnchantedBook(): string {
+    export function itemRegistryEnchantedBook(): ItemValue {
         return MCFunctionItemLibrary.enchantedBook();
     }
 
-    export function itemRegistryOakBoat(): string {
+    export function itemRegistryOakBoat(): ItemValue {
         return MCFunctionItemLibrary.oakBoat();
     }
 
-    export function itemRegistrySpruceBoat(): string {
+    export function itemRegistrySpruceBoat(): ItemValue {
         return MCFunctionItemLibrary.spruceBoat();
     }
 
-    export function itemRegistryBirchBoat(): string {
+    export function itemRegistryBirchBoat(): ItemValue {
         return MCFunctionItemLibrary.birchBoat();
     }
 
-    export function itemRegistryJungleBoat(): string {
+    export function itemRegistryJungleBoat(): ItemValue {
         return MCFunctionItemLibrary.jungleBoat();
     }
 
-    export function itemRegistryAcaciaBoat(): string {
+    export function itemRegistryAcaciaBoat(): ItemValue {
         return MCFunctionItemLibrary.acaciaBoat();
     }
 
-    export function itemRegistryDarkOakBoat(): string {
+    export function itemRegistryDarkOakBoat(): ItemValue {
         return MCFunctionItemLibrary.darkOakBoat();
     }
 
-    export function itemRegistryMangroveBoat(): string {
+    export function itemRegistryMangroveBoat(): ItemValue {
         return MCFunctionItemLibrary.mangroveBoat();
     }
 
-    export function itemRegistryCherryBoat(): string {
+    export function itemRegistryCherryBoat(): ItemValue {
         return MCFunctionItemLibrary.cherryBoat();
     }
 
-    export function itemRegistryPaleOakBoat(): string {
+    export function itemRegistryPaleOakBoat(): ItemValue {
         return MCFunctionItemLibrary.paleOakBoat();
     }
 
-    export function itemRegistryBambooRaft(): string {
+    export function itemRegistryBambooRaft(): ItemValue {
         return MCFunctionItemLibrary.bambooRaft();
     }
 
-    export function itemRegistryOakChestBoat(): string {
+    export function itemRegistryOakChestBoat(): ItemValue {
         return MCFunctionItemLibrary.oakChestBoat();
     }
 
-    export function itemRegistrySpruceChestBoat(): string {
+    export function itemRegistrySpruceChestBoat(): ItemValue {
         return MCFunctionItemLibrary.spruceChestBoat();
     }
 
-    export function itemRegistryBirchChestBoat(): string {
+    export function itemRegistryBirchChestBoat(): ItemValue {
         return MCFunctionItemLibrary.birchChestBoat();
     }
 
-    export function itemRegistryJungleChestBoat(): string {
+    export function itemRegistryJungleChestBoat(): ItemValue {
         return MCFunctionItemLibrary.jungleChestBoat();
     }
 
-    export function itemRegistryAcaciaChestBoat(): string {
+    export function itemRegistryAcaciaChestBoat(): ItemValue {
         return MCFunctionItemLibrary.acaciaChestBoat();
     }
 
-    export function itemRegistryDarkOakChestBoat(): string {
+    export function itemRegistryDarkOakChestBoat(): ItemValue {
         return MCFunctionItemLibrary.darkOakChestBoat();
     }
 
-    export function itemRegistryMangroveChestBoat(): string {
+    export function itemRegistryMangroveChestBoat(): ItemValue {
         return MCFunctionItemLibrary.mangroveChestBoat();
     }
 
-    export function itemRegistryCherryChestBoat(): string {
+    export function itemRegistryCherryChestBoat(): ItemValue {
         return MCFunctionItemLibrary.cherryChestBoat();
     }
 
-    export function itemRegistryPaleOakChestBoat(): string {
+    export function itemRegistryPaleOakChestBoat(): ItemValue {
         return MCFunctionItemLibrary.paleOakChestBoat();
     }
 
-    export function itemRegistryBambooChestRaft(): string {
+    export function itemRegistryBambooChestRaft(): ItemValue {
         return MCFunctionItemLibrary.bambooChestRaft();
     }
 
-    export function itemRegistryRedstone(): string {
+    export function itemRegistryRedstone(): ItemValue {
         return MCFunctionItemLibrary.redstone();
     }
 
-    export function itemRegistryRepeater(): string {
+    export function itemRegistryRepeater(): ItemValue {
         return MCFunctionItemLibrary.repeater();
     }
 
-    export function itemRegistryComparator(): string {
+    export function itemRegistryComparator(): ItemValue {
         return MCFunctionItemLibrary.comparator();
     }
 
-    export function itemRegistryNameTag(): string {
+    export function itemRegistryNameTag(): ItemValue {
         return MCFunctionItemLibrary.nameTag();
     }
 
-    export function itemRegistryBanner(): string {
+    export function itemRegistryBanner(): ItemValue {
         return MCFunctionItemLibrary.banner();
     }
 
-    export function itemRegistryCreeperBannerPattern(): string {
+    export function itemRegistryCreeperBannerPattern(): ItemValue {
         return MCFunctionItemLibrary.creeperBannerPattern();
     }
 
-    export function itemRegistrySkullBannerPattern(): string {
+    export function itemRegistrySkullBannerPattern(): ItemValue {
         return MCFunctionItemLibrary.skullBannerPattern();
     }
 
-    export function itemRegistryFlowerBannerPattern(): string {
+    export function itemRegistryFlowerBannerPattern(): ItemValue {
         return MCFunctionItemLibrary.flowerBannerPattern();
     }
 
-    export function itemRegistryMojangBannerPattern(): string {
+    export function itemRegistryMojangBannerPattern(): ItemValue {
         return MCFunctionItemLibrary.mojangBannerPattern();
     }
 
-    export function itemRegistryFieldMasonedBannerPattern(): string {
+    export function itemRegistryFieldMasonedBannerPattern(): ItemValue {
         return MCFunctionItemLibrary.fieldMasonedBannerPattern();
     }
 
-    export function itemRegistryBordureIndentedBannerPattern(): string {
+    export function itemRegistryBordureIndentedBannerPattern(): ItemValue {
         return MCFunctionItemLibrary.bordureIndentedBannerPattern();
     }
 
-    export function itemRegistryPiglinBannerPattern(): string {
+    export function itemRegistryPiglinBannerPattern(): ItemValue {
         return MCFunctionItemLibrary.piglinBannerPattern();
     }
 
-    export function itemRegistryGlobeBannerPattern(): string {
+    export function itemRegistryGlobeBannerPattern(): ItemValue {
         return MCFunctionItemLibrary.globeBannerPattern();
     }
 
-    export function itemRegistryFlowBannerPattern(): string {
+    export function itemRegistryFlowBannerPattern(): ItemValue {
         return MCFunctionItemLibrary.flowBannerPattern();
     }
 
-    export function itemRegistryGusterBannerPattern(): string {
+    export function itemRegistryGusterBannerPattern(): ItemValue {
         return MCFunctionItemLibrary.gusterBannerPattern();
     }
 
-    export function itemRegistryAnglerPotterySherd(): string {
+    export function itemRegistryAnglerPotterySherd(): ItemValue {
         return MCFunctionItemLibrary.anglerPotterySherd();
     }
 
-    export function itemRegistryArcherPotterySherd(): string {
+    export function itemRegistryArcherPotterySherd(): ItemValue {
         return MCFunctionItemLibrary.archerPotterySherd();
     }
 
-    export function itemRegistryArmsUpPotterySherd(): string {
+    export function itemRegistryArmsUpPotterySherd(): ItemValue {
         return MCFunctionItemLibrary.armsUpPotterySherd();
     }
 
-    export function itemRegistryBladePotterySherd(): string {
+    export function itemRegistryBladePotterySherd(): ItemValue {
         return MCFunctionItemLibrary.bladePotterySherd();
     }
 
-    export function itemRegistryBrewerPotterySherd(): string {
+    export function itemRegistryBrewerPotterySherd(): ItemValue {
         return MCFunctionItemLibrary.brewerPotterySherd();
     }
 
-    export function itemRegistryBurnPotterySherd(): string {
+    export function itemRegistryBurnPotterySherd(): ItemValue {
         return MCFunctionItemLibrary.burnPotterySherd();
     }
 
-    export function itemRegistryDangerPotterySherd(): string {
+    export function itemRegistryDangerPotterySherd(): ItemValue {
         return MCFunctionItemLibrary.dangerPotterySherd();
     }
 
-    export function itemRegistryExplorerPotterySherd(): string {
+    export function itemRegistryExplorerPotterySherd(): ItemValue {
         return MCFunctionItemLibrary.explorerPotterySherd();
     }
 
-    export function itemRegistryFlowPotterySherd(): string {
+    export function itemRegistryFlowPotterySherd(): ItemValue {
         return MCFunctionItemLibrary.flowPotterySherd();
     }
 
-    export function itemRegistryFriendPotterySherd(): string {
+    export function itemRegistryFriendPotterySherd(): ItemValue {
         return MCFunctionItemLibrary.friendPotterySherd();
     }
 
-    export function itemRegistryGusterPotterySherd(): string {
+    export function itemRegistryGusterPotterySherd(): ItemValue {
         return MCFunctionItemLibrary.gusterPotterySherd();
     }
 
-    export function itemRegistryHeartPotterySherd(): string {
+    export function itemRegistryHeartPotterySherd(): ItemValue {
         return MCFunctionItemLibrary.heartPotterySherd();
     }
 
-    export function itemRegistryHeartbreakPotterySherd(): string {
+    export function itemRegistryHeartbreakPotterySherd(): ItemValue {
         return MCFunctionItemLibrary.heartbreakPotterySherd();
     }
 
-    export function itemRegistryHowlPotterySherd(): string {
+    export function itemRegistryHowlPotterySherd(): ItemValue {
         return MCFunctionItemLibrary.howlPotterySherd();
     }
 
-    export function itemRegistryMinerPotterySherd(): string {
+    export function itemRegistryMinerPotterySherd(): ItemValue {
         return MCFunctionItemLibrary.minerPotterySherd();
     }
 
-    export function itemRegistryMournerPotterySherd(): string {
+    export function itemRegistryMournerPotterySherd(): ItemValue {
         return MCFunctionItemLibrary.mournerPotterySherd();
     }
 
-    export function itemRegistryPlentyPotterySherd(): string {
+    export function itemRegistryPlentyPotterySherd(): ItemValue {
         return MCFunctionItemLibrary.plentyPotterySherd();
     }
 
-    export function itemRegistryPrizePotterySherd(): string {
+    export function itemRegistryPrizePotterySherd(): ItemValue {
         return MCFunctionItemLibrary.prizePotterySherd();
     }
 
-    export function itemRegistryScrapePotterySherd(): string {
+    export function itemRegistryScrapePotterySherd(): ItemValue {
         return MCFunctionItemLibrary.scrapePotterySherd();
     }
 
-    export function itemRegistrySheafPotterySherd(): string {
+    export function itemRegistrySheafPotterySherd(): ItemValue {
         return MCFunctionItemLibrary.sheafPotterySherd();
     }
 
-    export function itemRegistryShelterPotterySherd(): string {
+    export function itemRegistryShelterPotterySherd(): ItemValue {
         return MCFunctionItemLibrary.shelterPotterySherd();
     }
 
-    export function itemRegistrySkullPotterySherd(): string {
+    export function itemRegistrySkullPotterySherd(): ItemValue {
         return MCFunctionItemLibrary.skullPotterySherd();
     }
 
-    export function itemRegistrySnortPotterySherd(): string {
+    export function itemRegistrySnortPotterySherd(): ItemValue {
         return MCFunctionItemLibrary.snortPotterySherd();
     }
 
-    export function itemRegistryNetheriteUpgradeSmithingTemplate(): string {
+    export function itemRegistryNetheriteUpgradeSmithingTemplate(): ItemValue {
         return MCFunctionItemLibrary.netheriteUpgradeSmithingTemplate();
     }
 
-    export function itemRegistrySentryArmorTrimSmithingTemplate(): string {
+    export function itemRegistrySentryArmorTrimSmithingTemplate(): ItemValue {
         return MCFunctionItemLibrary.sentryArmorTrimSmithingTemplate();
     }
 
-    export function itemRegistryVexArmorTrimSmithingTemplate(): string {
+    export function itemRegistryVexArmorTrimSmithingTemplate(): ItemValue {
         return MCFunctionItemLibrary.vexArmorTrimSmithingTemplate();
     }
 
-    export function itemRegistryWildArmorTrimSmithingTemplate(): string {
+    export function itemRegistryWildArmorTrimSmithingTemplate(): ItemValue {
         return MCFunctionItemLibrary.wildArmorTrimSmithingTemplate();
     }
 
-    export function itemRegistryCoastArmorTrimSmithingTemplate(): string {
+    export function itemRegistryCoastArmorTrimSmithingTemplate(): ItemValue {
         return MCFunctionItemLibrary.coastArmorTrimSmithingTemplate();
     }
 
-    export function itemRegistryDuneArmorTrimSmithingTemplate(): string {
+    export function itemRegistryDuneArmorTrimSmithingTemplate(): ItemValue {
         return MCFunctionItemLibrary.duneArmorTrimSmithingTemplate();
     }
 
-    export function itemRegistryWayfinderArmorTrimSmithingTemplate(): string {
+    export function itemRegistryWayfinderArmorTrimSmithingTemplate(): ItemValue {
         return MCFunctionItemLibrary.wayfinderArmorTrimSmithingTemplate();
     }
 
-    export function itemRegistryShaperArmorTrimSmithingTemplate(): string {
+    export function itemRegistryShaperArmorTrimSmithingTemplate(): ItemValue {
         return MCFunctionItemLibrary.shaperArmorTrimSmithingTemplate();
     }
 
-    export function itemRegistryRaiserArmorTrimSmithingTemplate(): string {
+    export function itemRegistryRaiserArmorTrimSmithingTemplate(): ItemValue {
         return MCFunctionItemLibrary.raiserArmorTrimSmithingTemplate();
     }
 
-    export function itemRegistryHostArmorTrimSmithingTemplate(): string {
+    export function itemRegistryHostArmorTrimSmithingTemplate(): ItemValue {
         return MCFunctionItemLibrary.hostArmorTrimSmithingTemplate();
     }
 
-    export function itemRegistryWardArmorTrimSmithingTemplate(): string {
+    export function itemRegistryWardArmorTrimSmithingTemplate(): ItemValue {
         return MCFunctionItemLibrary.wardArmorTrimSmithingTemplate();
     }
 
-    export function itemRegistrySilenceArmorTrimSmithingTemplate(): string {
+    export function itemRegistrySilenceArmorTrimSmithingTemplate(): ItemValue {
         return MCFunctionItemLibrary.silenceArmorTrimSmithingTemplate();
     }
 
-    export function itemRegistryTideArmorTrimSmithingTemplate(): string {
+    export function itemRegistryTideArmorTrimSmithingTemplate(): ItemValue {
         return MCFunctionItemLibrary.tideArmorTrimSmithingTemplate();
     }
 
-    export function itemRegistrySnoutArmorTrimSmithingTemplate(): string {
+    export function itemRegistrySnoutArmorTrimSmithingTemplate(): ItemValue {
         return MCFunctionItemLibrary.snoutArmorTrimSmithingTemplate();
     }
 
-    export function itemRegistryRibArmorTrimSmithingTemplate(): string {
+    export function itemRegistryRibArmorTrimSmithingTemplate(): ItemValue {
         return MCFunctionItemLibrary.ribArmorTrimSmithingTemplate();
     }
 
-    export function itemRegistryEyeArmorTrimSmithingTemplate(): string {
+    export function itemRegistryEyeArmorTrimSmithingTemplate(): ItemValue {
         return MCFunctionItemLibrary.eyeArmorTrimSmithingTemplate();
     }
 
-    export function itemRegistrySpireArmorTrimSmithingTemplate(): string {
+    export function itemRegistrySpireArmorTrimSmithingTemplate(): ItemValue {
         return MCFunctionItemLibrary.spireArmorTrimSmithingTemplate();
     }
 
-    export function itemRegistryFlowArmorTrimSmithingTemplate(): string {
+    export function itemRegistryFlowArmorTrimSmithingTemplate(): ItemValue {
         return MCFunctionItemLibrary.flowArmorTrimSmithingTemplate();
     }
 
-    export function itemRegistryBoltArmorTrimSmithingTemplate(): string {
+    export function itemRegistryBoltArmorTrimSmithingTemplate(): ItemValue {
         return MCFunctionItemLibrary.boltArmorTrimSmithingTemplate();
     }
 
-    export function itemRegistryFireworkRocket(): string {
+    export function itemRegistryFireworkRocket(): ItemValue {
         return MCFunctionItemLibrary.fireworkRocket();
     }
 
-    export function itemRegistryFireworkStar(): string {
+    export function itemRegistryFireworkStar(): ItemValue {
         return MCFunctionItemLibrary.fireworkStar();
     }
 
-    export function itemRegistryTrialKey(): string {
+    export function itemRegistryTrialKey(): ItemValue {
         return MCFunctionItemLibrary.trialKey();
     }
 
-    export function itemRegistryOminousTrialKey(): string {
+    export function itemRegistryOminousTrialKey(): ItemValue {
         return MCFunctionItemLibrary.ominousTrialKey();
     }
 
-    export function itemRegistryFilledMap(): string {
+    export function itemRegistryFilledMap(): ItemValue {
         return MCFunctionItemLibrary.filledMap();
     }
 
-    export function itemRegistryColoredTorchRg(): string {
+    export function itemRegistryColoredTorchRg(): ItemValue {
         return MCFunctionItemLibrary.coloredTorchRg();
     }
 
-    export function itemRegistryEnderDragonSpawnEgg(): string {
+    export function itemRegistryEnderDragonSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.enderDragonSpawnEgg();
     }
 
-    export function itemRegistryWitherSpawnEgg(): string {
+    export function itemRegistryWitherSpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.witherSpawnEgg();
     }
 
-    export function itemRegistryColoredTorchBp(): string {
+    export function itemRegistryColoredTorchBp(): ItemValue {
         return MCFunctionItemLibrary.coloredTorchBp();
     }
 
-    export function itemRegistryLodestoneCompass(): string {
+    export function itemRegistryLodestoneCompass(): ItemValue {
         return MCFunctionItemLibrary.lodestoneCompass();
     }
 
-    export function itemRegistryChemistryTable(): string {
+    export function itemRegistryChemistryTable(): ItemValue {
         return MCFunctionItemLibrary.chemistryTable();
     }
 
-    export function itemRegistryDye(): string {
+    export function itemRegistryDye(): ItemValue {
         return MCFunctionItemLibrary.dye();
     }
 
-    export function itemRegistryBannerPattern(): string {
+    export function itemRegistryBannerPattern(): ItemValue {
         return MCFunctionItemLibrary.bannerPattern();
     }
 
-    export function itemRegistrySpawnEgg(): string {
+    export function itemRegistrySpawnEgg(): ItemValue {
         return MCFunctionItemLibrary.spawnEgg();
     }
 

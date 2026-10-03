@@ -417,68 +417,6 @@ function New-RegistryLibraryBlocksTs {
     return ($lines -join "`n")
 }
 
-function New-RegistryStringLibraryBlocksTs {
-    param(
-        [object[]]$Entries,
-        [string]$KindLower,
-        [string]$NamespaceName,
-        [string]$LegacyPrefix
-    )
-
-    $lines = New-Object System.Collections.Generic.List[string]
-
-    $lines.Add("/**")
-    $lines.Add(" * AUTO-GENERATED FILE. DO NOT EDIT BY HAND.")
-    $lines.Add(" *")
-    $lines.Add(" * Source: registry/source/bedrock/${KindLower}s.json")
-    $lines.Add(" * Generator: tools/generate_registry.ps1")
-    $lines.Add(" *")
-    $lines.Add(" * MakeCode-facing registry values are primitive string IDs.")
-    $lines.Add(" * Core adapters convert the string into strong AST value types internally.")
-    $lines.Add(" */")
-    $lines.Add("")
-    $lines.Add("namespace $NamespaceName {")
-    $lines.Add("")
-
-    for ($i = 0; $i -lt $Entries.Count; $i++) {
-        $entry = $Entries[$i]
-        $id = Escape-TsString ([string]$entry.id)
-        $functionName = Convert-ToCamelFunctionName $entry
-        $blockIdPart = Convert-ToSafeBlockIdPart ([string]$entry.id)
-        $weight = [Math]::Max(1, 200 - $i)
-
-        $lines.Add("    //% group=`"Registry`"")
-        $lines.Add("    //% weight=$weight")
-        $lines.Add("    //% blockId=mcfunction_${KindLower}_registry_$blockIdPart")
-        $lines.Add("    //% block=`"$KindLower $id`"")
-        $lines.Add("    export function $functionName(): string {")
-        $lines.Add("        return `"$id`";")
-        $lines.Add("    }")
-        $lines.Add("")
-    }
-
-    $lines.Add("}")
-    $lines.Add("")
-    $lines.Add("/** Legacy JS API aliases. No Toolbox blocks here. */")
-    $lines.Add("namespace MCFunctionFields {")
-    $lines.Add("")
-
-    foreach ($entry in $Entries) {
-        $functionName = Convert-ToCamelFunctionName $entry
-        $pascal = Convert-ToEnumName $entry
-
-        $lines.Add("    export function $LegacyPrefix$pascal(): string {")
-        $lines.Add("        return $NamespaceName.$functionName();")
-        $lines.Add("    }")
-        $lines.Add("")
-    }
-
-    $lines.Add("}")
-    $lines.Add("")
-
-    return ($lines -join "`n")
-}
-
 function Write-Or-Check {
     param(
         [string]$RelativePath,
@@ -561,7 +499,7 @@ Write-Or-Check `
 
 Write-Or-Check `
     "src/libraries/item_library.generated.ts" `
-    (New-RegistryStringLibraryBlocksTs $items "item" "MCFunctionItemLibrary" "itemRegistry")
+    (New-RegistryLibraryBlocksTs $items "item" "MCFunctionItemLibrary" "ItemValue" "itemRegistry")
 
 Write-Or-Check `
     "src/libraries/block_library.generated.ts" `

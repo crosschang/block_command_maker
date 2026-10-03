@@ -41,24 +41,18 @@ namespace MCFunctionCommand {
     //% block="give|target $target|item $item|amount $amount"
     //% inlineInputMode=external
     //% target.shadow="mcfunction_selector_self"
-    //% item.shadow="mcfunction_item_id_text_shadow"
+    //% item.shadow="mcfunction_item_select"
     //% amount.defl=1
     export function give(
         target: MCFunctionFields.SelectorValue,
-        item: string,
+        item: MCFunctionFields.ItemValue,
         amount: number
     ): void {
-
-        // MakeCode UI uses a primitive string; Core keeps the strong ItemValue boundary.
-        // This local adapter value is internal to the extension and never appears
-        // as a user-visible MakeCode variable.
-        let itemValue =
-            MCFunctionFields.item(item);
 
         let command =
             MCFunctionBlocks.createGiveCommand(
                 target.selector,
-                itemValue.itemId,
+                item.itemId,
                 amount,
                 0
             );
@@ -72,25 +66,22 @@ namespace MCFunctionCommand {
     //% block="give advanced|target $target|item $item|amount $amount|data $data|components $components"
     //% inlineInputMode=external
     //% target.shadow="mcfunction_selector_self"
-    //% item.shadow="mcfunction_item_id_text_shadow"
+    //% item.shadow="mcfunction_item_select"
     //% amount.defl=1
     //% data.defl=0
     //% components.shadow="mcfunction_item_components"
     export function giveAdvanced(
         target: MCFunctionFields.SelectorValue,
-        item: string,
+        item: MCFunctionFields.ItemValue,
         amount: number,
         data: number,
         components: MCFunctionFields.ItemComponentsValue
     ): void {
 
-        let itemValue =
-            MCFunctionFields.item(item);
-
         let command =
             MCFunctionBlocks.createGiveCommandWithComponents(
                 target.selector,
-                itemValue.itemId,
+                item.itemId,
                 amount,
                 data,
                 components.components

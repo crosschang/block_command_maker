@@ -1,9 +1,8 @@
 /**
- * Item ID / component library
+ * Item value library
  *
- * MakeCode-facing Item IDs are primitive strings.
- * The Block Adapter converts the string into the Core ItemValue / AST internally.
- * This keeps direct input, Quick Preset, and Full Registry values on one PXT-safe type.
+ * Visible MakeCode item/component blocks live here.
+ * Core value types stay in MCFunctionFields.
  */
 
 //% color="#C98900" weight=88 icon="\uf06b" block="MCFunction Item"
@@ -16,9 +15,9 @@ namespace MCFunctionItemLibrary {
     //% block="item select $preset"
     export function select(
         preset: MCFunctionFields.ItemPreset
-    ): string {
+    ): MCFunctionFields.ItemValue {
 
-        return MCFunctionPresetIds.item(preset);
+        return MCFunctionFields.itemSelect(preset);
     }
 
     //% group="Selection & Input"
@@ -28,25 +27,9 @@ namespace MCFunctionItemLibrary {
     //% itemId.defl="minecraft:stone"
     export function custom(
         itemId: string
-    ): string {
+    ): MCFunctionFields.ItemValue {
 
-        return itemId;
-    }
-
-    /**
-     * Hidden direct-text shadow for command/selector Item ID inputs.
-     * The shadow keeps direct typing available, while Registry string reporters
-     * can replace it in the same value socket.
-     */
-    //% blockId=mcfunction_item_id_text_shadow
-    //% block="$itemId"
-    //% blockHidden=true
-    //% itemId.defl="minecraft:stone"
-    export function itemIdTextShadow(
-        itemId: string
-    ): string {
-
-        return itemId;
+        return MCFunctionFields.item(itemId);
     }
 
     //% group="Item Components"

@@ -1064,11 +1064,11 @@ namespace MCFunctionFields {
     //% blockId=mcfunction_selector_hasitem_filter
     //% block="has item $item|quantity $quantity|next $next"
     //% inlineInputMode=external
-    //% item.shadow="mcfunction_item_id_text_shadow"
+    //% item.shadow="mcfunction_item_select"
     //% quantity.shadow="mcfunction_range_min"
     //% next.shadow="mcfunction_selector_no_condition"
     export function addHasItemFilter(
-        item: string,
+        item: ItemValue,
         quantity: RangeValue,
         next: SelectorConditionValue
     ): SelectorConditionValue {
@@ -1078,11 +1078,9 @@ namespace MCFunctionFields {
 
         condition.next = next;
 
-        let itemValue = MCFunctionFields.item(item);
-
         condition.hasItems.push(
             MCFunctionAST.createSelectorHasItemCondition(
-                itemValue.itemId,
+                item.itemId,
                 quantity.range
             )
         );
@@ -1094,13 +1092,13 @@ namespace MCFunctionFields {
     //% blockId=mcfunction_selector_hasitem_advanced
     //% block="has item details $item|quantity $quantity|location $location|slot $slot|data $data|next $next"
     //% inlineInputMode=external
-    //% item.shadow="mcfunction_item_id_text_shadow"
+    //% item.shadow="mcfunction_item_select"
     //% quantity.shadow="mcfunction_range_min"
     //% slot.defl=0
     //% data.defl=0
     //% next.shadow="mcfunction_selector_no_condition"
     export function addHasItemAdvancedFilter(
-        item: string,
+        item: ItemValue,
         quantity: RangeValue,
         location: HasItemLocation,
         slot: number,
@@ -1114,12 +1112,9 @@ namespace MCFunctionFields {
                 slot
             );
 
-        let itemValue =
-            MCFunctionFields.item(item);
-
         let hasItem =
             MCFunctionAST.createSelectorHasItemAdvancedCondition(
-                itemValue.itemId,
+                item.itemId,
                 quantity.range,
 
                 true,

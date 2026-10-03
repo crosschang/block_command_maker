@@ -334,14 +334,6 @@ Position, Rotation, Facing을 하나의 거대한 블록으로 합치지 않고 
 
 ## 11. Item System
 
-### MakeCode UI / Core 경계
-
-- MakeCode UI 경계에서는 Item ID를 primitive `string`으로 전달한다.
-- 직접 입력, Quick Preset, Full Registry reporter는 모두 동일한 Item ID string을 사용한다.
-- 명령/Selector Adapter 내부에서만 string을 `ItemValue` / Item AST로 변환한다.
-- 이 내부 변환용 로컬 값은 사용자 MakeCode 변수로 노출하지 않는다.
-- AST / Compiler의 Item 의미 구조는 변경하지 않는다.
-
 기본 구조:
 
 ```text

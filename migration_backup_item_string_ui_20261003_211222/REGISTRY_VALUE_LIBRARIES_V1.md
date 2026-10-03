@@ -24,7 +24,7 @@ Registry Value Libraries V1
 
 Core 타입은 이동하지 않음
 - MCFunctionFields.EntityValue
-- Item ID string (MakeCode UI) → MCFunctionFields.ItemValue / Item AST (Adapter 내부)
+- MCFunctionFields.ItemValue
 - MCFunctionFields.BlockValue
 
 즉 UI Library만 분리하고 AST / Compiler / 공통 Value 계약은 그대로 유지.
@@ -57,18 +57,3 @@ Core 타입은 이동하지 않음
   - src/libraries/item_library.generated.ts
   - src/libraries/block_library.generated.ts
 - Registry JSON 수정 후 기존과 동일하게 generator 실행하면 Library 검색 블록도 함께 갱신됨.
-
-
-## Item Library 문자열 전환
-
-Item은 MakeCode UI 경계에서 primitive `string` ID를 사용한다.
-
-```text
-직접 입력 / Quick Preset / Full Registry reporter
-→ `minecraft:...` string
-→ 명령/Selector Adapter 내부의 숨은 로컬 변환
-→ `MCFunctionFields.ItemValue` / Item AST
-→ Compiler
-```
-
-사용자 MakeCode 변수는 자동 생성하지 않는다. Full Registry reporter의 blockId는 유지한다.

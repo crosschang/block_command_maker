@@ -1,10 +1,6 @@
 {
     "name": "block_command_maker",
-<<<<<<< Updated upstream
-    "version": "0.2.7",
-=======
-    "version": "0.2.0",
->>>>>>> Stashed changes
+    "version": "0.2.6",
     "description": "Visual block editor for Minecraft Bedrock and Minecraft Education mcfunction commands",
     "dependencies": {
         "core": "*",
@@ -43,6 +39,7 @@
         "src/libraries/entity_library.generated.ts",
         "src/libraries/item_library.ts",
         "src/libraries/item_library.generated.ts",
+        "src/libraries/item_string_id_poc.ts",
         "src/libraries/block_library.ts",
         "src/libraries/block_library.generated.ts",
         "src/fields/selector_field.ts",
@@ -57,6 +54,7 @@
         "commands/teleport.ts",
         "src/blocks/block_adapter.ts",
         "src/blocks/command_blocks.ts",
+        "src/blocks/item_string_id_poc.ts",
         "src/blocks/teleport_blocks.ts",
         "docs/PROJECT_GUIDELINES.md",
         "docs/COMMAND_TOOLBOX_SMOKE_TEST.md",
