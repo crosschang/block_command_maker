@@ -231,6 +231,38 @@ function New-PresetEnum {
     return ($lines -join "`n")
 }
 
+function New-PresetIdFunction {
+    param(
+        [object[]]$Entries,
+        [string]$EnumName,
+        [string]$FunctionName,
+        [string]$FallbackId
+    )
+
+    $lines = New-Object System.Collections.Generic.List[string]
+
+    $lines.Add("    export function $FunctionName(")
+    $lines.Add("        preset: $EnumName")
+    $lines.Add("    ): string {")
+    $lines.Add("")
+    $lines.Add("        switch (preset) {")
+
+    foreach ($entry in $Entries) {
+        $enumName = Convert-ToEnumName $entry
+        $id = Escape-TsString ([string]$entry.id)
+        $lines.Add("            case ${EnumName}.${enumName}:")
+        $lines.Add("                return `"$id`";")
+    }
+
+    $fallback = Escape-TsString $FallbackId
+    $lines.Add("            default:")
+    $lines.Add("                return `"$fallback`";")
+    $lines.Add("        }")
+    $lines.Add("    }")
+
+    return ($lines -join "`n")
+}
+
 function New-PresetTs {
     param(
         [object[]]$Items,
@@ -241,6 +273,10 @@ function New-PresetTs {
     $itemEnum = New-PresetEnum $Items "ItemPreset"
     $blockEnum = New-PresetEnum $Blocks "BlockPreset"
     $entityEnum = New-PresetEnum $Entities "EntityPreset"
+
+    $itemIdFunction = New-PresetIdFunction $Items "ItemPreset" "itemPresetId" "minecraft:stone"
+    $blockIdFunction = New-PresetIdFunction $Blocks "BlockPreset" "blockPresetId" "minecraft:stone"
+    $entityIdFunction = New-PresetIdFunction $Entities "EntityPreset" "entityPresetId" "minecraft:zombie"
 
     return @"
 /**
@@ -263,9 +299,15 @@ namespace MCFunctionFields {
 
 $itemEnum
 
+$itemIdFunction
+
 $blockEnum
 
+$blockIdFunction
+
 $entityEnum
+
+$entityIdFunction
 }
 "@
 }

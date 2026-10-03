@@ -18,23 +18,17 @@ namespace MCFunctionFields {
         }
     }
 
+    /**
+     * Quick Preset enum -> Minecraft ID
+     *
+     * BlockPreset 값은 Full Registry 배열의 index가 아니다.
+     * registry/source/presets.json에서 생성된 전용 매핑을 사용한다.
+     */
     function blockPresetToken(
         preset: BlockPreset
     ): string {
 
-        let ids =
-            MCFunctionRegistryBedrock.blockIds();
-
-        let index = preset;
-
-        if (
-            index >= 0 &&
-            index < ids.length
-        ) {
-            return ids[index];
-        }
-
-        return "minecraft:stone";
+        return blockPresetId(preset);
     }
 
     export function blockSelect(

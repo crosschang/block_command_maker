@@ -20,28 +20,16 @@ namespace MCFunctionFields {
     }
 
     /**
-     * Preset enum -> Registry ID
+     * Quick Preset enum -> Minecraft ID
      *
-     * switch에 Minecraft ID를 중복 저장하지 않는다.
-     * Registry 배열이 실제 ID Source of Truth다.
+     * ItemPreset 값은 Full Registry 배열의 index가 아니다.
+     * registry/source/presets.json에서 생성된 전용 매핑을 사용한다.
      */
     function itemPresetToken(
         preset: ItemPreset
     ): string {
 
-        let ids =
-            MCFunctionRegistryBedrock.itemIds();
-
-        let index = preset;
-
-        if (
-            index >= 0 &&
-            index < ids.length
-        ) {
-            return ids[index];
-        }
-
-        return "minecraft:stone";
+        return itemPresetId(preset);
     }
 
     export function itemSelect(
