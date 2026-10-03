@@ -1,6 +1,4 @@
 {
-  "MCFunctionTeleport|block": "MCFunction 순간이동",
-  "{id:category}MCFunction TP": "MCFunction 순간이동",
   "MCFunctionPositionFields|block": "MCFunction 좌표",
   "{id:category}MCFunction Position": "MCFunction 좌표",
   "MCFunctionRotationFields|block": "MCFunction 회전",
@@ -10,11 +8,6 @@
   "{id:group}entity search": "엔티티 검색",
   "{id:group}items": "아이템",
   "{id:group}item details": "아이템 상세",
-  "MCFunctionTeleport.toPosition|block": "순간이동 대상 %target|→ 위치 %destination|블록 충돌 확인 %checkForBlocks",
-  "MCFunctionTeleport.toEntity|block": "순간이동 대상 %target|→ 대상 %destination|블록 충돌 확인 %checkForBlocks",
-  "MCFunctionTeleport.withRotation|block": "순간이동 대상 %target|→ 위치 %destination|회전 %rotation|블록 충돌 확인 %checkForBlocks",
-  "MCFunctionTeleport.facingPosition|block": "순간이동 대상 %target|→ 위치 %destination|바라볼 위치 %facingPosition|블록 충돌 확인 %checkForBlocks",
-  "MCFunctionTeleport.facingEntity|block": "순간이동 대상 %target|→ 위치 %destination|바라볼 대상 %facingEntity|블록 충돌 확인 %checkForBlocks",
   "MCFunctionPositionFields.absolute|block": "절대 좌표 X %x|Y %y|Z %z",
   "MCFunctionPositionFields.relative|block": "상대 좌표 X ~%x|Y ~%y|Z ~%z",
   "MCFunctionPositionFields.local|block": "로컬 좌표 X ^%x|Y ^%y|Z ^%z",
@@ -3182,5 +3175,16 @@
   "MCFunctionEntityLibrary.zombieNautilus|block": "엔티티 minecraft:zombie_nautilus",
   "MCFunctionEntityLibrary.zombiePigman|block": "엔티티 minecraft:zombie_pigman",
   "MCFunctionEntityLibrary.zombieVillager|block": "엔티티 minecraft:zombie_villager",
-  "MCFunctionEntityLibrary.zombieVillagerV2|block": "엔티티 minecraft:zombie_villager_v2"
+  "MCFunctionEntityLibrary.zombieVillagerV2|block": "엔티티 minecraft:zombie_villager_v2",
+  "MCFunctionCommand|block": "MCFunction 명령어",
+  "{id:category}MCFunction Command": "MCFunction 명령어",
+  "{id:group}Give": "아이템 지급",
+  "{id:group}Teleport": "순간이동",
+  "MCFunctionCommand.give|block": "아이템 지급 대상 %target|아이템 %item|개수 %amount",
+  "MCFunctionCommand.giveAdvanced|block": "아이템 지급 상세 대상 %target|아이템 %item|개수 %amount|데이터 %data|컴포넌트 %components",
+  "MCFunctionCommand.teleportToPosition|block": "순간이동 대상 %target|→ 위치 %destination|블록 충돌 확인 %checkForBlocks",
+  "MCFunctionCommand.teleportToEntity|block": "순간이동 대상 %target|→ 대상 %destination|블록 충돌 확인 %checkForBlocks",
+  "MCFunctionCommand.teleportWithRotation|block": "순간이동 대상 %target|→ 위치 %destination|회전 %rotation|블록 충돌 확인 %checkForBlocks",
+  "MCFunctionCommand.teleportFacingPosition|block": "순간이동 대상 %target|→ 위치 %destination|바라볼 위치 %facingPosition|블록 충돌 확인 %checkForBlocks",
+  "MCFunctionCommand.teleportFacingEntity|block": "순간이동 대상 %target|→ 위치 %destination|바라볼 대상 %facingEntity|블록 충돌 확인 %checkForBlocks"
 }

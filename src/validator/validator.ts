@@ -237,4 +237,248 @@ namespace MCFunctionValidator {
 
         return issues;
     }
+
+
+    function appendIssues(
+        target: ValidationIssue[],
+        source: ValidationIssue[]
+    ): void {
+
+        for (let i = 0; i < source.length; i++) {
+            target.push(source[i]);
+        }
+    }
+
+    function isIntegerValue(value: number): boolean {
+        return Math.floor(value) == value;
+    }
+
+    /**
+     * Command token으로 안전하게 직렬화할 수 있는 ID인지 확인한다.
+     *
+     * Custom Namespace는 허용하므로 Registry 존재 여부와 문법 안전성은
+     * 서로 다른 단계로 검증한다.
+     */
+    function isSafeIdToken(value: string): boolean {
+
+        if (!value || value.length == 0) {
+            return false;
+        }
+
+        for (let i = 0; i < value.length; i++) {
+            let ch = value.charAt(i);
+
+            if (
+                ch == " " ||
+                ch == "\t" ||
+                ch == "\r" ||
+                ch == "\n" ||
+                ch == "\"" ||
+                ch == "\\" ||
+                ch == "{" ||
+                ch == "}" ||
+                ch == "[" ||
+                ch == "]"
+            ) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    function containsString(
+        values: string[],
+        value: string,
+        endExclusive: number
+    ): boolean {
+
+        for (let i = 0; i < endExclusive; i++) {
+            if (values[i] == value) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    export function validateItemStack(
+        item: MCFunctionAST.ItemStack
+    ): ValidationIssue[] {
+
+        let issues: ValidationIssue[] = [];
+
+        if (!isSafeIdToken(item.id)) {
+            addIssue(
+                issues,
+                ValidationLevel.Error,
+                "ITEM_ID_INVALID",
+                "아이템 ID가 비어 있거나 명령에 사용할 수 없는 문자를 포함합니다."
+            );
+        } else if (!MCFunctionRegistryBedrock.isKnownItem(item.id)) {
+            addIssue(
+                issues,
+                ValidationLevel.Warning,
+                "ITEM_ID_CUSTOM",
+                "Registry에 없는 아이템 ID입니다. Custom Namespace 또는 버전 차이인지 확인하세요: " + item.id
+            );
+        }
+
+        if (!isIntegerValue(item.amount)) {
+            addIssue(
+                issues,
+                ValidationLevel.Error,
+                "ITEM_AMOUNT_NOT_INTEGER",
+                "아이템 개수는 정수여야 합니다."
+            );
+        } else if (item.amount <= 0) {
+            addIssue(
+                issues,
+                ValidationLevel.Error,
+                "ITEM_AMOUNT_NON_POSITIVE",
+                "아이템 개수는 1 이상이어야 합니다."
+            );
+        }
+
+        if (!isIntegerValue(item.data)) {
+            addIssue(
+                issues,
+                ValidationLevel.Error,
+                "ITEM_DATA_NOT_INTEGER",
+                "아이템 data 값은 정수여야 합니다."
+            );
+        }
+
+        for (let i = 0; i < item.components.canDestroy.length; i++) {
+            let blockId = item.components.canDestroy[i];
+
+            if (!isSafeIdToken(blockId)) {
+                addIssue(
+                    issues,
+                    ValidationLevel.Error,
+                    "ITEM_CAN_DESTROY_ID_INVALID",
+                    "can_destroy 블록 ID가 올바르지 않습니다: " + blockId
+                );
+            } else if (!MCFunctionRegistryBedrock.isKnownBlock(blockId)) {
+                addIssue(
+                    issues,
+                    ValidationLevel.Warning,
+                    "ITEM_CAN_DESTROY_CUSTOM_BLOCK",
+                    "Registry에 없는 can_destroy 블록 ID입니다: " + blockId
+                );
+            }
+
+            if (containsString(item.components.canDestroy, blockId, i)) {
+                addIssue(
+                    issues,
+                    ValidationLevel.Warning,
+                    "ITEM_CAN_DESTROY_DUPLICATE",
+                    "can_destroy에 같은 블록이 중복되어 있습니다: " + blockId
+                );
+            }
+        }
+
+        for (let i = 0; i < item.components.canPlaceOn.length; i++) {
+            let blockId = item.components.canPlaceOn[i];
+
+            if (!isSafeIdToken(blockId)) {
+                addIssue(
+                    issues,
+                    ValidationLevel.Error,
+                    "ITEM_CAN_PLACE_ON_ID_INVALID",
+                    "can_place_on 블록 ID가 올바르지 않습니다: " + blockId
+                );
+            } else if (!MCFunctionRegistryBedrock.isKnownBlock(blockId)) {
+                addIssue(
+                    issues,
+                    ValidationLevel.Warning,
+                    "ITEM_CAN_PLACE_ON_CUSTOM_BLOCK",
+                    "Registry에 없는 can_place_on 블록 ID입니다: " + blockId
+                );
+            }
+
+            if (containsString(item.components.canPlaceOn, blockId, i)) {
+                addIssue(
+                    issues,
+                    ValidationLevel.Warning,
+                    "ITEM_CAN_PLACE_ON_DUPLICATE",
+                    "can_place_on에 같은 블록이 중복되어 있습니다: " + blockId
+                );
+            }
+        }
+
+        if (
+            item.components.itemLock != MCFunctionAST.ItemLockMode.None &&
+            item.components.itemLock != MCFunctionAST.ItemLockMode.LockInInventory &&
+            item.components.itemLock != MCFunctionAST.ItemLockMode.LockInSlot
+        ) {
+            addIssue(
+                issues,
+                ValidationLevel.Error,
+                "ITEM_LOCK_MODE_INVALID",
+                "지원하지 않는 item_lock 모드입니다."
+            );
+        }
+
+        return issues;
+    }
+
+    export function validateGiveCommand(
+        command: MCFunctionAST.GiveCommand
+    ): ValidationIssue[] {
+
+        let issues: ValidationIssue[] = [];
+
+        appendIssues(
+            issues,
+            validateSelector(command.target)
+        );
+
+        appendIssues(
+            issues,
+            validateItemStack(command.item)
+        );
+
+        return issues;
+    }
+
+    export function validateCommand(
+        command: MCFunctionAST.CommandNode
+    ): ValidationIssue[] {
+
+        if (command.kind == MCFunctionAST.CommandKind.Give) {
+            return validateGiveCommand(
+                <MCFunctionAST.GiveCommand>command
+            );
+        }
+
+        return [];
+    }
+
+    export function hasErrors(
+        issues: ValidationIssue[]
+    ): boolean {
+
+        for (let i = 0; i < issues.length; i++) {
+            if (issues[i].level == ValidationLevel.Error) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    export function firstErrorMessage(
+        issues: ValidationIssue[]
+    ): string {
+
+        for (let i = 0; i < issues.length; i++) {
+            if (issues[i].level == ValidationLevel.Error) {
+                return issues[i].message;
+            }
+        }
+
+        return "알 수 없는 검증 오류";
+    }
+
 }

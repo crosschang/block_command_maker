@@ -76,6 +76,13 @@ block_command_maker/
 - `main.ts`는 MakeCode에 노출되는 블록 API와 Adapter 역할을 중심으로 유지하고, Parser/Compiler의 실제 로직을 한 파일에 몰아넣지 않는다.
 - `main.blocks`는 MakeCode가 관리하는 워크스페이스 표현이므로 Core Engine의 저장 포맷으로 사용하지 않는다.
 
+### MakeCode Toolbox 명령 카테고리 원칙
+
+- 실제 Minecraft 명령을 실행/생성하는 블록(`give`, `tp`, 향후 `say`, `summon`, `setblock`, `execute` 등)은 **`MCFunction Command` 하나의 카테고리**에 모은다.
+- 명령별로 최상위 Toolbox 카테고리를 계속 늘리지 않고, `Give`, `Teleport`, `Execute` 같은 **group**으로 구분한다.
+- Selector / Position / Rotation / Item / Block / Entity / Registry Library처럼 여러 명령에서 재사용하는 입력·값 블록은 각각의 공통 카테고리를 유지한다.
+- Toolbox 구성 변경 때문에 AST / Parser / Compiler / Registry 계층을 변경하지 않는다.
+
 초기에는 별도 패키지로 분리하지 않고 **하나의 MakeCode Extension 저장소 안에서 계층을 분리**해 개발한다.
 
 ---

@@ -116,6 +116,7 @@ namespace MCFunctionTest {
         player.say(result);
     }
 
+    //% blockHidden=true
     //% blockId=mcfunction_give_basic
     //% block="주다 대상 $target 아이템 $item 개수 $amount 데이터 $data"
     //% target.shadow="mcfunction_selector_all_players"
@@ -211,6 +212,7 @@ namespace MCFunctionTest {
         }
     }
 
+    //% blockHidden=true
     //% blockId=mcfunction_give_advanced
     //% block="아이템 지급 상세 대상 $target 아이템 $item 개수 $amount 데이터 $data 컴포넌트 $components"
     //% target.shadow="mcfunction_selector_all_players"
